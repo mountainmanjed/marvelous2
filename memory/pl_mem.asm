@@ -21,31 +21,39 @@
 #symbol x_place 0x34					; float
 #symbol y_place 0x38					; float
 
-#symbol x_sprite_scale 0x50			; float
-#symbol y_sprite_scale 0x54			; float
-#symbol z_sprite_scale 0x58			; float
+#symbol x_sprite_scale 0x50				; float
+#symbol y_sprite_scale 0x54				; float
+#symbol z_sprite_scale 0x58				; float
 
-#symbol x_velocity 0x5c				; float
-#symbol y_velocity 0x60				; float
+#symbol x_velocity 0x5c					; float
+#symbol y_velocity 0x60					; float
 
 #symbol JumpUNK 0x68					; float
 #symbol y_drag 0x6c						; float
 
+;==============================================
 ;0x0080 - 0x05a4 requires use of data section
+;==============================================
 
-;Dat TBL Pointers
-#symbol animations 0x0168 				; pointer
-#symbol hitbox_pattern_table 0x016c 	; pointer
-#symbol hitbox_data 0x0170 				; pointer
-#symbol attack_data 0x0174 				; pointer
+;Dat File Pointers
+#symbol Dat_GFX1 0x015c					; pointer
+#symbol Dat_GFX2 0x0160					; pointer
+#symbol Dat_Pal 0x0164					; pointer
+#symbol animations 0x0168				; pointer
+#symbol hitbox_pattern_table 0x016c		; pointer
+#symbol hitbox_data 0x0170				; pointer
+#symbol attack_data 0x0174				; pointer
 #symbol Sprite_Extras 0x0178			; pointer
-#symbol DatFilePointer 0x017c			; pointer
+#symbol Dat_FilePointer 0x017c			; pointer
 	
 #symbol sp_move_strength 0x01a3			; byte
+
+#symbol xflip 0x01d2					; byte
 
 
 #symbol chain_strength 0x01e8			; byte
 #symbol sp_move_id 0x01e9				; byte
+
 
 ;Buffs
 #symbol Buff_Speed 0x0200				; byte
@@ -61,8 +69,7 @@
 #symbol Buff_Unk_0a 0x020a				; byte
 #symbol Buff_Unk_0b 0x020b				; byte
 
-
-#symbol EnemyPointer 0x020c				;Pointer
+#symbol EnemyPointer 0x020c				; pointer
 
 #symbol snapout 0x02a0					; byte
 
