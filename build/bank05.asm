@@ -6890,6 +6890,11 @@ loc_8c052c7e:
 
 ;==============================================
 ; called from character programming
+; if jumpunk != 0
+	; if x movement * jumpunk < 0
+		; jumpunk = 0
+		; x movement = 0
+
 loc_8c052c84:
 	mov 0x68,r0
 	fldi0 fr2
@@ -6909,12 +6914,11 @@ loc_8c052c84:
 	mov 0x5C,r0
 	fmov fr3,@(r0,r4) ; set x movement to 0
 
-; question: is jumpunk x friction/drag then?
-
 loc_8c052ca4:
 	rts
 	nop
 
+;==============================================
 loc_8c052ca8:
 	mov.l r14,@-r15
 	mov r4,r14
@@ -11714,11 +11718,15 @@ loc_8c054b0e:
 	mov 0x01,r0
 
 loc_8c054b2a:
-	add 0x04,r15
+	add 0x04,r15 
 	lds.l @r15+,pr
 	mov.l @r15+,r13
 	rts
 	mov.l @r15+,r14
+
+;=============================================
+; juggernaut char programming points here
+loc_8c054b34:
 	mov.l r14,@-r15
 	sts.l pr,@-r15
 	add 0xFC,r15
