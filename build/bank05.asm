@@ -6889,23 +6889,27 @@ loc_8c052c7e:
 	mov.l @r15+,r14
 
 ;==============================================
+; called from character programming
 loc_8c052c84:
 	mov 0x68,r0
 	fldi0 fr2
-	fmov @(r0,r4),fr3
-	fcmp/eq fr2,fr3
+	fmov @(r0,r4),fr3 ; load jumpunk into fr3
+	fcmp/eq fr2,fr3 ; if jumpunk == 0, early out
 	bt loc_8c052ca4
-	mov 0x5C,r0
-	fmov @(r0,r4),fr3
+	mov 0x5C,r0 
+	fmov @(r0,r4),fr3 ; f3 = x movement
 	mov 0x68,r0
-	fmov @(r0,r4),fr2
-	fmul fr3,fr2
+	fmov @(r0,r4),fr2 ; f2 = jumpunk
+	fmul fr3,fr2 ; fr2 = x movement * jumpunk
 	fldi0 fr3
+	; if fr2 >= 0, early out
 	fcmp/gt fr3,fr2
 	bf loc_8c052ca4
-	fmov fr3,@(r0,r4)
+	fmov fr3,@(r0,r4) ; set jumpunk to 0
 	mov 0x5C,r0
-	fmov fr3,@(r0,r4)
+	fmov fr3,@(r0,r4) ; set x movement to 0
+
+; question: is jumpunk x friction/drag then?
 
 loc_8c052ca4:
 	rts
@@ -28292,7 +28296,7 @@ loc_8c05b4aa:
 	jmp @r1
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05b4c0:
 	#data 0x044a
 loc_8c05b4c2:
@@ -28440,7 +28444,7 @@ loc_8c05b5aa:
 	bra loc_8c05b5fa
 	mov 0x00,r0
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05b5ae:
 	#data 0x020c
 loc_8c05b5b0:
@@ -28601,7 +28605,7 @@ loc_8c05b69c:
 	rts
 	mov 0x01,r0
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05b6a0:
 	#data 0x00ff
 loc_8c05b6a2:
@@ -28770,7 +28774,7 @@ loc_8c05b792:
 	rts
 	mov 0x01,r0
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05b7aa:
 	#data 0x0494
 loc_8c05b7ac:
@@ -28957,7 +28961,7 @@ loc_8c05b8b4:
 	rts
 	nop
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05b8b8:
 	#data 0x01d1
 loc_8c05b8ba:
@@ -29115,7 +29119,7 @@ loc_8c05b988:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05b9a0:
 	#data 0x020c
 loc_8c05b9a2:
@@ -29271,7 +29275,7 @@ loc_8c05baa4:
 	rts
 	nop
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05baa8:
 	#data 0x0201
 loc_8c05baaa:
@@ -29748,7 +29752,7 @@ loc_8c05bd76:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05bd7c:
 	#data 0x0482
 loc_8c05bd7e:
@@ -29899,7 +29903,7 @@ loc_8c05be56:
 	jmp @r3
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05be6a:
 	#data 0x043d
 loc_8c05be6c:
@@ -30092,7 +30096,7 @@ loc_8c05bf98:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05bfa0:
 	#data 0x0084
 loc_8c05bfa2:
@@ -30439,7 +30443,7 @@ loc_8c05c1be:
 	rts
 	mov.l @r15+,r13
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05c1ee:
 	#data 0x04b8
 loc_8c05c1f0:
@@ -30549,7 +30553,7 @@ loc_8c05c282:
 	rts
 	mov r6,r0
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05c296:
 	#data 0x043c
 loc_8c05c298:
@@ -30944,7 +30948,7 @@ loc_8c05c506:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05c520:
 	#data 0x0178
 loc_8c05c522:
@@ -31122,7 +31126,7 @@ loc_8c05c638:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05c646:
 	#data 0x0170
 loc_8c05c648:
@@ -31313,7 +31317,7 @@ loc_8c05c770:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05c77c:
 	#data 0x0170
 loc_8c05c77e:
@@ -31833,7 +31837,7 @@ loc_8c05cab6:
 	rts
 	mov 0x01,r0
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05cac4:
 	#data 0x0178
 loc_8c05cac6:
@@ -31898,7 +31902,7 @@ loc_8c05cb10:
 	rts
 	nop
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05cb2e:
 	#data 0x0130
 	#align4
@@ -32197,7 +32201,7 @@ loc_8c05ccfa:
 	rts
 	nop
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05cd02:
 	#data 0x01f9
 loc_8c05cd04:
@@ -32348,7 +32352,7 @@ loc_8c05cdea:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05cdf2:
 	#data 0x0440
 loc_8c05cdf4:
@@ -33096,7 +33100,7 @@ loc_8c05d2b6:
 	rts
 	mov 0x00,r0
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05d2ca:
 	#data 0x020c
 loc_8c05d2cc:
@@ -33274,7 +33278,7 @@ loc_8c05d3d6:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05d3e2:
 	#data 0x043d
 loc_8c05d3e4:
@@ -33547,7 +33551,7 @@ loc_8c05d582:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05d58e:
 	#data 0x020c
 loc_8c05d590:
@@ -34303,7 +34307,7 @@ loc_8c05da54:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05da5c:
 	#data 0x043d
 loc_8c05da5e:
@@ -34723,7 +34727,7 @@ loc_8c05dd00:
 	rts
 	mov 0x00,r0
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05dd22:
 	#data 0x04b4
 loc_8c05dd24:
@@ -35047,7 +35051,7 @@ loc_8c05df1e:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05df2a:
 	#data 0x2400
 loc_8c05df2c:
@@ -35435,7 +35439,7 @@ loc_8c05e192:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05e19a:
 	#data 0x2400
 loc_8c05e19c:
@@ -36569,7 +36573,7 @@ loc_8c05e8fa:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05e914:
 	#data 0x043d
 loc_8c05e916:
@@ -36785,7 +36789,7 @@ loc_8c05ea70:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05ea78:
 	#data 0x043d
 loc_8c05ea7a:
@@ -37004,7 +37008,7 @@ loc_8c05ebce:
 	rts
 	mov 0x01,r0
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05ebea:
 	#data 0x04a9
 loc_8c05ebec:
@@ -37230,7 +37234,7 @@ loc_8c05ed50:
 	rts
 	mov 0x01,r0
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05ed5e:
 	#data 0x0497
 loc_8c05ed60:
@@ -37649,7 +37653,7 @@ loc_8c05f008:
 	rts
 	mov 0x01,r0
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05f024:
 	#data 0x044c
 loc_8c05f026:
@@ -37783,7 +37787,7 @@ loc_8c05f0ec:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05f0f6:
 	#data 0x04b4
 loc_8c05f0f8:
@@ -37932,7 +37936,7 @@ loc_8c05f1e8:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05f1f4:
 	#data 0x04b4
 loc_8c05f1f6:
@@ -38108,7 +38112,7 @@ loc_8c05f308:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05f316:
 	#data 0x04b4
 loc_8c05f318:
@@ -38287,7 +38291,7 @@ loc_8c05f438:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05f44c:
 	#data 0x043d
 loc_8c05f44e:
@@ -38444,7 +38448,7 @@ loc_8c05f520:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05f556:
 	#data 0x0442
 loc_8c05f558:
@@ -38813,7 +38817,7 @@ loc_8c05f79c:
 	rts
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05f7a4:
 	#data 0x045f
 loc_8c05f7a6:
@@ -39539,7 +39543,7 @@ loc_8c05fc0e:
 	jmp @r3
 	mov.l @r15+,r14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05fc66:
 	#data 0x020c
 loc_8c05fc68:
@@ -39730,7 +39734,7 @@ loc_8c05fda4:
 	rts
 	mov 0x00,r0
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c05fdb2:
 	#data 0x05a4
 loc_8c05fdb4:
