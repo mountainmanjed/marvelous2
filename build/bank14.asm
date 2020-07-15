@@ -700,7 +700,7 @@
 
 ;#symbol loc_8c14 0x8c14
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;Walk Speeds
 ;1st is forward  walkspeed
 ;2nd is backward walkspeed

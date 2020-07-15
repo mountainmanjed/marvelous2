@@ -22,7 +22,7 @@ loc_8c010000:
 	jmp @r0
 	nop
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c010020:
 	#data 0x0800
 	#align4

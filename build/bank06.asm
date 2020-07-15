@@ -64,7 +64,7 @@ loc_8c060092:
 	rts
 	mov 0x00,r0
 
-;/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c060096:
 	#data 0x1100
 loc_8c060098:
