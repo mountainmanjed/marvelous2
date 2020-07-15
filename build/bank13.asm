@@ -149,5 +149,10 @@
 #symbol loc_8c13a300 0x8c13a300
 
 #symbol loc_8c13acd0 0x8c13acd0
+#symbol loc_8c13acf8 0x8c13acf8
+#symbol loc_8c13ad10 0x8c13ad10
+#symbol loc_8c13ad18 0x8c13ad18
+#symbol loc_8c13ad48 0x8c13ad48
+#symbol loc_8c13ad50 0x8c13ad50
 
 ;#symbol loc_8c13 0x8c13

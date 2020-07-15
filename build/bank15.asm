@@ -58,7 +58,6 @@
 ;	#data loc_8c05fb34 loc_8c05fb8c loc_8c05fbb4 loc_8c05fbdc
 ;	#data loc_8c05fc84 loc_8c05cd3a loc_8c05fde0 loc_8c05cd3a
 
-
 ;==============================================
 ;
 ;==============================================
@@ -153,5 +152,132 @@
 #symbol loc_8c1520a8 0x8c1520a8
 #symbol loc_8c1520b8 0x8c1520b8
 #symbol loc_8c1520c0 0x8c1520c0
+#symbol loc_8c1520c8 0x8c1520c8
+#symbol loc_8c1520d8 0x8c1520d8
+#symbol loc_8c1520e8 0x8c1520e8
+#symbol loc_8c1520f0 0x8c1520f0
+#symbol loc_8c1520f8 0x8c1520f8
+#symbol loc_8c152104 0x8c152104
+#symbol loc_8c152114 0x8c152114
+#symbol loc_8c15211c 0x8c15211c
+#symbol loc_8c15220c 0x8c15220c
+#symbol loc_8c15221c 0x8c15221c
+#symbol loc_8c152230 0x8c152230
+#symbol loc_8c152240 0x8c152240
+#symbol loc_8c152250 0x8c152250
+#symbol loc_8c152260 0x8c152260
+#symbol loc_8c152270 0x8c152270
+#symbol loc_8c152280 0x8c152280
+#symbol loc_8c152290 0x8c152290
+
+#symbol loc_8c152310 0x8c152310
+#symbol loc_8c152320 0x8c152320
+#symbol loc_8c152328 0x8c152328
+#symbol loc_8c152330 0x8c152330
+#symbol loc_8c152340 0x8c152340
+#symbol loc_8c15235c 0x8c15235c
+#symbol loc_8c15237c 0x8c15237c
+#symbol loc_8c15238c 0x8c15238c
+#symbol loc_8c1523ac 0x8c1523ac
+#symbol loc_8c1523bc 0x8c1523bc
+#symbol loc_8c1523d8 0x8c1523d8
+#symbol loc_8c1523e4 0x8c1523e4
+#symbol loc_8c152400 0x8c152400
+#symbol loc_8c152404 0x8c152404
+
+#symbol loc_8c152480 0x8c152480
+#symbol loc_8c152488 0x8c152488
+#symbol loc_8c1524c8 0x8c1524c8
+#symbol loc_8c1524d0 0x8c1524d0
+#symbol loc_8c1524d8 0x8c1524d8
+#symbol loc_8c1524f0 0x8c1524f0
+#symbol loc_8c152500 0x8c152500
+#symbol loc_8c15251c 0x8c15251c
+#symbol loc_8c152538 0x8c152538
+#symbol loc_8c152540 0x8c152540
+#symbol loc_8c15254c 0x8c15254c
+#symbol loc_8c15255c 0x8c15255c
+#symbol loc_8c152564 0x8c152564
+#symbol loc_8c15256c 0x8c15256c
+#symbol loc_8c15257c 0x8c15257c
+#symbol loc_8c15259c 0x8c15259c
+#symbol loc_8c1525b8 0x8c1525b8
+#symbol loc_8c1525bc 0x8c1525bc
+#symbol loc_8c1525d8 0x8c1525d8
+#symbol loc_8c1525e8 0x8c1525e8
+#symbol loc_8c1525ec 0x8c1525ec
+#symbol loc_8c152668 0x8c152668
+#symbol loc_8c15266c 0x8c15266c
+#symbol loc_8c152688 0x8c152688
+#symbol loc_8c15268c 0x8c15268c
+#symbol loc_8c1526a8 0x8c1526a8
+#symbol loc_8c1526ac 0x8c1526ac
+#symbol loc_8c1526c8 0x8c1526c8
+#symbol loc_8c1526d8 0x8c1526d8
+#symbol loc_8c1526e0 0x8c1526e0
+#symbol loc_8c1526e8 0x8c1526e8
+#symbol loc_8c1526f0 0x8c1526f0
+#symbol loc_8c1526f8 0x8c1526f8
+
+#symbol loc_8c152708 0x8c152708
+
+#symbol loc_8c152884 0x8c152884
+#symbol loc_8c1528c4 0x8c1528c4
+
+#symbol loc_8c152904 0x8c152904
+#symbol loc_8c152944 0x8c152944
+#symbol loc_8c1529a4 0x8c1529a4
+
+#symbol loc_8c152a04 0x8c152a04
+#symbol loc_8c152a14 0x8c152a14
+#symbol loc_8c152a54 0x8c152a54
+#symbol loc_8c152a94 0x8c152a94
+#symbol loc_8c152aa4 0x8c152aa4
+#symbol loc_8c152ab4 0x8c152ab4
+#symbol loc_8c152ac0 0x8c152ac0
+#symbol loc_8c152ae8 0x8c152ae8
+
+#symbol loc_8c152b20 0x8c152b20
+#symbol loc_8c152b30 0x8c152b30
+#symbol loc_8c152b3c 0x8c152b3c
+#symbol loc_8c152b48 0x8c152b48
+#symbol loc_8c152b54 0x8c152b54
+#symbol loc_8c152b5c 0x8c152b5c
+#symbol loc_8c152b68 0x8c152b68
+#symbol loc_8c152b74 0x8c152b74
+#symbol loc_8c152b84 0x8c152b84
+#symbol loc_8c152b9c 0x8c152b9c
+#symbol loc_8c152ba4 0x8c152ba4
+#symbol loc_8c152bb4 0x8c152bb4
+#symbol loc_8c152bbb 0x8c152bbb
+#symbol loc_8c152bc4 0x8c152bc4
+#symbol loc_8c152bdc 0x8c152bdc
+#symbol loc_8c152bec 0x8c152bec
+
+#symbol loc_8c152c0c 0x8c152c0c
+#symbol loc_8c152c2c 0x8c152c2c
+#symbol loc_8c152c3c 0x8c152c3c
+#symbol loc_8c152c7c 0x8c152c7c
+#symbol loc_8c152c9c 0x8c152c9c
+
+#symbol loc_8c152d1c 0x8c152d1c
+#symbol loc_8c152d2c 0x8c152d2c
+#symbol loc_8c152d38 0x8c152d38
+#symbol loc_8c152d44 0x8c152d44
+#symbol loc_8c152d50 0x8c152d50
+#symbol loc_8c152d60 0x8c152d60
+#symbol loc_8c152d64 0x8c152d64
+#symbol loc_8c152d74 0x8c152d74
+#symbol loc_8c152d7c 0x8c152d7c
+#symbol loc_8c152d84 0x8c152d84
+#symbol loc_8c152d88 0x8c152d88
+#symbol loc_8c152d8c 0x8c152d8c
+#symbol loc_8c152d9c 0x8c152d9c
+#symbol loc_8c152dac 0x8c152dac
+#symbol loc_8c152dbc 0x8c152dbc
+
+#symbol loc_8c153050 0x8c153050
+#symbol loc_8c153060 0x8c153060
+#symbol loc_8c153070 0x8c153070
 
 ;#symbol loc_8c15 0x8c15

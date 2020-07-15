@@ -5,5 +5,5 @@
 #symbol loc_8c0be50a 0x8c0be50a
 #symbol loc_8c0be7f4 0x8c0be7f4
 #symbol loc_8c0bf9c0 0x8c0bf9c0
-
+#symbol loc_8c0bfcae 0x8c0bfcae
 ;#symbol loc_8c0b 0x8c0b

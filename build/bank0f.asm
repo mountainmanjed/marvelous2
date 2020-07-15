@@ -1,6 +1,7 @@
 ;#symbol loc_8c0f 0x8c0f
 #symbol loc_8c0f01f8 0x8c0f01f8
 #symbol loc_8c0f0408 0x8c0f0408
+#symbol loc_8c0f047c 0x8c0f047c
 #symbol loc_8c0f048e 0x8c0f048e
 
 #symbol loc_8c0f0c34 0x8c0f0c34
@@ -77,6 +78,7 @@
 #symbol loc_8c0fcca2 0x8c0fcca2
 
 #symbol loc_8c0fd6b0 0x8c0fd6b0
+#symbol loc_8c0fd75c 0x8c0fd75c
 #symbol loc_8c0fd894 0x8c0fd894
 #symbol loc_8c0fd966 0x8c0fd966
 
