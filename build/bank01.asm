@@ -22482,15 +22482,15 @@ loc_8c019c00:
 	nop
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-loc_8c019c06
+loc_8c019c06:
 	#data 0x012c
-loc_8c019c08
+loc_8c019c08:
 	#data 0x0431
-loc_8c019c0a
+loc_8c019c0a:
 	#data 0x00cc
-loc_8c019c0c
+loc_8c019c0c:
 	#data 0x0084
-loc_8c019c0e
+loc_8c019c0e:
 	#data 0x0082
 	#align4
 loc_8c019c10:
