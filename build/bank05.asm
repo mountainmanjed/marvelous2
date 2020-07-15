@@ -10754,6 +10754,7 @@ loc_8c054504:
 	#data loc_8c0532a8
 
 ;==============================================
+; called from char programming
 loc_8c054508:
 	mov.l r14,@-r15
 	mov.l r13,@-r15
@@ -10762,48 +10763,81 @@ loc_8c054508:
 	mov.l r10,@-r15
 	sts.l pr,@-r15
 	add 0xFC,r15
+	
+	; if(plmem[0x525] == 0) goto loc_8c054530
 	mov.w @(loc_8c0545ac,PC),r0
 	mov r4,r14
 	mov.b @(r0,r14),r3
 	tst r3,r3
 	bt loc_8c054530
+	
+	; if(plmem[0x45d] == 0) goto loc_8c054530
 	mov.w @(loc_8c0545ae,PC),r0
 	mov.b @(r0,r14),r3
 	tst r3,r3
 	bt loc_8c054530
+	
+	; if(plmem[0x0448] == 0x7e) goto loc_8c054540
 	mov.w @(loc_8c0545b0,PC),r0
 	mov.b @(r0,r14),r0
 	cmp/eq 0x7E,r0
 	bt loc_8c054540
 
+;loc_8c0545bc: #data loc_8c055cd4
+;loc_8c0545b2: #data 0x0090
+
 loc_8c054530:
-	mov.l @(loc_8c0545bc,PC),r3
+	; r6 = r15 (stack pointer)
+	; r5 = 0x0090
+	; r4 = r14 (plmem)
+	; call loc_8c055cd4()
+	
+	mov.l @(loc_8c0545bc,PC),r3 ; r3 = loc_8c055cd4
 	mov r15,r6
-	mov.w @(loc_8c0545b2,PC),r5
+	mov.w @(loc_8c0545b2,PC),r5 ; r5 = 0x0090
 	jsr @r3
 	mov r14,r4
+	
+	; r0 was returned from loc_8c055cd4()
+	; if(r0 == 0) goto loc_8c054586
 	extu.b r0,r0
 	tst r0,r0
 	bt loc_8c054586
 
+; loc_8c0545c0: #data loc_8c0559da
+
 loc_8c054540:
+	; loc_8c0559da()
+	
+	; if(????) goto return
 	mov.l @(loc_8c0545c0,PC),r3
 	jsr @r3
 	mov r14,r4
 	extu.b r0,r0
 	tst r0,r0
 	bt loc_8c054586
+	
+	; if(plmem[0x1f9] == 2) goto return
+	; same as
+	; if(player is jumping) goto return
 	mov.w @(loc_8c0545b4,PC),r0
 	mov.b @(r0,r14),r0
 	extu.b r0,r0
 	cmp/eq 0x02,r0
 	bt loc_8c054586
+	
+	; if(0x05 >= (byte)[0x8c2895f0]) goto return
 	mov.l @(loc_8c0545c4,PC),r5
 	mov 0x05,r3
 	mov.b @r5,r2
 	extu.b r2,r2
 	cmp/ge r3,r2
 	bt loc_8c054586
+	
+	; r0 = 0x8c2895f0 + 0x34 + (byte)plmem[0x2]
+	; r2 = [r0]
+	; r4 = 0x01
+	; if(0x01 > r2) goto return
 	mov.b @(0x2,r14),r0
 	mov r5,r3
 	add 0x34,r3
@@ -10813,21 +10847,29 @@ loc_8c054540:
 	mov 0x01,r4
 	cmp/gt r4,r2
 	bt loc_8c054586
+	
+	; if((byte)[plmem[0x40c]] == 0) goto return
 	mov.w @(loc_8c0545b6,PC),r0
 	mov.l @(r0,r14),r12
 	mov.b @r12,r12
 	tst r12,r12
 	bt loc_8c054586
+	
+	; different target, inetresting
+	; if(plmem[0x1f1] == 0) goto loc_8c05458a (skip return)
 	mov.w @(loc_8c0545b8,PC),r0
 	mov.b @(r0,r14),r3
 	tst r3,r3
 	bt loc_8c05458a
 
+; sets r0 to 0 and then returns?
 loc_8c054586:
 	bra loc_8c054624
 	mov 0x00,r0
 
 loc_8c05458a:
+; r12 already was (byte)[plmem[0x40c]], and can't be 0
+; r12 = max(0x03, (byte)[plmem[0x40c]])
 	mov 0x03,r13
 	cmp/gt r13,r12
 	bf.s loc_8c054594
@@ -10835,6 +10877,17 @@ loc_8c05458a:
 	mov r13,r12
 
 loc_8c054594:
+	; r0 = 0x1a4
+	; r3 = 0
+	; r10 = 0x8c2896b0
+	; r2 = (ubyte)plmem[0x1a4]
+	; r2 += (r2 > 0x00)
+	; r2 = r2 >> 1
+	; r11 = 0x01
+	; r2 = r2 >> 1
+	; r6 = r4
+	; goes to a loop
+	
 	mov.w @(loc_8c0545ba,PC),r0
 	mov 0x00,r3
 	mov.l @(loc_8c0545c8,PC),r10
@@ -10845,7 +10898,7 @@ loc_8c054594:
 	addc r3,r2
 	shar r2
 	shad r2,r11
-	bra loc_8c05460c
+	bra loc_8c05460c ; go to loop
 	mov r4,r6
 
 ;##############################################
@@ -10913,6 +10966,15 @@ loc_8c05460a:
 	add 0x01,r6
 
 loc_8c05460c:
+; initial when loop starts
+
+; r10 = 0x8c2896b0
+; r11 = 0x01
+
+; r13 = 0x03
+; r12 = max(0x03, (byte)[plmem[0x40c]])
+; r6 = 0x01
+; r7 = 0x01
 	cmp/ge r13,r6
 	bt loc_8c054614
 	cmp/ge r12,r7
@@ -14589,7 +14651,19 @@ loc_8c055cd0:
 	#data 0x8c212c04
 
 ;==============================================
+; some kind of conditional test? possibly input related?
+; r5 is a parameter, i've seen 0x90
+; r0 appears to be the return value
+; also writes to @(r6)
 loc_8c055cd4:
+	
+	; r2 = (plmem[0x0440] ^ plmem[0x0342]) | (plmem[0x0344] ^ plmem[0x0342])
+	; r3 = r5 & (plmem[0x0344] ^ plmem[0x0342])
+	
+	; @(r6) = (int16)r3
+	; r0 = (int16)r2 == (int16)r3
+	; return r0
+	
 	mov.w @(loc_8c055da0,PC),r0
 	mov.w @(r0,r4),r7
 	add 0x02,r0
