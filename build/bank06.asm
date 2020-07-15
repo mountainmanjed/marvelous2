@@ -77,7 +77,7 @@ loc_8c06009e:
 	#data 0x2500
 	#align4
 loc_8c0600a0:
-	#data 0x8c26823c
+	#data work.GameGlobalPointer
 
 ;==============================================
 loc_8c0600a4:
@@ -11455,7 +11455,7 @@ loc_8c064c54:
 loc_8c064c58:
 	#data 0x42a00000
 loc_8c064c5c:
-	#data 0x8c26823c
+	#data work.GameGlobalPointer
 loc_8c064c60:
 	#data 0x8c2896b0
 loc_8c064c64:
@@ -13906,7 +13906,7 @@ loc_8c065c7a:
 	#data 0x0130
 	#align4
 loc_8c065c7c:
-	#data 0x8c26823c
+	#data work.GameGlobalPointer
 loc_8c065c80:
 	#data bank03.loc_8c034dee
 loc_8c065c84:
@@ -15671,7 +15671,7 @@ loc_8c066874:
 loc_8c066878:
 	#data bank03.loc_8c034dee
 loc_8c06687c:
-	#data 0x8c26823c
+	#data work.GameGlobalPointer
 loc_8c066880:
 	#data bank15.loc_8c1523e4
 
@@ -16195,7 +16195,7 @@ loc_8c066bdc:
 loc_8c066be0:
 	#data bank03.loc_8c03340c
 loc_8c066be4:
-	#data 0x8c26823c
+	#data work.GameGlobalPointer
 
 ;==============================================
 loc_8c066be8:
@@ -23554,7 +23554,7 @@ loc_8c069d64:
 loc_8c069d68:
 	#data 0x43654924
 loc_8c069d6c:
-	#data 0x8c26823c
+	#data work.GameGlobalPointer
 
 ;----------------------------------------------
 loc_8c069d70:
@@ -23729,7 +23729,7 @@ loc_8c069e88:
 loc_8c069e8c:
 	#data bank03.loc_8c034f54
 loc_8c069e90:
-	#data 0x8c26823c
+	#data work.GameGlobalPointer
 loc_8c069e94:
 	#data bank03.loc_8c03340c
 loc_8c069e98:
@@ -23943,7 +23943,7 @@ loc_8c069fe8:
 loc_8c069fec:
 	#data 0x8c2895f0
 loc_8c069ff0:
-	#data 0x8c26823c
+	#data work.GameGlobalPointer
 loc_8c069ff4:
 	#data bank03.loc_8c034f54
 loc_8c069ff8:
@@ -24018,7 +24018,7 @@ loc_8c06a062:
 	#data 0x012c
 	#align4
 loc_8c06a064:
-	#data 0x8c26823c
+	#data work.GameGlobalPointer
 loc_8c06a068:
 	#data bank15.loc_8c152ae8
 loc_8c06a06c:
