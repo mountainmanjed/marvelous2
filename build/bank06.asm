@@ -38133,7 +38133,7 @@ loc_8c06fe08:
 	mov r14,r4
 	add 0x01,r0
 	mov.b r0,@(0x4,r14)
-	bra loc_8c070424
+	bra bank07.loc_8c070424
 	mov.l @r15+,r14
 
 loc_8c06fe28:
@@ -38689,7 +38689,7 @@ loc_8c0701ce:
 	add 0x01,r0
 	mov.b r0,@(0x4,r14)
 	lds.l @r15+,pr
-	bra loc_8c070424
+	bra bank07.loc_8c070424
 	mov.l @r15+,r14
 
 loc_8c0701ee:
@@ -38758,6 +38758,3 @@ loc_8c070258:
 	#data bank03.loc_8c034dee
 loc_8c07025c:
 	#data bank15.loc_8c153330
-
-;waiting for assembler fix
-#symbol loc_8c070424 0x8c070424
