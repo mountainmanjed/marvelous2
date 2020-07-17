@@ -26,6 +26,8 @@
 #symbol loc_8c108060 0x8c108060
 #symbol loc_8c108086 0x8c108086
 #symbol loc_8c108192 0x8c108192
+
+;Write Textures offsets
 #symbol loc_8c1081e6 0x8c1081e6
 #symbol loc_8c108210 0x8c108210
 #symbol loc_8c10830c 0x8c10830c

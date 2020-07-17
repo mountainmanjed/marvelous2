@@ -15220,8 +15220,11 @@ loc_8c0265f8:
 	#data bank10.loc_8c108086
 loc_8c0265fc:
 	#data bank10.loc_8c1081e6
+loc_8c026600:
 	#data 0x3a83126f
+loc_8c026604:
 	#data 0x3f000000
+loc_8c026608:
 	#data 0x47800000
 loc_8c02660c:
 	#data 0x43b40000
@@ -19728,6 +19731,8 @@ loc_8c0282e4:
 	mov.l @r15+,r14
 
 ;==============================================
+;Training Mode BG movement
+;==============================================
 loc_8c0282ea:
 	mov.l r14,@-r15
 	mov.l r13,@-r15
@@ -19783,7 +19788,7 @@ loc_8c028336:
 	mov.l @(0x8,r2),r4
 	mov.l @(loc_8c0283e8,PC),r13
 	mova @(loc_8c0283ec,PC),r0
-	mov.l @(loc_8c0283e4,PC),r12
+	mov.l @(loc_8c0283e4,PC),r12 ;loc_8c1081e6
 	mov.l @(loc_8c0283e0,PC),r11
 	fldi1 fr14
 	bra loc_8c028390
@@ -19818,7 +19823,7 @@ loc_8c028354:
 	fadd fr14,fr3
 	fsub fr3,fr2
 	fmov fr2,@(r0,r15)
-	jsr @r12
+	jsr @r12; loc_8c1081e6 texture movement write
 	mov r15,r4
 
 loc_8c028390:
@@ -19882,6 +19887,7 @@ loc_8c0283e8:
 	#data bank10.loc_8c108192
 loc_8c0283ec:
 	#data 0x3a83126f
+loc_8c0283f0:
 	#data 0x3d088889
 
 ;==============================================
