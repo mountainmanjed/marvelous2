@@ -10899,7 +10899,7 @@ loc_8c014720:
 loc_8c014724:
 	#data 0x8c1f8b3c
 loc_8c014728:
-	bank02.loc_8c022b94
+	#data bank02.loc_8c022b94
 loc_8c01472c:
 	#data 0xff000000
 loc_8c014730:
@@ -20177,7 +20177,7 @@ loc_8c0184c8:
 loc_8c0184cc:
 	#data bank12.loc_8c123780
 loc_8c0184d0:
-	bank12.loc_8c120900
+	#data bank12.loc_8c120900
 
 ;----------------------------------------------
 loc_8c0184d4:
@@ -21641,7 +21641,7 @@ loc_8c018e80:
 loc_8c018e84:
 	#data 0x8c26a940
 loc_8c018e88:
-	bank10.loc_8c108210
+	#data bank10.loc_8c108210
 
 ;==============================================
 loc_8c018e8c:
@@ -25563,15 +25563,15 @@ loc_8c01a8a0:
 loc_8c01a8a4:
 	#data bank14.loc_8c145e68
 loc_8c01a8a8:
-	bank12.loc_8c1294bc
+	#data bank12.loc_8c1294bc
 loc_8c01a8ac:
-	bank14.loc_8c145e50
+	#data bank14.loc_8c145e50
 loc_8c01a8b0:
-	bank14.loc_8c145e78
+	#data bank14.loc_8c145e78
 loc_8c01a8b4:
-	0x42000000
+	#data 0x42000000
 loc_8c01a8b8:
-	bank14.loc_8c145f18
+	#data bank14.loc_8c145f18
 
 ;==============================================
 loc_8c01a8bc:

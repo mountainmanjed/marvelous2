@@ -315,11 +315,13 @@
 #symbol loc_8c153268 0x8c153268
 #symbol loc_8c153274 0x8c153274
 #symbol loc_8c153280 0x8c153280
+#symbol loc_8c1532e0 0x8c1532e0
 #symbol loc_8c1532f0 0x8c1532f0
 #symbol loc_8c1532fc 0x8c1532fc
 #symbol loc_8c15330c 0x8c15330c
 #symbol loc_8c153318 0x8c153318
 #symbol loc_8c153328 0x8c153328
 #symbol loc_8c153330 0x8c153330
+#symbol loc_8c153340 0x8c153340
 
 ;#symbol loc_8c15 0x8c15
