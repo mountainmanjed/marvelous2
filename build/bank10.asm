@@ -12,6 +12,7 @@
 #symbol loc_8c103ba4 0x8c103ba4
 
 #symbol loc_8c104434 0x8c104434
+#symbol loc_8c10491c 0x8c10491c
 
 #symbol loc_8c105082 0x8c105082
 #symbol loc_8c105860 0x8c105860
