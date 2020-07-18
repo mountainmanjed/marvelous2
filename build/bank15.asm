@@ -344,4 +344,16 @@
 
 #symbol loc_8c153410 0x8c153410
 #symbol loc_8c153414 0x8c153414
+#symbol loc_8c153420 0x8c153420
+#symbol loc_8c153430 0x8c153430
+#symbol loc_8c15343c 0x8c15343c
+#symbol loc_8c153448 0x8c153448
+#symbol loc_8c153454 0x8c153454
+#symbol loc_8c15346c 0x8c15346c
+#symbol loc_8c15346f 0x8c15346f
+#symbol loc_8c153474 0x8c153474
+#symbol loc_8c153480 0x8c153480
+#symbol loc_8c15348c 0x8c15348c
+#symbol loc_8c153490 0x8c153490
+
 ;#symbol loc_8c15 0x8c15
