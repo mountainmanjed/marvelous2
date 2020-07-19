@@ -16213,7 +16213,9 @@ loc_8c0169e0:
 	rts
 	mov.l @r15+,r14
 
-;----------------------------------------------
+;==============================================
+;Main Menu Rendering
+;==============================================
 loc_8c016a6e:
 	mov.l r14,@-r15
 	mov.l r13,@-r15
@@ -16284,7 +16286,7 @@ loc_8c016acc:
 	bra loc_8c016b96
 	fldi1 fr15
 
-;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;##############################################
 loc_8c016aee:
 	#data 0x012c
 loc_8c016af0:
@@ -16317,7 +16319,7 @@ loc_8c016b18:
 loc_8c016b1c:
 	#data bank10.loc_8c108086
 
-;==============================================
+;----------------------------------------------
 loc_8c016b20:
 	mov r15,r5
 	add 0x04,r5
@@ -16380,7 +16382,7 @@ loc_8c016b8a:
 	mov 0x04,r0
 	add 0x04,r5
 	fmov fr3,@(r0,r15)
-	jsr @r9
+	jsr @r9 ; Texture Movement
 	mov r15,r4
 
 loc_8c016b96:
@@ -16485,7 +16487,7 @@ loc_8c016c42:
 	bra loc_8c016cc8
 	mov.b r0,@(0x5,r14)
 
-;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;##############################################
 loc_8c016c46:
 	#data 0x00d4
 	#align4
@@ -16573,7 +16575,7 @@ loc_8c016cc8:
 	rts
 	mov.l @r15+,r14
 
-;----------------------------------------------
+;==============================================
 loc_8c016cde:
 	mov 0x21,r0
 	mov.l r14,@-r15
