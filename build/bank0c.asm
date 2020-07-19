@@ -11,6 +11,9 @@
 #symbol loc_8c0c6e44 0x8c0c6e44
 
 #symbol loc_8c0c96fc 0x8c0c96fc
+#symbol loc_8c0cbb84 0x8c0cbb84
+#symbol loc_8c0cbe3e 0x8c0cbe3e
+
 #symbol loc_8c0cfdd0 0x8c0cfdd0
 
 

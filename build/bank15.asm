@@ -392,4 +392,35 @@
 #symbol loc_8c153674 0x8c153674
 #symbol loc_8c153684 0x8c153684
 #symbol loc_8c15368c 0x8c15368c
+#symbol loc_8c1536ac 0x8c1536ac
+#symbol loc_8c1536cc 0x8c1536cc
+#symbol loc_8c1536dc 0x8c1536dc
+#symbol loc_8c1536ec 0x8c1536ec
+#symbol loc_8c1536ed 0x8c1536ed
+
+#symbol loc_8c15370a 0x8c15370a
+#symbol loc_8c15370b 0x8c15370b
+
+
+#symbol loc_8c15375c 0x8c15375c
+#symbol loc_8c15376c 0x8c15376c
+#symbol loc_8c1537a8 0x8c1537a8
+#symbol loc_8c1537b0 0x8c1537b0
+#symbol loc_8c1537c0 0x8c1537c0
+#symbol loc_8c1537d0 0x8c1537d0
+#symbol loc_8c1537dc 0x8c1537dc
+#symbol loc_8c1537ec 0x8c1537ec
+#symbol loc_8c1537fc 0x8c1537fc
+#symbol loc_8c153804 0x8c153804
+#symbol loc_8c153810 0x8c153810
+#symbol loc_8c153820 0x8c153820
+#symbol loc_8c15383c 0x8c15383c
+#symbol loc_8c153844 0x8c153844
+#symbol loc_8c153854 0x8c153854
+#symbol loc_8c153864 0x8c153864
+#symbol loc_8c153874 0x8c153874
+#symbol loc_8c153884 0x8c153884
+#symbol loc_8c15388c 0x8c15388c
+
+
 ;#symbol loc_8c15 0x8c15
