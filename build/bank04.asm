@@ -39006,73 +39006,125 @@ loc_8c04ff84:
 	nop
 
 ;==============================================
+; called from char programming, seemingly no return value
+; if the player is not superjumping, and pl_mem[1d8] <= 7
+; then does pl_mem[1d8]++,
+; and does a very complicated table lookup
+; checks if pl_mem[0x01d2] == 0, and adds or subtracts
+; 256.0 / (table value * 1.6666666)
+; to the player's x_velocity
+
 loc_8c04ff88:
+	; if(player is not superjumping) return
 	mov.w @(loc_8c050028,PC),r0
 	mov.b @(r0,r4),r3
 	tst r3,r3
 	bt loc_8c050006
+	
+	; if(pl_mem[1d8] <= 7) goto loc_8c04ffa2
 	mov.w @(loc_8c05002a,PC),r0
 	mov 0x07,r2
 	mov.b @(r0,r4),r3
 	cmp/ge r2,r3
 	bt loc_8c04ffa2
+	
+	; pl_mem[1d8]++
+	; return
 	mov.b @(r0,r4),r1
 	add 0x01,r1
 	rts
 	mov.b r1,@(r0,r4)
 
 loc_8c04ffa2:
+	; r0 = 0x034a
+	; r2 = 0x0c00
+	; r3 = (int16)plmem[0x034a]
 	mov.w @(loc_8c05002c,PC),r0
 	mov.w @(loc_8c05002e,PC),r2
 	mov.w @(r0,r4),r3
 	extu.w r3,r3
+	; if(((int16)plmem[0x034a] & 0x0c00) == 0) return
 	tst r2,r3
-	bt loc_8c050006
-	mov.b @(0x1,r4),r0
+	bt loc_8c050006 ; return
+	; r0 = charid0
+	mov.b @(pl_mem.charid0,r4),r0
+	; r2 = 0x01d3
 	mov.w @(loc_8c050030,PC),r2
 	extu.b r0,r0
+	; r0 = charid0 + (charid0 << 1)
 	mov r0,r3
 	shll r0
 	add r3,r0
+	; r3 = bank15.loc_8c150f3a
 	mov.l @(loc_8c050040,PC),r3
+	; r2 = plmem + 0x01d3
 	add r4,r2
+	; r0 = r0 << 2
 	shll2 r0
+	; r2 = plmem[0x01d3]
 	mov.b @r2,r2
+	; r3 = loc_8c150f3a + ((charid0 + (charid0 << 1)) << 2)
 	add r0,r3
+	; r0 = 0x034a
 	mov.w @(loc_8c05002c,PC),r0
+	; r2 = plmem[0x01d3] << 2
 	shll2 r2
+	; r1 = (int16)plmem[0x034a]
 	mov.w @(r0,r4),r1
+	; r2 = loc_8c150f3a + ((charid0 + (charid0 << 1)) << 2) + (plmem[0x01d3] << 2)
 	add r3,r2
+	; r3 = 0x0400
 	mov.w @(loc_8c050032,PC),r3
 	extu.w r1,r1
+	; r1 = 0x0400 & (int16)plmem[0x034a]
 	and r3,r1
 	mov 0xF6,r3
+	; r1 = (0xf6 << (0x0400 & (int16)plmem[0x034a])) >> 1
 	shad r3,r1
 	shll r1
+	; r2 = loc_8c150f3a
+		; + ((charid0 + (charid0 << 1)) << 2)
+		; + (plmem[0x01d3] << 2)
+		; + (0xf6 << (0x0400 & (int16)plmem[0x034a])) >> 1
 	add r1,r2
+	
+	; r0 = (int16)r2[4]
 	mov.w @(0x4,r2),r0
 	mov r0,r3
+	; fpul = sign extended int16 in r0
 	lds r3,fpul
+	
+	; r0 = address of 0x3fd55555
+	; fr2 = 0x3fd55555 = 1.66666662693
 	mova @(loc_8c050038,PC),r0
 	fmov @r0,fr2
+	; r0 = address of 0x43800000
+	; fr1 = 0x43800000 = 256.0
 	mova @(loc_8c05003c,PC),r0
+	; fr3 = float(fpul)
 	float fpul,fr3
 	fmov @r0,fr1
+	; fr4 = fr3 = table value * 1.6666666
 	fmul fr2,fr3
 	fmov fr3,fr4
+	; r0 = 0x01d2
 	mov.w @(loc_8c050026,PC),r0
 	mov.b @(r0,r4),r3
+	; fr4 = 256.0 / (table value * 1.6666666)
+	; if plmem[0x01d2] == 0 goto loc_8c04fffe
 	tst r3,r3
 	bt.s loc_8c04fffe
 	fdiv fr1,fr4
-	mov 0x5C,r0
+	mov pl_mem.x_velocity,r0
+	; fr4 = -256.0 / (table value * 1.6666666)
 	bra loc_8c050000
 	fneg fr4
 
 loc_8c04fffe:
-	mov 0x5C,r0
+	mov pl_mem.x_velocity,r0
 
 loc_8c050000:
+	; pl_mem[x_velocity] = pl_mem[x_velocity] + fr4
 	fmov @(r0,r4),fr3
 	fadd fr4,fr3
 	fmov fr3,@(r0,r4)
@@ -39119,9 +39171,9 @@ loc_8c050032:
 loc_8c050034:
 	#data bank15.loc_8c150dd8
 loc_8c050038:
-	#data 0x3fd55555
+	#data 0x3fd55555 ; 1.66666662693
 loc_8c05003c:
-	#data 0x43800000
+	#data 0x43800000 ; 256.0
 loc_8c050040:
 	#data bank15.loc_8c150f3a
 loc_8c050044:
