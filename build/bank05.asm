@@ -11043,6 +11043,8 @@ loc_8c054624:
 	rts
 	mov.l @r15+,r14
 
+;==============================================
+; called from loc_8c054b34
 loc_8c054634:
 	mov.l r14,@-r15
 	mov r4,r14
@@ -11109,7 +11111,7 @@ loc_8c054684:
 	extu.w r1,r1
 	tst r5,r1
 	bf loc_8c0546aa
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c0546aa:
@@ -11119,7 +11121,7 @@ loc_8c0546aa:
 	extu.w r2,r2
 	tst r1,r2
 	bt loc_8c0546c8
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c0546ba:
@@ -11128,11 +11130,11 @@ loc_8c0546ba:
 	extu.w r0,r0
 	tst r5,r0
 	bf loc_8c0546c8
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c0546c8:
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	mov.b r10,@r11
 
 ;##############################################
@@ -11169,7 +11171,7 @@ loc_8c0546e4:
 	exts.b r2,r2
 	tst r2,r2
 	bf loc_8c0546f4
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c0546f4:
@@ -11178,14 +11180,14 @@ loc_8c0546f4:
 	extu.w r1,r1
 	tst r5,r1
 	bt loc_8c054702
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c054702:
 	mov.b @(0x5,r14),r0
 	tst r0,r0
 	bt loc_8c05470c
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c05470c:
@@ -11199,7 +11201,7 @@ loc_8c05470c:
 	cmp/eq 0x03,r0
 	bf.s loc_8c054724
 	mov r0,r4
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c054724:
@@ -11207,7 +11209,7 @@ loc_8c054724:
 	nop
 	cmp/eq 0x02,r0
 	bf loc_8c054770
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 ;##############################################
@@ -11224,7 +11226,7 @@ loc_8c054734:
 	cmp/eq 0x03,r0
 	bf.s loc_8c054744
 	mov r0,r4
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c054744:
@@ -11236,7 +11238,7 @@ loc_8c054744:
 	mov.b @(r0,r14),r3
 	tst r3,r3
 	bt loc_8c054758
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c054758:
@@ -11250,7 +11252,7 @@ loc_8c054758:
 	extu.b r0,r0
 	cmp/eq 0x02,r0
 	bf loc_8c054770
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c054770:
@@ -11285,7 +11287,7 @@ loc_8c054770:
 	extu.b r4,r4
 	tst r4,r4
 	bt loc_8c0547b2
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c0547b2:
@@ -11295,7 +11297,7 @@ loc_8c0547b2:
 	extu.b r3,r3
 	cmp/ge r2,r3
 	bf loc_8c0547c2
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c0547c2:
@@ -11303,7 +11305,7 @@ loc_8c0547c2:
 	mov.b @(r0,r5),r2
 	tst r2,r2
 	bt loc_8c0547ce
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c0547ce:
@@ -11319,7 +11321,7 @@ loc_8c0547ce:
 	mov.b @r0,r2
 	cmp/gt r9,r2
 	bf loc_8c0547ea
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c0547ea:
@@ -11327,7 +11329,7 @@ loc_8c0547ea:
 	mov.b @(r0,r14),r2
 	tst r2,r2
 	bt loc_8c0547f6
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c0547f6:
@@ -11346,7 +11348,7 @@ loc_8c0547f6:
 	mov.b @r3,r2
 	tst r2,r2
 	bt loc_8c054818
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c054818:
@@ -11364,7 +11366,7 @@ loc_8c054818:
 	mov.w @(r0,r3),r2
 	tst r2,r2
 	bt loc_8c054838
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c054838:
@@ -11374,7 +11376,7 @@ loc_8c054838:
 	extu.b r0,r0
 	tst r0,r0
 	bf loc_8c054848
-	bra loc_8c054948
+	bra loc_8c054948 ; return 0
 	nop
 
 loc_8c054848:
@@ -11458,7 +11460,7 @@ loc_8c0548a0:
 	mov.l @(r0,r5),r2
 	mov.b @r2,r1
 	tst r1,r1
-	bf.s loc_8c054948
+	bf.s loc_8c054948 ; return 0
 	nop
 	mov.b @(0x2,r14),r0
 	mov r4,r2
@@ -11473,7 +11475,7 @@ loc_8c0548a0:
 	mov.w @(loc_8c05495c,PC),r0
 	mov.w @(r0,r3),r2
 	tst r2,r2
-	bf loc_8c054948
+	bf loc_8c054948 ; return 0
 	mov.b @(0x2,r14),r0
 	mov r4,r2
 	add 0x18,r2
@@ -11487,7 +11489,7 @@ loc_8c0548a0:
 	mov.w @(loc_8c05495e,PC),r0
 	mov.w @(r0,r3),r2
 	tst r2,r2
-	bt loc_8c054948
+	bt loc_8c054948 ; return 0
 
 loc_8c054904:
 	mov 0x03,r3
@@ -11830,24 +11832,30 @@ loc_8c054b2a:
 	mov.l @r15+,r14
 
 ;=============================================
-; juggernaut char programming points here
+; char programming points here
+; returns in 0 or 1 in r0
 loc_8c054b34:
 	mov.l r14,@-r15
 	sts.l pr,@-r15
 	add 0xFC,r15
+	; r3 = plmem[0x0525]
 	mov.w @(loc_8c054b78,PC),r0
 	mov r4,r14
 	mov.b @(r0,r14),r3
 	tst r3,r3
 	bt loc_8c054b90
+	; r3 = plmem[0x045d]
 	mov.w @(loc_8c054b7a,PC),r0
 	mov.b @(r0,r14),r3
 	tst r3,r3
-	bt loc_8c054bae
+	bt loc_8c054bae ; return 0
+	; r0 = plmem[0x0448]
 	mov.w @(loc_8c054b7c,PC),r0
 	mov.b @(r0,r14),r0
 	cmp/eq 0x7B,r0
-	bf loc_8c054bae
+	bf loc_8c054bae ; return 0
+	
+	; call loc_8c055dfa()
 	mov.l @(loc_8c054b8c,PC),r2
 	jsr @r2
 	mov r14,r4
@@ -11858,7 +11866,7 @@ loc_8c054b34:
 	mov r14,r4
 	tst r0,r0
 	bf loc_8c054ba4
-	bra loc_8c054bae
+	bra loc_8c054bae ; return 0
 	nop
 
 ;##############################################
