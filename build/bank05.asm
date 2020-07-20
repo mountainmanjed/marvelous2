@@ -2602,26 +2602,51 @@ loc_8c0511b4:
 	rts
 	nop
 
+;==============================================
+; called from char programming
 loc_8c0511e2:
+; if ((global game struct[0x1c] & 1) == 0) {
+	; if( (int)(x velocity) != 0) {
+		; if(plmem[0x041c] <= y position) {
+			; bank0f.loc_8c0fd894()
+		; }
+	; }
+; }
+
+
+	; r3 = work.GameGlobalPointer
 	mov.l @(loc_8c051274,PC),r3
+	; r0 = [work.GameGlobalPointer][0x1c]
 	mov.l @r3,r0
 	mov.l @(0x1C,r0),r0
+	
+	; if (r0 & 1) != 0, return
 	tst 0x01,r0
 	bf loc_8c05120a
-	mov 0x5C,r0
+	
+	; r0 = x velocity offset
+	; fr3 = x velocity
+	; if (int)(fr3) == 0 then return
+	mov pl_mem.x_velocity,r0
 	fmov @(r0,r4),fr3
 	ftrc fr3,fpul
 	sts fpul,r3
 	tst r3,r3
 	bt loc_8c05120a
+	
+	; fr3 = plmem[0x041c]
 	mov.w @(loc_8c051264,PC),r0
 	fmov @(r0,r4),fr3
-	mov 0x38,r0
+	; fr3 = y position
+	mov pl_mem.y_place,r0
 	fmov @(r0,r4),fr2
+	; if plmem[0x041c] > y position, return
 	fcmp/gt fr3,fr2
 	bt loc_8c05120a
+	
+	; call bank0f.loc_8c0fd894()
 	mov.l @(loc_8c051278,PC),r3
-	jmp @r3
+	jmp @r3 ; tail call, doesnt use jsr
 	nop
 
 loc_8c05120a:
