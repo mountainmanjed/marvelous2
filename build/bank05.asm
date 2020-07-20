@@ -10449,32 +10449,49 @@ loc_8c0542ca:
 	rts
 	mov.l @r15+,r14
 
+;==============================================
+; called from char programming
+; returns a value in r0
+; possibly (?) cpu related, calls loc_8c054e58
 loc_8c0542e0:
+	; r5 = plmem + 0x35c
+	; if((byte)plmem[5] != 0) goto loc_8c054368
 	mov.b @(0x5,r4),r0
 	mov.w @(loc_8c054396,PC),r5
 	tst r0,r0
 	bf.s loc_8c054368
 	add r4,r5
+	
+	; r3 = plmem[0x1a0]
+	; if((byte)plmem[0x1a0] != 0) goto loc_8c054368
 	mov.w @(loc_8c054398,PC),r0
 	mov.b @(r0,r4),r3
 	tst r3,r3
 	bf.s loc_8c0542fa
 	mov 0x00,r6
+	
 	mov r6,r0
 	nop
+	; plmem[0x361] = 00
 	mov.b r0,@(0x5,r5)
 
 loc_8c0542fa:
+	; if([work.GameGlobalPointer][0x4c] != 0x2) goto loc_8c054320
 	mov.l @(loc_8c0543b0,PC),r3
 	mov 0x4C,r1
 	mov.l @r3,r0
 	mov.b @(r0,r1),r0
 	cmp/eq 0x02,r0
 	bf loc_8c054320
+	
+	; if [0x8c212cd1] != 0x03 goto loc_8c054320
 	mov.l @(loc_8c0543b4,PC),r2
 	mov.b @r2,r0
 	cmp/eq 0x03,r0
 	bf loc_8c054320
+	
+	; if 2-(plmem[0x524] & 1) == [0x8c212cdb]
+	; then goto loc_8c05435c
 	mov.w @(loc_8c05439a,PC),r0
 	mov.l @(loc_8c0543b8,PC),r3
 	mov.b @(r0,r4),r0
@@ -10486,15 +10503,24 @@ loc_8c0542fa:
 	bt loc_8c05435c
 
 loc_8c054320:
+	; if plmem[0x35c] != 0
+	; then goto loc_8c05433c
 	mov.b @r5,r2
 	tst r2,r2
 	bf loc_8c05433c
+	
+	; if plmem[0x34e] & 0x1000 == 0
+	; then return 0
 	mov.w @(loc_8c05439c,PC),r0
 	mov.w @(loc_8c05439e,PC),r2
 	mov.w @(r0,r4),r3
 	extu.w r3,r3
 	tst r2,r3
 	bt loc_8c054358
+	
+	; plmem[0x35c] = 0x01
+	; plmem[0x35d] = 0x0f
+	; return 0
 	mov 0x01,r3
 	mov 0x0F,r0
 	mov.b r3,@r5
@@ -10502,6 +10528,12 @@ loc_8c054320:
 	mov.b r0,@(0x1,r5)
 
 loc_8c05433c:
+	; plmem[0x35d]++
+	; if plmem[0x35d] < 0 {
+		; plmem[0x35c] = 0
+		; return 0
+	; }
+	
 	mov.b @(0x1,r5),r0
 	add 0xFF,r0
 	mov.b r0,@(0x1,r5)
@@ -10512,6 +10544,9 @@ loc_8c05433c:
 	mov.b r6,@r5
 
 loc_8c05434c:
+	; if ((uint16)plmem[0x34e] & 0x2000) == 0
+	; return 0
+	
 	mov.w @(loc_8c05439c,PC),r0
 	mov.w @(loc_8c0543a0,PC),r2
 	mov.w @(r0,r4),r3
@@ -10525,13 +10560,17 @@ loc_8c054358:
 
 loc_8c05435c:
 	mov 0x02,r0
+	; plmem[0x35c] = 0
 	mov.b r6,@r5
+	; plmem[0x361] = 2
 	mov.b r0,@(0x5,r5)
+	; return 1
 	mov 0x01,r0
 	rts
 	nop
 
 loc_8c054368:
+	; r0 = 0x0236
 	mov.w @(loc_8c0543a2,PC),r0
 	mov.l r14,@-r15
 	mov r4,r14
@@ -10539,16 +10578,20 @@ loc_8c054368:
 	mov.b @(r0,r14),r3
 	cmp/pl r3
 	bf loc_8c0543dc
+	; r3 = work.GameGlobalPointer
 	mov.l @(loc_8c0543b0,PC),r3
+	; r0 = 0x00a8
 	mov.w @(loc_8c0543a4,PC),r0
 	mov.l @r3,r2
 	mov.b @(r0,r2),r1
 	tst r1,r1
 	bt loc_8c0543bc
+	; r0 = 0x0236
 	mov.w @(loc_8c0543a2,PC),r0
 	mov 0xFF,r1
 	mov 0x01,r2
 	mov.b r1,@(r0,r14)
+	; r0 = 0x01a3
 	mov.w @(loc_8c0543a6,PC),r0
 	bra loc_8c0543e8
 	mov.b r2,@(r0,r14)
@@ -10591,8 +10634,11 @@ loc_8c0543b8:
 	#data 0x8c212cdb
 
 ;==============================================
+; continues from function starting at loc_8c0542e0
 loc_8c0543bc:
+	; r6 = 0x35c
 	mov.w @(loc_8c0543f0,PC),r6
+	; r5 = bank14.loc_8c14eb0c
 	mov.l @(loc_8c0543f4,PC),r5
 	add r14,r6
 	bsr loc_8c054e58
@@ -10600,6 +10646,7 @@ loc_8c0543bc:
 	extu.b r0,r0
 	tst r0,r0
 	bt loc_8c0543e8
+	; r0 = 0x0236
 	mov.w @(loc_8c0543f2,PC),r0
 	mov 0xFF,r3
 	mov.w @(loc_8c0543f0,PC),r5
