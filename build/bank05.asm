@@ -34,23 +34,41 @@ loc_8c050080:
 	nop
 
 ;==============================================
+; called from char programming
 loc_8c050084:
+
+; if(plmem[0x019e] != 0) {
+	; if(plmem[0x01d7] != 0) {
+		; plmem[0x01d7]++;
+		; pl_mem[y_velocity] = pl_mem[y_velocity] * 0.75
+	; }
+; }
+
+;;;;;;;
+	; if(plmem[0x019e] == 0) return
 	mov.w @(loc_8c0500fc,PC),r0
 	mov.b @(r0,r4),r3
 	tst r3,r3
 	bt loc_8c0500a8
+	
+	; if(plmem[0x01d7] == 0) return
 	mov.w @(loc_8c0500fe,PC),r0
 	mov.b @(r0,r4),r3
 	tst r3,r3
 	bf loc_8c0500a8
+	
 	mov.b @(r0,r4),r3
+	; fr3 = 0.75 = r1 = 0x3f400000
 	mov.l @(loc_8c050114,PC),r1
+	; plmem[0x01d7]++
 	add 0x01,r3
 	lds r1,fpul
 	mov.b r3,@(r0,r4)
-	mov 0x60,r0
+	; fr2 = pl_mem[y_velocity]
+	mov pl_mem.y_velocity,r0
 	fmov @(r0,r4),fr2
 	fsts fpul,fr3
+	; pl_mem[y_velocity] = pl_mem[y_velocity] * 0.75
 	fmul fr3,fr2
 	fmov fr2,@(r0,r4)
 
@@ -123,7 +141,7 @@ loc_8c05010c:
 loc_8c050110:
 	#data 0x43800000
 loc_8c050114:
-	#data 0x3f400000
+	#data 0x3f400000 ; 0.75
 loc_8c050118:
 	#data 0x8c26a518
 loc_8c05011c:
