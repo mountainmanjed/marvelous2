@@ -2656,7 +2656,7 @@ loc_8c0511e2:
 	mov.w @(loc_8c051264,PC),r0
 	fmov @(r0,r4),fr3
 	; fr3 = y position
-	mov pl_mem.y_place,r0
+	mov pl_mem.y_pos,r0
 	fmov @(r0,r4),fr2
 	; if plmem[0x041c] > y position, return
 	fcmp/gt fr3,fr2

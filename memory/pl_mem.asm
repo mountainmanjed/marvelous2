@@ -17,9 +17,13 @@
 #symbol unnamed_state 0x05				; byte
 #symbol Special_Move_State 0x06			; byte
 
+; used for many mash moves as well as sent's dash
+#symbol mash_timer 0x1c					; int16
+; used for ruby heart balls count, tron drill mash, psylocke psyblade
+#symbol mash_counter 0x1e				; int16
 
-#symbol x_place 0x34					; float
-#symbol y_place 0x38					; float
+#symbol x_pos 0x34						; float
+#symbol y_pos 0x38						; float
 
 #symbol x_sprite_scale 0x50				; float
 #symbol y_sprite_scale 0x54				; float
@@ -32,8 +36,21 @@
 #symbol y_drag 0x6c						; float
 
 ;==============================================
-;0x0080 - 0x05a4 requires use of data section
+;0x0080 - 0x05a4 requires use of data section,
+; and can't be used as immediates
 ;==============================================
+
+; if == 128 then opponent can preblock
+; also seems to control whether special cancels are allowed
+#symbol unk_flags 0x014a				; byte
+
+#symbol frame_count 0x0142				; int16
+#symbol sprite_id 0x0144				; int16
+
+#symbol current_cell_data 0x0154		; pointer
+
+#symbol anim_id 0x0158					; byte
+#symbol anim_group 0x0158				; byte
 
 ;Dat File Pointers
 #symbol Dat_GFX1 0x015c					; pointer
@@ -45,15 +62,52 @@
 #symbol attack_data 0x0174				; pointer
 #symbol Sprite_Extras 0x0178			; pointer
 #symbol Dat_FilePointer 0x017c			; pointer
-	
+
+#symbol FAC_ptr 0x0184					; pointer
+
+#symbol attack_data_index 0x01a1		; byte	
+
 #symbol sp_move_strength 0x01a3			; byte
 
-#symbol xflip 0x01d2					; byte
+#symbol hitbox_group_index 0x01c0		; byte
 
+#symbol xflip 0x01d2					; byte
+; 0 when walking forward, 1 when walking backward, 0xFF when not walking
+#symbol unk_01d3 0x01d3					; byte
+
+; if != 0, can't do normal jump specials. also prevents some SJ specials
+; like ruby heart ball and lightning attack
+#symbol special_move_jump_limiter 0x01d4; byte
+#symbol airdash_counter 0x01d5			; byte
+
+; unfly glitch is based on this value
+#symbol normal_jump_action_counter 0x01d6; byte
+
+#symbol double_jump_counter 0x01d9		; byte
+
+#symbol undizzy 0x01e1					; byte
 
 #symbol chain_strength 0x01e8			; byte
 #symbol sp_move_id 0x01e9				; byte
 
+; 00 = standing
+; 01 = crouching
+; 02 = jumping
+#symbol stance 0x01f9					; byte
+
+; 00 = not superjumping
+; 01 = superjump rising
+; 02 = superjump falling
+#symbol superjump_state 0x01fc			; byte
+
+; 00 = no corner
+; 01 = right corner
+; 02 = left corner
+#symbol corner_touching 0x01fd			; byte
+
+; 00 if doing a punch attack
+; 01 if doing a kick attack
+#symbol limb_choice 0x01fe				; byte
 
 ;Buffs
 #symbol Buff_Speed 0x0200				; byte
@@ -71,8 +125,27 @@
 
 #symbol EnemyPointer 0x020c				; pointer
 
+; 00 normally, 01 once you block in the current jump
+; causes guard breaks if normal jumping ([0x1fc] == 00)
+#symbol has_blocked_this_jump 0x0210	; byte
+
+#symbol air_hitstun_counter 0x0239		; byte
+
+; if >= 2, you can't be airthrown.
+; incremented when you get thrown
+; set to 0 when you press an attack, or when you land
+#symbol airthrow_protection_counter 0x023a	; byte
+
+#symbol dhc_move_id 0x0258				; byte
+
+; 0xff when in hitstun
+#symbol unk275 0x0275					; byte
+
 #symbol snapout 0x02a0					; byte
 
+#symbol health 0x0420					; int16
+
+#symbol assist_type 0x04c9				; byte
 
 ;==============================================
 ;Character IDs
