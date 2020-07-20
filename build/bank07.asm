@@ -10406,13 +10406,13 @@ loc_8c07482c:
 	fmov @(r0,r14),fr3
 	fsub fr4,fr3
 	fmov fr3,@(r0,r14)
-	mova @(0xE4,PC),r0
+	mova @(loc_8c07491c,PC),r0;41555555
 	fmov @r0,fr2
 
 loc_8c074838:
 	mov 0x5C,r0
 	fmov fr2,@(r0,r14)
-	mov.w @(0xD4,PC),r0
+	mov.w @(loc_8c074914,PC),r0; 041c
 	fmov @(r0,r4),fr3
 	mov 0x38,r0
 	fmov fr3,@(r0,r14)
@@ -10421,19 +10421,19 @@ loc_8c074838:
 	fmov fr3,@(r0,r14)
 	mov 0x23,r0
 	mov.b @(r0,r14),r3
-	mov.l @(0xD0,PC),r0
+	mov.l @(loc_8c074920,PC),r0; 8c15370b
 	extu.b r3,r3
 	shll r3
 	mov.b @(r0,r3),r2
 	tst r2,r2
 	bt loc_8c074862
-	mov.l @(0xC8,PC),r3
+	mov.l @(loc_8c074924,PC),r3;loc_8c042008
 	mov 0x1A,r5
 	jsr @r3
 	mov r14,r4
 
 loc_8c074862:
-	mov.w @(0xB0,PC),r0
+	mov.w @(loc_8c074916,PC),r0;019c
 	mov 0x44,r4
 	mov.b r4,@(r0,r14)
 	add 0x01,r0
@@ -10441,12 +10441,12 @@ loc_8c074862:
 	mov 0x23,r0
 	mov.b @(r0,r14),r3
 	mov 0x00,r4
-	mov.l @(0xB4,PC),r0
+	mov.l @(loc_8c074928,PC),r0 ;8c15370a
 	extu.b r3,r3
 	shll r3
 	mov.b @(r0,r3),r2
-	mov.w @(0x9A,PC),r0
-	mov.l @(0xAC,PC),r3
+	mov.w @(loc_8c074918,PC),r0;01a1
+	mov.l @(loc_8c07492c,PC),r3;8c2896b0
 	mov.b r2,@(r0,r14)
 	add 0x0B,r0
 	mov.w r4,@(r0,r14)
@@ -10465,14 +10465,14 @@ loc_8c074862:
 	mov 0x20,r0
 	mov.b @(r0,r14),r6
 	extu.b r6,r6
-	mov.l @(0x8C,PC),r0
+	mov.l @(loc_8c074930,PC),r0;loc_8c1536ec
 	shll r6
-	mov.l @(0x8C,PC),r2
+	mov.l @(loc_8c074934,PC),r2;loc_8c034e8c
 	mov 0x17,r5
 	mov.b @(r0,r6),r6
 	jsr @r2
 	mov r14,r4
-	mov.l @(0x84,PC),r2
+	mov.l @(loc_8c074938,PC),r2;loc_8c104434
 	mov 0x01,r3
 	mov.b r3,@r14
 	jsr @r2
@@ -10502,7 +10502,7 @@ loc_8c0748dc:
 	mov 0x00,r3
 	add 0x01,r0
 	mov.b r0,@(0x4,r14)
-	mov.w @(0x32,PC),r0
+	mov.w @(loc_8c07491a,PC),r0;012c
 	mov.b r3,@(r0,r14)
 	rts
 	mov.l @r15+,r14
@@ -10511,7 +10511,7 @@ loc_8c0748ec:
 	mov 0x20,r0
 	mov r14,r4
 	mov.b @(r0,r14),r2
-	mov.l @(0x48,PC),r0
+	mov.l @(loc_8c07493c,PC),r0;loc_8c15376c
 	extu.b r2,r2
 	shll2 r2
 	mov.l @(r0,r2),r3
@@ -10523,7 +10523,7 @@ loc_8c0748ec:
 ;==============================================
 loc_8c074902:
 	mov r4,r3
-	mov.l @(0x38,PC),r1
+	mov.l @(loc_8c074940,PC),r1;loc_8c1537a8
 	mov.l r4,@-r15
 	mov.b @(0x5,r3),r0
 	extu.b r0,r0
