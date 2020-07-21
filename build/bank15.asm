@@ -421,6 +421,26 @@
 #symbol loc_8c153874 0x8c153874
 #symbol loc_8c153884 0x8c153884
 #symbol loc_8c15388c 0x8c15388c
+#symbol loc_8c153898 0x8c153898
+#symbol loc_8c1538a8 0x8c1538a8
+#symbol loc_8c1538b8 0x8c1538b8
+#symbol loc_8c1538e0 0x8c1538e0
+#symbol loc_8c1538e8 0x8c1538e8
+#symbol loc_8c1538f8 0x8c1538f8
+#symbol loc_8c153908 0x8c153908
+#symbol loc_8c153918 0x8c153918
+#symbol loc_8c153928 0x8c153928
+#symbol loc_8c1539b8 0x8c1539b8
+#symbol loc_8c1539f8 0x8c1539f8
+#symbol loc_8c153a04 0x8c153a04
+#symbol loc_8c153a14 0x8c153a14
+#symbol loc_8c153a20 0x8c153a20
+#symbol loc_8c153a24 0x8c153a24
+
+#symbol loc_8c153a40 0x8c153a40
+
+#symbol loc_8c153a50 0x8c153a50
+#symbol loc_8c153a58 0x8c153a58
 
 
 ;#symbol loc_8c15 0x8c15
