@@ -81,6 +81,8 @@
 #symbol loc_8c0fd75c 0x8c0fd75c
 #symbol loc_8c0fd894 0x8c0fd894
 #symbol loc_8c0fd966 0x8c0fd966
+#symbol loc_8c0fdb4e 0x8c0fdb4e
+
 
 #symbol loc_8c0ff4b6 0x8c0ff4b6
 #symbol loc_8c0ffadc 0x8c0ffadc
