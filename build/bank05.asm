@@ -7612,80 +7612,119 @@ loc_8c0530d4:
 	#data 0x41a00000
 
 ;==============================================
+; called from both char programming and within 1st_bin
+; arguments:
+; r4 = plmem pointer
+; r5 = ???. byte
+	; incomplete list of r5 values used in files
+	; 0x15 = amingo, juggernaut, tron, gambit, strider
+	; 0x1D = juggernaut, tron, gambit, strider, megaman (near team megaman's super!)
+; notable: 1D is 15 with a different bit set, so it may be bitflags?
 loc_8c0530d8:
 	add 0xFC,r15
+	; r0 = 1d0
 	mov.w @(loc_8c0531bc,PC),r0
+	; r1 = r5_param
 	extu.b r5,r1
+	; r3 = plmem[1d0]
 	mov.b @(r0,r4),r3
+	; plmem[1d1] = plmem[1d0]
 	add 0x01,r0
 	mov.b r3,@(r0,r4)
+	; plmem[2d0] = r5_param
 	add 0xFF,r0
 	mov.b r5,@(r0,r4)
+	
+	; r6 = 0x00
+	; if r5_param == 0x15 goto loc_8c053156
 	mov r1,r0
 	nop
 	cmp/eq 0x15,r0
 	bt.s loc_8c053156
 	mov 0x00,r6
+	
+	; if r5_param == 0x1D goto loc_8c053146
 	mov r1,r0
 	nop
 	cmp/eq 0x1D,r0
 	bt loc_8c053146
+	
+	; if (byte)plmem[0x1d1] == 0x15 goto loc_8c053116
 	mov.w @(loc_8c0531be,PC),r0
 	mov.b @(r0,r4),r5
 	extu.b r5,r0
 	cmp/eq 0x15,r0
 	bt.s loc_8c053116
 	mov r0,r5
+	
+	; if (byte)plmem[0x1d1] == 0x1D goto loc_8c053116
 	mov r5,r0
 	nop
 	cmp/eq 0x1D,r0
 	bt loc_8c053116
+	
+	; if (byte)plmem[0x1d1] != 0x1E goto loc_8c05312c
 	mov r5,r0
 	nop
 	cmp/eq 0x1E,r0
 	bf loc_8c05312c
 
 loc_8c053116:
+	; if r5_param == 0x1E goto loc_8c05312c
 	mov r1,r0
 	nop
 	cmp/eq 0x1E,r0
 	bt loc_8c05312c
+	
+	; r0 = plmem[0x0255]
 	mov.w @(loc_8c0531c0,PC),r0
 	mov.b @(r0,r4),r0
 	extu.b r0,r0
 	cmp/eq 0x08,r0
 	bt loc_8c05312c
+	; plmem[0x0255] = r6
 	mov.w @(loc_8c0531c0,PC),r0
 	mov.b r6,@(r0,r4)
 
 loc_8c05312c:
+	; if r5_param == 0x20 goto loc_8c053140
 	mov r1,r0
 	nop
 	cmp/eq 0x20,r0
 	bt loc_8c053140
+	
+	; if r5_param == 0x1F goto loc_8c053140
 	mov r1,r0
 	nop
 	cmp/eq 0x1F,r0
 	bt loc_8c053140
-	bra loc_8c0532a4
+	
+	; else return
+	bra loc_8c0532a4 
 	nop
 
 loc_8c053140:
+	; plmem[0x0255] = r6
+	; goto return
 	mov.w @(loc_8c0531c0,PC),r0
 	bra loc_8c0532a4
 	mov.b r6,@(r0,r4)
 
 loc_8c053146:
+	; if r5_param != 0x15 && r5_param != 0x1D
+		; then return
 	cmp/eq 0x15,r0
 	bt loc_8c053156
 	mov r1,r0
 	nop
 	cmp/eq 0x1D,r0
 	bt loc_8c053156
-	bra loc_8c0532a4
+	bra loc_8c0532a4 
 	nop
 
 loc_8c053156:
+	; if r5_param == 0x15
+		; then plmem[0x027a] = 0xff
 	mov r1,r0
 	nop
 	cmp/eq 0x15,r0
@@ -7695,48 +7734,83 @@ loc_8c053156:
 	mov.b r3,@(r0,r4)
 
 loc_8c053164:
+	; if r5_param != 0x1D
+		; then return
 	mov r1,r0
 	nop
 	cmp/eq 0x1D,r0
 	bt loc_8c053170
+	; else return
 	bra loc_8c0532a4
 	nop
 
 loc_8c053170:
+	; r0 = 0x1d1
 	mov.w @(loc_8c0531be,PC),r0
 	mov.b @(r0,r4),r0
 	extu.b r0,r0
 	cmp/eq 0x15,r0
 	bf loc_8c05317e
+	; plmem[0x0255] = r6
 	mov.w @(loc_8c0531c0,PC),r0
 	mov.b r6,@(r0,r4)
 
 loc_8c05317e:
+	; r0 = 0x0255
 	mov.w @(loc_8c0531c0,PC),r0
 	mov 0x01,r6
+	; r5 = 0x8c2895f0
 	mov.l @(loc_8c0531c8,PC),r5
+	; r0 = (byte)plmem[0x0255]
 	mov.b @(r0,r4),r0
+	; r3 = work.GameGlobalPointer
 	mov.l @(loc_8c0531cc,PC),r3
 	extu.b r0,r0
+	
+	; r7 = [work.GameGlobalPointer]
+	; if (byte)plmem[0x0255] == 0x06
+		; then goto loc_8c0531f8
 	cmp/eq 0x06,r0
 	bt.s loc_8c0531f8
 	mov.l @r3,r7
+	
+	; r0 = 0x00ac
+	
 	mov.w @(loc_8c0531c4,PC),r0
+	; if [work.GameGlobalPointer][0x00ac] == 0
+		; goto loc_8c0531d0
 	mov.b @(r0,r7),r1
 	tst r1,r1
 	bf loc_8c0531d0
+	
+	; r1 = 0x01a4
 	mov.w @(loc_8c0531c6,PC),r1
+	
+	; r2 = 0x8c2895f0
 	mov r5,r2
+	
+	; r0 = (byte)plmem[0x2]
 	mov.b @(0x2,r4),r0
+	; r2 = 0x8c2895f0 + 0x4A
 	add 0x4A,r2
+	; r1 = (byte)plmem[0x01a4]
 	add r4,r1
 	mov.b @r1,r1
 	extu.b r0,r0
+	; r0 = 0x8c2895f0 + 0x4A + (byte)plmem[0x2]
 	add r2,r0
+	; r2 = 0
 	mov 0x00,r2
 	extu.b r1,r1
+	
+	; if (byte)plmem[0x01a4] > 00
+		; then r1 = (byte)plmem[0x01a4] + 1
 	cmp/gt r1,r2
 	addc r2,r1
+	
+	; r1 = r1 >> 1
+	; [0x8c2895f0 + 0x4A + (byte)plmem[0x2]] = (1 << r1) + 0x10
+	; goto loc_8c0531de
 	mov r6,r2
 	shar r1
 	shad r1,r2
@@ -7765,6 +7839,8 @@ loc_8c0531cc:
 
 ;----------------------------------------------
 loc_8c0531d0:
+	; r5 is 0x8c2895f0 already
+	; [0x8c2895f0 + 0x4a + (byte)plmem[0x02]] = 0x10
 	mov.b @(0x2,r4),r0
 	mov r5,r2
 	add 0x4A,r2
@@ -7774,12 +7850,18 @@ loc_8c0531d0:
 	mov.b r1,@r0
 
 loc_8c0531de:
+	; r5 is 0x8c2895f0 already
+	; r6 is 0x01 already
+	
+	; [0x8c2895f0 + 0x74 + (byte)plmem[0x02]] = 0x01
+	; [0x8c2895f0 + 0x88 + (byte)plmem[0x02]] = 0x01
+	; goto loc_8c05327c
 	mov.b @(0x2,r4),r0
 	mov r5,r3
 	add 0x74,r3
 	extu.b r0,r0
 	add r3,r0
-	mov.w @(loc_8c053316,PC),r3
+	mov.w @(loc_8c053316,PC),r3 ; r3 = 0x0088
 	mov.b r6,@r0
 	mov.b @(0x2,r4),r0
 	add r5,r3
@@ -7787,28 +7869,48 @@ loc_8c0531de:
 	add r3,r0
 	bra loc_8c05327c
 	mov.b r6,@r0
+	;
 
 loc_8c0531f8:
+	; r7 already is [work.GameGlobalPointer]
+	; r5 is 0x8c2895f0 already
+	; r6 is 0x01 already
+	
+	; r1 = [work.GameGlobalPointer][0x00ac]
 	mov.w @(loc_8c053318,PC),r0
 	mov.b @(r0,r7),r1
+	
+	; if [work.GameGlobalPointer][0x00ac] == 0 goto loc_8c053222
 	tst r1,r1
 	bf loc_8c053222
+	
+	; r2 = 0x8c2895f0 + 0x74 + (byte)plmem[0x02]
 	mov.b @(0x2,r4),r0
 	mov r5,r2
 	add 0x4A,r2
 	extu.b r0,r0
 	add r0,r2
+	
+	; r1 = plmem[0x01a4]
+	; if plmem[0x01a4] > 0
+		; then plmem[0x01a4]++
 	mov.w @(loc_8c05331a,PC),r0
 	mov 0x00,r3
 	mov.b @(r0,r4),r1
 	extu.b r1,r1
 	cmp/gt r1,r3
 	addc r3,r1
+	
+	; r3 = 1 << (plmem[0x01a4] >> 1)
 	mov r6,r3
 	shar r1
 	shad r1,r3
+	; r1 = (byte)[0x8c2895f0 + 0x74 + (byte)plmem[0x02]]
 	mov.b @r2,r1
+	; r1 = r1 | r3
 	or r3,r1
+	
+	; [0x8c2895f0 + 0x74 + (byte)plmem[0x02]] = (byte)r1
 	mov.b r1,@r2
 
 loc_8c053222:
@@ -7821,6 +7923,7 @@ loc_8c053222:
 	mov.b @r0,r2
 	add 0x01,r2
 	mov.b r2,@r0
+	; r0 = 0x00ac
 	mov.w @(loc_8c053318,PC),r0
 	mov.l @r1,r3
 	mov.b @(r0,r3),r2
@@ -7841,6 +7944,7 @@ loc_8c053222:
 	mov.b r6,@r0
 
 loc_8c053258:
+	; r3 = 0x0088
 	mov.w @(loc_8c053316,PC),r3
 	mov 0x03,r6
 	mov.b @(0x2,r4),r0
@@ -7853,6 +7957,7 @@ loc_8c053258:
 	exts.b r2,r2
 	cmp/gt r6,r2
 	bf loc_8c05327c
+	; r3 = 0x0088
 	mov.w @(loc_8c053316,PC),r3
 	mov.b @(0x2,r4),r0
 	add r5,r3
