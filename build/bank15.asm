@@ -465,4 +465,21 @@
 #symbol loc_8c153bf4 0x8c153bf4
 #symbol loc_8c153bf8 0x8c153bf8
 
+#symbol loc_8c153c0c 0x8c153c0c
+#symbol loc_8c153c14 0x8c153c14
+#symbol loc_8c153c18 0x8c153c18
+#symbol loc_8c153c1c 0x8c153c1c
+#symbol loc_8c153c3c 0x8c153c3c
+#symbol loc_8c153c44 0x8c153c44
+#symbol loc_8c153ca4 0x8c153ca4
+#symbol loc_8c153d1c 0x8c153d1c
+#symbol loc_8c153dac 0x8c153dac
+#symbol loc_8c153dbc 0x8c153dbc
+#symbol loc_8c153e24 0x8c153e24
+#symbol loc_8c153e8c 0x8c153e8c
+#symbol loc_8c153e98 0x8c153e98
+#symbol loc_8c153eac 0x8c153eac
+#symbol loc_8c153eb4 0x8c153eb4
+#symbol loc_8c153ebc 0x8c153ebc
+
 ;#symbol loc_8c15 0x8c15
