@@ -7556,25 +7556,45 @@ loc_8c05302e:
 	fmov fr1,@(r0,r4)
 
 ;==============================================
+; called from char programming
+
+; if player is not jumping stance (plmem[0x1f9] != 0x02) {
+	; plmem[0x1f9] = 0x02 (jumping stance)
+	; plmem[0x1fc] = 0x00 (force normal jump mode)
+	; plmem[0x2d4] = 0x00
+	; plmem[0x2d5] = 0x00
+	; plmem[0x2d6] = 0x11
+	; plmem[0x2d9] = 0x00
+; }
+; return;
+
 loc_8c053082:
 	mov.w @(loc_8c0530b6,PC),r0
 	mov.b @(r0,r4),r0
 	extu.b r0,r0
 	cmp/eq 0x02,r0
 	bt loc_8c0530aa
+	
+	
 	mov.w @(loc_8c0530b6,PC),r0
 	mov 0x02,r2
 	mov 0x00,r5
 	mov.b r2,@(r0,r4)
+	
 	add 0x03,r0
 	mov.b r5,@(r0,r4)
+	
+	
 	add 0xD8,r0
 	mov.b r5,@(r0,r4)
+	
 	add 0x01,r0
 	mov.b r5,@(r0,r4)
+	
 	add 0x01,r0
 	mov 0x11,r3
 	mov.b r3,@(r0,r4)
+	
 	add 0x03,r0
 	mov.b r5,@(r0,r4)
 
