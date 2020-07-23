@@ -11216,8 +11216,20 @@ loc_8c054624:
 	mov.l @r15+,r14
 
 ;==============================================
-; called from loc_8c054b34
+; called from loc_8c054b34 and char programming
+; r4 = plmem
+; r5 = byte, comes in as an argument? calling "r5arg" for now
+; returns a byte in r0?
 loc_8c054634:
+	; r13 = r5arg
+	; r12 = r5arg
+	; r0 = (byte)r5arg
+	; r5 = 0x75
+	; if (byte) r5arg != 0x01 {
+		; r11 = plmem + 0x025a
+		; r4 = r5arg
+		; goto loc_8c054684
+	; }
 	mov.l r14,@-r15
 	mov r4,r14
 	mov.l r13,@-r15
@@ -11235,21 +11247,34 @@ loc_8c054634:
 	sts.l pr,@-r15
 	bf.s loc_8c05465e
 	add 0x70,r5
+	; r11 = plmem + 0x025a
 	mov.w @(loc_8c0546d8,PC),r11
 	add r14,r11
 	bra loc_8c054684
 	mov r5,r4
 
 loc_8c05465e:
+	; if (byte)r5arg == 0x02 {
+		; r11 = plmem + 0x025b
+		; r4 = 0x10
+		; goto loc_8c054684
+	; }
 	cmp/eq 0x02,r0
 	bf loc_8c05466c
 	mov.w @(loc_8c0546d8,PC),r11
 	add r14,r11
 	add 0x01,r11
+	
 	bra loc_8c054684
 	mov r10,r4
 
 loc_8c05466c:
+	; r12 = r5arg + 0xFE
+	; if (byte)r5arg == 0x03 {
+		; r11 = plmem + 0x024a
+		; r4 = r5arg
+		; goto loc_8c054684
+	; }
 	extu.b r13,r0
 	cmp/eq 0x03,r0
 	bf.s loc_8c05467c
@@ -11260,24 +11285,36 @@ loc_8c05466c:
 	mov r5,r4
 
 loc_8c05467c:
+	; r11 = plmem + 0x024b
+	; r4 = 0x10
 	mov.w @(loc_8c0546da,PC),r11
 	mov r10,r4
 	add r14,r11
 	add 0x01,r11
 
 loc_8c054684:
+	; r0 = 0x525
+	; if plmem[0x525] != 0 then goto loc_8c054702
 	mov.w @(loc_8c0546dc,PC),r0
 	mov.b @(r0,r14),r2
 	tst r2,r2
 	bf loc_8c054702
+	
+	; r11 can be plmem + 0x24b or plmem + 0x24a
+	; if r2 != 0 then goto loc_8c0546e4
 	mov.b @r11,r2
 	tst r2,r2
 	bf.s loc_8c0546e4
 	extu.w r4,r5
+	
+	; if r5arg >= 0x03 goto loc_8c0546ba
 	mov 0x03,r3
 	extu.b r13,r13
 	cmp/ge r3,r13
 	bt loc_8c0546ba
+	
+	; if (plmem[0x0348] & r5arg) == 0
+	; then return 0
 	mov.w @(loc_8c0546de,PC),r0
 	mov.w @(r0,r14),r1
 	extu.w r1,r1
@@ -11287,8 +11324,13 @@ loc_8c054684:
 	nop
 
 loc_8c0546aa:
-	mov.w @(loc_8c0546e0,PC),r0
-	mov.w @(loc_8c0546e2,PC),r1
+	; if (plmem[0x034a] & 0x0c00) != 0 {
+		; r11 can be plmem + 0x24b or plmem + 0x24a
+		; [r11] = 0x10
+	; }
+	; return 0
+	mov.w @(loc_8c0546e0,PC),r0 ; 0x34a
+	mov.w @(loc_8c0546e2,PC),r1 ; 0xc00
 	mov.w @(r0,r14),r2
 	extu.w r2,r2
 	tst r1,r2
@@ -11297,6 +11339,12 @@ loc_8c0546aa:
 	nop
 
 loc_8c0546ba:
+	; if (plmem[0x0348] & r5_arg) != 0 {
+		; r11 can be plmem + 0x24b or plmem + 0x24a
+		; [r11] = 0x10
+	; }
+	; return 0
+	
 	mov.w @(loc_8c0546de,PC),r0
 	mov.w @(r0,r14),r0
 	extu.w r0,r0
@@ -11306,6 +11354,9 @@ loc_8c0546ba:
 	nop
 
 loc_8c0546c8:
+	; r11 can be plmem + 0x24b or plmem + 0x24a
+	; [r11] = 0x10
+	; return 0
 	bra loc_8c054948 ; return 0
 	mov.b r10,@r11
 
@@ -11337,6 +11388,10 @@ loc_8c0546e2:
 
 ;----------------------------------------------
 loc_8c0546e4:
+	; r11 can be plmem + 0x24b or plmem + 0x24a
+	; [r11] = [r11] + 0xFF
+	; if [r11] == 0 then return 0
+	
 	mov.b @r11,r2
 	add 0xFF,r2
 	mov.b r2,@r11
@@ -11347,6 +11402,9 @@ loc_8c0546e4:
 	nop
 
 loc_8c0546f4:
+	; else
+	; r1 = plmem[0x0340]
+	; if (plmem[0x0340] & r5arg) != 0 then return 0
 	mov.w @(loc_8c054730,PC),r0
 	mov.w @(r0,r14),r1
 	extu.w r1,r1
@@ -11356,6 +11414,10 @@ loc_8c0546f4:
 	nop
 
 loc_8c054702:
+	; can jump to here from much earlier in function too, keep in mind
+	
+	; plmem[0x5] is some unknown state-like variable
+	; if plmem[0x5] != 0 return 0
 	mov.b @(0x5,r14),r0
 	tst r0,r0
 	bt loc_8c05470c
@@ -11363,10 +11425,22 @@ loc_8c054702:
 	nop
 
 loc_8c05470c:
+	; if r5arg <= 0x02
+		; then goto loc_8c054734
+
 	mov 0x02,r2
 	extu.b r13,r3
 	cmp/gt r2,r3
 	bt loc_8c054734
+	
+	; plmem[0x01f9] is stance
+	; check if player is not 0x03 stance or jumping stance
+	; i dont know what 0x03 stance is...
+	
+	; if plmem[0x01f9] != 0x03 && plmem[0x01f9] != 0x02 {
+		; goto loc_8c054770
+	; }
+	; return 0
 	mov.w @(loc_8c054732,PC),r0
 	mov.b @(r0,r14),r4
 	extu.b r4,r0
@@ -11379,7 +11453,7 @@ loc_8c05470c:
 loc_8c054724:
 	mov r4,r0
 	nop
-	cmp/eq 0x02,r0
+	cmp/eq 0x02,r0 ; jumping stance comparison
 	bf loc_8c054770
 	bra loc_8c054948 ; return 0
 	nop
@@ -11392,6 +11466,9 @@ loc_8c054732:
 
 ;----------------------------------------------
 loc_8c054734:
+	; r0 = 0x01f9
+	; if plmem[0x01f9] == 0x03 then return 0
+	; else r4 = plmem[0x01f9]
 	mov.w @(loc_8c054878,PC),r0
 	mov.b @(r0,r14),r4
 	extu.b r4,r0
@@ -12098,6 +12175,8 @@ loc_8c054bae:
 	mov.l @r15+,r14
 
 ;==============================================
+; called by loc_8c054d04
+; returns 0 or 1 in r0
 loc_8c054bb8:
 	mov.w @(loc_8c054c4c,PC),r0;1d0
 	mov.l r14,@-r15
@@ -12259,6 +12338,7 @@ loc_8c054c6a:
 	bf loc_8c054cce
 
 loc_8c054cca:
+	; return 0
 	bra loc_8c054cfc
 	mov 0x00,r0
 
@@ -12285,6 +12365,7 @@ loc_8c054cce:
 	mov.l @(loc_8c054d90,PC),r6
 	jsr @r2
 	mov r14,r4
+	; return 1
 	mov 0x01,r0
 
 loc_8c054cfc:
@@ -12294,6 +12375,13 @@ loc_8c054cfc:
 	mov.l @r15+,r14
 
 ;==============================================
+; called by char programming 
+
+; r5 = 0x01
+; calls loc_8c054bb8()
+; if r0 == 0 then return 1
+; else return 0
+
 loc_8c054d04:
 	sts.l pr,@-r15
 	bsr loc_8c054bb8

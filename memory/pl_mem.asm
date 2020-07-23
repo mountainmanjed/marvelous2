@@ -22,6 +22,10 @@
 ; used for ruby heart balls count, tron drill mash, psylocke psyblade
 #symbol mash_counter 0x1e				; int16
 
+; airdash direction(?)
+#symbol airdash_direction 0x22			; byte
+
+; absolute to world/stage
 #symbol x_pos 0x34						; float
 #symbol y_pos 0x38						; float
 
@@ -39,6 +43,9 @@
 ;0x0080 - 0x05a4 requires use of data section,
 ; and can't be used as immediates
 ;==============================================
+
+#symbol x_pos_screenspace 0xe0			; float
+#symbol y_pos_screenspace 0xe4			; float
 
 ; if == 128 then opponent can preblock
 ; also seems to control whether special cancels are allowed
@@ -86,13 +93,31 @@
 #symbol double_jump_counter 0x01d9		; byte
 
 #symbol undizzy 0x01e1					; byte
+; counts down, when reaches 0, sets plmem[0x1e1] = 0
+#symbol undizzy_reset_timer 0x01e1		; byte
 
 #symbol chain_strength 0x01e8			; byte
 #symbol sp_move_id 0x01e9				; byte
 
+; invincible to throws when > 0
+; timer, counts down, set when getting up
+#symbol throw_immunity 0x01eb			; byte
+
+; invincible to attack when > 0
+; timer, counts down, set when tagged out
+#symbol attack_immunity 0x01ed			; byte
+
+; counts down. when > 0x00, prevents special/super moves, airdash, tag
+#symbol disable_special_move_counter 0x01f2; byte
+
+; counts down. when > 0x00, prevents all moves
+; set during fly screen dash
+#symbol disable_all_move_counter 0x01f3	; byte
+
 ; 00 = standing
 ; 01 = crouching
 ; 02 = jumping
+; 03 = ??? used near loc_8c05470c
 #symbol stance 0x01f9					; byte
 
 ; 00 = not superjumping
@@ -113,11 +138,13 @@
 #symbol Buff_Speed 0x0200				; byte
 #symbol Flight_Flag 0x0201				; byte
 #symbol Buff_HyperArmor 0x0202			; byte
+; for magneto at least this toggles his idle floating anim
 #symbol Buff_Unk_03 0x0203				; byte
 #symbol Buff_Unk_04 0x0204				; byte
 #symbol Buff_Damage 0x0205				; byte
 #symbol Buff_Defense 0x0206				; byte
-#symbol Buff_Unk_07 0x0207				; byte
+; how hard the screen shakes when you land
+#symbol landing_screen_shake_strength 0x0207 ; byte
 #symbol Buff_Unk_08 0x0208				; byte
 #symbol Buff_Unk_09 0x0209				; byte
 #symbol Buff_Unk_0a 0x020a				; byte
@@ -128,6 +155,10 @@
 ; 00 normally, 01 once you block in the current jump
 ; causes guard breaks if normal jumping ([0x1fc] == 00)
 #symbol has_blocked_this_jump 0x0210	; byte
+
+; if 1, camera follows this character (used for fs dummy)
+; opponent can leave edge of screen, and will be forced to fs-dash in
+#symbol flying_screen_camera_follows 0x0239	; byte
 
 #symbol air_hitstun_counter 0x0239		; byte
 
@@ -141,11 +172,18 @@
 ; 0xff when in hitstun
 #symbol unk275 0x0275					; byte
 
-#symbol snapout 0x02a0					; byte
+#symbol x_opponent_distance 0x0298		; float
+
+#symbol snapout_disable_timer 0x02a0	; int16
 
 #symbol health 0x0420					; int16
+; might be red health??
+#symbol health2 0x0424					; int16
 
 #symbol assist_type 0x04c9				; byte
+
+; if != 0, controlled by cpu
+#symbol is_cpu 0x0525					; byte
 
 ;==============================================
 ;Character IDs
