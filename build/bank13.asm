@@ -154,5 +154,7 @@
 #symbol loc_8c13ad18 0x8c13ad18
 #symbol loc_8c13ad48 0x8c13ad48
 #symbol loc_8c13ad50 0x8c13ad50
+#symbol loc_8c13ad64 0x8c13ad64
+#symbol loc_8c13ada4 0x8c13ada4
 
 ;#symbol loc_8c13 0x8c13

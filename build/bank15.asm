@@ -471,8 +471,10 @@
 #symbol loc_8c153c1c 0x8c153c1c
 #symbol loc_8c153c3c 0x8c153c3c
 #symbol loc_8c153c44 0x8c153c44
+#symbol loc_8c153c74 0x8c153c74
 #symbol loc_8c153ca4 0x8c153ca4
 #symbol loc_8c153d1c 0x8c153d1c
+#symbol loc_8c153d2c 0x8c153d2c
 #symbol loc_8c153dac 0x8c153dac
 #symbol loc_8c153dbc 0x8c153dbc
 #symbol loc_8c153e24 0x8c153e24
@@ -481,5 +483,33 @@
 #symbol loc_8c153eac 0x8c153eac
 #symbol loc_8c153eb4 0x8c153eb4
 #symbol loc_8c153ebc 0x8c153ebc
+#symbol loc_8c153ecc 0x8c153ecc
+
+#symbol loc_8c153ee0 0x8c153ee0
+#symbol loc_8c153ee8 0x8c153ee8
+#symbol loc_8c153eec 0x8c153eec
+#symbol loc_8c153ef0 0x8c153ef0
+#symbol loc_8c153efc 0x8c153efc
+
+#symbol loc_8c153f08 0x8c153f08
+#symbol loc_8c153f20 0x8c153f20
+#symbol loc_8c153f28 0x8c153f28
+#symbol loc_8c153f40 0x8c153f40
+#symbol loc_8c153f48 0x8c153f48
+#symbol loc_8c153f50 0x8c153f50
+#symbol loc_8c153f5c 0x8c153f5c
+#symbol loc_8c153f60 0x8c153f60
+#symbol loc_8c153f64 0x8c153f64
+#symbol loc_8c153f70 0x8c153f70
+#symbol loc_8c153f80 0x8c153f80
+#symbol loc_8c153f88 0x8c153f88
+#symbol loc_8c153f98 0x8c153f98
+#symbol loc_8c153fa4 0x8c153fa4
+#symbol loc_8c153fb0 0x8c153fb0
+#symbol loc_8c153fc0 0x8c153fc0
+#symbol loc_8c153fd0 0x8c153fd0
+#symbol loc_8c153fe0 0x8c153fe0
+#symbol loc_8c153ff4 0x8c153ff4
+#symbol loc_8c153ffc 0x8c153ffc
 
 ;#symbol loc_8c15 0x8c15
