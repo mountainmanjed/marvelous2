@@ -112,7 +112,7 @@
 
 ; counts down. when > 0x00, prevents all moves
 ; set during fly screen dash
-#symbol disable_all_move_counter 0x01f2; byte
+#symbol disable_all_move_counter 0x01f3	; byte
 
 ; 00 = standing
 ; 01 = crouching
