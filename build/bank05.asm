@@ -12175,6 +12175,8 @@ loc_8c054bae:
 	mov.l @r15+,r14
 
 ;==============================================
+; called by loc_8c054d04
+; returns 0 or 1 in r0
 loc_8c054bb8:
 	mov.w @(loc_8c054c4c,PC),r0;1d0
 	mov.l r14,@-r15
@@ -12336,6 +12338,7 @@ loc_8c054c6a:
 	bf loc_8c054cce
 
 loc_8c054cca:
+	; return 0
 	bra loc_8c054cfc
 	mov 0x00,r0
 
@@ -12362,6 +12365,7 @@ loc_8c054cce:
 	mov.l @(loc_8c054d90,PC),r6
 	jsr @r2
 	mov r14,r4
+	; return 1
 	mov 0x01,r0
 
 loc_8c054cfc:
@@ -12371,6 +12375,13 @@ loc_8c054cfc:
 	mov.l @r15+,r14
 
 ;==============================================
+; called by char programming 
+
+; r5 = 0x01
+; calls loc_8c054bb8()
+; if r0 == 0 then return 1
+; else return 0
+
 loc_8c054d04:
 	sts.l pr,@-r15
 	bsr loc_8c054bb8
