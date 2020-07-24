@@ -2,6 +2,11 @@
 
 #symbol loc_8c0d26e8 0x8c0d26e8
 
+#symbol loc_8c0d4e58 0x8c0d4e58
+
+#symbol loc_8c0d586c 0x8c0d586c
+#symbol loc_8c0d5e24 0x8c0d5e24
+
 #symbol loc_8c0d70cc 0x8c0d70cc
 #symbol loc_8c0d7ec8 0x8c0d7ec8
 

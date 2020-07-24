@@ -156,5 +156,17 @@
 #symbol loc_8c13ad50 0x8c13ad50
 #symbol loc_8c13ad64 0x8c13ad64
 #symbol loc_8c13ada4 0x8c13ada4
+#symbol loc_8c13ade0 0x8c13ade0
+#symbol loc_8c13adfc 0x8c13adfc
+#symbol loc_8c13ae18 0x8c13ae18
+#symbol loc_8c13ae88 0x8c13ae88
+#symbol loc_8c13ae94 0x8c13ae94
+#symbol loc_8c13ae98 0x8c13ae98
+#symbol loc_8c13aea8 0x8c13aea8
+#symbol loc_8c13aec8 0x8c13aec8
+#symbol loc_8c13aed8 0x8c13aed8
+#symbol loc_8c13aedc 0x8c13aedc
 
+#symbol loc_8c13aeec 0x8c13aeec
+#symbol loc_8c13aefc 0x8c13aefc
 ;#symbol loc_8c13 0x8c13
