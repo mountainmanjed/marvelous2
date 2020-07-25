@@ -1,6 +1,9 @@
 ;#symbol loc_8c13 0x8c13
 #symbol loc_8c132540 0x8c132540
 #symbol loc_8c132640 0x8c132640
+
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;Start of Data 8c132768 or is it 8c1327a8?
 #symbol loc_8c1327a8 0x8c1327a8
 #symbol loc_8c1327dc 0x8c1327dc
 #symbol loc_8c1327ec 0x8c1327ec
