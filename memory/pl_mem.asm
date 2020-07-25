@@ -47,6 +47,10 @@
 #symbol x_pos_screenspace 0xe0			; float
 #symbol y_pos_screenspace 0xe4			; float
 
+; not sure, seems to be 1 all the time
+; loc_8c05176e sets it to 1
+#symbol unk_012c 0x012c				; byte
+
 ; if == 128 then opponent can preblock
 ; also seems to control whether special cancels are allowed
 #symbol unk_flags 0x014a				; byte
@@ -77,6 +81,9 @@
 #symbol sp_move_strength 0x01a3			; byte
 
 #symbol hitbox_group_index 0x01c0		; byte
+
+; seems to control what animation/move to play
+#symbol unk_01d0 0x01d0					; byte
 
 #symbol xflip 0x01d2					; byte
 ; 0 when walking forward, 1 when walking backward, 0xFF when not walking
@@ -175,6 +182,13 @@
 #symbol x_opponent_distance 0x0298		; float
 
 #symbol snapout_disable_timer 0x02a0	; int16
+
+; compared using tst 0x0400 in omega red char programming,
+; which indicates it might be bit flags?
+#symbol unk_034e 0x034e					; int16
+
+; loaded around loc_8c0518c6 and compared to y position
+#symbol unk_041c_float 0x041c			; float
 
 #symbol health 0x0420					; int16
 ; might be red health??

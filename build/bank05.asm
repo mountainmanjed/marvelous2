@@ -3525,6 +3525,8 @@ loc_8c051768:
 	mov.l @r15+,r14
 
 ;==============================================
+; called at least by omega red's airdash char programming (0xCE32BCE)
+; and also some places from 1st_bin
 loc_8c05176e:
 	sts.l pr,@-r15
 	bsr loc_8c05218a
@@ -3532,16 +3534,22 @@ loc_8c05176e:
 	mov.l @r15,r4
 	add 0x04,r15
 	lds.l @r15+,pr
+	
+	; sets plmem[0x12c] = 0x01
 	mov.w @(loc_8c051838,PC),r0
 	mov 0x01,r3
 	mov.l r14,@-r15
 	mov r4,r14
 	sts.l pr,@-r15
 	mov.b r3,@(r0,r14)
+	
+	; test if not flying plmem[0x0201] != 0 and goto loc_8c05179a
 	mov.w @(loc_8c05183a,PC),r0
 	mov.b @(r0,r14),r2
 	tst r2,r2
 	bt loc_8c05179a
+	
+	; otherwise call loc_8c0532a8(0x18) and return
 	lds.l @r15+,pr
 	mov.l @(loc_8c051844,PC),r3
 	mov 0x18,r5
@@ -3550,20 +3558,27 @@ loc_8c05176e:
 	mov.l @r15+,r14
 
 loc_8c05179a:
+	; r0 = 1fc
+	; if not superjumping goto loc_8c0517aa
 	mov.w @(loc_8c05183c,PC),r0
 	mov.b @(r0,r14),r3
 	tst r3,r3
 	bt loc_8c0517aa
+	
+	; else goto loc_8c0517be
 	lds.l @r15+,pr
 	mov r14,r4
 	bra loc_8c0517be
 	mov.l @r15+,r14
 
 loc_8c0517aa:
+	; r5 = 0x03
+	; call loc_8c0530d8
 	mov.l @(loc_8c051848,PC),r3
 	mov 0x03,r5
 	jsr @r3
 	mov r14,r4
+	
 	mov 0x01,r0
 	mov r14,r4
 	mov.b r0,@(0x6,r14)
@@ -3592,6 +3607,7 @@ loc_8c0517dc:
 	mov 0x02,r3
 
 loc_8c0517de:
+	; r0 = 0x1fc
 	mov.w @(loc_8c05183c,PC),r0
 	mov r14,r4
 	mov.b r3,@(r0,r14)
@@ -7637,8 +7653,10 @@ loc_8c0530d4:
 ; r4 = plmem pointer
 ; r5 = ???. byte
 	; incomplete list of r5 values used in files
+	; 0x03 = from loc_8c05176e
 	; 0x15 = amingo, juggernaut, tron, gambit, strider
 	; 0x1D = juggernaut, tron, gambit, strider, megaman (near team megaman's super!)
+	; 0x18 = from loc_8c05176e
 ; notable: 1D is 15 with a different bit set, so it may be bitflags?
 loc_8c0530d8:
 	add 0xFC,r15
@@ -8012,33 +8030,54 @@ loc_8c0532a4:
 	add 0x04,r15
 
 ;==============================================
+; called from all over 1st_bin
+; related to setting up moves or animations maybe?
+
+; r5 is an argument that's passed onto loc_8c0530d8()
+; but also used here
 loc_8c0532a8:
 	mov.l r14,@-r15
 	mov 0x01,r3
 	mov.l r13,@-r15
 	mov r4,r14
+	; plmem[0x12c] = 1
 	mov.w @(loc_8c05331e,PC),r0
 	mov r5,r13
 	sts.l pr,@-r15
 	mov r13,r5
 	mov.b r3,@(r0,r14)
+	
+	; call loc_8c0530d8(r5)
 	bsr loc_8c0530d8
 	mov r14,r4
 	mov 0x00,r4
 	mov r4,r0
 	nop
+	; r2 = 0x284
 	mov.w @(loc_8c053320,PC),r2
+	; reset move state to the start of a move
+	; plmem[0x5] = 0
+	; plmem[0x6] = 0
+	; plmem[0x7] = 0
+	
+	; r1 = plmem + 0x50
+	; r2 = plmem + 0x284
 	mov r14,r1
 	mov.b r0,@(0x7,r14)
 	add 0x50,r1
 	mov.b r0,@(0x6,r14)
 	add r14,r2
 	mov.b r0,@(0x5,r14)
+	
+	; plmem[0x48] = 0
+	; r0 = 0x0c
+	; call bank12.loc_8c1294c8, maybe uses r0 as argument?
 	mov 0x48,r0
 	mov.l @(loc_8c053338,PC),r3
 	mov.l r4,@(r0,r14)
 	jsr @r3
 	mov 0x0C,r0
+	
 	extu.b r13,r0
 	cmp/eq 0x17,r0
 	bt loc_8c0532ea
@@ -14470,6 +14509,7 @@ loc_8c0559d0:
 
 ;==============================================
 ;Airdash jump subroutine 2
+; returns 0 or 1 in r0
 loc_8c0559da:
 	mov.w @(loc_8c055a7c,PC),r0;1f2
 	mov.b @(r0,r4),r3
@@ -14543,7 +14583,7 @@ loc_8c055a06:
 	bf loc_8c055a6c
 
 	mov.l @(loc_8c055a90,PC),r3;8c26a5b8
-	mova @(0x3C,PC),r0
+	mova @(loc_8c055a8c,PC),r0
 	fmov @r0,fr3;c2892492
 	mov 0x38,r0
 	fmov @r3,fr2
@@ -27587,6 +27627,7 @@ loc_8c05ad3c:
 	mov.l @(r0,r14),r3
 	mov 0x54,r0
 	mov.l @(r0,r3),r2
+	; in omega red's case, this jumps to CE32BCE
 	jmp @r2
 	mov.l @r15+,r14
 
