@@ -9390,9 +9390,9 @@ loc_8c013d7a:
 loc_8c013d7c:
 	#data 0x8c1441f0
 loc_8c013d80:
-	#data 0x8c1292d4
+	#data bank12.loc_8c1292d4
 loc_8c013d84:
-	#data 0x8c11e730
+	#data bank11.loc_8c11e730
 
 ;----------------------------------------------
 loc_8c013d88:

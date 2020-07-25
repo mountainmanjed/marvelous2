@@ -14528,7 +14528,7 @@ loc_8C097648:
 
 #align4
 loc_8C09764C:
-#data bank15.loc_8c155b00
+#data bank15.loc_8c155c00
 
 loc_8C097650:
 #data bank12.loc_8c129560
@@ -14859,7 +14859,7 @@ loc_8C097918:
 
 #align4
 loc_8C09791C:
-#data bank15.loc_8c155b74
+#data bank15.loc_8c155c74
 
 loc_8C097920:
 #data 0x8C2896B0
@@ -15043,10 +15043,10 @@ loc_8C097A60:
 
 #align4
 loc_8C097A64:
-#data bank15.loc_8c155b10
+#data bank15.loc_8c155c10
 
 loc_8C097A68:
-#data bank15.loc_8c155b60
+#data bank15.loc_8c155c60
 
 loc_8C097A6C:
 #data bank03.loc_8c034e8c
@@ -15309,10 +15309,10 @@ loc_8C097C88:
 
 #align4
 loc_8C097C8C:
-#data bank15.loc_8c155b84
+#data bank15.loc_8c155c84
 
 loc_8C097C90:
-#data bank15.loc_8c155b90
+#data bank15.loc_8c155c90
 
 loc_8C097C94:
 #data bank12.loc_8c129560
@@ -15490,10 +15490,10 @@ loc_8C097DC8:
 
 #align4
 loc_8C097DCC:
-#data bank15.loc_8c155bA0
+#data bank15.loc_8c155cA0
 
 loc_8C097DD0:
-#data bank15.loc_8c155bA4
+#data bank15.loc_8c155cA4
 
 loc_8C097DD4:
 #data 0x41D55555
@@ -15637,10 +15637,10 @@ loc_8C097EEC:
 #data bank04.loc_8c0450C0
 
 loc_8C097EF0:
-#data bank15.loc_8c155bC0
+#data bank15.loc_8c155cC0
 
 loc_8C097EF4:
-#data bank15.loc_8c155bCc
+#data bank15.loc_8c155ccc
 
 
 loc_8C097EF8:
@@ -15880,7 +15880,7 @@ loc_8C098064:
 #data bank03.loc_8c034e8c
 
 loc_8C098068:
-#data bank15.loc_8c155bDc
+#data bank15.loc_8c155cdc
 
 
 loc_8C09806C:
@@ -16321,7 +16321,7 @@ loc_8C098440:
 #data bank03.loc_8c034e8c
 
 loc_8C098444:
-#data bank15.loc_8c155bE8
+#data bank15.loc_8c155cE8
 
 loc_8C098448:
 #data bank12.loc_8c129560
@@ -16661,7 +16661,7 @@ loc_8C098728:
 #data bank03.loc_8c034e8c
 
 loc_8C09872C:
-#data bank15.loc_8c155bF8
+#data bank15.loc_8c155cF8
 
 loc_8C098730:
 #data bank12.loc_8c129560
@@ -23014,10 +23014,10 @@ loc_8C09B8FC:
 #data bank12.loc_8c1294C8
 
 loc_8C09B900:
-#data bank15.loc_8c155e00
+#data bank15.loc_8c155f00
 
 loc_8C09B904:
-#data bank15.loc_8c155e10
+#data bank15.loc_8c155f10
 #data 0x3FD55555
 #data 0x8C2896B0
 
@@ -23139,7 +23139,7 @@ loc_8C09B9FC:
 #data loc_8c09B9Dc
 
 loc_8C09BA00:
-#data bank15.loc_8c155e24
+#data bank15.loc_8c155f24
 
 loc_8C09BA04:
 #data 0x6E432FE6
@@ -23399,7 +23399,7 @@ loc_8C09BC78:
 
 #align4
 loc_8C09BC80:
-#data bank15.loc_8c155e34
+#data bank15.loc_8c155f34
 
 loc_8C09BC84:
 #data 0x6E532FE6
@@ -23830,10 +23830,10 @@ loc_8C09C144:
 
 #align4
 loc_8C09C154:
-#data bank15.loc_8c155e44
+#data bank15.loc_8c155f44
 
 loc_8C09C158:
-#data bank15.loc_8c155e64
+#data bank15.loc_8c155f64
 
 loc_8C09C15C:
 #data bank03.loc_8c034e8c
