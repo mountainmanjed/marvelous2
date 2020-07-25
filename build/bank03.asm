@@ -157,7 +157,7 @@ loc_8c030220:
 loc_8c030224:
 	#data bank12.loc_8c120950
 loc_8c030228:
-	#data bank12.loc_8c1201e0
+	#data bank11.loc_8c1201e0
 
 ;----------------------------------------------
 loc_8c03022c:
@@ -594,7 +594,7 @@ loc_8c0304f8:
 loc_8c0304fc:
 	#data bank12.loc_8c120950
 loc_8c030500:
-	#data bank12.loc_8c1201e0
+	#data bank11.loc_8c1201e0
 loc_8c030504:
 	#data bank12.loc_8c122710
 loc_8c030508:

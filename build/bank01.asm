@@ -20058,7 +20058,7 @@ loc_8c0183f8:
 loc_8c0183fc:
 	#data bank02.loc_8c02e334
 loc_8c018400:
-	#data bank12.loc_8c1201e0
+	#data bank11.loc_8c1201e0
 loc_8c018404:
 	#data bank14.loc_8c144830
 loc_8c018408:

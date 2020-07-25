@@ -1485,7 +1485,7 @@ loc_8c0509e0:
 	#data 0x0130
 	#align4
 loc_8c0509e4:
-	#data bank10.loc_8c10004a
+	#data bank0f.loc_8c10004a
 loc_8c0509e8:
 	#data loc_8c056f10
 loc_8c0509ec:
