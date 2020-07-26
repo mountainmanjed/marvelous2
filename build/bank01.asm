@@ -17217,7 +17217,7 @@ loc_8c017100:
 	add 0xF0,r15
 	mov.l @(loc_8c0171e0,PC),r2
 	mov r15,r5
-	mov.l @(loc_8c0171e4,PC),r3
+	mov.l @(loc_8c0171e4,PC),r3;loc_8c1294bc
 	mov r15,r1
 	jsr @r3
 	mov 0x10,r0
