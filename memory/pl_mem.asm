@@ -53,7 +53,13 @@
 
 ; if == 128 then opponent can preblock
 ; also seems to control whether special cancels are allowed
-#symbol unk_flags 0x014a				; byte
+; 64
+; seems to directly inherit from 0x10 of animation structs in pldat files
+; definitely flags
+; 0x20 = can't special cancel, super cancel, or call assist
+; 0x40 = recovery frames?
+; 0x80 = opponent can proximity block
+#symbol anim_flags 0x014a				; byte
 
 #symbol frame_count 0x0142				; int16
 #symbol sprite_id 0x0144				; int16
