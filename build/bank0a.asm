@@ -3491,25 +3491,25 @@ loc_8C0A1F60:
 
 #align4
 loc_8C0A1F7C:
-#data 0x8C13B018
+#data bank13.loc_8c13B018
 
 loc_8C0A1F80:
 #data bank12.loc_8c129620
 
 loc_8C0A1F84:
-#data 0x8C13B01c
+#data bank13.loc_8c13B01c
 
 loc_8C0A1F88:
-#data 0x8C13B02c
+#data bank13.loc_8c13B02c
 
 loc_8C0A1F8C:
 #data bank12.loc_8c1294C8
 
 loc_8C0A1F90:
-#data 0x8C13B038
+#data bank13.loc_8c13B038
 
 loc_8C0A1F94:
-#data 0x8C13B03e
+#data bank13.loc_8c13B03e
 
 loc_8C0A1F98:
 #data bank12.loc_8c129560
@@ -3641,7 +3641,7 @@ loc_8C0A20D4:
 #data bank03.loc_8c034e8c
 
 loc_8C0A20D8:
-#data 0x8C13B046
+#data bank13.loc_8c13B046
 
 loc_8C0A20DC:
 #data bank12.loc_8c129620

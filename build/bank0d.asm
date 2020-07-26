@@ -119,7 +119,7 @@ loc_8C0D0162:
 
 #align4
 loc_8C0D0168:
-#data 0x8c13B08c
+#data bank13.loc_8c13B08c
 
 loc_8C0D016C:
 #data bank03.loc_8c034C38
@@ -287,7 +287,7 @@ loc_8C0D029C:
 #data 0x8c15C9B8
 
 loc_8C0D02A0:
-#data 0x8c13B08c
+#data bank13.loc_8c13B08c
 
 loc_8C0D02A4:
 #data bank03.loc_8c034C38
@@ -488,7 +488,7 @@ loc_8C0D0414:
 #data bank03.loc_8c034C38
 
 loc_8C0D0418:
-#data 0x8c13B0Ac
+#data bank13.loc_8c13B0Ac
 
 
 loc_8C0D041C:
@@ -680,13 +680,13 @@ loc_8C0D0574:
 #data bank03.loc_8c034C38
 
 loc_8C0D0578:
-#data 0x8c13B0Ac
+#data bank13.loc_8c13B0Ac
 
 loc_8C0D057C:
 #data bank04.loc_8c0450C0
 
 loc_8C0D0580:
-#data 0x8c13B088
+#data bank13.loc_8c13B088
 
 loc_8C0D0584:
 #data 0x4F222FE6
@@ -2571,7 +2571,7 @@ loc_8C0D13B4:
 #data bank04.loc_8c0450C0
 
 loc_8C0D13B8:
-#data 0x8c13B0D0
+#data bank13.loc_8c13B0D0
 #data 0x4F222FE6
 #data 0x6E437FF8
 #data 0x00096053
@@ -4698,7 +4698,7 @@ loc_8C0D2350:
 #data bank03.loc_8c034C38
 
 loc_8C0D2354:
-#data 0x8c13B15c
+#data bank13.loc_8c13B15c
 
 loc_8C0D2358:
 #data bank03.loc_8c034D8c
@@ -13487,7 +13487,7 @@ loc_8C0D6250:
 
 #align4
 loc_8C0D6254:
-#data 0x8c1355D4
+#data bank13.loc_8c1355D4
 
 loc_8C0D6258:
 #data bank03.loc_8c03319e
@@ -13852,7 +13852,7 @@ loc_8C0D64FA:
 
 #align4
 loc_8C0D64FC:
-#data 0x8c1355D4
+#data bank13.loc_8c1355D4
 
 loc_8C0D6500:
 #data bank03.loc_8c03319e
@@ -17315,7 +17315,7 @@ loc_8C0D8154:
 #data bank12.loc_8c1294C8
 
 loc_8C0D8158:
-#data 0x8c1355D4
+#data bank13.loc_8c1355D4
 
 loc_8C0D815C:
 #data 0x8c15D1B8
@@ -30478,10 +30478,10 @@ loc_8C0DE200:
 #data bank03.loc_8c034C38
 
 loc_8C0DE204:
-#data 0x8c13B2E0
+#data bank13.loc_8c13B2E0
 
 loc_8C0DE208:
-#data 0x8c13B2D8
+#data bank13.loc_8c13B2D8
 
 
 loc_8C0DE20C:
@@ -30619,10 +30619,10 @@ loc_8C0DE390:
 #data bank03.loc_8c034C38
 
 loc_8C0DE394:
-#data 0x8c13B2E8
+#data bank13.loc_8c13B2E8
 
 loc_8C0DE398:
-#data 0x8c13B338
+#data bank13.loc_8c13B338
 
 loc_8C0DE39C:
 #data bank04.loc_8c04223a
@@ -30839,7 +30839,7 @@ loc_8C0DE5F8:
 #data 0x8c15DBA0
 
 loc_8C0DE5FC:
-#data 0x8c13B184
+#data bank13.loc_8c13B184
 
 loc_8C0DE600:
 #data bank03.loc_8c034D8c
@@ -30982,16 +30982,16 @@ loc_8C0DE73C:
 #data bank03.loc_8c034C38
 
 loc_8C0DE740:
-#data 0x8c13B200
+#data bank13.loc_8c13B200
 
 loc_8C0DE744:
 #data bank03.loc_8c034D8c
 
 loc_8C0DE748:
-#data 0x8c13B3D8
+#data bank13.loc_8c13B3D8
 
 loc_8C0DE74C:
-#data 0x8c13B420
+#data bank13.loc_8c13B420
 
 loc_8C0DE750:
 #data 0xE15C2FE6

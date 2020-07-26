@@ -1073,7 +1073,7 @@ loc_8C0C09C8:
 #data bank12.loc_8c1294C8
 
 loc_8C0C09CC:
-#data 0x8c13B058
+#data bank13.loc_8c13B058
 
 loc_8C0C09D0:
 #data bank03.loc_8c034e8c
@@ -31899,7 +31899,7 @@ loc_8C0D0036:
 
 #align4
 loc_8C0D0038:
-#data 0x8c13B08c
+#data bank13.loc_8c13B08c
 
 loc_8C0D003C:
 #data bank03.loc_8c034C38
