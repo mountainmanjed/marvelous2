@@ -35929,6 +35929,7 @@ loc_8c03f0d0:
 	#data bank04.loc_8c041ecc
 
 ;==============================================
+;Credits text render?
 loc_8c03f0d4:
 	mov.l @(loc_8c03f1fc,PC),r2
 	mov.l @(loc_8c03f200,PC),r1
@@ -36098,7 +36099,7 @@ loc_8c03f208:
 loc_8c03f20c:
 	#data loc_8c0395ac
 loc_8c03f210:
-	#data bank13.loc_8c138298
+	#data credits.loc_8c138298
 loc_8c03f214:
 	#data 0x8c28c49c
 loc_8c03f218:
@@ -36928,11 +36929,11 @@ loc_8c03f770:
 loc_8c03f774:
 	#data loc_8c030e3a
 loc_8c03f778:
-	#data bank13.loc_8c138868
+	#data credits.loc_8c138868
 loc_8c03f77c:
 	#data loc_8c0395c6
 loc_8c03f780:
-	#data bank13.loc_8c138880
+	#data credits.loc_8c138880
 loc_8c03f784:
 	#data 0x8c2681dc
 loc_8c03f788:
