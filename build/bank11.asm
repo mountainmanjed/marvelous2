@@ -26999,7 +26999,7 @@ mov.l @(0x0C,r4),r1
 mov.l r1,@(0x0C,r13) 	
 mov.l @(0x10,r4),r3
 mov.l r3,@(0x10,r13) 	
-pref r13
+pref @r13
 bra loc_8C11F0F4
 add 0x20,r13
 
