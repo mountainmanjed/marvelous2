@@ -358,4 +358,23 @@ loc_8c161fec:
 ;	#data 0xff 0x24 0x05 0x11 0x0a 0x0d 0x33 0xff
 ;	#data 0xff 0x3a 0x1d 0x1b 0x30 0x2a 0x34 0xff
 
+loc_8c1649e8:
+;	#data bank13.loc_8c13c640
+;	#data bank13.loc_8c13c88c
+;	#data bank13.loc_8c13cae4
+;	#data bank13.loc_8c13cd3c
+;	#data bank13.loc_8c13cf88
+;	#data bank13.loc_8c13d1d4
+;	#data bank13.loc_8c13d420
+;	#data bank0f.loc_8c0fc970
+;	#data bank0f.loc_8c0fc9ec
+;	#data bank0f.loc_8c0fca32
+;	#data bank0f.loc_8c0fcb50
+;	#data bank0f.loc_8c0fcb9c
+;	#data bank0f.loc_8c0fd0b8
+;	#data bank0f.loc_8c0fd150
+;	#data bank0f.loc_8c0fd23c
+;	#data bank0f.loc_8c0fd2d2
+;	#data bank0f.loc_8c0fd314
+
 #symbol loc_8c162b2c 0x8c162b2c
