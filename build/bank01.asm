@@ -21445,6 +21445,8 @@ loc_8c018d34:
 
 loc_8c018d36:
 	addv r8,r15
+
+loc_8c018D38:
 	mov 0x01,r3
 	mov.l @(loc_8c018e74,PC),r2
 	sts.l pr,@-r15
@@ -22188,6 +22190,8 @@ loc_8c01920a:
 
 loc_8c01920e:
 	cmp/ge r10,r11
+
+loc_8c019210:
 	mov.l r14,@-r15
 	mov.l r13,@-r15
 	mov.l r12,@-r15
@@ -23261,6 +23265,8 @@ loc_8c01992e:
 	mov.l @r15+,r12
 	mov.l @r15+,r13
 	mov.l @r15+,r14
+
+loc_8c019938:
 	mov.l @(loc_8c019a04,PC),r3
 	mov 0x20,r0
 	mov.b @(r0,r4),r1
@@ -25686,7 +25692,7 @@ loc_8c01a974:
 	bra loc_8c01ab54
 	mov.l @r15+,r14
 
-loc_8c019982:
+loc_8c01a982:
 	mov.b @(0x4,r4),r0
 	mov.w @(0x74,PC),r3
 	add 0x01,r0
@@ -33257,6 +33263,8 @@ loc_8c01e0a0:
 	mov.l r3,@(r0,r4)
 	mov 0x22,r0
 	mov.b r1,@(r0,r4)
+
+loc_8c01e0ea:
 	mov.l r14,@-r15
 	mov r4,r14
 	mov 0x22,r0
@@ -33488,6 +33496,8 @@ loc_8c01e25a:
 	mov.l r3,@(r0,r4)
 	mov 0x22,r0
 	mov.b r2,@(r0,r4)
+
+loc_8c01e2b4:
 	mov.l r14,@-r15
 	mov r4,r14
 	mov 0x22,r0

@@ -358,6 +358,8 @@ loc_8c161fec:
 ;	#data 0xff 0x24 0x05 0x11 0x0a 0x0d 0x33 0xff
 ;	#data 0xff 0x3a 0x1d 0x1b 0x30 0x2a 0x34 0xff
 
+#symbol loc_8c162b2c 0x8c162b2c
+
 loc_8c1649e8:
 ;	#data bank13.loc_8c13c640
 ;	#data bank13.loc_8c13c88c
@@ -376,5 +378,3 @@ loc_8c1649e8:
 ;	#data bank0f.loc_8c0fd23c
 ;	#data bank0f.loc_8c0fd2d2
 ;	#data bank0f.loc_8c0fd314
-
-#symbol loc_8c162b2c 0x8c162b2c

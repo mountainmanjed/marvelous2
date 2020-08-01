@@ -17381,7 +17381,7 @@ loc_8c0273e8:
 loc_8c0273ec:
 	#data bank01.loc_8c01033c
 loc_8c0273f0:
-	#data bank14.loc_8c148688;File Table
+	#data filepnt.loc_8c148688;File Table
 
 ;==============================================
 loc_8c0273f4:
@@ -17972,7 +17972,7 @@ loc_8c0277d0:
 	#data 0x07ff
 	#align4
 loc_8c0277d4:
-	#data bank14.loc_8c148688;File Table
+	#data filepnt.loc_8c148688;File Table
 loc_8c0277d8:
 	#data bank17.loc_8c1771e2
 loc_8c0277dc:

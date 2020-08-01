@@ -28081,15 +28081,14 @@ loc_8C11FA14:
 #data 0x00090009
 #data 0x00090009
 
-#align4
 loc_8C11FA20:
 frchg
-fipr fv12,fv0
-fipr fv12,fv4
-fipr fv12,fv8
-fmov fr3,fr12
-fsub fr3,fr3
-fmov fr7,fr13
+fipr fv12,fv0;11fa22
+fipr fv12,fv4;11fa24
+fipr fv12,fv8;11fa26
+fmov fr3,fr12;11fa28
+fsub fr3,fr3;11fa2a
+fmov fr7,fr13;11fa2c
 fsub fr7,fr7
 fmov fr11,fr14
 fsub fr11,fr11
@@ -28129,8 +28128,10 @@ fldi0 fr11
 frchg
 rts
 nop
+nop
+nop
+
 ;-------------------------------------------------------------------------------
-#data 0x00090009
 
 #align4
 loc_8C11FA80:
