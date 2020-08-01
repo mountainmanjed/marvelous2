@@ -28083,29 +28083,52 @@ loc_8C11FA14:
 
 #align4
 loc_8C11FA20:
-#data 0xF3EDFBFd
-#data 0xFBEDF7Ed
-#data 0xF331FC3c
-#data 0xF771FD7c
-#data 0xFBB1FEBc
-#data 0xFC4DF0Ed
-#data 0xFD4DF5Ed
-#data 0xFE4DFAEd
-#data 0xF77DF37d
-#data 0xF132FB7d
-#data 0xF232F472
-#data 0xF8B2F11d
-#data 0xF672F14c
-#data 0xF9B2F40d
-#data 0xF032F21d
-#data 0xF572F28c
-#data 0xFAB2F80d
-#data 0xFC32F61d
-#data 0xFD72F69c
-#data 0xFEB2F90d
-#data 0xF771F38d
-#data 0xFBFDFB8d
-#data 0x0009000b
+frchg
+fipr fv12,fv0
+fipr fv12,fv4
+fipr fv12,fv8
+fmov fr3,fr12
+fsub fr3,fr3
+fmov fr7,fr13
+fsub fr7,fr7
+fmov fr11,fr14
+fsub fr11,fr11
+fipr fv0,fv0
+fneg fr12
+fipr fv4,fv4
+fneg fr13
+fipr fv8,fv8
+fneg fr14
+fsrra fr3
+fsrra fr7
+fsrra fr11
+fmul fr3,fr1
+fmul fr7,fr4
+fmul fr3,fr2
+flds fr1,fpul
+fmul fr11,fr8
+fmov fr4,fr1
+fmul fr7,fr6
+fsts fpul,fr4
+fmul fr11,fr9
+flds fr2,fpul
+fmul fr3,fr0
+fmov fr8,fr2
+fmul fr7,fr5
+fsts fpul,fr8
+fmul fr11,fr10
+flds fr6,fpul
+fmul fr3,fr12
+fmov fr9,fr6
+fmul fr7,fr13
+fsts fpul,fr9
+fmul fr11,fr14
+fldi0 fr3
+fsub fr7,fr7
+fldi0 fr11
+frchg
+rts
+nop
 ;-------------------------------------------------------------------------------
 #data 0x00090009
 

@@ -850,20 +850,31 @@ loc_8C120B1C:
 #data loc_8c120B80
 
 loc_8C120B20:
-#data 0xF4FD445a
-#data 0xF38DF08d
-#data 0xF15CF78d
-#data 0xF52CF24c
-#data 0xF61CF54d
-#data 0xF48DF1Fd
-#data 0xF3FDF5Fd
-#data 0xF72CF50c
-#data 0xFB6CF94c
-#data 0x0009F3Fd
-#data 0x0009000b
+lds r4,fpul
+fsca fpul,fr2
+fldi0 fr0
+fldi0 fr3
+fldi0 fr7
+fmov fr5,fr1
+fmov fr4,fr2
+fmov fr2,fr5
+fneg fr5
+fmov fr1,fr6
+ftrv xmtrx,fv0
+fldi0 fr4
+ftrv xmtrx,fv4
+fschg
+fmov fr0,fr5
+fmov fr2,fr7
+fmov fr4,fr9
+fmov fr6,fr11
+fschg
+nop
+rts
+nop
+nop
+nop
 ;-------------------------------------------------------------------------------
-#data 0x00090009
-
 
 loc_8C120B50:
 fmov fr5,fr1
@@ -886,10 +897,11 @@ fschg
 nop 	
 rts 	
 nop 	
+nop
+nop
+nop
+nop
 ;-------------------------------------------------------------------------------
-#data 0x00090009
-#data 0x00090009
-
 
 loc_8C120B80:
 sts.l pr,@-r15
@@ -1047,30 +1059,45 @@ fmov fr0,fr5
 fmov fr2,fr7
 fmov fr4,fr9
 fmov fr6,fr11
-fschg 	
-rts 	
-nop 	
+fschg
+rts
+nop
+nop
+nop
+nop
+nop
+nop
+nop
 ;-------------------------------------------------------------------------------
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
 
-#align4
+#align4_nop
 loc_8C120CD0:
-#data 0xF4FD445a
-#data 0xF38DF18d
-#data 0xF05CF78d
-#data 0xF24DF24c
-#data 0xF1FDF60c
-#data 0xF5FDF58d
-#data 0xF10CF3Fd
-#data 0xF94CF32c
-#data 0xF3FDFB6c
-#data 0x0009000b
+lds r4,fpul
+fsca fpul,fr2
+fldi0 fr1
+fldi0 fr3
+fldi0 fr7
+fmov fr5,fr0
+fmov fr4,fr2
+fneg fr2
+fmov fr0,fr6
+ftrv xmtrx,fv0
+fldi0 fr5
+ftrv xmtrx,fv4
+fschg
+fmov fr0,fr1
+fmov fr2,fr3
+fmov fr4,fr9
+fmov fr6,fr11
+fschg
+rts
+nop
+nop
+nop
+nop
+nop
+#align4_nop
 ;-------------------------------------------------------------------------------
-#data 0x00090009
-#data 0x00090009
-
 
 loc_8C120D00:
 fmov fr5,fr0
@@ -1130,25 +1157,40 @@ fschg
 rts 	
 nop 	
 ;-------------------------------------------------------------------------------
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
+nop
+nop
+nop
+nop
+nop
+nop
 
-#align4
+#align4_nop
 loc_8C120D90:
-#data 0xF4FD445a
-#data 0xF38DF28d
-#data 0xF05CF68d
-#data 0xF44DF14c
-#data 0xF78DF1Fd
-#data 0xF3FDF5Fd
-#data 0xF32CF10c
-#data 0xF76CF54c
-#data 0x0009F3Fd
-#data 0x0009000b
+lds r4,fpul
+fsca fpul,fr2
+fldi0 fr2
+fldi0 fr3
+fldi0 fr6
+fmov fr5,fr0
+fmov fr4,fr1
+fneg fr4
+ftrv xmtrx,fv0
+fldi0 fr7
+ftrv xmtrx,fv4
+fschg
+fmov fr0,fr1
+fmov fr2,fr3
+fmov fr4,fr5
+fmov fr6,fr7
+fschg
+nop
+rts
+nop
 ;-------------------------------------------------------------------------------
-#data 0x00090009
-#data 0x00090009
+nop
+nop
+nop
+nop
 
 
 loc_8C120DC0:
@@ -1815,7 +1857,7 @@ add 0xFC,r15
 mov r4,r5
 mov.l r4,@r15
 bra loc_8C1214B0
-nop 	
+nop
 #data 0x0000
 
 #align4
@@ -1832,15 +1874,24 @@ loc_8C1214A4:
 
 #align4
 loc_8C1214B0:
-#data 0xF549F449
-#data 0xF78DF649
-#data 0xF5ED750c
-#data 0xF06DF07c
-#data 0xF672F77d
-#data 0xF472F572
-#data 0xF55BF56b
-#data 0x0009F54b
-#data 0x7F04000b
+fmov.s @r4+,fr4
+fmov.s @r4+,fr5
+fmov.s @r4+,fr6
+fldi0 fr7
+add 0x0C,r5
+fipr fv4,fv4
+fmov fr7,fr0
+fsqrt fr0
+fsrra fr7
+fmul fr7,fr6
+fmul fr7,fr5
+fmul fr7,fr4
+fmov.s fr6,@-r5
+fmov.s fr5,@-r5
+fmov.s fr4,@-r5
+nop
+rts
+add 0x04,r15
 ;-------------------------------------------------------------------------------
 #data 0x00090009
 #data 0x00090009
