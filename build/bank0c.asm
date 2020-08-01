@@ -13398,7 +13398,7 @@ loc_8C0C76F0:
 
 #align4
 loc_8C0C76F8:
-#data 0x8c15BDD8
+#data bank15.loc_8c15BDD8
 
 loc_8C0C76FC:
 #data bank03.loc_8c034F54
@@ -14052,7 +14052,7 @@ add 0x04,r15
 
 #align4
 loc_8C0C7E1C:
-#data 0x8c15BFF8
+#data bank15.loc_8c15BFF8
 
 loc_8C0C7E20:
 #data 0x4F22918d
