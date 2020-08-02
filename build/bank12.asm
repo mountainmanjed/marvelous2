@@ -851,7 +851,7 @@ loc_8C120B1C:
 
 loc_8C120B20:
 lds r4,fpul
-fsca fpul,fr2
+fsca fpul,fr4
 fldi0 fr0
 fldi0 fr3
 fldi0 fr7
@@ -1073,7 +1073,7 @@ nop
 #align4_nop
 loc_8C120CD0:
 lds r4,fpul
-fsca fpul,fr2
+fsca fpul,fr4
 fldi0 fr1
 fldi0 fr3
 fldi0 fr7
@@ -1167,7 +1167,7 @@ nop
 #align4_nop
 loc_8C120D90:
 lds r4,fpul
-fsca fpul,fr2
+fsca fpul,fr4
 fldi0 fr2
 fldi0 fr3
 fldi0 fr6
