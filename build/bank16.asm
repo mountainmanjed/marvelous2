@@ -1881,7 +1881,10 @@ loc_8c1617A0:
 
 ;Naomi Cursor Table
 loc_8c1617b8:
-	#data 0xc2600000 0x42500000 0x43370000 ;00 Ryu
+	#data 0xc2600000 0x42500000
+
+loc_8c1617C0:
+	#data 0x43370000 ;00 Ryu
 	#data 0xc2640000 0x41880000 0x433d0000 ;01 Zangief
 	#data 0xc2500000 0x42a80000 0x432c0000 ;02 Guile
 	#data 0xc2600000 0xc2500000 0x43370000 ;03 Morrigan
@@ -5659,17 +5662,27 @@ loc_8c1649e8:
 	#data bank13.loc_8c13cf88
 	#data bank13.loc_8c13d1d4
 	#data bank13.loc_8c13d420
+
+;==============================
+loc_8C164a04:
 	#data bank0f.loc_8c0fc970
 	#data bank0f.loc_8c0fc9ec
 	#data bank0f.loc_8c0fca32
+
+loc_8C164a10:
 	#data bank0f.loc_8c0fcb50
 	#data bank0f.loc_8c0fcb9c
+
+loc_8C164a18:
 	#data bank0f.loc_8c0fd0b8
 	#data bank0f.loc_8c0fd150
 	#data bank0f.loc_8c0fd23c
+
+loc_8c164a24:
 	#data bank0f.loc_8c0fd2d2
 	#data bank0f.loc_8c0fd314
 
+;==============================
 loc_8c164A2C:
 #data 0x00000001
 #data 0x00000002

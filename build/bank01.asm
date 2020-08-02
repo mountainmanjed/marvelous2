@@ -1,3 +1,51 @@
+;##############################################
+;EntryPoint
+loc_8c010000:
+	nop
+	nop
+	nop
+	nop
+	nop
+	nop
+	mov.l @(loc_8c010024,PC),r0   ;write $ff00001c to r0
+	mov.l @r0,r1
+	mov.l @(loc_8c010028,PC),r2   ;write $000089af to r2
+	and r2,r1
+	mov.w @(loc_8c010020,PC),r2   ;write $0800 to r2
+	or r2,r1
+	mov.l r1,@r0
+	mov.l @(label_8c01002c,PC),r0   ;write $8c1742c0 to r0
+	jmp @r0
+	nop
+
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+loc_8c010020:
+	#data 0x0800
+	#align4
+
+loc_8c010024:
+	#data 0xff00001c
+
+loc_8c010028:
+	#data 0x000089af
+
+label_8c01002c:
+	#data bank17.loc_8c1742c0
+
+;0x30
+libstarttext:
+	#data "Lib Handle Start"
+
+	#data 0x00000000 0x00000001 0x00000000 0x00000000
+	#data 0xba7e0a00 0x11d1bda9 0x6000eb8a 0x5f629508
+
+loc_8c010060:
+	#data 0x00000000 0x00000000 0x00000000 0x00000000
+
+;0x70
+libendtext:
+	#data "Lib Handle End  "
+
 ;==============================================
 loc_8c010080:
 	mov.l r14,@-r15

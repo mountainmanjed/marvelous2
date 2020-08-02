@@ -4196,19 +4196,42 @@ loc_8C1327A4:
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1327a8:
 	#data 0x8c1cbe00;obviously Memory
+
+loc_8c1327ac:
 	#data 0x8c1cbe00;obviously Memory
+
+loc_8c1327b0:
 	#data 0x8c2df154;obviously Memory
-	#data 0x8c32c4a0;obviously Memory
+
+loc_8c1327b4:
 	#data 0x8c32c4a0;obviously Memory
 
-	#data 0x8c174280;could be 1stread
-	#data 0x8c1742a4;could be 1stread
-	#data 0x8c1742a4;could be 1stread
-	#data 0x8c1742b4;could be 1stread
-	#data 0x8c1742b4;could be 1stread
-	#data 0x8c1742b4;could be 1stread
-	#data 0x8c1742b4;could be 1stread
-	#data 0x8c1742b4;could be 1stread
+loc_8c1327b8:
+	#data 0x8c32c4a0;obviously Memory
+
+loc_8c1327bc:
+	#data bank17.loc_8c174280
+
+loc_8c1327c0:
+	#data bank17.loc_8c1742a4
+
+loc_8c1327c4:
+	#data bank17.loc_8c1742a4
+
+loc_8c1327c8:
+	#data bank17.loc_8c1742b4
+
+loc_8c1327cc:
+	#data bank17.loc_8c1742b4
+
+loc_8c1327d0:
+	#data bank17.loc_8c1742b4
+
+loc_8c1327d4:
+	#data bank17.loc_8c1742b4
+
+loc_8c1327d8:
+	#data bank17.loc_8c1742b4
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;
