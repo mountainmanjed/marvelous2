@@ -115,6 +115,8 @@ loc_8c07032e:
 	lds.l @r15+,pr
 	mov.l @r15+,r13
 	mov.l @r15+,r14
+
+loc_8c070344:
 	mov.w @(0x56,PC),r0
 	mov.l r14,@-r15
 	mov.b @(r0,r5),r0

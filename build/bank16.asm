@@ -1,380 +1,20789 @@
-;#symbol loc_8c16 0x8c16
+loc_8c160100:
+#data 0xC0E66666
+#data 0xC244CCCD
+#data 0xC28E3333
+#data 0xC0E66666
+#data 0xC2450000
+#data 0xC28E7333
+#data 0x40E66666
+#data 0xC244CCCD
+#data 0xC28E3333
+#data 0x40E66666
+#data 0xC2450000
+#data 0xC28E7333
+
+#align4
+loc_8c160130:
+#data 0x00000040
+#data 0x00000049
+#data 0x00000041
+#data 0x0000004A
+#data 0x00000042
+#data 0x0000004B
+
+#align4
+loc_8c160148:
+#data 0xC2C90000
+#data 0xC0533340
+
+#align4
+loc_8c160150:
+#data 0x3F800000
+#data 0x42C90000
+#data 0xC0533340
+#data 0x3F800000
+
+#align4
+loc_8c160160:
+#data 0xC2040000
+#data 0xC1500000
+#data 0x41A80000
+#data 0xC2040000
+#data 0xC13C0000
+#data 0x41A80000
+#data 0xC2040000
+#data 0xC1240000
+#data 0x41A80000
+#data 0x42040000
+#data 0xC1500000
+#data 0x41A80000
+#data 0x42040000
+#data 0xC13C0000
+#data 0x41A80000
+#data 0x42040000
+#data 0xC1240000
+#data 0x41A80000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c1601B4:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c1601C0:
+#data 0x41CC0000
+#data 0xC2180000
+#data 0x428D0000
+#data 0x41CC0000
+#data 0xC204CCCC
+#data 0x428D0000
+#data 0xC1CC0000
+#data 0xC2180000
+#data 0x428D0000
+#data 0xC1CC0000
+#data 0xC204CCCC
+#data 0x428D0000
+
+#align4
+loc_8c1601F0:
+#data 0xC2500000
+#data 0xC22ECCCD
+#data 0xC28C0000
+#data 0x42500000
+#data 0xC22ECCCD
+#data 0xC28C0000
+
+#align4
+loc_8c160208:
+#data 0xC257999A
+#data 0xC231999A
+#data 0xC28BFAE1
+#data 0x4257999A
+#data 0xC231999A
+#data 0xC28BFAE1
+
+#align4
+loc_8c160220:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x00000000
+#data 0x3F600000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3E800000
+#data 0x3E800000
+#data 0x3F800000
+#data 0x3E000000
+#data 0x3F800000
+
+#align4
+loc_8c16024C:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F19999A
+#data 0x3E883127
+#data 0x3F800000
+#data 0x3EC00000
+#data 0x3EC00000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3E083127
+#data 0x3F800000
+#data 0x3F400000
+#data 0x3E800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3EC00000
+#data 0x3F800000
+#data 0x3E800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3E800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3E800000
+#data 0x3F800000
+#data 0x3F600000
+
+#align4
+loc_8c1602C0:
+#data 0x3F800000
+#data 0x3F59999A
+#data 0x00000000
+#data 0x3F3E6667
+#data 0x3F800000
+#data 0x3F59999A
+#data 0x3E59999A
+#data 0x3E59999A
+#data 0x3F800000
+#data 0x3DD9999A
+#data 0x3F59999A
+#data 0x3F59999A
+#data 0x3F800000
+#data 0x3F6ED917
+#data 0x3ECCCCCD
+#data 0x3E083127
+#data 0x3F800000
+#data 0x3EA33334
+#data 0x3EA33334
+#data 0x3F59999A
+#data 0x3F800000
+#data 0x3F5DB22D
+#data 0x3F4CCCCD
+#data 0x00000000
+#data 0x3F800000
+
+#align4
+loc_8c160324:
+#data 0x3F233334
+#data 0x3E59999A
+#data 0x3F59999A
+#data 0x3F800000
+#data 0x3EA33334
+#data 0x3F59999A
+#data 0x3E59999A
+#data 0x3F800000
+#data 0x3F59999A
+#data 0x3E59999A
+#data 0x3F59999A
+#data 0x3F800000
+#data 0x3E59999A
+#data 0x3F59999A
+#data 0x3F3E6667
+
+#align4
+loc_8c160360:
+#data 0x3F800000
+#data 0x3F000000
+#data 0x3F000000
+#data 0x3F000000
+
+#align4
+loc_8c160370:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c160380:
+#data 0x3F800000
+#data 0x3F000000
+
+#align4
+loc_8c160388:
+#data 0x3F000000
+#data 0x3F000000
+
+#align4
+loc_8c160390:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3E800000
+#data 0x3E800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3E083127
+#data 0x3F800000
+#data 0x3EC00000
+#data 0x3EC00000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F19999A
+#data 0x3E883127
+#data 0x3F800000
+#data 0x3E000000
+#data 0x3F800000
+#data 0x3E000000
+#data 0x3F800000
+#data 0x3F400000
+#data 0x3E800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3EC00000
+#data 0x3F800000
+#data 0x3E800000
+#data 0x3F800000
+#data 0x3F400000
+#data 0x3F400000
+#data 0x3F400000
+#data 0x3F800000
+#data 0x3F000000
+#data 0x3F000000
+#data 0x3F000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F200000
+#data 0x3F800000
+#data 0x3E000000
+#data 0x0000
+
+loc_8c16043A:
+#data 0x3F80
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3E000000
+#data 0x3F4CCCCD
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3E000000
+#data 0x3F19999A
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x00000000
+#data 0x3F600000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x00000000
+#data 0x3F600000
+
+#align4
+loc_8c160480:
+#data 0xC2BE0000
+#data 0x42B30000
+#data 0xC3290000
+#data 0x42BE0000
+#data 0x42B30000
+#data 0xC3290000
+#data 0xC2BE0000
+#data 0x42B30000
+#data 0xC3290000
+#data 0x42BE0000
+#data 0x42B30000
+#data 0xC3290000
+#data 0xC2BE0000
+#data 0x429C0000
+#data 0xC3290000
+#data 0x42BE0000
+#data 0x429C0000
+#data 0xC3290000
+
+#align4
+loc_8c1604C8:
+#data 0x01040200
+#data 0x0503
+
+loc_8c1604CE:
+#data 0x473E
+#data 0x77757674
+
+loc_8c1604D4:
+#data 0x7170
+
+loc_8c1604D6:
+#data 0x7372
+
+#align4
+loc_8c1604D8:
+#data 0x00007978
+
+#align4
+loc_8c1604DC:
+#data bank0f.loc_8c0F0CF2
+
+loc_8c1604E0:
+#data bank0f.loc_8c0F0DBC
+
+loc_8c1604E4:
+#data 0x00000043
+#data 0x0000004C
+#data 0x00000044
+#data 0x0000004D
+#data 0x00000045
+#data 0x0000004E
+
+#align4
+loc_8c1604FC:
+#data 0xC2A40000
+#data 0x42930000
+#data 0xC2FC0000
+#data 0x42A40000
+#data 0x42930000
+#data 0xC2FC0000
+#data 0xC2EC0000
+#data 0x42AD0000
+#data 0xC32A0000
+#data 0x42EC0000
+#data 0x42AD0000
+#data 0xC32A0000
+#data 0xC2EC0000
+#data 0x42960000
+#data 0xC32A0000
+#data 0x42EC0000
+#data 0x42960000
+#data 0xC32A0000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c160550:
+#data 0x3F800000
+
+#align4
+loc_8c160554:
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c16055C:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c16056C:
+#data 0x3F800000
+#data 0x3F000000
+#data 0x3F000000
+#data 0x3F000000
+
+#align4
+loc_8c16057C:
+#data 0x01040200
+#data 0x00000503
+
+#align4
+loc_8c160584:
+#data 0xC2200000
+#data 0x40A00000
+#data 0xC2200000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x42200000
+#data 0x40A00000
+#data 0xC2200000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c1605B4:
+#data 0x3FC00000
+#data 0x3FC00000
+#data 0x3F800000
+
+#align4
+loc_8c1605C0:
+#data 0x3F28F5C3
+#data 0x3F28F5C3
+#data 0x3F800000
+
+#align4
+loc_8c1605CC:
+#data 0x3F000000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c1605D8:
+#data 0x3F800000
+#data 0x3F000000
+#data 0x3F800000
+
+#align4
+loc_8c1605E4:
+#data 0x40200000
+#data 0x40200000
+#data 0x3F800000
+
+#align4
+loc_8c1605F0:
+#data loc_8c1605B4
+
+loc_8c1605F4:
+#data loc_8c1605B4
+
+loc_8c1605F8:
+#data loc_8c1605C0
+
+loc_8c1605FC:
+#data loc_8c1605CC
+
+loc_8c160600:
+#data loc_8c1605D8
+
+loc_8c160604:
+#data loc_8c1605E4
+
+loc_8c160608:
+#data loc_8c1605B4
+
+loc_8c16060C:
+#data loc_8c1605B4
+
+loc_8c160610:
+#data 0x00010002
+#data 0x40200000
+#data 0x00000102
+#data 0x40600000
+#data 0x00000202
+#data 0x40600000
+#data 0x1102FF04
+#data 0x4033D70A
+#data 0x1200FF04
+#data 0x402B851F
+#data 0x1D00FF04
+#data 0x401851EC
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c160648:
+#data 0x00030002
+#data 0x3F800000
+#data 0x00000102
+#data 0x40600000
+#data 0x00000202
+#data 0x40600000
+#data 0x00000302
+#data 0x40600000
+#data 0x00000402
+#data 0x40600000
+#data 0x00000502
+#data 0x40600000
+#data 0x00000602
+#data 0x40600000
+#data 0x00000702
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x2404FF03
+#data 0x40600000
+#data 0x2500FF03
+#data 0x40100000
+#data 0x2600FF03
+#data 0x40100000
+#data 0x0000FFFF
+#data 0x00000000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;FIRSTHIT
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1606c0:
-;	#data 0x0f00ff03 0x3f800000
-;	#data 0x1200ff03 0x401ae148
-;	#data 0x1b00ff03 0x402eb852
-;	#data 0x1c00ff03 0x405b851e
-;	#data 0x1d00ff03 0x40533334
-;	#data 0x0a00ff03 0x40b8f5c2
-;	#data 0x1d00ff03 0x4043d708
-;	#data 0x1d00ff03 0x405d70a8
-;	#data 0x0a00ff03 0x40428f58
-;	#data 0x0c00ff03 0x40566668
-;	#data 0x1400ff03 0x406cccd0
-;	#data 0x0000ffff 0x00000000
+	#data 0x0f00ff03 0x3f800000
+	#data 0x1200ff03 0x401ae148
+	#data 0x1b00ff03 0x402eb852
+	#data 0x1c00ff03 0x405b851e
+	#data 0x1d00ff03 0x40533334
+	#data 0x0a00ff03 0x40b8f5c2
+	#data 0x1d00ff03 0x4043d708
+	#data 0x1d00ff03 0x405d70a8
+	#data 0x0a00ff03 0x40428f58
+	#data 0x0c00ff03 0x40566668
+	#data 0x1400ff03 0x406cccd0
+	#data 0x0000ffff 0x00000000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;TECHHIT
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c160720:
-;	#data 0x1d00ff03 0x3fc00000
-;	#data 0x0e00ff03 0x4043d70a
-;	#data 0x0c00ff03 0x4043d70a
-;	#data 0x1100ff03 0x40651eb8
-;	#data 0x1100ff03 0x40cb3332
-;	#data 0x1200ff03 0x4028f5c8
-;	#data 0x1d00ff03 0x40299998
-;	#data 0x0000ffff 0x00000000
+	#data 0x1d00ff03 0x3fc00000
+	#data 0x0e00ff03 0x4043d70a
+	#data 0x0c00ff03 0x4043d70a
+	#data 0x1100ff03 0x40651eb8
+	#data 0x1100ff03 0x40cb3332
+	#data 0x1200ff03 0x4028f5c8
+	#data 0x1d00ff03 0x40299998
+	#data 0x0000ffff 0x00000000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;COUNTER
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c160760:
-;	#data 0x0c00ff03 0x3fc00000
-;	#data 0x1800ff03 0x405ccccd
-;	#data 0x1e00ff03 0x405eb851
-;	#data 0x1700ff03 0x4061eb86
-;	#data 0x1d00ff03 0x405e147c
-;	#data 0x0e00ff03 0x404851e8
-;	#data 0x1b00ff03 0x4045c290
-;	#data 0x0000ffff 0x00000000
+	#data 0x0c00ff03 0x3fc00000
+	#data 0x1800ff03 0x405ccccd
+	#data 0x1e00ff03 0x405eb851
+	#data 0x1700ff03 0x4061eb86
+	#data 0x1d00ff03 0x405e147c
+	#data 0x0e00ff03 0x404851e8
+	#data 0x1b00ff03 0x4045c290
+	#data 0x0000ffff 0x00000000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;Blank Message
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1607a0:
-;	#data 0x0000ffff 0x00000000
+	#data 0x0000ffff 0x00000000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;GOOD
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1607a8:
-;	#data 0x1000ff01 0x3fc00000
-;	#data 0x1800ff01 0x405f5c29
-;	#data 0x1800ff01 0x40651eb9
-;	#data 0x0d00ff01 0x406147ae
-;	#data 0x0000ffff 0x00000000
+	#data 0x1000ff01 0x3fc00000
+	#data 0x1800ff01 0x405f5c29
+	#data 0x1800ff01 0x40651eb9
+	#data 0x0d00ff01 0x406147ae
+	#data 0x0000ffff 0x00000000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;GREAT
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1607d0:
-;	#data 0x1000ff01 0x3fc00000
-;	#data 0x1b00ff01 0x40633333
-;	#data 0x0e00ff01 0x4047ae15
-;	#data 0x0a00ff01 0x40451eb8
-;	#data 0x1d00ff01 0x40370a3c
-;	#data 0x0000ffff 0x00000000
+	#data 0x1000ff01 0x3fc00000
+	#data 0x1b00ff01 0x40633333
+	#data 0x0e00ff01 0x4047ae15
+	#data 0x0a00ff01 0x40451eb8
+	#data 0x1d00ff01 0x40370a3c
+	#data 0x0000ffff 0x00000000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;VERYGOOD
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c160800:
-;	#data 0x1f00ff01 0x3fc00000
-;	#data 0x0e00ff01 0x40400000
-;	#data 0x1b00ff01 0x4041eb86
-;	#data 0x2200ff01 0x404ae146
-;	#data 0x1000ff01 0x40b851ec
-;	#data 0x1800ff01 0x405c28f4
-;	#data 0x1800ff01 0x40600000
-;	#data 0x0d00ff01 0x40600000
-;	#data 0x0000ffff 0x00000000
+	#data 0x1f00ff01 0x3fc00000
+	#data 0x0e00ff01 0x40400000
+	#data 0x1b00ff01 0x4041eb86
+	#data 0x2200ff01 0x404ae146
+	#data 0x1000ff01 0x40b851ec
+	#data 0x1800ff01 0x405c28f4
+	#data 0x1800ff01 0x40600000
+	#data 0x0d00ff01 0x40600000
+	#data 0x0000ffff 0x00000000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;WONDERFUL
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c160848:
-;	#data 0x2000ff01 0x40400000
-;	#data 0x1800ff01 0x409051ec
-;	#data 0x1700ff01 0x4060a3d8
-;	#data 0x0d00ff01 0x40666664
-;	#data 0x0e00ff01 0x404a3d70
-;	#data 0x1b00ff01 0x40466664
-;	#data 0x0f00ff01 0x404b851f
-;	#data 0x1e00ff01 0x4041eb85
-;	#data 0x1500ff01 0x40500000
-;	#data 0x0000ffff 0x00000000
+	#data 0x2000ff01 0x40400000
+	#data 0x1800ff01 0x409051ec
+	#data 0x1700ff01 0x4060a3d8
+	#data 0x0d00ff01 0x40666664
+	#data 0x0e00ff01 0x404a3d70
+	#data 0x1b00ff01 0x40466664
+	#data 0x0f00ff01 0x404b851f
+	#data 0x1e00ff01 0x4041eb85
+	#data 0x1500ff01 0x40500000
+	#data 0x0000ffff 0x00000000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;FANTASTIC
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c160898:
-;	#data 0x0f00ff01 0x3f800000
-;	#data 0x0a00ff01 0x4030a3d7
-;	#data 0x1700ff01 0x4055c28f
-;	#data 0x1d00ff01 0x406147ae
-;	#data 0x0a00ff01 0x403c28f8
-;	#data 0x1c00ff01 0x40599998
-;	#data 0x1d00ff01 0x40547ae4
-;	#data 0x1200ff01 0x402ae148
-;	#data 0x0c00ff01 0x402eb850
-;	#data 0x0000ffff 0x00000000
+	#data 0x0f00ff01 0x3f800000
+	#data 0x0a00ff01 0x4030a3d7
+	#data 0x1700ff01 0x4055c28f
+	#data 0x1d00ff01 0x406147ae
+	#data 0x0a00ff01 0x403c28f8
+	#data 0x1c00ff01 0x40599998
+	#data 0x1d00ff01 0x40547ae4
+	#data 0x1200ff01 0x402ae148
+	#data 0x0c00ff01 0x402eb850
+	#data 0x0000ffff 0x00000000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;MARVELOUS
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1608e8:
-;	#data 0x1600ff01 0x40000000
-;	#data 0x0a00ff01 0x40733333
-;	#data 0x1b00ff01 0x405ccccd
-;	#data 0x1f00ff01 0x40599998
-;	#data 0x0e00ff01 0x4053d70c
-;	#data 0x1500ff01 0x404f5c2c
-;	#data 0x1800ff01 0x402e1478
-;	#data 0x1e00ff01 0x4067ae18
-;	#data 0x1c00ff01 0x406c28f0
-;	#data 0x0000ffff 0x00000000
+	#data 0x1600ff01 0x40000000
+	#data 0x0a00ff01 0x40733333
+	#data 0x1b00ff01 0x405ccccd
+	#data 0x1f00ff01 0x40599998
+	#data 0x0e00ff01 0x4053d70c
+	#data 0x1500ff01 0x404f5c2c
+	#data 0x1800ff01 0x402e1478
+	#data 0x1e00ff01 0x4067ae18
+	#data 0x1c00ff01 0x406c28f0
+	#data 0x0000ffff 0x00000000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;AERIALRAVE
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c160938:
-;	#data 0x0a00ff03 0x3fc00000
-;	#data 0x0e00ff03 0x4043d70a
-;	#data 0x1b00ff03 0x404147ae
-;	#data 0x1200ff03 0x4025c290
-;	#data 0x0a00ff03 0x40233334
-;	#data 0x1500ff03 0x40599998
-;	#data 0x1b00ff03 0x40b0f5c2
-;	#data 0x0a00ff03 0x405c28f8
-;	#data 0x1f00ff03 0x40370a40
-;	#data 0x0e00ff03 0x404ae148
-;	#data 0x0000ffff 0x00000000
+	#data 0x0a00ff03 0x3fc00000
+	#data 0x0e00ff03 0x4043d70a
+	#data 0x1b00ff03 0x404147ae
+	#data 0x1200ff03 0x4025c290
+	#data 0x0a00ff03 0x40233334
+	#data 0x1500ff03 0x40599998
+	#data 0x1b00ff03 0x40b0f5c2
+	#data 0x0a00ff03 0x405c28f8
+	#data 0x1f00ff03 0x40370a40
+	#data 0x0e00ff03 0x404ae148
+	#data 0x0000ffff 0x00000000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;AIRCOMBO
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c160990:
-;	#data 0x0a00ff03 0x3fc00000
-;	#data 0x1200ff03 0x401ae148
-;	#data 0x1b00ff03 0x4023d70a
-;	#data 0x0c00ff03 0x40e8a3d7
-;	#data 0x1800ff03 0x40628f5c
-;	#data 0x1600ff03 0x40800002
-;	#data 0x0b00ff03 0x40823d70
-;	#data 0x1800ff03 0x405a3d70
-;	#data 0x0000ffff 0x00000000
+	#data 0x0a00ff03 0x3fc00000
+	#data 0x1200ff03 0x401ae148
+	#data 0x1b00ff03 0x4023d70a
+	#data 0x0c00ff03 0x40e8a3d7
+	#data 0x1800ff03 0x40628f5c
+	#data 0x1600ff03 0x40800002
+	#data 0x0b00ff03 0x40823d70
+	#data 0x1800ff03 0x405a3d70
+	#data 0x0000ffff 0x00000000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;DANGER
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1609d8:
-;	#data 0x0d00ff03 0x3fc00000
-;	#data 0x0a00ff03 0x40533333
-;	#data 0x1700ff03 0x405ae147
-;	#data 0x1000ff03 0x4063d70a
-;	#data 0x0e00ff03 0x404ccccc
-;	#data 0x1b00ff03 0x403d70a8
-;	#data 0x0000ffff 0x00000000
+	#data 0x0d00ff03 0x3fc00000
+	#data 0x0a00ff03 0x40533333
+	#data 0x1700ff03 0x405ae147
+	#data 0x1000ff03 0x4063d70a
+	#data 0x0e00ff03 0x404ccccc
+	#data 0x1b00ff03 0x403d70a8
+	#data 0x0000ffff 0x00000000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;YES
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c160a10:
-;	#data 0x2200ff01 0x3fc00000
-;	#data 0x0e00ff01 0x403b851f
-;	#data 0x1c00ff01 0x403d70a3
-;	#data 0x0000ffff 0x00000000
+	#data 0x2200ff01 0x3fc00000
+	#data 0x0e00ff01 0x403b851f
+	#data 0x1c00ff01 0x403d70a3
+	#data 0x0000ffff 0x00000000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;MONSTER
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c160a30:
-;	#data 0x1600ff01 0x40000000
-;	#data 0x1800ff01 0x407ae148
-;	#data 0x1700ff01 0x4060a3d6
-;	#data 0x1c00ff01 0x4063d70a
-;	#data 0x1d00ff01 0x4058f5c4
-;	#data 0x0e00ff01 0x404851ec
-;	#data 0x1b00ff01 0x404147b0
-;	#data 0x0000ffff 0x00000000
+	#data 0x1600ff01 0x40000000
+	#data 0x1800ff01 0x407ae148
+	#data 0x1700ff01 0x4060a3d6
+	#data 0x1c00ff01 0x4063d70a
+	#data 0x1d00ff01 0x4058f5c4
+	#data 0x0e00ff01 0x404851ec
+	#data 0x1b00ff01 0x404147b0
+	#data 0x0000ffff 0x00000000
 
 ;Hud Message Table
 loc_8c160a70:
-;	#data loc_8c1606c0
-;	#data loc_8c160720
-;	#data loc_8c160760
-;	#data loc_8c1607a0
-;	#data loc_8c1607a8
-;	#data loc_8c1607d0
-;	#data loc_8c160800
-;	#data loc_8c160848
-;	#data loc_8c160898
-;	#data loc_8c1608e8
-;	#data loc_8c160938
-;	#data loc_8c160990
-;	#data loc_8c1609d8
-;	#data loc_8c160a10
-;	#data loc_8c160a30
-;	#data loc_8c1606c0
+	#data loc_8c1606c0
+	#data loc_8c160720
+	#data loc_8c160760
+	#data loc_8c1607a0
+	#data loc_8c1607a8
+	#data loc_8c1607d0
+	#data loc_8c160800
+	#data loc_8c160848
+	#data loc_8c160898
+	#data loc_8c1608e8
+	#data loc_8c160938
+	#data loc_8c160990
+	#data loc_8c1609d8
+	#data loc_8c160a10
+	#data loc_8c160a30
+	#data loc_8c1606c0
+
+
+
+loc_8c160AB0:
+#data 0x42140000
+#data 0x41C40000
+#data 0x41BC0000
+#data 0x41A00000
+#data 0x41600000
+#data 0x41800000
+#data 0x41E40000
+#data 0x41FC0000
+#data 0x41DC0000
+#data 0x41F80000
+#data 0x42020000
+#data 0x41F40000
+#data 0x419C0000
+#data 0x41100000
+#data 0x41C00000
+#data 0x00000000
+
+#align4
+loc_8c160AF0:
+#data 0x00000000
+#data 0x14121311
+#data 0x00001715
+#data 0x00161000
+
+#align4
+loc_8c160B00:
+#data bank0f.loc_8c0f175E
+
+loc_8c160B04:
+#data bank0f.loc_8c0f1794
+
+loc_8c160B08:
+#data bank0f.loc_8c0f1CF0
+
+loc_8c160B0C:
+#data bank0f.loc_8c0f1CF0
+
+loc_8c160B10:
+#data bank0f.loc_8c0f1818
+
+loc_8c160B14:
+#data bank0f.loc_8c0f193C
+
+loc_8c160B18:
+#data bank0f.loc_8c0f1988
+
+loc_8c160B1C:
+#data bank0f.loc_8c0f1B96
+
+loc_8c160B20:
+#data bank0f.loc_8c0f1B96
+
+loc_8c160B24:
+#data bank0f.loc_8c0f1CC8
+
+loc_8c160B28:
+#data bank0f.loc_8c0f182A
+
+loc_8c160B2C:
+#data bank0f.loc_8c0f18AC
+
+loc_8c160B30:
+#data bank0f.loc_8c0f18C0
+
+loc_8c160B34:
+#data bank0f.loc_8c0f199A
+
+loc_8c160B38:
+#data bank0f.loc_8c0f19C6
+
+loc_8c160B3C:
+#data bank0f.loc_8c0f19EA
+
+loc_8c160B40:
+#data bank0f.loc_8c0f1A22
+
+loc_8c160B44:
+#data bank0f.loc_8c0f1BA8
+
+loc_8c160B48:
+#data bank0f.loc_8c0f1BE0
+
+loc_8c160B4C:
+#data bank0f.loc_8c0f1C08
+
+loc_8c160B50:
+#data bank0f.loc_8c0f1CAC
+
+loc_8c160B54:
+#data 0x1F00FF03
+#data 0xC1C40000
+#data 0x1200FF03
+#data 0x40200000
+#data 0x1D00FF03
+#data 0x40200000
+#data 0x0A00FF03
+#data 0x40300000
+#data 0x1500FF03
+#data 0x40400000
+#data 0x00030102
+#data 0x41C60000
+#data 0x00000102
+#data 0x40600000
+#data 0x00000102
+#data 0x40600000
+#data 0x00000102
+#data 0x40600000
+#data 0x00000102
+#data 0x40600000
+#data 0x00000102
+#data 0x40600000
+#data 0x00000102
+#data 0x40600000
+#data 0x00000102
+#data 0x40600000
+#data 0x00000102
+#data 0x40600000
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c160BCC:
+#data 0x1D00FF03
+#data 0xC1C40000
+#data 0x1200FF03
+#data 0x40300000
+#data 0x1600FF03
+#data 0x40500000
+#data 0x0E00FF03
+#data 0x40700000
+#data 0x0003FF02
+#data 0x41CE0000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c160C3C:
+#data 0x0C00FF03
+#data 0xC1C40000
+#data 0x1800FF03
+#data 0x40600000
+#data 0x1600FF03
+#data 0x40800000
+#data 0x1900FF03
+#data 0x40800000
+#data 0x1500FF03
+#data 0x40400000
+#data 0x0E00FF03
+#data 0x40300000
+#data 0x1D00FF03
+#data 0x40400000
+#data 0x0E00FF03
+#data 0x40400000
+#data 0x0003FF02
+#data 0x41440000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c160CCC:
+#data 0x1D00FF03
+#data 0xC1C40000
+#data 0x1800FF03
+#data 0x40600000
+#data 0x1D00FF03
+#data 0x40600000
+#data 0x0A00FF03
+#data 0x40400000
+#data 0x1500FF03
+#data 0x40500000
+#data 0x0003FF02
+#data 0x41B20000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c160D44:
+#data 0x2000FF03
+#data 0xC1400000
+#data 0x1200FF03
+#data 0x40800000
+#data 0x1700FF03
+#data 0x40300000
+#data 0x1C00FF03
+#data 0x40600000
+#data 0x0003FF02
+#data 0x418A0000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c160D84:
+#data 0x1600FF03
+#data 0xC1D80000
+#data 0x0A00FF03
+#data 0x40700000
+#data 0x2100FF03
+#data 0x40400000
+#data 0x0C00FF03
+#data 0x40900000
+#data 0x1800FF03
+#data 0x40500000
+#data 0x1600FF03
+#data 0x40700000
+#data 0x0B00FF03
+#data 0x40700000
+#data 0x1800FF03
+#data 0x40500000
+#data 0x0003FF02
+#data 0x418A0000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c160DE4:
+#data 0x0B00FF03
+#data 0xC1C00000
+#data 0x0E00FF03
+#data 0x40400000
+#data 0x1C00FF03
+#data 0x40400000
+#data 0x1D00FF03
+#data 0x40500000
+#data 0x1D00FF03
+#data 0x40880000
+#data 0x1200FF03
+#data 0x40200000
+#data 0x1600FF03
+#data 0x40400000
+#data 0x0E00FF03
+#data 0x40600000
+#data 0x2700FF02
+#data 0x41900000
+#data 0x2700FF02
+#data 0x40A80000
+#data 0x0003FF02
+#data 0xC1000000
+#data 0x0000FF02
+#data 0x40E00000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FF02
+#data 0x40E00000
+#data 0x0000FF02
+#data 0x40600000
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c160E64:
+#data loc_8c160B54
+
+loc_8c160E68:
+#data loc_8c160BCC
+
+loc_8c160E6C:
+#data loc_8c160C3C
+
+loc_8c160E70:
+#data loc_8c160CCC
+
+loc_8c160E74:
+#data loc_8c160D44
+
+loc_8c160E78:
+#data loc_8c160D84
+
+loc_8c160E7C:
+#data loc_8c160DE4
+
+loc_8c160E80:
+#data loc_8c160B54
+
+loc_8c160E84:
+#data loc_8c160B54
+
+loc_8c160E88:
+#data loc_8c160B54
+
+loc_8c160E8C:
+#data loc_8c160B54
+
+loc_8c160E90:
+#data loc_8c160B54
+
+loc_8c160E94:
+#data loc_8c160B54
+
+loc_8c160E98:
+#data loc_8c160B54
+
+loc_8c160E9C:
+#data loc_8c160B54
+
+loc_8c160EA0:
+#data loc_8c160B54
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c160EE4:
+#data 0xC0A00000
+#data 0x42D00000
+#data 0xC3200000
+#data 0x40A00000
+#data 0x42D00000
+#data 0xC3200000
+
+#align4
+loc_8c160EFC:
+#data 0xC2753333
+#data 0xC2360000
+#data 0xC28C0000
+#data 0x42753333
+#data 0xC2360000
+#data 0xC28C0000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c160F20:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c160F2C:
+#data 0x3F800000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F600000
+#data 0x3F800000
+#data 0x3E800000
+#data 0x3F800000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F200000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3E800000
+#data 0x3F800000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x00000000
+#data 0x3F600000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c160FDC:
+#data 0x0000002F
+#data 0x00000030
+#data 0x00000031
+
+#align4
+loc_8c160FE8:
+#data 0xC2003D71
+#data 0x00000000
+#data 0xC1AFEB85
+#data 0xBFAA3D71
+#data 0x00000000
+#data 0xC10C0000
+#data 0x412FAE14
+#data 0x00000000
+#data 0xC0400000
+#data 0x420151EC
+#data 0x00000000
+#data 0xC1AFEB85
+#data 0x3F91EB85
+#data 0x00000000
+#data 0xC0EE6666
+#data 0xC132E148
+#data 0x00000000
+#data 0xBFD9999A
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0xC0933333
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c161054:
+#data 0x0000EE3A
+#data 0x000011C7
+#data 0x00000000
+
+#align4
+loc_8c161060:
+#data 0x0000001E
+#data 0x0000001E
+#data 0x0000003C
+
+#align4
+loc_8c16106C:
+#data 0x42480000
+#data 0x00000000
+#data 0xC1F00000
+#data 0xC1800000
+#data 0x00000000
+#data 0xC2700000
+#data 0x41200000
+#data 0xC2200000
+#data 0xC1F00000
+#data 0xC2280000
+#data 0x41700000
+#data 0xC2700000
+#data 0x41200000
+#data 0x42200000
+#data 0xC1F00000
+#data 0xC2280000
+#data 0xC1700000
+#data 0xC2700000
+
+#align4
+loc_8c1610B4:
+#data bank0f.loc_8c0f2BD0
+
+loc_8c1610B8:
+#data bank0f.loc_8c0f2D8A
+
+loc_8c1610BC:
+#data bank0f.loc_8c0f2EBC
+
+loc_8c1610C0:
+#data bank0f.loc_8c0f2ECA
+
+loc_8c1610C4:
+#data 0x3FC00000
+#data 0x3FC00000
+#data 0x3F800000
+
+#align4
+loc_8c1610D0:
+#data 0x3F28F5C3
+#data 0x3F28F5C3
+#data 0x3F800000
+
+#align4
+loc_8c1610DC:
+#data 0x3F000000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c1610E8:
+#data 0x3F800000
+#data 0x3F000000
+#data 0x3F800000
+
+#align4
+loc_8c1610F4:
+#data 0x40200000
+#data 0x40200000
+#data 0x3F800000
+
+#align4
+loc_8c161100:
+#data loc_8c1610C4
+
+loc_8c161104:
+#data loc_8c1610C4
+
+loc_8c161108:
+#data loc_8c1610D0
+
+loc_8c16110C:
+#data loc_8c1610DC
+
+loc_8c161110:
+#data loc_8c1610E8
+
+loc_8c161114:
+#data loc_8c1610F4
+
+loc_8c161118:
+#data 0x0D05FF01
+#data 0x40800000
+#data 0x1B00FF01
+#data 0x40651EB8
+#data 0x0A00FF01
+#data 0x4055C290
+#data 0x2000FF01
+#data 0x40828F5C
+#data 0x1000FF01
+#data 0x40C51EB8
+#data 0x0A00FF01
+#data 0x405A3D70
+#data 0x1600FF01
+#data 0x4078F5C0
+#data 0x0E00FF01
+#data 0x4061EB88
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c161160:
+#data 0x0D05FF01
+#data 0x40800000
+#data 0x1800FF01
+#data 0x405F5C29
+#data 0x1E00FF01
+#data 0x405D70A3
+#data 0x0B00FF01
+#data 0x40633334
+#data 0x1500FF01
+#data 0x405A3D70
+#data 0x0E00FF01
+#data 0x40147AE0
+#data 0x1400FF01
+#data 0x409D1EB8
+#data 0x2E00FF01
+#data 0x405EB858
+#data 0x1800FF01
+#data 0x3FD33330
+#data 0x2E00FF01
+#data 0x40633330
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c1611B8:
+#data 0x1D05FF04
+#data 0x40800000
+#data 0x1200FF04
+#data 0x401EB852
+#data 0x1600FF04
+#data 0x4045C290
+#data 0x0E00FF04
+#data 0x40670A3E
+#data 0x1800FF04
+#data 0x40BBD70A
+#data 0x1F00FF04
+#data 0x4051EB84
+#data 0x0E00FF04
+#data 0x404D70A8
+#data 0x1B00FF04
+#data 0x403C28F0
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c161200:
+#data 0x1905FF02
+#data 0x40800000
+#data 0x0E00FF02
+#data 0x40451EB8
+#data 0x1B00FF02
+#data 0x4040A3D8
+#data 0x0F00FF02
+#data 0x403CCCCC
+#data 0x0E00FF02
+#data 0x40366668
+#data 0x0C00FF02
+#data 0x4043D708
+#data 0x1D00FF02
+#data 0x40570A3C
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c161240:
+#data 0x2205FF03
+#data 0x40800000
+#data 0x1800FF03
+#data 0x40500000
+#data 0x1E00FF03
+#data 0x405D70A4
+#data 0x2000FF03
+#data 0x40CB3334
+#data 0x1200FF03
+#data 0x4078F5C4
+#data 0x1700FF03
+#data 0x402C28F0
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c161278:
+#data 0x2205FF02
+#data 0x00000000
+#data 0x1800FF02
+#data 0x40500000
+#data 0x1E00FF02
+#data 0x405D70A4
+#data 0x1500FF02
+#data 0x40A00000
+#data 0x1800FF02
+#data 0x4020A3D8
+#data 0x1C00FF02
+#data 0x405AE144
+#data 0x0E00FF02
+#data 0x403C28F8
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c1612B8:
+#data 0x0105FF01
+#data 0x40600000
+#data 0x1900FF01
+#data 0x403EB852
+#data 0x2000FF01
+#data 0x40BFFFFF
+#data 0x1200FF01
+#data 0x4079999C
+#data 0x1700FF01
+#data 0x4038F5C4
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c1612E8:
+#data 0x0205FF02
+#data 0x40800000
+#data 0x1900FF02
+#data 0x40628F5C
+#data 0x2000FF02
+#data 0x40C00000
+#data 0x1200FF02
+#data 0x40799998
+#data 0x1700FF02
+#data 0x4038F5C4
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c161318:
+#data loc_8c161118
+
+loc_8c16131C:
+#data loc_8c161160
+
+loc_8c161320:
+#data loc_8c1611B8
+
+loc_8c161324:
+#data loc_8c161200
+
+loc_8c161328:
+#data loc_8c161240
+
+loc_8c16132C:
+#data loc_8c161278
+
+loc_8c161330:
+#data loc_8c1612B8
+
+loc_8c161334:
+#data loc_8c1612E8
+
+loc_8c161338:
+#data loc_8c161118
+
+loc_8c16133C:
+#data loc_8c161118
+
+loc_8c161340:
+#data loc_8c161118
+
+loc_8c161344:
+#data loc_8c161118
+
+loc_8c161348:
+#data loc_8c161118
+
+loc_8c16134C:
+#data loc_8c161118
+
+loc_8c161350:
+#data loc_8c161118
+
+loc_8c161354:
+#data loc_8c161118
+
+loc_8c161358:
+#data 0x429A0000
+#data 0x429C0000
+#data 0x428C0000
+#data 0x42580000
+#data 0x42640000
+#data 0x42680000
+#data 0x423C0000
+#data 0x42440000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c161398:
+#data 0x2C2B2A29
+#data 0x00002E2D
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c1613A8:
+#data bank0f.loc_8c0f2F42
+
+loc_8c1613AC:
+#data bank0f.loc_8c0f2FC0
+
+loc_8c1613B0:
+#data bank0f.loc_8c0f309C
+
+loc_8c1613B4:
+#data bank0f.loc_8c0f309C
+
+loc_8c1613B8:
+#data bank0f.loc_8c0f2FD2
+
+loc_8c1613BC:
+#data bank0f.loc_8c0f2FF2
+
+loc_8c1613C0:
+#data bank0f.loc_8c0f3050
+
+loc_8c1613C4:
+#data bank0f.loc_8c0f307E
+
+loc_8c1613C8:
+#data 0x3FC00000
+#data 0x3FC00000
+#data 0x3F800000
+
+#align4
+loc_8c1613D4:
+#data 0x3F28F5C3
+#data 0x3F28F5C3
+#data 0x3F800000
+
+#align4
+loc_8c1613E0:
+#data 0x3F000000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c1613EC:
+#data 0x3F800000
+#data 0x3F000000
+#data 0x3F800000
+
+#align4
+loc_8c1613F8:
+#data 0x40200000
+#data 0x40200000
+#data 0x3F800000
+
+#align4
+loc_8c161404:
+#data loc_8c1613C8
+
+loc_8c161408:
+#data loc_8c1613C8
+
+loc_8c16140C:
+#data loc_8c1613D4
+
+loc_8c161410:
+#data loc_8c1613E0
+
+loc_8c161414:
+#data loc_8c1613EC
+
+loc_8c161418:
+#data loc_8c1613F8
+
+loc_8c16141C:
+#data 0x1F00FF03
+#data 0xC1C40000
+#data 0x1200FF03
+#data 0x40200000
+#data 0x1D00FF03
+#data 0x40200000
+#data 0x0A00FF03
+#data 0x40300000
+#data 0x1500FF03
+#data 0x40400000
+#data 0x00030004
+#data 0x41C60000
+#data 0x00000104
+#data 0x40600000
+#data 0x00000204
+#data 0x40600000
+#data 0x00000304
+#data 0x40600000
+#data 0x00000404
+#data 0x40600000
+#data 0x00000504
+#data 0x40600000
+#data 0x00000604
+#data 0x40600000
+#data 0x00000704
+#data 0x40600000
+#data 0x00000804
+#data 0x40600000
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c161494:
+#data 0x1D00FF03
+#data 0xC1C40000
+#data 0x1200FF03
+#data 0x40300000
+#data 0x1600FF03
+#data 0x40500000
+#data 0x0E00FF03
+#data 0x40700000
+#data 0x00030004
+#data 0x41CE0000
+#data 0x00000104
+#data 0x40600000
+#data 0x00000204
+#data 0x40600000
+#data 0x00000304
+#data 0x40600000
+#data 0x00000404
+#data 0x40600000
+#data 0x00000504
+#data 0x40600000
+#data 0x00000604
+#data 0x40600000
+#data 0x00000704
+#data 0x40600000
+#data 0x00000804
+#data 0x40600000
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c161504:
+#data 0x0C00FF03
+#data 0xC1C40000
+#data 0x1800FF03
+#data 0x40600000
+#data 0x1600FF03
+#data 0x40800000
+#data 0x1900FF03
+#data 0x40800000
+#data 0x1500FF03
+#data 0x40400000
+#data 0x0E00FF03
+#data 0x40300000
+#data 0x1D00FF03
+#data 0x40400000
+#data 0x0E00FF03
+#data 0x40400000
+#data 0x00030004
+#data 0x41440000
+#data 0x00000104
+#data 0x40600000
+#data 0x00000204
+#data 0x40600000
+#data 0x00000304
+#data 0x40600000
+#data 0x00000404
+#data 0x40600000
+#data 0x00000504
+#data 0x40600000
+#data 0x00000604
+#data 0x40600000
+#data 0x00000704
+#data 0x40600000
+#data 0x00000804
+#data 0x40600000
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c161594:
+#data 0x1D00FF03
+#data 0xC1C40000
+#data 0x1800FF03
+#data 0x40600000
+#data 0x1D00FF03
+#data 0x40600000
+#data 0x0A00FF03
+#data 0x40400000
+#data 0x1500FF03
+#data 0x40500000
+#data 0x00030004
+#data 0x41B20000
+#data 0x00000104
+#data 0x40600000
+#data 0x00000204
+#data 0x40600000
+#data 0x00000304
+#data 0x40600000
+#data 0x00000404
+#data 0x40600000
+#data 0x00000504
+#data 0x40600000
+#data 0x00000604
+#data 0x40600000
+#data 0x00000704
+#data 0x40600000
+#data 0x00000804
+#data 0x40600000
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c16160C:
+#data 0x2000FF03
+#data 0xC1400000
+#data 0x1200FF03
+#data 0x40800000
+#data 0x1700FF03
+#data 0x40300000
+#data 0x1C00FF03
+#data 0x40600000
+#data 0x00030004
+#data 0x418A0000
+#data 0x00000104
+#data 0x40600000
+#data 0x00000204
+#data 0x40600000
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c16164C:
+#data 0x1600FF03
+#data 0xC1D80000
+#data 0x0A00FF03
+#data 0x40700000
+#data 0x2100FF03
+#data 0x40400000
+#data 0x0C00FF03
+#data 0x40900000
+#data 0x1800FF03
+#data 0x40500000
+#data 0x1600FF03
+#data 0x40700000
+#data 0x0B00FF03
+#data 0x40700000
+#data 0x1800FF03
+#data 0x40500000
+#data 0x00030004
+#data 0x418A0000
+#data 0x00000104
+#data 0x40600000
+#data 0x00000204
+#data 0x40600000
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c1616AC:
+#data 0x1900FF03
+#data 0xC1C00000
+#data 0x1500FF03
+#data 0x40400000
+#data 0x0A00FF03
+#data 0x40400000
+#data 0x2200FF03
+#data 0x40500000
+#data 0x1D00FF03
+#data 0x40880000
+#data 0x1200FF03
+#data 0x40200000
+#data 0x1600FF03
+#data 0x40400000
+#data 0x0E00FF03
+#data 0x40600000
+#data 0x2700FF04
+#data 0x41900000
+#data 0x2700FF04
+#data 0x40A80000
+#data 0x00030004
+#data 0xC1000000
+#data 0x00000104
+#data 0x40E00000
+#data 0x00000204
+#data 0x40600000
+#data 0x00000304
+#data 0x40E00000
+#data 0x00000404
+#data 0x40600000
+#data 0x0000FFFF
+#data 0x00000000
+
+#align4
+loc_8c16172C:
+#data loc_8c16141C
+
+loc_8c161730:
+#data loc_8c161494
+
+loc_8c161734:
+#data loc_8c161504
+
+loc_8c161738:
+#data loc_8c161594
+
+loc_8c16173C:
+#data loc_8c16160C
+
+loc_8c161740:
+#data loc_8c16164C
+
+loc_8c161744:
+#data loc_8c1616AC
+
+loc_8c161748:
+#data 0x00040000
+#data 0x000C0008
+#data 0x00040000
+#data 0x00000008
+
+#align4
+loc_8c161758:
+#data bank0f.loc_8c0f32BE
+
+loc_8c16175C:
+#data bank0f.loc_8c0f32E8
+
+loc_8c161760:
+#data bank0f.loc_8c0f33FA
+
+loc_8c161764:
+#data bank0f.loc_8c0f33FA
+
+loc_8c161768:
+#data bank0f.loc_8c0f3324
+
+loc_8c16176C:
+#data bank0f.loc_8c0f336C
+
+loc_8c161770:
+#data 0x00000000
+#data 0x433E0000
+#data 0x00000000
+#data 0x42A00000
+#data 0x433E0000
+#data 0x00000000
+#data 0xC2A00000
+#data 0x433E0000
+#data 0x00000000
+
+#align4
+loc_8c161794:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c1617A0:
+#data 0x00000000
+#data 0x43480000
+#data 0xC43B8000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
 
 ;Naomi Cursor Table
 loc_8c1617b8:
-;	#data 0xc2600000 0x42500000 0x43370000 ;00 Ryu
-;	#data 0xc2640000 0x41880000 0x433d0000 ;01 Zangief
-;	#data 0xc2500000 0x42a80000 0x432c0000 ;02 Guile
-;	#data 0xc2600000 0xc2500000 0x43370000 ;03 Morrigan
-;	#data 0xc2640000 0xc1880000 0x433d0000 ;04 Anakaris
-;	#data 0xc2500000 0xc2a80000 0x432c0000 ;05 Strider Hiryu
-;	#data 0x41900000 0x42a80000 0x43330000 ;06 Cyclops
-;	#data 0x42600000 0x42500000 0x43370000 ;07 Wolverine
-;	#data 0x41800000 0x42e40000 0x43220000 ;08 Psylocke
-;	#data 0x42640000 0x41880000 0x433d0000 ;09 Iceman
-;	#data 0x423c0000 0x42e40000 0x431c0000 ;0a Rogue
-;	#data 0x41980000 0xc1880000 0x43450000 ;0b Captain America
-;	#data 0x42640000 0xc1880000 0x433d0000 ;0c Spiderman
-;	#data 0x42500000 0xc2a80000 0x432c0000 ;0d Hulk
-;	#data 0x42600000 0xc2500000 0x43370000 ;0e Venom
-;	#data 0x41980000 0xc2500000 0x433f0000 ;0f Dr.Doom
-;	#data 0xc2b40000 0x42500000 0x43290000 ;10 Tron Bonne
-;	#data 0xc2aa0000 0x42a80000 0x431f0000 ;11 Jill
-;	#data 0xc1980000 0xc1880000 0x43450000 ;12 Hayato
-;	#data 0xc1980000 0x41880000 0x43450000 ;13 Ruby Heart
-;	#data 0xc1980000 0x42500000 0x433f0000 ;14 Sonson
-;	#data 0xc1900000 0x42a80000 0x43330000 ;15 Amingo
-;	#data 0x41980000 0x42500000 0x433f0000 ;16 Marrow
-;	#data 0x41980000 0x41880000 0x43450000 ;17 Cable
-;	#data 0xbf800000 0xbf800000 0xbf800000 ;18 Abyss 1
-;	#data 0xbf800000 0xbf800000 0xbf800000 ;19 Abyss 2
-;	#data 0xbf800000 0xbf800000 0xbf800000 ;1a Abyss 3
-;	#data 0xc1800000 0xc2e40000 0x43220000 ;1b Chun-li
-;	#data 0xc23c0000 0x42e40000 0x431c0000 ;1c Megaman
-;	#data 0xc23c0000 0xc2e40000 0x431c0000 ;1d Roll
-;	#data 0xc2ba0000 0x41880000 0x432e0000 ;1e Akuma
-;	#data 0xc1980000 0xc2500000 0x433f0000 ;1f BBHood
-;	#data 0xc29a0000 0x42e40000 0x430f0000 ;20 Felica
-;	#data 0xc2fa0000 0x41880000 0x43190000 ;21 Charlie
-;	#data 0xc2b40000 0xc2500000 0x43290000 ;22 Sakura
-;	#data 0xc2f40000 0xc2500000 0x43140000 ;23 Dan
-;	#data 0xc2aa0000 0xc2a80000 0x431f0000 ;24 Cammy
-;	#data 0xc2fa0000 0xc1880000 0x43190000 ;25 Dhalsim
-;	#data 0xc1800000 0x42e40000 0x43220000 ;26 Dict
-;	#data 0xc2f40000 0x42500000 0x43140000 ;27 Ken
-;	#data 0x42ba0000 0x41880000 0x432e0000 ;28 Gambit
-;	#data 0x42ba0000 0xc1880000 0x432e0000 ;29 Juggernaut
-;	#data 0x423c0000 0xc2e40000 0x431c0000 ;2a Storm
-;	#data 0x42f40000 0xc2500000 0x43140000 ;2b Sabretooth
-;	#data 0x42500000 0x42a80000 0x432c0000 ;2c Magneto
-;	#data 0x41900000 0xc2a80000 0x43330000 ;2d Shuma
-;	#data 0x42aa0000 0x42a80000 0x431f0000 ;2e War Machine
-;	#data 0x42b40000 0x42500000 0x43290000 ;2f Silver Samurai
-;	#data 0x41800000 0xc2e40000 0x43220000 ;30 Omega Red
-;	#data 0x42fa0000 0xc1880000 0x43190000 ;31 Spiral
-;	#data 0x42f40000 0x42500000 0x43140000 ;32 Colossus
-;	#data 0x42aa0000 0xc2a80000 0x431f0000 ;33 Ironman
-;	#data 0x429a0000 0xc2e40000 0x430f0000 ;34 Sentinel
-;	#data 0x42fa0000 0x41880000 0x43190000 ;35 Blackheart
-;	#data 0x429a0000 0x42e40000 0x430f0000 ;36 Thanos
-;	#data 0xc2ba0000 0xc1880000 0x432e0000 ;37 Jin
-;	#data 0xc1900000 0xc2a80000 0x43330000 ;38 Captain Commando
-;	#data 0x42b40000 0xc2500000 0x43290000 ;39 BoneWolv
-;	#data 0xc29a0000 0xc2e40000 0x430f0000 ;3a Servbot
+	#data 0xc2600000 0x42500000 0x43370000 ;00 Ryu
+	#data 0xc2640000 0x41880000 0x433d0000 ;01 Zangief
+	#data 0xc2500000 0x42a80000 0x432c0000 ;02 Guile
+	#data 0xc2600000 0xc2500000 0x43370000 ;03 Morrigan
+	#data 0xc2640000 0xc1880000 0x433d0000 ;04 Anakaris
+	#data 0xc2500000 0xc2a80000 0x432c0000 ;05 Strider Hiryu
+	#data 0x41900000 0x42a80000 0x43330000 ;06 Cyclops
+	#data 0x42600000 0x42500000 0x43370000 ;07 Wolverine
+	#data 0x41800000 0x42e40000 0x43220000 ;08 Psylocke
+	#data 0x42640000 0x41880000 0x433d0000 ;09 Iceman
+	#data 0x423c0000 0x42e40000 0x431c0000 ;0a Rogue
+	#data 0x41980000 0xc1880000 0x43450000 ;0b Captain America
+	#data 0x42640000 0xc1880000 0x433d0000 ;0c Spiderman
+	#data 0x42500000 0xc2a80000 0x432c0000 ;0d Hulk
+	#data 0x42600000 0xc2500000 0x43370000 ;0e Venom
+	#data 0x41980000 0xc2500000 0x433f0000 ;0f Dr.Doom
+	#data 0xc2b40000 0x42500000 0x43290000 ;10 Tron Bonne
+	#data 0xc2aa0000 0x42a80000 0x431f0000 ;11 Jill
+	#data 0xc1980000 0xc1880000 0x43450000 ;12 Hayato
+	#data 0xc1980000 0x41880000 0x43450000 ;13 Ruby Heart
+	#data 0xc1980000 0x42500000 0x433f0000 ;14 Sonson
+	#data 0xc1900000 0x42a80000 0x43330000 ;15 Amingo
+	#data 0x41980000 0x42500000 0x433f0000 ;16 Marrow
+	#data 0x41980000 0x41880000 0x43450000 ;17 Cable
+	#data 0xbf800000 0xbf800000 0xbf800000 ;18 Abyss 1
+	#data 0xbf800000 0xbf800000 0xbf800000 ;19 Abyss 2
+	#data 0xbf800000 0xbf800000 0xbf800000 ;1a Abyss 3
+	#data 0xc1800000 0xc2e40000 0x43220000 ;1b Chun-li
+	#data 0xc23c0000 0x42e40000 0x431c0000 ;1c Megaman
+	#data 0xc23c0000 0xc2e40000 0x431c0000 ;1d Roll
+	#data 0xc2ba0000 0x41880000 0x432e0000 ;1e Akuma
+	#data 0xc1980000 0xc2500000 0x433f0000 ;1f BBHood
+	#data 0xc29a0000 0x42e40000 0x430f0000 ;20 Felica
+	#data 0xc2fa0000 0x41880000 0x43190000 ;21 Charlie
+	#data 0xc2b40000 0xc2500000 0x43290000 ;22 Sakura
+	#data 0xc2f40000 0xc2500000 0x43140000 ;23 Dan
+	#data 0xc2aa0000 0xc2a80000 0x431f0000 ;24 Cammy
+	#data 0xc2fa0000 0xc1880000 0x43190000 ;25 Dhalsim
+	#data 0xc1800000 0x42e40000 0x43220000 ;26 Dict
+	#data 0xc2f40000 0x42500000 0x43140000 ;27 Ken
+	#data 0x42ba0000 0x41880000 0x432e0000 ;28 Gambit
+	#data 0x42ba0000 0xc1880000 0x432e0000 ;29 Juggernaut
+	#data 0x423c0000 0xc2e40000 0x431c0000 ;2a Storm
+	#data 0x42f40000 0xc2500000 0x43140000 ;2b Sabretooth
+	#data 0x42500000 0x42a80000 0x432c0000 ;2c Magneto
+	#data 0x41900000 0xc2a80000 0x43330000 ;2d Shuma
+	#data 0x42aa0000 0x42a80000 0x431f0000 ;2e War Machine
+	#data 0x42b40000 0x42500000 0x43290000 ;2f Silver Samurai
+	#data 0x41800000 0xc2e40000 0x43220000 ;30 Omega Red
+	#data 0x42fa0000 0xc1880000 0x43190000 ;31 Spiral
+	#data 0x42f40000 0x42500000 0x43140000 ;32 Colossus
+	#data 0x42aa0000 0xc2a80000 0x431f0000 ;33 Ironman
+	#data 0x429a0000 0xc2e40000 0x430f0000 ;34 Sentinel
+	#data 0x42fa0000 0x41880000 0x43190000 ;35 Blackheart
+	#data 0x429a0000 0x42e40000 0x430f0000 ;36 Thanos
+	#data 0xc2ba0000 0xc1880000 0x432e0000 ;37 Jin
+	#data 0xc1900000 0xc2a80000 0x43330000 ;38 Captain Commando
+	#data 0x42b40000 0xc2500000 0x43290000 ;39 BoneWolv
+	#data 0xc29a0000 0xc2e40000 0x430f0000 ;3a Servbot
 
 ;Dreamcast Cursor Table
 loc_8c161a7c:
-;	#data 0xc2600000 0x42500000 0x43370000 ;00 Ryu
-;	#data 0xc2640000 0x41880000 0x433d0000 ;01 Zangief
-;	#data 0xc2500000 0x42a80000 0x432c0000 ;02 Guile
-;	#data 0xc2b40000 0xc2500000 0x43290000 ;03 Morrigan
-;	#data 0xc2640000 0xc1880000 0x433d0000 ;04 Anakaris
-;	#data 0xc2500000 0xc2a80000 0x432c0000 ;05 Strider Hiryu
-;	#data 0x41900000 0x42a80000 0x43330000 ;06 Cyclops
-;	#data 0x41800000 0x42e40000 0x43220000 ;07 Wolverine
-;	#data 0x42600000 0x42500000 0x43370000 ;08 Psylocke
-;	#data 0x42640000 0x41880000 0x433d0000 ;09 Iceman
-;	#data 0x41900000 0xc2a80000 0x43330000 ;0a Rogue
-;	#data 0x41980000 0xc1880000 0x43450000 ;0b Captain America
-;	#data 0x42640000 0xc1880000 0x433d0000 ;0c Spiderman
-;	#data 0x42500000 0xc2a80000 0x432c0000 ;0d Hulk
-;	#data 0x42600000 0xc2500000 0x43370000 ;0e Venom
-;	#data 0x41980000 0xc2500000 0x433f0000 ;0f Dr.Doom
-;	#data 0xc1980000 0xc2500000 0x433f0000 ;10 Tron Bonne
-;	#data 0xc1900000 0xc2a80000 0x43330000 ;11 Jill
-;	#data 0xc1980000 0xc1880000 0x43450000 ;12 Hayato
-;	#data 0xc1980000 0x41880000 0x43450000 ;13 Ruby Heart
-;	#data 0xc1980000 0x42500000 0x433f0000 ;14 Sonson
-;	#data 0xc1900000 0x42a80000 0x43330000 ;15 Amingo
-;	#data 0x41980000 0x42500000 0x433f0000 ;16 Marrow
-;	#data 0x41980000 0x41880000 0x43450000 ;17 Cable
-;	#data 0xbf800000 0xbf800000 0xbf800000 ;18 Abyss 1
-;	#data 0xbf800000 0xbf800000 0xbf800000 ;19 Abyss 2
-;	#data 0xbf800000 0xbf800000 0xbf800000 ;1a Abyss 3
-;	#data 0xc1800000 0xc2e40000 0x43220000 ;1b Chun-li
-;	#data 0xc23c0000 0x42e40000 0x431c0000 ;1c Megaman
-;	#data 0xc23c0000 0xc2e40000 0x431c0000 ;1d Roll
-;	#data 0xc2ba0000 0x41880000 0x432e0000 ;1e Akuma
-;	#data 0xc2b40000 0x42500000 0x43290000 ;1f BBHood
-;	#data 0xc29a0000 0x42e40000 0x430f0000 ;20 Felica
-;	#data 0xc2fa0000 0x41880000 0x43190000 ;21 Charlie
-;	#data 0xc2600000 0xc2500000 0x43370000 ;22 Sakura
-;	#data 0xc2aa0000 0x42a80000 0x431f0000 ;23 Dan
-;	#data 0xc2aa0000 0xc2a80000 0x431f0000 ;24 Cammy
-;	#data 0xc2fa0000 0xc1880000 0x43190000 ;25 Dhalsim
-;	#data 0xc2f40000 0xc2500000 0x43140000 ;26 Dict
-;	#data 0xc2f40000 0x42500000 0x43140000 ;27 Ken
-;	#data 0x42ba0000 0x41880000 0x432e0000 ;28 Gambit
-;	#data 0x42ba0000 0xc1880000 0x432e0000 ;29 Juggernaut
-;	#data 0x423c0000 0xc2e40000 0x431c0000 ;2a Storm
-;	#data 0x42f40000 0x42500000 0x43140000 ;2b Sabretooth
-;	#data 0x42b40000 0xc2500000 0x43290000 ;2c Magneto
-;	#data 0x423c0000 0x42e40000 0x431c0000 ;2d Shuma
-;	#data 0x42aa0000 0x42a80000 0x431f0000 ;2e War Machine
-;	#data 0x42b40000 0x42500000 0x43290000 ;2f Silver Samurai
-;	#data 0x41800000 0xc2e40000 0x43220000 ;30 Omega Red
-;	#data 0x42fa0000 0xc1880000 0x43190000 ;31 Spiral
-;	#data 0x42f40000 0xc2500000 0x43140000 ;32 Colossus
-;	#data 0x42aa0000 0xc2a80000 0x431f0000 ;33 Ironman
-;	#data 0x429a0000 0xc2e40000 0x430f0000 ;34 Sentinel
-;	#data 0x42fa0000 0x41880000 0x43190000 ;35 Blackheart
-;	#data 0x429a0000 0x42e40000 0x430f0000 ;36 Thanos
-;	#data 0xc2ba0000 0xc1880000 0x432e0000 ;37 Jin
-;	#data 0xc1800000 0x42e40000 0x43220000 ;38 Captain Commando
-;	#data 0x42500000 0x42a80000 0x432c0000 ;39 BoneWolv
-;	#data 0xc29a0000 0xc2e40000 0x430f0000 ;3a Servbot
+	#data 0xc2600000 0x42500000 0x43370000 ;00 Ryu
+	#data 0xc2640000 0x41880000 0x433d0000 ;01 Zangief
+	#data 0xc2500000 0x42a80000 0x432c0000 ;02 Guile
+	#data 0xc2b40000 0xc2500000 0x43290000 ;03 Morrigan
+	#data 0xc2640000 0xc1880000 0x433d0000 ;04 Anakaris
+	#data 0xc2500000 0xc2a80000 0x432c0000 ;05 Strider Hiryu
+	#data 0x41900000 0x42a80000 0x43330000 ;06 Cyclops
+	#data 0x41800000 0x42e40000 0x43220000 ;07 Wolverine
+	#data 0x42600000 0x42500000 0x43370000 ;08 Psylocke
+	#data 0x42640000 0x41880000 0x433d0000 ;09 Iceman
+	#data 0x41900000 0xc2a80000 0x43330000 ;0a Rogue
+	#data 0x41980000 0xc1880000 0x43450000 ;0b Captain America
+	#data 0x42640000 0xc1880000 0x433d0000 ;0c Spiderman
+	#data 0x42500000 0xc2a80000 0x432c0000 ;0d Hulk
+	#data 0x42600000 0xc2500000 0x43370000 ;0e Venom
+	#data 0x41980000 0xc2500000 0x433f0000 ;0f Dr.Doom
+	#data 0xc1980000 0xc2500000 0x433f0000 ;10 Tron Bonne
+	#data 0xc1900000 0xc2a80000 0x43330000 ;11 Jill
+	#data 0xc1980000 0xc1880000 0x43450000 ;12 Hayato
+	#data 0xc1980000 0x41880000 0x43450000 ;13 Ruby Heart
+	#data 0xc1980000 0x42500000 0x433f0000 ;14 Sonson
+	#data 0xc1900000 0x42a80000 0x43330000 ;15 Amingo
+	#data 0x41980000 0x42500000 0x433f0000 ;16 Marrow
+	#data 0x41980000 0x41880000 0x43450000 ;17 Cable
+	#data 0xbf800000 0xbf800000 0xbf800000 ;18 Abyss 1
+	#data 0xbf800000 0xbf800000 0xbf800000 ;19 Abyss 2
+	#data 0xbf800000 0xbf800000 0xbf800000 ;1a Abyss 3
+	#data 0xc1800000 0xc2e40000 0x43220000 ;1b Chun-li
+	#data 0xc23c0000 0x42e40000 0x431c0000 ;1c Megaman
+	#data 0xc23c0000 0xc2e40000 0x431c0000 ;1d Roll
+	#data 0xc2ba0000 0x41880000 0x432e0000 ;1e Akuma
+	#data 0xc2b40000 0x42500000 0x43290000 ;1f BBHood
+	#data 0xc29a0000 0x42e40000 0x430f0000 ;20 Felica
+	#data 0xc2fa0000 0x41880000 0x43190000 ;21 Charlie
+	#data 0xc2600000 0xc2500000 0x43370000 ;22 Sakura
+	#data 0xc2aa0000 0x42a80000 0x431f0000 ;23 Dan
+	#data 0xc2aa0000 0xc2a80000 0x431f0000 ;24 Cammy
+	#data 0xc2fa0000 0xc1880000 0x43190000 ;25 Dhalsim
+	#data 0xc2f40000 0xc2500000 0x43140000 ;26 Dict
+	#data 0xc2f40000 0x42500000 0x43140000 ;27 Ken
+	#data 0x42ba0000 0x41880000 0x432e0000 ;28 Gambit
+	#data 0x42ba0000 0xc1880000 0x432e0000 ;29 Juggernaut
+	#data 0x423c0000 0xc2e40000 0x431c0000 ;2a Storm
+	#data 0x42f40000 0x42500000 0x43140000 ;2b Sabretooth
+	#data 0x42b40000 0xc2500000 0x43290000 ;2c Magneto
+	#data 0x423c0000 0x42e40000 0x431c0000 ;2d Shuma
+	#data 0x42aa0000 0x42a80000 0x431f0000 ;2e War Machine
+	#data 0x42b40000 0x42500000 0x43290000 ;2f Silver Samurai
+	#data 0x41800000 0xc2e40000 0x43220000 ;30 Omega Red
+	#data 0x42fa0000 0xc1880000 0x43190000 ;31 Spiral
+	#data 0x42f40000 0xc2500000 0x43140000 ;32 Colossus
+	#data 0x42aa0000 0xc2a80000 0x431f0000 ;33 Ironman
+	#data 0x429a0000 0xc2e40000 0x430f0000 ;34 Sentinel
+	#data 0x42fa0000 0x41880000 0x43190000 ;35 Blackheart
+	#data 0x429a0000 0x42e40000 0x430f0000 ;36 Thanos
+	#data 0xc2ba0000 0xc1880000 0x432e0000 ;37 Jin
+	#data 0xc1800000 0x42e40000 0x43220000 ;38 Captain Commando
+	#data 0x42500000 0x42a80000 0x432c0000 ;39 BoneWolv
+	#data 0xc29a0000 0xc2e40000 0x430f0000 ;3a Servbot
+
+loc_8c161D40:
+#data 0x00000000
+#data 0x3F800000
+#data 0x3E000000
+#data 0x3F800000
+#data 0x3E800000
+#data 0x3F800000
+#data 0x3EC00000
+#data 0x3F800000
+#data 0x00000000
+#data 0x3F600000
+#data 0x3E000000
+#data 0x3F600000
+#data 0x3E800000
+#data 0x3F600000
+#data 0x3EC00000
+#data 0x3F600000
+#data 0x00000000
+#data 0x3F400000
+#data 0x3E000000
+#data 0x3F400000
+#data 0x3E800000
+#data 0x3F400000
+#data 0x3EC00000
+#data 0x3F400000
+#data 0x00000000
+#data 0x3F200000
+#data 0x3E000000
+#data 0x3F200000
+#data 0x3E800000
+#data 0x3F200000
+#data 0x3EC00000
+#data 0x3F200000
+#data 0x00000000
+#data 0x3F000000
+#data 0x3E000000
+#data 0x3F000000
+#data 0x3E800000
+#data 0x3F000000
+#data 0x3EC00000
+#data 0x3F000000
+#data 0x00000000
+#data 0x3EC00000
+#data 0x3E000000
+#data 0x3EC00000
+#data 0x3E800000
+#data 0x3EC00000
+#data 0x3EC00000
+#data 0x3EC00000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x3E800000
+#data 0x3E000000
+#data 0x3E800000
+#data 0x3E800000
+#data 0x3E800000
+#data 0x3EC00000
+#data 0x3E800000
+#data 0x00000000
+#data 0x3E000000
+#data 0x3E000000
+#data 0x3E000000
+#data 0x3E800000
+#data 0x3E000000
+#data 0x3EC00000
+#data 0x3E000000
+#data 0x3F000000
+#data 0x3F800000
+#data 0x3F200000
+#data 0x3F800000
+#data 0x3F400000
+#data 0x3F800000
+#data 0x3F600000
+#data 0x3F800000
+#data 0x3F000000
+#data 0x3F600000
+#data 0x3F200000
+#data 0x3F600000
+#data 0x3F400000
+#data 0x3F600000
+#data 0x3F600000
+
+#align4
+loc_8c161E94:
+#data 0x3F600000
+#data 0x3F000000
+#data 0x3F400000
+#data 0x3F200000
+#data 0x3F400000
+#data 0x3F400000
+#data 0x3F400000
+#data 0x3F600000
+#data 0x3F400000
+#data 0x3F000000
+#data 0x3F200000
+#data 0x3F200000
+#data 0x3F200000
+#data 0x3F400000
+#data 0x3F200000
+#data 0x3F600000
+#data 0x3F200000
+#data 0x3F000000
+#data 0x3F000000
+#data 0x3F200000
+#data 0x3F000000
+#data 0x3F400000
+#data 0x3F000000
+#data 0x3F600000
+#data 0x3F000000
+#data 0x3F000000
+#data 0x3EC00000
+#data 0x3F200000
+#data 0x3EC00000
+#data 0x3F400000
+#data 0x3EC00000
+#data 0x3F600000
+#data 0x3EC00000
+
+#align4
+loc_8c161F18:
+#data bank0f.loc_8c0F3DF4
+
+loc_8c161F1C:
+#data bank0f.loc_8c0F3E5E
+
+loc_8c161F20:
+#data bank0f.loc_8c0F3F10
+
+loc_8c161F24:
+#data bank0f.loc_8c0F419E
+
+loc_8c161F28:
+#data bank0f.loc_8c0F41F8
+#data 0x10000000
+#data 0x00000080
+#data 0x80000000
+#data 0x40000000
+#data 0x00000008
+#data 0x20000000
+#data 0x08000000
+#data 0x00000001
+#data 0x01000000
+#data 0x00002000
+#data 0x00400000
+#data 0x00000008
+#data 0x00004000
+#data 0x00000080
+#data 0x00008000
+#data 0x00000800
+#data 0x00000002
+#data 0x00000100
+#data 0x00200000
+#data 0x00000020
+#data 0x00800000
+#data 0x00000200
+#data 0x00020000
+#data 0x00000040
+#data 0x00001000
+#data 0x00040000
+#data 0x00000010
+#data 0x00080000
+#data 0x04000000
+#data 0x00100000
+#data 0x00010000
+#data 0x00000400
 
 ;Naomi Character Select ID Table
 loc_8c161fac:
-;	#data 0xff 0x20 0x1c 0x26 0x08 0x0a 0x36 0xff
-;	#data 0xff 0x11 0x02 0x15 0x06 0x2c 0x2e 0xff
-;	#data 0x27 0x10 0x00 0x14 0x16 0x07 0x2f 0x32
-;	#data 0x21 0x1e 0x01 0x13 0x17 0x09 0x28 0x35
-;	#data 0x25 0x37 0x04 0x12 0x0b 0x0c 0x29 0x31
-;	#data 0x23 0x22 0x03 0x1f 0x0f 0x0e 0x39 0x2b
-;	#data 0xff 0x24 0x05 0x38 0x2d 0x0d 0x33 0xff
-;	#data 0xff 0x3a 0x1d 0x1b 0x30 0x2a 0x34 0xff
+	#data 0xff 0x20 0x1c 0x26 0x08 0x0a 0x36 0xff
+	#data 0xff 0x11 0x02 0x15 0x06 0x2c 0x2e 0xff
+	#data 0x27 0x10 0x00 0x14 0x16 0x07 0x2f 0x32
+	#data 0x21 0x1e 0x01 0x13 0x17 0x09 0x28 0x35
+	#data 0x25 0x37 0x04 0x12 0x0b 0x0c 0x29 0x31
+	#data 0x23 0x22 0x03 0x1f 0x0f 0x0e 0x39 0x2b
+	#data 0xff 0x24 0x05 0x38 0x2d 0x0d 0x33 0xff
+	#data 0xff 0x3a 0x1d 0x1b 0x30 0x2a 0x34 0xff
 
 ;Dreamcast Character Select ID Table
 loc_8c161fec:
-;	#data 0xff 0x20 0x1c 0x38 0x07 0x2d 0x36 0xff
-;	#data 0xff 0x23 0x02 0x15 0x06 0x39 0x2e 0xff
-;	#data 0x27 0x1f 0x00 0x14 0x16 0x08 0x2f 0x2b
-;	#data 0x21 0x1e 0x01 0x13 0x17 0x09 0x28 0x35
-;	#data 0x25 0x37 0x04 0x12 0x0b 0x0c 0x29 0x31
-;	#data 0x26 0x03 0x22 0x10 0x0f 0x0e 0x2c 0x32
-;	#data 0xff 0x24 0x05 0x11 0x0a 0x0d 0x33 0xff
-;	#data 0xff 0x3a 0x1d 0x1b 0x30 0x2a 0x34 0xff
+	#data 0xff 0x20 0x1c 0x38 0x07 0x2d 0x36 0xff
+	#data 0xff 0x23 0x02 0x15 0x06 0x39 0x2e 0xff
+	#data 0x27 0x1f 0x00 0x14 0x16 0x08 0x2f 0x2b
+	#data 0x21 0x1e 0x01 0x13 0x17 0x09 0x28 0x35
+	#data 0x25 0x37 0x04 0x12 0x0b 0x0c 0x29 0x31
+	#data 0x26 0x03 0x22 0x10 0x0f 0x0e 0x2c 0x32
+	#data 0xff 0x24 0x05 0x11 0x0a 0x0d 0x33 0xff
+	#data 0xff 0x3a 0x1d 0x1b 0x30 0x2a 0x34 0xff
 
-#symbol loc_8c162b2c 0x8c162b2c
+
+loc_8c16202C:
+#data bank0f.loc_8c0f447A
+
+loc_8c162030:
+#data bank0f.loc_8c0f44C6
+
+loc_8c162034:
+#data bank0f.loc_8c0f456C
+
+loc_8c162038:
+#data bank0f.loc_8c0f45AE
+
+loc_8c16203C:
+#data bank0f.loc_8c0f4858
+
+loc_8c162040:
+#data bank0f.loc_8c0f487C
+
+loc_8c162044:
+#data bank0f.loc_8c0f48A6
+
+loc_8c162048:
+#data bank0f.loc_8c0f4914
+
+loc_8c16204C:
+#data bank0f.loc_8c0f4952
+
+loc_8c162050:
+#data 0xC3960000
+#data 0x43820000
+#data 0xC2480000
+#data 0xC3960000
+#data 0x43820000
+#data 0xC3750000
+#data 0xC3960000
+#data 0x43820000
+#data 0xC3E10000
+#data 0xC38C0000
+#data 0x43820000
+#data 0xC2480000
+#data 0xC3820000
+#data 0x43820000
+#data 0xC3750000
+#data 0xC3700000
+#data 0x43820000
+#data 0xC3E10000
+#data 0xC38C0000
+#data 0x43820000
+#data 0xC2480000
+#data 0xC3820000
+#data 0x43820000
+#data 0xC3750000
+#data 0xC3700000
+#data 0x43820000
+#data 0xC3E10000
+#data 0x43960000
+#data 0x43820000
+#data 0xC2480000
+#data 0x43960000
+#data 0x43820000
+#data 0xC3750000
+#data 0x43960000
+#data 0x43820000
+#data 0xC3E10000
+#data 0x438C0000
+#data 0x43820000
+#data 0xC2480000
+#data 0x43820000
+#data 0x43820000
+#data 0xC3750000
+#data 0x43700000
+#data 0x43820000
+#data 0xC3E10000
+#data 0x438C0000
+#data 0x43820000
+#data 0xC2480000
+#data 0x43820000
+#data 0x43820000
+#data 0xC3750000
+#data 0x43700000
+#data 0x43820000
+#data 0xC3E10000
+
+#align4
+loc_8c162128:
+#data 0x00000000
+#data 0x000038E4
+#data 0x00000444
+#data 0x00000000
+#data 0x0000C71D
+#data 0x0000FBBD
+
+#align4
+loc_8c162140:
+#data bank0f.loc_8c0f4B98
+
+loc_8c162144:
+#data bank0f.loc_8c0f4B98
+
+loc_8c162148:
+#data bank0f.loc_8c0f4B98
+
+loc_8c16214C:
+#data bank0f.loc_8c0f4BC8
+
+loc_8c162150:
+#data bank0f.loc_8c0f4D82
+
+loc_8c162154:
+#data bank0f.loc_8c0f4BDA
+
+loc_8c162158:
+#data bank0f.loc_8c0f4C20
+
+loc_8c16215C:
+#data bank0f.loc_8c0f4C6C
+
+loc_8c162160:
+#data bank0f.loc_8c0f4CA6
+
+loc_8c162164:
+#data bank0f.loc_8c0f4C6C
+
+loc_8c162168:
+#data bank0f.loc_8c0f4CF2
+
+loc_8c16216C:
+#data bank0f.loc_8c0f4D48
+
+loc_8c162170:
+#data bank0f.loc_8c0f4D9A
+
+loc_8c162174:
+#data bank0f.loc_8c0f4DA4
+
+loc_8c162178:
+#data bank0f.loc_8c0f4D82
+
+loc_8c16217C:
+#data bank0f.loc_8c0f4DD4
+
+loc_8c162180:
+#data bank0f.loc_8c0f4E0E
+
+loc_8c162184:
+#data bank0f.loc_8c0f4E2A
+
+loc_8c162188:
+#data bank0f.loc_8c0f530E
+
+loc_8c16218C:
+#data bank0f.loc_8c0f4E3E
+
+loc_8c162190:
+#data bank0f.loc_8c0f4E3E
+
+loc_8c162194:
+#data bank0f.loc_8c0f4E44
+
+loc_8c162198:
+#data bank0f.loc_8c0f4E3E
+
+loc_8c16219C:
+#data bank0f.loc_8c0f5088
+
+loc_8c1621A0:
+#data bank0f.loc_8c0f4E3E
+
+loc_8c1621A4:
+#data bank0f.loc_8c0f529C
+
+loc_8c1621A8:
+#data bank0f.loc_8c0f4DD4
+
+loc_8c1621AC:
+#data bank0f.loc_8c0f5324
+
+loc_8c1621B0:
+#data bank0f.loc_8c0f4E2A
+
+loc_8c1621B4:
+#data bank0f.loc_8c0f530E
+
+loc_8c1621B8:
+#data 0x00000000
+#data 0x00000000
+#data 0x80000000
+#data 0x80000000
+#data 0x00000000
+#data 0x80000000
+
+#align4
+loc_8c1621D0:
+#data bank0f.loc_8c0f55A0
+
+loc_8c1621D4:
+#data bank0f.loc_8c0f55B6
+
+loc_8c1621D8:
+#data bank0f.loc_8c0f55D6
+
+loc_8c1621DC:
+#data bank0f.loc_8c0f561C
+
+loc_8c1621E0:
+#data bank0f.loc_8c0f5640
+
+loc_8c1621E4:
+#data bank0f.loc_8c0f5664
+
+loc_8c1621E8:
+#data bank03.loc_8c03D46A
+
+loc_8c1621EC:
+#data 0x55545352
+#data 0x00005756
+#data 0x00000008
+#data 0x00000009
+#data 0x00000009
+#data 0x00000009
+#data 0x0000000A
+#data 0x0000000A
+#data 0x0000000A
+
+#align4
+loc_8c162210:
+#data 0xC3250000
+#data 0x42F00000
+#data 0x43700000
+#data 0xC3110000
+#data 0x42F00000
+#data 0x43700000
+#data 0xC3110000
+#data 0x42F00000
+#data 0x43700000
+#data 0x43250000
+#data 0x42F00000
+#data 0x43700000
+#data 0x43110000
+#data 0x42F00000
+#data 0x43700000
+#data 0x430E0000
+#data 0x42F00000
+#data 0x43700000
+
+#align4
+loc_8c162258:
+#data bank0f.loc_8c0f5974
+
+loc_8c16225C:
+#data bank0f.loc_8c0f59A2
+
+loc_8c162260:
+#data bank0f.loc_8c0f59D6
+
+loc_8c162264:
+#data 0xFFFFFFEE
+#data 0xFFFFFFEC
+#data 0xFFFFFFF8
+#data 0xFFFFFFEC
+#data 0xFFFFFFE4
+#data 0xFFFFFFEC
+#data 0x0000000B
+;-------------------------------------------------------------------------------
+#data 0xFFFFFFE1
+#data 0x00000001
+#data 0xFFFFFFEC
+#data 0x00000015
+#data 0xFFFFFFEC
+#data 0xFFFFFFE4
+#data 0x00000002
+#data 0xFFFFFFDA
+#data 0x00000002
+#data 0xFFFFFFEE
+#data 0x0000000D
+#data 0xFFFFFFF8
+#data 0x0000000D
+#data 0x00000015
+#data 0x00000002
+#data 0x00000001
+#data 0x00000002
+#data 0x00000001
+#data 0x0000000D
+#data 0x00000015
+#data 0x0000000D
+#data 0x0000000B
+;-------------------------------------------------------------------------------
+#data 0x0000000D
+#data 0x0000000B
+;-------------------------------------------------------------------------------
+#data 0x00000002
+#data 0x0000000B
+;-------------------------------------------------------------------------------
+#data 0xFFFFFFF8
+#data 0x00000015
+#data 0xFFFFFFF8
+#data 0x00000001
+#data 0xFFFFFFF7
+#data 0xFFFFFFF8
+#data 0xFFFFFFF7
+#data 0xFFFFFFEE
+#data 0xFFFFFFF8
+#data 0xFFFFFFE4
+#data 0xFFFFFFF8
+#data 0xFFFFFFEE
+#data 0x00000002
+#data 0xFFFFFFF8
+#data 0x00000002
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x0000001F
+#data 0xFFFFFFF8
+#data 0xFFFFFFDA
+#data 0xFFFFFFED
+#data 0x0000001F
+#data 0xFFFFFFED
+#data 0xFFFFFFF8
+#data 0xFFFFFFE1
+#data 0xFFFFFFEE
+#data 0xFFFFFFE1
+#data 0xFFFFFFDA
+#data 0xFFFFFFE1
+#data 0xFFFFFFF8
+#data 0xFFFFFFD6
+#data 0x0000000B
+;-------------------------------------------------------------------------------
+#data 0xFFFFFFEC
+#data 0xFFFFFFE4
+#data 0xFFFFFFE1
+#data 0x00000015
+#data 0xFFFFFFE1
+#data 0x00000001
+#data 0xFFFFFFD6
+#data 0x0000000B
+;-------------------------------------------------------------------------------
+#data 0xFFFFFFD6
+#data 0x00000155
+#data 0x0000013D
+#data 0xFFFFFFF8
+#data 0x00000018
+#data 0x00000001
+#data 0x00000018
+#data 0x0000001F
+#data 0x0000000D
+#data 0xFFFFFFEE
+#data 0x00000023
+#data 0x0000000B
+;-------------------------------------------------------------------------------
+#data 0x00000018
+#data 0xFFFFFFDA
+#data 0x0000000D
+#data 0xFFFFFFE4
+#data 0x00000018
+#data 0xFFFFFFEE
+#data 0x00000018
+#data 0x0000001F
+#data 0x00000002
+#data 0x00000001
+#data 0x00000023
+#data 0x0000000B
+;-------------------------------------------------------------------------------
+#data 0x00000023
+#data 0x00000015
+#data 0x00000018
+#data 0x0000001F
+#data 0x00000018
+#data 0xFFFFFFF8
+#data 0x00000023
+#data 0xFFFFFFDA
+#data 0x00000018
+#data 0x00000001
+#data 0xFFFFFFE1
+#data 0xFFFFFFDA
+#data 0xFFFFFFF8
+#data 0xFFFFFFE4
+#data 0x0000000D
+#data 0x0000001F
+#data 0xFFFFFFE1
+#data 0xFFFFFFF5
+#data 0xFFFFFFF3
+#data 0xFFFFFFFF
+#data 0xFFFFFFF3
+#data 0xFFFFFFEB
+#data 0xFFFFFFF3
+#data 0x00000013
+#data 0xFFFFFFE8
+#data 0x00000009
+#data 0xFFFFFFF3
+#data 0x0000001D
+#data 0xFFFFFFF3
+#data 0x00000153
+#data 0x00000009
+#data 0x00000149
+#data 0x00000009
+#data 0xFFFFFFF5
+#data 0x00000014
+#data 0xFFFFFFFF
+#data 0x00000015
+#data 0x0000001C
+#data 0x00000008
+#data 0x00000008
+#data 0x00000009
+#data 0x00000008
+#data 0x00000015
+#data 0x0000001C
+#data 0x00000014
+#data 0x00000012
+#data 0x00000014
+#data 0x00000013
+#data 0x00000009
+#data 0x00000012
+#data 0xFFFFFFFE
+#data 0x0000001C
+#data 0xFFFFFFFE
+#data 0x00000008
+#data 0x00000166
+#data 0xFFFFFFFF
+#data 0xFFFFFFFE
+#data 0xFFFFFFF5
+#data 0x00000166
+#data 0xFFFFFFEB
+#data 0xFFFFFFFE
+#data 0xFFFFFFF5
+#data 0x00000008
+#data 0xFFFFFFFF
+#data 0x00000009
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000026
+#data 0xFFFFFFFE
+#data 0xFFFFFFE1
+#data 0xFFFFFFF3
+#data 0x00000026
+#data 0x0000015B
+#data 0xFFFFFFFF
+#data 0xFFFFFFE8
+#data 0xFFFFFFF5
+#data 0xFFFFFFE7
+#data 0xFFFFFFE1
+#data 0xFFFFFFE8
+#data 0xFFFFFFFF
+#data 0xFFFFFFDD
+#data 0x00000013
+#data 0xFFFFFFF3
+#data 0xFFFFFFEB
+#data 0xFFFFFFE8
+#data 0x0000001D
+#data 0xFFFFFFE8
+#data 0x00000009
+#data 0x00000144
+#data 0x00000012
+#data 0xFFFFFFDD
+#data 0xFFFFFFF5
+#data 0x00000145
+#data 0xFFFFFFFF
+#data 0x00000020
+#data 0x00000009
+#data 0x00000020
+#data 0x00000026
+#data 0x00000014
+#data 0xFFFFFFF5
+#data 0x0000002A
+#data 0x00000012
+#data 0x0000001F
+#data 0xFFFFFFE1
+#data 0x00000013
+#data 0xFFFFFFEB
+#data 0x0000001F
+#data 0xFFFFFFF5
+#data 0x0000001F
+#data 0x00000026
+#data 0x00000008
+#data 0x00000008
+#data 0x0000002A
+#data 0x00000012
+#data 0x0000002A
+#data 0x0000001C
+#data 0x0000001F
+#data 0x00000026
+#data 0x0000001F
+#data 0xFFFFFFFF
+#data 0x0000002A
+#data 0xFFFFFFE1
+#data 0x0000001F
+#data 0x00000008
+#data 0xFFFFFFE8
+#data 0xFFFFFFE1
+#data 0xFFFFFFFE
+#data 0xFFFFFFEB
+#data 0x00000014
+#data 0x00000026
+#data 0xFFFFFFE8
+
+#align4
+loc_8c162614:
+#data 0xC2E60000
+#data 0x43C40000
+#data 0x439B0000
+#data 0x42E60000
+#data 0x43C40000
+#data 0x439B0000
+
+#align4
+loc_8c16262C:
+#data 0x00000000
+#data 0x00000000
+#data 0x0000E001
+#data 0x00000000
+#data 0x00000000
+#data 0x00002000
+
+#align4
+loc_8c162644:
+#data bank0f.loc_8c0f5E2E
+
+loc_8c162648:
+#data bank0f.loc_8c0f5EAC
+
+loc_8c16264C:
+#data bank0f.loc_8c0f5EC0
+
+loc_8c162650:
+#data bank0f.loc_8c0f5EE8
+
+loc_8c162654:
+#data bank0f.loc_8c0f5EFE
+
+loc_8c162658:
+#data bank0f.loc_8c0f5F3C
+
+loc_8c16265C:
+#data bank0f.loc_8c0f5F4A
+
+loc_8c162660:
+#data bank0f.loc_8c0f5E2E
+
+loc_8c162664:
+#data bank0f.loc_8c0f5F62
+
+loc_8c162668:
+#data bank0f.loc_8c0f5F76
+
+loc_8c16266C:
+#data bank0f.loc_8c0f5EE8
+
+loc_8c162670:
+#data bank0f.loc_8c0f5EFE
+
+loc_8c162674:
+#data bank0f.loc_8c0f5F8C
+#data 0xC2DC0000
+#data 0x43C80000
+#data 0x439B0000
+#data 0x42DC0000
+#data 0x43C80000
+#data 0x439B0000
+
+#align4
+loc_8c162690:
+#data bank0f.loc_8c0f607E
+
+loc_8c162694:
+#data bank0f.loc_8c0f607E
+
+loc_8c162698:
+#data bank0f.loc_8c0f607E
+
+loc_8c16269C:
+#data bank0f.loc_8c0f607E
+
+loc_8c1626A0:
+#data bank0f.loc_8c0f607E
+
+loc_8c1626A4:
+#data bank0f.loc_8c0f6090
+
+loc_8c1626A8:
+#data 0xC20C0000
+#data 0xC3938000
+#data 0xC1EF3333
+#data 0x00000000
+#data 0xC3A28000
+#data 0x3DCCCCCD
+#data 0x420C0000
+#data 0xC3B18000
+#data 0x41F0CCCD
+#data 0x420C0000
+#data 0xC3938000
+#data 0xC1EF3333
+#data 0x00000000
+#data 0xC3A28000
+#data 0x3DCCCCCD
+#data 0xC20C0000
+#data 0xC3B18000
+#data 0x41F0CCCD
+
+#align4
+loc_8c1626F0:
+#data 0x41C00000
+#data 0xC3AC8000
+#data 0x41A0CCCD
+#data 0xC1C00000
+#data 0xC3988000
+#data 0xC19F3333
+#data 0xC1C00000
+#data 0xC3AC8000
+#data 0x41A0CCCD
+#data 0x41C00000
+#data 0xC3988000
+#data 0xC19F3333
+
+#align4
+loc_8c162720:
+#data 0x3D800000
+#data 0x3F800000
+#data 0x3D800000
+#data 0x3F600000
+#data 0x3D800000
+#data 0x3F400000
+#data 0x3D800000
+#data 0x3F200000
+#data 0x3D800000
+#data 0x3F000000
+#data 0x3D800000
+#data 0x3EC00000
+#data 0x3D800000
+#data 0x3E800000
+#data 0x3D800000
+#data 0x3E000000
+#data 0x3F100000
+#data 0x3F800000
+#data 0x3F100000
+#data 0x3F600000
+#data 0x3F100000
+#data 0x3F400000
+#data 0x3F100000
+#data 0x3F200000
+#data 0x3F100000
+#data 0x3F000000
+
+#align4
+loc_8c162788:
+#data 0x01020004
+#data 0x00040706
+#data 0x0C00040C
+#data 0x01050601
+#data 0x04000005
+#data 0x03040202
+#data 0x000C0004
+#data 0x03040C05
+#data 0x03040006
+#data 0x0104020A
+#data 0x05020403
+#data 0x0004050B
+#data 0x08000406
+#data 0x04020003
+#data 0x090A040C
+#data 0x08040008
+#data 0x04000C09
+#data 0x05040002
+#data 0x00010200
+#data 0x02000102
+#data 0x02040001
+#data 0x000C0400
+#data 0x04000C05
+#data 0x05040002
+#data 0x00050102
+#data 0x00030C04
+#data 0x05040002
+#data 0x00020304
+#data 0x05000401
+#data 0x02000402
+#data 0x010B0200
+#data 0x02000503
+#data 0x0B000205
+#data 0x000B0A00
+#data 0x04000C02
+#data 0x0B000105
+#data 0x00010406
+#data 0x04030105
+#data 0x0B04000B
+;-------------------------------------------------------------------------------
+#data 0x01010B00
+#data 0x030A0B04
+#data 0x0B04020B
+#data 0x01020401
+#data 0x0400050B
+#data 0x0000000C
+
+#align4
+loc_8c16283C:
+#data bank0f.loc_8c0f637C
+
+loc_8c162840:
+#data bank0f.loc_8c0f637C
+
+loc_8c162844:
+#data bank0f.loc_8c0f63C0
+
+loc_8c162848:
+#data bank0f.loc_8c0f6418
+
+loc_8c16284C:
+#data bank0f.loc_8c0f637C
+
+loc_8c162850:
+#data bank0f.loc_8c0f6494
+
+loc_8c162854:
+#data bank0f.loc_8c0f637C
+
+loc_8c162858:
+#data bank0f.loc_8c0f637C
+
+loc_8c16285C:
+#data bank0f.loc_8c0f64CC
+
+loc_8c162860:
+#data bank0f.loc_8c0f6518
+
+loc_8c162864:
+#data bank0f.loc_8c0f637C
+
+loc_8c162868:
+#data bank0f.loc_8c0f6494
+
+loc_8c16286C:
+#data bank0f.loc_8c0f65AE
+
+loc_8c162870:
+#data bank0f.loc_8c0f637C
+
+loc_8c162874:
+#data bank0f.loc_8c0f65AE
+
+loc_8c162878:
+#data bank0f.loc_8c0f65AE
+
+loc_8c16287C:
+#data bank0f.loc_8c0f65AE
+
+loc_8c162880:
+#data bank0f.loc_8c0f6494
+
+loc_8c162884:
+#data bank0f.loc_8c0f66FA
+
+loc_8c162888:
+#data bank0f.loc_8c0f6722
+
+loc_8c16288C:
+#data 0x0000FE95
+#data 0x00000AAB
+#data 0x00001555
+#data 0x00002000
+#data 0x00002C17
+#data 0x0000399A
+#data 0x00005111
+#data 0x00005E94
+#data 0x00006C17
+#data 0x0000799A
+#data 0x00009111
+#data 0x00009D28
+#data 0x0000A93F
+#data 0x0000B6C1
+#data 0x0000C2D8
+#data 0x0000CEEF
+#data 0x0000DB06
+
+#align4
+loc_8c1628D0:
+#data bank0f.loc_8c0f6828
+
+loc_8c1628D4:
+#data bank0f.loc_8c0f6854
+
+loc_8c1628D8:
+#data bank0f.loc_8c0f685C
+
+loc_8c1628DC:
+#data 0x00000000
+#data 0x00000000
+#data 0x43503333
+#data 0x00000000
+#data 0x00000000
+#data 0x43500000
+
+#align4
+loc_8c1628F4:
+#data bank0f.loc_8c0f692E
+
+loc_8c1628F8:
+#data bank0f.loc_8c0f6998
+
+loc_8c1628FC:
+#data bank0f.loc_8c0f69B4
+
+loc_8c162900:
+#data bank0f.loc_8c0f6AAA
+
+loc_8c162904:
+#data bank0f.loc_8c0f6AAA
+
+loc_8c162908:
+#data bank0f.loc_8c0f6AB2
+
+loc_8c16290C:
+#data bank0f.loc_8c0f6B00
+
+loc_8c162910:
+#data bank0f.loc_8c0f6B6A
+
+loc_8c162914:
+#data bank0f.loc_8c0f6B72
+
+loc_8c162918:
+#data bank0f.loc_8c0f6AAA
+
+loc_8c16291C:
+#data bank0f.loc_8c0f6AAA
+
+loc_8c162920:
+#data bank0f.loc_8c0f6B90
+
+loc_8c162924:
+#data bank0f.loc_8c0f6B00
+
+loc_8c162928:
+#data bank0f.loc_8c0f6B6A
+
+loc_8c16292C:
+#data bank0f.loc_8c0f6B72
+
+loc_8c162930:
+#data 0xC1200000
+#data 0x42800000
+#data 0x422F999A
+#data 0x41200000
+#data 0x42680000
+#data 0x422F999A
+#data 0xC1F00000
+#data 0x42860000
+#data 0x422F999A
+#data 0xC1200000
+#data 0x42740000
+#data 0x422F999A
+#data 0xC2200000
+#data 0x42900000
+#data 0x422F999A
+#data 0xC1A00000
+#data 0x42820000
+#data 0x422F999A
+#data 0x41200000
+#data 0x42800000
+#data 0x422F999A
+#data 0xC1200000
+#data 0x42680000
+#data 0x422F999A
+#data 0x41F00000
+#data 0x42860000
+#data 0x422F999A
+#data 0x41200000
+#data 0x42740000
+#data 0x422F999A
+#data 0x42200000
+#data 0x42900000
+#data 0x422F999A
+#data 0x41A00000
+#data 0x42820000
+#data 0x422F999A
+
+#align4
+loc_8c1629C0:
+#data bank03.loc_8c03D46A
+
+loc_8c1629C4:
+#data bank03.loc_8c03D46A
+
+loc_8c1629C8:
+#data bank0f.loc_8c0f6EE0
+
+loc_8c1629CC:
+#data bank0f.loc_8c0f6EE0
+
+loc_8c1629D0:
+#data bank0f.loc_8c0f6F58
+
+loc_8c1629D4:
+#data bank0f.loc_8c0f6F78
+
+loc_8c1629D8:
+#data bank03.loc_8c03D46A
+
+loc_8c1629DC:
+#data bank03.loc_8c03D46A
+
+loc_8c1629E0:
+#data bank0f.loc_8c0f6F92
+
+loc_8c1629E4:
+#data bank0f.loc_8c0f6F92
+
+loc_8c1629E8:
+#data bank0f.loc_8c0f6F58
+
+loc_8c1629EC:
+#data bank0f.loc_8c0f6F78
+
+loc_8c1629F0:
+#data 0x3FE66666
+#data 0x00000000
+#data 0xC3570000
+#data 0xC2933333
+#data 0x00000000
+#data 0xC34A0000
+#data 0xC30A3333
+#data 0x00000000
+#data 0xC324B333
+#data 0xC33A3333
+#data 0x00000000
+#data 0xC2D70000
+#data 0xC353B333
+#data 0x00000000
+#data 0xC2153333
+#data 0xC353B333
+#data 0x00000000
+#data 0x42153333
+#data 0xC33A3333
+#data 0x00000000
+#data 0x42D70000
+#data 0x00000000
+#data 0x00000000
+#data 0xC3570000
+
+#align4
+loc_8c162A50:
+#data 0x00000000
+#data 0x42000000
+#data 0xC1D00000
+#data 0xC1A80000
+#data 0x41D00000
+#data 0xC1A80000
+
+#align4
+loc_8c162A68:
+#data 0x00000AAB
+#data 0x00000000
+#data 0x00007555
+#data 0x0000D556
+#data 0x00007555
+#data 0x00002AAB
+
+#align4
+loc_8c162A80:
+#data bank0f.loc_8c0f7542
+
+loc_8c162A84:
+#data bank0f.loc_8c0f75AC
+
+loc_8c162A88:
+#data bank0f.loc_8c0f75FC
+
+loc_8c162A8C:
+#data bank0f.loc_8c0f75FC
+
+loc_8c162A90:
+#data bank0f.loc_8c0f7632
+
+loc_8c162A94:
+#data bank0f.loc_8c0f75FC
+
+loc_8c162A98:
+#data bank0f.loc_8c0f765E
+
+loc_8c162A9C:
+#data bank0f.loc_8c0f75FC
+
+loc_8c162AA0:
+#data bank0f.loc_8c0f76AA
+
+loc_8c162AA4:
+#data 0x00008000
+#data 0x000071C7
+#data 0x0000638E
+#data 0x00005555
+#data 0x0000471C
+#data 0x000038E4
+#data 0x00002AAB
+#data 0x00008000
+
+#align4
+loc_8c162AC4:
+#data bank0f.loc_8c0f76C8
+
+loc_8c162AC8:
+#data bank0f.loc_8c0f7732
+
+loc_8c162ACC:
+#data bank0f.loc_8c0f7774
+
+loc_8c162AD0:
+#data bank0f.loc_8c0f7782
+
+loc_8c162AD4:
+#data bank0f.loc_8c0f7804
+
+loc_8c162AD8:
+#data bank0f.loc_8c0f78B2
+
+loc_8c162ADC:
+#data bank0f.loc_8c0f7910
+
+loc_8c162AE0:
+#data bank0f.loc_8c0f793A
+
+loc_8c162AE4:
+#data 0x40800000
+#data 0x429C0000
+#data 0x419F3333
+#data 0x41000000
+#data 0x429F0000
+#data 0x419F3333
+#data 0xC1000000
+#data 0x42A50000
+#data 0x419F3333
+#data 0xC0800000
+#data 0x429C0000
+#data 0x419F3333
+#data 0xC1000000
+#data 0x429F0000
+#data 0x419F3333
+#data 0x41000000
+#data 0x42A50000
+#data 0x419F3333
+
+#align4
+loc_8c162B2C:
+#data 0x02020101
+#data 0x00000000
+#data 0x02010202
+#data 0x02000100
+#data 0x01000000
+#data 0x00020000
+#data 0x00000000
+#data 0x01020202
+#data 0x02000201
+#data 0x00010100
+#data 0x00000101
+#data 0x00000201
+#data 0x01000200
+#data 0x00000000
+#data 0x00020201
+
+#align4
+loc_8c162B68:
+#data bank03.loc_8c03D46A
+
+loc_8c162B6C:
+#data bank03.loc_8c03D46A
+
+loc_8c162B70:
+#data bank03.loc_8c03D46A
+
+loc_8c162B74:
+#data bank0f.loc_8c0f7FBE
+
+loc_8c162B78:
+#data bank0f.loc_8c0f7FBE
+
+loc_8c162B7C:
+#data bank0f.loc_8c0f7FC6
+
+loc_8c162B80:
+#data bank0f.loc_8c0f85B2
+
+loc_8c162B84:
+#data bank0f.loc_8c0f85FC
+
+loc_8c162B88:
+#data bank0f.loc_8c0f86A0
+
+loc_8c162B8C:
+#data bank0f.loc_8c0f86B8
+
+loc_8c162B90:
+#data bank0f.loc_8c0f870E
+
+loc_8c162B94:
+#data 0x00070200
+
+#align4
+loc_8c162B98:
+#data 0x40A1EB85
+#data 0x4083D70A
+#data 0xC109999A
+#data 0x40A1EB85
+#data 0x4083D70A
+#data 0xC109999A
+#data 0x44B1A333
+#data 0x4490599A
+#data 0xC516A800
+
+#align4
+loc_8c162BBC:
+#data 0x4363CF5C
+#data 0xC252F5C3
+#data 0xC30CF0A4
+#data 0x4363CF5C
+#data 0xC252F5C3
+#data 0xC30CF0A4
+#data 0x4363CF5C
+#data 0xC252F5C3
+#data 0xC30CF0A4
+
+#align4
+loc_8c162BE0:
+#data bank0f.loc_8c0f8E9A
+
+loc_8c162BE4:
+#data bank0f.loc_8c0f8F30
+
+loc_8c162BE8:
+#data bank0f.loc_8c0f8FF6
+
+loc_8c162BEC:
+#data 0x00060504
+
+#align4
+loc_8c162BF0:
+#data 0xC208D70A
+#data 0xC1E50A3D
+#data 0x422928F6
+#data 0xC20DEB85
+#data 0xC1E8F5C3
+#data 0x424347AE
+#data 0xC20EF5C3
+#data 0xC1E53333
+#data 0x4258AE14
+
+#align4
+loc_8c162C14:
+#data 0x42006666
+#data 0x4257851F
+#data 0x42175C29
+
+#align4
+loc_8c162C20:
+#data 0x0F0C0A08
+#data 0x0C0A080E
+#data 0x1D1F0E0F
+#data 0x0000001E
+
+
+loc_8c162C30:
+mov.w @(0x1E,r1),r0
+mov.w r0,@(0x1E6,gbr)
+cmp/ge r3,r3
+mov.w r0,@(0x186,gbr)
+mov.l @(loc_8c162C64,pc),r7 ; r7 set to 0xC1BE28F6
+lds.l @r2+,fpul
+mov.l r11,@(0x20,r14)
+mov.w r0,@(0x1DE,gbr)
+mov.l r0,@(0x23C,gbr)
+mov.w r0,@(0x192,gbr)
+bra loc_8c1633F6
+lds.l @r2+,fpul
+#data 0xC1E7999A
+#data 0xC1C7C28F
+#data 0x423328F6
+#data 0xC1F08F5C
+#data 0xC1BE28F6
+#data 0x423BF5C3
+#data 0xC1F08F5C
+
+#align4
+loc_8c162C64:
+#data 0xC1BE28F6
+#data 0x423BF5C3
+#data 0xC1F10A3D
+#data 0xC1C5AE14
+#data 0x4257A3D7
+#data 0xC1F10A3D
+#data 0xC1C5AE14
+#data 0x4257A3D7
+#data 0xC1F10A3D
+#data 0xC1C5AE14
+#data 0x4257A3D7
+
+#align4
+loc_8c162C90:
+#data 0x42020000
+#data 0x4258EB85
+#data 0x421D3D71
+#data 0x42020000
+#data 0x4258EB85
+#data 0x421D3D71
+#data 0x4206B852
+#data 0x4258E148
+#data 0x421BAE14
+#data 0x41F5AE14
+#data 0x4259C28F
+#data 0x421CEB85
+#data 0x41F5AE14
+#data 0x4259C28F
+#data 0x421CEB85
+#data 0x41CF3333
+#data 0x42573333
+#data 0x4219999A
+#data 0x41C66666
+#data 0x42500000
+#data 0x42140000
+#data 0x41C66666
+#data 0x42500000
+#data 0x42140000
+
+
+loc_8c162CF0:
+mov.l @(0x24,r2),r12
+mov.l r0,@(0x18,gbr)
+bra loc_8c162920
+mov.w r0,@(0x186,gbr)
+#data 0x424FB852
+#data 0xC2041EB8
+#data 0xC1CA3D71
+#data 0x424F851F
+#data 0xC201CCCD
+#data 0xC1DE6666
+#data 0x424C28F6
+#data 0xC200E148
+#data 0xC1CD999A
+#data 0x424D1EB8
+#data 0xC202CCCD
+#data 0xC1CF47AE
+#data 0x424EEB85
+#data 0xC20547AE
+#data 0xC1C8A3D7
+#data 0x424EF5C3
+#data 0xC20547AE
+#data 0xC1C8A3D7
+#data 0x424EF5C3
+#data 0xC20547AE
+#data 0xC1C8A3D7
+#data 0x424EF5C3
+
+#align4
+loc_8c162D50:
+#data bank0f.loc_8c0f949A
+
+loc_8c162D54:
+#data bank0f.loc_8c0f949A
+
+loc_8c162D58:
+#data bank0f.loc_8c0f9560
+
+loc_8c162D5C:
+#data bank0f.loc_8c0f95E8
+
+loc_8c162D60:
+#data bank0f.loc_8c0f95E8
+
+loc_8c162D64:
+#data bank0f.loc_8c0f95E8
+
+loc_8c162D68:
+#data bank0f.loc_8c0f95E8
+
+loc_8c162D6C:
+#data bank0f.loc_8c0f95E8
+
+loc_8c162D70:
+#data 0x1C141511
+
+#align4
+loc_8c162D74:
+#data 0xC2093333
+#data 0xC1DD47AE
+#data 0x42576666
+#data 0xC2080000
+#data 0xC1E10A3D
+#data 0x425747AE
+#data 0xC206B852
+#data 0xC1E53333
+#data 0x4256B852
+#data 0xC206A3D7
+#data 0xC1EAB852
+#data 0x4255C28F
+#data 0xC2071EB8
+#data 0xC1F00000
+#data 0x4254999A
+
+#align4
+loc_8c162DB0:
+#data 0xC20A0A3D
+#data 0xC1DF999A
+#data 0x42585C29
+#data 0xC208A3D7
+#data 0xC1E3851F
+#data 0x42581EB8
+#data 0xC2073333
+#data 0xC1E770A4
+#data 0x425770A4
+#data 0xC2078F5C
+#data 0xC1ED999A
+#data 0x425651EC
+#data 0xC208147B
+#data 0xC1F2E148
+#data 0x425570A4
+
+#align4
+loc_8c162DEC:
+#data 0xC203B852
+#data 0xC1D13333
+#data 0x42510000
+
+#align4
+loc_8c162DF8:
+#data 0xC0F9999A
+#data 0x4259C28F
+#data 0x421CEB85
+#data 0x415851EC
+#data 0x4259C28F
+#data 0x421CEB85
+#data 0x41F5AE14
+#data 0x4259C28F
+#data 0x421CEB85
+#data 0x421D3D71
+#data 0x4259C28F
+#data 0x421CEB85
+#data 0x4236E148
+#data 0x4259C28F
+#data 0x421CEB85
+
+#align4
+loc_8c162E34:
+#data 0x42073333
+#data 0x42585C29
+#data 0x421BF5C3
+
+#align4
+loc_8c162E40:
+#data bank0f.loc_8c0f9788
+
+loc_8c162E44:
+#data bank0f.loc_8c0f9802
+
+loc_8c162E48:
+#data bank0f.loc_8c0f9846
+
+loc_8c162E4C:
+#data bank0f.loc_8c0f9788
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c162E80:
+#data 0x42F70000
+#data 0x429C999A
+#data 0x41800000
+#data 0x40800000
+#data 0x40ECCCCD
+#data 0xC30D4CCD
+#data 0x40800000
+#data 0x40ECCCCD
+#data 0xC30D4CCD
+#data 0x430E999A
+#data 0x42B0999A
+#data 0x41800000
+#data 0x41B8CCCD
+#data 0x40ECCCCD
+#data 0xC30D4CCD
+#data 0x41B8CCCD
+#data 0x40ECCCCD
+#data 0xC30D4CCD
+#data 0x4324999A
+#data 0x42C4999A
+#data 0x41800000
+#data 0x42366666
+#data 0x40ECCCCD
+#data 0xC30D4CCD
+#data 0x42366666
+#data 0x40ECCCCD
+#data 0xC30D4CCD
+#data 0x4337999A
+#data 0x42D8999A
+#data 0x41800000
+#data 0x4280CCCD
+#data 0x40ECCCCD
+#data 0xC30D4CCD
+#data 0x4280CCCD
+#data 0x40ECCCCD
+#data 0xC30D4CCD
+#data 0x434BB333
+#data 0x42EC999A
+#data 0x41800000
+#data 0x42AA3333
+#data 0x40ECCCCD
+#data 0xC30D4CCD
+#data 0x42AA3333
+#data 0x40ECCCCD
+#data 0xC30D4CCD
+#data 0x4363CCCD
+#data 0x43004CCD
+#data 0x41800000
+#data 0x42DB0000
+#data 0x40ECCCCD
+#data 0xC30D4CCD
+#data 0x42DB0000
+#data 0x40ECCCCD
+#data 0xC30D4CCD
+#data 0xC34CCCCD
+#data 0x429C999A
+#data 0xC1000000
+#data 0xC2CC999A
+#data 0x424B3333
+#data 0xC30D4CCD
+#data 0xC2CC999A
+#data 0x424B3333
+#data 0xC30D4CCD
+#data 0xC336999A
+#data 0x429C999A
+#data 0xC1000000
+#data 0xC29F6666
+#data 0x424B3333
+#data 0xC30D4CCD
+#data 0xC29F6666
+#data 0x424B3333
+#data 0xC30D4CCD
+#data 0xC3230000
+#data 0x429C999A
+#data 0xC1000000
+#data 0xC26E6666
+#data 0x424B3333
+#data 0xC30D4CCD
+#data 0xC26E6666
+#data 0x424B3333
+#data 0xC30D4CCD
+#data 0xC312B333
+#data 0x429C999A
+#data 0xC1000000
+#data 0xC22E0000
+#data 0x424B3333
+#data 0xC30D4CCD
+#data 0xC22E0000
+#data 0x424B3333
+#data 0xC30D4CCD
+#data 0xC3026666
+#data 0x429C999A
+#data 0xC1000000
+#data 0xC1D53333
+#data 0x424B3333
+#data 0xC30D4CCD
+#data 0xC1D53333
+#data 0x424B3333
+#data 0xC30D4CCD
+#data 0xC2E43333
+#data 0x429C999A
+#data 0xC1000000
+#data 0xC11E6666
+#data 0x424B3333
+#data 0xC30D4CCD
+#data 0xC11E6666
+#data 0x424B3333
+#data 0xC30D4CCD
+
+#align4
+loc_8c163030:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c1631F8:
+#data 0xC2820000
+#data 0xC2340000
+#data 0xC3158000
+#data 0x42500000
+#data 0xC2200000
+#data 0xC3158000
+#data 0x428C0000
+#data 0x42480000
+#data 0xC3158000
+#data 0xC2680000
+#data 0xC0A00000
+#data 0xC3158000
+#data 0x428C0000
+#data 0x41E00000
+#data 0xC3158000
+#data 0x42860000
+#data 0xC2000000
+#data 0xC3158000
+
+#align4
+loc_8c163240:
+#data 0x3F333333
+#data 0x3F000000
+#data 0x3F59999A
+#data 0x3F800000
+#data 0x3F000000
+#data 0x3F19999A
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c1632A0:
+#data 0xBFC00000
+#data 0x00000000
+#data 0x41000000
+#data 0x3F800000
+#data 0xBFC00000
+#data 0x00000000
+#data 0x40A00000
+#data 0x3F99999A
+#data 0xBFC00000
+#data 0x00000000
+#data 0x40C00000
+#data 0x3F828F5C
+#data 0xBFC00000
+#data 0x00000000
+#data 0xC10028F6
+#data 0x3F800000
+#data 0xBFC00000
+#data 0x00000000
+#data 0x40800000
+#data 0x3FAE147B
+#data 0xBFC00000
+#data 0x00000000
+#data 0x40400000
+#data 0x3F800000
+#data 0x3FC00000
+#data 0x00000000
+#data 0x4130A3D7
+#data 0x3F9AE148
+#data 0x3FC00000
+#data 0xBDA3D70A
+#data 0xC1100000
+#data 0x3F866666
+#data 0x3FAB851F
+#data 0xBD4CCCCD
+#data 0x40E00000
+#data 0x3F800000
+#data 0x3FC00000
+#data 0x00000000
+#data 0x40F80000
+#data 0x3F90A3D7
+#data 0x3FC00000
+#data 0xBDB851EC
+#data 0x40C00000
+#data 0x3F800000
+#data 0x3FC00000
+#data 0x00000000
+#data 0x410851EC
+#data 0x3F8CCCCD
+#data 0x3FC00000
+#data 0xBCA3D70A
+#data 0x411851EC
+#data 0x3F800000
+#data 0x3FC00000
+#data 0x00000000
+#data 0x40400000
+#data 0x3FA8F5C3
+#data 0x3FC00000
+#data 0x00000000
+#data 0x40800000
+#data 0x3F8CCCCD
+#data 0x3FC00000
+#data 0x00000000
+#data 0x40A00000
+#data 0x3F99999A
+#data 0xBFC00000
+#data 0xBE3851EC
+#data 0x41200000
+#data 0x3F59999A
+#data 0xBFC00000
+#data 0x00000000
+#data 0x41100000
+#data 0x3F800000
+#data 0xBFC00000
+#data 0x00000000
+#data 0x412C28F6
+#data 0x3F800000
+#data 0xBFC00000
+#data 0x00000000
+#data 0x415EE148
+#data 0x3F8A3D71
+#data 0xBFC00000
+#data 0x00000000
+#data 0x41500000
+#data 0x3F733333
+#data 0xBFC00000
+#data 0x0000
+
+loc_8c1633F6:
+#data 0x0000
+#data 0x41400000
+#data 0x3F99999A
+#data 0x3FC00000
+#data 0xBDA3D70A
+#data 0x413F5C29
+#data 0x3F800000
+#data 0x3FC00000
+#data 0x00000000
+#data 0x414EE148
+#data 0x3FA147AE
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0xBFC00000
+#data 0xBCF5C28F
+#data 0xC0ED70A4
+#data 0x3F68F5C3
+#data 0xBFBD70A4
+#data 0xBDCCCCCD
+#data 0xC13CF5C3
+#data 0x3F666666
+#data 0xBFC00000
+#data 0xBDCCCCCD
+#data 0xC12E3D71
+#data 0x3F666666
+#data 0xBFC00000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0xBFC00000
+#data 0xBE2E147B
+#data 0xC10E8F5C
+#data 0x3F5C28F6
+#data 0xBFC00000
+#data 0x00000000
+#data 0xBF07AE14
+#data 0x3F800000
+#data 0xBFC00000
+#data 0x00000000
+#data 0xC08D70A4
+#data 0x3F828F5C
+#data 0xBFC00000
+#data 0xBDB851EC
+#data 0x40E4CCCD
+#data 0x3F800000
+#data 0xBFC00000
+#data 0x00000000
+#data 0xC021EB85
+#data 0x3F800000
+#data 0xBFC00000
+#data 0x00000000
+#data 0xC06147AE
+#data 0x3F800000
+#data 0xBFC00000
+#data 0x00000000
+#data 0xC0AD70A4
+#data 0x3F800000
+#data 0xBFC00000
+#data 0x00000000
+#data 0xC0CA3D71
+#data 0x3F99999A
+#data 0xBFC00000
+#data 0xBCF5C28F
+#data 0xBFC3D70A
+#data 0x3F866666
+#data 0x3FC00000
+#data 0x00000000
+#data 0x40000000
+#data 0x3F8CCCCD
+#data 0x3FC00000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3FD0A3D7
+#data 0x3FC00000
+#data 0x00000000
+#data 0xC1000000
+#data 0x3F933333
+#data 0x3FC00000
+#data 0x00000000
+#data 0xC0400000
+#data 0x3F99999A
+#data 0x3FC00000
+#data 0xBD4CCCCD
+#data 0xC11B3333
+#data 0x3F8CCCCD
+#data 0x3FC00000
+#data 0x00000000
+#data 0xC127851F
+#data 0x3FACCCCD
+#data 0x3FC00000
+#data 0x00000000
+#data 0xC0800000
+#data 0x3F866666
+#data 0x3FC00000
+#data 0x00000000
+#data 0xC137851F
+#data 0x3F8CCCCD
+#data 0x3FC00000
+#data 0x00000000
+#data 0xC147851F
+#data 0x3F8CCCCD
+#data 0x3FC00000
+#data 0xBD8F5C29
+#data 0xC0E00000
+#data 0x3F800000
+#data 0x3FC00000
+#data 0x00000000
+#data 0xC0000000
+#data 0x3FA66666
+#data 0x3FC00000
+#data 0x00000000
+#data 0xC0A00000
+#data 0x3F866666
+#data 0x3FC00000
+#data 0x00000000
+#data 0x00000000
+#data 0x3FDD70A4
+#data 0x3FC00000
+#data 0x00000000
+#data 0xC0C00000
+#data 0x3FD47AE1
+#data 0x3FC00000
+#data 0x00000000
+#data 0xBF800000
+#data 0x3FC00000
+#data 0xBFC00000
+#data 0xBD4CCCCD
+#data 0x40000000
+#data 0x3F800000
+#data 0xBFC00000
+#data 0x00000000
+#data 0xC11F0A3D
+#data 0x3F828F5C
+#data 0x3FC00000
+#data 0xBC23D70A
+#data 0x4123D70A
+#data 0x3F99999A
+#data 0xBFC00000
+#data 0xBE19999A
+#data 0x3E3851EC
+#data 0x3F333333
+
+#align4
+loc_8c163650:
+#data 0x12151413
+#data 0x22001110
+#data 0x05040102
+#data 0x203A1E37
+#data 0x21242327
+#data 0x031B2625
+#data 0x1C1D381F
+
+#align4
+loc_8c16366C:
+#data 0x39061617
+#data 0x08090B0C
+#data 0x0D0E0F0A
+#data 0x36342928
+#data 0x332E2B32
+#data 0x072A3135
+#data 0x302F2D2C
+
+#align4
+loc_8c163688:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0xC1700000
+#data 0x000000EB
+#data 0x40D5C28F
+#data 0x00000000
+#data 0xC0EB851F
+#data 0x40D5C28F
+#data 0x00000000
+#data 0xC1700000
+#data 0x00000163
+#data 0x4108A3D7
+#data 0x00000000
+#data 0xC154CCCD
+#data 0x4108A3D7
+#data 0x00000000
+#data 0xC1700000
+#data 0x0000FFFF
+#data 0x4108A3D7
+#data 0x00000000
+#data 0xC154CCCD
+#data 0x4108A3D7
+#data 0x00000000
+#data 0xC1700000
+
+#align4
+loc_8c1636F8:
+#data 0x00000000
+#data 0x4108A3D7
+#data 0x00000000
+#data 0xC154CCCD
+#data 0x4108A3D7
+#data 0x00000000
+#data 0xC1700000
+#data 0x0000001E
+#data 0x41000000
+#data 0x00000000
+#data 0xC0C00000
+#data 0x41000000
+#data 0x00000000
+#data 0xC1700000
+#data 0x0000FFFF
+#data 0x41000000
+#data 0x00000000
+#data 0xC0C00000
+#data 0x41000000
+#data 0x00000000
+#data 0xC1700000
+
+#align4
+loc_8c16374C:
+#data 0x00000000
+#data 0x401AE148
+#data 0xBF0A3D71
+#data 0x41B251EC
+#data 0xBF8B851F
+#data 0x3E3851EC
+#data 0x41911EB8
+#data 0x0000012C
+#data 0x401AE148
+#data 0xBF0A3D71
+#data 0xC113AE14
+#data 0xBF8B851F
+#data 0x3E3851EC
+#data 0xC15A6666
+
+#align4
+loc_8c163784:
+#data 0x00000000
+#data 0xC05A3D71
+#data 0xBF0A3D71
+#data 0x41B251EC
+#data 0x3F8CCCCD
+#data 0x3E3851EC
+#data 0x41911EB8
+#data 0x0000012C
+#data 0xC05A3D71
+#data 0xBF0A3D71
+#data 0xC132E148
+#data 0x3F8CCCCD
+#data 0x3E3851EC
+#data 0xC1700000
+#data 0x0000FFFF
+#data 0x401AE148
+#data 0xBF0A3D71
+#data 0xC113AE14
+#data 0xBF8B851F
+#data 0x3E3851EC
+#data 0xC15A6666
+
+#align4
+loc_8c1637D8:
+#data 0x00000000
+#data 0x40A00000
+#data 0x00000000
+#data 0x00000000
+#data 0x40A00000
+#data 0x00000000
+#data 0xC1700000
+#data 0x0000001E
+#data 0x40A00000
+#data 0x00000000
+#data 0xC1000000
+#data 0x40A00000
+#data 0x00000000
+#data 0xC1700000
+#data 0x0000FFFF
+#data 0xC1000000
+#data 0x00000000
+#data 0xC0C00000
+#data 0xC1000000
+#data 0x00000000
+#data 0xC1700000
+
+#align4
+loc_8c16382C:
+#data 0x00000000
+#data 0x40A00000
+#data 0x00000000
+#data 0xC1000000
+#data 0x40A00000
+#data 0x00000000
+#data 0xC1700000
+#data 0x0000001E
+#data 0xC1123D71
+#data 0x00000000
+#data 0xC0E8F5C3
+#data 0xC1123D71
+#data 0x00000000
+#data 0xC1700000
+#data 0x0000FFFF
+#data 0xC1123D71
+#data 0x00000000
+#data 0xC0E8F5C3
+#data 0xC1123D71
+#data 0x00000000
+#data 0xC1700000
+
+#align4
+loc_8c163880:
+#data 0x00000000
+#data 0x00000000
+#data 0xC0400000
+#data 0xC0A00000
+#data 0x00000000
+#data 0xC0400000
+#data 0xC1700000
+#data 0x0000003C
+#data 0x00000000
+#data 0x00000000
+#data 0xC0A00000
+#data 0x00000000
+#data 0x00000000
+#data 0xC1700000
+#data 0x0000FFFF
+#data 0xC1123D71
+#data 0x00000000
+#data 0xC0E8F5C3
+#data 0xC1123D71
+#data 0x00000000
+#data 0xC1700000
+
+#align4
+loc_8c1638D4:
+#data loc_8c163688
+
+loc_8c1638D8:
+#data loc_8c1636F8
+
+loc_8c1638DC:
+#data loc_8c163784
+
+loc_8c1638E0:
+#data loc_8c1637D8
+
+loc_8c1638E4:
+#data loc_8c16382C
+
+loc_8c1638E8:
+#data loc_8c16374C
+
+loc_8c1638EC:
+#data loc_8c163880
+
+loc_8c1638F0:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0xC0800000
+#data 0x0000005A
+#data 0x00000000
+#data 0x00000000
+#data 0xC1700000
+#data 0x0000010E
+#data 0x00000000
+#data 0x00000000
+#data 0xC1700000
+#data 0x0000FFFF
+#data 0x00000000
+#data 0x00000000
+#data 0xC1700000
+
+#align4
+loc_8c163930:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0xC0800000
+#data 0x0000000F
+#data 0x00000000
+#data 0x00000000
+#data 0xC1700000
+#data 0x000000F0
+#data 0x00000000
+#data 0x00000000
+#data 0xC1700000
+#data 0x0000FFFF
+#data 0x00000000
+#data 0x00000000
+#data 0xC1700000
+
+#align4
+loc_8c163970:
+#data 0x00000000
+#data 0x00B40096
+#data 0x0168010E
+#data 0x0168FFFF
+
+#align4
+loc_8c163980:
+#data 0x00000000
+#data 0xFF4C0096
+#data 0xFE98010E
+#data 0xFE98FFFF
+
+#align4
+loc_8c163990:
+#data 0x002D0000
+#data 0x40400000
+#data 0x3F800000
+#data 0xFF79003C
+#data 0x40000000
+#data 0x40000000
+#data 0xFEC50078
+#data 0x40400000
+#data 0x40400000
+#data 0xFD8A00F0
+#data 0x40400000
+#data 0x40400000
+#data 0xFC4F0168
+#data 0x40000000
+#data 0x40000000
+#data 0xFD8AFFFF
+#data 0x40400000
+#data 0x40400000
+
+#align4
+loc_8c1639D8:
+#data 0x002D0000
+#data 0x3FE66666
+#data 0x3FE66666
+#data 0xFFD3001E
+#data 0x4019999A
+#data 0x4019999A
+#data 0xFF79003C
+#data 0x40400000
+#data 0x40400000
+#data 0xFEC50078
+#data 0x3F800000
+#data 0x3F800000
+#data 0xFE3E00B4
+#data 0x40400000
+#data 0x40400000
+#data 0xFD300104
+#data 0x40000000
+#data 0x40000000
+#data 0xFCA90140
+#data 0x40400000
+#data 0x3F800000
+#data 0xFC22017C
+#data 0x40C00000
+#data 0x40C00000
+#data 0xFD8AFFFF
+#data 0x40400000
+#data 0x40400000
+
+#align4
+loc_8c163A44:
+#data 0xFFD30000
+#data 0x40400000
+#data 0x3F800000
+#data 0xFF1F003C
+#data 0x40200000
+#data 0x40200000
+#data 0xFE6B0078
+#data 0x3F800000
+#data 0x3F800000
+#data 0xFD8A00B4
+#data 0x40400000
+#data 0x40400000
+#data 0xFD0300F0
+#data 0x3F800000
+#data 0x3F800000
+#data 0xFC7C012C
+#data 0x40400000
+#data 0x40400000
+#data 0xFD03FFFE
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c163A98:
+#data 0xFFD30000
+#data 0x400CCCCD
+#data 0x400CCCCD
+#data 0xFD0300F0
+#data 0x400CCCCD
+#data 0x400CCCCD
+#data 0xFCC70104
+#data 0x40200000
+#data 0x40200000
+#data 0xFC130140
+#data 0x40400000
+#data 0x3F800000
+#data 0xFB5F017C
+#data 0x40C00000
+#data 0x40C00000
+#data 0xFD8AFFFF
+#data 0x40400000
+#data 0x40400000
+
+#align4
+loc_8c163AE0:
+#data 0x005A0000
+#data 0x40400000
+#data 0x3F800000
+#data 0x010E003C
+#data 0x40400000
+#data 0x40400000
+#data 0x01C20078
+#data 0x3F800000
+#data 0x3F800000
+#data 0x032A00F0
+#data 0x3F800000
+#data 0x3F800000
+#data 0x04920168
+#data 0x3F800000
+#data 0x3F800000
+#data 0x032AFFFF
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c163B28:
+#data 0x00000000
+#data 0x40000000
+#data 0x40000000
+#data 0x005A003C
+#data 0x3F800000
+#data 0x3F800000
+#data 0x00B40078
+#data 0x40400000
+#data 0x40400000
+#data 0x032AFFFD
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c163B58:
+#data 0x005A0000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x027600B4
+#data 0x3F800000
+#data 0x3F800000
+#data 0x03660104
+#data 0x40000000
+#data 0x3F800000
+#data 0x041A0140
+#data 0x40400000
+#data 0x3F800000
+#data 0x04CE017C
+#data 0x40C00000
+#data 0x40C00000
+#data 0xFD8AFFFF
+#data 0x40400000
+#data 0x40400000
+
+#align4
+loc_8c163BA0:
+#data 0x00000000
+#data 0x40400000
+#data 0x3F800000
+#data 0x00B4003C
+#data 0x3F800000
+#data 0x3F800000
+#data 0x01680078
+#data 0x40400000
+#data 0x40400000
+#data 0x024900B4
+#data 0x3F800000
+#data 0x3F800000
+#data 0x02D000F0
+#data 0x40400000
+#data 0x40400000
+#data 0x0357012C
+#data 0x3F800000
+#data 0x3F800000
+#data 0x02D0FFFE
+#data 0x40400000
+#data 0x40400000
+
+#align4
+loc_8c163BF4:
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x005A003C
+#data 0x40400000
+#data 0x40400000
+#data 0x00B40078
+#data 0x40000000
+#data 0x40000000
+#data 0x032AFFFD
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c163C24:
+#data 0x00000000
+#data 0x40400000
+#data 0x40400000
+#data 0x005A001E
+#data 0x40000000
+#data 0x40000000
+#data 0x00B4003C
+#data 0x3F800000
+#data 0x3F800000
+#data 0x01680078
+#data 0x40000000
+#data 0x40000000
+#data 0x021C00B4
+#data 0x40400000
+#data 0x40400000
+#data 0x03840104
+#data 0x40000000
+#data 0x40000000
+#data 0x03DE0140
+#data 0x40400000
+#data 0x3F800000
+#data 0x0438017C
+#data 0x40C00000
+#data 0x40C00000
+#data 0xFD8AFFFF
+#data 0x40400000
+#data 0x40400000
+
+#align4
+loc_8c163C90:
+#data 0xFF880000
+#data 0x0078005F
+#data 0x0078FFFF
+
+#align4
+loc_8c163C9C:
+#data 0xFFC40000
+#data 0x00000023
+#data 0x00000037
+#data 0x0000FFFF
+
+#align4
+loc_8c163CAC:
+#data 0x005A0000
+#data 0x40E00000
+#data 0x3F000000
+#data 0xC1600000
+#data 0x0000000A
+#data 0x411FAE14
+#data 0x3F000000
+#data 0xC1680000
+#data 0x0000000F
+#data 0x411FAE14
+#data 0x3F000000
+#data 0xC1680000
+#data 0x0000FFFF
+#data 0x411FAE14
+#data 0x3F000000
+#data 0xC1680000
+
+#align4
+loc_8c163CEC:
+#data 0xFFA60000
+#data 0x41200000
+#data 0xBF000000
+#data 0xC1600000
+#data 0x0000000A
+#data 0x40E33333
+#data 0xBF000000
+#data 0xC1680000
+#data 0x0000000F
+#data 0x40E33333
+#data 0xBF000000
+#data 0xC1680000
+#data 0x0000FFFF
+#data 0x40E33333
+#data 0xBF000000
+#data 0xC1680000
+
+#align4
+loc_8c163D2C:
+#data 0x00000000
+#data 0x41500000
+#data 0x00000000
+#data 0xC16CCCCD
+#data 0x0000000A
+#data 0x3F147AE1
+#data 0x00000000
+#data 0xC1600000
+#data 0x00000014
+#data 0x00000000
+#data 0x00000000
+#data 0xC1500000
+#data 0x0000001E
+#data 0x41000000
+#data 0x00000000
+#data 0xC1500000
+#data 0x0000FFFF
+#data 0x00000000
+#data 0x00000000
+#data 0xC1700000
+
+#align4
+loc_8c163D7C:
+#data 0x00000000
+#data 0x41100000
+#data 0xC0000000
+#data 0xC14028F6
+#data 0x00000014
+#data 0x41100000
+#data 0x00000000
+#data 0xC14028F6
+#data 0x0000FFFF
+#data 0x00000000
+#data 0x00000000
+#data 0xC1700000
+
+#align4
+loc_8c163DAC:
+#data 0x00000000
+#data 0x41C80000
+#data 0xC0400000
+#data 0xC1400000
+#data 0x3F800000
+#data 0x3DCCCCCD
+#data 0x0000000A
+#data 0x00000000
+#data 0xC0400000
+#data 0xC1400000
+#data 0x3F800000
+#data 0x3DCCCCCD
+#data 0x00000014
+#data 0x00000000
+#data 0xC0400000
+#data 0xC1400000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x0000FFFF
+#data 0x41C80000
+#data 0xC0400000
+#data 0xC1400000
+#data 0x3F800000
+#data 0x3DCCCCCD
+
+#align4
+loc_8c163E0C:
+#data 0x00000000
+#data 0x41500000
+#data 0x40900000
+#data 0xC1600000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000008
+#data 0x40F00000
+#data 0x40400000
+#data 0xC1600000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x0000FFFF
+#data 0x41C80000
+#data 0xC0400000
+#data 0xC1400000
+#data 0x3F800000
+#data 0x3DCCCCCD
+
+#align4
+loc_8c163E54:
+#data 0x00000000
+#data 0x41500000
+#data 0x3FC00000
+#data 0xC1600000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000008
+#data 0x40F00000
+#data 0x3F800000
+#data 0xC1600000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x0000FFFF
+#data 0x41C80000
+#data 0xC0400000
+#data 0xC1400000
+#data 0x3F800000
+#data 0x3DCCCCCD
+
+#align4
+loc_8c163E9C:
+#data 0x00000000
+#data 0x41500000
+#data 0xBFC00000
+#data 0xC1600000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000008
+#data 0x40F00000
+#data 0xBF800000
+#data 0xC1600000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x0000FFFF
+#data 0x41C80000
+#data 0xC0400000
+#data 0xC1400000
+#data 0x3F800000
+#data 0x3DCCCCCD
+
+#align4
+loc_8c163EE4:
+#data 0x00000000
+#data 0x41500000
+#data 0xC0900000
+#data 0xC1600000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000008
+#data 0x40F00000
+#data 0xC0400000
+#data 0xC1600000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x0000FFFF
+#data 0x41C80000
+#data 0xC0400000
+#data 0xC1400000
+#data 0x3F800000
+#data 0x3DCCCCCD
+
+#align4
+loc_8c163F2C:
+#data 0x00000000
+#data 0x4117AE14
+#data 0x00000000
+#data 0xC1200000
+#data 0x0000000F
+#data 0xC15C0000
+#data 0x00000000
+#data 0xC13CCCCD
+#data 0x0000001E
+#data 0xC1133333
+#data 0x00000000
+#data 0xC1680000
+#data 0x0000FFFF
+#data 0x00000000
+#data 0x00000000
+#data 0xC1700000
+
+#align4
+loc_8c163F6C:
+#data 0x00000000
+#data 0x00000000
+#data 0xC0000000
+#data 0xC0C00000
+#data 0x0000000A
+#data 0x00000000
+#data 0xC0000000
+#data 0xC1200000
+#data 0x00000014
+#data 0xC1100000
+#data 0xBDCCCCCD
+#data 0xC1666666
+#data 0x0000FFFF
+#data 0x00000000
+#data 0x00000000
+#data 0xC1700000
+
+#align4
+loc_8c163FAC:
+#data 0x00000000
+#data 0xC20F3333
+#data 0xC0600000
+#data 0xC1500000
+#data 0x3F800000
+#data 0x3DCCCCCD
+#data 0x0000000A
+#data 0xC1880000
+#data 0xC0600000
+#data 0xC1500000
+#data 0x3F800000
+#data 0x3DCCCCCD
+#data 0x00000014
+#data 0xC1880000
+#data 0xC0600000
+#data 0xC1500000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x0000FFFF
+#data 0x41C80000
+#data 0xC0400000
+#data 0xC1400000
+#data 0x3F800000
+#data 0x3DCCCCCD
+
+#align4
+loc_8c16400C:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000000
+#data 0x0000000F
+#data 0x3F800000
+#data 0x3F800000
+#data 0x0000FFFF
+#data 0x3F800000
+#data 0x3DCCCCCD
+
+#align4
+loc_8c164030:
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000007
+#data 0x3F8CCCCD
+#data 0x3F800000
+#data 0x0000FFFF
+#data 0x3F800000
+#data 0x3DCCCCCD
+
+#align4
+loc_8c164054:
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000007
+#data 0x3FC00000
+#data 0x3F800000
+#data 0x0000FFFF
+#data 0x3F800000
+#data 0x3DCCCCCD
+
+#align4
+loc_8c164078:
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000007
+#data 0x3FE66666
+#data 0x3F800000
+#data 0x0000FFFF
+#data 0x3F800000
+#data 0x3DCCCCCD
+
+#align4
+loc_8c16409C:
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000007
+#data 0x3E800000
+#data 0x3F800000
+#data 0x0000FFFF
+#data 0x3F800000
+#data 0x3DCCCCCD
+
+#align4
+loc_8c1640C0:
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000007
+#data 0x3E800000
+#data 0x3F800000
+#data 0x0000FFFF
+#data 0x3F800000
+#data 0x3DCCCCCD
+
+#align4
+loc_8c1640E4:
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x0000000A
+#data 0x3F800000
+#data 0x3F800000
+#data 0x0000FFFF
+#data 0x3F800000
+#data 0x3DCCCCCD
+
+#align4
+loc_8c164108:
+#data 0x00000000
+#data 0xC1500000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x0000001A
+#data 0xC1500000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x000000A9
+#data 0xC1500000
+#data 0x000000DC
+#data 0x3F800000
+#data 0x3F800000
+#data 0x40ECCCCD
+#data 0x00000192
+#data 0x41A00000
+#data 0x00000B7C
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41000000
+#data 0x0000FFFF
+#data 0x41A00000
+#data 0x00000168
+#data 0x3F800000
+#data 0x3F800000
+#data 0x41200000
+
+#align4
+loc_8c164180:
+#data 0x00000000
+#data 0xC1500000
+#data 0x3F800000
+#data 0x00000000
+#data 0x0000000A
+#data 0xC1500000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000078
+#data 0xC1500000
+#data 0x40F33333
+#data 0x00000000
+#data 0x00000082
+#data 0xC1217E28
+#data 0x41000000
+#data 0x00000000
+#data 0x0000008C
+#data 0xC0987EFA
+#data 0x41066666
+#data 0x00000000
+#data 0x00000096
+#data 0x3FBA43FE
+#data 0x410E6666
+#data 0x00000000
+#data 0x000000A0
+#data 0x40E00000
+#data 0x4114CCCD
+#data 0x00000000
+#data 0x000000D2
+#data 0x41477382
+#data 0x4119999A
+#data 0x00000000
+#data 0x0000FFFF
+#data 0x41A00000
+#data 0x41100000
+#data 0x00000000
+
+#align4
+loc_8c164210:
+#data 0x00000000
+#data 0x40A33333
+#data 0x00000000
+#data 0xC1500000
+#data 0x40400000
+#data 0x40400000
+#data 0x0000000A
+#data 0x40A33333
+#data 0x00000000
+#data 0xC1500000
+#data 0x3FC00000
+#data 0x3FC00000
+#data 0x00000026
+#data 0x40A33333
+#data 0x00000000
+#data 0xC1500000
+#data 0x3FC00000
+#data 0x3FC00000
+#data 0x0000FFFF
+#data 0x41C80000
+#data 0xC0400000
+#data 0xC1400000
+#data 0x3F800000
+#data 0x3DCCCCCD
+
+#align4
+loc_8c164270:
+#data 0x00000000
+#data 0x00000000
+#data 0x3F000000
+#data 0xC1200000
+#data 0x00000078
+#data 0x00000000
+#data 0x3F000000
+#data 0xBF800000
+#data 0x0000FFFF
+#data 0x00000000
+#data 0x00000000
+#data 0xC1700000
+
+#align4
+loc_8c1642A0:
+#data 0x00000000
+#data 0x00000000
+#data 0xBF000000
+#data 0xC1200000
+#data 0x00000078
+#data 0x00000000
+#data 0xBF000000
+#data 0xBF800000
+#data 0x0000FFFF
+#data 0x00000000
+#data 0x00000000
+#data 0xC1700000
+
+#align4
+loc_8c1642D0:
+#data 0x012E0000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0xC1200000
+
+#align4
+loc_8c1642E4:
+#data loc_8c164270
+#data 0x00000001
+#data 0x01300000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0xC1200000
+
+#align4
+loc_8c164300:
+#data loc_8c1642A0
+#data 0x00000002
+#data 0x0000006E
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0xC171999A
+#data 0x00000000
+#data 0x00000000
+#data 0x0101006E
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0xC0800000
+
+#align4
+loc_8c164338:
+#data loc_8c1638F0
+#data 0x00000001
+#data 0x0003006E
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0xC1700000
+#data 0x00000000
+#data 0x00000002
+#data 0x0204006E
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0xC1700000
+
+#align4
+loc_8c164370:
+#data loc_8c163970
+#data 0x00000003
+#data 0x0205006E
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0xC1700000
+
+#align4
+loc_8c16438C:
+#data loc_8c163980
+#data 0x00000004
+#data 0x0606006E
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0xC17051EC
+
+#align4
+loc_8c1643A8:
+#data loc_8c163990
+#data 0x00000005
+#data 0x0607006E
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0xC170A3D7
+
+#align4
+loc_8c1643C4:
+#data loc_8c163A44
+#data 0x00000006
+#data 0x0608006E
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0xC1707AE1
+
+#align4
+loc_8c1643E0:
+#data loc_8c163AE0
+#data 0x00000007
+#data 0x0609006E
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0xC170CCCD
+
+#align4
+loc_8c1643FC:
+#data loc_8c163BA0
+#data 0x00000008
+#data 0x020A013E
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0xC16CCCCD
+
+#align4
+loc_8c164418:
+#data loc_8c163C90
+#data 0x00000009
+#data 0x020B0152
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0xC16CCCCD
+
+#align4
+loc_8c164434:
+#data loc_8c163C90
+#data 0x0000000A
+#data 0x020C0166
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0xC16CCCCD
+
+#align4
+loc_8c164450:
+#data loc_8c163C90
+#data 0x0000000B
+;-------------------------------------------------------------------------------
+#data 0x020D018E
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0xC16CCCCD
+
+#align4
+loc_8c16446C:
+#data loc_8c163C9C
+#data 0x0000000C
+#data 0x030E01C5
+#data 0x3F800000
+#data 0x40E00000
+#data 0x3F000000
+#data 0xC1600000
+
+#align4
+loc_8c164488:
+#data loc_8c163CAC
+#data 0x00000009
+#data 0x031001C5
+#data 0x3F800000
+#data 0x41200000
+#data 0xBF000000
+#data 0xC1600000
+
+#align4
+loc_8c1644A4:
+#data loc_8c163CEC
+#data 0x0000000A
+#data 0x012101E3
+#data 0x3F800000
+#data 0x41500000
+#data 0x00000000
+#data 0xC16CCCCD
+
+#align4
+loc_8c1644C0:
+#data loc_8c163D2C
+#data 0x0000000B
+;-------------------------------------------------------------------------------
+#data 0x011F01F7
+#data 0x00000000
+#data 0x41100000
+#data 0xC0000000
+#data 0xC1400000
+
+#align4
+loc_8c1644DC:
+#data loc_8c163D7C
+#data 0x00000009
+#data 0x05230201
+#data 0x3F800000
+#data 0x41C80000
+#data 0xC0400000
+#data 0xC1400000
+
+#align4
+loc_8c1644F8:
+#data loc_8c163DAC
+#data 0x0000000A
+#data 0x00320233
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000023
+#data 0x00340233
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000024
+#data 0x05120354
+#data 0x3F800000
+#data 0x41500000
+#data 0x40900000
+#data 0xC1600000
+
+#align4
+loc_8c16454C:
+#data loc_8c163E0C
+#data 0x00000009
+#data 0x002B035C
+#data 0x3F8CCCCD
+#data 0x40F00000
+#data 0x40400000
+#data 0xC15FD70A
+#data 0x00000000
+#data 0x0000001F
+#data 0x05130363
+#data 0x3F800000
+#data 0x41500000
+#data 0x3FC00000
+#data 0xC1600000
+
+#align4
+loc_8c164584:
+#data loc_8c163E54
+#data 0x0000000A
+#data 0x041D0363
+#data 0x3F800000
+#data 0x40980000
+#data 0x40400000
+#data 0xC15F3333
+
+#align4
+loc_8c1645A0:
+#data loc_8c164054
+#data 0x00000014
+#data 0x002B036B
+#data 0x3F8CCCCD
+#data 0x40F00000
+#data 0x3F800000
+#data 0xC15FD70A
+#data 0x00000000
+#data 0x00000020
+#data 0x05140372
+#data 0x3F800000
+#data 0x41500000
+#data 0xBFC00000
+#data 0xC1600000
+
+#align4
+loc_8c1645D8:
+#data loc_8c163E9C
+#data 0x0000000B
+;-------------------------------------------------------------------------------
+#data 0x041D0372
+#data 0x3F800000
+#data 0x40980000
+#data 0x3F800000
+#data 0xC15F3333
+
+#align4
+loc_8c1645F4:
+#data loc_8c164030
+#data 0x00000015
+#data 0x002B037A
+#data 0x3F8CCCCD
+#data 0x40F00000
+#data 0xBF800000
+#data 0xC15FD70A
+#data 0x00000000
+#data 0x00000021
+#data 0x05150381
+#data 0x3F800000
+#data 0x41500000
+#data 0xC0900000
+#data 0xC1600000
+
+#align4
+loc_8c16462C:
+#data loc_8c163EE4
+#data 0x0000000C
+#data 0x041D0381
+#data 0x3F800000
+#data 0x40980000
+#data 0xBF800000
+#data 0xC15F3333
+
+#align4
+loc_8c164648:
+#data loc_8c164030
+#data 0x00000016
+#data 0x002B0389
+#data 0x3F8CCCCD
+#data 0x40F00000
+#data 0xC0400000
+#data 0xC15FD70A
+#data 0x00000000
+#data 0x00000022
+#data 0x041D0390
+#data 0x3F800000
+#data 0x40980000
+#data 0xC0400000
+#data 0xC15F3333
+
+#align4
+loc_8c164680:
+#data loc_8c164054
+#data 0x00000017
+#data 0x052F03AA
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c16469C:
+#data loc_8c164210
+#data 0x00000011
+#data 0x012203CA
+#data 0x3F800000
+#data 0x4117AE14
+#data 0x00000000
+#data 0xC1200000
+
+#align4
+loc_8c1646B8:
+#data loc_8c163F2C
+#data 0x0000000D
+#data 0x012003D4
+#data 0x00000000
+#data 0x00000000
+#data 0xC0000000
+#data 0xC0C00000
+
+#align4
+loc_8c1646D4:
+#data loc_8c163F6C
+#data 0x0000000E
+#data 0x052503E8
+#data 0x3F800000
+#data 0xC20F3333
+#data 0xC0600000
+#data 0xC1500000
+
+#align4
+loc_8c1646F0:
+#data loc_8c163FAC
+#data 0x0000000F
+#data 0x0416052F
+#data 0x3F800000
+#data 0x40900000
+#data 0xC099999A
+#data 0xC1600000
+
+#align4
+loc_8c16470C:
+#data loc_8c16400C
+#data 0x0000000D
+#data 0x0417053E
+#data 0x3F800000
+#data 0xC0C00000
+#data 0xC0B00000
+#data 0xC1600000
+
+#align4
+loc_8c164728:
+#data loc_8c16400C
+#data 0x0000000E
+#data 0x0418053E
+#data 0x3F800000
+#data 0x40C00000
+#data 0xC0D00000
+#data 0xC1600000
+
+#align4
+loc_8c164744:
+#data loc_8c16400C
+#data 0x0000000F
+#data 0x002B053F
+#data 0x3F8CCCCD
+#data 0x40900000
+#data 0xC099999A
+#data 0xC15FD70A
+#data 0x00000000
+#data 0x0000001F
+#data 0x0419054D
+#data 0x3F800000
+#data 0xC0E00000
+#data 0xC0200000
+#data 0xC1600000
+
+#align4
+loc_8c16477C:
+#data loc_8c16400C
+#data 0x00000010
+#data 0x041A054D
+#data 0x3F800000
+#data 0x40C00000
+#data 0xC1000000
+#data 0xC1600000
+
+#align4
+loc_8c164798:
+#data loc_8c16400C
+#data 0x00000011
+#data 0x002B054E
+#data 0x3F8CCCCD
+#data 0xC0C00000
+#data 0xC0B00000
+#data 0xC15FD70A
+#data 0x00000000
+#data 0x00000020
+#data 0x002B054E
+#data 0x3F8CCCCD
+#data 0x40C00000
+#data 0xC0D00000
+#data 0xC15FD70A
+#data 0x00000000
+#data 0x00000022
+#data 0x041B055C
+#data 0x3F800000
+#data 0xC1000000
+#data 0x3F000000
+#data 0xC1600000
+
+#align4
+loc_8c1647EC:
+#data loc_8c16400C
+#data 0x00000012
+#data 0x041C055C
+#data 0x3F800000
+#data 0x40C00000
+#data 0xC1180000
+#data 0xC1600000
+
+#align4
+loc_8c164808:
+#data loc_8c16400C
+#data 0x00000013
+#data 0x002B055D
+#data 0x3F8CCCCD
+#data 0xC0E00000
+#data 0xC0200000
+#data 0xC15FD70A
+#data 0x00000000
+#data 0x00000022
+#data 0x002B055D
+#data 0x3F8CCCCD
+#data 0x40C00000
+#data 0xC1000000
+#data 0xC15FD70A
+#data 0x00000000
+#data 0x00000021
+#data 0x041D0561
+#data 0x3F800000
+#data 0xC0A80000
+#data 0x3F000000
+#data 0xC15F3333
+
+#align4
+loc_8c16485C:
+#data loc_8c164054
+#data 0x00000018
+#data 0x041E0561
+#data 0x3F800000
+#data 0x4061EB85
+#data 0xC1180000
+#data 0xC15EE148
+
+#align4
+loc_8c164878:
+#data loc_8c16409C
+#data 0x00000019
+#data 0x002B056C
+#data 0x3F8CCCCD
+#data 0xC1000000
+#data 0x3F000000
+#data 0xC15FD70A
+#data 0x00000000
+#data 0x00000020
+#data 0x002B056C
+#data 0x3F8CCCCD
+#data 0x40C00000
+#data 0xC1180000
+#data 0xC15FD70A
+#data 0x00000000
+#data 0x00000022
+#data 0x041D0570
+#data 0x3F800000
+#data 0xC0500000
+#data 0xC0B00000
+#data 0xC15F3333
+
+#align4
+loc_8c1648CC:
+#data loc_8c164078
+#data 0x0000001A
+#data 0x041E0570
+#data 0x3F800000
+#data 0x4061EB85
+#data 0xC1000000
+#data 0xC15EB852
+
+#align4
+loc_8c1648E8:
+#data loc_8c16409C
+#data 0x0000001B
+#data 0x041E0570
+#data 0x3F800000
+#data 0x401CCCCD
+#data 0xC11947AE
+#data 0xC15EB852
+
+#align4
+loc_8c164904:
+#data loc_8c1640E4
+#data 0x0000001C
+#data 0x041D057F
+#data 0x3F800000
+#data 0xC0880000
+#data 0xC0200000
+#data 0xC15F3333
+
+#align4
+loc_8c164920:
+#data loc_8c164030
+#data 0x0000001D
+#data 0x041E057F
+#data 0x3F800000
+#data 0x4061EB85
+#data 0xC0D00000
+#data 0xC15E8F5C
+
+#align4
+loc_8c16493C:
+#data loc_8c1640C0
+#data 0x0000001E
+#data 0x041D0589
+#data 0x3F800000
+#data 0x3FE00000
+#data 0xC099999A
+#data 0xC15F3333
+
+#align4
+loc_8c164958:
+#data loc_8c164030
+#data 0x0000001F
+#data 0x0528060B
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0xC1500000
+
+#align4
+loc_8c164974:
+#data loc_8c164180
+#data 0x00000020
+#data 0x0727060B
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0xC1500000
+
+#align4
+loc_8c164990:
+#data loc_8c164108
+#data 0x00000021
+#data 0x002D065B
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000022
+#data 0x0000FFFF
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c1649D0:
+#data 0x000E0026
+#data 0xFFDAFFF2
+#data 0x000000AF
+#data 0x0000FF88
+#data 0xFF6AFFA6
+#data 0xFFBC0000
 
 loc_8c1649e8:
-;	#data bank13.loc_8c13c640
-;	#data bank13.loc_8c13c88c
-;	#data bank13.loc_8c13cae4
-;	#data bank13.loc_8c13cd3c
-;	#data bank13.loc_8c13cf88
-;	#data bank13.loc_8c13d1d4
-;	#data bank13.loc_8c13d420
-;	#data bank0f.loc_8c0fc970
-;	#data bank0f.loc_8c0fc9ec
-;	#data bank0f.loc_8c0fca32
-;	#data bank0f.loc_8c0fcb50
-;	#data bank0f.loc_8c0fcb9c
-;	#data bank0f.loc_8c0fd0b8
-;	#data bank0f.loc_8c0fd150
-;	#data bank0f.loc_8c0fd23c
-;	#data bank0f.loc_8c0fd2d2
-;	#data bank0f.loc_8c0fd314
+	#data bank13.loc_8c13c640
+	#data bank13.loc_8c13c88c
+	#data bank13.loc_8c13cae4
+	#data bank13.loc_8c13cd3c
+	#data bank13.loc_8c13cf88
+	#data bank13.loc_8c13d1d4
+	#data bank13.loc_8c13d420
+	#data bank0f.loc_8c0fc970
+	#data bank0f.loc_8c0fc9ec
+	#data bank0f.loc_8c0fca32
+	#data bank0f.loc_8c0fcb50
+	#data bank0f.loc_8c0fcb9c
+	#data bank0f.loc_8c0fd0b8
+	#data bank0f.loc_8c0fd150
+	#data bank0f.loc_8c0fd23c
+	#data bank0f.loc_8c0fd2d2
+	#data bank0f.loc_8c0fd314
+
+loc_8c164A2C:
+#data 0x00000001
+#data 0x00000002
+#data 0x00000003
+#data 0x00000004
+#data 0x00000005
+#data 0x00000006
+#data 0x00000007
+#data 0x00000008
+#data 0x00000009
+
+#align4
+loc_8c164A50:
+#data 0x00000001
+#data 0x00000001
+#data 0x00000002
+#data 0x00000002
+#data 0x00000003
+#data 0x00000003
+#data 0x00000004
+#data 0x00000004
+#data 0x00000005
+#data 0x00000005
+#data 0x00000006
+#data 0x00000006
+#data 0x00000007
+#data 0x00000007
+#data 0x00000008
+#data 0x00000008
+#data 0x00000009
+#data 0x00000009
+
+#align4
+loc_8c164A98:
+#data loc_8c164A2C
+
+loc_8c164A9C:
+#data loc_8c164A2C
+
+loc_8c164AA0:
+#data loc_8c164A2C
+
+loc_8c164AA4:
+#data loc_8c164A50
+
+loc_8c164AA8:
+#data 0x00000009
+#data 0x00000009
+#data 0x00000009
+#data 0x00000012
+#data 0x42200000
+#data 0x428C0000
+#data 0x42C80000
+
+#align4
+loc_8c164AC4:
+#data 0x41700000
+#data 0x41F00000
+#data 0x41700000
+
+#align4
+loc_8c164AD0:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3E99999A
+#data 0x3E99999A
+#data 0x3E99999A
+
+#align4
+loc_8c164AF4:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F000000
+#data 0x3F000000
+#data 0x3F000000
+
+#align4
+loc_8c164B0C:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000005
+#data 0x3DCCCCCD
+
+#align4
+loc_8c164B1C:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000003
+#data 0x3F800000
+#data 0x00000008
+#data 0x3E4CCCCD
+
+#align4
+loc_8c164B34:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000005
+#data 0x3DF5C28F
+#data 0x00000009
+#data 0x3DF5C28F
+
+#align4
+loc_8c164B4C:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000005
+#data 0x3F800000
+#data 0x00000009
+#data 0x40E00000
+
+#align4
+loc_8c164B64:
+#data 0x00000000
+#data 0x00000000
+#data 0x0000000B
+;-------------------------------------------------------------------------------
+#data 0x42340000
+
+#align4
+loc_8c164B74:
+#data 0x00000000
+#data 0x42C80000
+#data 0x0000000A
+#data 0x3E4CCCCD
+
+#align4
+loc_8c164B84:
+#data 0x00000058
+#data 0x00000059
+#data 0x0000005A
+#data 0x0000005B
+#data 0x0000005C
+#data 0x0000005D
+
+#align4
+loc_8c164B9C:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F000000
+#data 0x3E4CCCCD
+#data 0x00000000
+#data 0x00000000
+#data 0x00000004
+#data 0x3F800000
+#data 0x0000000D
+#data 0x3F800000
+#data 0x0000000F
+#data 0x00000000
+
+#align4
+loc_8c164BD4:
+#data 0x3DCCCCCD
+#data 0x3DCCCCCD
+#data 0x3DCCCCCD
+
+#align4
+loc_8c164BE0:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c164BEC:
+#data bank0f.loc_8c0fE2BA
+
+loc_8c164BF0:
+#data bank0f.loc_8c0fE626
+
+loc_8c164BF4:
+#data bank0f.loc_8c0fEC76
+
+loc_8c164BF8:
+#data bank0f.loc_8c0fEC84
+
+loc_8c164BFC:
+#data bank0f.loc_8c0fE2DE
+
+loc_8c164C00:
+#data bank0f.loc_8c0fE344
+
+loc_8c164C04:
+#data bank0f.loc_8c0fE3BC
+
+loc_8c164C08:
+#data bank0f.loc_8c0fE3F6
+
+loc_8c164C0C:
+#data bank0f.loc_8c0fE458
+
+loc_8c164C10:
+#data bank0f.loc_8c0fE516
+
+loc_8c164C14:
+#data bank0f.loc_8c0fE5E8
+
+loc_8c164C18:
+#data 0x00000305
+#data 0x00000360
+#data 0x00000360
+#data 0x0000016C
+#data 0x000002D8
+#data 0x000002D8
+
+#align4
+loc_8c164C30:
+#data 0x3D4CCCCD
+#data 0x3CCCCCCD
+#data 0x3D4CCCCD
+#data 0x3CCCCCCD
+#data 0x3D4CCCCD
+#data 0x3D4CCCCD
+#data 0x3D4CCCCD
+#data 0x3CCCCCCD
+#data 0x3D4CCCCD
+#data 0x3CCCCCCD
+#data 0x3D4CCCCD
+#data 0x3D4CCCCD
+#data 0x3D4CCCCD
+#data 0x3CCCCCCD
+#data 0x3D4CCCCD
+#data 0x3CCCCCCD
+#data 0x3D4CCCCD
+#data 0x3D4CCCCD
+
+#align4
+loc_8c164C78:
+#data 0x3EB33333
+#data 0x00000000
+#data 0x3EB33333
+#data 0x3EB33333
+#data 0x00000000
+#data 0x3EB33333
+#data 0x3EB33333
+#data 0x00000000
+#data 0x3EB33333
+
+#align4
+loc_8c164C9C:
+#data 0x001E0000
+#data 0x001E0014
+#data 0x00320000
+
+#align4
+loc_8c164CA8:
+#data bank0f.loc_8c0fE63A
+
+loc_8c164CAC:
+#data bank0f.loc_8c0fE768
+
+loc_8c164CB0:
+#data bank0f.loc_8c0fE8F0
+
+loc_8c164CB4:
+#data bank0f.loc_8c0fE958
+
+loc_8c164CB8:
+#data bank0f.loc_8c0fEA10
+
+loc_8c164CBC:
+#data bank0f.loc_8c0fEB14
+
+loc_8c164CC0:
+#data bank0f.loc_8c0fEBB6
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c164CD0:
+#data 0x3F4CCCCD
+#data 0x3F4CCCCD
+#data 0x3F4CCCCD
+
+#align4
+loc_8c164CDC:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000005
+#data 0x3DCCCCCD
+
+#align4
+loc_8c164CEC:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000005
+#data 0x3FC00000
+
+#align4
+loc_8c164CFC:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000005
+#data 0x3DCCCCCD
+
+#align4
+loc_8c164D0C:
+#data 0x0000006C
+#data 0x0000006D
+#data 0x0000006E
+#data 0x0000006F
+#data 0x00000070
+#data 0x00000071
+
+#align4
+loc_8c164D24:
+#data 0x3F000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F000000
+
+#align4
+loc_8c164D3C:
+#data 0x00000072
+#data 0x00000073
+#data 0x00000074
+#data 0x00000075
+#data 0x00000076
+#data 0x00000077
+#data 0x00000078
+
+#align4
+loc_8c164D58:
+#data 0x3F000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F000000
+
+#align4
+loc_8c164D74:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F000000
+#data 0x3F000000
+#data 0x3F000000
+
+#align4
+loc_8c164D98:
+#data 0x43B40000
+#data 0x43BE0000
+#data 0x44884000
+#data 0x44160000
+#data 0x43020000
+#data 0x444D0000
+#data 0x43960000
+#data 0xC2A00000
+#data 0x44390000
+#data 0x43660000
+#data 0xC39B0000
+#data 0x448D4000
+#data 0xC2B40000
+#data 0xC4048000
+#data 0x44278000
+#data 0xC28C0000
+#data 0x42700000
+#data 0x447A0000
+#data 0xC4160000
+#data 0x00000000
+#data 0x00000000
+#data 0xC3E10000
+#data 0x43D20000
+#data 0x44458000
+#data 0xC2A00000
+#data 0x44160000
+#data 0x44480000
+#data 0x42700000
+#data 0x42C80000
+#data 0x44430000
+#data 0xC3C80000
+#data 0xC3C80000
+#data 0x43960000
+#data 0xC3660000
+#data 0x43AA0000
+#data 0x43E60000
+#data 0x43EB0000
+#data 0xC3FF0000
+#data 0x44610000
+
+#align4
+loc_8c164E34:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c164E40:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c164E4C:
+#data 0x00000000
+#data 0x3F800000
+
+#align4
+loc_8c164E54:
+#data 0x00000004
+#data 0x3F800000
+#data 0x0000000F
+#data 0x00000000
+
+#align4
+loc_8c164E64:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000005
+#data 0x40800000
+#data 0x0000000F
+#data 0x40800000
+
+#align4
+loc_8c164E7C:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000004
+#data 0x3F800000
+#data 0x0000000F
+#data 0x00000000
+
+#align4
+loc_8c164E94:
+#data 0x00000000
+#data 0x3F800000
+
+#align4
+loc_8c164E9C:
+#data 0x0000000F
+#data 0x3F800000
+
+#align4
+loc_8c164EA4:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000004
+#data 0x40200000
+#data 0x00000008
+#data 0x40000000
+#data 0x0000000F
+#data 0x00000000
+
+#align4
+loc_8c164EC4:
+#data 0x00000000
+#data 0x3F800000
+#data 0x0000000F
+#data 0x3F800000
+
+#align4
+loc_8c164ED4:
+#data 0x00000000
+#data 0x3F800000
+
+#align4
+loc_8c164EDC:
+#data 0x0000000F
+#data 0x40400000
+
+#align4
+loc_8c164EE4:
+#data 0x00000000
+#data 0x3F800000
+#data 0x0000000F
+#data 0x3F800000
+
+#align4
+loc_8c164EF4:
+#data 0x00000000
+#data 0x3F800000
+#data 0x0000000F
+#data 0x40400000
+
+#align4
+loc_8c164F04:
+#data 0x00000000
+#data 0x3F800000
+
+#align4
+loc_8c164F0C:
+#data 0x0000000F
+#data 0x3FC00000
+
+#align4
+loc_8c164F14:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000004
+#data 0x3F800000
+#data 0x00000006
+#data 0x3FC00000
+#data 0x00000008
+#data 0x3F99999A
+#data 0x0000000F
+#data 0x00000000
+
+#align4
+loc_8c164F3C:
+#data 0x00000000
+#data 0x3F800000
+#data 0x0000000F
+#data 0x3FC00000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c164F58:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c164F64:
+#data 0x00000000
+#data 0xC0000000
+#data 0x00000000
+
+#align4
+loc_8c164F70:
+#data 0x00000000
+#data 0x3E4CCCCD
+#data 0x00000009
+#data 0x3F99999A
+
+#align4
+loc_8c164F80:
+#data 0x00000000
+#data 0x3E4CCCCD
+#data 0x00000002
+#data 0x3F99999A
+#data 0x00000009
+#data 0x00000000
+
+#align4
+loc_8c164F98:
+#data 0x00000000
+#data 0x3E4CCCCD
+#data 0x00000009
+#data 0x3F99999A
+
+#align4
+loc_8c164FA8:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000006
+#data 0x3F000000
+#data 0x00000009
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c164FCC:
+#data 0x0000A000
+
+#align4
+loc_8c164FD0:
+#data 0x0000E001
+
+#align4
+loc_8c164FD4:
+#data 0x3EB4FDF4
+#data 0x00000000
+#data 0xBEB4FDF4
+#data 0xBEB4FDF4
+#data 0x00000000
+#data 0xBEB4FDF4
+
+#align4
+loc_8c164FEC:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000006
+#data 0x00000000
+
+#align4
+loc_8c164FFC:
+#data 0x00000000
+#data 0x3F800000
+#data 0x0000000C
+#data 0x40200000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000014
+#data 0xC2C80000
+
+#align4
+loc_8c16501C:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000003
+#data 0x3F800000
+#data 0x0000000C
+#data 0x00000000
+
+#align4
+loc_8c165034:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000014
+#data 0x40200000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000014
+#data 0xC2C80000
+
+#align4
+loc_8c165054:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000003
+#data 0x3F800000
+#data 0x0000000C
+#data 0x00000000
+
+#align4
+loc_8c16506C:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c165078:
+#data 0x00009555
+#data 0x0000EAAC
+
+#align4
+loc_8c165080:
+#data 0xC08A8F5C
+#data 0x00000000
+#data 0x40200000
+#data 0x408A8F5C
+#data 0x00000000
+#data 0x40200000
+
+#align4
+loc_8c165098:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000014
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000014
+#data 0x42C80000
+
+#align4
+loc_8c1650B8:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000008
+#data 0x3F800000
+#data 0x0000000D
+#data 0x00000000
+
+#align4
+loc_8c1650D0:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000008
+#data 0x40000000
+#data 0x00000014
+#data 0x41000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000014
+#data 0x43480000
+
+#align4
+loc_8c1650F8:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000008
+#data 0x3F800000
+#data 0x0000000D
+#data 0x00000000
+
+#align4
+loc_8c165110:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000014
+#data 0x43700000
+
+#align4
+loc_8c165120:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000008
+#data 0x3F800000
+#data 0x0000000D
+#data 0x00000000
+
+#align4
+loc_8c165138:
+#data 0x00000000
+
+#align4
+loc_8c16513C:
+#data 0x00000000
+#data 0x00000014
+#data 0xC3700000
+
+#align4
+loc_8c165148:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000008
+#data 0x3F800000
+#data 0x0000000D
+#data 0x00000000
+
+#align4
+loc_8c165160:
+#data 0x00000055
+
+#align4
+loc_8c165164:
+#data 0x000000A7
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c1651BC:
+#data 0x00000060
+#data 0x00000061
+#data 0x00000062
+#data 0x00000064
+
+#align4
+loc_8c1651CC:
+#data bank10.loc_8c101B1A
+
+loc_8c1651D0:
+#data bank10.loc_8c101B4A
+
+loc_8c1651D4:
+#data bank10.loc_8c101BAA
+
+loc_8c1651D8:
+#data bank10.loc_8c101BFC
+
+loc_8c1651DC:
+#data bank10.loc_8c102140
+
+loc_8c1651E0:
+#data bank10.loc_8c102192
+
+loc_8c1651E4:
+#data bank10.loc_8c1026A8
+
+loc_8c1651E8:
+#data bank10.loc_8c102714
+
+loc_8c1651EC:
+#data bank10.loc_8c102984
+
+loc_8c1651F0:
+#data bank10.loc_8c102A1C
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c165200:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000006
+#data 0x3F99999A
+
+#align4
+loc_8c165210:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000006
+#data 0x3DCCCCCD
+
+#align4
+loc_8c165220:
+#data 0x00000000
+#data 0x3F88F5C3
+#data 0x00000004
+#data 0x3F99999A
+
+#align4
+loc_8c165230:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000003
+#data 0x3F800000
+#data 0x00000004
+#data 0x3F000000
+
+#align4
+loc_8c165248:
+#data 0x00000000
+#data 0x3F95C28F
+#data 0x00000004
+#data 0x3FA8F5C3
+
+#align4
+loc_8c165258:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000003
+#data 0x3F800000
+#data 0x00000004
+#data 0x3F000000
+
+#align4
+loc_8c165270:
+#data 0x00000000
+#data 0x3F99999A
+#data 0x00000006
+#data 0x3FC00000
+
+#align4
+loc_8c165280:
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000003
+#data 0x3F800000
+#data 0x00000006
+#data 0x3E4CCCCD
+
+#align4
+loc_8c165298:
+#data 0x00000000
+#data 0x3F800000
+#data 0x0000000F
+#data 0x3FC00000
+
+#align4
+loc_8c1652A8:
+#data 0x00000000
+#data 0x00000000
+#data 0x0000000F
+#data 0x43340000
+
+#align4
+loc_8c1652B8:
+#data 0x00000000
+#data 0x42200000
+#data 0x0000000F
+#data 0x42700000
+
+#align4
+loc_8c1652C8:
+#data 0x00000000
+#data 0x3F800000
+#data 0x0000000A
+#data 0x3F800000
+#data 0x0000000F
+#data 0x3E4CCCCD
+
+#align4
+loc_8c1652E0:
+#data 0x00000081
+#data 0x3E99999A
+#data 0x00000082
+#data 0x3F000000
+#data 0x00000083
+#data 0x3F800000
+#data 0x00000084
+#data 0x3F800000
+#data 0x00000085
+#data 0x3F800000
+
+#align4
+loc_8c165308:
+#data 0x00000087
+#data 0x3E99999A
+#data 0x00000088
+#data 0x3F000000
+#data 0x00000089
+#data 0x3F800000
+#data 0x0000008A
+#data 0x3F800000
+#data 0x0000008B
+#data 0x3F800000
+
+#align4
+loc_8c165330:
+#data 0x0000008D
+#data 0x3F000000
+#data 0x0000008E
+#data 0x3F800000
+#data 0x0000008F
+#data 0x3F800000
+#data 0x00000090
+#data 0x3F800000
+
+#align4
+loc_8c165350:
+#data 0x00000092
+#data 0x3E99999A
+#data 0x00000093
+#data 0x3F000000
+#data 0x00000094
+#data 0x3F800000
+#data 0x00000095
+#data 0x3F800000
+#data 0x00000096
+#data 0x3F800000
+#data 0x00000097
+#data 0x3F800000
+
+#align4
+loc_8c165380:
+#data 0x00000098
+#data 0x3F800000
+
+#align4
+loc_8c165388:
+#data 0x00000099
+#data 0x3F000000
+#data 0x0000009A
+#data 0x3F800000
+#data 0x0000009B
+#data 0x3F800000
+#data 0x0000009C
+
+#align4
+loc_8c1653A4:
+#data 0x3F800000
+
+#align4
+loc_8c1653A8:
+#data 0x0000009E
+#data 0x3E99999A
+#data 0x0000009F
+#data 0x3F000000
+#data 0x000000A0
+#data 0x3F800000
+#data 0x000000A1
+#data 0x3F800000
+#data 0x000000A2
+#data 0x3F800000
+#data 0x000000A3
+#data 0x3F800000
+#data 0x000000A4
+#data 0x3F800000
+
+#align4
+loc_8c1653E0:
+#data loc_8c1652E0
+
+loc_8c1653E4:
+#data loc_8c165308
+
+loc_8c1653E8:
+#data loc_8c165330
+
+loc_8c1653EC:
+#data loc_8c165350
+
+loc_8c1653F0:
+#data loc_8c165388
+
+loc_8c1653F4:
+#data loc_8c1653A8
+
+loc_8c1653F8:
+#data 0x00000005
+#data 0x00000005
+#data 0x00000004
+#data 0x00000007
+#data 0x00000004
+#data 0x00000007
+
+#align4
+loc_8c165410:
+#data 0x00000000
+#data 0x3E99999A
+#data 0x3F333333
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F4CCCCD
+#data 0x3F19999A
+#data 0x3ECCCCCD
+#data 0x3E4CCCCD
+#data 0x00000000
+
+#align4
+loc_8c16544C:
+#data 0x00000000
+#data 0x3F000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F4CCCCD
+#data 0x3F19999A
+#data 0x3ECCCCCD
+#data 0x3E4CCCCD
+#data 0x3DCCCCCD
+#data 0x00000000
+
+#align4
+loc_8c165488:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F333333
+#data 0x3F000000
+#data 0x3ECCCCCD
+#data 0x3E4CCCCD
+#data 0x00000000
+
+#align4
+loc_8c1654C4:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x3DCCCCCD
+#data 0x3E99999A
+#data 0x3F000000
+#data 0x3F000000
+#data 0x3E99999A
+#data 0x3DCCCCCD
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c165518:
+#data 0x00000000
+#data 0x3F000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F4CCCCD
+#data 0x3F19999A
+#data 0x3ECCCCCD
+#data 0x3E4CCCCD
+#data 0x00000000
+
+#align4
+loc_8c165548:
+#data 0x3F000000
+#data 0x3F4CCCCD
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c165560:
+#data 0x3F4CCCCD
+#data 0x3ECCCCCD
+#data 0x3ECCCCCD
+#data 0x3E4CCCCD
+#data 0x3E4CCCCD
+#data 0x00000000
+
+#align4
+loc_8c165578:
+#data 0x000000AB
+#data 0x000000AC
+#data 0x000000AD
+#data 0x000000AE
+#data 0x000000AF
+#data 0x000000B0
+#data 0x000000B1
+#data 0x000000B2
+#data 0x000000B2
+#data 0x000000B3
+#data 0x000000B3
+
+#align4
+loc_8c1655A4:
+#data 0x000000B4
+#data 0x000000B5
+#data 0x000000C6
+#data 0x000000C7
+#data 0x000000C8
+#data 0x000000C9
+#data 0x000000CA
+#data 0x000000CB
+#data 0x000000CB
+#data 0x000000CC
+#data 0x000000CC
+
+#align4
+loc_8c1655D0:
+#data 0x000000CD
+#data 0x000000CE
+#data 0x000000CF
+#data 0x000000D0
+#data 0x000000D1
+#data 0x000000D2
+#data 0x000000D3
+#data 0x000000D4
+#data 0x000000D4
+#data 0x000000D5
+#data 0x000000D5
+
+#align4
+loc_8c1655FC:
+#data bank10.loc_8c104082
+
+loc_8c165600:
+#data bank10.loc_8c1040B6
+
+loc_8c165604:
+#data bank10.loc_8c10410E
+
+loc_8c165608:
+#data bank10.loc_8c10415A
+
+loc_8c16560C:
+#data bank10.loc_8c104178
+
+loc_8c165610:
+#data bank10.loc_8c104596
+
+loc_8c165614:
+#data bank10.loc_8c1045CA
+
+loc_8c165618:
+#data bank10.loc_8c104622
+
+loc_8c16561C:
+#data bank10.loc_8c10466E
+
+loc_8c165620:
+#data bank10.loc_8c10468C
+
+loc_8c165624:
+#data bank10.loc_8c104932
+
+loc_8c165628:
+#data bank10.loc_8c10496E
+
+loc_8c16562C:
+#data bank10.loc_8c1049B0
+
+loc_8c165630:
+#data bank10.loc_8c1049CE
+
+loc_8c165634:
+#data bank10.loc_8c104BF6
+
+loc_8c165638:
+#data bank10.loc_8c104C9A
+
+loc_8c16563C:
+#data bank10.loc_8c104CD2
+
+loc_8c165640:
+#data bank10.loc_8c104D06
+
+loc_8c165644:
+#data bank10.loc_8c104D2E
+
+loc_8c165648:
+#data bank10.loc_8c104E26
+
+loc_8c16564C:
+#data bank10.loc_8c10506E
+
+loc_8c165650:
+#data bank10.loc_8c10507C
+
+loc_8c165654:
+#data bank10.loc_8c104FF4
+
+loc_8c165658:
+#data bank10.loc_8c10506E
+
+loc_8c16565C:
+#data bank10.loc_8c10507C
+
+loc_8c165660:
+#data 0x3F000000
+#data 0x3F000000
+#data 0x3F000000
+
+#align4
+loc_8c16566C:
+#data bank10.loc_8c1054C6
+
+loc_8c165670:
+#data bank10.loc_8c1054FA
+
+loc_8c165674:
+#data bank10.loc_8c105552
+
+loc_8c165678:
+#data bank10.loc_8c10559E
+
+loc_8c16567C:
+#data bank10.loc_8c1055BC
+
+loc_8c165680:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F4CCCCD
+#data 0x3F19999A
+#data 0x3ECCCCCD
+#data 0x3E99999A
+#data 0x3E4CCCCD
+#data 0x3DCCCCCD
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c165724:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c165738:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x3E4CCCCD
+#data 0x3F000000
+#data 0x3F333333
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c1657B4:
+#data 0x3F800000
+#data 0x3F333333
+#data 0x3F000000
+#data 0x3E4CCCCD
+#data 0x00000000
+
+#align4
+loc_8c1657C8:
+#data 0x000000DE
+#data 0x000000DE
+#data 0x000000DE
+#data 0x000000DF
+#data 0x000000DF
+#data 0x000000DF
+#data 0x000000E0
+#data 0x000000E0
+#data 0x000000E1
+#data 0x000000E1
+#data 0x000000E2
+#data 0x000000E2
+#data 0x000000E3
+#data 0x000000E4
+#data 0x000000E5
+#data 0x000000E6
+#data 0x000000E7
+#data 0x000000E8
+#data 0x000000E9
+#data 0x000000EA
+#data 0x000000EB
+#data 0x000000EC
+
+#align4
+loc_8c165820:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c165868:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F000000
+#data 0x3F000000
+#data 0x3E4CCCCD
+#data 0x3E4CCCCD
+
+#align4
+loc_8c165898:
+#data bank10.loc_8c105F68
+
+loc_8c16589C:
+#data bank10.loc_8c105FBA
+
+loc_8c1658A0:
+#data bank10.loc_8c1060D2
+
+loc_8c1658A4:
+#data bank10.loc_8c1060E0
+
+loc_8c1658A8:
+#data bank10.loc_8c10627C
+
+loc_8c1658AC:
+#data bank10.loc_8c1062E6
+
+loc_8c1658B0:
+#data bank10.loc_8c10640C
+
+loc_8c1658B4:
+#data bank10.loc_8c106476
+
+loc_8c1658B8:
+#data bank10.loc_8c1065B8
+
+loc_8c1658BC:
+#data bank10.loc_8c106622
+
+loc_8c1658C0:
+#data bank10.loc_8c106A80
+
+loc_8c1658C4:
+#data bank10.loc_8c106AE8
+
+loc_8c1658C8:
+#data bank10.loc_8c106B6C
+
+loc_8c1658CC:
+#data bank10.loc_8c106B7A
+
+loc_8c1658D0:
+#data bank10.loc_8c106D42
+
+loc_8c1658D4:
+#data bank10.loc_8c106D98
+
+loc_8c1658D8:
+#data bank10.loc_8c106B6C
+
+loc_8c1658DC:
+#data bank10.loc_8c106B7A
+
+loc_8c1658E0:
+#data bank10.loc_8c106F7E
+
+loc_8c1658E4:
+#data bank10.loc_8c106FB2
+
+loc_8c1658E8:
+#data bank10.loc_8c107004
+
+loc_8c1658EC:
+#data bank10.loc_8c107046
+
+loc_8c1658F0:
+#data bank10.loc_8c107064
+
+loc_8c1658F4:
+#data bank10.loc_8c107722
+
+loc_8c1658F8:
+#data bank10.loc_8c107728
+
+loc_8c1658FC:
+#data bank10.loc_8c107C20
+
+loc_8c165900:
+#data bank10.loc_8c107C2E
+
+loc_8c165904:
+#data bank10.loc_8c1077EE
+
+loc_8c165908:
+#data bank10.loc_8c10783C
+
+loc_8c16590C:
+#data bank10.loc_8c107C20
+
+loc_8c165910:
+#data bank10.loc_8c107C2E
+
+loc_8c165914:
+#data bank10.loc_8c1078EE
+
+loc_8c165918:
+#data bank10.loc_8c10790A
+
+loc_8c16591C:
+#data bank10.loc_8c107C20
+
+loc_8c165920:
+#data bank10.loc_8c107C2E
+
+loc_8c165924:
+#data bank10.loc_8c1079E0
+
+loc_8c165928:
+#data bank10.loc_8c1079FC
+
+loc_8c16592C:
+#data bank10.loc_8c107C20
+
+loc_8c165930:
+#data bank10.loc_8c107C2E
+
+loc_8c165934:
+#data bank10.loc_8c107AAE
+
+loc_8c165938:
+#data bank10.loc_8c107AF4
+
+loc_8c16593C:
+#data bank10.loc_8c107C20
+
+loc_8c165940:
+#data bank10.loc_8c107C2E
+
+loc_8c165944:
+#data bank10.loc_8c107BBC
+
+loc_8c165948:
+#data bank10.loc_8c107BD8
+
+loc_8c16594C:
+#data bank10.loc_8c107C20
+
+loc_8c165950:
+#data bank10.loc_8c107C2E
+
+loc_8c165954:
+#data bank10.loc_8c107D42
+
+loc_8c165958:
+#data bank10.loc_8c107D5E
+
+loc_8c16595C:
+#data bank10.loc_8c107ECC
+
+loc_8c165960:
+#data bank10.loc_8c107EDA
+
+loc_8c165964:
+#data bank10.loc_8c107E6C
+
+loc_8c165968:
+#data bank10.loc_8c107E88
+
+loc_8c16596C:
+#data bank10.loc_8c107ECC
+
+loc_8c165970:
+#data bank10.loc_8c107EDA
+
+loc_8c165974:
+#data bank10.loc_8c108800
+
+loc_8c165978:
+#data bank10.loc_8c108B30
+
+loc_8c16597C:
+#data bank10.loc_8c108C1C
+
+loc_8c165980:
+#data bank10.loc_8c108E1C
+
+loc_8c165984:
+#data bank10.loc_8c109058
+
+loc_8c165988:
+#data bank11.loc_8c114D24
+
+loc_8c16598C:
+#data bank11.loc_8c114E90
+
+loc_8c165990:
+#data bank10.loc_8c10923E
+
+loc_8c165994:
+#data bank10.loc_8c1093FC
+
+loc_8c165998:
+#data bank10.loc_8c1096F8
+
+loc_8c16599C:
+#data bank10.loc_8c1099A4
+
+loc_8c1659A0:
+#data bank10.loc_8c109AD2
+
+loc_8c1659A4:
+#data bank10.loc_8c109B14
+
+loc_8c1659A8:
+#data bank10.loc_8c10B0DC
+#data 0x00000000
+
+#align4
+loc_8c1659B0:
+#data bank10.loc_8c10BCFC
+
+loc_8c1659B4:
+#data bank10.loc_8c10CC2A
+
+loc_8c1659B8:
+#data bank10.loc_8c10D1B6
+
+loc_8c1659BC:
+#data bank10.loc_8c10D792
+
+loc_8c1659C0:
+#data bank10.loc_8c10E9BC
+
+loc_8c1659C4:
+#data bank10.loc_8c10EABA
+
+loc_8c1659C8:
+#data bank10.loc_8c10EADC
+
+loc_8c1659CC:
+#data bank10.loc_8c10EE2A
+
+loc_8c1659D0:
+#data bank10.loc_8c10EF68
+
+loc_8c1659D4:
+#data bank10.loc_8c10F18C
+
+loc_8c1659D8:
+#data bank10.loc_8c10F4AC
+
+loc_8c1659DC:
+#data bank10.loc_8c10F504
+
+loc_8c1659E0:
+#data bank10.loc_8c10FB24
+
+loc_8c1659E4:
+#data bank10.loc_8c10FBA0
+#data 0x00000000
+
+#align4
+loc_8c1659EC:
+#data bank10.loc_8c10FD58
+
+loc_8c1659F0:
+#data bank10.loc_8c10FDF0
+
+loc_8c1659F4:
+#data bank10.loc_8c10FE68
+
+loc_8c1659F8:
+#data bank10.loc_8c10FF94
+
+loc_8c1659FC:
+#data bank11.loc_8c110316
+
+loc_8c165A00:
+#data bank11.loc_8c110354
+
+loc_8c165A04:
+#data bank11.loc_8c110598
+
+loc_8c165A08:
+#data bank11.loc_8c110800
+
+loc_8c165A0C:
+#data bank11.loc_8c1108F4
+
+loc_8c165A10:
+#data bank11.loc_8c114F78
+
+loc_8c165A14:
+#data bank11.loc_8c110A54
+
+loc_8c165A18:
+#data bank11.loc_8c110BEC
+#data 0x00000000
+
+#align4
+loc_8c165A20:
+#data bank11.loc_8c110E34
+
+loc_8c165A24:
+#data bank11.loc_8c1110C6
+
+loc_8c165A28:
+#data bank11.loc_8c1112AC
+
+loc_8c165A2C:
+#data bank11.loc_8c1112C8
+#data 0x00000000
+
+#align4
+loc_8c165A34:
+#data bank11.loc_8c11513C
+
+loc_8c165A38:
+#data bank11.loc_8c111798
+
+loc_8c165A3C:
+#data bank11.loc_8c1117F0
+
+loc_8c165A40:
+#data bank11.loc_8c111A94
+#data 0x00000000
+
+#align4
+loc_8c165A48:
+#data bank11.loc_8c112330
+
+loc_8c165A4C:
+#data bank11.loc_8c115324
+
+loc_8c165A50:
+#data bank11.loc_8c1123A0
+#data 0x00000000
+
+#align4
+loc_8c165A58:
+#data bank11.loc_8c112A90
+
+loc_8c165A5C:
+#data bank11.loc_8c112BBC
+
+loc_8c165A60:
+#data bank11.loc_8c11420C
+
+loc_8c165A64:
+#data bank11.loc_8c114230
+
+loc_8c165A68:
+#data bank11.loc_8c114692
+
+loc_8c165A6C:
+#data bank11.loc_8c114844
+
+loc_8c165A70:
+#data bank11.loc_8c114918
+
+loc_8c165A74:
+#data bank11.loc_8c114A5E
+
+loc_8c165A78:
+#data loc_8c165974
+
+loc_8c165A7C:
+#data loc_8c165990
+
+loc_8c165A80:
+#data loc_8c1659A8
+
+loc_8c165A84:
+#data loc_8c1659C8
+
+loc_8c165A88:
+#data loc_8c1659F0
+
+loc_8c165A8C:
+#data loc_8c165A14
+
+loc_8c165A90:
+#data loc_8c165A38
+
+loc_8c165A94:
+#data loc_8c165A50
+
+loc_8c165A98:
+#data loc_8c165A60
+
+loc_8c165A9C:
+#data loc_8c165974
+
+loc_8c165AA0:
+#data loc_8c165990
+
+loc_8c165AA4:
+#data loc_8c1659A8
+
+loc_8c165AA8:
+#data loc_8c1659C8
+
+loc_8c165AAC:
+#data loc_8c1659F0
+
+loc_8c165AB0:
+#data loc_8c165A14
+
+loc_8c165AB4:
+#data loc_8c165A38
+
+loc_8c165AB8:
+#data loc_8c165A50
+
+loc_8c165ABC:
+#data 0x00000000
+#data 0x00000001
+#data 0x00000002
+#data 0x00000003
+#data 0x00000004
+
+#align4
+loc_8c165AD0:
+#data 0xFFFFFFFF
+
+#align4
+loc_8c165AD4:
+#data 0x00000000
+#data 0x00000001
+#data 0x00000002
+#data 0x00000003
+#data 0x00000004
+#data 0x00000005
+#data 0xFFFFFFFF
+
+#align4
+loc_8c165AF0:
+#data 0x00000000
+#data 0x00000002
+#data 0x00000003
+#data 0x00000004
+#data 0x00000005
+#data 0x00000006
+#data 0x00000007
+#data 0xFFFFFFFF
+
+#align4
+loc_8c165B10:
+#data 0x00000000
+#data 0x00000001
+#data 0x00000002
+#data 0x00000003
+#data 0x00000004
+#data 0x00000005
+#data 0x00000006
+#data 0x00000007
+#data 0x00000009
+#data 0xFFFFFFFF
+
+#align4
+loc_8c165B38:
+#data 0x00000000
+#data 0x00000001
+#data 0x00000002
+#data 0x00000003
+#data 0x00000004
+#data 0x00000005
+#data 0x00000006
+#data 0x00000007
+#data 0xFFFFFFFF
+
+#align4
+loc_8c165B5C:
+#data 0x00000000
+#data 0x00000001
+
+#align4
+loc_8c165B64:
+#data 0x00000001
+#data 0x00000001
+#data 0x00000003
+#data 0x00000004
+#data 0x00000005
+#data 0x00000006
+#data 0xFFFFFFFF
+
+#align4
+loc_8c165B80:
+#data 0x00000000
+#data 0x00000001
+#data 0x00000002
+#data 0x00000004
+#data 0xFFFFFFFF
+
+#align4
+loc_8c165B94:
+#data 0x00000000
+#data 0x00000002
+#data 0xFFFFFFFF
+
+#align4
+loc_8c165BA0:
+#data 0x00000000
+#data 0x00000001
+#data 0x00000002
+#data 0x00000003
+#data 0x00000004
+#data 0x00000005
+#data 0xFFFFFFFF
+
+#align4
+loc_8c165BBC:
+#data 0x00000001
+#data 0x00000004
+#data 0x00000005
+#data 0x00000006
+#data 0xFFFFFFFF
+
+#align4
+loc_8c165BD0:
+#data 0x00000000
+#data 0x00000001
+#data 0x00000002
+#data 0x00000003
+#data 0x00000004
+#data 0x00000005
+#data 0xFFFFFFFF
+
+#align4
+loc_8c165BEC:
+#data 0xFFFFFFFF
+
+#align4
+loc_8c165BF0:
+#data 0x00000000
+#data 0x00000001
+#data 0x00000002
+#data 0x00000003
+#data 0x00000004
+#data 0x00000005
+#data 0x00000006
+#data 0x00000007
+#data 0x00000009
+#data 0xFFFFFFFF
+
+#align4
+loc_8c165C18:
+#data 0x00000001
+#data 0x00000004
+#data 0x00000006
+#data 0x00000007
+#data 0x00000008
+#data 0xFFFFFFFF
+
+#align4
+loc_8c165C30:
+#data 0x00000000
+#data 0x00000003
+#data 0x00000004
+#data 0x00000005
+#data 0x00000008
+#data 0xFFFFFFFF
+
+#align4
+loc_8c165C48:
+#data 0x00000002
+#data 0x00000004
+#data 0x00000005
+#data 0xFFFFFFFF
+
+#align4
+loc_8c165C58:
+#data 0x00000000
+#data 0x00000003
+#data 0xFFFFFFFF
+
+#align4
+loc_8c165C64:
+#data loc_8c165ABC
+
+loc_8c165C68:
+#data loc_8c165AD4
+
+loc_8c165C6C:
+#data loc_8c165AF0
+
+loc_8c165C70:
+#data loc_8c165B10
+
+loc_8c165C74:
+#data loc_8c165B38
+
+loc_8c165C78:
+#data loc_8c165B5C
+
+loc_8c165C7C:
+#data loc_8c165B80
+
+loc_8c165C80:
+#data loc_8c165B94
+
+loc_8c165C84:
+#data loc_8c165BA0
+
+loc_8c165C88:
+#data loc_8c165BBC
+
+loc_8c165C8C:
+#data loc_8c165BD0
+
+loc_8c165C90:
+#data loc_8c165BEC
+
+loc_8c165C94:
+#data loc_8c165BF0
+
+loc_8c165C98:
+#data loc_8c165C18
+
+loc_8c165C9C:
+#data loc_8c165C30
+
+loc_8c165CA0:
+#data loc_8c165C48
+
+loc_8c165CA4:
+#data loc_8c165C58
+
+loc_8c165CA8:
+#data 0x00000052
+#data 0x463B8000
+#data 0xA6948000
+#data 0x00000007
+#data 0x499EB100
+#data 0x998CB300
+#data 0xFFFFFFFF
+#data 0x00000000
+#data 0x7F7F7F00
+#data 0xFFFFFFFF
+#data 0x00000000
+#data 0x7F7F7F00
+#data 0x00000080
+#data 0x46EA6000
+#data 0xD8FFFF00
+#data 0x00000040
+#data 0x471C4000
+#data 0x4B222200
+#data 0x0000002D
+#data 0x47161400
+#data 0xCF8F8F00
+#data 0x0000006E
+#data 0x4999CF00
+#data 0x4651CB00
+#data 0x00000073
+#data 0x47379800
+#data 0x00000000
+#data 0xFFFFFFFF
+#data 0x48C35000
+#data 0xA6948000
+#data 0x00000007
+#data 0x499EB100
+#data 0xC0E6FF00
+#data 0xFFFFFFFF
+#data 0x00000000
+#data 0x7F7F7F00
+#data 0xFFFFFFFF
+#data 0x00000000
+#data 0x7F7F7F00
+#data 0xFFFFFFFF
+#data 0x46947000
+#data 0xC080FF00
+#data 0x00000040
+#data 0x471C4000
+#data 0x10102000
+#data 0x00000040
+#data 0x471C4000
+#data 0x80808000
+#data 0x00000023
+#data 0x47FDE800
+#data 0xCADBE500
+
+#align4
+loc_8c165D74:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c165D8C:
+#data 0xC4432000
+#data 0x44750000
+#data 0xC5098000
+#data 0x44D34000
+#data 0x44750000
+#data 0xC4C59000
+#data 0x44110000
+#data 0x44E10000
+#data 0xC5EE2000
+#data 0x453CC000
+#data 0x44E10000
+#data 0xC5DAC000
+#data 0xC47BC000
+#data 0x447F0000
+#data 0xC50BB000
+#data 0x44C78000
+#data 0x447F0000
+#data 0xC4E38000
+#data 0xC2B00000
+#data 0x44E10000
+#data 0xC5F1F000
+#data 0x45160000
+#data 0x44E10000
+#data 0xC5E53800
+
+#align4
+loc_8c165DEC:
+#data 0xC47A0000
+#data 0x43FA0000
+#data 0x43480000
+#data 0xC3480000
+#data 0x43FA0000
+#data 0xC53B8000
+#data 0x44610000
+#data 0x44160000
+#data 0x43480000
+#data 0x44D48000
+#data 0x44160000
+#data 0xC53B8000
+#data 0x447A0000
+#data 0x442F0000
+
+#align4
+loc_8c165E24:
+#data 0x43480000
+#data 0x44E10000
+#data 0x442F0000
+#data 0xC53B8000
+#data 0xC47A0000
+#data 0x44160000
+#data 0x43480000
+#data 0xC3480000
+#data 0x44160000
+#data 0xC53B8000
+#data 0xC4098000
+#data 0x443B8000
+#data 0x43480000
+#data 0x43AF0000
+#data 0x443B8000
+#data 0xC53B8000
+#data 0x447A0000
+#data 0x44098000
+#data 0x43480000
+#data 0x44E10000
+#data 0x44098000
+#data 0xC53B8000
+
+#align4
+loc_8c165E7C:
+#data 0xC3960000
+#data 0x44B54000
+#data 0xC5807000
+#data 0xC42C8000
+#data 0x44BB8000
+#data 0xC582A000
+
+#align4
+loc_8c165E94:
+#data 0x44150000
+#data 0x43DB8000
+#data 0xC4920000
+
+#align4
+loc_8c165EA0:
+#data 0x00000000
+#data 0xC5BB8000
+#data 0x447A0000
+#data 0xC58CA000
+#data 0x41200000
+#data 0x42340000
+#data 0x00000000
+#data 0x43160000
+#data 0xC5318000
+#data 0x44610000
+#data 0xC5584000
+#data 0x41C80000
+#data 0x425C0000
+#data 0x41E00000
+#data 0x43960000
+#data 0x439B0000
+#data 0x44610000
+#data 0xC5386000
+#data 0x41200000
+#data 0x42960000
+#data 0x00000000
+#data 0x43E10000
+#data 0x4558E000
+#data 0x44610000
+#data 0xC523C000
+#data 0x42B40000
+#data 0x42C60000
+#data 0x42960000
+#data 0x44160000
+#data 0x45C26000
+#data 0x44638000
+#data 0xC54F8000
+#data 0x00000000
+#data 0x42B40000
+#data 0x00000000
+#data 0x442F0000
+#data 0x45A5A000
+#data 0x44A28000
+#data 0xC5CB2000
+#data 0x41D80000
+#data 0xC2340000
+#data 0xC1A00000
+#data 0x44480000
+#data 0x44820000
+#data 0x44AF0000
+#data 0xC59C4000
+#data 0x3FC00000
+#data 0xC28C0000
+#data 0x40FCCCCD
+#data 0x44610000
+#data 0xC46D8000
+#data 0x44B40000
+#data 0xC59BF000
+#data 0x40000000
+#data 0xC2DC0000
+#data 0x00000000
+#data 0x447A0000
+#data 0xC4FC8000
+#data 0x44B90000
+#data 0xC5DC5000
+#data 0x40A00000
+#data 0xC32A0000
+#data 0xC1880000
+#data 0x44898000
+#data 0xC480C000
+#data 0x44BB8000
+#data 0xC6039000
+#data 0xC1200000
+#data 0xC3660000
+#data 0xC1A00000
+#data 0x44960000
+#data 0x446B0000
+#data 0x44BB8000
+#data 0xC6089000
+#data 0x42480000
+#data 0xC38E8000
+#data 0x42340000
+#data 0x44A28000
+#data 0x451A6000
+
+#align4
+loc_8c165FDC:
+#data 0x44BB8000
+#data 0xC5DA7000
+#data 0x3E428F5C
+#data 0xC3BE0000
+#data 0x40333333
+#data 0x44AF0000
+#data 0x44CD0000
+#data 0x44BB8000
+#data 0xC5A05000
+#data 0xC1600000
+#data 0xC3D20000
+#data 0x41A00000
+#data 0x44BB8000
+#data 0xC46D8000
+#data 0x44B40000
+#data 0xC59BF000
+#data 0x40000000
+#data 0xC3EB0000
+#data 0x00000000
+#data 0x44C80000
+#data 0xC4FC8000
+#data 0x44B40000
+#data 0xC5DC5000
+#data 0x40A00000
+#data 0xC4048000
+#data 0xC1880000
+#data 0x44D48000
+#data 0xC480C000
+#data 0x44B40000
+#data 0xC6039000
+#data 0xC1200000
+#data 0xC4138000
+#data 0xC1A00000
+#data 0x44E10000
+#data 0x446B0000
+#data 0x44B40000
+#data 0xC6089000
+#data 0x42480000
+#data 0xC4214000
+#data 0x42340000
+#data 0x44ED8000
+#data 0x451A6000
+#data 0x44B40000
+#data 0xC5DA7000
+#data 0x3E428F5C
+#data 0xC4390000
+#data 0x40333333
+#data 0x44FA0000
+#data 0x44CD0000
+#data 0x44B40000
+#data 0xC5A05000
+#data 0xC1600000
+#data 0xC4430000
+#data 0x41A00000
+#data 0x45034000
+#data 0xC46D8000
+#data 0x44AF0000
+#data 0xC59BF000
+#data 0x40000000
+#data 0xC44F8000
+#data 0x00000000
+#data 0x45098000
+#data 0xC4FC8000
+#data 0x44AF0000
+#data 0xC5DC5000
+#data 0x40A00000
+#data 0xC45E8000
+#data 0xC1880000
+#data 0x450FC000
+#data 0xC480C000
+#data 0x44AF0000
+#data 0xC6039000
+#data 0xC1200000
+#data 0xC46D8000
+#data 0xC1A00000
+#data 0x45160000
+#data 0x446B0000
+#data 0x44AF0000
+#data 0xC6089000
+#data 0x42480000
+#data 0xC47B4000
+#data 0x42340000
+#data 0x451C4000
+#data 0x451A6000
+#data 0x44AF0000
+#data 0xC5DA7000
+#data 0x3E428F5C
+#data 0xC4898000
+#data 0x40333333
+#data 0x45228000
+#data 0x44CD0000
+#data 0x44AF0000
+#data 0xC5A05000
+#data 0xC1600000
+#data 0xC48C0000
+#data 0x41A00000
+#data 0x4528C000
+#data 0xC4098000
+#data 0x44AF0000
+#data 0xC5910000
+#data 0x42CC0000
+#data 0xC4932000
+#data 0xC2C60000
+#data 0x452F0000
+#data 0xC519C000
+#data 0x44AF0000
+#data 0xC5AE1000
+#data 0x42340000
+#data 0xC4956000
+#data 0xC2280000
+#data 0x45354000
+#data 0xC5B77000
+#data 0x44A8C000
+#data 0xC6018800
+#data 0x00000000
+#data 0xC4988000
+#data 0x00000000
+#data 0x453B8000
+
+#align4
+loc_8c1661B4:
+#data 0xC5B77000
+#data 0x44960000
+#data 0xC6126800
+#data 0x41B00000
+#data 0x41A00000
+#data 0x00000000
+#data 0x45408000
+#data 0xC5610000
+#data 0x447A0000
+#data 0xC5CA3000
+#data 0x40800000
+#data 0x41A00000
+#data 0x00000000
+#data 0x45458000
+#data 0xC5160000
+#data 0x44960000
+#data 0xC585C000
+#data 0x00000000
+#data 0x41A00000
+#data 0x00000000
+#data 0x454A8000
+#data 0xC49C4000
+#data 0x44AF0000
+#data 0xC500C000
+#data 0xC0E00000
+#data 0x41A00000
+#data 0x00000000
+#data 0x454F8000
+#data 0x00000000
+#data 0x44BB8000
+#data 0x43480000
+#data 0xC1B00000
+#data 0x41A00000
+#data 0x00000000
+#data 0x45548000
+#data 0x449C4000
+#data 0x44C80000
+#data 0x45098000
+#data 0xC1F00000
+#data 0x41A00000
+#data 0x00000000
+
+#align4
+loc_8c166258:
+#data 0x446B0000
+#data 0x43870000
+#data 0xC43C0000
+
+#align4
+loc_8c166264:
+#data 0x44520000
+#data 0x43910000
+#data 0xC4570000
+
+#align4
+loc_8c166270:
+#data bank10.loc_8c109F28
+
+loc_8c166274:
+#data bank10.loc_8c109F4A
+
+loc_8c166278:
+#data bank10.loc_8c109FC4
+
+loc_8c16627C:
+#data bank10.loc_8c10A12A
+
+loc_8c166280:
+#data bank10.loc_8c10A14C
+
+loc_8c166284:
+#data bank10.loc_8c10A202
+
+loc_8c166288:
+#data bank10.loc_8c10A4FC
+
+loc_8c16628C:
+#data bank10.loc_8c10A550
+
+loc_8c166290:
+#data bank10.loc_8c10A630
+
+loc_8c166294:
+#data bank10.loc_8c10A874
+
+loc_8c166298:
+#data bank10.loc_8c10A896
+
+loc_8c16629C:
+#data bank10.loc_8c10A966
+
+loc_8c1662A0:
+#data bank10.loc_8c10AA88
+
+loc_8c1662A4:
+#data bank10.loc_8c10AAAA
+
+loc_8c1662A8:
+#data bank10.loc_8c10AB3A
+
+loc_8c1662AC:
+#data bank10.loc_8c10AC10
+
+loc_8c1662B0:
+#data bank10.loc_8c10AC62
+
+loc_8c1662B4:
+#data bank10.loc_8c10AD40
+
+loc_8c1662B8:
+#data bank10.loc_8c10AE90
+
+loc_8c1662BC:
+#data bank10.loc_8c10AEE0
+
+loc_8c1662C0:
+#data bank10.loc_8c10AFC0
+
+loc_8c1662C4:
+#data bank10.loc_8c10B124
+
+loc_8c1662C8:
+#data bank10.loc_8c10B1A4
+
+loc_8c1662CC:
+#data bank10.loc_8c10B240
+
+loc_8c1662D0:
+#data bank10.loc_8c10B2D2
+
+loc_8c1662D4:
+#data bank10.loc_8c10B3C0
+
+loc_8c1662D8:
+#data bank10.loc_8c10B440
+
+loc_8c1662DC:
+#data bank10.loc_8c10B4BC
+
+loc_8c1662E0:
+#data bank10.loc_8c10B2D2
+
+loc_8c1662E4:
+#data bank10.loc_8c10B5D8
+
+loc_8c1662E8:
+#data bank10.loc_8c10B636
+
+loc_8c1662EC:
+#data bank10.loc_8c10B6F0
+
+loc_8c1662F0:
+#data bank10.loc_8c10B73C
+
+loc_8c1662F4:
+#data bank10.loc_8c10B856
+
+loc_8c1662F8:
+#data bank10.loc_8c10B88C
+
+loc_8c1662FC:
+#data bank10.loc_8c10B8C6
+
+loc_8c166300:
+#data bank10.loc_8c10B8F0
+
+loc_8c166304:
+#data bank10.loc_8c10BAB0
+
+loc_8c166308:
+#data bank10.loc_8c10B8F8
+
+loc_8c16630C:
+#data bank10.loc_8c10B9E0
+
+loc_8c166310:
+#data bank10.loc_8c10B926
+
+loc_8c166314:
+#data bank10.loc_8c10B968
+
+loc_8c166318:
+#data bank10.loc_8c10BA0E
+
+loc_8c16631C:
+#data bank10.loc_8c10BA2A
+
+loc_8c166320:
+#data bank10.loc_8c10BADE
+
+loc_8c166324:
+#data bank10.loc_8c10BAFA
+
+loc_8c166328:
+#data bank10.loc_8c10BB5E
+
+loc_8c16632C:
+#data bank10.loc_8c10BBD4
+
+loc_8c166330:
+#data bank10.loc_8c10BD78
+
+loc_8c166334:
+#data bank10.loc_8c10BE40
+
+loc_8c166338:
+#data bank10.loc_8c10BF3C
+
+loc_8c16633C:
+#data bank10.loc_8c10BFD4
+
+loc_8c166340:
+#data bank10.loc_8c10C0DE
+
+loc_8c166344:
+#data bank10.loc_8c10C862
+
+loc_8c166348:
+#data bank10.loc_8c10C90A
+
+loc_8c16634C:
+#data bank10.loc_8c10C98A
+
+loc_8c166350:
+#data bank10.loc_8c10C0F0
+
+loc_8c166354:
+#data bank10.loc_8c10C112
+
+loc_8c166358:
+#data bank10.loc_8c10C124
+
+loc_8c16635C:
+#data bank10.loc_8c10C33E
+
+loc_8c166360:
+#data bank10.loc_8c10C25A
+
+loc_8c166364:
+#data bank10.loc_8c10C664
+
+loc_8c166368:
+#data bank10.loc_8c10C33E
+
+loc_8c16636C:
+#data bank10.loc_8c10C25A
+
+loc_8c166370:
+#data bank10.loc_8c10C5BA
+
+loc_8c166374:
+#data bank10.loc_8c10C136
+
+loc_8c166378:
+#data bank10.loc_8c10C16E
+
+loc_8c16637C:
+#data bank10.loc_8c10C26C
+
+loc_8c166380:
+#data bank10.loc_8c10C27C
+
+loc_8c166384:
+#data bank10.loc_8c10C350
+
+loc_8c166388:
+#data bank10.loc_8c10C380
+
+loc_8c16638C:
+#data bank10.loc_8c10C486
+
+loc_8c166390:
+#data bank10.loc_8c10C4B4
+
+loc_8c166394:
+#data bank10.loc_8c10C5CC
+
+loc_8c166398:
+#data bank10.loc_8c10C60C
+
+loc_8c16639C:
+#data bank10.loc_8c10C676
+
+loc_8c1663A0:
+#data bank10.loc_8c10C6AA
+
+loc_8c1663A4:
+#data bank10.loc_8c10C6DC
+
+loc_8c1663A8:
+#data bank10.loc_8c10C774
+
+loc_8c1663AC:
+#data bank10.loc_8c10C7B4
+
+loc_8c1663B0:
+#data bank10.loc_8c10C7CC
+
+loc_8c1663B4:
+#data bank10.loc_8c10C874
+
+loc_8c1663B8:
+#data bank10.loc_8c10C8F8
+
+loc_8c1663BC:
+#data bank10.loc_8c10C7A2
+
+loc_8c1663C0:
+#data bank10.loc_8c10C5BA
+
+loc_8c1663C4:
+#data bank10.loc_8c10C474
+
+loc_8c1663C8:
+#data bank10.loc_8c10C25A
+
+loc_8c1663CC:
+#data bank10.loc_8c10C91C
+
+loc_8c1663D0:
+#data bank10.loc_8c10C946
+
+loc_8c1663D4:
+#data bank10.loc_8c10C7A2
+
+loc_8c1663D8:
+#data bank10.loc_8c10C7A2
+
+loc_8c1663DC:
+#data bank10.loc_8c10C7A2
+
+loc_8c1663E0:
+#data bank10.loc_8c10C99C
+
+loc_8c1663E4:
+#data bank10.loc_8c10C9C6
+
+loc_8c1663E8:
+#data bank10.loc_8c10C7A2
+
+loc_8c1663EC:
+#data bank10.loc_8c10C5BA
+
+loc_8c1663F0:
+#data bank10.loc_8c10C7A2
+
+loc_8c1663F4:
+#data bank10.loc_8c10C5BA
+
+loc_8c1663F8:
+#data bank10.loc_8c10C7A2
+
+loc_8c1663FC:
+#data bank10.loc_8c10C5BA
+
+loc_8c166400:
+#data bank10.loc_8c10C7A2
+
+loc_8c166404:
+#data bank10.loc_8c10C5BA
+
+loc_8c166408:
+#data bank10.loc_8c10C7A2
+
+loc_8c16640C:
+#data bank10.loc_8c10C5BA
+
+loc_8c166410:
+#data bank10.loc_8c10CAEC
+
+loc_8c166414:
+#data bank10.loc_8c10CB40
+
+loc_8c166418:
+#data bank10.loc_8c10CB66
+
+loc_8c16641C:
+#data bank10.loc_8c10CC60
+
+loc_8c166420:
+#data bank10.loc_8c10CD10
+
+loc_8c166424:
+#data bank10.loc_8c10CF54
+
+loc_8c166428:
+#data bank10.loc_8c10D004
+
+loc_8c16642C:
+#data bank10.loc_8c10D270
+
+loc_8c166430:
+#data bank10.loc_8c10D308
+
+loc_8c166434:
+#data bank10.loc_8c10D270
+
+loc_8c166438:
+#data bank10.loc_8c10D308
+
+loc_8c16643C:
+#data bank10.loc_8c10D460
+
+loc_8c166440:
+#data bank10.loc_8c10D4D8
+
+loc_8c166444:
+#data bank10.loc_8c10D538
+
+loc_8c166448:
+#data bank10.loc_8c10D54C
+
+loc_8c16644C:
+#data bank10.loc_8c10D872
+
+loc_8c166450:
+#data bank10.loc_8c10D8F2
+
+loc_8c166454:
+#data bank10.loc_8c10DA8C
+
+loc_8c166458:
+#data bank10.loc_8c10DB0C
+
+loc_8c16645C:
+#data bank10.loc_8c10DC9C
+
+loc_8c166460:
+#data bank10.loc_8c10DD1C
+
+loc_8c166464:
+#data bank10.loc_8c10DE3C
+
+loc_8c166468:
+#data bank10.loc_8c10DEBC
+
+loc_8c16646C:
+#data bank10.loc_8c10E094
+
+loc_8c166470:
+#data bank10.loc_8c10E114
+
+loc_8c166474:
+#data bank10.loc_8c10E436
+
+loc_8c166478:
+#data bank10.loc_8c10E4F8
+
+loc_8c16647C:
+#data bank10.loc_8c10E5D6
+
+loc_8c166480:
+#data bank10.loc_8c10E684
+
+loc_8c166484:
+#data 0x00000000
+#data 0x00000002
+#data 0x00000005
+#data 0x00000001
+#data 0x00000004
+#data 0x00000001
+#data 0x00000004
+#data 0x00000001
+#data 0x00000002
+#data 0x00000002
+#data 0x00000002
+#data 0x00000005
+#data 0x00000002
+#data 0x00000005
+#data 0x00000002
+#data 0x00000005
+#data 0x00000003
+#data 0x00000006
+#data 0x00000003
+#data 0x00000006
+
+#align4
+loc_8c1664D4:
+#data 0x00000003
+#data 0x00000006
+#data 0x00000003
+#data 0x00000006
+#data 0x00000003
+#data 0x00000006
+#data 0x00000003
+#data 0x00000006
+#data 0x00000003
+#data 0x00000001
+#data 0x00000004
+#data 0x00000001
+#data 0x00000004
+#data 0x00000001
+
+#align4
+loc_8c16650C:
+#data 0x00000014
+
+#align4
+loc_8c166510:
+#data 0x00000017
+#data 0x00000014
+#data 0x0000001E
+#data 0x0000000E
+#data 0x0000001B
+#data 0x0000004D
+#data 0x00000074
+#data 0x0000001A
+#data 0x00000023
+#data 0x00000014
+#data 0x00000015
+#data 0x00000014
+#data 0x0000001C
+#data 0x00000012
+#data 0x0000001A
+#data 0x00000014
+#data 0x00000014
+#data 0x0000001A
+#data 0x0000000C
+#data 0x0000000A
+#data 0x0000000A
+#data 0x0000000A
+#data 0x0000000A
+#data 0x0000000A
+#data 0x00000014
+#data 0x00000014
+#data 0x00000015
+#data 0x00000019
+#data 0x00000014
+#data 0x00000014
+#data 0x00000014
+#data 0x00000014
+
+#align4
+loc_8c166590:
+#data 0x00000014
+
+#align4
+loc_8c166594:
+#data 0xC3DF0000
+#data 0x42540000
+#data 0xC4040000
+#data 0x43AF0000
+#data 0x42600000
+#data 0xC4698000
+
+#align4
+loc_8c1665AC:
+#data 0xC2040000
+#data 0xC2C40000
+
+#align4
+loc_8c1665B4:
+#data 0xC48C89EC
+#data 0x43B00000
+#data 0xC3C1FAE1
+
+#align4
+loc_8c1665C0:
+#data 0x00000000
+#data 0x42340000
+#data 0x43340000
+
+
+loc_8c1665CC:
+bra loc_8c1665D0
+mac.w @r3+,@r5+
+
+#align4
+loc_8c1665D0:
+#data 0x452A7000
+#data 0xC5CBF000
+
+#align4
+loc_8c1665D8:
+#data 0x3F800000
+#data 0x3F000000
+#data 0x3F400000
+#data 0x3F800000
+#data 0x3F666666
+#data 0x3F19999A
+#data 0x3F4CCCCD
+#data 0x3F19999A
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F19999A
+#data 0x3F19999A
+#data 0x3F800000
+#data 0x3F59999A
+#data 0x3F19999A
+#data 0x3F800000
+#data 0x3F19999A
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F000000
+#data 0x3F59999A
+#data 0x3F800000
+#data 0x3F19999A
+#data 0x3F19999A
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F19999A
+#data 0x3F800000
+#data 0x3F666666
+#data 0x3F19999A
+#data 0x3F800000
+#data 0x3F59999A
+#data 0x3F19999A
+#data 0x3F800000
+#data 0x3F19999A
+#data 0x3F19999A
+
+#align4
+loc_8c166668:
+#data 0x435A0000
+#data 0x00000000
+#data 0xC55AC000
+#data 0xC4EF6000
+#data 0x00000000
+#data 0xC535A000
+#data 0x44EC4000
+#data 0x00000000
+#data 0xC5548000
+#data 0xC3C80000
+#data 0x00000000
+#data 0xC550C000
+#data 0x00000000
+
+#align4
+loc_8c16669C:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c1666C8:
+#data 0xC49E49EC
+#data 0x439B0000
+#data 0xC3CCB2B0
+
+#align4
+loc_8c1666D4:
+#data 0x42B40000
+
+#align4
+loc_8c1666D8:
+#data 0x42200000
+#data 0x00000000
+
+#align4
+loc_8c1666E0:
+#data 0xC4A529EC
+#data 0x43340000
+#data 0xC3A932B0
+#data 0xC496A9EC
+#data 0x43340000
+#data 0xC3DA32B0
+
+#align4
+loc_8c1666F8:
+#data 0x00000000
+#data 0x42200000
+#data 0x00000000
+#data 0x00000000
+#data 0x42200000
+#data 0x43340000
+#data 0x00000000
+#data 0xC30C0000
+#data 0x00000000
+#data 0x00000000
+#data 0xC2820000
+#data 0x43340000
+
+#align4
+loc_8c166728:
+#data 0xC1100000
+#data 0xC0A80000
+
+#align4
+loc_8c166730:
+#data 0x3FE66666
+#data 0x3F866666
+
+#align4
+loc_8c166738:
+#data 0x45160000
+#data 0x43660000
+
+#align4
+loc_8c166740:
+#data 0xC47A0000
+
+#align4
+loc_8c166744:
+#data 0x00000000
+#data 0xC2480000
+#data 0x42A00000
+#data 0x00000000
+#data 0xC2480000
+#data 0xC2A00000
+
+#align4
+loc_8c16675C:
+#data 0xC3160000
+#data 0x44548000
+#data 0xC4610000
+
+#align4
+loc_8c166768:
+#data 0x00000000
+#data 0x41C80000
+#data 0x00000000
+
+#align4
+loc_8c166774:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000001
+#data 0x00000000
+#data 0x00000001
+#data 0x00000000
+#data 0x00000000
+#data 0x00000001
+#data 0x00000001
+#data 0x00000001
+#data 0x00000000
+#data 0x00000000
+#data 0x00000001
+#data 0x00000000
+#data 0x00000001
+#data 0x00000001
+#data 0x00000001
+#data 0x00000000
+#data 0x00000001
+#data 0x00000001
+#data 0x00000001
+
+#align4
+loc_8c1667D4:
+#data 0x00000007
+#data 0x00000007
+#data 0x00000000
+#data 0x00000004
+#data 0x00000002
+#data 0x00000001
+#data 0x00000004
+#data 0x00000002
+#data 0x00000001
+#data 0x00000000
+#data 0x00000007
+#data 0x00000007
+#data 0x00000000
+#data 0x00000007
+#data 0x00000007
+#data 0x00000000
+#data 0x00000004
+#data 0x00000006
+#data 0x00000007
+#data 0x00000000
+
+#align4
+loc_8c166824:
+#data 0x4453C000
+#data 0x442F0000
+#data 0xC4D3E000
+
+#align4
+loc_8c166830:
+#data 0xC4660000
+#data 0x42A00000
+#data 0xC41B0000
+
+#align4
+loc_8c16683C:
+#data 0x0000B556
+
+#align4
+loc_8c166840:
+#data 0x00000000
+#data 0x450CA000
+#data 0x41D80000
+#data 0xC5BB8000
+#data 0x00000000
+#data 0x41F00000
+#data 0x00000000
+#data 0x43480000
+#data 0x44ABE000
+#data 0x41D80000
+#data 0xC5843000
+#data 0x00000000
+#data 0x41200000
+#data 0x00000000
+#data 0x43C80000
+#data 0x43FA0000
+#data 0x41D80000
+#data 0xC519C000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x44160000
+#data 0x43480000
+#data 0x42200000
+#data 0xC5066000
+#data 0xC0A00000
+#data 0x00000000
+#data 0x00000000
+#data 0x44480000
+#data 0x43AA0000
+#data 0xC2080000
+#data 0xC5066000
+#data 0xC0A00000
+#data 0x00000000
+#data 0xC1380000
+#data 0x447A0000
+#data 0x43C80000
+#data 0xC2440000
+#data 0xC5066000
+#data 0x00000000
+#data 0x00000000
+#data 0xC1A00000
+
+#align4
+loc_8c1668E8:
+#data 0xC3C30000
+#data 0x446D8000
+#data 0x43200000
+#data 0x3F000000
+
+#align4
+loc_8c1668F8:
+#data 0x00000000
+#data 0x01010100
+#data 0x02020101
+#data 0x00020202
+
+#align4
+loc_8c166908:
+#data 0xC4B18000
+#data 0x45052000
+#data 0xC4AC8000
+#data 0xC4B18000
+
+#align4
+loc_8c166918:
+#data 0xC3B90000
+#data 0xC4AC8000
+#data 0xC4AA0000
+#data 0x44F00000
+#data 0xC4B2C000
+#data 0xC4AA0000
+#data 0xC3160000
+#data 0xC4B2C000
+#data 0xC4BB8000
+#data 0x44E10000
+#data 0xC4B18000
+#data 0xC4BB8000
+#data 0xC3B40000
+#data 0xC4B18000
+
+#align4
+loc_8c166950:
+#data 0xBF800000
+#data 0xBF333333
+#data 0xBF000000
+
+#align4
+loc_8c16695C:
+#data 0x00000009
+#data 0x00000010
+#data 0x00000017
+
+#align4
+loc_8c166968:
+#data 0x0000000A
+#data 0x0000000A
+#data 0x0000000A
+#data 0x0000000B
+;-------------------------------------------------------------------------------
+#data 0x0000000B
+;-------------------------------------------------------------------------------
+#data 0x0000000B
+;-------------------------------------------------------------------------------
+#data 0x0000000C
+#data 0x0000000C
+#data 0x0000000C
+#data 0x0000000C
+#data 0x0000000C
+#data 0x0000000C
+#data 0x0000000D
+#data 0x0000000D
+#data 0x0000000D
+#data 0x0000000D
+#data 0x0000000E
+#data 0x0000000E
+#data 0x0000000E
+#data 0x0000000F
+#data 0x0000000F
+#data 0x0000000F
+
+#align4
+loc_8c1669C0:
+#data 0x00000011
+#data 0x00000011
+#data 0x00000011
+#data 0x00000012
+#data 0x00000012
+#data 0x00000012
+#data 0x00000013
+#data 0x00000013
+#data 0x00000013
+#data 0x00000013
+#data 0x00000013
+#data 0x00000013
+#data 0x00000014
+#data 0x00000014
+#data 0x00000014
+#data 0x00000014
+#data 0x00000015
+#data 0x00000015
+#data 0x00000015
+#data 0x00000016
+#data 0x00000016
+#data 0x00000016
+
+#align4
+loc_8c166A18:
+#data 0x00000018
+#data 0x00000018
+#data 0x00000018
+#data 0x00000019
+#data 0x00000019
+#data 0x00000019
+#data 0x0000001A
+#data 0x0000001A
+#data 0x0000001A
+#data 0x0000001A
+#data 0x0000001A
+#data 0x0000001A
+#data 0x0000001B
+#data 0x0000001B
+#data 0x0000001B
+#data 0x0000001B
+
+#align4
+loc_8c166A58:
+#data 0x0000001C
+#data 0x0000001C
+#data 0x0000001C
+#data 0x0000001D
+#data 0x0000001D
+#data 0x0000001D
+
+#align4
+loc_8c166A70:
+#data loc_8c166968
+
+loc_8c166A74:
+#data loc_8c1669C0
+
+loc_8c166A78:
+#data loc_8c166A18
+
+loc_8c166A7C:
+#data 0x00000016
+#data 0x00000016
+#data 0x00000016
+
+#align4
+loc_8c166A88:
+#data 0x00000000
+#data 0x464B2000
+#data 0xC2CE0000
+#data 0x45B42800
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x453B8000
+#data 0x45B54000
+#data 0xC2CE0000
+#data 0x43FF0000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x45BB8000
+#data 0xC4AF0000
+#data 0xC2CE0000
+#data 0xC5944800
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x460CA000
+#data 0xC6066000
+#data 0xC2CE0000
+#data 0xC61C4000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c166AF8:
+#data 0x00000000
+#data 0x463B8000
+#data 0x42FA0000
+#data 0xC6106000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x45BB8000
+#data 0x00000000
+#data 0x42FA0000
+#data 0xC6106000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x463B8000
+#data 0xC63B8000
+#data 0x42FA0000
+#data 0xC6106000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c166B4C:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c166B58:
+#data 0x00000000
+#data 0xBF800000
+#data 0x00000000
+
+#align4
+loc_8c166B64:
+#data 0x3F000000
+#data 0x3F000000
+#data 0x3F000000
+
+#align4
+loc_8c166B70:
+#data 0x00000000
+#data 0x4473C000
+#data 0xC50C0000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c166B94:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000001
+#data 0x00000001
+#data 0x00000002
+#data 0x00000002
+#data 0x00000002
+#data 0x00000002
+#data 0x00000002
+#data 0x00000002
+#data 0x00000002
+#data 0x00000002
+
+#align4
+loc_8c166BDC:
+#data 0x43480000
+#data 0x44BB8000
+#data 0xC4FA0000
+#data 0xC1400000
+#data 0x42CE0000
+#data 0xC4BF4000
+#data 0x44048000
+#data 0x444D0000
+#data 0xC499C000
+#data 0x44340000
+#data 0x44250000
+#data 0xC4870000
+#data 0x43B40000
+#data 0x440E8000
+#data 0xC42C8000
+#data 0xC30C0000
+#data 0x43DC0000
+#data 0xC3BE0000
+#data 0x41A00000
+#data 0x43B40000
+#data 0xC37A0000
+#data 0xC3F00000
+#data 0x44098000
+#data 0xC2700000
+#data 0xC40C0000
+#data 0x442F0000
+#data 0xC33E0000
+#data 0xC4480000
+#data 0x442F0000
+#data 0xC44D0000
+#data 0xC4750000
+#data 0x44610000
+#data 0xC47A0000
+#data 0xC4480000
+#data 0x442F0000
+#data 0xC44D0000
+#data 0xC40C0000
+#data 0x442F0000
+#data 0xC33E0000
+#data 0xC3F00000
+#data 0x44098000
+#data 0xC2700000
+
+#align4
+loc_8c166C84:
+#data 0x41A00000
+#data 0x43B40000
+#data 0xC37A0000
+#data 0xC30C0000
+#data 0x43DC0000
+#data 0xC3BE0000
+#data 0x43B40000
+#data 0x440E8000
+#data 0xC42C8000
+#data 0x44340000
+#data 0x44250000
+#data 0xC4870000
+#data 0x44048000
+#data 0x444D0000
+#data 0xC499C000
+#data 0xC1400000
+#data 0x42CE0000
+#data 0xC4BF4000
+#data 0x43480000
+#data 0x44BB8000
+#data 0xC4FA0000
+
+#align4
+loc_8c166CD8:
+#data 0x44960000
+#data 0x43FA0000
+#data 0xC47A0000
+#data 0x44480000
+#data 0x43C80000
+#data 0xC42F0000
+#data 0x442F0000
+#data 0x43FA0000
+#data 0xC3FA0000
+#data 0x44480000
+#data 0x43E10000
+#data 0xC3960000
+#data 0x43FA0000
+#data 0x43C80000
+#data 0xC3480000
+#data 0x00000000
+#data 0x43960000
+#data 0xC3480000
+#data 0xC3480000
+#data 0x43FA0000
+#data 0xC3480000
+#data 0x42C80000
+#data 0x43FA0000
+#data 0xC3480000
+#data 0x43960000
+#data 0x43C80000
+#data 0xC2C80000
+#data 0x44160000
+#data 0x43FA0000
+#data 0xC2480000
+#data 0x44960000
+#data 0x43FA0000
+#data 0x43960000
+#data 0x44160000
+#data 0x43FA0000
+#data 0xC2480000
+#data 0x43960000
+#data 0x43C80000
+#data 0xC2C80000
+#data 0x42C80000
+#data 0x43FA0000
+#data 0xC3480000
+#data 0xC3480000
+#data 0x43FA0000
+#data 0xC3480000
+#data 0x00000000
+#data 0x43960000
+#data 0xC3480000
+#data 0x43FA0000
+#data 0x43C80000
+#data 0xC3480000
+#data 0x44480000
+#data 0x43E10000
+#data 0xC3960000
+#data 0x442F0000
+#data 0x43FA0000
+#data 0xC3FA0000
+#data 0x44480000
+#data 0x43C80000
+#data 0xC42F0000
+#data 0x44960000
+#data 0x43FA0000
+#data 0xC47A0000
+
+#align4
+loc_8c166DD4:
+#data 0xC4898000
+#data 0x44160000
+#data 0xC4480000
+#data 0xC4480000
+#data 0x43C80000
+#data 0xC3FA0000
+#data 0xC42F0000
+#data 0x43FA0000
+#data 0xC3C80000
+#data 0xC3FA0000
+#data 0x44160000
+#data 0xC3960000
+#data 0xC3480000
+#data 0x43FA0000
+#data 0xC3C80000
+#data 0x00000000
+#data 0x43FA0000
+#data 0xC3480000
+#data 0xC3C80000
+#data 0x43C80000
+#data 0xC2C80000
+#data 0xC42F0000
+#data 0x43FA0000
+#data 0xC2C80000
+#data 0xC4480000
+#data 0x43FA0000
+#data 0xC3480000
+#data 0xC3FA0000
+#data 0x43C80000
+#data 0xC2C80000
+#data 0xC3960000
+#data 0x447A0000
+#data 0xC3480000
+#data 0xC3FA0000
+#data 0x43C80000
+#data 0xC2C80000
+#data 0xC4480000
+#data 0x43FA0000
+#data 0xC3480000
+#data 0xC42F0000
+#data 0x43FA0000
+#data 0xC2C80000
+#data 0xC3C80000
+#data 0x43C80000
+#data 0xC2C80000
+#data 0x00000000
+#data 0x43FA0000
+#data 0xC3480000
+#data 0xC3480000
+
+#align4
+loc_8c166E98:
+#data 0x43FA0000
+#data 0xC3C80000
+#data 0xC3FA0000
+#data 0x44160000
+#data 0xC3960000
+#data 0xC42F0000
+#data 0x43FA0000
+#data 0xC3C80000
+#data 0xC4480000
+#data 0x43C80000
+#data 0xC3FA0000
+#data 0xC4898000
+#data 0x44160000
+#data 0xC4480000
+
+#align4
+loc_8c166ED0:
+#data 0xC47A0000
+#data 0x44898000
+#data 0xC5CE4000
+#data 0x43960000
+#data 0x44480000
+#data 0xC53B8000
+#data 0x42C80000
+#data 0x44610000
+#data 0xC4FA0000
+#data 0x43C80000
+#data 0x44160000
+#data 0xC47A0000
+#data 0xC3480000
+#data 0x43FA0000
+#data 0xC3480000
+#data 0xC3960000
+#data 0x43C80000
+#data 0xC3960000
+
+#align4
+loc_8c166F18:
+#data 0xC48FC000
+#data 0x44898000
+#data 0xC5CE4000
+#data 0x44480000
+#data 0x441D8000
+#data 0xC53B8000
+#data 0x42C80000
+#data 0x44610000
+#data 0xC4FA0000
+#data 0x43C80000
+#data 0x44160000
+#data 0xC47A0000
+#data 0xC3480000
+#data 0x43FA0000
+#data 0xC3480000
+#data 0xC3960000
+#data 0x43C80000
+#data 0xC3960000
+
+#align4
+loc_8c166F60:
+#data 0xC4960000
+#data 0x448FC000
+#data 0xC5CE4000
+#data 0x44960000
+#data 0x44160000
+#data 0xC3C80000
+#data 0x44480000
+#data 0x44610000
+#data 0xC4FA0000
+#data 0x44480000
+#data 0x44610000
+#data 0xC47A0000
+#data 0xC2C80000
+#data 0x44160000
+#data 0xC3D20000
+#data 0xC3FA0000
+#data 0x447A0000
+#data 0xC3960000
+
+#align4
+loc_8c166FA8:
+#data 0xC46D8000
+#data 0x44898000
+#data 0xC5CE4000
+#data 0x43960000
+#data 0x43FA0000
+#data 0xC53B8000
+#data 0xC3480000
+#data 0x44480000
+#data 0xC4FA0000
+#data 0xC3FA0000
+#data 0x44160000
+#data 0xC47A0000
+#data 0xC3C80000
+#data 0x43FA0000
+#data 0xC2C80000
+#data 0xC4480000
+#data 0x44610000
+#data 0x43960000
+
+#align4
+loc_8c166FF0:
+#data 0xC4938000
+#data 0x44898000
+#data 0xC5CE4000
+#data 0x43FA0000
+#data 0x43C80000
+#data 0xC53B8000
+#data 0x42C80000
+#data 0x43480000
+#data 0xC47A0000
+#data 0x43480000
+#data 0x442F0000
+#data 0xC4480000
+#data 0xC3480000
+#data 0x43C80000
+#data 0xC3480000
+#data 0xC4160000
+#data 0x44480000
+#data 0x43960000
+
+#align4
+loc_8c167038:
+#data 0x44AF0000
+#data 0x448FC000
+#data 0xC5CE4000
+#data 0x44A28000
+#data 0x44480000
+#data 0xC57A0000
+#data 0x447A0000
+#data 0x44610000
+#data 0xC5098000
+#data 0x44480000
+#data 0x442F0000
+#data 0xC4480000
+#data 0x44480000
+#data 0x44160000
+#data 0xC3D20000
+#data 0x447A0000
+#data 0x44610000
+#data 0x43960000
+
+#align4
+loc_8c167080:
+#data 0x442F0000
+#data 0x44898000
+#data 0xC5CE4000
+#data 0xC3C80000
+#data 0x43FA0000
+#data 0x459C4000
+#data 0xC42F0000
+#data 0x44610000
+#data 0xC4FA0000
+#data 0xC4160000
+#data 0x43C80000
+#data 0xC47A0000
+#data 0xC3FA0000
+#data 0x43FA0000
+
+#align4
+loc_8c1670B8:
+#data 0x42C80000
+#data 0xC4610000
+#data 0x44480000
+#data 0x43960000
+
+#align4
+loc_8c1670C8:
+#data 0x44610000
+#data 0x44610000
+#data 0xC5CE4000
+#data 0xC2C80000
+#data 0x43C80000
+#data 0xC53B8000
+#data 0x00000000
+#data 0x43FA0000
+#data 0xC47A0000
+#data 0x43480000
+#data 0x44160000
+#data 0xC3FA0000
+#data 0x00000000
+#data 0x43FA0000
+#data 0xC3480000
+#data 0x442F0000
+#data 0x44480000
+#data 0x43960000
+
+#align4
+loc_8c167110:
+#data 0x44BB8000
+#data 0x44610000
+#data 0xC5CE4000
+#data 0x44898000
+#data 0x43FA0000
+#data 0xC3C80000
+#data 0x44610000
+#data 0x44960000
+#data 0xC5098000
+#data 0x447A0000
+#data 0x43C80000
+#data 0xC4480000
+#data 0x44160000
+#data 0x44160000
+#data 0xC3C80000
+#data 0x44160000
+#data 0x44610000
+#data 0x43960000
+
+#align4
+loc_8c167158:
+#data loc_8c166BDC
+
+loc_8c16715C:
+#data loc_8c166CD8
+
+loc_8c167160:
+#data loc_8c166DD4
+
+loc_8c167164:
+#data loc_8c166ED0
+
+loc_8c167168:
+#data loc_8c166F18
+
+loc_8c16716C:
+#data loc_8c166F60
+
+loc_8c167170:
+#data loc_8c166FA8
+
+loc_8c167174:
+#data loc_8c166FF0
+
+loc_8c167178:
+#data loc_8c167038
+
+loc_8c16717C:
+#data loc_8c167080
+
+loc_8c167180:
+#data loc_8c1670C8
+
+loc_8c167184:
+#data loc_8c167110
+
+loc_8c167188:
+#data 0x00000015
+#data 0x00000015
+#data 0x00000015
+#data 0x00000006
+#data 0x00000006
+#data 0x00000006
+#data 0x00000006
+#data 0x00000006
+#data 0x00000006
+#data 0x00000006
+#data 0x00000006
+#data 0x00000006
+#data 0x42C80000
+#data 0xC1200000
+#data 0x42480000
+#data 0xC2C80000
+#data 0x41A00000
+#data 0x42700000
+#data 0x42C80000
+#data 0xC1F00000
+#data 0x428C0000
+#data 0x42C80000
+#data 0x42200000
+#data 0xC1F00000
+#data 0xC2C80000
+#data 0x42480000
+#data 0x41200000
+#data 0x42C80000
+#data 0xC2700000
+#data 0x00000000
+#data 0x42C80000
+#data 0xC2700000
+#data 0x00000000
+#data 0x42C80000
+#data 0xC2700000
+#data 0x00000000
+#data 0x42C80000
+#data 0xC2700000
+#data 0x00000000
+#data 0x42C80000
+#data 0xC2700000
+#data 0x00000000
+#data 0x42C80000
+#data 0xC2700000
+#data 0x00000000
+#data 0xC2C80000
+#data 0x41A00000
+#data 0x42700000
+#data 0x42C80000
+#data 0xC1F00000
+#data 0x428C0000
+#data 0x42C80000
+#data 0x42200000
+#data 0xC1F00000
+#data 0xC2C80000
+#data 0x42480000
+#data 0x41200000
+#data 0x42C80000
+#data 0xC2700000
+#data 0x00000000
+#data 0x42C80000
+#data 0xC2700000
+#data 0x00000000
+#data 0x42C80000
+#data 0xC2700000
+#data 0x00000000
+#data 0x42C80000
+#data 0xC2700000
+#data 0x00000000
+#data 0x42C80000
+#data 0xC2700000
+#data 0x00000000
+#data 0x42C80000
+#data 0xC2700000
+#data 0x00000000
+#data 0xC2C80000
+#data 0x41A00000
+#data 0x42700000
+#data 0x42C80000
+#data 0xC1F00000
+#data 0x428C0000
+#data 0x42C80000
+#data 0x42200000
+#data 0xC1F00000
+#data 0xC2C80000
+#data 0x42480000
+#data 0x41200000
+#data 0x42C80000
+#data 0xC2700000
+
+#align4
+loc_8c1672EC:
+#data 0x00000000
+#data 0x42C80000
+#data 0xC2700000
+#data 0x00000000
+#data 0x42C80000
+#data 0xC2700000
+#data 0x00000000
+#data 0x42C80000
+#data 0xC2700000
+#data 0x00000000
+#data 0x42C80000
+#data 0xC2700000
+#data 0x00000000
+#data 0x42C80000
+#data 0xC2700000
+#data 0x00000000
+
+#align4
+loc_8c16732C:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000001
+#data 0x00000001
+#data 0x00000002
+#data 0x00000002
+#data 0x00000003
+#data 0x00000003
+
+#align4
+loc_8c16734C:
+#data 0xC47A0000
+#data 0xC1400000
+#data 0xC38C0000
+#data 0x00000000
+#data 0xC1400000
+#data 0xC3C80000
+#data 0xC47A0000
+#data 0x40E00000
+#data 0xC3340000
+#data 0xC47A0000
+#data 0xC0B00000
+#data 0x42C80000
+#data 0xC3480000
+#data 0xC1200000
+#data 0x42C80000
+#data 0x44160000
+#data 0xC0800000
+#data 0x43020000
+#data 0x42C80000
+#data 0x43A00000
+#data 0xC4FA0000
+#data 0xC2480000
+#data 0x42480000
+#data 0xC4D48000
+
+#align4
+loc_8c1673AC:
+#data 0xC3940000
+#data 0x42960000
+#data 0xC5455000
+#data 0xC3E88000
+#data 0xC2B40000
+#data 0xC52B9000
+
+#align4
+loc_8c1673C4:
+#data 0x0000D778
+#data 0x0000D778
+
+#align4
+loc_8c1673CC:
+#data 0x449D8000
+#data 0x44898000
+#data 0xC5807000
+#data 0x4525A000
+#data 0x44898000
+#data 0xC59E7000
+
+#align4
+loc_8c1673E4:
+#data 0x0000199A
+#data 0x0000199A
+
+#align4
+loc_8c1673EC:
+#data 0xC3B10000
+#data 0xC2F00000
+#data 0xC5192000
+
+#align4
+loc_8c1673F8:
+#data 0xC2B40000
+#data 0x42FC0000
+#data 0x00000000
+
+#align4
+loc_8c167404:
+#data 0xC5708000
+#data 0x453F5000
+#data 0xC60BD000
+
+#align4
+loc_8c167410:
+#data 0x00000000
+#data 0x42EA0000
+#data 0x00000000
+
+#align4
+loc_8c16741C:
+#data 0x00000000
+#data 0xC5BB8000
+#data 0x00001770
+#data 0x45273000
+
+#align4
+loc_8c16742C:
+#data 0x00000000
+#data 0x453B8000
+#data 0x00001770
+#data 0x453B8000
+
+#align4
+loc_8c16743C:
+#data 0x00000000
+#data 0xC63EA000
+#data 0x00001770
+#data 0x4596D000
+
+#align4
+loc_8c16744C:
+#data 0x44108000
+#data 0x44244000
+#data 0xC5250000
+#data 0x440BC000
+#data 0x44244000
+#data 0xC526E000
+#data 0x00000000
+
+#align4
+loc_8c167468:
+#data 0x42F5999A
+#data 0x00000000
+#data 0x00000000
+#data 0x42F5999A
+#data 0x00000000
+
+#align4
+loc_8c16747C:
+#data 0x44A42000
+#data 0x4495A000
+#data 0xC4368000
+
+#align4
+loc_8c167488:
+#data 0x44BE8000
+#data 0x44444000
+#data 0xC46DC000
+
+#align4
+loc_8c167494:
+#data 0x44A26000
+#data 0x44854000
+#data 0xC46D8000
+#data 0x44A32000
+#data 0x447D0000
+#data 0xC45F0000
+#data 0x44A68000
+#data 0x446EC000
+#data 0xC451C000
+#data 0x44AA6000
+#data 0x44608000
+#data 0xC4454000
+
+#align4
+loc_8c1674C4:
+#data 0x00000000
+#data 0xC2A43333
+#data 0x00000000
+#data 0x00000000
+#data 0xC24ECCCD
+#data 0x00000000
+#data 0x00000000
+#data 0xC2340000
+#data 0x00000000
+#data 0x00000000
+#data 0xC2340000
+#data 0x00000000
+
+#align4
+loc_8c1674F4:
+#data 0x446C4000
+#data 0x42100000
+#data 0xC4700000
+#data 0x44538000
+#data 0x41B00000
+#data 0xC4468000
+#data 0x44878000
+#data 0x42100000
+#data 0xC4368000
+#data 0x44900000
+#data 0x41B00000
+#data 0xC40C4000
+#data 0x44710000
+#data 0xC2FA0000
+#data 0xC426C000
+#data 0x44BE8000
+#data 0x439F0000
+#data 0xC46DC000
+#data 0x44BE8000
+#data 0x43C58000
+#data 0xC468C000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x44AFA000
+#data 0x43F90000
+#data 0xC4604000
+
+#align4
+loc_8c167560:
+#data 0x433528F6
+#data 0xC2A43333
+#data 0x00000000
+#data 0x00000000
+#data 0xC24ECCCD
+#data 0x00000000
+#data 0x433C0A3D
+#data 0xC2340000
+#data 0x00000000
+#data 0x42C78F5C
+#data 0xC230AE14
+#data 0xC181D70A
+#data 0xC21B999A
+#data 0xC28A0000
+#data 0xC25B999A
+#data 0x00000000
+#data 0xC2340000
+#data 0x00000000
+#data 0x41373333
+#data 0xC2340000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x42F63333
+#data 0xC2340000
+#data 0x00000000
+
+#align4
+loc_8c1675CC:
+#data bank11.loc_8c111C7A
+
+loc_8c1675D0:
+#data bank11.loc_8c111CAE
+
+loc_8c1675D4:
+#data bank11.loc_8c111F98
+
+loc_8c1675D8:
+#data bank11.loc_8c11207A
+
+loc_8c1675DC:
+#data bank11.loc_8c1120B8
+
+loc_8c1675E0:
+#data bank11.loc_8c1120C6
+
+loc_8c1675E4:
+#data bank11.loc_8c112240
+
+loc_8c1675E8:
+#data bank11.loc_8c112310
+
+loc_8c1675EC:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x43480000
+#data 0xC36A072B
+
+#align4
+loc_8c167610:
+#data 0x00000000
+#data 0xC55A88A4
+#data 0x00000000
+#data 0x40C69EED
+#data 0x40400000
+#data 0x43C80000
+#data 0xC4255625
+#data 0x00000000
+#data 0xC5D55814
+#data 0x00000000
+#data 0x41598588
+#data 0xC0066666
+#data 0x440C0000
+#data 0xC4C6FBD7
+#data 0x00000000
+#data 0xC61A32CD
+#data 0x00000000
+#data 0x41AA185F
+#data 0x40333333
+#data 0x442A0000
+#data 0xC518C8A4
+#data 0x00000000
+#data 0xC643F59A
+#data 0x00000000
+#data 0x41C96113
+#data 0xC059999A
+#data 0x44480000
+#data 0xC59C1312
+#data 0x00000000
+#data 0xC68B45A9
+#data 0x00000000
+#data 0x420F6D0E
+#data 0x40866666
+#data 0x44700000
+#data 0xC5FFC8F6
+#data 0x00000000
+#data 0xC6AB76CD
+#data 0x00000000
+#data 0x423E99B4
+#data 0xC0BCCCCD
+#data 0x44820000
+#data 0xC61C3CC3
+#data 0x00000000
+#data 0xC6B98266
+#data 0x00000000
+#data 0x4252D6BC
+#data 0x40CCCCCD
+#data 0x448C0000
+#data 0xC63A879A
+#data 0x00000000
+#data 0xC6C63F33
+#data 0x00000000
+#data 0x426606F7
+#data 0xC0B9999A
+#data 0x44960000
+#data 0xC65AB4CD
+#data 0x00000000
+#data 0xC6D1A4FB
+#data 0x00000000
+#data 0x4279D581
+#data 0x40533333
+#data 0x44A50000
+#data 0xC6871C33
+#data 0x00000000
+#data 0xC6DF929A
+#data 0x00000000
+#data 0x428DC588
+#data 0xC0600000
+#data 0x44B40000
+#data 0xC6A22ECD
+#data 0x00000000
+#data 0xC6E9DACD
+#data 0x00000000
+#data 0x429E088D
+#data 0x40800000
+#data 0x44C80000
+#data 0xC6C7B052
+#data 0x00000000
+#data 0xC6F303E6
+#data 0x00000000
+#data 0x42AF3717
+#data 0xC0533333
+#data 0x44E10000
+#data 0xC6F84633
+#data 0x00000000
+#data 0xC6F65D9A
+#data 0x00000000
+#data 0x42C177DC
+#data 0x40333333
+#data 0x44FA0000
+#data 0xC71455D2
+#data 0x00000000
+#data 0xC6F32EDC
+#data 0x00000000
+#data 0x42CDFC1C
+#data 0xC04CCCCD
+#data 0x45048000
+#data 0xC722824D
+#data 0x00000000
+#data 0xC6EF1633
+#data 0x00000000
+#data 0x42CF56AE
+#data 0x409CCCCD
+#data 0x45098000
+#data 0xC72BCBCD
+#data 0x00000000
+#data 0xC6EB49CD
+#data 0x00000000
+#data 0x42CE8632
+#data 0xC079999A
+#data 0x450E8000
+#data 0xC734FECD
+#data 0x00000000
+#data 0xC6E6FCCD
+#data 0x00000000
+#data 0x42CD896C
+#data 0x40000000
+#data 0x45160000
+#data 0xC742BD17
+#data 0x00000000
+#data 0xC6E037B3
+#data 0x00000000
+#data 0x42CDF5EA
+#data 0xBFB33333
+#data 0x451D8000
+#data 0xC75073E6
+#data 0x00000000
+#data 0xC6D95066
+#data 0x00000000
+#data 0x42D107F0
+#data 0x40133333
+#data 0x45278000
+#data 0xC7628EE6
+#data 0x00000000
+#data 0xC6CF2F9A
+#data 0x00000000
+#data 0x42D6B7F6
+#data 0xC08CCCCD
+#data 0x452F0000
+#data 0xC76FF394
+#data 0x00000000
+#data 0xC6C6965C
+#data 0x00000000
+#data 0x42DCF2F2
+#data 0x40A66666
+#data 0x45368000
+#data 0xC77D5F1A
+#data 0x00000000
+#data 0xC6BDF666
+#data 0x00000000
+#data 0x42E6FB4A
+#data 0xC0900000
+#data 0x453E0000
+#data 0xC78557DA
+#data 0x00000000
+#data 0xC6B4CC33
+#data 0x00000000
+#data 0x42F678EF
+#data 0x40900000
+#data 0x45480000
+#data 0xC78D8340
+#data 0x00000000
+#data 0xC6A3A100
+#data 0x00000000
+#data 0x43099711
+#data 0xC0666666
+#data 0x45548000
+#data 0xC7959133
+#data 0x00000000
+#data 0xC6849500
+#data 0x00000000
+#data 0x431EA08A
+#data 0x40666666
+#data 0x45610000
+#data 0xC79B239F
+#data 0x00000000
+#data 0xC63CEC5C
+#data 0x00000000
+#data 0x43300C30
+#data 0xC079999A
+#data 0x456B0000
+#data 0xC79CF84D
+#data 0x00000000
+#data 0xC5EF3EA4
+#data 0x00000000
+#data 0x4338CB44
+#data 0x40A66666
+#data 0x45728000
+#data 0xC79D0426
+#data 0x00000000
+#data 0xC5849E52
+#data 0x00000000
+#data 0x433EF4BC
+#data 0xC0A33333
+#data 0x457A0000
+#data 0xC79C1D3A
+#data 0x00000000
+#data 0xC44CC1F4
+#data 0x00000000
+#data 0x43471B23
+#data 0x40533333
+#data 0x4580C000
+#data 0xC79A3380
+#data 0x00000000
+#data 0x45222CE9
+#data 0x00000000
+#data 0x4351820C
+#data 0xC089999A
+#data 0x45848000
+#data 0xC7975F1A
+#data 0x00000000
+#data 0x45B832FE
+#data 0x00000000
+#data 0x435BE7F0
+#data 0x404CCCCD
+#data 0x45898000
+#data 0xC7924923
+#data 0x00000000
+#data 0x4618FDEF
+#data 0x00000000
+#data 0x4365DB23
+#data 0xC04CCCCD
+#data 0x458FC000
+#data 0xC7898C1A
+#data 0x00000000
+#data 0x464842B8
+#data 0x00000000
+#data 0x43698BC7
+#data 0x3FF33333
+#data 0x45960000
+#data 0xC7802ECD
+#data 0x00000000
+#data 0x4671D272
+#data 0x00000000
+#data 0x4366220C
+#data 0xC019999A
+#data 0x459C4000
+#data 0xC76DB1CD
+#data 0x00000000
+#data 0x46962B61
+#data 0x00000000
+#data 0x435905E3
+#data 0x40533333
+#data 0x45A28000
+#data 0xC75D6F2E
+#data 0x00000000
+#data 0x46BA07A3
+#data 0x00000000
+#data 0x434A4ED9
+#data 0xBFD9999A
+#data 0x45A8C000
+#data 0xC7546233
+#data 0x00000000
+#data 0x46E5D2B3
+#data 0x00000000
+#data 0x433DE148
+#data 0x40A66666
+#data 0x45AF0000
+#data 0xC7509571
+#data 0x00000000
+#data 0x470A228C
+#data 0x00000000
+#data 0x43309838
+#data 0x00000000
+#data 0x45B2C000
+#data 0xC7507ECD
+#data 0x00000000
+#data 0x47183573
+#data 0x00000000
+#data 0x43262B99
+#data 0x40133333
+#data 0x45B68000
+#data 0xC7521C66
+#data 0x00000000
+#data 0x47261F31
+#data 0x00000000
+#data 0x431B3C15
+#data 0xBFF33333
+#data 0x45BB8000
+#data 0xC7570603
+#data 0x00000000
+#data 0x4737AC4C
+#data 0x00000000
+#data 0x43121C0F
+#data 0x00000000
+#data 0x45C1C000
+#data 0xC7633F33
+#data 0x00000000
+#data 0x47493FDF
+#data 0x00000000
+#data 0x43137CC0
+#data 0xC0066666
+#data 0x45C80000
+#data 0xC770BDA9
+#data 0x00000000
+#data 0x4759F8D1
+#data 0x00000000
+#data 0x431AD9CE
+#data 0x40466666
+#data 0x45CE4000
+#data 0xC77C45CD
+#data 0x00000000
+#data 0x476DEE33
+#data 0x00000000
+#data 0x4326AF91
+#data 0xC0266666
+#data 0x45D48000
+#data 0xC78211CD
+#data 0x00000000
+#data 0x4781E211
+#data 0x00000000
+#data 0x43352106
+#data 0x40133333
+#data 0x45DAC000
+#data 0xC781EEF3
+#data 0x00000000
+#data 0x478D3261
+#data 0x00000000
+#data 0x43429168
+#data 0xC0266666
+#data 0x45E10000
+#data 0xC77DDD03
+#data 0x00000000
+#data 0x4797F43A
+#data 0x00000000
+#data 0x434FEE56
+#data 0x40600000
+#data 0x45E74000
+#data 0xC772C0E6
+#data 0x00000000
+#data 0x47A15813
+#data 0x00000000
+#data 0x435F8148
+#data 0xBF800000
+#data 0x45ED8000
+#data 0xC763378F
+#data 0x00000000
+#data 0x47A904F1
+#data 0x00000000
+#data 0x436FFA5E
+#data 0xC0B9999A
+#data 0x45F3C000
+#data 0xC74F7B00
+#data 0x00000000
+#data 0x47AE85D7
+#data 0x00000000
+#data 0x438185E3
+#data 0x4099999A
+#data 0x45FA0000
+#data 0xC739A066
+#data 0x00000000
+#data 0x47B14E87
+#data 0x00000000
+#data 0x438ADC9C
+#data 0xC04CCCCD
+#data 0x45FF0000
+#data 0xC7283AB3
+#data 0x00000000
+#data 0x47B0A9C4
+#data 0x00000000
+#data 0x43907E5D
+#data 0x40266666
+#data 0x46016000
+#data 0xC71BBFB3
+#data 0x00000000
+#data 0x47AEE1D2
+#data 0x00000000
+#data 0x43943B5E
+#data 0xC02CCCCD
+#data 0x46034000
+#data 0xC70FA81A
+#data 0x00000000
+#data 0x47AC48F3
+#data 0x00000000
+#data 0x43983148
+#data 0x4059999A
+#data 0x46052000
+#data 0xC704021A
+#data 0x00000000
+#data 0x47A8F2B4
+#data 0x00000000
+#data 0x439CB73F
+#data 0xC0933333
+#data 0x46070000
+#data 0xC6F24700
+#data 0x00000000
+#data 0x47A4E1AA
+#data 0x00000000
+#data 0x43A16F9A
+#data 0x40900000
+#data 0x46084000
+#data 0xC6E51E00
+#data 0x00000000
+#data 0x47A1B93C
+#data 0x00000000
+#data 0x43A47910
+#data 0xC059999A
+#data 0x46098000
+#data 0xC6D99B7B
+#data 0x00000000
+#data 0x479E28C6
+#data 0x00000000
+#data 0x43A742D7
+#data 0x402CCCCD
+#data 0x460B6000
+#data 0xC6CC9033
+#data 0x00000000
+#data 0x479809EC
+#data 0x00000000
+#data 0x43AB470E
+#data 0xC00CCCCD
+#data 0x460D4000
+#data 0xC6C3A833
+#data 0x00000000
+#data 0x479164DD
+#data 0x00000000
+#data 0x43AF16B8
+#data 0x3FCCCCCD
+#data 0x460E8000
+#data 0xC6BF5566
+#data 0x00000000
+#data 0x478CD89D
+#data 0x00000000
+#data 0x43B12FA4
+#data 0xC02CCCCD
+#data 0x460FC000
+#data 0xC6BBEFB3
+#data 0x00000000
+#data 0x4788465B
+#data 0x00000000
+#data 0x43B2ACB6
+#data 0x40000000
+#data 0x46110000
+#data 0xC6BA3300
+#data 0x00000000
+#data 0x4783B19B
+#data 0x00000000
+#data 0x43B388DC
+#data 0xC019999A
+#data 0x46124000
+#data 0xC6BA54CD
+#data 0x00000000
+#data 0x477E3DD4
+#data 0x00000000
+#data 0x43B3F27F
+#data 0x3FC00000
+#data 0x46138000
+#data 0xC6BB4C33
+#data 0x00000000
+#data 0x47751B85
+#data 0x00000000
+#data 0x43B3F37F
+#data 0xC0333333
+#data 0x4614C000
+#data 0xC6BC2333
+#data 0x00000000
+#data 0x476BE969
+#data 0x00000000
+#data 0x43B38A3A
+#data 0x404CCCCD
+#data 0x46160000
+#data 0xC6BBE361
+#data 0x00000000
+#data 0x4762974B
+#data 0x00000000
+#data 0x43B2ACD7
+#data 0xC0200000
+#data 0x4616A000
+#data 0xC6BB5B66
+#data 0x00000000
+#data 0x475DDF6E
+#data 0x00000000
+#data 0x43B1FE3F
+#data 0x3F8CCCCD
+#data 0x46174000
+#data 0xC6BADA00
+#data 0x00000000
+#data 0x47591CB3
+#data 0x00000000
+#data 0x43B1169E
+#data 0xC0866666
+#data 0x4617E000
+#data 0xC6BA5066
+#data 0x00000000
+#data 0x475451F8
+#data 0x00000000
+#data 0x43B00553
+#data 0x40833333
+#data 0x46192000
+#data 0xC6B8E99A
+#data 0x00000000
+#data 0x474AB008
+#data 0x00000000
+#data 0x43AD9ECF
+#data 0xC0733333
+#data 0x461A6000
+#data 0xC6B6AF00
+#data 0x00000000
+#data 0x47411424
+#data 0x00000000
+#data 0x43AB31E2
+#data 0x406CCCCD
+#data 0x461C4000
+#data 0xC6B0B224
+#data 0x00000000
+#data 0x47330719
+#data 0x00000000
+#data 0x43A83AE1
+#data 0xC079999A
+#data 0x461D8000
+#data 0xC6AA5F9A
+#data 0x00000000
+#data 0x472A0892
+#data 0x00000000
+#data 0x43A6BD81
+#data 0x40800000
+#data 0x461EC000
+#data 0xC6A28BCD
+#data 0x00000000
+#data 0x47214E80
+#data 0x00000000
+#data 0x43A551EC
+#data 0xC0333333
+#data 0x4620A000
+#data 0xC6952433
+#data 0x00000000
+#data 0x4714D6D2
+#data 0x00000000
+#data 0x43A36DFE
+#data 0x4079999A
+#data 0x46228000
+#data 0xC6871A9F
+#data 0x00000000
+#data 0x47093418
+#data 0x00000000
+#data 0x43A22E81
+#data 0xC0400000
+#data 0x46246000
+#data 0xC6712133
+#data 0x00000000
+#data 0x46FDE176
+#data 0x00000000
+#data 0x43A20179
+#data 0x400CCCCD
+#data 0x46264000
+#data 0xC6528A66
+#data 0x00000000
+#data 0x46EB8166
+#data 0x00000000
+#data 0x43A2A611
+#data 0xC0200000
+#data 0x4628C000
+#data 0xC6299271
+#data 0x00000000
+#data 0x46D1BA89
+#data 0x00000000
+#data 0x43A3FF0E
+#data 0x00000000
+#data 0x462BE000
+#data 0xC5EBED85
+#data 0x00000000
+#data 0x46AD3F9F
+#data 0x00000000
+#data 0x43A5F13E
+#data 0xC0533333
+#data 0x462F0000
+#data 0xC58AFDB6
+#data 0x00000000
+#data 0x46855F04
+#data 0x00000000
+#data 0x43A8E8CE
+#data 0x40066666
+#data 0x46322000
+#data 0xC4D4F3D7
+#data 0x00000000
+#data 0x462A168F
+#data 0x00000000
+#data 0x43AE5852
+#data 0xC04CCCCD
+#data 0x46354000
+#data 0x438F6711
+#data 0x00000000
+#data 0x45AA9818
+#data 0x00000000
+#data 0x43B34BE7
+#data 0x3FF33333
+#data 0x46386000
+#data 0x437D6419
+#data 0x00000000
+#data 0x452BD1FC
+#data 0x00000000
+#data 0x43B34BEB
+#data 0xC0200000
+#data 0x463B8000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x43B40000
+#data 0x00000000
+#data 0x463EA000
+#data 0xC36A072B
+#data 0x00000000
+#data 0xC55A88A4
+#data 0x00000000
+#data 0x43B71A7C
+#data 0x40400000
+#data 0x4641C000
+#data 0xC4255625
+#data 0x00000000
+#data 0xC5D55814
+#data 0x00000000
+#data 0x43BACC2C
+#data 0xC0066666
+
+
+loc_8c167FA8:
+bra loc_8c168864
+mov.l @(0x44,gbr),r0
+#data 0x4687B066
+#data 0xC733E533
+#data 0xC12FA5E3
+#data 0x468AB048
+#data 0xC732DE00
+#data 0x45CFB64C
+#data 0x4688E861
+#data 0xC7432C80
+
+#align4
+loc_8c167FCC:
+#data 0xC1700000
+#data 0xC2200000
+#data 0xC0A00000
+#data 0xC1700000
+#data 0x40A00000
+#data 0xC1400000
+#data 0xC1A00000
+#data 0x41000000
+#data 0xC1400000
+
+#align4
+loc_8c167FF0:
+#data 0x3F800000
+#data 0x3F400000
+#data 0x3F000000
+
+#align4
+loc_8c167FFC:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c168008:
+#data 0x4284AB02
+
+
+loc_8c16800C:
+tst.b 0xCD,@(r0,gbr)
+mov.l r0,@(0x390,gbr)
+bra loc_8c1670B8
+mov.b @(0x2D,gbr),r0
+#data 0xC01C6A7F
+#data 0xC30A6666
+#data 0xC480F23D
+#data 0x44920410
+#data 0xC1866666
+#data 0xC423144A
+
+#align4
+loc_8c16802C:
+#data 0x41C80000
+#data 0x41A00000
+#data 0x420C0000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+
+#align4
+loc_8c168044:
+#data 0x00000012
+#data 0x00000013
+#data 0x00000014
+#data 0x00000015
+#data 0x00000016
+#data 0x00000017
+#data 0x00000018
+#data 0x00000019
+
+#align4
+loc_8c168064:
+#data 0x44B91A25
+#data 0x421C51EC
+#data 0xC417279E
+#data 0x44977EA8
+#data 0x41F00000
+#data 0xC42E06FA
+#data 0x4416C000
+#data 0x41E00000
+#data 0xC45E7FF0
+#data 0x43770000
+#data 0x421C51EC
+#data 0xC45E7FF0
+#data 0xC18CCCCD
+#data 0x41A00000
+#data 0xC45E7FF0
+#data 0xC4458000
+#data 0xC0E8F5C3
+#data 0xC45520D5
+#data 0xC4898000
+#data 0x41C80000
+#data 0xC4354000
+#data 0xC4A7A1EC
+#data 0x421C51EC
+#data 0xC4116FBE
+
+#align4
+loc_8c1680C4:
+#data 0x0000F2A4
+#data 0x0000F2A4
+#data 0x00000000
+#data 0x00000000
+#data 0x00008000
+#data 0x0000926A
+#data 0x0000926A
+#data 0x0000926A
+
+#align4
+loc_8c1680E4:
+#data 0x00000000
+#data 0x4473C000
+#data 0xC3FA0000
+#data 0x00000000
+#data 0x4473C000
+#data 0xC47A0000
+
+#align4
+loc_8c1680FC:
+#data 0x00000000
+#data 0x00000000
+#data 0xC4480000
+
+#align4
+loc_8c168108:
+#data 0xC1813D71
+#data 0xC3437EFA
+#data 0xC47A0000
+
+#align4
+loc_8c168114:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c168120:
+#data 0x3F9DFA44
+#data 0xC0735A86
+#data 0xC0F366CF
+
+#align4
+loc_8c16812C:
+#data 0xC4728000
+#data 0x4472A000
+
+#align4
+loc_8c168134:
+#data 0xC3B90000
+#data 0x44728000
+#data 0x4472A000
+#data 0xC3B90000
+#data 0xC4431000
+#data 0x444D2000
+#data 0xC32A0000
+#data 0x44431000
+#data 0x444D2000
+#data 0xC32A0000
+#data 0xC3874000
+#data 0x4427A000
+#data 0xC33E8000
+#data 0x43874000
+#data 0x4427A000
+#data 0xC33E8000
+
+#align4
+loc_8c168174:
+#data 0x00000000
+#data 0x44480000
+#data 0xC4960000
+#data 0x00000000
+#data 0x44960000
+#data 0xC4960000
+#data 0xC3870000
+#data 0x43C30000
+#data 0xC3820000
+#data 0x43870000
+#data 0x43C30000
+#data 0xC3820000
+#data 0xC4430000
+#data 0x43F56000
+#data 0xC3340000
+#data 0x44430000
+#data 0x43F56000
+#data 0xC3340000
+#data 0xC4430000
+#data 0x44480000
+#data 0xC4898000
+#data 0x44430000
+#data 0x44480000
+#data 0xC4898000
+
+#align4
+loc_8c1681D4:
+#data 0x43870000
+#data 0xC3480000
+#data 0x43A50000
+#data 0xC3480000
+#data 0x438C0000
+#data 0xC3480000
+#data 0x438C0000
+#data 0xC3480000
+#data 0x43BE0000
+#data 0xC3480000
+#data 0x43BE0000
+#data 0xC3480000
+#data 0x44160000
+#data 0xC3480000
+#data 0x44160000
+#data 0xC3480000
+
+#align4
+loc_8c168214:
+#data 0x0000010E
+#data 0x000000B4
+#data 0x0000005A
+#data 0x000000B4
+#data 0x0000010E
+#data 0x00000000
+#data 0x0000005A
+#data 0x000000B4
+
+#align4
+loc_8c168234:
+#data 0x00000000
+#data 0x3F000000
+#data 0x3F000000
+#data 0x00000000
+#data 0x00000000
+#data 0xBF000000
+#data 0xBF000000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F000000
+#data 0x3F000000
+#data 0x00000000
+#data 0x00000000
+#data 0xBF000000
+#data 0xBF000000
+#data 0x00000000
+
+#align4
+loc_8c168274:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c1682DC:
+#data 0x00000001
+#data 0x44113000
+#data 0x445C0000
+#data 0xC5066000
+#data 0x00000000
+#data 0x44B19000
+#data 0x43FA1333
+#data 0xC3CD4000
+#data 0x00000000
+#data 0x44C1C000
+#data 0x440EA000
+#data 0xC459A000
+#data 0x00000001
+#data 0x00000000
+#data 0x44610000
+#data 0xC507A000
+#data 0x00000001
+#data 0xC47A0000
+#data 0x44A64000
+#data 0xC50FC000
+#data 0x00000001
+#data 0xC3AF0000
+#data 0x44F50000
+#data 0xC5034000
+#data 0x00000000
+#data 0xC4C1C000
+#data 0x440EA000
+#data 0xC459A000
+#data 0x00000001
+#data 0x44CE4000
+#data 0x443B8000
+#data 0xC4A8C000
+#data 0x00000001
+#data 0x44849800
+#data 0x44020000
+#data 0xC5034000
+#data 0x00000001
+#data 0xC4431000
+#data 0x449ED000
+#data 0xC485C000
+#data 0x00000000
+#data 0x44BB8000
+#data 0x44022000
+#data 0xC485D000
+#data 0x00000000
+#data 0xC4C1C000
+#data 0x44228000
+#data 0x00000000
+#data 0x00000000
+#data 0xC4AF0000
+#data 0x44548000
+#data 0xC41D8000
+#data 0x00000001
+#data 0x00000000
+#data 0x44CBD000
+#data 0xC49B099A
+#data 0x00000001
+#data 0xC4CE4000
+#data 0x443B8000
+#data 0xC4A8C000
+#data 0x00000001
+#data 0xC4C30800
+#data 0x448C1333
+#data 0xC516AA8F
+#data 0x00000001
+#data 0xC4598000
+#data 0x444800A4
+#data 0xC5160000
+#data 0x00000001
+#data 0xC38C6000
+#data 0x44610000
+#data 0xC50FC000
+#data 0x00000001
+#data 0x43AF0000
+#data 0x44F50000
+#data 0xC5034000
+#data 0x00000001
+#data 0x44CE4000
+#data 0x44FA0000
+#data 0xC4ED8000
+#data 0x00000001
+#data 0x4348E666
+#data 0x44020000
+#data 0xC5020000
+#data 0x00000000
+#data 0xC4AF0000
+#data 0x43C80000
+#data 0xC4750000
+#data 0x00000000
+#data 0xC4B18000
+#data 0x43E10000
+#data 0x00000000
+#data 0x00000000
+#data 0x44AA1000
+#data 0x44548000
+#data 0xC3340000
+#data 0x00000001
+#data 0x44AF0000
+#data 0x43C80000
+#data 0xC4750000
+#data 0x00000001
+#data 0xC4113000
+#data 0x445C0000
+#data 0xC5066000
+#data 0x00000001
+#data 0x43C87333
+#data 0x44A294CD
+#data 0xC50E8333
+#data 0x00000001
+#data 0x44C44000
+#data 0x44228000
+#data 0xC51C4000
+#data 0x00000001
+#data 0xC4CE4000
+#data 0x44FA0000
+#data 0xC4ED8000
+#data 0x00000001
+#data 0x44BE0000
+#data 0x44BE0000
+#data 0xC50CA000
+#data 0x00000001
+#data 0xC3C87333
+#data 0x44A29333
+#data 0xC50E8333
+#data 0x00000001
+#data 0xC4431000
+#data 0x449ED000
+#data 0xC485C000
+#data 0x00000001
+#data 0xC4BB8000
+#data 0x44022000
+#data 0xC485D000
+#data 0x00000000
+#data 0xC4AA1000
+#data 0x44548000
+#data 0xC3340000
+#data 0x00000000
+#data 0x44AF0000
+#data 0x44548000
+#data 0xC41D8000
+#data 0x00000001
+#data 0xC48C1333
+#data 0x44E1099A
+#data 0x44160000
+#data 0x00000001
+#data 0xC4BE0000
+#data 0x44BE0000
+#data 0xC50CA000
+#data 0x00000001
+#data 0x44200000
+#data 0x44048000
+#data 0xC505C000
+#data 0x00000001
+#data 0x44598000
+#data 0x44480000
+#data 0xC5160000
+#data 0x00000001
+#data 0x447A0000
+#data 0x44A64000
+#data 0xC50FC000
+#data 0x00000000
+#data 0xC4C1C000
+#data 0x4485C000
+#data 0xC4A28000
+#data 0x00000000
+#data 0xC4B18000
+#data 0x43FA0000
+#data 0xC3CD0000
+#data 0x00000000
+#data 0x44CE4000
+#data 0x44B04000
+#data 0xC4610000
+#data 0x00000000
+#data 0x44C1C000
+#data 0x44228000
+#data 0x00000000
+#data 0x00000001
+#data 0xC348E666
+#data 0x44020000
+#data 0xC5020000
+#data 0x00000001
+#data 0xC4522000
+#data 0x446D8CCD
+#data 0xC528C000
+#data 0x00000001
+#data 0x44BE0000
+#data 0x43EB4000
+#data 0xC4CF8666
+#data 0x00000001
+#data 0x448FC000
+#data 0x44570000
+#data 0xC5098000
+#data 0x00000001
+#data 0x44480000
+#data 0x44F50000
+#data 0xC4ED8000
+#data 0x00000001
+#data 0xC4C44000
+#data 0x44228000
+#data 0xC51C4000
+#data 0x00000000
+#data 0x44B18000
+#data 0x43E10000
+#data 0x00000000
+#data 0x00000001
+#data 0x44C1C000
+#data 0x4485C99A
+#data 0xC4A28000
+#data 0x00000001
+#data 0xC4200000
+#data 0x44048000
+#data 0xC505C000
+#data 0x00000001
+#data 0xC4480000
+#data 0x44F50000
+#data 0xC4ED8000
+#data 0x00000001
+#data 0x438C6000
+#data 0x44610000
+#data 0xC50FC000
+#data 0x00000001
+#data 0xC4BE0000
+#data 0x43EB4000
+#data 0xC4CF8800
+#data 0x00000001
+#data 0xC4CE4000
+#data 0x44B04000
+#data 0xC4610000
+#data 0x00000001
+#data 0x44C30800
+#data 0x448C1333
+#data 0xC516AB33
+#data 0x00000001
+#data 0x448C1000
+#data 0x44E1099A
+#data 0xC4C80000
+#data 0x00000001
+#data 0xC48FC000
+#data 0x44570000
+#data 0xC5098000
+
+#align4
+loc_8c16869C:
+#data 0x0000010E
+#data 0x00000000
+#data 0x0000005A
+#data 0x000000B4
+#data 0x0000002D
+
+#align4
+loc_8c1686B0:
+#data 0x00000000
+#data 0x3F000000
+#data 0x3F000000
+#data 0x00000000
+#data 0x00000000
+#data 0xBF000000
+#data 0xBF000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c1686D8:
+#data 0x40400000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c1686E8:
+#data 0x00000000
+#data 0xBF000000
+#data 0x00000000
+
+#align4
+loc_8c1686F4:
+#data 0x00000000
+#data 0xBE4CCCCD
+#data 0x00000000
+
+#align4
+loc_8c168700:
+#data 0xC4C80000
+#data 0xC1980000
+#data 0xC4BB8000
+#data 0x44C80000
+#data 0xC1980000
+#data 0xC4BB8000
+#data 0x00000000
+#data 0xC1980000
+#data 0xC4FA0000
+
+#align4
+loc_8c168724:
+#data 0x44430000
+#data 0x00000000
+#data 0xC3480000
+#data 0x43870000
+#data 0x43160000
+#data 0xC3870000
+#data 0xC3870000
+#data 0x43160000
+#data 0xC3870000
+#data 0xC4430000
+#data 0x00000000
+#data 0xC3480000
+
+#align4
+loc_8c168754:
+#data 0x43480000
+#data 0x42C80000
+#data 0x42C80000
+#data 0x43480000
+
+#align4
+loc_8c168764:
+#data 0x44454746
+
+#align4
+loc_8c168768:
+#data 0xC4430000
+#data 0xC1980000
+#data 0xC3480000
+#data 0xC3870000
+#data 0xC1980000
+#data 0xC3820000
+#data 0xC43E0000
+#data 0xC1980000
+#data 0xC3AF0000
+#data 0xC3820000
+#data 0xC1980000
+#data 0xC3D20000
+
+#align4
+loc_8c168798:
+#data 0xC4430000
+#data 0x43AF0000
+#data 0xC3480000
+#data 0xC3870000
+#data 0x43820000
+#data 0xC3870000
+#data 0x43870000
+#data 0x43820000
+#data 0xC3870000
+#data 0x44430000
+#data 0x43AF0000
+#data 0xC3480000
+
+#align4
+loc_8c1687C8:
+#data 0xC4430000
+#data 0x43AA0000
+#data 0xC3520000
+#data 0xC3870000
+#data 0x43820000
+#data 0xC38C0000
+#data 0x43870000
+#data 0x43820000
+#data 0xC38C0000
+#data 0x44430000
+#data 0x43AA0000
+#data 0xC3520000
+
+#align4
+loc_8c1687F8:
+#data 0x03020100
+#data 0x02030102
+#data 0x01020301
+#data 0x00000000
+
+#align4
+loc_8c168808:
+#data 0x00000000
+#data 0x44FA0000
+#data 0xC5DAC000
+
+#align4
+loc_8c168814:
+#data 0x0000012C
+
+#align4
+loc_8c168818:
+#data 0xC4430000
+#data 0x43960000
+#data 0xC4898000
+#data 0x44430000
+#data 0x43960000
+#data 0xC4898000
+
+#align4
+loc_8c168830:
+#data 0x0000012C
+
+#align4
+loc_8c168834:
+#data 0xC35C0000
+#data 0x43AF0000
+#data 0xC4834000
+#data 0x435C0000
+#data 0x43AF0000
+#data 0xC4834000
+
+#align4
+loc_8c16884C:
+#data 0x00000015
+#data 0x00000015
+#data 0x00000016
+#data 0x00000017
+#data 0x00000018
+#data 0x00000015
+
+#align4
+loc_8c168864:
+#data 0x00000015
+#data 0x00000016
+#data 0x00000017
+#data 0x00000018
+
+#align4
+loc_8c168874:
+#data 0x3F000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3E800000
+#data 0x3F000000
+#data 0x3F000000
+#data 0x3F000000
+#data 0x3F000000
+
+#align4
+loc_8c16889C:
+#data 0x43AF0000
+#data 0xC2700000
+#data 0xC4480000
+#data 0x42480000
+#data 0xC2700000
+#data 0xC4A28000
+#data 0x43FA0000
+#data 0xC2700000
+#data 0xC4BB8000
+#data 0xC4610000
+#data 0xC2700000
+#data 0xC50FC000
+#data 0xC45C0000
+#data 0xC2700000
+#data 0xC47A0000
+#data 0xC4610000
+#data 0xC2700000
+#data 0x44898000
+
+#align4
+loc_8c1688E4:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c168924:
+#data 0x41180000
+#data 0x41700000
+#data 0x41100000
+#data 0x41700000
+#data 0x41180000
+#data 0x41700000
+#data 0x41380000
+#data 0x41700000
+#data 0x41480000
+#data 0x41700000
+#data 0x41600000
+#data 0x41700000
+#data 0x41700000
+#data 0x41700000
+#data 0x41840000
+#data 0x41700000
+
+#align4
+loc_8c168964:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c1689A4:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c1689E4:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x40600000
+#data 0x41000000
+
+#align4
+loc_8c168A24:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c168A64:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c168AA4:
+#data 0x41080000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x40E00000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c168AE4:
+#data 0x41000000
+#data 0x41180000
+#data 0x41100000
+#data 0x41180000
+#data 0x41200000
+#data 0x41180000
+#data 0x41300000
+#data 0x41180000
+#data 0x41480000
+#data 0x41180000
+#data 0x41600000
+#data 0x41180000
+#data 0x41780000
+#data 0x41180000
+#data 0x41880000
+#data 0x41180000
+
+#align4
+loc_8c168B24:
+#data 0x41000000
+#data 0x41100000
+#data 0x41100000
+#data 0x41100000
+#data 0x41200000
+#data 0x41100000
+#data 0x41300000
+#data 0x41100000
+#data 0x41480000
+#data 0x41100000
+#data 0x41600000
+#data 0x41100000
+#data 0x41780000
+#data 0x41100000
+#data 0x41880000
+#data 0x41100000
+
+#align4
+loc_8c168B64:
+#data 0x41080000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x40E00000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c168BA4:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c168BE4:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c168C24:
+#data 0x41380000
+#data 0x41700000
+#data 0x41100000
+#data 0x41700000
+#data 0x41180000
+#data 0x41700000
+#data 0x41200000
+#data 0x41700000
+#data 0x41480000
+#data 0x41700000
+#data 0x41600000
+#data 0x41700000
+#data 0x41700000
+#data 0x41700000
+#data 0x41840000
+#data 0x41700000
+
+#align4
+loc_8c168C64:
+#data 0x41180000
+#data 0x41700000
+#data 0x41100000
+#data 0x41700000
+#data 0x41200000
+#data 0x41700000
+#data 0x41380000
+#data 0x41700000
+#data 0x41480000
+#data 0x41700000
+#data 0x41600000
+#data 0x41700000
+#data 0x41700000
+#data 0x41700000
+#data 0x41840000
+#data 0x41700000
+
+#align4
+loc_8c168CA4:
+#data 0x41380000
+#data 0x41580000
+#data 0x41100000
+#data 0x41580000
+#data 0x41200000
+#data 0x41580000
+#data 0x41080000
+#data 0x41580000
+#data 0x41500000
+#data 0x41580000
+#data 0x41680000
+#data 0x41580000
+#data 0x41800000
+#data 0x41580000
+#data 0x418C0000
+#data 0x41580000
+
+#align4
+loc_8c168CE4:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x40600000
+#data 0x41000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c168D30:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41300000
+#data 0x41780000
+#data 0x41600000
+#data 0x41780000
+
+#align4
+loc_8c168D70:
+#data 0x410C0000
+#data 0x41400000
+#data 0x40DC0000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c168DB8:
+#data 0x41480000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+#data 0x41800000
+#data 0x41400000
+#data 0x41880000
+#data 0x41400000
+#data 0x41900000
+#data 0x41400000
+#data 0x41980000
+#data 0x41400000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c168E00:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c168E40:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+#data 0x40600000
+#data 0x41000000
+
+#align4
+loc_8c168E80:
+#data 0x40B00000
+#data 0x41400000
+#data 0x40E00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x40600000
+#data 0x41000000
+
+#align4
+loc_8c168EC0:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c168F00:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x40600000
+#data 0x41000000
+#data 0x00000000
+
+#align4
+loc_8c168F44:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c168F84:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c168FC4:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c169004:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c169044:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c169084:
+#data 0x41200000
+#data 0x41700000
+#data 0x41100000
+#data 0x41700000
+#data 0x41180000
+#data 0x41700000
+#data 0x41380000
+#data 0x41700000
+#data 0x41480000
+#data 0x41700000
+#data 0x41600000
+#data 0x41700000
+#data 0x41700000
+#data 0x41700000
+#data 0x41840000
+#data 0x41700000
+
+#align4
+loc_8c1690C4:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c169104:
+#data 0x41080000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x40E00000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c169144:
+#data 0x41480000
+#data 0x41700000
+#data 0x41380000
+#data 0x41700000
+#data 0x41600000
+#data 0x41700000
+#data 0x41180000
+#data 0x41700000
+#data 0x41200000
+#data 0x41700000
+#data 0x41600000
+#data 0x41700000
+#data 0x41700000
+#data 0x41700000
+#data 0x41840000
+#data 0x41700000
+
+#align4
+loc_8c169184:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c1691C4:
+#data 0x41180000
+#data 0x41700000
+#data 0x41100000
+#data 0x41700000
+#data 0x41200000
+#data 0x41700000
+#data 0x41380000
+#data 0x41700000
+#data 0x41480000
+#data 0x41700000
+#data 0x41600000
+#data 0x41700000
+#data 0x41700000
+#data 0x41700000
+#data 0x41840000
+#data 0x41700000
+
+#align4
+loc_8c169204:
+#data 0x40E00000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c169244:
+#data 0x41180000
+#data 0x41700000
+#data 0x41100000
+#data 0x41700000
+#data 0x41200000
+#data 0x41700000
+#data 0x41380000
+#data 0x41700000
+#data 0x41480000
+#data 0x41700000
+#data 0x41600000
+#data 0x41700000
+#data 0x41700000
+#data 0x41700000
+#data 0x41840000
+#data 0x41700000
+
+#align4
+loc_8c169284:
+#data 0x41080000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x40E00000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c1692C4:
+#data 0x41080000
+#data 0x41480000
+#data 0x41180000
+#data 0x41480000
+#data 0x41280000
+#data 0x41480000
+#data 0x41380000
+#data 0x41480000
+#data 0x41480000
+#data 0x41480000
+#data 0x41580000
+#data 0x41480000
+#data 0x41680000
+#data 0x41480000
+#data 0x41780000
+#data 0x41480000
+
+#align4
+loc_8c169304:
+#data 0x41080000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x40E00000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c169344:
+#data 0x41000000
+#data 0x41100000
+#data 0x41100000
+#data 0x41100000
+#data 0x41200000
+#data 0x41100000
+#data 0x41300000
+#data 0x41100000
+#data 0x41480000
+#data 0x41100000
+#data 0x41600000
+#data 0x41100000
+#data 0x41780000
+#data 0x41100000
+#data 0x41880000
+#data 0x41100000
+
+#align4
+loc_8c169384:
+#data 0x41180000
+#data 0x41700000
+#data 0x41100000
+#data 0x41700000
+#data 0x41180000
+#data 0x41700000
+#data 0x41380000
+#data 0x41700000
+#data 0x41480000
+#data 0x41700000
+#data 0x41600000
+#data 0x41700000
+#data 0x41700000
+#data 0x41700000
+#data 0x41840000
+#data 0x41700000
+
+#align4
+loc_8c1693C4:
+#data 0x41100000
+#data 0x41180000
+#data 0x41300000
+#data 0x41180000
+#data 0x41200000
+#data 0x41180000
+#data 0x41000000
+#data 0x41180000
+#data 0x41480000
+#data 0x41180000
+#data 0x41600000
+#data 0x41180000
+#data 0x41780000
+#data 0x41180000
+#data 0x41880000
+#data 0x41180000
+
+#align4
+loc_8c169404:
+#data 0x41080000
+#data 0x41480000
+#data 0x41180000
+#data 0x41480000
+#data 0x41280000
+#data 0x41480000
+#data 0x41380000
+#data 0x41480000
+#data 0x41480000
+#data 0x41480000
+#data 0x41580000
+#data 0x41480000
+#data 0x41680000
+#data 0x41480000
+#data 0x41780000
+#data 0x41480000
+
+#align4
+loc_8c169444:
+#data 0x41180000
+#data 0x41700000
+#data 0x41100000
+#data 0x41700000
+#data 0x41180000
+#data 0x41700000
+#data 0x41380000
+#data 0x41700000
+#data 0x41480000
+#data 0x41700000
+#data 0x41600000
+#data 0x41700000
+#data 0x41700000
+#data 0x41700000
+#data 0x41840000
+#data 0x41700000
+
+#align4
+loc_8c169484:
+#data 0x41300000
+#data 0x41780000
+#data 0x41280000
+#data 0x41780000
+#data 0x41100000
+#data 0x41780000
+#data 0x41480000
+#data 0x41780000
+#data 0x41600000
+#data 0x41780000
+#data 0x41700000
+#data 0x41780000
+#data 0x41880000
+#data 0x41780000
+#data 0x41940000
+#data 0x41780000
+
+#align4
+loc_8c1694C4:
+#data 0x41080000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x40E00000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c169504:
+#data 0x41080000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x40E00000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c169544:
+#data 0x41080000
+#data 0x41400000
+#data 0x40B00000
+#data 0x41400000
+#data 0x41200000
+#data 0x41400000
+#data 0x40E00000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c169584:
+#data 0x40600000
+#data 0x41000000
+#data 0x40B00000
+#data 0x41400000
+#data 0x40E00000
+#data 0x41400000
+#data 0x41080000
+#data 0x41400000
+#data 0x41300000
+#data 0x41400000
+#data 0x41480000
+#data 0x41400000
+#data 0x41600000
+#data 0x41400000
+#data 0x41700000
+#data 0x41400000
+
+#align4
+loc_8c1695C4:
+#data loc_8c1688E4
+
+loc_8c1695C8:
+#data loc_8c168924
+
+loc_8c1695CC:
+#data loc_8c168964
+
+loc_8c1695D0:
+#data loc_8c1689A4
+
+loc_8c1695D4:
+#data loc_8c1689E4
+
+loc_8c1695D8:
+#data loc_8c168A24
+
+loc_8c1695DC:
+#data loc_8c168A64
+
+loc_8c1695E0:
+#data loc_8c168AA4
+
+loc_8c1695E4:
+#data loc_8c168AE4
+
+loc_8c1695E8:
+#data loc_8c168B24
+
+loc_8c1695EC:
+#data loc_8c168B64
+
+loc_8c1695F0:
+#data loc_8c168BA4
+
+loc_8c1695F4:
+#data loc_8c168BE4
+
+loc_8c1695F8:
+#data loc_8c168C24
+
+loc_8c1695FC:
+#data loc_8c168C64
+
+loc_8c169600:
+#data loc_8c168CA4
+
+loc_8c169604:
+#data loc_8c168CE4
+
+loc_8c169608:
+#data loc_8c1688E4
+
+loc_8c16960C:
+#data loc_8c1688E4
+
+loc_8c169610:
+#data loc_8c1688E4
+
+loc_8c169614:
+#data loc_8c168D30
+
+loc_8c169618:
+#data loc_8c168D70
+
+loc_8c16961C:
+#data loc_8c1688E4
+
+loc_8c169620:
+#data loc_8c1688E4
+
+loc_8c169624:
+#data loc_8c168DB8
+
+loc_8c169628:
+#data loc_8c1688E4
+
+loc_8c16962C:
+#data loc_8c1688E4
+
+loc_8c169630:
+#data loc_8c168E00
+
+loc_8c169634:
+#data loc_8c168E40
+
+loc_8c169638:
+#data loc_8c168E80
+
+loc_8c16963C:
+#data loc_8c168EC0
+
+loc_8c169640:
+#data loc_8c168F00
+
+loc_8c169644:
+#data loc_8c1688E4
+
+loc_8c169648:
+#data loc_8c168F44
+
+loc_8c16964C:
+#data loc_8c168F84
+
+loc_8c169650:
+#data loc_8c168FC4
+
+loc_8c169654:
+#data loc_8c169004
+
+loc_8c169658:
+#data loc_8c169044
+
+loc_8c16965C:
+#data loc_8c169084
+
+loc_8c169660:
+#data loc_8c1690C4
+
+loc_8c169664:
+#data loc_8c169104
+
+loc_8c169668:
+#data loc_8c169144
+
+loc_8c16966C:
+#data loc_8c169184
+
+loc_8c169670:
+#data loc_8c1691C4
+
+loc_8c169674:
+#data loc_8c169204
+
+loc_8c169678:
+#data loc_8c169244
+
+loc_8c16967C:
+#data loc_8c169284
+
+loc_8c169680:
+#data loc_8c1692C4
+
+loc_8c169684:
+#data loc_8c169304
+
+loc_8c169688:
+#data loc_8c169344
+
+loc_8c16968C:
+#data loc_8c169384
+
+loc_8c169690:
+#data loc_8c1693C4
+
+loc_8c169694:
+#data loc_8c169404
+
+loc_8c169698:
+#data loc_8c169444
+
+loc_8c16969C:
+#data loc_8c169484
+
+loc_8c1696A0:
+#data loc_8c1694C4
+
+loc_8c1696A4:
+#data loc_8c169504
+
+loc_8c1696A8:
+#data loc_8c169544
+
+loc_8c1696AC:
+#data loc_8c169584
+
+loc_8c1696B0:
+#data 0xFFD30000
+#data 0xFFD9FFD6
+#data 0xFFDFFFDC
+#data 0xFFE5FFE2
+#data 0xFFEBFFE8
+#data 0xFFF1FFEE
+#data 0xFFF7FFF4
+#data 0xFFFDFFFA
+#data 0x0003FFD0
+#data 0x00090006
+#data 0x000F000C
+#data 0x00150012
+#data 0x001B0018
+#data 0x0021001E
+#data 0x00270024
+#data 0x002D002A
+
+#align4
+loc_8c1696F0:
+#data 0xFFD30000
+#data 0xFFD9FFD6
+#data 0xFFDFFFDC
+#data 0xFFE5FFE2
+#data 0xFFEBFFE8
+#data 0xFFF1FFEE
+#data 0xFFF7FFF4
+#data 0xFFFDFFFA
+#data 0x0003FFD0
+#data 0x00090006
+#data 0x000F000C
+#data 0x00150012
+#data 0x001B0018
+#data 0x0021001E
+#data 0x00270024
+#data 0x002D002A
+
+#align4
+loc_8c169730:
+#data 0xFFD3FFD0
+#data 0xFFD9FFD6
+#data 0xFFDFFFDC
+#data 0xFFE5FFE2
+#data 0xFFEBFFE8
+#data 0xFFF1FFEE
+#data 0xFFF7FFF4
+#data 0xFFFDFFFA
+#data 0x00030000
+#data 0x00090006
+#data 0x000F000C
+#data 0x00150012
+#data 0x001B0018
+#data 0x0021001E
+#data 0x00270024
+#data 0x002D002A
+
+#align4
+loc_8c169770:
+#data 0xFFD30003
+#data 0xFFD9FFD6
+#data 0xFFDFFFDC
+#data 0xFFE5FFE2
+#data 0xFFEBFFE8
+#data 0xFFF1FFEE
+#data 0xFFF7FFF4
+#data 0xFFFDFFFA
+#data 0x0000FFD0
+#data 0x00090006
+#data 0x000F000C
+#data 0x00150012
+#data 0x001B0018
+#data 0x0021001E
+#data 0x00270024
+#data 0x002D002A
+
+#align4
+loc_8c1697B0:
+#data 0xFFD30000
+#data 0xFFD9FFD6
+#data 0xFFDFFFDC
+#data 0xFFE5FFE2
+#data 0xFFEBFFE8
+#data 0xFFF1FFEE
+#data 0xFFF7FFF4
+#data 0xFFFDFFFA
+#data 0x0003FFD0
+#data 0x00090006
+#data 0x000F000C
+#data 0x00150012
+#data 0x001B0018
+#data 0x0021001E
+#data 0x00270024
+#data 0x002D002A
+
+#align4
+loc_8c1697F0:
+#data loc_8c1696B0
+
+loc_8c1697F4:
+#data loc_8c1696B0
+
+loc_8c1697F8:
+#data loc_8c1697B0
+
+loc_8c1697FC:
+#data loc_8c1696B0
+
+loc_8c169800:
+#data loc_8c1697B0
+
+loc_8c169804:
+#data loc_8c1696B0
+
+loc_8c169808:
+#data loc_8c1696B0
+
+loc_8c16980C:
+#data loc_8c1696B0
+
+loc_8c169810:
+#data loc_8c1696B0
+
+loc_8c169814:
+#data loc_8c1696F0
+
+loc_8c169818:
+#data loc_8c1696B0
+
+loc_8c16981C:
+#data loc_8c1696B0
+
+loc_8c169820:
+#data loc_8c1696B0
+
+loc_8c169824:
+#data loc_8c1696B0
+
+loc_8c169828:
+#data loc_8c1696B0
+
+loc_8c16982C:
+#data loc_8c1696B0
+
+loc_8c169830:
+#data loc_8c1697B0
+
+loc_8c169834:
+#data loc_8c1697B0
+
+loc_8c169838:
+#data loc_8c1697B0
+
+loc_8c16983C:
+#data loc_8c1697B0
+
+loc_8c169840:
+#data loc_8c1697B0
+
+loc_8c169844:
+#data loc_8c1697B0
+
+loc_8c169848:
+#data loc_8c1697B0
+
+loc_8c16984C:
+#data loc_8c1697B0
+
+loc_8c169850:
+#data loc_8c1697B0
+
+loc_8c169854:
+#data loc_8c1697B0
+
+loc_8c169858:
+#data loc_8c1697B0
+
+loc_8c16985C:
+#data loc_8c1696B0
+
+loc_8c169860:
+#data loc_8c1696B0
+
+loc_8c169864:
+#data loc_8c1696B0
+
+loc_8c169868:
+#data loc_8c1696B0
+
+loc_8c16986C:
+#data loc_8c1697B0
+
+loc_8c169870:
+#data loc_8c1697B0
+
+loc_8c169874:
+#data loc_8c1696B0
+
+loc_8c169878:
+#data loc_8c1696B0
+
+loc_8c16987C:
+#data loc_8c1696B0
+
+loc_8c169880:
+#data loc_8c1696B0
+
+loc_8c169884:
+#data loc_8c1696B0
+
+loc_8c169888:
+#data loc_8c1696B0
+
+loc_8c16988C:
+#data loc_8c1696B0
+
+loc_8c169890:
+#data loc_8c1696B0
+
+loc_8c169894:
+#data loc_8c1696B0
+
+loc_8c169898:
+#data loc_8c1696B0
+
+loc_8c16989C:
+#data loc_8c1696B0
+
+loc_8c1698A0:
+#data loc_8c1696B0
+
+loc_8c1698A4:
+#data loc_8c1696B0
+
+loc_8c1698A8:
+#data loc_8c1696B0
+
+loc_8c1698AC:
+#data loc_8c169730
+
+loc_8c1698B0:
+#data loc_8c1696B0
+
+loc_8c1698B4:
+#data loc_8c1696F0
+
+loc_8c1698B8:
+#data loc_8c1696F0
+
+loc_8c1698BC:
+#data loc_8c169770
+
+loc_8c1698C0:
+#data loc_8c169730
+
+loc_8c1698C4:
+#data loc_8c1696B0
+
+loc_8c1698C8:
+#data loc_8c1696B0
+
+loc_8c1698CC:
+#data loc_8c1696B0
+
+loc_8c1698D0:
+#data loc_8c1696B0
+
+loc_8c1698D4:
+#data loc_8c1696B0
+
+loc_8c1698D8:
+#data loc_8c1697B0
+
+loc_8c1698DC:
+#data 0x00000001
+#data 0x00000002
+#data 0x00000007
+#data 0x00000008
+#data 0x0000000D
+#data 0x0000000E
+#data 0x00000013
+#data 0x00000014
+
+#align4
+loc_8c1698FC:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000008
+#data 0x00000000
+#data 0x00000000
+#data 0x00080000
+#data 0x00000000
+#data 0x08080000
+#data 0x00000008
+#data 0x00000000
+#data 0x00000000
+#data 0x08000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000008
+#data 0x00000000
+#data 0x00000000
+#data 0x00080000
+#data 0x00000000
+#data 0x00000808
+#data 0x08080800
+#data 0x00000000
+#data 0x00000000
+#data 0x08080000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000808
+#data 0x00000000
+#data 0x00000000
+#data 0x00080800
+#data 0x08080000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000808
+#data 0x00000000
+#data 0x08000800
+#data 0x00000000
+#data 0x00000000
+#data 0x00000800
+#data 0x00000000
+#data 0x00000000
+#data 0x00000800
+#data 0x00000800
+#data 0x00000000
+#data 0x00000000
+#data 0x00080000
+#data 0x00000000
+#data 0x08000800
+#data 0x00000000
+#data 0x00000000
+#data 0x00080800
+#data 0x00000000
+#data 0x00000000
+#data 0x00000808
+#data 0x00000008
+#data 0x00000000
+
+#align4
+loc_8c169C44:
+#data 0x00000000
+#data 0x00080000
+#data 0x00000000
+#data 0x08000008
+#data 0x00000000
+#data 0x00000000
+#data 0x00080000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000008
+#data 0x00000008
+#data 0x00000000
+#data 0x0000
+
+loc_8c169C76:
+#data 0x0000
+#data 0x00080000
+#data 0x00000000
+#data 0x08000008
+#data 0x0000
+
+loc_8c169C86:
+#data 0x0000
+#data 0x00000000
+#data 0x08080000
+#data 0x00000000
+#data 0x08000000
+#data 0x00000008
+#data 0x00000008
+#data 0x00000000
+
+#align4
+loc_8c169CA4:
+#data 0x00000000
+#data 0x00000800
+#data 0x08000000
+#data 0x08000000
+#data 0x00000000
+#data 0x00000000
+#data 0x08000000
+#data 0x00000000
+#data 0x08000000
+#data 0x00000000
+#data 0x00080800
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x08000000
+#data 0x08000000
+#data 0x00000000
+#data 0x00000000
+#data 0x08000000
+#data 0x00000000
+#data 0x08000000
+#data 0x00000000
+#data 0x08000000
+#data 0x00000008
+#data 0x00000000
+#data 0x00000000
+#data 0x00080000
+#data 0x08000000
+#data 0x00000000
+#data 0x00000000
+#data 0x08000000
+#data 0x00000008
+#data 0x08080000
+#data 0x00000000
+#data 0x00000000
+#data 0x08080800
+#data 0x00000808
+#data 0x00000000
+#data 0x00080000
+#data 0x08000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000008
+#data 0x00080000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x08080000
+#data 0x00000000
+#data 0x00000800
+#data 0x08000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000008
+#data 0x00080000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000808
+#data 0x00000008
+#data 0x08000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000808
+#data 0x00080800
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00080000
+#data 0x08080808
+#data 0x08080808
+#data 0x08080808
+#data 0x00000808
+#data 0x00000000
+#data 0x00000800
+#data 0x00000800
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00080000
+#data 0x00000000
+#data 0x08000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000800
+#data 0x00000800
+#data 0x00000000
+#data 0x00000008
+#data 0x00000000
+#data 0x00000000
+#data 0x00080000
+#data 0x00000000
+#data 0x08000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00080800
+#data 0x00000808
+#data 0x00000000
+#data 0x00000800
+#data 0x00000000
+
+#align4
+loc_8c169E54:
+#data 0x00000000
+#data 0x00000800
+#data 0x00000000
+#data 0x08000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00080000
+#data 0x00000008
+#data 0x00000000
+#data 0x08080000
+#data 0x00000000
+#data 0x08000000
+#data 0x00000008
+#data 0x00000000
+#data 0x08000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x08080000
+#data 0x00000008
+#data 0x00000000
+#data 0x00000000
+#data 0x00000808
+#data 0x00080800
+#data 0x00000000
+#data 0x00000000
+#data 0x08000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x08000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x08080000
+#data 0x00000008
+#data 0x00000000
+#data 0x00000000
+#data 0x08000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c169EFC:
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0x0000FFFF
+#data 0xFFFFFF00
+#data 0x80FEFF7F
+#data 0xC556FF0F
+#data 0xFFE33F4A
+#data 0xE05A5545
+#data 0x4D45FF39
+#data 0xFF0D804B
+#data 0x3F5B5554
+#data 0x5655FF05
+#data 0xFF85FFC9
+#data 0xFFFFFF7F
+#data 0x7B000084
+#data 0xFEFFFFCF
+#data 0x9BBF5BFF
+#data 0x5BFF2A12
+#data 0xA256B5BF
+#data 0xB15F5DFF
+#data 0x5DFFA236
+#data 0xAA76B56F
+#data 0x95EF5EFF
+#data 0x6EFF2A72
+#data 0xFEFFFF9B
+#data 0xC3FF2FFF
+#data 0xB7FF0000
+#data 0xFF7F0EFF
+#data 0x38FC99FF
+#data 0xCEFFFF0F
+#data 0xFFEFE370
+#data 0x8E83E3FF
+#data 0x8EFFFF6F
+#data 0xFFCF380E
+#data 0xE13F38FF
+#data 0x60FEFF9F
+#data 0xFF3F0300
+#data 0x0600C0FE
+#data 0xFFFEFF7F
+#data 0xFFFFFCFF
+#data 0x010000FE
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+
+#align4
+loc_8c169FBC:
+#data 0x00000000
+#data 0xFF160000
+#data 0x68FFFFFF
+#data 0x8CCCF916
+#data 0xF61668CF
+#data 0x68BFBBBB
+#data 0x8DBBF016
+#data 0xF61668DF
+#data 0x68EFBEBB
+#data 0x89CCF616
+#data 0xFF16689F
+#data 0x68FFFFFF
+#data 0x00000000
+#data 0x0000
+
+loc_8c169FF2:
+#data 0xFF7F
+#data 0x000000FE
+#data 0x3F4AC556
+#data 0x554500E0
+#data 0x0038605A
+#data 0x804B4D54
+#data 0x5655000C
+#data 0x00043FC9
+#data 0xFFFFFF7F
+#data 0x7B000084
+#data 0xFEFFFF8F
+#data 0x9BBF5B00
+#data 0x59002A12
+#data 0xA256B51F
+#data 0xB14F5D00
+#data 0x5C00AA36
+#data 0x2A72956F
+#data 0xFF8B6E00
+#data 0x2F00FEFF
+#data 0x0000C3FF
+#data 0x0EFF3700
+#data 0x19000000
+#data 0x000038FC
+#data 0xE3700E00
+#data 0x030000E0
+#data 0x00608E83
+#data 0x380E0E00
+#data 0x380000C0
+#data 0x0080E13F
+
+#align4
+loc_8c16A064:
+#data 0x03006000
+#data 0xC0000000
+#data 0x00000600
+#data 0xFCFFFF00
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c16A07C:
+#data 0x2E53564D
+#data 0x555F3243
+#data 0x414F4C50
+#data 0x20202044
+#data 0x0000
+
+loc_8c16A08E:
+#data 0xB0CF
+#data 0x20D9DEB3
+#data 0xB62E5356
+#data 0xDDBADFCC
+#data 0x555F3220
+#data 0x414F4C50
+#data 0xB2A7CC44
+#data 0x202020D9
+#data 0x00002020
+
+#align4
+loc_8c16A0B0:
+#data 0x4C06023F
+#data 0x1A160231
+#data 0x5314380C
+#data 0x00552F56
+
+#align4
+loc_8c16A0C0:
+#data 0x2E53564D
+#data 0x535F3243
+#data 0x45545359
+#data 0x2020204D
+#data 0x0000
+
+loc_8c16A0D2:
+#data 0x414D
+#data 0x4C455652
+#data 0x2E535620
+#data 0x43504143
+#data 0x32204D4F
+#data 0x5359535F
+#data 0x204D4554
+#data 0x454C4946
+#data 0x00002020
+
+#align4
+loc_8c16A0F4:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x2E53564D
+#data 0x565F3243
+#data 0x4F432E53
+#data 0x2020204D
+#data 0x414D0000
+#data 0x4C455652
+#data 0x2E535620
+#data 0x43504143
+#data 0x32204D4F
+#data 0x2E53565F
+#data 0x204D4F43
+#data 0x20202020
+#data 0x00002020
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c16A148:
+#data 0x2E53564D
+#data 0x445F3243
+#data 0x4C4E574F
+#data 0x2044414F
+#data 0x0000
+
+loc_8c16A15A:
+#data 0xB0CF
+#data 0x20D9DEB3
+#data 0xB62E5356
+#data 0xDDBADFCC
+#data 0x445F3220
+#data 0x4C4E574F
+#data 0xCC44414F
+#data 0x20D9B2A7
+#data 0x00002020
+
+#align4
+loc_8c16A17C:
+#data 0x4C06023F
+#data 0x1A160231
+#data 0x5314380C
+#data 0x00582F56
+
+#align4
+loc_8c16A18C:
+#data 0x2D504143
+#data 0x5F54454E
+#data 0xCC54454E
+#data 0x20D9B2A7
+#data 0x0000
+
+loc_8c16A19E:
+#data 0x4A83
+#data 0x52837683
+#data 0x40819383
+#data 0x62836C83
+#data 0x8F836783
+#data 0x4E835B81
+#data 0x40837483
+#data 0x8B834383
+#data 0x00002020
+
+#align4
+loc_8c16A1C0:
+#data 0x5314380C
+#data 0x4F29262E
+#data 0x02361002
+#data 0x00554C03
+
+#align4
+loc_8c16A1D0:
+#data 0xFEFFFA98
+#data 0xFFCBFCCA
+#data 0xFA64FD97
+#data 0xF0DBF632
+#data 0xF077F0A8
+#data 0xF56CF79F
+#data 0xF035F459
+#data 0xFFF0FF40
+
+#align4
+loc_8c16A1F0:
+#data 0xF78DFA87
+#data 0xF237F459
+#data 0xFFC9F023
+#data 0xFED0FD96
+#data 0xFB73FEA2
+#data 0xFEEEF742
+#data 0xF888FBBB
+#data 0xFF22F555
+
+#align4
+loc_8c16A210:
+#data 0xF48AF344
+#data 0xFADDF7AB
+#data 0xFFD0F367
+#data 0xFF90FFEA
+#data 0xFA41FEB8
+#data 0xFC64F731
+#data 0xFE52FFA7
+#data 0xF222FFFF
+
+#align4
+loc_8c16A230:
+#data 0xFFDAFA98
+#data 0xFC84FFB8
+#data 0xFFF0FB50
+#data 0xFBCBFFFF
+#data 0xFF55F787
+#data 0xFC21FF31
+#data 0xF831FA31
+#data 0xFF90F621
+
+#align4
+loc_8c16A250:
+#data 0xF30BF00F
+#data 0xF5EFF41A
+#data 0xFB85F629
+#data 0xFCA4FC66
+#data 0xFF64FF54
+#data 0xFF83FF74
+#data 0xFFB3FF93
+#data 0xFFE2FFD2
+
+#align4
+loc_8c16A270:
+#data loc_8c16A1D0
+
+loc_8c16A274:
+#data loc_8c16A1F0
+
+loc_8c16A278:
+#data loc_8c16A210
+
+loc_8c16A27C:
+#data loc_8c16A230
+
+loc_8c16A280:
+#data loc_8c16A250
+
+loc_8c16A284:
+#data 0xC5CCCCCC
+#data 0x22222522
+#data 0xCCCCCC26
+#data 0xCCCCCCCC
+#data 0xC5CCCC5C
+#data 0x22225222
+#data 0xCCCCCC6C
+#data 0xCCCCCCCC
+#data 0xC5CCCC2C
+#data 0x25225224
+#data 0xCCCCCCCC
+#data 0xCCCCCCCC
+#data 0xC5CCCC26
+#data 0x56222245
+#data 0xCCCCCCCC
+#data 0xCCCCCCCC
+#data 0x55CCCC26
+#data 0x6C222252
+#data 0xCCCCCCCC
+#data 0xCCCCCCCC
+#data 0x22C5CC6C
+#data 0xCCE62222
+#data 0xCCCCCCCC
+#data 0xCCCCCCCC
+#data 0x2252CCCC
+#data 0xCCCE56E2
+#data 0xCCCCCC5C
+#data 0xCCCCCCCC
+#data 0xE222C5CC
+#data 0xE55CEE2E
+
+#align4
+loc_8c16A2FC:
+#data 0xCCCCCCCE
+#data 0xCCCCCCCC
+#data 0x2EE2C2CC
+#data 0x5EEE5EEE
+#data 0xCCCCECEC
+#data 0xCCCCCCCC
+#data 0xEE2E52DC
+#data 0xEEEEE5EE
+#data 0xCCCC5EEE
+#data 0xCCCCCCCC
+#data 0xEE2E229D
+#data 0xEEEEEEEE
+#data 0xCCECEEEE
+#data 0xCCCCCCCC
+#data 0xEE5EDD79
+#data 0xEEEEEEEE
+#data 0x55E5EEEE
+#data 0xCCCCCCCC
+#data 0xEEC5D978
+#data 0xEEEEEEEE
+#data 0xEEEEEEEE
+#data 0xCCCCCCE5
+#data 0xE58C9887
+#data 0xEEEE5EEE
+#data 0xCCECEEEE
+#data 0xCCCC5CCE
+#data 0x5E899888
+#data 0xEEE5E55E
+#data 0xEC5EE5EE
+#data 0xCCCCC5CC
+#data 0x5ECC9999
+#data 0x455EE4E5
+#data 0xEEEE5EEE
+#data 0xCC5CCCEC
+#data 0x5683D899
+#data 0x343EE3E5
+#data 0x5E555EEE
+#data 0xCCCCCCEE
+#data 0x6383889D
+#data 0x333354E5
+#data 0xCC5C4435
+#data 0xCCCCECCE
+#data 0x638388CD
+#data 0x334346E3
+#data 0xCC5C3333
+#data 0xCCCCCECC
+#data 0x3683889D
+#data 0x33163553
+#data 0xCC6C3533
+#data 0xCCECCCCC
+#data 0x4483989D
+#data 0xB55A3363
+#data 0xCCCCB645
+#data 0xCCC5CCCC
+#data 0x4499C98D
+#data 0x33333364
+#data 0xCCCC4636
+#data 0xCCCCCCCC
+#data 0x66DDDD89
+#data 0x34333366
+#data 0xCCCC6C64
+#data 0xCCCCCCCC
+#data 0x65DF9988
+#data 0x56356344
+#data 0xCCCCCC46
+#data 0xCCCCCCCC
+#data 0x54569D78
+#data 0x44434644
+#data 0xCCCCCC6C
+#data 0xCCCCDDCC
+#data 0x55659D88
+#data 0x66664444
+#data 0xCCCCCCCC
+#data 0xCCDCBBCD
+#data 0x65669D88
+#data 0xCC465455
+#data 0xCCDCCDCC
+#data 0xCCDCAACD
+#data 0x55659D88
+#data 0xCC564444
+#data 0xCCACDACC
+#data 0xDCCDADDC
+#data 0x5566CD88
+#data 0x6C454444
+#data 0xCDADDACC
+#data 0xBDCDDCCB
+#data 0x55C6DC89
+#data 0x6C444454
+#data 0xDBACDBCC
+#data 0xADDBDDBC
+#data 0x65CCCCDD
+#data 0x56444454
+#data 0xBDDBDDCC
+#data 0xADBACDBB
+#data 0x65CCCCCC
+#data 0x56444455
+#data 0xBDBBDCCC
+#data 0xDCCCBDCB
+
+
+loc_8c16A484:
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+tst.b 0xDC,@(r0,gbr)
+tst.b 0xCD,@(r0,gbr)
+mov.l r13,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l @(loc_8c16A554,pc),r12 ; r12 set to 0xEA2E2222
+bsr loc_8c169C44
+bsr loc_8c169C86
+and.b 0xCD,@(r0,gbr)
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+tst.b 0x2D,@(r0,gbr)
+bsr loc_8c169E54
+bsr loc_8c169C76
+tst.b 0xCD,@(r0,gbr)
+mov.l r13,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+bsr loc_8c169CA4
+bsr loc_8c16A064
+and.b 0xBB,@(r0,gbr)
+mov.l @(loc_8c16A864,pc),r12 ; r12 set to 0xE44F044
+mov.l r13,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r14
+tst.b 0xDD,@(r0,gbr)
+mov.l @(loc_8c16A82C,pc),r14 ; r14 set to 0x1EEEECC
+mov.l @(loc_8c16A7F0,pc),r14 ; r14 set to 0x4020EEEE
+mov.l @(loc_8c16A8B4,pc),r13 ; r13 set to 0xFFFFFFFF
+mov.l r13,@r2
+mov.l r2,@r2
+mov.l r2,@r2
+mov.l r2,@r13 ; r13 ??? bc r2 is ???
+tst.b 0xCC,@(r0,gbr)
+swap.w r13,r13
+extu.w r12,r9 ; r9 set to 0xF044
+mov 0xDD,r2 ; r2 set to 0xFFFFFFDD
+mov.l r13,@r2 ; r2 ??? bc r13 is ???
+mov.l r2,@r2
+mov.l r2,@r2
+mov 0x22,r13 ; r13 set to 0x22
+mov.l @(loc_8c16A890,pc),r13 ; r13 set to 0xFFFFFFFF
+mov.l @(0x34,r13),r6
+mov.l @(0x14,r13),r5
+bra loc_8c16A9CC
+mov.l r13,@r2
+#data 0x2222
+#data 0xED222222
+#data 0x56CDCC9D
+#data 0xA25555D5
+#data 0x222282D2
+#data 0xD9222222
+#data 0x5CD5CC5D
+#data 0x925556BB
+#data 0x22222287
+#data 0xD92E2222
+#data 0x5655DD56
+#data 0x6765CBED
+#data 0x222282B7
+
+#align4
+loc_8c16A554:
+#data 0xEA2E2222
+#data 0x5955D669
+#data 0xABA9EDCB
+#data 0x9278B7BB
+#data 0x692A2222
+#data 0x5655D696
+#data 0xAB56A699
+#data 0x222282B7
+#data 0x69292222
+#data 0x5565D6A6
+#data 0xA8569556
+#data 0x22222278
+#data 0x69362222
+#data 0x5566966A
+#data 0xA2569556
+#data 0x22228222
+#data 0x69122322
+#data 0x5556956A
+#data 0x229A6966
+#data 0x22222222
+#data 0x29113122
+#data 0x5655956A
+#data 0x229ABC9B
+#data 0x22222222
+#data 0x12112123
+#data 0x5655956A
+#data 0x229ABCAB
+#data 0x22222222
+#data 0x11111182
+#data 0x5655952A
+#data 0x229A99A9
+#data 0x22222222
+#data 0x21118178
+#data 0x5565AA12
+#data 0x22926655
+#data 0x22222222
+#data 0x21817877
+#data 0x96AA2312
+#data 0x22A25555
+#data 0x22222222
+#data 0x21787787
+#data 0x3A232111
+#data 0x8D98AAAA
+#data 0x22D2DDDD
+#data 0x81777798
+#data 0x23122111
+#data 0x77384333
+#data 0xDDCCCC8C
+
+#align4
+loc_8c16A614:
+#data 0x78778729
+#data 0x22121211
+#data 0x77394333
+#data 0xBCCBDC78
+#data 0x77779822
+#data 0x22232282
+#data 0x97223224
+#data 0xBBCC8D77
+#data 0x44892912
+#data 0x32128144
+#data 0x29111132
+#data 0xCC4D4484
+#data 0x4C44A812
+#data 0x211148F4
+#data 0x28111121
+#data 0xDC44CF44
+#data 0xF44F9711
+#data 0x1281F44F
+#data 0x97111112
+#data 0x4D4FF44F
+#data 0xF44F9711
+#data 0x1281F44F
+#data 0x97111112
+#data 0x4D4FF44F
+#data 0x4F44A711
+#data 0x778744F4
+#data 0xA8777777
+#data 0x4AF44F74
+
+#align4
+loc_8c16A684:
+#data 0x7A777777
+#data 0x000000AA
+#data 0x4444D4DD
+#data 0x44444444
+#data 0xAA777777
+#data 0x0D000000
+#data 0x444444D4
+#data 0x44444444
+#data 0x007A7777
+#data 0xDD000000
+#data 0x44444444
+#data 0x44444444
+#data 0x00A07777
+#data 0xD44D0000
+#data 0x44444444
+#data 0x44444444
+#data 0x7777
+
+loc_8c16A6C6:
+#data 0x00A0
+#data 0x44DD440F
+#data 0x44444444
+#data 0x44444444
+#data 0x00007A77
+#data 0x11D111F1
+#data 0x11111111
+#data 0x44444411
+#data 0x00007A77
+#data 0x4DF4
+
+loc_8c16A6EA:
+#data 0x11D1
+#data 0x44441111
+#data 0x44444444
+#data 0x00007A77
+#data 0x14114DF4
+#data 0x44444444
+#data 0x44444444
+#data 0x0000A077
+#data 0x4444DDF4
+#data 0x44444444
+#data 0x44444444
+#data 0x0000A077
+#data 0x4444D40D
+#data 0x00404444
+#data 0x00000000
+#data 0x0000007A
+#data 0x444444DD
+#data 0x00000000
+#data 0xFFFFFFFF
+#data 0x0D0000A0
+#data 0x000000D0
+#data 0xFFFFFF00
+#data 0xFFFFFFFF
+#data 0xDD0D0000
+#data 0x0F000000
+#data 0x9BAAFFFF
+#data 0xFFFFAABB
+#data 0x00DD0D00
+#data 0xFFFF0000
+#data 0x8A5AB90A
+#data 0xBD555555
+#data 0xFFFFDDDD
+#data 0xA04CF4FF
+#data 0x8A59CB43
+#data 0x5555A555
+#data 0x55B5FFAA
+#data 0xC0BC44BF
+#data 0x9955CB4B
+#data 0x5555A999
+#data 0x55555555
+#data 0x88C8F9B9
+#data 0x55556CC6
+#data 0x5500005B
+#data 0x55555555
+#data 0x88887997
+#data 0x55558888
+#data 0x05440455
+#data 0x5B75B775
+#data 0x88BC7777
+#data 0x55B58888
+#data 0x40110155
+#data 0x77775577
+#data 0x9CAB7777
+#data 0x55958B88
+#data 0x14555555
+#data 0x77775775
+#data 0x882AE3EE
+#data 0x2EB2998C
+#data 0x24045B55
+#data 0x73777777
+#data 0xBB32EE00
+#data 0xEEEEBE99
+#data 0x2020EEEE
+#data 0x73777777
+#data 0x2A332E00
+#data 0xEEEE3E9C
+
+#align4
+loc_8c16A7F0:
+#data 0x4020EEEE
+#data 0x30000077
+#data 0x29E30E00
+#data 0x3E22E2BC
+#data 0x0410EEEE
+#data 0x00230070
+#data 0xB8E30100
+#data 0x2122E2B8
+#data 0x4140EEEE
+#data 0x44344370
+#data 0xC8EBF102
+#data 0x10EE2EC8
+#data 0x1104EE1E
+#data 0x40440070
+#data 0x88EB242E
+
+#align4
+loc_8c16A82C:
+#data 0x01EEEECC
+#data 0x1121EE14
+#data 0x42440070
+
+#align4
+loc_8c16A838:
+#data 0x8c1C2EEE
+#data 0x14E42EE3
+#data 0x11313E00
+#data 0x4344007F
+#data 0xCE1C2EEE
+#data 0x40342EEE
+#data 0x14E11E04
+#data 0x4E440074
+#data 0xEE4BE311
+#data 0x0444EEE3
+#data 0x40E44444
+
+#align4
+loc_8c16A864:
+#data 0x0E44F044
+#data 0xE29EE21E
+#data 0x4400E222
+#data 0xFF434444
+#data 0x02444F44
+#data 0xE2EEE4E1
+#data 0x444424EE
+#data 0x11FF0044
+
+#align4
+loc_8c16A884:
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+
+#align4
+loc_8c16A890:
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+
+#align4
+loc_8c16A8B4:
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0x44FFFFFF
+#data 0xFFFF4444
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0x4444FFFF
+#data 0xFF444444
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0x23553222
+#data 0x4F444444
+#data 0xFFFFFFFF
+#data 0xF2FFFFFF
+#data 0x52225552
+#data 0x34444433
+#data 0xFFFFFFFF
+#data 0x35FFFFFF
+#data 0x23225553
+#data 0x33335335
+#data 0xFFFFFF4F
+#data 0x32FFFFFF
+#data 0x55553234
+#data 0x33335522
+#data 0xFFFFFF4F
+#data 0x23F3FFFF
+#data 0x25334444
+#data 0x34532255
+#data 0xFFFFFF44
+#data 0x34F3FFFF
+#data 0x43134244
+#data 0x44225325
+#data 0xFFFFFF44
+#data 0x33F3FFFF
+#data 0x34112144
+#data 0x34325543
+#data 0xFFFFFF44
+#data 0x32F3FFFF
+#data 0x24111142
+#data 0x34233544
+#data 0xFFFF4F44
+#data 0x31FFFFFF
+#data 0x12111121
+#data 0x13244344
+#data 0xFFFF4F44
+#data 0x31FFFFFF
+#data 0x11121111
+#data 0x31314423
+#data 0xFFFF4444
+#data 0x31FFFFFF
+#data 0x1111
+
+loc_8c16A9AA:
+#data 0x1131
+#data 0x41423412
+#data 0xFFDFDD4D
+#data 0x42FFFFFF
+#data 0x11211D11
+#data 0x13442411
+#data 0xFFFFFF4D
+#data 0xF4FFFFFF
+#data 0x42DD3D21
+
+#align4
+loc_8c16A9CC:
+#data 0x34422411
+#data 0xFFFFFF4D
+#data 0xFDFFFFFF
+#data 0x61DD2331
+#data 0xD44D4311
+#data 0xFFFFFF4D
+#data 0xF4FFFFFF
+#data 0x21431132
+#data 0xCD4D3314
+#data 0xFFFFABDA
+#data 0x44FFFFFF
+#data 0x21111121
+#data 0xBA1D4444
+#data 0xFFFFBFDA
+#data 0xFDFFFFFF
+#data 0x31122143
+#data 0xBA134112
+#data 0xFFFFFFAB
+#data 0xFFFFFFFF
+#data 0x1143DD43
+#data 0xBA351123
+#data 0xFFCFBBBC
+#data 0xFFFFFFFF
+#data 0x231132A4
+#data 0xBA252332
+#data 0xFFACAACA
+#data 0xFBFFFFFF
+#data 0x443344AA
+#data 0x7A232533
+#data 0xCFABAACB
+#data 0xBAFFFFFF
+#data 0x32ABAAAA
+#data 0x7B375552
+#data 0xABACBBCB
+#data 0xFFFFFFFF
+#data 0xB3AACBCC
+#data 0x3B553332
+#data 0xAABCBBCA
+#data 0xFBFFFFFF
+#data 0xA7BBAABB
+#data 0x53255225
+#data 0xAACBABCA
+#data 0xBAFFFFFF
+#data 0xB2AABAAA
+#data 0x55355555
+#data 0xAADBAA3A
+
+
+loc_8c16AA84:
+    #data 0xdded 0xdddd 0xdddd
+    #data 0xdddd 0xdddd 0xdddd
+    #data 0xdddd 0xdcdd 0x88c8
+    #data 0x8988 0x9a99 0xaaaa
+    #data 0xaaaa
+
+#data 0x99A9
+#data 0x8B888999
+#data 0x998988C8
+#data 0x4496AAA9
+#data 0x99462221
+#data 0x8B889899
+#data 0x999988C8
+#data 0x111194AA
+#data 0x16111111
+#data 0x8B989999
+#data 0xAA9989C8
+#data 0x651211A6
+#data 0x11627577
+#data 0x8B999928
+#data 0xAA9A99C8
+#data 0xFF7F1441
+#data 0x52FEFFFF
+#data 0x8B998A11
+#data 0xA4AA99C9
+#data 0xFFFF6F11
+#data 0xFDFFFFFF
+#data 0x9B991641
+#data 0x61AA99C9
+#data 0xFFFFFF17
+#data 0xFFFF7E75
+#data 0x9B8911E4
+#data 0x11A89AC9
+#data 0x74FFFF5F
+#data 0xFF7F1211
+#data 0x9B4A11FD
+#data 0x14A49AC9
+#data 0x11F7FFFF
+#data 0xFF2E1124
+#data 0x9B9A12F6
+#data 0x1791AAC9
+#data 0x16D2FFFF
+#data 0xFF1751DD
+#data 0x9BBA2841
+#data 0x4F61AAC9
+#data 0x4D61FFFF
+#data 0xF61E51DD
+#data 0x9BBB5B11
+#data 0x5F41ABCA
+#data 0x5D21FFFF
+#data 0x611561DD
+#data 0xABBBCB15
+#data 0x7F21ABC9
+#data 0x7E11FEFF
+#data 0x1111D4EE
+#data 0xABBBCC5C
+#data 0xDF11ABC9
+#data 0xDE11FDFF
+#data 0x1661EDEE
+#data 0xABBBCCCC
+#data 0x7F11ABCA
+#data 0x7E11FEFF
+#data 0x6DD5EEFE
+#data 0xABBBCCDC
+#data 0x7F21BBC9
+#data 0x5E21FFFF
+#data 0xDDDDEEEE
+#data 0xABBBCCCC
+#data 0x5F41ABC9
+#data 0x4E61FFFF
+#data 0xDDDDEEEE
+#data 0xABBBCCCC
+#data 0x4F61BBC9
+#data 0xFFFF
+
+loc_8c16ABAA:
+#data 0x15D1
+#data 0x64DDEDEE
+#data 0xABBB4644
+#data 0x1791AAC9
+#data 0x11F5FFFF
+#data 0x11D5ED6D
+#data 0xABBB1411
+#data 0x14B4ABC9
+#data 0x51FFFFEF
+#data 0x6612
+
+loc_8c16ABCE:
+#data 0x1241
+#data 0xABBB1442
+#data 0x11B9AAC9
+#data 0xF7FFFF6F
+#data 0x4D111121
+#data 0xABBA14F6
+#data 0x61BBAAC9
+#data 0xFFFFFF15
+#data 0xFF6564E5
+#data 0xABBA14F6
+#data 0x333333C3
+#data 0x33333333
+#data 0x33333333
+#data 0x3B333333
+#data 0x330000C3
+#data 0x00000300
+#data 0x00300000
+#data 0x3B000000
+#data 0x030000C3
+#data 0x03000300
+#data 0x33333333
+#data 0x3B330300
+#data 0x000000C3
+#data 0x00000300
+#data 0x43440300
+#data 0x8B990300
+#data 0x000300C3
+#data 0x03000300
+#data 0x23223333
+#data 0x9B990300
+#data 0x300300C3
+#data 0x03000300
+#data 0xB33B3333
+#data 0x8B980300
+#data 0x330300C3
+#data 0x00000300
+#data 0xA33A0000
+#data 0x8B980300
+#data 0x933333C3
+#data 0x33333333
+#data 0xA33A3333
+#data 0x8B883333
+#data 0x66666686
+#data 0x66666666
+#data 0x66666666
+#data 0x65666666
+
+#align4
+loc_8c16AC84:
+#data loc_8c16A284
+
+loc_8c16AC88:
+#data loc_8c16A484
+
+loc_8c16AC8C:
+#data loc_8c16A684
+
+loc_8c16AC90:
+#data loc_8c16A884
+
+loc_8c16AC94:
+#data loc_8c16AA84
+
+loc_8c16AC98:
+#data 0x8B869697
+#data 0xB98F8A88
+#data 0x8E8D8C89
+#data 0x94939091
+#data 0x85A29295
+#data 0x84818082
+#data 0x2C29282F
+#data 0x30072A2D
+#data 0x03371E1F
+#data 0x1B381D1C
+#data 0x3231352B
+#data 0x3436332E
+#data 0x26252127
+#data 0x3A202423
+
+#align4
+loc_8c16ACD0:
+#data 0x33323130
+#data 0x37363534
+#data 0x42413938
+#data 0x46454443
+
+#align4
+loc_8c16ACE0:
+#data bank13.loc_8c13EDF4
+
+loc_8c16ACE4:
+#data bank13.loc_8c13EDF8
+
+loc_8c16ACE8:
+#data bank13.loc_8c13EDFC
+
+loc_8c16ACEC:
+#data bank13.loc_8c13EE00
+
+loc_8c16ACF0:
+#data bank13.loc_8c13EE04
+
+loc_8c16ACF4:
+#data 0xEE08
+
+loc_8c16ACF6:
+#data 0x8C13
+
+#align4
+loc_8c16ACF8:
+#data bank13.loc_8c13EE0C
+
+loc_8c16ACFC:
+#data bank13.loc_8c13EE10
+
+loc_8c16AD00:
+#data bank13.loc_8c13EE14
+
+loc_8c16AD04:
+#data bank13.loc_8c13EE18
+
+loc_8c16AD08:
+#data bank13.loc_8c13EE1C
+
+loc_8c16AD0C:
+#data bank13.loc_8c13EE20
+
+loc_8c16AD10:
+#data bank13.loc_8c13EE24
+
+loc_8c16AD14:
+#data bank13.loc_8c13EE28
+
+loc_8c16AD18:
+#data bank13.loc_8c13EE2C
+
+loc_8c16AD1C:
+#data bank13.loc_8c13EE30
+
+loc_8c16AD20:
+#data bank13.loc_8c13EE34
+
+loc_8c16AD24:
+#data bank13.loc_8c13EE38
+
+loc_8c16AD28:
+#data bank13.loc_8c13EE3C
+
+loc_8c16AD2C:
+#data bank13.loc_8c13EE40
+
+loc_8c16AD30:
+#data bank13.loc_8c13EE44
+
+loc_8c16AD34:
+#data bank13.loc_8c13EE48
+
+loc_8c16AD38:
+#data bank13.loc_8c13EE4C
+
+loc_8c16AD3C:
+#data bank13.loc_8c13EE50
+
+loc_8c16AD40:
+#data bank13.loc_8c13EE54
+
+loc_8c16AD44:
+#data bank13.loc_8c13EE58
+
+loc_8c16AD48:
+#data bank13.loc_8c13EE5C
+
+loc_8c16AD4C:
+#data bank13.loc_8c13EE60
+
+loc_8c16AD50:
+#data bank13.loc_8c13EE64
+
+loc_8c16AD54:
+#data bank13.loc_8c13EE68
+
+loc_8c16AD58:
+#data bank13.loc_8c13EE6C
+
+loc_8c16AD5C:
+#data bank13.loc_8c13EE70
+
+loc_8c16AD60:
+#data bank13.loc_8c13EE74
+
+loc_8c16AD64:
+#data bank13.loc_8c13EE78
+
+loc_8c16AD68:
+#data bank13.loc_8c13EE7C
+
+loc_8c16AD6C:
+#data bank13.loc_8c13EE80
+
+loc_8c16AD70:
+#data bank13.loc_8c13EE84
+
+loc_8c16AD74:
+#data bank13.loc_8c13EE88
+
+loc_8c16AD78:
+#data bank13.loc_8c13EE8C
+
+loc_8c16AD7C:
+#data bank13.loc_8c13EE90
+
+loc_8c16AD80:
+#data bank13.loc_8c13EE94
+
+loc_8c16AD84:
+#data bank13.loc_8c13EE98
+
+loc_8c16AD88:
+#data bank13.loc_8c13EE9C
+
+loc_8c16AD8C:
+#data bank13.loc_8c13EEA0
+
+loc_8c16AD90:
+#data bank13.loc_8c13EEA4
+
+loc_8c16AD94:
+#data bank13.loc_8c13EEA8
+
+loc_8c16AD98:
+#data 0x504E493C
+#data 0x54205455
+#data 0x3D455059
+#data 0x64696822
+#data 0x226E6564
+#data 0x4D414E20
+#data 0x00223D45
+
+#align4
+loc_8c16ADB4:
+#data 0x000A3E22
+
+#align4
+loc_8c16ADB8:
+#data 0x4D54483C
+#data 0x483C3E4C
+#data 0x4145
+
+loc_8c16ADC2:
+#data 0x3E44
+#data 0x000A
+
+loc_8c16ADC6:
+#data 0x543C
+#data 0x454C5449
+#data 0x8374833E
+#data 0x835B8148
+#data 0x97FC9380
+#data 0x542F3CCD
+#data 0x454C5449
+#data 0x3E 0x0A
+#data 0x00
+loc_8C16ADE3:
+#data 0x3C
+#data 0x4145482F
+#data 0x000A3E44
+
+#align4
+loc_8c16ADEC:
+#data 0x444F423C
+#data 0x47422059
+#data 0x4F4C4F43
+#data 0x23223D52
+
+#align4
+loc_8c16ADFC:
+#data 0x33363130
+
+#align4
+loc_8c16AE00:
+#data 0x20223939
+
+#align4
+loc_8c16AE04:
+#data 0x54584554
+
+#align4
+loc_8c16AE08:
+#data 0x4623223D
+#data 0x46464646
+#data 0x42202246
+#data 0x474B4341
+#data 0x4E554F52
+#data 0x66223D44
+#data 0x3A656C69
+#data 0x7770642F
+#data 0x682F7777
+#data 0x656B6961
+#data 0x672E3369
+#data 0x3E226669
+#data 0x000A
+
+loc_8c16AE3A:
+#data 0x433C
+
+#align4
+loc_8c16AE3C:
+#data 0x45544E45
+#data 0x000A3E52
+
+#align4
+loc_8c16AE44:
+#data 0x4241543C
+#data 0x4220454C
+#data 0x4544524F
+#data 0x20303D52
+#data 0x54444957
+#data 0x20313D48
+#data 0x4C4C4543
+#data 0x43415053
+#data 0x3D474E49
+#data 0x20223022
+#data 0x4C4C4543
+#data 0x44444150
+#data 0x3D474E49
+#data 0x3E223022
+#data 0x3E52543C
+#data 0x2044543C
+#data 0x47494548
+#data 0x223D5448
+#data 0x3C3E2234
+#data 0x3E44542F
+#data 0x52542F3C
+#data 0x542F3C3E
+#data 0x454C4241
+#data 0x3E 0x0A
+#data 0x00
+loc_8C16AEA3:
+#data 0x3C
+#data 0x20474D49
+#data 0x54444957
+#data 0x33223D48
+#data 0x20223237
+#data 0x47494548
+#data 0x223D5448
+#data 0x20223034
+#data 0x3D435253
+#data 0x6C696622
+#data 0x642F3A65
+#data 0x77777770
+#data 0x6B5F732F
+#data 0x6F6D756F
+#data 0x2E38756B
+#data 0x22666967
+#data 0x544C4120
+#data 0x5883223D
+#data 0x41835283
+#data 0x93838983
+#data 0x66834E83
+#data 0x5E835B81
+#data 0x6F93CC82
+#data 0x3E225E98
+#data 0x3E52423C
+#data 0x3E52423C
+#data 0x000A
+
+loc_8c16AF0A:
+#data 0x463C
+#data 0x204D524F
+#data 0x49544341
+#data 0x223D4E4F
+#data 0x70747468
+#data 0x772F2F3A
+#data 0x2E327777
+#data 0x63706163
+#data 0x632E6D6F
+#data 0x706A2E6F
+#data 0x73766D2F
+#data 0x752F3263
+#data 0x616F6C70
+#data 0x65722F64
+#data 0x74736967
+#data 0x7068702E
+#data 0x4D202233
+#data 0x4F485445
+#data 0x50223D44
+#data 0x2254534F
+#data 0x3E 0x0A
+#data 0x00
+loc_8C16AF5B:
+#data 0x83
+#data 0x835B8166
+#data 0x93F0825E
+#data 0x8CCD97FC
+#data 0x909791E3
+#data 0x837B834D
+#data 0x8293835E
+#data 0x829F89F0
+#data 0x89C482B5
+#data 0x82B382BA
+#data 0x0A4281A2
+#data 0x00
+loc_8C16AF85:
+#data 0x3C
+#data 0x4154
+#data 0x20454C42
+#data 0x44524F42
+#data 0x303D5245
+#data 0x4C454320
+#data 0x4150534C
+#data 0x474E4943
+#data 0x2232223D
+#data 0x4C454320
+#data 0x4441504C
+#data 0x474E4944
+#data 0x2231223D
+#data 0x52543C3E
+#data 0x4C415620
+#data 0x3D4E4749
+#data 0x3E706F74
+#data 0x2044543C
+#data 0x47494C41
+#data 0x69723D4E
+#data 0x3E746867
+#data 0x5E986F93
+#data 0x4681BC96
+#data 0x44542F3C
+#data 0x3E 0x0A
+#data 0x00
+loc_8C16AFE3:
+#data 0x3C
+#data 0x43204454
+#data 0x50534C4F
+#data 0x333D4E41
+#data 0x4E493C3E
+#data 0x20545550
+#data 0x454D414E
+#data 0x4F46223D
+#data 0x30304D52
+#data 0x59542022
+#data 0x543D4550
+#data 0x20747865
+#data 0x455A4953
+#data 0x3631223D
+#data 0x414D2022
+#data 0x4E454C58
+#data 0x3D485447
+#data 0x22363122
+#data 0x52423C3E
+#data 0x4F463C3E
+#data 0x5320544E
+#data 0x3D455A49
+#data 0x4F432031
+#data 0x3D524F4C
+#data 0x46462322
+#data 0x30304646
+#data 0xA6813E22
+#data 0x708ABC94
+#data 0xB6953631
+#data 0x91289A8E
+#data 0x38708A53
+
+#align4
+loc_8c16B05C:
+#data 0x9A8EB695
+#data 0x82DC8229
+#data 0x97FC93C5
+#data 0x82C582CD
+#data 0x82DC82AB
+#data 0x3C4281B7
+#data 0x4E4F462F
+#data 0x2F3C3E54
+#data 0x0A3E4454
+#data 0x00
+loc_8C16B081:
+#data 0x3C
+#data 0x542F
+#data 0x000A3E52
+
+#align4
+loc_8c16B088:
+#data 0x2052543C
+#data 0x494C4156
+#data 0x543D4E47
+#data 0x3C3E706F
+#data 0x41204454
+#data 0x4E47494C
+#data 0x6769723D
+#data 0x6E207468
+#data 0x6172776F
+#data 0x4E943E70
+#data 0xDF974081
+#data 0x2F3C4681
+#data 0x0A3E4454
+#data 0x00
+loc_8C16B0BD:
+#data 0x3C
+#data 0x4454
+#data 0x45533C3E
+#data 0x5443454C
+#data 0x4D414E20
+#data 0x46223D45
+#data 0x304D524F
+#data 0x53202231
+#data 0x3D455A49
+#data 0x000A3E31
+
+#align4
+loc_8c16B0E0:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x30223D45
+#data 0x2D2D3E22
+#data 0xF0914991
+#data 0x000A2D2D
+
+#align4
+loc_8c16B0FC:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x31223D45
+#data 0x30313E22
+#data 0xA296CE8D
+#data 0x000A9E96
+
+#align4
+loc_8c16B118:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x32223D45
+#data 0x30313E22
+#data 0x34316081
+#data 0x000ACE8D
+
+#align4
+loc_8c16B134:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x33223D45
+#data 0x35313E22
+#data 0x39316081
+#data 0x000ACE8D
+
+#align4
+loc_8c16B150:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x34223D45
+#data 0x30323E22
+#data 0x34326081
+#data 0x000ACE8D
+
+#align4
+loc_8c16B16C:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x35223D45
+#data 0x35323E22
+#data 0x39326081
+#data 0x000ACE8D
+
+#align4
+loc_8c16B188:
+#data 0x54504F3C
+#data 0x204E4F49
+
+#align4
+loc_8c16B190:
+#data 0x554C4156
+#data 0x36223D45
+#data 0x30333E22
+#data 0x39336081
+#data 0x000ACE8D
+
+#align4
+loc_8c16B1A4:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x37223D45
+#data 0x30343E22
+#data 0x39346081
+#data 0x000ACE8D
+
+#align4
+loc_8c16B1C0:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x38223D45
+#data 0x30353E22
+#data 0x39356081
+#data 0x000ACE8D
+
+#align4
+loc_8c16B1DC:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x39223D45
+#data 0x30363E22
+#data 0xC888CE8D
+#data 0x000AE38F
+
+#align4
+loc_8c16B1F8:
+#data 0x45532F3C
+#data 0x5443454C
+#data 0x542F3C3E
+#data 0x000A3E44
+
+#align4
+loc_8c16B208:
+#data 0x2044543C
+#data 0x47494C41
+#data 0x69723D4E
+#data 0x20746867
+#data 0x72776F6E
+#data 0x903E7061
+#data 0x954081AB
+#data 0x3C4681CA
+#data 0x3E44542F
+#data 0x3E44543C
+#data 0x4C45533C
+#data 0x20544345
+#data 0x454D414E
+#data 0x4F46223D
+#data 0x32304D52
+#data 0x49532022
+#data 0x313D455A
+#data 0x3E 0x0A
+#data 0x00
+loc_8C16B24F:
+#data 0x3C
+#data 0x4954504F
+#data 0x56204E4F
+#data 0x45554C41
+#data 0x2230223D
+#data 0x912D2D3E
+#data 0x2DF09149
+#data 0x2D 0x0A
+#data 0x00
+loc_8C16B26B:
+#data 0x3C
+#data 0x4954504F
+#data 0x56204E4F
+#data 0x45554C41
+#data 0x2231223D
+#data 0x0A6A923E
+#data 0x00
+loc_8C16B281:
+#data 0x3C
+#data 0x504F
+#data 0x4E4F4954
+#data 0x4C415620
+#data 0x223D4555
+#data 0x8F3E2232
+#data 0x97 0x0A
+#data 0x00
+loc_8C16B297:
+#data 0x3C
+#data 0x4C45532F
+#data 0x3E544345
+#data 0x000A
+
+loc_8c16B2A2:
+#data 0x2F3C
+#data 0x3C3E4454
+#data 0x3E52542F
+#data 0x000A
+
+loc_8c16B2AE:
+#data 0x543C
+#data 0x41562052
+#data 0x4E47494C
+#data 0x706F543D
+#data 0x44543C3E
+#data 0x494C4120
+#data 0x723D4E47
+#data 0x74686769
+#data 0x776F6E20
+#data 0x3E706172
+#data 0xDD8D8A8F
+#data 0x46816E92
+#data 0x44542F3C
+#data 0x3E 0x0A
+#data 0x00
+loc_8C16B2E3:
+#data 0x3C
+#data 0x43204454
+#data 0x50534C4F
+#data 0x333D4E41
+#data 0x45533C3E
+#data 0x5443454C
+#data 0x4D414E20
+#data 0x46223D45
+#data 0x304D524F
+#data 0x53202233
+#data 0x3D455A49
+#data 0x3E223122
+#data 0x000A
+
+loc_8c16B312:
+#data 0x4F3C
+#data 0x4F495450
+#data 0x4156204E
+#data 0x3D45554C
+#data 0x3E223022
+#data 0x49912D2D
+#data 0x2D2DF091
+#data 0x000A
+
+loc_8c16B32E:
+#data 0x4F3C
+#data 0x4F495450
+#data 0x4156204E
+#data 0x3D45554C
+#data 0x3E223122
+#data 0x438A6B96
+#data 0x000AB993
+
+#align4
+loc_8c16B348:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x32223D45
+#data 0xC2903E22
+#data 0xA78C5890
+#data 0x000A
+
+loc_8c16B362:
+#data 0x4F3C
+#data 0x4F495450
+#data 0x4156204E
+#data 0x3D45554C
+#data 0x3E223322
+#data 0xE88EE28A
+#data 0x000AA78C
+
+#align4
+loc_8c16B37C:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x34223D45
+#data 0x7B8B3E22
+#data 0xA78CE98F
+#data 0x000A
+
+loc_8c16B396:
+#data 0x4F3C
+#data 0x4F495450
+#data 0x4156204E
+#data 0x3D45554C
+#data 0x3E223522
+#data 0x6393488F
+#data 0x000AA78C
+
+#align4
+loc_8c16B3B0:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x36223D45
+#data 0x528E3E22
+#data 0xA78C608C
+#data 0x000A
+
+loc_8c16B3CA:
+#data 0x4F3C
+#data 0x4F495450
+#data 0x4156204E
+#data 0x3D45554C
+#data 0x3E223722
+#data 0x87939F95
+#data 0x000AA78C
+
+#align4
+loc_8c16B3E4:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x38223D45
+#data 0xEF883E22
+#data 0xA78CE98F
+#data 0x000A
+
+loc_8c16B3FE:
+#data 0x4F3C
+#data 0x4F495450
+#data 0x4156204E
+#data 0x3D45554C
+#data 0x3E223922
+#data 0xD896C893
+#data 0x000AA78C
+
+#align4
+loc_8c16B418:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x31223D45
+#data 0x8C3E2230
+#data 0x8C6E9451
+#data 0xA7 0x0A
+#data 0x00
+loc_8C16B433:
+#data 0x3C
+#data 0x4954504F
+#data 0x56204E4F
+#data 0x45554C41
+#data 0x3131223D
+#data 0xE98D3E22
+#data 0xA78CCA8B
+#data 0x000A
+
+loc_8c16B44E:
+#data 0x4F3C
+#data 0x4F495450
+#data 0x4156204E
+#data 0x3D45554C
+#data 0x22323122
+#data 0x97E7903E
+#data 0x0AA78C74
+#data 0x00
+loc_8C16B469:
+#data 0x3C
+#data 0x504F
+#data 0x4E4F4954
+#data 0x4C415620
+#data 0x223D4555
+#data 0x3E223331
+#data 0x9E8B8C93
+#data 0x000A7393
+
+#align4
+loc_8c16B484:
+#data 0x54504F3C
+
+#align4
+loc_8c16B488:
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x31223D45
+#data 0x903E2234
+#data 0x90DE935F
+#data 0x0AA78CEC
+#data 0x00
+loc_8C16B4A1:
+#data 0x3C
+#data 0x504F
+#data 0x4E4F4954
+#data 0x4C415620
+#data 0x223D4555
+#data 0x3E223531
+#data 0x9C97528E
+#data 0x000AA78C
+
+#align4
+loc_8c16B4BC:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x31223D45
+#data 0x923E2236
+#data 0x8CEC96B7
+#data 0xA7 0x0A
+#data 0x00
+loc_8C16B4D7:
+#data 0x3C
+#data 0x4954504F
+#data 0x56204E4F
+#data 0x45554C41
+#data 0x3731223D
+#data 0x56903E22
+#data 0xA78C838A
+#data 0x000A
+
+loc_8c16B4F2:
+#data 0x4F3C
+#data 0x4F495450
+#data 0x4156204E
+#data 0x3D45554C
+#data 0x22383122
+#data 0x8E78953E
+#data 0x0AA78C52
+#data 0x00
+loc_8C16B50D:
+#data 0x3C
+#data 0x504F
+#data 0x4E4F4954
+#data 0x4C415620
+#data 0x223D4555
+#data 0x3E223931
+#data 0xEC90CE90
+#data 0x000AA78C
+
+#align4
+loc_8c16B528:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x32223D45
+#data 0x953E2230
+#data 0x8CE4889F
+#data 0xA7 0x0A
+#data 0x00
+loc_8C16B543:
+#data 0x3C
+#data 0x4954504F
+#data 0x56204E4F
+#data 0x45554C41
+#data 0x3132223D
+#data 0xF28A3E22
+#data 0xA78C8C95
+#data 0x000A
+
+loc_8c16B55E:
+#data 0x4F3C
+#data 0x4F495450
+#data 0x4156204E
+#data 0x3D45554C
+#data 0x22323222
+#data 0x89C3903E
+#data 0x0AA78CAA
+#data 0x00
+loc_8C16B579:
+#data 0x3C
+#data 0x504F
+#data 0x4E4F4954
+#data 0x4C415620
+#data 0x223D4555
+#data 0x3E223332
+#data 0x6D92A488
+#data 0x000AA78C
+
+#align4
+loc_8c16B594:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x32223D45
+#data 0x8E3E2234
+#data 0x8C648F4F
+#data 0xA7 0x0A
+#data 0x00
+loc_8C16B5AF:
+#data 0x3C
+#data 0x4954504F
+#data 0x56204E4F
+#data 0x45554C41
+#data 0x3532223D
+#data 0xA08E3E22
+#data 0xA78CEA89
+#data 0x000A
+
+loc_8c16B5CA:
+#data 0x4F3C
+#data 0x4F495450
+#data 0x4156204E
+#data 0x3D45554C
+#data 0x22363222
+#data 0x939E8B3E
+#data 0x0A7B9573
+#data 0x00
+loc_8C16B5E5:
+#data 0x3C
+#data 0x504F
+#data 0x4E4F4954
+#data 0x4C415620
+#data 0x223D4555
+#data 0x3E223732
+#data 0xE38DE591
+#data 0x000A7B95
+
+#align4
+loc_8c16B600:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x32223D45
+#data 0x953E2238
+#data 0x8CC98CBA
+#data 0xA7 0x0A
+#data 0x00
+loc_8C16B61B:
+#data 0x3C
+#data 0x4954504F
+#data 0x56204E4F
+#data 0x45554C41
+#data 0x3932223D
+#data 0xDE933E22
+#data 0xA78CC797
+#data 0x000A
+
+loc_8c16B636:
+#data 0x4F3C
+#data 0x4F495450
+#data 0x4156204E
+#data 0x3D45554C
+#data 0x22303322
+#data 0x8961983E
+#data 0x8C528ECC
+#data 0xA7 0x0A
+#data 0x00
+loc_8C16B653:
+#data 0x3C
+#data 0x4954504F
+#data 0x56204E4F
+#data 0x45554C41
+#data 0x3133223D
+#data 0xB9923E22
+#data 0xA78CE68E
+#data 0x000A
+
+loc_8c16B66E:
+#data 0x4F3C
+#data 0x4F495450
+#data 0x4156204E
+#data 0x3D45554C
+#data 0x22323322
+#data 0x8D87933E
+#data 0x0AA78CAA
+#data 0x00
+loc_8C16B689:
+#data 0x3C
+#data 0x504F
+#data 0x4E4F4954
+#data 0x4C415620
+#data 0x223D4555
+#data 0x3E223333
+#data 0x528EAA89
+#data 0x000AA78C
+
+#align4
+loc_8c16B6A4:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x33223D45
+#data 0x8D3E2234
+#data 0x8C87934C
+#data 0xA7 0x0A
+#data 0x00
+loc_8C16B6BF:
+#data 0x3C
+#data 0x4954504F
+#data 0x56204E4F
+#data 0x45554C41
+#data 0x3533223D
+#data 0x528E3E22
+#data 0xA78CFB8C
+#data 0x000A
+
+loc_8c16B6DA:
+#data 0x4F3C
+#data 0x4F495450
+#data 0x4156204E
+#data 0x3D45554C
+#data 0x22363322
+#data 0x93BF933E
+#data 0x0AA78C87
+#data 0x00
+loc_8C16B6F5:
+#data 0x3C
+#data 0x504F
+#data 0x4E4F4954
+#data 0x4C415620
+#data 0x223D4555
+#data 0x3E223733
+#data 0xEC90818D
+#data 0x000AA78C
+
+#align4
+loc_8c16B710:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x33223D45
+#data 0x883E2238
+#data 0x8C5195A4
+#data 0xA7 0x0A
+#data 0x00
+loc_8C16B72B:
+#data 0x3C
+#data 0x4954504F
+#data 0x56204E4F
+#data 0x45554C41
+#data 0x3933223D
+#data 0x828D3E22
+#data 0xA78C6D92
+#data 0x000A
+
+loc_8c16B746:
+#data 0x4F3C
+#data 0x4F495450
+#data 0x4156204E
+#data 0x3D45554C
+#data 0x22303422
+#data 0x899F953E
+#data 0x0AA78CAA
+#data 0x00
+loc_8C16B761:
+#data 0x3C
+#data 0x504F
+#data 0x4E4F4954
+#data 0x4C415620
+#data 0x223D4555
+#data 0x3E223134
+#data 0xEA89B28D
+#data 0x000AA78C
+
+#align4
+loc_8c16B77C:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x34223D45
+#data 0x923E2232
+#data 0x8CE88DB7
+#data 0xA7 0x0A
+#data 0x00
+loc_8C16B797:
+#data 0x3C
+#data 0x4954504F
+#data 0x56204E4F
+#data 0x45554C41
+#data 0x3334223D
+#data 0x468C3E22
+#data 0xA78C7B96
+#data 0x000A
+
+loc_8c16B7B2:
+#data 0x4F3C
+#data 0x4F495450
+#data 0x4156204E
+#data 0x3D45554C
+#data 0x22343422
+#data 0x95E5913E
+#data 0x0AA78CAA
+#data 0x00
+loc_8C16B7CD:
+#data 0x3C
+#data 0x504F
+#data 0x4E4F4954
+#data 0x4C415620
+#data 0x223D4555
+#data 0x3E223534
+#data 0xE88D7B8B
+#data 0x000AA78C
+
+#align4
+loc_8c16B7E8:
+#data 0x54504F3C
+#data 0x204E4F49
+#data 0x554C4156
+#data 0x34223D45
+#data 0x8E3E2236
+#data 0x93998EAD
+#data 0x0AA78C87
+#data 0x00
+loc_8C16B805:
+#data 0x3C
+#data 0x504F
+#data 0x4E4F4954
+#data 0x4C415620
+#data 0x223D4555
+#data 0x3E223734
+#data 0xEA93AB89
+#data 0x000AA78C
+
+#align4
+loc_8c16B820:
+#data 0x45532F3C
+#data 0x5443454C
+#data 0x3E 0x0A
+#data 0x00
+loc_8C16B82B:
+#data 0x3C
+#data 0x3E44542F
+#data 0x52542F3C
+#data 0x3E 0x0A
+#data 0x00
+loc_8C16B837:
+#data 0x3C
+#data 0x56205254
+#data 0x47494C41
+#data 0x6F543D4E
+#data 0x543C3E70
+#data 0x4C412044
+#data 0x3D4E4749
+#data 0x68676972
+#data 0x4F4E2074
+#data 0x50415257
+#data 0x8352833E
+#data 0x83938381
+#data 0x3C468167
+#data 0x3E44542F
+#data 0x000A
+
+loc_8c16B86E:
+#data 0x543C
+#data 0x4F432044
+#data 0x4150534C
+#data 0x3E333D4E
+#data 0x504E493C
+#data 0x4E205455
+#data 0x3D454D41
+#data 0x524F4622
+#data 0x2234304D
+#data 0x5A495320
+#data 0x30343D45
+#data 0x58414D20
+#data 0x474E454C
+#data 0x223D4854
+#data 0x3E223036
+#data 0x3E52423C
+#data 0x000A
+
+loc_8c16B8AE:
+#data 0x463C
+#data 0x20544E4F
+#data 0x455A4953
+#data 0x4320313D
+#data 0x524F4C4F
+#data 0x4623223D
+#data 0x30464646
+#data 0x813E2230
+#data 0x8ABC94A6
+#data 0x95303670
+#data 0x289A8EB6
+#data 0x708A5391
+#data 0xB6953033
+#data 0x82299A8E
+#data 0x93C582DC
+#data 0x82CD97FC
+#data 0x82AB82C5
+#data 0x81B782DC
+#data 0x42 0x0A
+#data 0x00
+loc_8C16B8F7:
+#data 0x3C
+#data 0x4E4F462F
+#data 0x2F3C3E54
+#data 0x3C3E4454
+#data 0x3E52542F
+#data 0x41542F3C
+#data 0x3E454C42
+#data 0x0000000A
+
+#align4
+loc_8c16B914:
+#data loc_8c16ADB8
+
+loc_8c16B918:
+#data loc_8c16ADC6
+
+loc_8c16B91C:
+#data loc_8C16ADE3
+
+loc_8c16B920:
+#data loc_8c16ADEC
+
+loc_8c16B924:
+#data loc_8c16AE3A
+
+loc_8c16B928:
+#data loc_8c16AE44
+
+loc_8c16B92C:
+#data loc_8C16AEA3
+
+loc_8c16B930:
+#data loc_8c16AF0A
+
+loc_8c16B934:
+#data loc_8C16AF5B
+
+loc_8c16B938:
+#data loc_8C16AF85
+
+loc_8c16B93C:
+#data loc_8C16AFE3
+
+loc_8c16B940:
+#data loc_8C16B081
+
+loc_8c16B944:
+#data loc_8c16B088
+
+loc_8c16B948:
+#data loc_8C16B0BD
+
+loc_8c16B94C:
+#data loc_8c16B0E0
+
+loc_8c16B950:
+#data loc_8c16B0FC
+
+loc_8c16B954:
+#data loc_8c16B118
+
+loc_8c16B958:
+#data loc_8c16B134
+
+loc_8c16B95C:
+#data loc_8c16B150
+
+loc_8c16B960:
+#data loc_8c16B16C
+
+loc_8c16B964:
+#data loc_8c16B188
+
+loc_8c16B968:
+#data loc_8c16B1A4
+
+loc_8c16B96C:
+#data loc_8c16B1C0
+
+loc_8c16B970:
+#data loc_8c16B1DC
+
+loc_8c16B974:
+#data loc_8c16B1F8
+
+loc_8c16B978:
+#data loc_8c16B208
+
+loc_8c16B97C:
+#data loc_8C16B24F
+
+loc_8c16B980:
+#data loc_8C16B26B
+
+loc_8c16B984:
+#data loc_8C16B281
+
+loc_8c16B988:
+#data loc_8C16B297
+
+loc_8c16B98C:
+#data loc_8c16B2A2
+
+loc_8c16B990:
+#data loc_8c16B2AE
+
+loc_8c16B994:
+#data loc_8C16B2E3
+
+loc_8c16B998:
+#data loc_8c16B312
+
+loc_8c16B99C:
+#data loc_8c16B32E
+
+loc_8c16B9A0:
+#data loc_8c16B348
+
+loc_8c16B9A4:
+#data loc_8c16B362
+
+loc_8c16B9A8:
+#data loc_8c16B37C
+
+loc_8c16B9AC:
+#data loc_8c16B396
+
+loc_8c16B9B0:
+#data loc_8c16B3B0
+
+loc_8c16B9B4:
+#data loc_8c16B3CA
+
+loc_8c16B9B8:
+#data loc_8c16B3E4
+
+loc_8c16B9BC:
+#data loc_8c16B3FE
+
+loc_8c16B9C0:
+#data loc_8c16B418
+
+loc_8c16B9C4:
+#data loc_8C16B433
+
+loc_8c16B9C8:
+#data loc_8c16B44E
+
+loc_8c16B9CC:
+#data loc_8C16B469
+
+loc_8c16B9D0:
+#data loc_8c16B484
+
+loc_8c16B9D4:
+#data loc_8C16B4A1
+
+loc_8c16B9D8:
+#data loc_8c16B4BC
+
+loc_8c16B9DC:
+#data loc_8C16B4D7
+
+loc_8c16B9E0:
+#data loc_8c16B4F2
+
+loc_8c16B9E4:
+#data loc_8C16B50D
+
+loc_8c16B9E8:
+#data loc_8c16B528
+
+loc_8c16B9EC:
+#data loc_8C16B543
+
+loc_8c16B9F0:
+#data loc_8c16B55E
+
+loc_8c16B9F4:
+#data loc_8C16B579
+
+loc_8c16B9F8:
+#data loc_8c16B594
+
+loc_8c16B9FC:
+#data loc_8C16B5AF
+
+loc_8c16BA00:
+#data loc_8c16B5CA
+
+loc_8c16BA04:
+#data loc_8C16B5E5
+
+loc_8c16BA08:
+#data loc_8c16B600
+
+loc_8c16BA0C:
+#data loc_8C16B61B
+
+loc_8c16BA10:
+#data loc_8c16B636
+
+loc_8c16BA14:
+#data loc_8C16B653
+
+loc_8c16BA18:
+#data loc_8c16B66E
+
+loc_8c16BA1C:
+#data loc_8C16B689
+
+loc_8c16BA20:
+#data loc_8c16B6A4
+
+loc_8c16BA24:
+#data loc_8C16B6BF
+
+loc_8c16BA28:
+#data loc_8c16B6DA
+
+loc_8c16BA2C:
+#data loc_8C16B6F5
+
+loc_8c16BA30:
+#data loc_8c16B710
+
+loc_8c16BA34:
+#data loc_8C16B72B
+
+loc_8c16BA38:
+#data loc_8c16B746
+
+loc_8c16BA3C:
+#data loc_8C16B761
+
+loc_8c16BA40:
+#data loc_8c16B77C
+
+loc_8c16BA44:
+#data loc_8C16B797
+
+loc_8c16BA48:
+#data loc_8c16B7B2
+
+loc_8c16BA4C:
+#data loc_8C16B7CD
+
+loc_8c16BA50:
+#data loc_8c16B7E8
+
+loc_8c16BA54:
+#data loc_8C16B805
+
+loc_8c16BA58:
+#data loc_8c16B820
+
+loc_8c16BA5C:
+#data loc_8C16B82B
+
+loc_8c16BA60:
+#data loc_8C16B837
+
+loc_8c16BA64:
+#data loc_8c16B86E
+
+loc_8c16BA68:
+#data loc_8c16B8AE
+
+loc_8c16BA6C:
+#data loc_8C16B8F7
+
+loc_8c16BA70:
+#data 0x3E52423C
+#data 0x000A
+
+loc_8c16BA76:
+#data 0x493C
+#data 0x5720474D
+#data 0x48544449
+#data 0x3833223D
+#data 0x48202239
+#data 0x48474945
+#data 0x32223D54
+#data 0x53202238
+#data 0x223D4352
+#data 0x656C6966
+#data 0x70642F3A
+#data 0x2F777777
+#data 0x6F6B5F73
+#data 0x6B6F6D75
+#data 0x2E313175
+#data 0x22666967
+#data 0x544C4120
+#data 0x5883223D
+#data 0x41835283
+#data 0x5E834183
+#data 0x4E836283
+#data 0x93838983
+#data 0xC9824E83
+#data 0x5E986F93
+#data 0xDC82B582
+#data 0x3E22B782
+#data 0x3E52423C
+#data 0x000A
+
+loc_8c16BAE2:
+#data 0x423C
+#data 0x000A3E52
+
+#align4
+loc_8c16BAE8:
+#data 0x504E493C
+#data 0x4E205455
+#data 0x3D454D41
+#data 0x524F4622
+#data 0x2230314D
+#data 0x50595420
+#data 0x75533D45
+#data 0x74696D62
+#data 0x4C415620
+#data 0x223D4555
+#data 0x90979120
+#data 0x3E22204D
+#data 0x000A4081
+
+#align4
+loc_8c16BB1C:
+#data 0x504E493C
+#data 0x4E205455
+#data 0x3D454D41
+#data 0x524F4622
+#data 0x2239394D
+#data 0x50595420
+#data 0x65523D45
+#data 0x20746573
+#data 0x554C4156
+#data 0x20223D45
+#data 0xC982B38C
+#data 0xB782DF96
+#data 0x0A3E2220
+#data 0x00
+loc_8C16BB51:
+#data 0x3C
+#data 0x462F
+#data 0x3E4D524F
+#data 0x000A
+
+loc_8c16BB5A:
+#data 0x2F3C
+#data 0x544E4543
+#data 0x3C3E5245
+#data 0x444F422F
+#data 0x000A3E59
+
+#align4
+loc_8c16BB6C:
+#data 0x54482F3C
+#data 0x0A3E4C4D
+#data 0x00000000
+
+#align4
+loc_8c16BB78:
+#data loc_8c16BA70
+
+loc_8c16BB7C:
+#data loc_8c16BA76
+
+loc_8c16BB80:
+#data loc_8c16BAE2
+
+loc_8c16BB84:
+#data loc_8c16BAE8
+
+loc_8c16BB88:
+#data loc_8c16BB1C
+
+loc_8c16BB8C:
+#data loc_8C16BB51
+
+loc_8c16BB90:
+#data loc_8c16BB5A
+
+loc_8c16BB94:
+#data loc_8c16BB6C
+#data 0x00000020
+#data 0x00000020
+#data 0x00000020
+#data 0x00000020
+#data 0x00000020
+#data 0x00000040
+#data 0x00000040
+#data 0x00000020
+#data 0x00000020
+#data 0x00000020
+#data 0x00000020
+#data 0x00000040
+#data 0x00000040
+#data 0x00000040
+#data 0x00000040
+#data 0x00000040
+#data 0x00000040
+#data 0x00000040
+
+#align4
+loc_8c16BBE0:
+#data 0x00000000
+
+#align4
+loc_8c16BBE4:
+#data 0x00000000
+
+#align4
+loc_8c16BBE8:
+#data 0x00000000
+
+#align4
+loc_8c16BBEC:
+#data 0x00000000
+
+#align4
+loc_8c16BBF0:
+#data 0x00000000
+
+#align4
+loc_8c16BBF4:
+#data 0x00000000
+
+#align4
+loc_8c16BBF8:
+#data 0xFF000000
+#data 0xFF000000
+#data 0xFF000000
+
+#align4
+loc_8c16BC04:
+#data 0x00000000
+
+#align4
+loc_8c16BC08:
+#data 0x00000000
+
+#align4
+loc_8c16BC0C:
+#data 0x00000000
+
+#align4
+loc_8c16BC10:
+#data 0x3DA3D70A
+#data 0x3EA3D70A
+#data 0x3FA3D70A
+#data 0x40A3D70A
+#data 0x41A3D70A
+
+#align4
+loc_8c16BC24:
+#data 0xFFFFFFFF
+
+#align4
+loc_8c16BC28:
+#data 0x00000000
+
+#align4
+loc_8c16BC2C:
+#data 0x00000001
+
+#align4
+loc_8c16BC30:
+#data 0x00000000
+
+#align4
+loc_8c16BC34:
+#data 0x4479FFFF
+
+#align4
+loc_8c16BC38:
+#data bank13.loc_8c13F780
+
+loc_8c16BC3C:
+#data 0x00000000
+
+#align4
+loc_8c16BC40:
+#data 0x00000000
+
+#align4
+loc_8c16BC44:
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000000
+#data 0x37800000
+#data 0xFF0F0F0F
+#data 0x4F800000
+#data 0x3F800000
+#data 0x47800000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c16BCF4:
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+
+#align4
+loc_8c16BD00:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+
+#align4
+loc_8c16BD50:
+#data 0x44200000
+
+#align4
+loc_8c16BD54:
+#data 0x44200000
+
+#align4
+loc_8c16BD58:
+#data 0x44200000
+
+#align4
+loc_8c16BD5C:
+#data 0xFFFFFFFF
+
+#align4
+loc_8c16BD60:
+#data 0xFFFFFFFF
+
+#align4
+loc_8c16BD64:
+#data 0xFFFFFFFF
+
+#align4
+loc_8c16BD68:
+#data 0xFFFFFFFF
+
+#align4
+loc_8c16BD6C:
+#data 0xFFFFFFFF
+
+#align4
+loc_8c16BD70:
+#data 0xFFFFFFFF
+
+#align4
+loc_8c16BD74:
+#data 0xFFFFFFFF
+
+#align4
+loc_8c16BD78:
+#data 0xFFFFFFFF
+
+#align4
+loc_8c16BD7C:
+#data 0x00000000
+
+#align4
+loc_8c16BD80:
+#data 0x00000000
+
+#align4
+loc_8c16BD84:
+#data 0x00000000
+
+loc_8c16BD88:
+#data 0x0000
+
+loc_8c16BD8A:
+#data 0x4420
+
+#align4
+loc_8c16BD8C:
+#data 0x43F00000
+
+#align4
+loc_8c16BD90:
+#data 0x00000000
+
+#align4
+loc_8c16BD94:
+#data 0x00000000
+
+#align4
+loc_8c16BD98:
+#data 0x00000000
+
+#align4
+loc_8c16BD9C:
+#data bank12.loc_8c1229D0
+
+loc_8c16BDA0:
+#data bank12.loc_8c1229E0
+
+loc_8c16BDA4:
+#data bank12.loc_8c1229F0
+
+loc_8c16BDA8:
+#data bank12.loc_8c122A40
+
+loc_8c16BDAC:
+#data bank12.loc_8c122A50
+
+loc_8c16BDB0:
+#data bank12.loc_8c122A60
+
+loc_8c16BDB4:
+#data bank12.loc_8c122A60
+
+loc_8c16BDB8:
+#data bank12.loc_8c122A60
+
+loc_8c16BDBC:
+#data bank12.loc_8c122A60
+
+loc_8c16BDC0:
+#data bank12.loc_8c122A60
+
+loc_8c16BDC4:
+#data bank12.loc_8c122A60
+
+loc_8c16BDC8:
+#data bank12.loc_8c122A60
+
+loc_8c16BDCC:
+#data bank12.loc_8c122A80
+
+loc_8c16BDD0:
+#data bank12.loc_8c122B50
+
+loc_8c16BDD4:
+#data bank12.loc_8c122B50
+
+loc_8c16BDD8:
+#data bank12.loc_8c122B50
+
+loc_8c16BDDC:
+#data bank12.loc_8c122B60
+
+loc_8c16BDE0:
+#data bank12.loc_8c122B50
+
+loc_8c16BDE4:
+#data bank12.loc_8c122B70
+
+loc_8c16BDE8:
+#data 0x000F0008
+#data 0xF0000C08
+#data 0x0F000808
+#data 0xF0000C00
+#data 0x0F000800
+#data 0x00F00400
+#data 0x000F0000
+#data 0x00F00404
+#data 0x00F00408
+#data 0xF0000C04
+#data 0x0F000804
+#data 0x00000000
+
+#align4
+loc_8c16BE18:
+#data 0x3E99999A
+#data 0x00000000
+
+#align4
+loc_8c16BE20:
+#data 0x3F800000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+
+#align4
+loc_8c16BE30:
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000000
+
+#align4
+loc_8c16BE40:
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000000
+
+#align4
+loc_8c16BE50:
+#data 0x3F800000
+
+#align4
+loc_8c16BE54:
+#data 0x3F800000
+
+#align4
+loc_8c16BE58:
+#data 0x3F800000
+#data 0x00000000
+
+#align4
+loc_8c16BE60:
+#data 0x3F800000
+#data 0x3F800000
+#data 0x3F800000
+#data 0x00000000
+
+#align4
+loc_8c16BE70:
+#data 0x3F800000
+#data 0xC0000000
+
+#align4
+loc_8c16BE78:
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c16BE80:
+#data 0x42800000
+
+#align4
+loc_8c16BE84:
+#data 0x3F800000
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+
+#align4
+loc_8c16BE98:
+#data 0x44424000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x44424000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x3F800000
+#data 0x00000000
+
+#align4
+loc_8c16BED8:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000001
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c16BEEC:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000001
+#data 0x00000000
+#data 0x00000000
+
+#align4
+loc_8c16BF00:
+#data 0x00000002
+#data 0x00000000
+#data 0x00000001
+#data 0x00000001
+#data 0x00000000
+
+#align4
+loc_8c16BF14:
+#data 0x00000002
+#data 0x00000000
+#data 0x00000001
+#data 0x00000001
+#data 0x00000000
+
+#align4
+loc_8c16BF28:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000003
+#data 0x00000001
+#data 0x00000000
+
+#align4
+loc_8c16BF3C:
+#data 0x00000002
+#data 0x00000000
+#data 0x00000003
+#data 0x00000001
+#data 0x00000000
+
+#align4
+loc_8c16BF50:
+#data 0x00000000
+#data 0x00000000
+#data 0x00000003
+#data 0x00000001
+#data 0x00000001
+
+#align4
+loc_8c16BF64:
+#data 0x00000002
+#data 0x00000000
+#data 0x00000003
+#data 0x00000001
+#data 0x00000001
+
+#align4
+loc_8c16BF78:
+#data 0x00000000
+
+#align4
+loc_8c16BF7C:
+#data 0x00000000
+
+#align4
+loc_8c16BF80:
+#data 0x00000000
+
+#align4
+loc_8c16BF84:
+#data bank13.loc_8c13F6F0
+#data 0x00000000
+#data 0x8C2DB18C
+#data 0x8C2DE3A0
+
+#align4
+loc_8c16BF94:
+#data 0x80000002
+#data 0x83000000
+
+#align4
+loc_8c16BF9C:
+#data 0x20080440
+#data 0x04000000
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFF05
+#data 0x3F800000
+
+#align4
+loc_8c16BFB4:
+#data 0x82000002
+#data 0x83000000
+
+#align4
+loc_8c16BFBC:
+#data 0x94180440
+#data 0x04000000
+#data 0xFFFFFFFF
+#data 0xFFFFFFFF
+#data 0xFFFFFF05
+#data 0x3F800000
+
+#align4
+loc_8c16BFD4:
+#data 0xFFFF00EA
+#data 0x00000064
+#data 0x00001000
+#data 0x00001400
+#data 0x00000400
+#data 0x00000000
+#data 0x00410041
+#data 0x00000048
+#data 0x00001400
+#data 0x00002335
+#data 0x00000F35
+#data 0x00000400
+#data 0x004A004A
+#data 0x000000C8
+#data 0x000031F0
+#data 0x00003B20
+#data 0x00000930
+#data 0x00001335
+#data 0x00430043
+#data 0x00000064
+#data 0x00001400
+#data 0x000031E2
+#data 0x00001DE2
+#data 0x00001C65
+#data 0xFFFF00EC
+#data 0x000000B0
+#data 0x00003F00
+#data 0x00003FD6
+#data 0x000000D6
+#data 0x00003A47
+#data 0xFFFF00EB
+#data 0x000000AB
+#data 0x00003B20
+#data 0x00003ECE
+#data 0x000003AE
+#data 0x00003B1D
+#data 0xFFFF00EE
+#data 0x00000070
+#data 0x00003FDE
+#data 0x00003FFF
+#data 0x00000021
+#data 0x00003ECB
+#data 0xFFFF00F0
+#data 0x00000074
+#data 0x00007000
+#data 0x00007013
+#data 0x0000004C
+#data 0x00003EEC
+#data 0xFFFF00F7
+#data 0x00000006
+#data 0x00007013
+#data 0x000079E2
+#data 0x0000273C
+#data 0x00003F38
+#data 0xFFFF00F2
+#data 0x00000026
+#data 0x00007AA6
+#data 0x00007BDE
+#data 0x000004E0
+#data 0x00006674
+#data 0xFFFF00F8
+#data 0x000000E2
+#data 0x000079F6
+#data 0x00007AA6
+#data 0x000002C0
+#data 0x00006B54
+#data 0xFFFF00FD
+#data 0x00000078
+#data 0x00007BDE
+#data 0x00007BEC
+#data 0x00000038
+#data 0x00006E14
+#data 0xFFFF0001
+#data 0x00000059
+#data 0x00007BF0
+#data 0x00007BFA
+#data 0x00000028
+#data 0x00006E4C
+#data 0x000000EA
+#data 0x43444546
+#data 0x00000000
+#data 0x4CD1084C
+#data 0xA24C3B20
+#data 0xD6AC4CD6
+#data 0x4C3B3C4C
+#data 0xE84C3C48
+#data 0x3C524CD9
+#data 0x4C3CB24C
+#data 0x6F4CDDF1
+#data 0xDE6F4C46
+#data 0x4CDE6F4C
+#data 0x1F4CDE70
+#data 0x3D024CE0
+#data 0x4C3D404C
+#data 0x3B4C3D77
+#data 0x3D874C4A
+#data 0x4C50DD4C
+#data 0x8C4C5207
+#data 0x52B44C52
+#data 0x4C536B4C
+#data 0x754C549C
+#data 0x55D44C55
+#data 0x4C56B64C
+#data 0x224C5775
+#data 0x59BE4C59
+#data 0x4C59F74C
+#data 0x5E4C5A2F
+#data 0xE8594C5A
+#data 0x4C3F004C
+#data 0xF04C5AB6
+#data 0x5B2D4C5A
+#data 0x4C5B464C
+#data 0x144C5C15
+#data 0x5DA94CE9
+#data 0x4C5DD54C
+#data 0xE34C5F6C
+#data 0x609D4C5F
+#data 0x4C60CE4C
+#data 0xDF4C6102
+#data 0x63CA4C62
+#data 0x4C64134C
+#data 0x004C4000
+#data 0x3DB74C40
+#data 0x4C404E4C
+#data 0x2E4C404E
+#data 0x41384C41
+#data 0x4C41DE4C
+#data 0x094C42CE
+#data 0x43484C43
+#data 0x4C43C54C
+#data 0xD94C4452
+#data 0x45B74C3D
+#data 0x4C46934C
+#data 0x224C4694
+#data 0x48BE4C48
+#data 0x4C49274C
+#data 0x8D4C49C7
+#data 0xEA904CEA
+#data 0x4CEB684C
+#data 0x754C4A20
+#data 0x4B454C4A
+#data 0x4C4CBF4C
+#data 0x7A4C4E80
+#data 0x519D4C4F
+#data 0x4C51E44C
+#data 0xEF4C5395
+#data 0x55F34C53
+#data 0x4C3DE24C
+#data 0xAB4C57E2
+#data 0x3E3E4C58
+#data 0x4C14024C
+#data 0xE94C1402
+#data 0x15374C14
+#data 0x4C156A4C
+#data 0x334C1588
+#data 0x16334C16
+#data 0x4C190D4C
+#data 0x3C4C1A2C
+#data 0x1C3C4C1C
+#data 0x4C1C3C4C
+#data 0x3C4C1C3C
+#data 0x1C3C4C1C
+#data 0x4C1C3C4C
+#data 0x3C4C1C3C
+#data 0x1C3D4C1C
+#data 0x4C1C3D4C
+#data 0xFE4C1C6F
+#data 0x3FB34C1C
+#data 0x4C1DA04C
+#data 0xB04C1DA1
+#data 0x1DB34C1D
+#data 0x4C1DC84C
+#data 0xB04C1DEF
+#data 0x5BEF4C5B
+#data 0x4C1F3B4C
+#data 0x484C5E08
+#data 0x5FAF4C5E
+#data 0x4C60814C
+#data 0x884C60DB
+#data 0x61BC4C61
+#data 0x4C61D74C
+#data 0x514C1FC1
+#data 0x20C74C63
+#data 0x4C21644C
+#data 0x244C216A
+#data 0x237E4C67
+#data 0x4C246A4C
+#data 0xC34C6B84
+#data 0x6D454C6B
+#data 0x4C6D654C
+#data 0x084C6D85
+#data 0x6E9D4C6E
+#data 0x4C6F234C
+#data 0x574C704D
+#data 0x70EC4C70
+#data 0x4C24AE4C
+#data 0xC14C2589
+#data 0x73724C72
+#data 0x4C73A04C
+#data 0x364C741F
+#data 0x745C4C74
+#data 0x4C74BA4C
+#data 0x0D4C74FB
+#data 0x75114C75
+#data 0x4C25F24C
+#data 0x9A4C76B3
+#data 0x27BB4C26
+#data 0x4C28DC4C
+#data 0x104C2903
+#data 0x29294C29
+#data 0x4C67734C
+#data 0xD24C678C
+#data 0x69A74C68
+#data 0x4C29FC4C
+#data 0x404C6A01
+#data 0x2C4F4C2A
+#data 0x4C2C7C4C
+#data 0x5E4C2DC2
+#data 0x2DCD4C6E
+#data 0x4C6ED04C
+#data 0x1F4C2DF7
+#data 0x2EAD4C2E
+#data 0x4C70384C
+#data 0xEE4C71A9
+#data 0x71D54C2F
+#data 0x4C725F4C
+#data 0xF64C7279
+#data 0x30044C72
+#data 0x4C74124C
+#data 0x694C744E
+#data 0x74964C74
+#data 0x4C74E34C
+#data 0x214C750B
+#data 0x76944C30
+#data 0x4C76B94C
+#data 0x824C315A
+#data 0x780C4C77
+#data 0x4C78454C
+#data 0xA14C7883
+#data 0x31624C78
+#data 0x4C7B4C4C
+#data 0x0B4C7C27
+#data 0x7D534C7D
+#data 0x4C31654C
+#data 0xA64C7E1F
+#data 0x7EEE4C7E
+#data 0x4CEF114C
+#data 0x4C4CEF2C
+#data 0xEF7F4CEF
+#data 0x4CF06D4C
+#data 0xE04CF088
+#data 0xF1174CF0
+#data 0x4C30194C
+#data 0x294C3026
+#data 0x302F4C30
+#data 0x4C30334C
+#data 0x3A4C3036
+#data 0x79334C31
+#data 0x4C7B174C
+#data 0xF44C155C
+#data 0x7BFB4C16
+#data 0x4C7CF24C
+#data 0x824C3E92
+#data 0x82AF4C32
+#data 0x4C82B34C
+#data 0xC04C8301
+#data 0x87144C17
+#data 0x4C87844C
+#data 0xC14C3EAE
+#data 0x350B4C88
+#data 0x4C350E4C
+#data 0x1A4C3517
+#data 0x35214C35
+#data 0x4C816C4C
+#data 0x174C8223
+#data 0x36BE4C36
+#data 0x4C37F64C
+#data 0x834C3891
+#data 0x83D84C82
+#data 0x4C390C4C
+#data 0x754C8482
+#data 0x85B64C85
+#data 0x4C8FBC4C
+#data 0xFC4C9022
+#data 0xF5EC4CF4
+#data 0x4CF6084C
+#data 0xFB4CF6FC
+#data 0x8B2B4C89
+#data 0x4C918D4C
+#data 0xF34C922E
+#data 0x98544C94
+#data 0x4C98B14C
+#data 0x824C99F3
+#data 0x1AE34C9A
+#data 0x4C9CD44C
+#data 0x1E4C90BC
+#data 0x96B04C96
+#data 0x4C97604C
+#data 0xD54C97B1
+#data 0x980D4C97
+#data 0x4C9A434C
+#data 0x9D4C9A6F
+#data 0x9AB74C9A
+#data 0x4C9CE04C
+#data 0xF44C9CEA
+#data 0x9D354C9C
+#data 0x4C9D494C
+#data 0x874CF866
+#data 0xFA9A4CF9
+#data 0x4C1B844C
+#data 0x4E4CA522
+#data 0xFACE4C1E
+#data 0x4C22B24C
+#data 0xC74CA5A5
+#data 0xA8E64CA6
+#data 0x4CAAE14C
+#data 0x074CAA3D
+#data 0xB2264CAF
+#data 0x4CACBB4C
+#data 0x934CAEBB
+#data 0xB41D4CAF
+#data 0x4CB2164C
+#data 0x424CBB4A
+#data 0xBF6B4CB5
+#data 0x4CB7514C
+#data 0xEA4C1401
+#data 0x0000002E
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x49000000
+#data 0x29474170
+#data 0xFDC24C41
+#data 0xFDC2001C
+#data 0x1D07001D
+#data 0xF02922A5
+#data 0x8502E40D
+#data 0x890F2922
+#data 0x70BDAAFF
+#data 0xE78420F3
+#data 0x83848285
+#data 0x0A02E3AD
+#data 0x142C7CAA
+#data 0x143A1438
+#data 0x14381438
+#data 0x1438143C
+#data 0x02800480
+#data 0x6B200080
+#data 0x79052089
+#data 0x2002E68D
+#data 0x00A97916
+#data 0x8D028A8D
+#data 0x18D202A7
+#data 0x04C20C08
+#data 0xA20B0C07
+#data 0x0104E210
+#data 0x14A20202
+#data 0xA90C018E
+#data 0x0C058D20
+#data 0x0C047FC2
+#data 0x068D79A9
+#data 0x0C07AD0C
+#data 0xFB29EF09
+#data 0xA90C078D
+#data 0xA9508500
+#data 0x02708DB0
+#data 0x718D04A9
+#data 0x1CFEC202
+#data 0xAD1E7700
+#data 0x36AE0137
+#data 0xEBF02001
+#data 0x8818200B
+#data 0x4605B20B
+#data 0xD046C60B
+#data 0x0520C2FB
+#data 0x8DC0A90C
+#data 0x7FA90C16
+#data 0xA90C178D
+#data 0x0C1A8D0D
+#data 0x1B8D8EA9
+#data 0x46E60B0C
+#data 0x168D0EA9
+#data 0x8D00A90C
+#data 0x5DA90C17
+#data 0xA90C1A8D
+#data 0x0C1B8D8E
+#data 0xA946E60B
+#data 0x0C168D02
+#data 0x178D00A9
+#data 0x8D0FA90C
+#data 0x8CA90C1A
+#data 0x0B0C1B8D
+#data 0x10A946E6
+#data 0xA90C168D
+#data 0x0C178D00
+#data 0x1A8D0FA9
+#data 0x8D8EA90C
+#data 0xE60B0C1B
+#data 0x8D03A946
+#data 0x00A90C16
+#data 0xA90C178D
+#data 0x0C1A8D02
+#data 0x1B8D8EA9
+#data 0x46E60B0C
+#data 0x8902EAAD
+#data 0x46E53810
+#data 0x46C64685
+#data 0xD046C60B
+#data 0x00A90BFB
+#data 0x8D02E88D
+#data 0xFBC202E2
+#data 0x6DC20C08
+#data 0x10D20C09
+#data 0x40D20C09
+#data 0x04D202FC
+#data 0xFFC20C07
+#data 0x7FB20437
+#data 0x8522A565
+#data 0x10AB4CD5
+#data 0x45774567
+#data 0x0C0A1FC2
+#data 0x0C0A01D2
+#data 0x168D20A9
+#data 0x8D00A90C
+#data 0x27A90C17
+#data 0xA90C1A8D
+#data 0x0C1B8D8C
+#data 0x8DC0A90B
+#data 0x00A90C16
+#data 0xA90C178D
+#data 0x0C1A8D1A
+#data 0x1B8D8EA9
+#data 0x01A90B0C
+#data 0xA90C168D
+#data 0x0C178D00
+#data 0x1A8D20A9
+#data 0x8D8EA90C
+#data 0x0F0B0C1B
+#data 0xC0B20015
+#data 0x4600B247
+#data 0x608D00A9
+#data 0x02618D02
+#data 0x8D02628D
+#data 0x49850263
+#data 0xA94808B2
+#data 0x02F38D00
+#data 0xE1A90680
+#data 0x60E2A960
+#data 0x0F12E820
+#data 0x477FF44F
+#data 0x04472FF4
+#data 0x0C0A07C2
+#data 0x03D048E6
+#data 0xAD4808B2
+#data 0x0CE20261
+#data 0xC93D0801
+#data 0xAD17D0AB
+#data 0xD9C90260
+#data 0x382010D0
+#data 0x02F3AD32
+#data 0xCC3006C9
+#data 0x005202D2
+#data 0x521FC680
+#data 0x02FDF21F
+#data 0x61AD1A10
+#data 0xD0FFC902
+#data 0x0260AD13
+#data 0x0CD0AAC9
+#data 0x0C0E10C2
+#data 0x02FD10D2
+#data 0x005204D2
+#data 0x290261AD
+#data 0xF085C98F
+#data 0xF081C912
+#data 0x94456F0E
+#data 0x13F00AC9
+#data 0x0FF002C9
+#data 0xAD15D04C
+#data 0x88290260
+#data 0x12F088C9
+#data 0xAD15D04C
+#data 0x88290260
+#data 0x06F000C9
+#data 0x4C15D04C
+#data 0x61AD16DF
+#data 0x0263CD02
+#data 0x60ADF5D0
+#data 0x0262CD02
+#data 0x48A5EDD0
+#data 0x11F008C9
+#data 0xE3D00CC9
+#data 0x290261AD
+#data 0xF081C98F
+#data 0xD002C904
+#data 0x0260AD56
+#data 0x61AD3610
+#data 0xD0702902
+#data 0x0260AD14
+#data 0x0DD07729
+#data 0xA92240B2
+#data 0xE2248596
+#data 0x0110010D
+#data 0x1CFDC260
+#data 0x1DFDC200
+#data 0xE71C8700
+#data 0x07523F45
+#data 0x870452CF
+#data 0xB244A744
+#data 0x0F804900
+#data 0x49E645F7
+#data 0x02C949A5
+#data 0x9B2023F0
+#data 0xAD0C807B
+#data 0x088D0261
+#data 0x0260AD02
+#data 0xAD02098D
+#data 0x638D0261
+#data 0x0260AD02
+#data 0xB202628D
+#data 0xD04C4800
+#data 0x6000A915
+#data 0xAF0617BF
+#data 0x7F4C03B3
+#data 0xFC20C217
+#data 0x20677702
+#data 0x51209845
+#data 0x2071D013
+#data 0x67D01354
+#data 0x08010CE2
+#data 0x8D02A919
+#data 0x00A90C16
+#data 0xA90C178D
+#data 0x0C1A8DC0
+#data 0x1B8D8CA9
+#data 0x10D23B0C
+#data 0xD0200C0E
+#data 0x0940D27C
+#data 0x0804D20C
+#data 0x0902D20C
+#data 0x0A40D20C
+#data 0xFC20D20C
+#data 0x0640D202
+#data 0x10FC200C
+#data 0x0F2905F0
+#data 0xC260D009
+#data 0xA90C0A40
+#data 0x0C168D00
+#data 0x178D20A9
+#data 0x8D13A90C
+#data 0x8EA90C1A
+#data 0x200C1B8D
+#data 0x00A9135A
+#data 0x3B0C018D
+#data 0x296000A9
+#data 0x60D0090F
+#data 0x2060D5A9
+#data 0xFAD012D9
+#data 0x0C0704D2
+#data 0xB2487FB2
+#data 0x00B24705
+#data 0x87FA2046
+#data 0x3F264F0F
+#data 0x19AD08B3
+#data 0x48E5380C
+#data 0x08A91830
+#data 0xA90C168D
+#data 0x0C178D00
+#data 0x1A8D0FA9
+#data 0x8D8CA90C
+#data 0x47C60C1B
+#data 0x00A9D4D0
+#data 0x60DCA960
+#data 0x068D03A9
+#data 0x8D00A90C
+#data 0x098D0C07
+#data 0x0C088D0C
+#data 0xC20C058D
+#data 0x200C047F
+#data 0x30A912EB
+#data 0x2002708D
+#data 0xF3209CC9
+#data 0x0408D210
+#data 0x0B10D20C
+#data 0x08C23B0C
+#data 0x04B20C04
+#data 0xC922A549
+#data 0xB203F0AA
+#data 0xF4204905
+#data 0x0B10C212
+#data 0x0A482F0C
+#data 0x20D2B457
+#data 0x01A90301
+#data 0x0BA90A80
+#data 0x2537B4D7
+#data 0xB517B507
+#data 0xD20C018D
+#data 0xE20C1D04
+#data 0xF7040C1D
+#data 0x01FFC23B
+#data 0x0601D20C
+#data 0x0411D20C
+#data 0x2004A90C
+#data 0x17A987FA
+#data 0xC257D020
+#data 0xD20C0411
+#data 0xD20C0506
+#data 0xA90C0980
+#data 0x88022010
+#data 0x0C0506C2
+#data 0x0C0761D2
+#data 0x0C0A04D2
+#data 0xFA2040A9
+#data 0x0708D287
+#data 0x8D11A90C
+#data 0x40A90C0A
+#data 0xA987FA20
+#data 0x0C0A8D00
+#data 0x0C0704D2
+#data 0x0C0904D2
+#data 0x0C0408D2
+#data 0x0C0B10D2
+#data 0xC287EC20
+#data 0xAD0C0408
+#data 0x4785013E
+#data 0x85013DAD
+#data 0x8D00A946
+#data 0x00B20130
+#data 0x12E82049
+#data 0xB23047FF
+#data 0xB4DF4700
+#data 0x0C03AD1B
+#data 0x0DF00129
+#data 0xAD0130EE
+#data 0x06C90130
+#data 0xE54C1990
+#data 0x8D00A917
+#data 0x0F800130
+#data 0xC20C133F
+#data 0xAD0C0B10
+#data 0x2285030B
+#data 0xAD100F4C
+#data 0x01E20260
+#data 0xCD058004
+#data 0x10F0F4A9
+#data 0xF0F4B1CD
+#data 0xD0FFC911
+#data 0x4F49E6B1
+#data 0x3880AF49
+#data 0x040140D2
+#data 0x40C20480
+#data 0x00B20401
+#data 0x2049E649
+#data 0x60AD82A4
+#data 0xDD49A602
+#data 0x01E2F4B1
+#data 0xDD0C4004
+#data 0x86D0F4A9
+#data 0xE59006E0
+#data 0xD019EA4C
+#data 0x9003E008
+#data 0x37B507DC
+#data 0x189A4C25
+#data 0xAAC922A5
+#data 0x9F6F14D0
+#data 0x0304E211
+#data 0x133F0C01
+#data 0x0401F209
+#data 0xB5270480
+#data 0x10C2B537
+#data 0x04C20C0B
+#data 0xF9B20C09
+#data 0x46C0B247
+#data 0x2537B507
+#data 0x204900B2
+#data 0x477F82A4
+#data 0x0260AD11
+#data 0xF0F0FFC9
+#data 0x49A549E6
+#data 0xEB3007C9
+#data 0x91A90380
+#data 0x461CB260
+#data 0xA94700B2
+#data 0x8D498500
+#data 0xE8200408
+#data 0x0260AD12
+#data 0x800401E2
+#data 0xF4A9CD05
+#data 0xB1CD07F0
+#data 0x8008F0F4
+#data 0x0140D2E2
+#data 0xC2048004
+#data 0xE6040140
+#data 0x82A42049
+#data 0xAD4047BF
+#data 0x49A60260
+#data 0x111004E0
+#data 0xE2F4B1DD
+#data 0x03400401
+#data 0xD0F4A9DD
+#data 0x8049E6BA
+#data 0x0401F2E0
+#data 0x13D00740
+#data 0x8002F28D
+#data 0xD007E0F0
+#data 0x04088D05
+#data 0xA9DD1480
+#data 0xCD0380F4
+#data 0x97D002F2
+#data 0x493F49E6
+#data 0xA90380BC
+#data 0x10C26092
+#data 0x01E20401
+#data 0xD2044004
+#data 0xA5040110
+#data 0xD0AAC922
+#data 0x0401E272
+#data 0x803B0310
+#data 0x0180C2FD
+#data 0x0180D204
+#data 0x059F6F03
+#data 0x010304F2
+#data 0x133F3B0C
+#data 0xF99F6FFC
+#data 0x8002B69F
+#data 0x37B527F4
+#data 0xD24587B5
+#data 0xA9030010
+#data 0x02EA8D10
+#data 0x518DDDA9
+#data 0x8D12A902
+#data 0xFDA901DF
+#data 0xA901DE8D
+#data 0x01AF8D12
+#data 0xAE8DC1A9
+#data 0x8D12A901
+#data 0xD0A901AD
+#data 0xA201AC8D
+#data 0xADA99AAB
+#data 0xB202F48D
+#data 0x15AD42A0
+#data 0x78228503
+#data 0x08A20A27
+#data 0x58103920
+#data 0xA7139F20
+#data 0xA247A645
+#data 0xAC478600
+#data 0xA9C802F2
+#data 0x46840220
+#data 0x0390A0C0
+#data 0xC26093A9
+#data 0xC2001CFD
+#data 0xA7001DFD
+#data 0x12E8201D
+#data 0xF9F047A5
+#data 0xAD6000A9
+#data 0x36D00264
+#data 0x648D04A9
+#data 0xE24CE602
+#data 0x1001040A
+#data 0xB2064C3F
+#data 0xF2EE4C00
+#data 0xBD4CA602
+#data 0x1780F4A9
+#data 0x2F084CBF
+#data 0xF2AD0C4C
+#data 0xA90C8002
+#data 0xEE4C8500
+#data 0x4CA602F2
+#data 0x8DF4B1BD
+#data 0x63AD0263
+#data 0x02634E02
+#data 0xCE02634E
+#data 0xB2600264
+#data 0x14204220
+#data 0x0602C211
+#data 0x0C0BAD0C
+#data 0x60098029
+#data 0x0907418F
+#data 0x8E0CA261
+#data 0x0B8D0C01
+#data 0x8D00A90C
+#data 0x308902AB
+#data 0x8D02AC2D
+#data 0x00F202AC
+#data 0x4C030104
+#data 0x19AD9BEC
+#data 0x8D402904
+#data 0x00A90419
+#data 0x8D04188D
+#data 0x338D0432
+#data 0x04348D04
+#data 0x9F04358D
+#data 0x442F0318
+#data 0x0400E205
+#data 0x01D24402
+#data 0xF38F0C01
+#data 0x10F3AF17
+#data 0xEF15F3DF
+#data 0xF39F16F3
+#data 0x22F3BF17
+#data 0x20805FA9
+#data 0x1C807FA9
+#data 0x18809FA9
+#data 0x1480AFA9
+#data 0x1080CFA9
+#data 0x4F07085F
+#data 0xDFA90408
+#data 0x6FA90680
+#data 0xEFA90280
+#data 0xD202CC8D
+#data 0x4C0C0101
+#data 0xB74C9B8E
+#data 0x9BEC4C9B
+#data 0xAFC922A5
+#data 0xF70B06D0
+#data 0x139C4C51
+#data 0xF29F7220
+#data 0x094006A3
+#data 0x2006A3E2
+#data 0x0180D204
+#data 0x03194F04
+#data 0x201BFB4C
+#data 0xEA20A623
+#data 0xA58B20A7
+#data 0x2012F720
+#data 0x00A9E51F
+#data 0xF3202685
+#data 0x8D19A910
+#data 0x1DA90323
+#data 0x2703248D
+#data 0x8D4BA9B5
+#data 0xA1A9031A
+#data 0x48031B8D
+#data 0x198D4CA9
+#data 0x68B5A703
+#data 0xA702253F
+#data 0xA6772019
+#data 0x040301E2
+#data 0x8504A9CD
+#data 0x0302E226
+#data 0x7C4C0301
+#data 0x13A820FB
+#data 0x20100F4C
+#data 0x382012FA
+#data 0x12F720A1
+#data 0x268500A9
+#data 0x08038FF2
+#data 0xA9B52722
+#data 0x031A8D5F
+#data 0x1B8D1CA9
+#data 0x4CA94803
+#data 0xA703198D
+#data 0xD32068B5
+#data 0xC9FB309F
+#data 0x2704D001
+#data 0xA91F80B5
+#data 0x03238DF1
+#data 0x248D1CA9
+#data 0xA9B52703
+#data 0x031A8D4B
+#data 0x1B8DA1A9
+#data 0x4CA94803
+#data 0xA703198D
+#data 0x232068B5
+#data 0xA7EA20A6
+#data 0x20A58B20
+#data 0x772010F3
+#data 0xA9D080A6
+#data 0x034F8DFF
+#data 0xA903268D
+#data 0x031D8D03
+#data 0x1A8D79A9
+#data 0x8D1CA903
+#data 0x7A20031B
+#data 0x0305F2EC
+#data 0x02F20E10
+#data 0xA9090803
+#data 0x85C48500
+#data 0xA10B20C5
+#data 0x200301F2
+#data 0x7A206001
+#data 0x038DADEC
+#data 0xAD031E8D
+#data 0x1F8D038E
+#data 0xF2B61703
+#data 0x06080302
+#data 0xC48500A9
+#data 0xDAA9C585
+#data 0xA9031A8D
+#data 0x031B8D1C
+#data 0x168D00A9
+#data 0x8D80A90C
+#data 0x7BA90C17
+#data 0xA90C1A8D
+#data 0x0C1B8D86
+#data 0x0C1F08C2
+#data 0x800C1BF2
+#data 0x8D7FA9FB
+#data 0x01E20326
+#data 0xF2058004
+#data 0x0A100401
+#data 0x040304E2
+#data 0x4C449702
+#data 0xD14CA063
+#data 0x033DADA0
+#data 0x1EF000C9
+#data 0x1AD0E0C9
+#data 0xD0A3FF20
+#data 0x1DC52015
+#data 0x01D20490
+#data 0x46200302
+#data 0x1D6E20A4
+#data 0x4C1D7E20
+#data 0xA34CA290
+#data 0x033DADA2
+#data 0x26D000C9
+#data 0xD0A3FF20
+#data 0x8501A914
+#data 0x0102D226
+#data 0x8D46A903
+#data 0x1DA90323
+#data 0xA903248D
+#data 0xA9248500
+#data 0x031A8D4B
+#data 0x1B8DA1A9
+#data 0x3DAD6003
+#data 0xD0E0C903
+#data 0x0301F21E
+#data 0xFF201604
+#data 0x2014D0A3
+#data 0x0FB01DC5
+#data 0x20A44620
+#data 0x7E201D6E
+#data 0xA2F94C1D
+#data 0x4CA3054C
+#data 0x1B20A314
+#data 0x1D7520A4
+#data 0x902A9860
+#data 0x0310D204
+#data 0x02A26003
+#data 0xA8033DBD
+#data 0x07C91F29
+#data 0xECE807F0
+#data 0xF0900325
+#data 0xB08D9860
+#data 0x06B02E06
+#data 0xB02E0090
+#data 0xD2049006
+#data 0x2E030308
+#data 0x049006B0
+#data 0x030304D2
+#data 0x030202D2
+#data 0xA18D00A9
+#data 0x3DBDE806
+#data 0x3829A803
+#data 0x04D010C9
+#data 0x06A18D98
+#data 0xBD02A260
+#data 0x1F29033D
+#data 0x0AF005C9
+#data 0x0325ECE8
+#data 0xF1A9F190
+#data 0x3DBD6038
+#data 0xE029E803
+#data 0xA903278D
+#data 0x03288D00
+#data 0x8D03298D
+#data 0x25EC010B
+#data 0xBD3DB003
+#data 0x29A8033D
+#data 0xD010C938
+#data 0x2998E833
+#data 0x03288DC7
+#data 0xB00325EC
+#data 0x033DBD27
+#data 0xC93829A8
+#data 0xE81DD010
+#data 0x8DC72998
+#data 0x25EC0329
+#data 0xBD11B003
+#data 0x29A8033D
+#data 0xD010C938
+#data 0x2998E807
+#data 0x010B8DC7
+#data 0xD00327AD
+#data 0x0328AD14
+#data 0x29AD0FD0
+#data 0xAD0AD003
+#data 0x05D0010B
+#data 0x8003208E
+#data 0x03208E8D
+#data 0x01C26018
+#data 0x8420040A
+#data 0x1302D210
+#data 0xC922A50C
+#data 0x1B0BD0AF
+#data 0xB53F51E7
+#data 0x03162003
+#data 0x02D2EF80
+#data 0x194F0C13
+#data 0x1F5F4C03
+#data 0x010406E2
+#data 0x06A3F20E
+#data 0xA3E20940
+#data 0xD2042006
+#data 0x20040A01
+#data 0x02D21072
+#data 0x33200C13
+#data 0x10842013
+#data 0x0C1302D2
+#data 0x20107E20
+#data 0x25BFFDD9
+#data 0x15133F18
+#data 0xAFA9B507
+#data 0xC6A9C985
+#data 0xA948CA85
+#data 0x87C8854C
+#data 0x842068B5
+#data 0x04E21B10
+#data 0xE2050203
+#data 0xF5020301
+#data 0x278500A9
+#data 0x08038FF2
+#data 0x0001D237
+#data 0x0480D203
+#data 0x0B04D20C
+#data 0xA426200C
+#data 0x01F28C30
+#data 0xE21B0403
+#data 0x05800401
+#data 0x200401F2
+#data 0x1302D223
+#data 0x8D1AA90C
+#data 0xCE1B034D
+#data 0xBA30034D
+#data 0x80C2F880
+#data 0x0C800401
+#data 0x4C03D05B
+#data 0xE21B1E6A
+#data 0xF4040301
+#data 0x2902ACAD
+#data 0x02AC8DFE
+#data 0x2B909A20
+#data 0x0C0480C2
+#data 0x0C1302D2
+#data 0xF7AB3520
+#data 0x0401F244
+#data 0xD2200920
+#data 0xD204F020
+#data 0x07030201
+#data 0x20B517B5
+#data 0x01A91084
+#data 0xB5372785
+#data 0x178D1BA9
+#data 0x8DA6A903
+#data 0xA9480318
+#data 0x03168D4C
+#data 0x2068B5B7
+#data 0x9420A889
+#data 0xA9FB80AA
+#data 0x0C118D00
+#data 0x0C1D08D2
+#data 0x080C1DE2
+#data 0x35201BF7
+#data 0xD244F7AB
+#data 0xE70C1302
+#data 0x8D55A951
+#data 0x1DA9024D
+#data 0xA9024E8D
+#data 0x024C8D54
+#data 0x4E858EA9
+#data 0x8D55A92B
+#data 0x1DA9024D
+#data 0xA9024E8D
+#data 0x024C8D54
+#data 0x4E858CA9
+#data 0x1302D22B
+#data 0xF05B1B0C
+#data 0xFDD920F8
+#data 0x8FE278A2
+#data 0xA2020803
+#data 0x03218EFF
+#data 0x278500A9
+#data 0x0300E21B
+#data 0xA24C0302
+#data 0x0321CE20
+#data 0x04E2F210
+#data 0x205D0403
+#data 0x01A9A430
+#data 0xB5372785
+#data 0x178D1BA9
+#data 0x8DA6A903
+#data 0xA9480318
+#data 0x03168D4C
+#data 0x2068B5B7
+#data 0x04E2AB35
+#data 0xE2090403
+#data 0x04800C04
+#data 0x6B0413AC
+#data 0x842044F7
+#data 0xA8892010
+#data 0xF2AA9420
+#data 0x0808038F
+#data 0x200301F2
+#data 0x20C34C03
+#data 0x278502A9
+#data 0x0C1302D2
+#data 0x038FF21B
+#data 0x00F20708
+#data 0x80020203
+#data 0x20A24CF3
+#data 0x4003C1E2
+#data 0x038FE2EB
+#data 0xA24C0308
+#data 0x10842020
+#data 0x5BA88920
+#data 0xA14C03D0
+#data 0x1204D21F
+#data 0x0C12E20C
+#data 0x90ADF704
+#data 0xAD08D002
+#data 0x03D002D9
+#data 0xAD20984C
+#data 0x4D8502D9
+#data 0x850290AD
+#data 0x4B03B24A
+#data 0xD04BC61B
+#data 0xD04AC6FB
+#data 0x104DC6F4
+#data 0x1204C2F0
+#data 0x0C12F20C
+#data 0xDAADF704
+#data 0xAD4D8502
+#data 0x4A850291
+#data 0x1B4B03B2
+#data 0xFBD04BC6
+#data 0xF4D04AC6
+#data 0xF0104DC6
+#data 0x020300E2
+#data 0xAB3520A2
+#data 0x80C244F7
+#data 0x20200C04
+#data 0x37441722
+#data 0x8D0FA9B5
+#data 0xA8A90317
+#data 0x4803188D
+#data 0x168D4CA9
+#data 0x68B5B703
+#data 0xD21FEB4C
+#data 0xE20C1302
+#data 0xF7020C13
+#data 0x4C108420
+#data 0xFFA91FA1
+#data 0xA9031C8D
+#data 0x032D8DE0
+#data 0x290302AD
+#data 0x044DA8E0
+#data 0xF0E02903
+#data 0x0302AD2B
+#data 0x4A4A4A4A
+#data 0x01A9AA4A
+#data 0x0A0330CA
+#data 0x2A2DFA80
+#data 0xA915D003
+#data 0x03278D00
+#data 0x8D03288D
+#data 0x0B8D0329
+#data 0x0302AD01
+#data 0x0180E029
+#data 0x8D010998
+#data 0x27AD032E
+#data 0x03062D03
+#data 0x27E2C029
+#data 0xE2072003
+#data 0x020106A3
+#data 0x9FBF2009
+#data 0x8D7F2902
+#data 0x05090327
+#data 0xAD032F8D
+#data 0x072D0328
+#data 0x8DC72903
+#data 0x10090328
+#data 0xAD03308D
+#data 0x082D0329
+#data 0x8DC72903
+#data 0x10090329
+#data 0xAD03318D
+#data 0x502D010B
+#data 0x8DC72903
+#data 0x1009010B
+#data 0xA203328D
+#data 0x010BAD06
+#data 0xADCA1CD0
+#data 0x16D00329
+#data 0x0328ADCA
+#data 0xADCA10D0
+#data 0x0AD00327
+#data 0x7EA905A2
+#data 0xA921B420
+#data 0x7EA960FF
+#data 0xF221B420
+#data 0x03020305
+#data 0xAD6000A9
+#data 0x0BD00327
+#data 0xF00328AD
+#data 0xA27EA9F3
+#data 0xA9048004
+#data 0x2003A27E
+#data 0xE48021B4
+#data 0x2D9D7EA9
+#data 0xA5362003
+#data 0x20A55420
+#data 0x206021C3
+#data 0xA3E22201
+#data 0xCF350106
+#data 0x02E20519
+#data 0xA92D0203
+#data 0xE207A907
+#data 0x020406A3
+#data 0xA3E22009
+#data 0x09020206
+#data 0x06A3E240
+#data 0x80090210
+#data 0xE8032D9D
+#data 0x2906A1AD
+#data 0x9D1009C7
+#data 0xA9E8032D
+#data 0x032D9D7E
+#data 0x0303F260
+#data 0x04E20501
+#data 0xCA141003
+#data 0xE2032DBD
+#data 0x020806A3
+#data 0x2D9D8009
+#data 0x7EA9E803
+#data 0x60032D9D
+#data 0x1C8DFFA9
+#data 0x8DE0A903
+#data 0x04AD032D
+#data 0x09E02903
+#data 0x032E8D01
+#data 0x290306AD
+#data 0x06A3E2C0
+#data 0x20090201
+#data 0x29029FBF
+#data 0x8D05097F
+#data 0x50AD032F
+#data 0xD0C72903
+#data 0x0308AD3F
+#data 0x09D0C729
+#data 0x290307AD
+#data 0xF002D0C7
+#data 0x0307AD27
+#data 0x1009C729
+#data 0xAD03308D
+#data 0xC7290308
+#data 0x10091AF0
+#data 0xA203318D
+#data 0xA5362005
+#data 0x20A55420
+#data 0x7EA921C3
+#data 0x60032D9D
+#data 0xED8003A2
+#data 0xE98004A2
+#data 0x290307AD
+#data 0x8D1009C7
+#data 0x08AD0330
+#data 0x09C72903
+#data 0x03318D10
+#data 0x290350AD
+#data 0x8D1009C7
+#data 0x06A20332
+#data 0x01C2C780
+#data 0xA3E206C0
+#data 0xE2190106
+#data 0x14180303
+#data 0x100304E2
+#data 0x0327E20F
+#data 0x01C20A20
+#data 0x01D20406
+#data 0x158006C0
+#data 0x4006A3E2
+#data 0x0120D206
+#data 0xE20A8004
+#data 0x05800401
+#data 0x7F8D13A9
+#data 0x57252006
+#data 0x0C1302D2
+#data 0x0D11CF0B
+#data 0x020303F2
+#data 0xE84F2005
+#data 0x20200380
+#data 0x8D00A9E8
+#data 0x05A90454
+#data 0xA90219CF
+#data 0x20278502
+#data 0xB527139F
+#data 0x2537B537
+#data 0xB517B507
+#data 0x0106C0E2
+#data 0x06A2AD06
+#data 0xE2602285
+#data 0x064006A3
+#data 0x850409AD
+#data 0xB64C6022
+#data 0xBFAD4AFB
+#data 0x8D032906
+#data 0xE4AD0C16
+#data 0x8D148902
+#data 0x6D1806BB
+#data 0x0B890C16
+#data 0xA90C178D
+#data 0x0C1A8DF8
+#data 0x1B8D86A9
+#data 0xE8EE600C
+#data 0x02E8AD02
+#data 0x08D001C9
+#data 0xED3806A9
+#data 0x158006DE
+#data 0x3802E6AD
+#data 0xF002B0ED
+#data 0xA9041002
+#data 0xC9068000
+#data 0xA9023008
+#data 0x60618508
+#data 0x6D1861A5
+#data 0xB08D02B0
+#data 0x02E8AD02
+#data 0x08D006C9
+#data 0xE88D00A9
+#data 0x02B08D02
+#data 0x0104D260
+#data 0x2661B204
+#data 0x0C0744C2
+#data 0x02FC20C2
+#data 0x02FD04C2
+#data 0xA48D80A9
+#data 0x0801D206
+#data 0x0A5FC20C
+#data 0x0802C20C
+#data 0xD21DE70C
+#data 0xD20C0E10
+#data 0x9F0C0708
+#data 0x52BF0A52
+#data 0x2001A907
+#data 0x38803700
+#data 0x040685F2
+#data 0x06DEAD33
+#data 0xC56D181A
+#data 0x02E68D06
+#data 0x168D02A9
+#data 0x17FFC20C
+#data 0x8DF8A90C
+#data 0x86A90C1A
+#data 0xC20C1B8D
+#data 0xF20C1F08
+#data 0xFB800C1B
+#data 0x002003A9
+#data 0xF104D237
+#data 0x1CAB2006
+#data 0x488500A9
+#data 0x40A94985
+#data 0x2202768D
+#data 0xA000A223
+#data 0x620FA900
+#data 0x86208CA9
+#data 0xA932331C
+#data 0xE7ED3805
+#data 0xAA072906
+#data 0x168006F0
+#data 0x60FFA932
+#data 0x06A200A9
+#data 0x220B523F
+#data 0x18F4203B
+#data 0xCA32EEB0
+#data 0x3B2262A5
+#data 0xB018F420
+#data 0x52BF32E3
+#data 0x2A626603
+#data 0x7FEFD0CA
+#data 0x3F490249
+#data 0x16F007C9
+#data 0x19D038C9
+#data 0xE607493F
+#data 0x1F499F49
+#data 0x49A5C680
+#data 0x80298049
+#data 0x49BF4985
+#data 0x8049E6BB
+#data 0x2949A5B7
+#data 0x29B1F07F
+#data 0xC6ADF077
+#data 0xD2A98049
+#data 0xA2005240
+#data 0xFA3BDA06
+#data 0xF2FAD0CA
+#data 0x22040685
+#data 0x8D06DEAD
+#data 0x0CA90C16
+#data 0xA90C178D
+#data 0x0C1A8DF8
+#data 0x1B8D86A9
+#data 0x1F08C20C
+#data 0x0C1BF20C
+#data 0x20D2FB80
+#data 0x80D20C05
+#data 0x26E60C07
+#data 0xB08D00A9
+#data 0x02E88D02
+#data 0x0C0940C2
+#data 0x1AF71D67
+#data 0x0C0A1FC2
+#data 0x0C0A02D2
+#data 0x0C0A40C2
+#data 0x758D80A9
+#data 0x9F10A902
+#data 0x52BF0552
+#data 0x8D40A902
+#data 0x23220276
+#data 0x00A040A2
+#data 0xA9620FA9
+#data 0x1C86208E
+#data 0x40D23233
+#data 0xC23B0C07
+#data 0x200C0520
+#data 0x61A63215
+#data 0x62A514F0
+#data 0x5320486A
+#data 0x606E684F
+#data 0x02616E02
+#data 0xCA02626E
+#data 0x75ADEED0
+#data 0xD204D002
+#data 0xAD0C0704
+#data 0x0CC90276
+#data 0x5AAD33B0
+#data 0x202E1006
+#data 0x16AD36EC
+#data 0xF008290C
+#data 0x8DCAA924
+#data 0x98A90C1A
+#data 0xC20C1B8D
+#data 0xF20C1F08
+#data 0xFB800C1B
+#data 0x8D0C16AD
+#data 0x17AD0649
+#data 0x064A8D0C
+#data 0x5A8D00A9
+#data 0x0275AD06
+#data 0xC44C03F0
+#data 0x0276AD34
+#data 0x0FF038C9
+#data 0x19F010C9
+#data 0x13F00FC9
+#data 0x23F00CC9
+#data 0xC234C44C
+#data 0xD20C0A1F
+#data 0xD20C0A01
+#data 0x800C0680
+#data 0x2922A56C
+#data 0x3806801F
+#data 0x8906DEED
+#data 0x02E48DF2
+#data 0xD234C44C
+#data 0x200C0680
+#data 0xBFAD3504
+#data 0x18032906
+#data 0x8902E46D
+#data 0x0C168D04
+#data 0x0C17FFC2
+#data 0x1A8DF8A9
+#data 0x8D86A90C
+#data 0x08C20C1B
+#data 0x1BF20C1F
+#data 0xA9FB800C
+#data 0x37002003
+#data 0x06F104D2
+#data 0x801CAB20
+#data 0x8D00A920
+#data 0xBCAD0C17
+#data 0x0C168D06
+#data 0x1A8D65A9
+#data 0x8D84A90C
+#data 0x08C20C1B
+#data 0x1BF20C1F
+#data 0x80FB800C
+#data 0x323F20DB
+#data 0xB018F420
+#data 0x33C94C03
+#data 0x10A22322
+#data 0x0FA900A0
+#data 0x208CA962
+#data 0x32331C6F
+#data 0x40A22322
+#data 0x0FA900A0
+#data 0x208EA962
+#data 0x32331C6F
+#data 0x0C0A07C2
+#data 0x0C0A00D2
+#data 0x040104C2
+#data 0x02FC20D2
+#data 0x00A926E6
+#data 0x02E4AD60
+#data 0x900604CD
+#data 0x0604AD06
+#data 0xAE02E48D
+#data 0xC2AC06C1
+#data 0x06C3AD06
+#data 0xCA19A222
+#data 0xC10E1430
+#data 0x06C22E06
+#data 0x9006C32E
+#data 0xE4CD8AF2
+#data 0x8D03B002
+#data 0x8E3202E4
+#data 0xC28C06C1
+#data 0x06C38D06
+#data 0x06A000A2
+#data 0x4A06EAAD
+#data 0x88E80190
+#data 0xE88EF9D0
+#data 0x3560BD06
+#data 0x06DEED38
+#data 0xB002E4CD
+#data 0x02E48D03
+#data 0x17171760
+#data 0x11111317
+#data 0x058D06A9
+#data 0x1DA02004
+#data 0xC22648B2
+#data 0xD20C0704
+#data 0xC206F104
+#data 0x2006F102
+#data 0x40D21CAB
+#data 0x01D20C09
+#data 0xB1AD0C01
+#data 0x0C168D06
+#data 0x1A8D63A9
+#data 0x8D8EA90C
+#data 0x08C20C1B
+#data 0x1BF20C1F
+#data 0xB2FB800C
+#data 0x00A94605
+#data 0x53854785
+#data 0x3AA8BDAA
+#data 0x4A4A4A4A
+#data 0x3A98BDAA
+#data 0x128D0189
+#data 0x8D00A906
+#data 0x47850610
+#data 0x853A88AD
+#data 0x0610AD48
+#data 0x072910F0
+#data 0x10AD0CD0
+#data 0x4A4A4A06
+#data 0x3A88BDAA
+#data 0xB6AD4885
+#data 0x90486606
+#data 0xBD53A605
+#data 0x008D3AA8
+#data 0x10EE3B0C
+#data 0x0610AE06
+#data 0x0A907EE0
+#data 0x108D00A9
+#data 0x3A88AD06
+#data 0x46C64885
+#data 0x05B2C310
+#data 0xA647E646
+#data 0x0612EC47
+#data 0x00B2B790
+#data 0xA553E647
+#data 0xB077C953
+#data 0x35AB4C03
+#data 0x0C0802D2
+#data 0x0C0940C2
+#data 0x602649B2
+#data 0x168D02A9
+#data 0x17FFC20C
+#data 0x8DF8A90C
+#data 0x86A90C1A
+#data 0xC20C1B8D
+#data 0xF20C1F08
+#data 0xFB800C1B
+#data 0x1A8D61A9
+#data 0x8D8AA90C
+#data 0x08C20C1B
+#data 0x1BF20C1F
+#data 0xADFB800C
+#data 0xEA8D0C16
+#data 0xF140C206
+#data 0x0C17AD06
+#data 0x40D204F0
+#data 0x03A906F1
+#data 0xD2370020
+#data 0x2006F104
+#data 0x7F3B1CAB
+#data 0x2C206C49
+#data 0x36EC2016
+#data 0x290C16AD
+#data 0xADEFF008
+#data 0x032906BF
+#data 0xA906DE8D
+#data 0x0C1A8D60
+#data 0x1B8D82A9
+#data 0x1F08C20C
+#data 0x0C1BF20C
+#data 0x16ADFB80
+#data 0x06C98D0C
+#data 0x8D0C17AD
+#data 0x08C206CA
+#data 0xC9F206BE
+#data 0xAD07FF06
+#data 0x20C906CA
+#data 0x08D204F0
+#data 0xCAA906BE
+#data 0xA90C1A8D
+#data 0x0C1B8D98
+#data 0x0C1F08C2
+#data 0x800C1BF2
+#data 0x0C16ADFB
+#data 0xAD06498D
+#data 0x4A8D0C17
+#data 0xA945B706
+#data 0xFFA96000
+#data 0x8D21A960
+#data 0x88A90C1A
+#data 0xC20C1B8D
+#data 0xF20C1F08
+#data 0xFB800C1B
+#data 0x0C168D60
+#data 0x0C17FFC2
+#data 0x1A8D21A9
+#data 0x8D8CA90C
+#data 0x08C20C1B
+#data 0x1BF20C1F
+#data 0x60FB800C
+#data 0xA92647B2
+#data 0x02758D00
+#data 0x768D62A9
+#data 0x19CA2002
+#data 0xCA2020B0
+#data 0xF21BB019
+#data 0x08FF0260
+#data 0xF00261F2
+#data 0x6000A903
+#data 0x20460AB2
+#data 0x06B019CA
+#data 0xF7D046C6
+#data 0xD9A9DB80
+#data 0x4A4A4860
+#data 0x0C8D0C09
+#data 0x6A6A6806
+#data 0x060B8D6A
+#data 0x2906B1AD
+#data 0x7DBDAA1F
+#data 0x06B68D37
+#data 0x0A0A0A0A
+#data 0x060A8D0A
+#data 0x4A06B6AD
+#data 0x0B8D4A4A
+#data 0x5F5F6006
+#data 0x5F5F5F5F
+#data 0x5F5F5F5F
+#data 0x5B5D5F5F
+#data 0x55575759
+#data 0x51515353
+#data 0x4B4D4F4F
+#data 0x45474949
+#data 0x00A94345
+#data 0xF206668D
+#data 0x09010667
+#data 0x4C8D00A9
+#data 0x8599A902
+#data 0x00A9604E
+#data 0x8D065C8D
+#data 0x67F20664
+#data 0xEE030106
+#data 0x00A9024C
+#data 0xAE065D8D
+#data 0x08E0065D
+#data 0x8EE837B0
+#data 0x66AC065D
+#data 0x0667E206
+#data 0x00B90C01
+#data 0xB948C83F
+#data 0x68AA3F00
+#data 0x4EF71280
+#data 0x99024DAD
+#data 0x48C83F00
+#data 0x99024EAD
+#data 0x68AA3F00
+#data 0x06668CC8
+#data 0x2DE72018
+#data 0x80024CEE
+#data 0x0664ADC2
+#data 0xEE065CAC
+#data 0x5E19065C
+#data 0x8D3F2906
+#data 0x3FC90664
+#data 0xC260A8D0
+#data 0xC2011002
+#data 0x20005240
+#data 0x1F207256
+#data 0x6701C270
+#data 0x38332006
+#data 0x60FA526F
+#data 0x0C1210D2
+#data 0x010103E2
+#data 0x8D02A905
+#data 0x36200C11
+#data 0x0110E23A
+#data 0x11E21702
+#data 0xE7128001
+#data 0x2701D245
+#data 0x02E5AD00
+#data 0x8D12AF20
+#data 0xB22002E7
+#data 0xA2FFA912
+#data 0xEE2038FF
+#data 0x0110E22D
+#data 0x10200802
+#data 0x02E4AD12
+#data 0xFFA23080
+#data 0x4A06BFAD
+#data 0xE80F294A
+#data 0xADFCD04A
+#data 0x032906BF
+#data 0x30CA0349
+#data 0x80068904
+#data 0x480189F9
+#data 0xE68D0889
+#data 0x06BFAD02
+#data 0x6D180329
+#data 0xC58D02E6
+#data 0x0A0A6806
+#data 0x020110E2
+#data 0x48020902
+#data 0x2906BFAD
+#data 0x6A6A6A03
+#data 0x0685E26A
+#data 0x10090201
+#data 0x800111E2
+#data 0xAA800902
+#data 0x39A02068
+#data 0x290112AD
+#data 0x02048DFE
+#data 0x4006F1E2
+#data 0x48010902
+#data 0x13ADC029
+#data 0x8D3F2901
+#data 0x138D0205
+#data 0x06BFAD01
+#data 0x130DC029
+#data 0x2068AA01
+#data 0xC9AD39A0
+#data 0x06CAAE06
+#data 0xAD39A020
+#data 0xBAAE06B9
+#data 0x39A02006
+#data 0xAD379D20
+#data 0xB8AE06B7
+#data 0x39A02006
+#data 0x4B8D20A9
+#data 0xA205A006
+#data 0x065EBD05
+#data 0xD0064B2D
+#data 0xF510CA03
+#data 0x064C998A
+#data 0x064BAD88
+#data 0x064B8D4A
+#data 0x4DADE5D0
+#data 0x0A0A0A06
+#data 0x064C0D0A
+#data 0xAD487729
+#data 0x0A0A064F
+#data 0x4E0D0A0A
+#data 0xAA772906
+#data 0x39A02068
+#data 0x0A0651AD
+#data 0x0D0A0A0A
+#data 0x77290650
+#data 0xBEE200A2
+#data 0xA2020806
+#data 0x39A02001
+#data 0xE237B120
+#data 0x180806BE
+#data 0x4C8DCAA9
+#data 0x8518A902
+#data 0x0649AD4E
+#data 0xAD024D8D
+#data 0x4E8D064A
+#data 0x37B12002
+#data 0x066701D2
+#data 0xAE0461AD
+#data 0x20180460
+#data 0x37202DEE
+#data 0x0386EE12
+#data 0xE74C1860
+#data 0x0301C22D
+#data 0x3A362001
+#data 0xFFA2FFA9
+#data 0x2DEE2038
+#data 0x52EF00A0
+#data 0x0380F239
+#data 0x2CC03104
+#data 0x34C00A90
+#data 0xB6AD06B0
+#data 0x0680AA06
+#data 0xBE3A74B9
+#data 0xC8183A75
+#data 0xE7205AC8
+#data 0xACC07A2D
+#data 0x61ADD890
+#data 0x0460AE04
+#data 0x2DEE2018
+#data 0xC7123720
+#data 0xA9BA8045
+#data 0x00A960FF
+#data 0x0375AD60
+#data 0x48850329
+#data 0x0A0374AD
+#data 0x260A4826
+#data 0x8D48A548
+#data 0x04D002E5
+#data 0x010E02D2
+#data 0x8D0377AD
+#data 0x76AD0209
+#data 0x02088D03
+#data 0x2002E5AD
+#data 0xE58D67A9
+#data 0x2001A202
+#data 0xFFC211AD
+#data 0xF3AE06A4
+#data 0x2003F002
+#data 0xA96011AD
+#data 0x02F18D08
+#data 0x8D4C00B2
+#data 0x02A90462
+#data 0x00603485
+#data 0x8B186200
+#data 0xDE1AB519
+#data 0x301D071B
+#data 0x821F591E
+#data 0xD521AC20
+#data 0x2723FE22
+#data 0x7A265125
+#data 0xCC28A327
+#data 0x1F2AF529
+#data 0x712D482C
+#data 0xC42F9A2E
+#data 0x7E007730
+#data 0xFA51B87D
+#data 0xD4E7B42A
+#data 0x262EB60C
+#data 0x0EF2C902
+#data 0x0400007F
+#data 0x20408102
+#data 0xFFC0FFF0
+#data 0xFFFFFFFF
+#data 0x171E1E3F
+#data 0x0C171717
+#data 0x00000009
+#data 0x00000000
+#data 0x03020100
+#data 0x07060504
+#data 0x0B0A0908
+#data 0x0F0E0D0C
+#data 0x13121110
+#data 0x17161514
+#data 0x1B1A1918
+#data 0x1F1E1D1C
+#data 0x23222120
+#data 0x27262524
+#data 0x2B2A2928
+#data 0x2F2E2D2C
+#data 0x33323130
+#data 0x37363534
+#data 0x3B3A3938
+#data 0x3F3E3D3C
+#data 0x43424140
+#data 0x47464544
+#data 0x4B4A4948
+#data 0x4F4E4D4C
+#data 0x53525150
+#data 0x57565554
+#data 0x5B5A5958
+#data 0x5F5E5D5C
+#data 0x63626160
+#data 0x67666564
+#data 0x6B6A6968
+#data 0x6F6E6D6C
+#data 0x73727170
+#data 0x00767574
+#data 0xA9404300
+#data 0xF104C200
+#data 0x1CAB2006
+#data 0x8902E4AD
+#data 0x81090A03
+#data 0xAD02FE8D
+#data 0x1F2902E4
+#data 0xBDAA0AA8
+#data 0x008D3A46
+#data 0x3A47BD06
+#data 0x9806018D
+#data 0x2285E009
+#data 0x0F291680
+#data 0x22859009
+#data 0xCAAA0F29
+#data 0x201D4FBD
+#data 0x008DE784
+#data 0x06018C06
+#data 0x08D244E7
+#data 0xFFC20C14
+#data 0x07C20437
+#data 0x30B20C0A
+#data 0x8DA0A965
+#data 0x0FA90270
+#data 0xC202718D
+#data 0x77001CFE
+#data 0xA223221E
+#data 0xA926A066
+#data 0x8EA96232
+#data 0x331C6F20
+#data 0xAB20D232
+#data 0x88182002
+#data 0x0C1F08C2
+#data 0x800C1BF2
+#data 0xA22322FB
+#data 0xA916A058
+#data 0x8CA96203
+#data 0x331C6F20
+#data 0x0780D232
+#data 0x0520D20C
+#data 0x06BFAD0C
+#data 0xDE8D0329
+#data 0x06BBAD06
+#data 0xA902E68D
+#data 0x02B08D00
+#data 0x8D02E88D
+#data 0x8A8D02AF
+#data 0x039D8D02
+#data 0x8503A28D
+#data 0x8D50857D
+#data 0x08B20685
+#data 0x10E72064
+#data 0xB25E3F20
+#data 0x30B246F0
+#data 0x20C20B65
+#data 0x46C60C05
+#data 0xE6ADF4D0
+#data 0x4C658502
+#data 0x692010B1
+#data 0x02E8EEE7
+#data 0xC902E8AD
+#data 0xA908D001
+#data 0xDEED3806
+#data 0xAD158006
+#data 0xED3802E6
+#data 0x02F002B0
+#data 0x00A90410
+#data 0x08C90C80
+#data 0x08A90230
+#data 0x206185AA
+#data 0x61A544CE
+#data 0x02B06D18
+#data 0xAD02B08D
+#data 0x06C902E8
+#data 0x00A90DD0
+#data 0x8D02E88D
+#data 0xAFEE02B0
+#data 0x60008002
+#data 0xE6EA5420
+#data 0x8D78A926
+#data 0x02D20C0A
+#data 0xC23B0C04
+#data 0xB20C0402
+#data 0x7F3B4610
+#data 0x2C201649
+#data 0x054F8F16
+#data 0x804610B2
+#data 0xD046C6F1
+#data 0x0A28C2ED
+#data 0x6000A90C
+#data 0xAD60FFA9
+#data 0xD0200270
+#data 0x40D23B57
+#data 0x02D20C04
+#data 0x2F200C05
+#data 0xA909D011
+#data 0x85F68500
+#data 0x163320F7
+#data 0x8D08A960
+#data 0x00A90C01
+#data 0xD20C078D
+#data 0xD20C0618
+#data 0xD20C0420
+#data 0xE20C0A40
+#data 0x19040401
+#data 0x03C5AD38
+#data 0x178D10E9
+#data 0x03C2AD0C
+#data 0xA90C168D
+#data 0x0C1A8D03
+#data 0x1B8D8CA9
+#data 0x02C23B0C
+#data 0x60C20C05
+#data 0x04C20C04
+#data 0x26E60C07
+#data 0xB24610B2
+#data 0x203B4710
+#data 0x497F162C
+#data 0x054F0F4B
+#data 0x804710B2
+#data 0xF047C606
+#data 0xCF038042
+#data 0x10B2054F
+#data 0xC6E38046
+#data 0x20DFD046
+#data 0x26E6EA54
+#data 0x040401F2
+#data 0x4610B224
+#data 0x20497F3B
+#data 0x0F162C20
+#data 0x4F4F064F
+#data 0x4611B203
+#data 0x163046C6
+#data 0xCFE94F3F
+#data 0x40D20719
+#data 0x44B20052
+#data 0x6000A926
+#data 0xA960FFA9
+#data 0x02A96001
+#data 0xD048E660
+#data 0x6049E602
+#data 0x1DE726E6
+#data 0x0C0E10D2
+#data 0x02FD04C2
+#data 0x168D00A9
+#data 0x8D01A90C
+#data 0x1BA90C17
+#data 0xA90C1A8D
+#data 0x0C1B8D8C
+#data 0x0C0802C2
+#data 0x0C0704C2
+#data 0x0C0440D2
+#data 0x0C0502D2
+#data 0x0440C23B
+#data 0x0502C20C
+#data 0x8D00A90C
+#data 0x20A90C16
+#data 0xA90C178D
+#data 0x0C1A8D1D
+#data 0x1B8D8EA9
+#data 0x1F08C20C
+#data 0x0C1BF20C
+#data 0x00A9FB80
+#data 0xA90C168D
+#data 0x0C178D06
+#data 0x1A8D1CA9
+#data 0x8D8CA90C
+#data 0x08C20C1B
+#data 0x1BF20C1F
+#data 0xA9FB800C
+#data 0x0C168D00
+#data 0x178D02A9
+#data 0x8D1BA90C
+#data 0x8EA90C1A
+#data 0xAD0C1B8D
+#data 0x893A0271
+#data 0xB246852D
+#data 0xC63B4705
+#data 0xA9FBD046
+#data 0x855E8500
+#data 0xD260855F
+#data 0xD20C0940
+#data 0xC20C0704
+#data 0xE20C0710
+#data 0x04080406
+#data 0x0C0710D2
+#data 0x0C0A1FC2
+#data 0x0C0A0BD2
+#data 0x0C0A40C2
+#data 0x758DF0A9
+#data 0x8D3FA902
+#data 0x01C20276
+#data 0x35A90C01
+#data 0xC206E78D
+#data 0xA90C17FF
+#data 0x0C168D05
+#data 0x1A8D01A9
+#data 0x8D86A90C
+#data 0xF7200C1B
+#data 0x40C23B19
+#data 0x04C20C04
+#data 0x75AD0C06
+#data 0xAD61D002
+#data 0x3BC90276
+#data 0xD24809D0
+#data 0x2006F102
+#data 0xC9681C94
+#data 0x4806D039
+#data 0x0C0940C2
+#data 0xD03AC968
+#data 0x18C24806
+#data 0xC9680C0A
+#data 0xD20AD02C
+#data 0xD20C0640
+#data 0x800C0440
+#data 0xD005C92F
+#data 0x8D00A91A
+#data 0x01A90C16
+#data 0xA90C178D
+#data 0x0C1A8D21
+#data 0x1B8D8EA9
+#data 0x0708D20C
+#data 0xAD11800C
+#data 0x14C90276
+#data 0x07C20AD0
+#data 0x02D20C0A
+#data 0x00800C0A
+#data 0x9018F420
+#data 0x8D00A989
+#data 0xE48D06EA
+#data 0x06F38D06
+#data 0x0C0A07C2
+#data 0x0C0A01D2
+#data 0xF0A23FA9
+#data 0x200406E2
+#data 0x8DF0A902
+#data 0x758E0276
+#data 0x0102C202
+#data 0x1DA02004
+#data 0x0C0940C2
+#data 0x290C01AD
+#data 0x0C018DC3
+#data 0xF38D00A9
+#data 0xF2498502
+#data 0x14010C01
+#data 0xA5116820
+#data 0x53206A62
+#data 0x02606E4F
+#data 0x6E02616E
+#data 0x03800262
+#data 0x3B116820
+#data 0xD00275AD
+#data 0x0276AD4A
+#data 0x040401E2
+#data 0xD01FC920
+#data 0x0640D206
+#data 0xC938800C
+#data 0x2234D01D
+#data 0xA040A223
+#data 0x620FA900
+#data 0x86208EA9
+#data 0x8032331C
+#data 0xD020C922
+#data 0xA2232212
+#data 0xA901A000
+#data 0x8CA9620F
+#data 0x331C8620
+#data 0xC92F8032
+#data 0xC20AD018
+#data 0xD20C0A07
+#data 0x800C0A01
+#data 0xD002C921
+#data 0x8D13A91D
+#data 0x80A90C1A
+#data 0xC20C1B8D
+#data 0xF20C1F08
+#data 0xFB800C1B
+#data 0x850C16AD
+#data 0x0C17ADF6
+#data 0xF420F785
+#data 0x4C03B018
+#data 0x01F217CE
+#data 0xA91F0404
+#data 0x0C1A8D00
+#data 0x1B8D88A9
+#data 0x1F08C20C
+#data 0x0C1BF20C
+#data 0x16ADFB80
+#data 0x03C28D0C
+#data 0x8D0C17AD
+#data 0x1D6703C5
+#data 0x0C0A07C2
+#data 0x0C0A00D2
+#data 0x04C21AF7
+#data 0x00A90401
+#data 0x8504D260
+#data 0x0686AD06
+#data 0xA902768D
+#data 0x02758D00
+#data 0x08C24467
+#data 0x87AD0C14
+#data 0x18E22006
+#data 0x0275AD3B
+#data 0x86AD0FD0
+#data 0x76CD3A06
+#data 0xAD06D002
+#data 0xE2200688
+#data 0x18F42018
+#data 0x1FA9E690
+#data 0x3B18E220
+#data 0x08C25267
+#data 0x01C20685
+#data 0x8D600685
+#data 0xFFC20C16
+#data 0x54A90C17
+#data 0xA90C1A8D
+#data 0x0C1B8D8C
+#data 0x0275AD60
+#data 0x75CE0CF0
+#data 0xAD0DD002
+#data 0x08D00276
+#data 0x75CE6038
+#data 0x0276CE02
+#data 0x40C26018
+#data 0x40D20C09
+#data 0x00A90C07
+#data 0xA902758D
+#data 0x02768D40
+#data 0xB24800B2
+#data 0x46B24600
+#data 0x19DB2026
+#data 0x60AD1BB0
+#data 0xD07FC902
+#data 0x0261E2F4
+#data 0x62E2EFFF
+#data 0x8DEAC002
+#data 0x02A20466
+#data 0xCE203686
+#data 0xAD7DB019
+#data 0xC18D0260
+#data 0x19CE2006
+#data 0x60AD72B0
+#data 0x06C28D02
+#data 0x2067EC20
+#data 0x64B019DB
+#data 0x800260F2
+#data 0x19CE20C0
+#data 0x60AD5AB0
+#data 0x06C38D02
+#data 0xB019CE20
+#data 0x0260AD4F
+#data 0x2006C48D
+#data 0xDB2067EC
+#data 0xF241B019
+#data 0x9D800260
+#data 0xB019CE20
+#data 0x19CE2037
+#data 0x61AD32B0
+#data 0x0465CD02
+#data 0x60AD8BD0
+#data 0x0464CD02
+#data 0x04A083D0
+#data 0xC219D020
+#data 0xE2010301
+#data 0x041006C4
+#data 0x010301D2
+#data 0x06BE02C2
+#data 0x2006C4E2
+#data 0xBE02D204
+#data 0x6000A906
+#data 0xA060C6A9
+#data 0xA0028006
+#data 0xDB205A08
+#data 0x03B07A19
+#data 0x60F6D088
+#data 0x6A62A53B
+#data 0x6E4F5320
+#data 0x616E0260
+#data 0x02626E02
+#data 0x6018F420
+#data 0x010C01F2
+#data 0x11682008
+#data 0x801A0A20
+#data 0x11682003
+#data 0x9006B6AD
+#data 0x8D804902
+#data 0x38600C00
+#data 0x02601F2A
+#data 0x194F0149
+#data 0x0517BF08
+#data 0x80075E3F
+#data 0x02606F03
+#data 0x6AA80149
+#data 0x5F665E66
+#data 0x6A986066
+#data 0xA926E660
+#data 0x06858D00
+#data 0x040102D2
+#data 0x058D02A9
+#data 0x8D00A904
+#data 0xAC8D06BE
+#data 0x02ABAD02
+#data 0xAB8D1029
+#data 0x0422EF02
+#data 0x0C1207C2
+#data 0x04010CC2
+#data 0x20881820
+#data 0x80D21114
+#data 0x00A90C04
+#data 0x8D0C068D
+#data 0x01D20C07
+#data 0x04D20C05
+#data 0x06E20C04
+#data 0xE2611004
+#data 0x5C800406
+#data 0x2903CBAD
+#data 0xAD55D006
+#data 0xFF2903CC
+#data 0xCC8D0009
+#data 0x03CDAD03
+#data 0xA009EF29
+#data 0xAD03CD8D
+#data 0xFF2903CA
+#data 0xCA8D0009
+#data 0x03CBAD03
+#data 0x6009F929
+#data 0xAD03CB8D
+#data 0x22CD012B
+#data 0xAD031001
+#data 0xFCE20122
+#data 0x89020202
+#data 0xCD028904
+#data 0x16300681
+#data 0x2903CAAD
+#data 0x8D0009FF
+#data 0xCBAD03CA
+#data 0x09F92903
+#data 0x03CB8D60
+#data 0x82CD7980
+#data 0xAD2A3006
+#data 0xFF2903CA
+#data 0xCA8D0009
+#data 0x03CBAD03
+#data 0x6209F929
+#data 0xAD03CB8D
+#data 0xFF2903CC
+#data 0xCC8D0009
+#data 0x03CDAD03
+#data 0xB009EF29
+#data 0x8003CD8D
+#data 0x0683CD4A
+#data 0xCAAD1630
+#data 0x09FF2903
+#data 0x03CA8D00
+#data 0x2903CBAD
+#data 0x8D6209F9
+#data 0x2F8003CB
+#data 0x300684CD
+#data 0x03CAAD16
+#data 0x0009FF29
+#data 0xAD03CA8D
+#data 0xF92903CB
+#data 0xCB8D6409
+#data 0xAD148003
+#data 0xFF2903CA
+#data 0xCA8D0009
+#data 0x03CBAD03
+#data 0x6609F929
+#data 0xD203CB8D
+#data 0xE20C1D04
+#data 0xF7040C1D
+#data 0x8D80A90B
+#data 0xC0E202FE
+#data 0xF2050106
+#data 0x05020608
+#data 0x80039BE2
+#data 0xFD10D204
+#data 0x0669AD02
+#data 0xAD02708D
+#data 0x718D066C
+#data 0x17FFC202
+#data 0x066AAD0C
+#data 0xA90C168D
+#data 0x0C1A8D13
+#data 0x1B8D8CA9
+#data 0x6BAD0B0C
+#data 0x0C168D06
+#data 0x1A8D16A9
+#data 0x8D8EA90C
+#data 0xA90B0C1B
+#data 0x0608E200
+#data 0x10090210
+#data 0xA906F08D
+#data 0x06B1E200
+#data 0x20A90220
+#data 0x020608E2
+#data 0x8D400902
+#data 0x942006F1
+#data 0x06A90B1C
+#data 0xF4ADE185
+#data 0x0C168D06
+#data 0x8D06F5AD
+#data 0x06A90C17
+#data 0xA90C1A8D
+#data 0x0C1B8D8E
+#data 0x0C1F08C2
+#data 0x800C1BF2
+#data 0x06F6ADFB
+#data 0xAD0C168D
+#data 0x178D06F7
+#data 0x8D06A90C
+#data 0x8CA90C1A
+#data 0xC20C1B8D
+#data 0xF20C1F08
+#data 0xFB800C1B
+#data 0x8D06E5AD
+#data 0x00A90C16
+#data 0xA90C178D
+#data 0x0C1A8D03
+#data 0x1B8D8EA9
+#data 0x1F08C20C
+#data 0x0C1BF20C
+#data 0x2322FB80
+#data 0x00A010A2
+#data 0xA9622DA9
+#data 0x1C86208E
+#data 0x51F73233
+#data 0x19CF6060
+#data 0x0401F208
+#data 0x7C4C0301
+#data 0x1308D29A
+#data 0x1F445F0C
+#data 0x0C15FFC2
+#data 0x0C14FBC2
+#data 0x0C1408D2
+#data 0x0C1580D2
+#data 0x0C14E0D2
+#data 0x0C14F21B
+#data 0x01A9FA20
+#data 0x60029F8D
+
+#align4
+loc_8c16E5E0:
+#data bank0c.loc_8c0c168E
+#data 0x1B8D0C17
+#data 0x1A8D720C
+#data 0x1F08C20C
+#data 0x0C1BF20C
+#data 0x8E60FB80
+#data 0x178C0C16
+#data 0x0C1B8D0C
+#data 0x0C1A8D72
+#data 0x06F0AD60
+#data 0xAD0C168D
+#data 0x178D06F1
+#data 0x8D1BA90C
+#data 0x94A90C1A
+#data 0x600C1B8D
+#data 0xC21C9420
+#data 0xF20C1F08
+#data 0xFB800C1B
+#data 0x00000060
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0xAD000000
+#data 0xF8CD011C
+#data 0xAD401006
+#data 0x7F29011D
+#data 0x3006F9CD
+#data 0x011EAD36
+#data 0x3006FACD
+#data 0x011FAD2E
+#data 0x3006FBCD
+#data 0x0120AD26
+#data 0x1006FCCD
+#data 0x0121AD1E
+#data 0x1006FDCD
+#data 0x0122AD16
+#data 0x3006FECD
+#data 0x012BAD0E
+#data 0x1006FFCD
+#data 0x06AAF206
+#data 0xC2600102
+#data 0xC2040101
+#data 0x6006C001
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x00000000
+#data 0x10A96000
+#data 0xD202EA8D
+#data 0x2003A504
+#data 0x0320117D
+#data 0x1201205C
+#data 0x10119B20
+#data 0x02D05B10
+#data 0x4507F380
+#data 0x0B0B45D7
+#data 0x6D4C0B0B
+#data 0x0401E21E
+#data 0x181F1F01
+#data 0x8020C204
+#data 0x11232006
+#data 0x0AD003C9
+#data 0x200680E2
+#data 0x10B72005
+#data 0x04C9F280
+#data 0xD64C06D0
+#data 0x5C25201E
+#data 0x01C917F0
+#data 0x03C90DF0
+#data 0x04C90CF0
+#data 0xB18002F0
+#data 0x4C1E9B4C
+#data 0x6D4C1E46
+#data 0x4FBF0B1E
+#data 0x03181F03
+#data 0x5B1E464C
+#data 0x9980F3D0
+#data 0x2096F05B
+#data 0x012012F7
+#data 0x8745D712
+#data 0x010DE21D
+#data 0x24A50B10
+#data 0x05D096C9
+#data 0x804720B2
+#data 0x4708B203
+#data 0x0B4600B2
+#data 0xFBD046C6
+#data 0xF41047C6
+#data 0xB2116E4C
+#data 0x200B4640
+#data 0x46C644A2
+#data 0x01E214F0
+#data 0xF2070104
+#data 0xEE800C0F
+#data 0x4FF20580
+#data 0x4CE71800
+#data 0x1EF71F38
+#data 0x20EFF820
+#data 0x44A731B7
+#data 0x97573220
+#data 0x9CBA2043
+#data 0x00A952D7
+#data 0x8D03808D
+#data 0xAB8D037F
+#data 0x2D308902
+#data 0xAC8D02AC
+#data 0xFDFDC202
+#data 0xFCFDC202
+#data 0xAB10D202
+#data 0x11714C02
+#data 0x0C081AD2
+#data 0x043710D2
+#data 0x10CF200B
+#data 0xF0134520
+#data 0xF0FFC908
+#data 0x9090C907
+#data 0x1F384CEF
+#data 0x20C950A5
+#data 0x200B7B30
+#data 0x452010CF
+#data 0x5001B213
+#data 0x10CF200B
+#data 0xF0134520
+#data 0xC9663068
+#data 0xD7F13008
+#data 0xC252B71E
+#data 0xD20C0680
+#data 0x200C0802
+#data 0x43975732
+#data 0x200A52CF
+#data 0xB720EFF8
+#data 0xA7448731
+#data 0x1F6F2044
+#data 0x02010EE2
+#data 0xA925270D
+#data 0xA92285C0
+#data 0x4C248596
+#data 0xD6C9116E
+#data 0xD7C908F0
+#data 0xD8C904F0
+#data 0x189704D0
+#data 0x248511A9
+#data 0x0F300009
+#data 0x85E22527
+#data 0x20050106
+#data 0xC980189C
+#data 0xC911744C
+#data 0x4C03D096
+#data 0x614C116E
+#data 0x5B644C5B
+#data 0x205DD720
+#data 0xC2601F42
+#data 0xF20C1F08
+#data 0xFB800C1B
+#data 0x02E6AE60
+#data 0x8DF1CCBD
+#data 0x4CBD0C17
+#data 0x0C168DF1
+#data 0x1A8D1DA9
+#data 0x8D8CA90C
+#data 0x08C20C1B
+#data 0x1BF20C1F
+#data 0x60FB800C
+#data 0x02F48EBA
+#data 0xF22683B2
+#data 0x23010401
+#data 0x0C081AC2
+#data 0x080103E2
+#data 0xFD10C20D
+#data 0x02ABF202
+#data 0x10D20401
+#data 0x04D20C0E
+#data 0x80C20C07
+#data 0x00A90C07
+#data 0xC20C018D
+#data 0xC2037580
+#data 0xC2010302
+#data 0x67011180
+#data 0x0401E245
+#data 0xBFA90C01
+#data 0xE0A94885
+#data 0x22204985
+#data 0xA8206021
+#data 0xF7206064
+#data 0xF48EBA12
+#data 0x8DF1A902
+#data 0x78A90C0B
+#data 0xA90C0A8D
+#data 0x0C098D00
+#data 0x8D0C088D
+#data 0x068D0C07
+#data 0x02AB8D0C
+#data 0xAC2D3089
+#data 0x02AC8D02
+#data 0x0C0E10C2
+#data 0x0C0F40C2
+#data 0x018D09A9
+#data 0x0480D20C
+#data 0x0502D20C
+#data 0x1D04D20C
+#data 0x0C1DE20C
+#data 0x200BF704
+#data 0x51F711C2
+#data 0x02AB10D2
+#data 0x0B881820
+#data 0x451F4587
+#data 0x2922A5FA
+#data 0x2902801F
+#data 0xC2F0F00F
+#data 0xBF0C0502
+#data 0x194F0917
+#data 0x20AA4C03
+#data 0x2020724C
+#data 0xDC2011BC
+#data 0x6C632012
+#data 0x02AC08D2
+#data 0x10A945A7
+#data 0x2002708D
+#data 0x20C210F3
+#data 0x05A902FC
+#data 0xB32000A2
+#data 0xA2232211
+#data 0xA900A020
+#data 0x8EA9620F
+#data 0x331C8620
+#data 0xBF203B32
+#data 0x11A42011
+#data 0x2020C44C
+#data 0x08D26E36
+#data 0xDC2002AC
+#data 0x6C632012
+#data 0x010401E2
+#data 0x069FFF0C
+#data 0x040101C2
+#data 0x3B200380
+#data 0xE245A711
+#data 0x06010401
+#data 0xFC454F3B
+#data 0x9E200380
+#data 0x11B02011
+#data 0xA12045B7
+#data 0x201A8011
+#data 0x08D26E36
+#data 0xDC2002AC
+#data 0x6C632012
+#data 0xA711B020
+#data 0x119E2045
+#data 0xA12045B7
+#data 0x60450711
+#data 0x010401F2
+#data 0x117D2013
+#data 0x205B7520
+#data 0x37AD117A
+#data 0x0136AE01
+#data 0x0BEBF020
+#data 0xE22660B2
+#data 0x65010401
+#data 0xD0371B20
+#data 0xD245B733
+#data 0x20040104
+#data 0x80A93567
+#data 0xC1A94885
+#data 0x2B204985
+#data 0xA91DD036
+#data 0xA94885BF
+#data 0x80498583
+#data 0x0801C216
+#data 0x85BFA90C
+#data 0x85E0A948
+#data 0x11292049
+#data 0xDCA905F0
+#data 0xF2670B4C
+#data 0x140106C0
+#data 0x040104D2
+#data 0xF0112F20
+#data 0xA9F91007
+#data 0x670B4CDD
+#data 0x005240D2
+#data 0xF0325820
+#data 0x4CDEA905
+#data 0xFFC2670B
+#data 0xA44C02F3
+#data 0x0319CF64
+#data 0x2063D24C
+#data 0x03D012D9
+#data 0x2964034C
+#data 0x4CD0090F
+#data 0x034C6712
+#data 0x7B9B2064
+#data 0xC264A44C
+#data 0xC2037580
+#data 0x770108FF
+#data 0x0439E245
+#data 0x03F26A08
+#data 0xAD7C2001
+#data 0x7F290108
+#data 0xC1AD1FD0
+#data 0x0261CDEE
+#data 0xC2AD6DD0
+#data 0x0260CDEE
+#data 0x2DAD65D0
+#data 0xA5553004
+#data 0x042D4D5E
+#data 0x80042C8D
+#data 0x0108F24B
+#data 0x0CC94603
+#data 0x18100FF0
+#data 0xBDAA4A4A
+#data 0x60CDEEC2
+#data 0x802FD002
+#data 0x042DAD33
+#data 0x60AD0610
+#data 0x042C8D02
+#data 0xCD042CAD
+#data 0x1AD00260
+#data 0x2C8DFF49
+#data 0x0108E204
+#data 0x08F21618
+#data 0xA9078001
+#data 0x01088D80
+#data 0x20D21580
+#data 0xFFC20103
+#data 0x0B800108
+#data 0xE20108EE
+#data 0x03020103
+#data 0x200108EE
+#data 0x0EE26801
+#data 0xE2080201
+#data 0x0304010E
+#data 0x086000A9
+#data 0x03537F28
+#data 0xB066FB4C
+#data 0x0017BF17
+#data 0x800111E2
+#data 0x0345FF0C
+#data 0xB221FA4C
+#data 0x00A92667
+#data 0x21724C60
+#data 0x10038FE2
+#data 0x8D05A91D
+#data 0x00A90C16
+#data 0xA90C178D
+#data 0x0C1A8D9F
+#data 0x1B8D84A9
+#data 0x1F08C20C
+#data 0x0C1BF20C
+#data 0xC0F2FB80
+#data 0xE2080106
+#data 0x03800375
+#data 0x8D21FA4C
+#data 0x02A20466
+#data 0x0EA23686
+#data 0x010401E2
+#data 0x11AD2005
+#data 0x12200380
+#data 0x4C031068
+#data 0xEC2022C8
+#data 0x06298D67
+#data 0x20062A8E
+#data 0xEF3067FC
+#data 0x8D67EC20
+#data 0x2C8E062B
+#data 0x0629E206
+#data 0x05A01401
+#data 0x67FC205A
+#data 0x7A67EC20
+#data 0x8A03F099
+#data 0x8803F699
+#data 0xFC20EE10
+#data 0x201E3067
+#data 0x2D8D67EC
+#data 0x062E8E06
+#data 0x3067FC20
+#data 0x0261AD10
+#data 0xD00465CD
+#data 0x0260AD08
+#data 0xF00464CD
+#data 0x21724C03
+#data 0x29BD03A2
+#data 0x03749D06
+#data 0xADF710CA
+#data 0x2EAE062D
+#data 0x04348D06
+#data 0xE204358E
+#data 0x41010374
+#data 0xF0B905A0
+#data 0x03F6BE03
+#data 0x04D000C9
+#data 0x0AF000E0
+#data 0x0310D248
+#data 0x0304D201
+#data 0x168D6801
+#data 0x0C178E0C
+#data 0xE4894A98
+#data 0xA90C1A8D
+#data 0x0C1B8D8C
+#data 0xD0012998
+#data 0x1B02D204
+#data 0x1F08C20C
+#data 0x0C1BF20C
+#data 0x1088FB80
+#data 0x2926A5C1
+#data 0xE20409E0
+#data 0x02800375
+#data 0x26850109
+#data 0xF002F3AE
+#data 0x11AD2003
+#data 0x0C0AFEC2
+#data 0x0106C0E2
+#data 0x39F42005
+#data 0xAA200380
+#data 0x1180D211
+#data 0xE2457701
+#data 0x0A010401
+#data 0x0106C0E2
+#data 0x31F12011
+#data 0xE4AD0C80
+#data 0x12AF2002
+#data 0x2002E68D
+#data 0x01201180
+#data 0x20084868
+#data 0x68281F4C
+#data 0xAC22124C
+#data 0xD09802F3
+#data 0x01E2DA5B
+#data 0x20030104
+#data 0xE23B1168
+#data 0x270106C0
+#data 0x2006A4EE
+#data 0x3F203215
+#data 0xD061A432
+#data 0x06A4AD1A
+#data 0xE6800210
+#data 0xE23006C9
+#data 0x2906E7AD
+#data 0xD005C90F
+#data 0xFA45F7D9
+#data 0xA524654C
+#data 0xFA498562
+#data 0x08D046A5
+#data 0x02D047A5
+#data 0x47C653C6
+#data 0x02A046C6
+#data 0x010401E2
+#data 0x8061A404
+#data 0x0103E207
+#data 0x04A00202
+#data 0xF8204966
+#data 0x06C0E282
+#data 0x05900701
+#data 0xA48D80A9
+#data 0x02606E06
+#data 0x6E02616E
+#data 0x01E20262
+#data 0xAD190104
+#data 0x3F290260
+#data 0x10D01FC9
+#data 0xFF0261E2
+#data 0x0262E20B
+#data 0x8C8806F0
+#data 0x498002F3
+#data 0xFF0260E2
+#data 0x0261E227
+#data 0x01E222FF
+#data 0xF20A0104
+#data 0x180106C0
+#data 0xFF0262E2
+#data 0x0262E213
+#data 0x45F70EF0
+#data 0x010401E2
+#data 0x0111E207
+#data 0x07800280
+#data 0x03F0CA88
+#data 0x8C23814C
+#data 0x60AD02F3
+#data 0xC93F2902
+#data 0xE20FD01F
+#data 0x0AFF0261
+#data 0xF00262E2
+#data 0x0262AD05
+#data 0x62AD6038
+#data 0xA5601802
+#data 0x85200922
+#data 0x0401E222
+#data 0x40B22E01
+#data 0x85BFA926
+#data 0x85E0A948
+#data 0x11292049
+#data 0x2C200ED0
+#data 0x1004F011
+#data 0x200580F4
+#data 0x05101138
+#data 0x164C4547
+#data 0x02D2AA6B
+#data 0x04C20C08
+#data 0x608A0C07
+#data 0x0F2922A5
+#data 0x2285C009
+#data 0x9F691B4C
+#data 0xAE600162
+#data 0x7EAC037D
+#data 0x154F0F03
+#data 0xA009628F
+#data 0x1110E800
+#data 0x0D8080A2
+#data 0x10C800A2
+#data 0x8080A008
+#data 0xA000A204
+#data 0x037D8E00
+#data 0xAD037E8C
+#data 0x1C10037C
+#data 0x073006C0
+#data 0x7C8D00A9
+#data 0x0F118003
+#data 0x7CEE0462
+#data 0xFDA96003
+#data 0xC2037C8D
+#data 0x60037BFF
+#data 0x620F20D0
+#data 0x0604D205
+#data 0x04C2600C
+#data 0x00A90C06
+#data 0xA90C168D
+#data 0x0C178D00
+#data 0x1A8D41A9
+#data 0x8D8FA90C
+#data 0x7BAE0C1B
+#data 0x1006E003
+#data 0xCA4F0F09
+#data 0x204A62A5
+#data 0x62A57767
+#data 0x06297E4A
+#data 0xE2037CEE
+#data 0x0902037F
+#data 0x19CF2EA9
+#data 0x8055A90D
+#data 0xE219A909
+#data 0x020106C0
+#data 0x7CCD26A9
+#data 0x8915D003
+#data 0x89F829FF
+#data 0x037C8D08
+#data 0x7B8D06A9
+#data 0x03194F03
+#data 0x6011DD20
+#data 0x29037CAD
+#data 0x6001F007
+#data 0xC9037CAD
+#data 0xAD101010
+#data 0x4EC90629
+#data 0xF14C06F0
+#data 0x72474C24
+#data 0x4C72474C
+#data 0x29AD7257
+#data 0x011A8D06
+#data 0x8D062AAD
+#data 0x02C2011B
+#data 0x1BE203C1
+#data 0xD2042001
+#data 0xE203C102
+#data 0x3F0106C0
+#data 0x8D062BAD
+#data 0x2CAD012F
+#data 0x8D4A4A06
+#data 0x2FAD06B4
+#data 0x0F294A01
+#data 0xAD06B28D
+#data 0x4A4A012F
+#data 0x8D4A4A4A
+#data 0xB4AD06B1
+#data 0x0A0A0A06
+#data 0xB10D3829
+#data 0x06B18D06
+#data 0x060802C2
+#data 0x0806B4E2
+#data 0x0802D204
+#data 0xAD078006
+#data 0x2E0A062B
+#data 0x01D2012F
+#data 0xA560060B
+#data 0xE6031048
+#data 0x17D06048
+#data 0x0C0404C2
+#data 0x0C0420D2
+#data 0x0C0604D2
+#data 0xC902ADAD
+#data 0xD204D008
+#data 0xDF0C0708
+#data 0x48E60348
+#data 0xB249E660
+#data 0x49A54801
+#data 0x121004C9
+#data 0x01D002C9
+#data 0xD003C960
+#data 0x0604C208
+#data 0x0808C20C
+#data 0x0AC9600C
+#data 0x07C95E10
+#data 0x00A90810
+#data 0x8D06AC8D
+#data 0x33A906AD
+#data 0xA90C1A8D
+#data 0x0C1B8D89
+#data 0x0C1F08C2
+#data 0x800C1BF2
+#data 0x0C16ADFB
+#data 0x6A0C174E
+#data 0x6A0C174E
+#data 0x06AC6D18
+#data 0xAD06AC8D
+#data 0xAD6D0C17
+#data 0x06AD8D06
+#data 0x1A8D36A9
+#data 0x8D89A90C
+#data 0x08C20C1B
+#data 0x1BF20C1F
+#data 0xADFB800C
+#data 0xAE8D0C16
+#data 0x0C17AD06
+#data 0xC206AF8D
+#data 0x600C0420
+#data 0xAD761D4C
+#data 0x08C902AD
+#data 0xAC4C0310
+#data 0x8D39A927
+#data 0x83A90C1A
+#data 0xC20C1B8D
+#data 0xF20C1F08
+#data 0xFB800C1B
+#data 0x8D0C16AD
+#data 0x17AD011C
+#data 0x011D8D0C
+#data 0x00A900A2
+#data 0x8D06A78D
+#data 0x02C206A8
+#data 0xA7BD06AA
+#data 0x8D2FF027
+#data 0x89A90C1A
+#data 0xC20C1B8D
+#data 0xF20C1F08
+#data 0xFB800C1B
+#data 0x4E0C16AD
+#data 0x4E6A0C17
+#data 0x186A0C17
+#data 0x8D06A76D
+#data 0x17AD06A7
+#data 0x06A86D0C
+#data 0xE806A88D
+#data 0x06A9CC80
+#data 0xA90C1A8D
+#data 0x0C1B8D89
+#data 0x0C1F08C2
+#data 0x800C1BF2
+#data 0x0C16ADFB
+#data 0xAD06A58D
+#data 0xA68D0C17
+#data 0x8D32A906
+#data 0x89A90C1A
+#data 0xC20C1B8D
+#data 0xF20C1F08
+#data 0xFB800C1B
+#data 0xC20C16AD
+#data 0xAD06AA04
+#data 0x17CD06A6
+#data 0xD206B00C
+#data 0x8006AA04
+#data 0xAD08D00A
+#data 0x16CD06A5
+#data 0xA2F0900C
+#data 0x06AAF200
+#data 0x02A20204
+#data 0x6E06A84E
+#data 0xECE806A7
+#data 0xF43006A9
+#data 0x1A8D02A9
+#data 0x8D89A90C
+#data 0x08C20C1B
+#data 0x1BF20C1F
+#data 0xADFB800C
+#data 0xA68D0C17
+#data 0x0C16AD06
+#data 0xAD06A58D
+#data 0xA8CD06A6
+#data 0xD206B006
+#data 0x8006AA02
+#data 0xAD08D00A
+#data 0xA7CD06A5
+#data 0xA2F09006
+#data 0x76F74C00
+#data 0x0406080A
+#data 0x0401F200
+#data 0xB84C0301
+#data 0xAA01C227
+#data 0x77394C06
+#data 0x2903CCAD
+#data 0x8D0009FF
+#data 0xCDAD03CC
+#data 0x09EF2903
+#data 0x03CD8DA0
+#data 0x2903CAAD
+#data 0x8D0009FF
+#data 0xCBAD03CA
+#data 0x09F92903
+#data 0x03CB8D60
+#data 0x0C0E10C2
+#data 0x0C0F40C2
+#data 0x02FD04C2
+#data 0x0106C0F2
+#data 0x0406E20D
+#data 0x01E21701
+#data 0x7F122004
+#data 0xC0E20F9F
+#data 0x47040106
+#data 0xC7028019
+#data 0x0103D219
+#data 0x0804C204
+#data 0x1280D20C
+#data 0x8DF4A90C
+#data 0x78A90C0B
+#data 0xA90C0A8D
+#data 0x0C018D0E
+#data 0xFC8D00A9
+#data 0x03848D02
+#data 0x8D02AB8D
+#data 0x3089010E
+#data 0x8D02AC2D
+#data 0x00A902AC
+#data 0x02010DE2
+#data 0x8D020902
+#data 0x01D202FD
+#data 0x80D20C04
+#data 0x04D20C04
+#data 0x1DE20C1D
+#data 0x0BF7040C
+#data 0x0C0401C2
+#data 0x8502E3AD
+#data 0x20E085E1
+#data 0x08D211C2
+#data 0xFDC20C04
+#data 0xFFC20045
+#data 0xA90B0052
+#data 0x03808D00
+#data 0xD2037F8D
+#data 0x2002AB10
+#data 0x770B8818
+#data 0x0408C243
+#data 0xE222A50C
+#data 0x040106C0
+#data 0x02801F29
+#data 0xE48D0F29
+#data 0x10E72002
+#data 0x20F12920
+#data 0xA960788C
+#data 0x0C1A8DFC
+#data 0x1B8D88A9
+#data 0x1F08C20C
+#data 0x0C1BF20C
+#data 0x16ADFB80
+#data 0xE2BF290C
+#data 0x0210038F
+#data 0x168D4009
+#data 0x8DFCA90C
+#data 0x8CA90C1A
+#data 0xC20C1B8D
+#data 0xF20C1F08
+#data 0xFB800C1B
+#data 0x8D00A960
+#data 0xFFA90111
+#data 0xA901128D
+#data 0x01138D0F
+#data 0x004180D2
+#data 0x078D97A9
+#data 0x8D28A901
+#data 0x22A5010B
+#data 0xA2013A8D
+#data 0xEDF02018
+#data 0x207E4620
+#data 0x01C2137B
+#data 0x7E20010E
+#data 0x2A692010
+#data 0x0D4C03D0
+#data 0x03D05B12
+#data 0xA512074C
+#data 0xC9F02924
+#data 0x4CDDD0E0
+#data 0x22A529BD
+#data 0xE2013A8D
+#data 0x07010401
+#data 0xC204181F
+#data 0x20068020
+#data 0x01C966FE
+#data 0x624CC2D0
+#data 0x5B45D729
+#data 0x074C03D0
+#data 0x1302D212
+#data 0x4D08B20C
+#data 0x1B4A00B2
+#data 0xFBD04AC6
+#data 0xF4104DC6
+#data 0x2012044C
+#data 0x25AFEFF8
+#data 0x64448F44
+#data 0xE24F181F
+#data 0x35010401
+#data 0x200680E2
+#data 0x8501D230
+#data 0xC252C706
+#data 0xC2004510
+#data 0x20001802
+#data 0x80B21294
+#data 0x12222027
+#data 0x80C24567
+#data 0x80C20375
+#data 0x07A90111
+#data 0xD2065A8D
+#data 0x20068508
+#data 0xD54C2BC3
+#data 0x0501C229
+#data 0x1294200C
+#data 0xA51925AF
+#data 0xD00F2922
+#data 0x013AAD05
+#data 0x08C22285
+#data 0x455702FD
+#data 0x7B2052D7
+#data 0x120A4C13
+#data 0x008052C7
+#data 0x202780B2
+#data 0x04F01222
+#data 0x25271897
+#data 0x010104F2
+#data 0x2922A50D
+#data 0x06C0F21F
+#data 0x0F290201
+#data 0x96B20AD0
+#data 0x85C0A924
+#data 0x12074C22
+#data 0x0D4C2527
+#data 0x02E7AE12
+#data 0x85F11F20
+#data 0x8500A97B
+#data 0x02E98D7C
+#data 0x8D02AE8D
+#data 0x9E8D028D
+#data 0x03A18D03
+#data 0xE3AC7A85
+#data 0xF24CBE02
+#data 0x03928DCA
+#data 0x0102E7E2
+#data 0x207AF702
+#data 0x00B27256
+#data 0x1D201877
+#data 0x58052011
+#data 0x0106C0F2
+#data 0xFE112003
+#data 0xF58EBA60
+#data 0x20529702
+#data 0x13AD1384
+#data 0x0908290C
+#data 0x0C138D61
+#data 0x010301C2
+#data 0x80C24567
+#data 0x80C20375
+#data 0x01C20111
+#data 0x11200110
+#data 0x8EBA602B
+#data 0x51E702F5
+#data 0x0F45974B
+#data 0x1817FA45
+#data 0x2F0E525F
+#data 0x22A50B44
+#data 0x05D00F29
+#data 0xE24CFFA9
+#data 0x0917BF2A
+#data 0x4C03194F
+#data 0xB44C2AC9
+#data 0x8D00A92A
+#data 0x39200111
+#data 0x131E2073
+#data 0x20125220
+#data 0x7B20EA49
+#data 0x13902013
+#data 0x20735A20
+#data 0xE04C2BC3
+#data 0x73AE202A
+#data 0x20131E20
+#data 0xBE201252
+#data 0x20F2D02E
+#data 0xEDD02AE5
+#data 0xAE201780
+#data 0x1302D273
+#data 0x131E200C
+#data 0x20125220
+#data 0xEED02EBE
+#data 0xD02AE520
+#data 0x1700A9E9
+#data 0x60B26045
+#data 0x1180C227
+#data 0x03194F01
+#data 0xB22BB64C
+#data 0xE64B4A00
+#data 0x0380E24A
+#data 0xFFA90304
+#data 0xF2453F60
+#data 0xE2EF4A8F
+#data 0x06010103
+#data 0x080103F2
+#data 0x27E64B01
+#data 0x0106C0E2
+#data 0x0B521F0C
+#data 0x0206BEE2
+#data 0x0301D27A
+#data 0x37748001
+#data 0xA200A945
+#data 0x136C2001
+#data 0x37F6453F
+#data 0xE6FBB745
+#data 0x136F2027
+#data 0x0C1202D2
+#data 0x108D00A9
+#data 0x0C118D0C
+#data 0xFC453F4B
+#data 0x0C1202C2
+#data 0x5A8D00A9
+#data 0xA93FA006
+#data 0x5A01A200
+#data 0x7A136C20
+#data 0xD0065AAE
+#data 0x8DFDA90B
+#data 0x98A9024C
+#data 0x1B804E85
+#data 0x1BF007E0
+#data 0xEE184EFF
+#data 0x80D2024C
+#data 0x4DAD004E
+#data 0x065D9D02
+#data 0x024EADE8
+#data 0xE8065D9D
+#data 0x88065A8E
+#data 0xFBB7C510
+#data 0x6F2027E6
+#data 0x20038013
+#data 0x87208115
+#data 0x06C0E213
+#data 0x27E60F01
+#data 0x529F5287
+#data 0x381A2003
+#data 0x5A8DFFA9
+#data 0xB20D8006
+#data 0x9FA92762
+#data 0xA9124320
+#data 0x12432089
+#data 0x528727E6
+#data 0xE8BDE0A6
+#data 0x0317BF7E
+#data 0xA902521F
+#data 0xB24D8502
+#data 0x56204A01
+#data 0x1210C272
+#data 0x0103E20C
+#data 0x02A90501
+#data 0x200C118D
+#data 0xFFA9701F
+#data 0xE2124320
+#data 0x310106C0
+#data 0x30065AAE
+#data 0xA90BD02C
+#data 0x024C8DFD
+#data 0x4E8598A9
+#data 0x07E01B80
+#data 0x4EFF1BB0
+#data 0x024CEE18
+#data 0x004E80D2
+#data 0x9D024DAD
+#data 0xADE8065D
+#data 0x5D9D024E
+#data 0x5A8EE806
+#data 0x0685E206
+#data 0xFFA90608
+#data 0x4D854A85
+#data 0x4320FFA9
+#data 0xB74D7F12
+#data 0x0106C0E2
+#data 0x065AAD0C
+#data 0xABD007C9
+#data 0x080685F2
+#data 0x6BF04CA6
+#data 0xF22417BF
+#data 0x040203C1
+#data 0x011370C2
+#data 0xF218529F
+#data 0x130106C0
+#data 0x010401E2
+#data 0x133F2005
+#data 0x39200380
+#data 0x02E48C13
+#data 0x4C6C764C
+#data 0x7E4C6C76
+#data 0x0685F26C
+#data 0x01C20404
+#data 0x521F0667
+#data 0x8DDBA905
+#data 0x01E2038C
+#data 0xE20F0104
+#data 0x0A0106C0
+#data 0x011002D2
+#data 0x4C383320
+#data 0x08A92D78
+#data 0xB202F18D
+#data 0x628D4C00
+#data 0x8502A904
+#data 0x0017BF34
+#data 0x800111E2
+#data 0xD245E712
+#data 0xAD002701
+#data 0xAF2002E5
+#data 0x02E78D12
+#data 0xE212B220
+#data 0x030106C0
+#data 0xA92D784C
+#data 0x38FFA2FF
+#data 0x202DEE20
+#data 0x10AD1210
+#data 0x0111AE01
+#data 0x0419CFA8
+#data 0x0C804A4A
+#data 0x98E7858A
+#data 0x0AE7260A
+#data 0xE7A5E726
+#data 0x978D0F29
+#data 0x20189803
+#data 0xC3A92DE7
+#data 0xA9024C8D
+#data 0xAD4E8588
+#data 0x13AE0112
+#data 0x02048D01
+#data 0x1802058E
+#data 0xE22DE720
+#data 0x29010110
+#data 0x4E9703A0
+#data 0x4E170580
+#data 0xF7024CCE
+#data 0x0103F24E
+#data 0x00A90508
+#data 0xAD0680AA
+#data 0x4EAE024D
+#data 0x205A1802
+#data 0x9F7A2DE7
+#data 0xD088E04E
+#data 0x0431AED9
+#data 0x180430AD
+#data 0xAD2DE720
+#data 0x60AE0461
+#data 0xEE201804
+#data 0x1237202D
+#data 0x010401E2
+#data 0x040AF214
+#data 0x00A90F04
+#data 0x010110F2
+#data 0x12432005
+#data 0x46200380
+#data 0x0386EE12
+#data 0xE228456F
+#data 0x0B0106C0
+#data 0x010685E2
+#data 0x1B457F10
+#data 0xE26E334C
+#data 0x05010110
+#data 0x010386E2
+#data 0x03457F0E
+#data 0xE2122B4C
+#data 0x03800375
+#data 0xE2122B4C
+#data 0x07010401
+#data 0x8011181F
+#data 0x1F0D800A
+#data 0x8CCE0A52
+#data 0xA905D003
+#data 0x602485DA
+#data 0xA52C8D4C
+#data 0x09E02927
+#data 0x4C278506
+#data 0x66576DA6
+#data 0x57105420
+#data 0x0266AE66
+#data 0x9D02DFAD
+#data 0xB6AD0609
+#data 0x06199D02
+#data 0x600266EE
+#data 0x34DF3585
+#data 0x8D3586FD
+#data 0x668E0265
+#data 0x6F0E4C02
+#data 0xA502F1AE
+#data 0xD0CA4A4C
+#data 0xF1ADAAFC
+#data 0x1004C902
+#data 0x434C8A04
+#data 0x06098E12
+#data 0xC0E202A2
+#data 0xF2060106
+#data 0x01080401
+#data 0x6F4A4CCA
+#data 0x02010EF2
+#data 0x2922A50D
+#data 0x06C0F21F
+#data 0x0F290201
+#data 0x00A90CD0
+#data 0x8D02E58D
+#data 0x01D202E4
+#data 0xFCC2010E
+#data 0x05AD0110
+#data 0xA902D006
+#data 0xB002C901
+#data 0x02E3AE07
+#data 0x02A902F0
+#data 0xB002E5CD
+#data 0x02E58D03
+#data 0xD00604AD
+#data 0xAE01A902
+#data 0xC0F202E3
+#data 0xF2190106
+#data 0x0A010401
+#data 0x06B002C9
+#data 0x02F000E0
+#data 0x05E002A9
+#data 0x0EC906B0
+#data 0x0DA90290
+#data 0xB002E4CD
+#data 0x02E48D03
+#data 0x011103C2
+#data 0xAE0819CF
+#data 0xE4AD02E5
+#data 0xAD068002
+#data 0xE4AE02E5
+#data 0x290A0A02
+#data 0x01100D3C
+#data 0x4C01108D
+#data 0x00A96FD7
+#data 0x8D04308D
+#data 0x00F20431
+#data 0x60010104
+#data 0xB2701E4C
+#data 0x25202740
+#data 0xFD01C281
+#data 0x137B2002
+#data 0xA60415BF
+#data 0xA50C80E0
+#data 0x0206A0E6
+#data 0xE0A54B84
+#data 0xBCAA4B64
+#data 0xE26BEE3D
+#data 0x1180023A
+#data 0x023A80C2
+#data 0x48023AAD
+#data 0x480239AD
+#data 0x68132D20
+#data 0x13902068
+#data 0x4D8D00A9
+#data 0x8DE0A902
+#data 0x03A9024E
+#data 0xA9024C8D
+#data 0xAD4E858C
+#data 0xA64A0107
+#data 0xEEB7BCE0
+#data 0x180A0A02
+#data 0x2001076D
+#data 0xAF4B8109
+#data 0x80E20845
+#data 0xA9F70403
+#data 0x08C260FF
+#data 0x18D20C13
+#data 0x384C0C0A
+#data 0x8125202F
+#data 0x202744B2
+#data 0x46B28115
+#data 0x124C2027
+#data 0xE218194F
+#data 0x1380011B
+#data 0x4D8D00A9
+#data 0x8D00A902
+#data 0x13A9024E
+#data 0xA9024C8D
+#data 0xC24E8584
+#data 0x200C1308
+#data 0x01E27256
+#data 0x20050104
+#data 0x0380115C
+#data 0xB29A7C20
+#data 0x02B22747
+#data 0x0D194F4A
+#data 0x010103E2
+#data 0x0103F208
+#data 0x01B20308
+#data 0x129A204A
+#data 0x0C1210D2
+#data 0x0103A5E2
+#data 0xBD00A20F
+#data 0x08F0EE9D
+#data 0x4320DAE8
+#data 0xF380FA12
+#data 0xC72748B2
+#data 0x06C0E245
+#data 0xA4200601
+#data 0x601FF039
+#data 0x020103E2
+#data 0x80B0A904
+#data 0x2090A902
+#data 0x89A91243
+#data 0xEF124320
+#data 0x80E20852
+#data 0xA9E50403
+#data 0x49B260FF
+#data 0x5240C227
+#data 0x0C19CF00
+#data 0x0C1202D2
+#data 0x108D00A9
+#data 0x0C118D0C
+#data 0x8D6000A9
+#data 0x02A20609
+#data 0x520F02A0
+#data 0x0103E209
+#data 0x01A20401
+#data 0x494C04A0
+#data 0x0AE0A512
+#data 0x0109ADAA
+#data 0xBDE801F0
+#data 0x4D8DEE8B
+#data 0x02E3AE02
+#data 0x00A900A0
+#data 0x4C02118D
+#data 0x2520730C
+#data 0x77206030
+#data 0x2B194F77
+#data 0x20128820
+#data 0x4BA51285
+#data 0x8506112D
+#data 0x2D4CA54B
+#data 0x4C850612
+#data 0x118D00A9
+#data 0x06128D06
+#data 0xA9128220
+#data 0xA94C8509
+#data 0x02F18D05
+#data 0x20314E4C
+#data 0xF1AD1288
+#data 0x012E8D02
+#data 0xA5128520
+#data 0x06112D4B
+#data 0x4CA54B85
+#data 0x8506122D
+#data 0x8D00A94C
+#data 0x128D0611
+#data 0x12912006
+#data 0x8E20E485
+#data 0x20E42512
+#data 0xE1857CFA
+#data 0xC0E2E085
+#data 0xC9240106
+#data 0xC214B004
+#data 0xC206C001
+#data 0xAD040101
+#data 0x22850309
+#data 0xF02018A2
+#data 0xA90C80ED
+#data 0x85E18504
+#data 0x375020E0
+#data 0x8531144C
+#data 0x4600A94B
+#data 0x4B466A4B
+#data 0x060B8D6A
+#data 0x050AE0A5
+#data 0x060C8D4B
+#data 0x20127C20
+#data 0x7F2012B5
+#data 0x20E1A612
+#data 0x0A0A1276
+#data 0x8D060B0D
+#data 0x2EF2060B
+#data 0xC2081001
+#data 0xA9060A20
+#data 0xD2068000
+#data 0xA9060A20
+#data 0x02118D01
+#data 0x060AC0C2
+#data 0x060B03C2
+#data 0x7920E0A6
+#data 0x0D4A4A12
+#data 0x0B8D060B
+#data 0x6A6A8A06
+#data 0x0DC0296A
+#data 0x0A8D060A
+#data 0x128B2006
+
+#align4
+loc_8c16FA88:
+#data 0x8C012C8D
+#data 0xA020012D
+#data 0x12A32012
+#data 0xAD12A620
+#data 0x4B850125
+#data 0x0A0126AD
+#data 0x260A4B26
+#data 0x4B260A4B
+#data 0x0D4B260A
+#data 0x0C8D060C
+#data 0x8D4BA506
+#data 0x04A9060D
+#data 0x06A94C85
+#data 0xA202F18D
+#data 0x0609BD09
+#data 0xCA035B9D
+#data 0x2060F710
+#data 0x612076ED
+#data 0x4C606031
+#data 0x258F7A7C
+#data 0x2922A510
+#data 0x06C0F21F
+#data 0x0F290201
+#data 0x8002E48D
+#data 0x25189F1B
+#data 0xAD02E4AE
+#data 0x6F8D0C19
+#data 0x13362003
+#data 0xC0F21F29
+#data 0x29020106
+#data 0x02E48D0F
+#data 0x800113F2
+#data 0x06C0F208
+#data 0xE58D1601
+#data 0x0113E202
+#data 0x68200E80
+#data 0x0F298AEF
+#data 0x010401F2
+#data 0x02E58D03
+#data 0x60F04B20
+#data 0x8AEF6820
+#data 0xE58D0F29
+#data 0x1C258F02
+#data 0x0106C0F2
+#data 0x0113E205
+#data 0x22A50B80
+#data 0xC0F21F29
+#data 0x29020106
+#data 0x02E48D0F
+#data 0x60F04B20
+#data 0x22F0314C
+#data 0x800450E2
+#data 0xDC7C2025
+#data 0x8D0214AD
+#data 0x15AD0451
+#data 0x04538D02
+#data 0xB23F2F20
+#data 0x79B28610
+#data 0x816EA985
+#data 0x857AB285
+#data 0x8581E8A9
+#data 0x39774032
+#data 0xF0A94032
+#data 0x31A98585
+#data 0x00A98685
+#data 0x00A98581
+#data 0x30A98585
+#data 0x00A98685
+#data 0xD0D28581
+#data 0x01A90406
+#data 0xA906808D
+#data 0x06BF8D49
+#data 0xA28DF1A9
+#data 0x8D00A906
+#data 0xB88D06B7
+#data 0x06BA8D06
+#data 0xB98D40A9
+#data 0x8D80A906
+#data 0x16A906BC
+#data 0xA906048D
+#data 0x066A8D05
+#data 0x20066B8D
+#data 0xFCA91165
+#data 0xA906818D
+#data 0x06828DF8
+#data 0x838DF4A9
+#data 0x8DF0A906
+#data 0x02A90684
+#data 0xA906AB8D
+#data 0x06A98D06
+#data 0xE58D80A9
+#data 0x8D47A906
+#data 0x7F8D067E
+#data 0x8D01A906
+#data 0x7D8D067C
+#data 0x18A96006
+#data 0xA906868D
+#data 0x06878D06
+#data 0x888D07A9
+#data 0xBD07A206
+#data 0xF89D3FCE
+#data 0xF710CA06
+#data 0x10200260
+#data 0xE4101010
+#data 0x8DF0A908
+#data 0x2CA9047F
+#data 0x8CE78420
+#data 0x148D0215
+#data 0x06A3F202
+#data 0x01C20401
+#data 0x3E4C06C0
+#data 0x0439E2D1
+#data 0x0E200301
+#data 0x3C207811
+#data 0x0AA77810
+#data 0x8906E7AD
+#data 0x0F29AA01
+#data 0x0A9006C9
+#data 0xAA0A898A
+#data 0x029040C9
+#data 0xE78E00A2
+#data 0xD8002006
+#data 0xBF082F0F
+#data 0x43B70543
+#data 0x20100F4C
+#data 0x7B20DB4F
+#data 0xD8324C3B
+#data 0x1B2D80A9
+#data 0x4C03F00C
+#data 0x4E7F3C45
+#data 0xAD4EA423
+#data 0x1A8D024C
+#data 0x104E2F0C
+#data 0x8D024DAD
+#data 0x4EAD0C16
+#data 0x0C178D02
+#data 0x02804E77
+#data 0x1B8C4ED7
+#data 0x3C454C0C
+#data 0x100248AD
+#data 0x0248E25C
+#data 0x454C0320
+#data 0x49AEA83C
+#data 0x0C1A8E02
+#data 0x39D04029
+#data 0x0248E298
+#data 0x48E21310
+#data 0xAD0E0102
+#data 0x168D024A
+#data 0x024BAD0C
+#data 0x800C178D
+#data 0xF0042926
+#data 0x024AAD22
+#data 0xAD0C168D
+#data 0x178D024B
+#data 0x4880C20C
+#data 0x77514702
+#data 0x0389EF2D
+#data 0x802F01B2
+#data 0xBF29980A
+#data 0xD2A82009
+
+#align4
+loc_8c16FD0C:
+#data 0x8c024820
+#data 0x454C0C1B
+#data 0x0C1BAD3C
+#data 0x00A23430
+#data 0xACC922A5
+#data 0x0EF205F0
+#data 0xAE0C200C
+#data 0xE8E803D8
+#data 0x8D0E298A
+#data 0xBDAA03D8
+#data 0x21CF03C8
+#data 0x0221BF05
+#data 0x04E00A80
+#data 0xC02906D0
+#data 0x06F000C9
+#data 0x4C03C8BD
+#data 0x5B4CD92F
+#data 0x3C2078D9
+#data 0x0AA77810
+#data 0x8AD9A64C
+#data 0x03D000C9
+#data 0xA23FDE4C
+#data 0x2922A500
+#data 0xF0C0C5F0
+#data 0xF090C90D
+#data 0xF0E0C914
+#data 0xF0F0C929
+#data 0xC0F26025
+#data 0xF21F0106
+#data 0x01010406
+#data 0xDA686860
+#data 0xA20A2778
+#data 0x10392007
+#data 0x0A277858
+#data 0x39200AA2
+#data 0x7CFA5810
+#data 0x68683CAE
+#data 0x0A2778DA
+#data 0x392007A2
+#data 0x27785810
+#data 0x200BA20A
+#data 0xFA581039
+#data 0xA73CAE7C
+#data 0xA2D74BD5
+#data 0x3C5C4C02
+#data 0xB23F0FB2
+#data 0x00A93E0F
+#data 0xA204548D
+#data 0x2922A502
+#data 0x90C0C9F0
+#data 0xDF2E4C03
+#data 0xEADF3C4C
+#data 0x46414341
+#data 0x48434445
+#data 0x004A4042
+#data 0x00140010
+#data 0x00140014
+#data 0x00140030
+#data 0x00140022
+#data 0x00140030
+#data 0xFF31F014
+#data 0x46414341
+#data 0x48434445
+#data 0x864A4042
+#data 0x0A7FA57F
+#data 0x3CDEBDAA
+#data 0xDFBD8585
+#data 0xA186853C
+#data 0xDD7FA685
+#data 0x1BF03CD2
+#data 0x853CF6BD
+#data 0xDB4F2024
+#data 0x2BA587B7
+#data 0xE43A2048
+#data 0x20E45F20
+#data 0x8568E344
+#data 0x4FCE802B
+#data 0x4FB20687
+#data 0x103C4C24
+#data 0x47873760
+#data 0xC924A587
+#data 0xC918F04E
+#data 0xC90EF04F
+#data 0x6016F05F
+#data 0x4CE2C64C
+#data 0x104CE2DE
+#data 0x3D6E20E3
+#data 0x203D534C
+#data 0x564C3D6E
+#data 0x3D6E203D
+#data 0xF73D594C
+#data 0xA530F731
+#data 0x60208520
+#data 0x4F08085F
+#data 0xDFA90508
+#data 0xA9E5704C
+#data 0xE5704C6F
+#data 0x778500A9
+#data 0x97028D8D
+#data 0x1D20182A
+#data 0x3DA32011
+#data 0x205A8320
+#data 0xBD4CFE11
+#data 0x10484C50
+#data 0x708500A9
+#data 0x07C27185
+#data 0x187F00F1
+#data 0x0325BF06
+#data 0x603CB720
+#data 0xC23E7120
+#data 0x3802B7FF
+#data 0x20111D20
+#data 0x0CA91117
+#data 0x7F03878D
+#data 0xB7200918
+#data 0x10B74C3C
+#data 0x4C403C4C
+#data 0x01E2403C
+#data 0x60010104
+#data 0xA9452B4C
+#data 0x0C078D00
+#data 0x8D0C088D
+#data 0x0A8D0C09
+#data 0x8D01A90C
+#data 0x423F0C06
+#data 0xBB3A2005
+#data 0x0BAD0A80
+#data 0x0980290C
+#data 0x0C0B8D61
+#data 0x0C1C10C2
+#data 0x100C1CF2
+#data 0x0942EFF7
+#data 0xBF0642CF
+#data 0xB94C0342
+#data 0x03C1E256
+#data 0x43C21720
+#data 0x1FFF001F
+#data 0x1D40C213
+#data 0x0C1DF20C
+#data 0x80C2F740
+#data 0xD94C001F
+#data 0x56B94C56
+#data 0xC256D94C
+#data 0xA5001E1F
+#data 0xA502B061
+#data 0x0401E275
+#data 0xC0E21501
+#data 0xAD130106
+#data 0x194F02E5
+#data 0x851E0516
+#data 0x194F601E
+#data 0x4C06800B
+#data 0x5D4CECA1
+#data 0xECB84C3E
+#data 0x4CECC74C
+#data 0x2322ECBD
+#data 0x00A090A2
+#data 0xA96206A9
+#data 0x1C6F208E
+#data 0x23223233
+#data 0x7FA080A2
+#data 0xA96206A9
+#data 0x1C6F208C
+#data 0x5F603233
+#data 0x084F0808
+#data 0x7CDFA905
+#data 0x6FA93EA2
+#data 0x973EA27C
+#data 0xF57DF17D
+#data 0x037DFC7D
+#data 0x207E0A7E
+#data 0xB5208836
+#data 0x085F603E
+#data 0x04084F07
+#data 0x0680DFA9
+#data 0x02806FA9
+#data 0xCC8DEFA9
+#data 0x8D0EA902
+#data 0xB26003D8
+#data 0x20D22F08
+#data 0xF2A90C0F
+#data 0x20047F8D
+#data 0xF0A9E4B7
+#data 0x78047F8D
+#data 0xA5103C20
+#data 0xF000C922
+#data 0x100F4CF6
+#data 0x00020154
+#data 0x00020159
+#data 0x0002015E
+#data 0x00020163
+#data 0x00020170
+#data 0x00620EB2
+#data 0x1C620F4E
+#data 0x7A620F53
+#data 0x2C32048E
+#data 0x1C620FC1
+#data 0x00620FDB
+#data 0x223208B2
+#data 0x04520B0B
+#data 0x00420C13
+#data 0x12120E52
+#data 0x00620D47
+#data 0xFFFFFFFF
+#data 0x00000085
+#data 0x70414729
+#data 0x001A6200
+#data 0x1A072100
+#data 0x18072020
+#data 0x7C218020
+#data 0x00C3BC19
+#data 0x0028000B
+;-------------------------------------------------------------------------------
+#data 0x7C080004
+#data 0x3AC3EC1C
+#data 0x002F0003
+#data 0x1A130D27
+#data 0x001A0000
+#data 0x00030C68
+#data 0x0A0720A0
+#data 0x00C39824
+#data 0x04030C7E
+#data 0x00072100
+#data 0x00072040
+#data 0x00130CF8
+#data 0x00C3B86D
+#data 0x1C0708A0
+#data 0x7CC3A82A
+#data 0x000301E0
+#data 0x00630D3D
+#data 0x201A0000
+#data 0x20C3C030
+#data 0x00072100
+#data 0x00072040
+#data 0x2E030D2D
+#data 0x00420C6B
+#data 0x0A0450C0
+#data 0x28C3D836
+#data 0x283F000E
+#data 0x7C0720C0
+#data 0x00C3B838
+#data 0x04030C7E
+#data 0x041301A0
+#data 0x00072100
+#data 0x00072040
+#data 0x00430CB9
+#data 0x280E0002
+#data 0x28310100
+#data 0x280080E0
+#data 0x320710C2
+#data 0x1E3704E0
+#data 0x32070D00
+#data 0x00070100
+#data 0x00030CAC
+#data 0x00430C6E
+#data 0x00430CD4
+#data 0x00030E58
+#data 0x36430CEE
+#data 0x04072100
+#data 0x00C3B449
+#data 0x00430E03
+#data 0x00430DA4
+#data 0x06072100
+#data 0x1EC3FC4F
+#data 0x36430CF8
+#data 0x36430F87
+#data 0x00420C50
+#data 0x36430F87
+#data 0x00072100
+#data 0x280450C0
+#data 0x3C3FFF00
+#data 0x283F00FF
+#data 0x3C0720C0
+#data 0x00250100
+#data 0x6C5301B9
+#data 0x1E2F8000
+#data 0x3E072040
+#data 0x32C3B85B
+#data 0x00072000
+#data 0x00030E21
+#data 0x32630D1D
+#data 0x06030E75
+#data 0x06430D6C
+#data 0x00730BC3
+#data 0x00130CCA
+#data 0x06030D4C
+#data 0x06030E2A
+#data 0x5E430CE3
+#data 0x3A072100
+#data 0x3AC38069
+#data 0x3AC3C468
+#data 0x7E3FFFFE
+#data 0x003FFFFD
+#data 0x003307B2
+#data 0x00630D28
+#data 0x20072100
+#data 0x00006000
+#data 0x00620EC6
+#data 0x041A0000
+#data 0x2EC3D4B6
+#data 0x00045000
+#data 0x001A8000
+#data 0x02072100
+#data 0x7C072040
+#data 0x00C3BC76
+#data 0x00180006
+#data 0x0228FFFF
+#data 0x00070900
+#data 0x0028F508
+#data 0x00045500
+#data 0x0028000C
+#data 0x28045900
+#data 0x003F00FF
+#data 0x2818FFDB
+#data 0x002100C0
+#data 0x00280100
+#data 0x00073900
+#data 0x2C3A000B
+;-------------------------------------------------------------------------------
+#data 0x000724C0
+#data 0x000E0000
+#data 0xD4573172
+#data 0xA7371711
+#data 0xD5771041
+#data 0x2C3E0000
+#data 0x000724C0
+#data 0xD4545912
+#data 0xA7371711
+#data 0xD5771045
+#data 0x003E0000
+#data 0x2A045100
+#data 0xD45724D2
+#data 0xA7371711
+#data 0xD5771045
+#data 0x2A3E0000
+#data 0x000724C0
+#data 0x28112100
+#data 0x003120C0
+#data 0xD4545512
+#data 0xA7371711
+#data 0xD5771041
+#data 0x00372100
+#data 0x2C112100
+#data 0x003120C0
+#data 0x00071500
+#data 0x001A0000
+#data 0x1A045900
+#data 0x18071000
+#data 0x2A171420
+#data 0x003180C0
+#data 0x1A071103
+#data 0x1C171420
+#data 0x00071021
+#data 0x1C372100
+#data 0x18070500
+#data 0x06318000
+#data 0x7CC390AB
+#data 0x02C3FCAA
+#data 0x7E2F0010
+#data 0x003FFFEF
+#data 0x2A0B7FFF
+#data 0x000714C0
+#data 0x2C172100
+#data 0x183180C0
+#data 0x06318000
+#data 0x7CC38CB4
+#data 0x02C3FCB3
+#data 0x7E2F0008
+#data 0x003FFFF7
+#data 0x1C072100
+#data 0x00870100
+#data 0x1C180000
+#data 0x1C070500
+#data 0x00870100
+#data 0x041A0000
+#data 0x2EC3E4BC
+#data 0x2E020CFF
+#data 0x2E180012
+#data 0x00210000
+#data 0x00072500
+#data 0x2E180001
+#data 0x00210000
+#data 0x00071500
+#data 0x001A8000
+#data 0x00072D20
+#data 0x83C4FD00
+#data 0x804B0000
+#data 0x80070088
+#data 0x8147048C
+#data 0x000B1000
+#data 0x02170D20
+#data 0x00070D00
+#data 0x06181000
+#data 0x00070D00
+#data 0x00180001
+#data 0x00070900
+#data 0x7C1A0000
+#data 0x003FFFFF
+#data 0x32180000
+#data 0x32070500
+#data 0x00870100
+#data 0x0E1A0000
+#data 0x26839217
+#data 0x04073000
+#data 0x0083E618
+#data 0x001AE000
+#data 0x7C072D80
+#data 0x002F0000
+#data 0x820B0000
+#data 0x83161412
+#data 0x01B61411
+#data 0x00362110
+#data 0x7E2A01C0
+#data 0x00072100
+#data 0x00070880
+#data 0x00020E0D
+#data 0x30072100
+#data 0x2A045420
+#data 0x2A00C0C0
+#data 0x000714C0
+#data 0x0218FFFF
+#data 0x7C210060
+#data 0x02C3BCEC
+#data 0x00180005
+#data 0x020E0001
+#data 0x30070D00
+#data 0x008704A0
+#data 0x02C3A4F7
+#data 0x32072C60
+#data 0x00112000
+#data 0x002A0060
+#data 0x80072100
+#data 0x00218000
+#data 0x80071513
+#data 0x80372000
+#data 0x00070100
+#data 0x009A0000
+#data 0x36C3A900
+#data 0x00072100
+#data 0x280450C0
+#data 0x283F007F
+#data 0x280720C0
+#data 0x7C018000
+#data 0x02C3F952
+#data 0x00420D5B
+#data 0x02C3A55B
+#data 0x00045060
+#data 0x001A3005
+#data 0x80073160
+#data 0x01870C00
+#data 0x00090004
+#data 0x2A072D80
+#data 0x000F0005
+#data 0x82472100
+#data 0x80072060
+#data 0x7C018074
+#data 0x82C3BD0E
+#data 0x80062074
+#data 0x00070C80
+#data 0x83472100
+#data 0x2A072100
+#data 0x2A004000
+#data 0x00C3BD08
+#data 0x82472100
+#data 0x80072060
+#data 0x80218060
+#data 0x83470500
+#data 0x000EFFFF
+#data 0x8058FFFF
+#data 0x7C018020
+#data 0x80C3BD1C
+#data 0x00072020
+#data 0x00073160
+#data 0x8144C500
+#data 0x7C0720A0
+#data 0x2CC3F924
+#data 0x00045940
+#data 0x00049D80
+#data 0x800E0000
+#data 0x09C704A0
+#data 0x00420D17
+#data 0x00072140
+#data 0x2C310100
+#data 0x7C0180C0
+#data 0x4EC3FD2F
+#data 0x000720C0
+#data 0x7C018180
+#data 0x2CC3BD2C
+#data 0x2C049D80
+#data 0x000720C0
+#data 0x00310140
+#data 0x4E045900
+#data 0x2C072CC0
+#data 0x000720C0
+#data 0x7C080018
+#data 0x00C3FD4A
+#data 0x00181000
+#data 0x7C018060
+#data 0x0AC3FD4A
+#data 0x7C018060
+#data 0x0AC3AD4A
+#data 0x00072060
+#data 0x02318060
+#data 0x00071513
+#data 0x2C172100
+#data 0x7C0180C0
+#data 0x82C3BD4A
+#data 0x28072060
+#data 0x00072CC0
+#data 0x80072100
+#data 0x7C018000
+#data 0x80C3ED4A
+#data 0x00072000
+#data 0x001A0000
+#data 0x1E072100
+#data 0x2A045440
+#data 0x1EC3BD49
+#data 0x1E118100
+#data 0x00070900
+#data 0x001A0000
+#data 0x1E072100
+#data 0x28112040
+#data 0x00072CC0
+#data 0x002A04FB
+#data 0x98072100
+#data 0x00070900
+#data 0x00420D5B
+#data 0x1E072C60
+#data 0x00045040
+#data 0x002A04FB
+#data 0x98072100
+#data 0x00072000
+#data 0x281A0000
+#data 0x1EC3BD5A
+#data 0x1E118100
+#data 0x00870900
+#data 0x009A0000
+#data 0x00090005
+#data 0x17EA0060
+#data 0x800B0000
+#data 0x81870080
+#data 0x01870880
+#data 0x00180080
+#data 0x05C70900
+#data 0x02184CCC
+#data 0x00070900
+#data 0x0C180200
+#data 0x00070500
+#data 0x0E180500
+#data 0x00070500
+#data 0x10180480
+#data 0x00070500
+#data 0x009A0000
+#data 0x06180005
+#data 0x3AC39D94
+#data 0x00C3C194
+#data 0x00430D95
+#data 0x28072020
+#data 0x84C38174
+#data 0x7C018000
+#data 0x20C3F97A
+#data 0x22210160
+#data 0x14071420
+#data 0x1E072D17
+#data 0x00372040
+#data 0x86112100
+#data 0x20070900
+#data 0x36072100
+#data 0x28C3A994
+#data 0x62074420
+#data 0x003F0003
+#data 0x14072D40
+#data 0x00112060
+#data 0x000C7FFF
+#data 0x002A0060
+#data 0x7C080080
+#data 0x00C3BD86
+#data 0x00071100
+#data 0x00071502
+#data 0x000724E0
+#data 0x00188000
+#data 0x00210040

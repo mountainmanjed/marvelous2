@@ -2096,6 +2096,8 @@ loc_8c060d58:
 	lds.l @r15+,pr
 	mov.l @r15+,r13
 	mov.l @r15+,r14
+
+loc_8c060e14:
 	mov.w @(0x50,PC),r3
 	mov.l r14,@-r15
 	mov r4,r14
@@ -2554,6 +2556,8 @@ loc_8c0610ce:
 	lds.l @r15+,pr
 	mov r14,r4
 	mov.l @r15+,r14
+
+loc_8c061112:
 	mov.l r14,@-r15
 	sts.l pr,@-r15
 	mov.l @(0xBC,PC),r3
@@ -20107,6 +20111,8 @@ loc_8c068678:
 	mov.w @(0x10,PC),r0
 	mov 0x00,r3
 	mov.b r3,@(r0,r4)
+
+loc_8c06867e:
 	mov.l @(0x38,PC),r3
 	jmp @r3
 	nop
@@ -38637,6 +38643,8 @@ loc_8c070116:
 	mov.l @r15+,r12
 	mov.l @r15+,r13
 	mov.l @r15+,r14
+
+loc_8c070192:
 	mov 0x24,r0
 	mov.l r14,@-r15
 	mov.b @(r0,r5),r3
