@@ -10019,6 +10019,7 @@ loc_8c177550:
 loc_8c177554:
 #data 0x8C32C620
 
+;==============================
 loc_8c177558:
 #data 0x2FE6
 #data 0x2FD6
@@ -10103,20 +10104,17 @@ loc_8c1775B0:
 #data 0x6DF6
 #data 0x000B
 #data 0x6EF6
+
 ;-------------------------------------------------------------------------------
 #data 0x04E0
 #data 0x00C0
 #data 0x00A0
-#data 0xCBCC
-#data 0x8C32
-#data 0xC684
-#data 0x8C32
-#data 0xC680
-#data 0x8C32
-#data 0xC688
-#data 0x8C32
-#data 0xC68C
-#data 0x8C32
+#align4
+#data 0x8C32CBCC
+#data 0x8C32C684
+#data 0x8C32C680
+#data 0x8C32C688
+#data 0x8C32C68C
 
 #align4
 loc_8c177610:
@@ -10250,14 +10248,10 @@ mov.b r3,@r14
 #align4
 loc_8c177750:
 #data 0x8C32CBCC
-#data 0xC684
-#data 0x8C32
-#data 0xC680
-#data 0x8C32
-#data 0xC688
-#data 0x8C32
-#data 0xC68C
-#data 0x8C32
+#data 0x8C32C684
+#data 0x8C32C680
+#data 0x8C32C688
+#data 0x8C32C68C
 
 loc_8c177764:
 #data bank12.loc_8c129728
