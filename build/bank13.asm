@@ -4012,150 +4012,200 @@ loc_8c13262e:
 
 #align4
 loc_8C132640:
-#data 0x743C6542
-#data 0x6240C748
-#data 0xF1094511
-#data 0xF8098B3b
-#data 0x6706742c
-#data 0x6146E6Fe
+mov.l @r4,r5
+add 0x3C,r4
+mova @(loc_8C132768,pc),r0 
+mov.b @r4,r2
+cmp/pz r5
+fmov.s @r0+,fr1
+bf loc_8C1326C6
+fmov.s @r0+,fr8
+add 0x2C,r4
+mov.l @r0+,r7
+mov 0xFE,r6
+mov.l @r4+,r1
 
-#align4
 loc_8C132658:
-#data 0x893E3260
-#data 0x893C2718
-#data 0x8B3E3267
+cmp/eq r6,r2
+bt loc_8C1326DA
+tst r1,r7
+bt loc_8C1326DA
+cmp/gt r6,r2
+bf loc_8C1326E2
 
-#align4
 loc_8C132664:
-#data 0xC8086013
-#data 0x8D036546
-#data 0x6053F01c
-#data 0x350C4500
+mov r1,r0
+tst 0x08,r0 
+mov.l @r4+,r5
+bt/s loc_8C132674
+fmov fr1,fr0
+mov r5,r0
+shll r5
+add r0,r5
 
 loc_8C132674:
-#data 0x6242
+mov.l @r4,r2
 
 loc_8C132676:
-#data 0xE001
-#data 0x740CF78d
-#data 0x89242208
-#data 0xF549F449
-#data 0x7408F648
-#data 0x74246142
-#data 0x74E00483
-#data 0x2109F5Fd
-#data 0xF31CF21c
-#data 0xF35EF24e
-#data 0x025AF31d
-#data 0xF427E0F8
-#data 0xE0FC4510
-#data 0x212B2269
-#data 0x04166242
-#data 0x8BE1
+mov 0x01,r0
+fldi0 fr7
+add 0x0C,r4
+tst r0,r2
+bt loc_8C1326CA
+fmov.s @r4+,fr4
+fmov.s @r4+,fr5
+fmov.s @r4,fr6
+add 0x08,r4
+mov.l @r4,r1
+add 0x24,r4
+pref @r4
+add 0xE0,r4
+fsca fpul,fr5
+and r0,r1
+fmov fr1,fr2
+fmov fr1,fr3
+fmac fr0,fr4,fr2
+fmac fr0,fr5,fr3
+flds fr3,fpul 
+sts fpul,r2
+mov 0xF8,r0
+fmov.s fr2,@(r0,r4) 
+dt r5
+mov 0xFC,r0
+and r6,r2
+or r2,r1
+mov.l @r4,r2
+mov.l r1,@(r0,r4) 
+bf loc_8C132676
 
 loc_8C1326B2:
-#data 0x6146
+mov.l @r4+,r1
 
-#align4
 loc_8C1326B4:
-#data 0x89D54115
-#data 0x89042118
-#data 0x62407420
-#data 0xAFC9742c
-#data 0x6146
+cmp/pl r1
+bt loc_8C132664
+tst r1,r1
+bt loc_8C1326C6
+add 0x20,r4
+mov.b @r4,r2
+add 0x2C,r4
+bra loc_8C132658
+mov.l @r4+,r1
 
 loc_8C1326C6:
-#data 0x000b
-#data 0x0009
+rts 
+nop 
 ;-------------------------------------------------------------------------------
 
 loc_8C1326CA:
-#data 0x6043
-#data 0x45107020
-#data 0x74FC0083
-#data 0xAFED8BCe
-#data 0x6146
+mov r4,r0
+add 0x20,r0
+dt r5
+pref @r0
+add 0xFC,r4
+bf loc_8C132674
+bra loc_8C1326B4
+mov.l @r4+,r1
 
 loc_8C1326DA:
-#data 0x74F8
-#data 0xAFE86046
-#data 0x340c
+add 0xF8,r4
+mov.l @r4+,r0
+bra loc_8C1326B2
+add r0,r4
 
 loc_8C1326E2:
-#data 0x6013
-#data 0x6546C808
-#data 0xF08C8D03
-#data 0x45006053
-#data 0x350c
+mov r1,r0
+tst 0x08,r0 
+mov.l @r4+,r5
+bt/s loc_8C1326F2
+fmov fr8,fr0
+mov r5,r0
+shll r5
+add r0,r5
 
 loc_8C1326F2:
-#data 0x6242
+mov.l @r4,r2
 
-#align4
 loc_8C1326F4:
-#data 0x5343E001
-#data 0x740D2208
-#data 0x6244892b
-#data 0x6140633e
-#data 0x740E435a
-#data 0x425AF62d
-#data 0x415AF52d
-#data 0xF78DF42d
-#data 0x74246142
-#data 0x74E00483
-#data 0x2109F5Fd
-#data 0xF31CF21c
-#data 0xF35EF24e
-#data 0x025AF31d
-#data 0xE0F8
+mov 0x01,r0
+mov.l @(0x0C,r4),r3
+tst r0,r2
+add 0x0D,r4
+bt loc_8C132756
+mov.b @r4+,r2
+exts.b r3,r3
+mov.b @r4,r1
+lds r3,fpul 
+add 0x0E,r4
+float fpul,fr6
+lds r2,fpul 
+float fpul,fr5
+lds r1,fpul 
+float fpul,fr4
+fldi0 fr7
+mov.l @r4,r1
+add 0x24,r4
+pref @r4
+add 0xE0,r4
+fsca fpul,fr5
+and r0,r1
+fmov fr1,fr2
+fmov fr1,fr3
+fmac fr0,fr4,fr2
+fmac fr0,fr5,fr3
+flds fr3,fpul 
+sts fpul,r2
+mov 0xF8,r0
+fmov.s fr2,@(r0,r4) 
+dt r5
+mov 0xFC,r0
+and r6,r2
+or r2,r1
+mov.l @r4,r2
+mov.l r1,@(r0,r4) 
+bf loc_8C1326F4
+mov.l @r4+,r1
 
-loc_8C13272E:
-#data 0xF427
-#data 0xE0FC4510
-#data 0x212B2269
-#data 0x6242
-
-loc_8C13273A:
-#data 0x0416
-#data 0x61468BDa
-
-#align4
 loc_8C132740:
-#data 0x89CE4115
-#data 0x2118
-
-loc_8C132746:
-#data 0x8904
-#data 0x62407420
-#data 0xAF83742c
-#data 0x6146
+cmp/pl r1
+bt loc_8C1326E2
+tst r1,r1
+bt loc_8C132752
+add 0x20,r4
+mov.b @r4,r2
+add 0x2C,r4
+bra loc_8C132658
+mov.l @r4+,r1
 
 loc_8C132752:
-#data 0x000b
-#data 0x0009
+rts 
+nop 
 ;-------------------------------------------------------------------------------
 
 loc_8C132756:
-#data 0x6043
-#data 0x45107020
-#data 0x0083
+mov r4,r0
+add 0x20,r0
+dt r5
+pref @r0
+add 0xFB,r4
+bf loc_8C1326F2
+bra loc_8C132740
+mov.l @r4+,r1
+#data 0x0009
 
-loc_8C13275E:
-#data 0x74Fb
-#data 0xAFED8BC7
-#data 0x00096146
-#data 0x0000
-
-loc_8C13276A:
-#data 0x3F00
+#align4
+loc_8C132768:
+#data 0x3F000000
 #data 0x3B800000
-#data 0x00000100
-#data 0x0000
 
-loc_8C132776:
+#data 0x0100
 #data 0x0000
-#data 0x00000000
-#data 0x00000000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8C132780:
@@ -4163,8 +4213,10 @@ loc_8C132780:
 
 loc_8C132782:
 #data 0x0000
-#data 0x00000000
-#data 0x00000000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
 #data 0x0000
 
 loc_8C13278E:
