@@ -18129,6 +18129,7 @@ loc_8c14F654:
 
 #align4
 loc_8c14F7B8:
+; walk speeds, indexed by character. first forward walk then backward walk
 #data 0xFD000400
 #data 0xFE400200
 #data 0xFD000400
@@ -18313,6 +18314,9 @@ loc_8c14F990:
 #data 0xFD800300
 #data 0xFD000400
 
+; normal jump data
+; in each row: y velocity, gravity, x velocity, and unknown? (might be x acceleration for "drag")
+; each char is 3 rows, for neutral jump, forward jump, then backward jump
 #align4
 loc_8c14FA7C:
 	#data 0x0980 0xff94 0x0000 0x0000

@@ -121,6 +121,9 @@ loc_8c150678:
 #data 0x0580FA80
 #data 0x0500FB00
 
+; super jump data
+; in each row: y velocity, gravity, x velocity, and unknown? (might be x acceleration for "drag")
+; each char is 3 rows, for neutral jump, forward jump, then backward jump
 #align4
 loc_8c150764:
 #data 0xFF9C1000
@@ -851,37 +854,129 @@ loc_8c1511FE:
 #data 0xFF60FF80
 
 #align4
+
+;airdash heights
 loc_8c151274:
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003800
-#data 0x30003800
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x30003000
-#data 0x00003000
+; ryu
+#data 0x3000
+; zangief
+#data 0x3000
+; guile
+#data 0x3000
+; morrigan
+#data 0x3000
+; anakaris
+#data 0x3000
+; strider
+#data 0x3000
+; cyclops
+#data 0x3000
+; wolverine
+#data 0x3000
+; psylocke
+#data 0x3000
+; iceman
+#data 0x3000
+; rogue
+#data 0x3000
+; captain america
+#data 0x3000
+; spiderman
+#data 0x3000
+; hulk
+#data 0x3000
+; venom
+#data 0x3000
+; dr doom
+#data 0x3000
+; tron
+#data 0x3000
+; jill
+#data 0x3000
+; hayato
+#data 0x3000
+; ruby
+#data 0x3000
+; sonson
+#data 0x3000
+; amingo
+#data 0x3000
+; marrow
+#data 0x3000
+; cable
+#data 0x3000
+; abyss 1
+#data 0x3000
+; abyss 2
+#data 0x3000
+; abyss 3
+#data 0x3000
+; chun li
+#data 0x3000
+; megaman
+#data 0x3000
+; roll
+#data 0x3000
+; akuma
+#data 0x3000
+; bb hood
+#data 0x3000
+; felicia
+#data 0x3000
+; charlie
+#data 0x3000
+; sakura
+#data 0x3000
+; dan
+#data 0x3000
+; cammy
+#data 0x3000
+; dhalsim
+#data 0x3000
+; dictator mister bison
+#data 0x3000
+; ken
+#data 0x3000
+; gambit
+#data 0x3000
+; juggernaut
+#data 0x3000
+; storm
+#data 0x3800
+; sabretooth
+#data 0x3000
+; magneto
+#data 0x3800
+; shuma
+#data 0x3000
+; war machine
+#data 0x3000
+; silsam
+#data 0x3000
+; omegared
+#data 0x3000
+; spiral
+#data 0x3000
+; colossus
+#data 0x3000
+; iron man
+#data 0x3000
+; sent
+#data 0x3000
+; blackheart
+#data 0x3000
+; thanos
+#data 0x3000
+; jin
+#data 0x3000
+; capcom
+#data 0x3000
+; bonerine
+#data 0x3000
+; servbot
+#data 0x3000
+
+#data 0x0000
 
 #align4
 loc_8c1512EC:

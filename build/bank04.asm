@@ -38962,10 +38962,12 @@ loc_8c04ff0c:
 	#data 0x3fa00000
 loc_8c04ff10:
 	#data 0x8c26a518
+
+; round start walking speeds
 loc_8c04ff14:
-	#data 0xc0200000
+	#data 0xc0200000 ; -2.5
 loc_8c04ff18:
-	#data 0x403aaaaa
+	#data 0x403aaaaa ; 2.91666650772
 loc_8c04ff1c:
 	#data bank15.loc_8c15058c
 loc_8c04ff20:
