@@ -4452,50 +4452,53 @@ loc_8c174558:
 #data 0x4F26
 #data 0x000B
 #data 0x6EF6
-;-------------------------------------------------------------------------------
 
+;==============================================
 loc_8c1745C0:
-mov.l r14,@-r15
-sts.l pr,@-r15
-add 0xFC,r15
-mov.l @(loc_8c174724,pc),r3 ; r3 set to 0x8C174B52
-mov r4,r14
-mov.l r5,@r15
-jsr @r3
-mov r14,r4
-mov.l @(loc_8c174728,pc),r2 ; r2 set to 0x8C17E784
-jsr @r2
-nop
-mov.l @(loc_8c174744,pc),r3 ; r3 set to 0x8C17F4F8
-mov.l @(0x10,r14),r5
-jsr @r3
-mov.l @r15,r4
-tst r0,r0
-bf/s loc_8c1745FA
-mov.l r0,@(0x08,r14)
-mov.l @(loc_8c174734,pc),r3 ; r3 set to 0x8C17E7AC
-jsr @r3
-nop
-mov.l @r15,r2 ; r2 ??? bc r15 is ???
-mov.l @(loc_8c174748,pc),r3 ; r3 set to 0x8C1C4084
-mov.l r2,@-r15
-mov.l @(loc_8c17473C,pc),r2 ; r2 set to 0x8C17EB7A
-jsr @r2
-mov.l r3,@-r15
-bra loc_8c174600
-add 0x08,r15
+	mov.l r14,@-r15
+	sts.l pr,@-r15
+	add 0xFC,r15
+	mov.l @(loc_8c174724,pc),r3 ; r3 set to 0x8C174B52
+	mov r4,r14
+	mov.l r5,@r15
+	jsr @r3
+	mov r14,r4
+	mov.l @(loc_8c174728,pc),r2 ; r2 set to 0x8C17E784
+	jsr @r2
+	nop
+	mov.l @(loc_8c174744,pc),r3 ; r3 set to 0x8C17F4F8
+	mov.l @(0x10,r14),r5
+	jsr @r3
+	mov.l @r15,r4;File ID to r4
+	tst r0,r0
+	bf/s loc_8c1745FA
+	mov.l r0,@(0x08,r14)
+	mov.l @(loc_8c174734,pc),r3 ; r3 set to 0x8C17E7AC
+	jsr @r3
+	nop
+	mov.l @r15,r2 ; r2 gets file id
+	mov.l @(loc_8c174748,pc),r3 ; r3 set to 0x8C1C4084
+	mov.l r2,@-r15 ; re add file id
+	mov.l @(loc_8c17473C,pc),r2 ; r2 set to 0x8C17EB7A
+	jsr @r2
+	mov.l r3,@-r15
+	bra loc_8c174600
+	add 0x08,r15
 
 loc_8c1745FA:
-mov.l @(loc_8c174740,pc),r3 ; r3 set to 0x8C174A88
-jsr @r3
-mov r14,r4
+	mov.l @(loc_8c174740,pc),r3 ; r3 set to 0x8C174A88
+	jsr @r3
+	mov r14,r4
 
 loc_8c174600:
-add 0x04,r15
-lds.l @r15+,pr
-mov.l @(loc_8c174734,pc),r2 ; r2 set to 0x8C17E7AC, r2 set to 0x8C17E7AC
-jmp @r2
-mov.l @r15+,r14
+	add 0x04,r15
+	lds.l @r15+,pr
+	mov.l @(loc_8c174734,pc),r2 ; r2 set to 0x8C17E7AC, r2 set to 0x8C17E7AC
+	jmp @r2
+	mov.l @r15+,r14
+
+;==============================================
+loc_8c17460a:
 #data 0xD650
 #data 0x4F222FE6
 #data 0xD3447FF8
