@@ -209,7 +209,7 @@
 ;Character IDs
 ;==============================================
 #symbol Char_ID_Ryu 0x00
-#symbol Char_ID_Zangeif 0x01
+#symbol Char_ID_Zangief 0x01
 #symbol Char_ID_Guile 0x02
 #symbol Char_ID_Morrigan 0x03
 #symbol Char_ID_Anakaris 0x04
