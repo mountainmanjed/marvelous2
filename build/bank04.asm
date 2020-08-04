@@ -4219,6 +4219,7 @@ loc_8c041e8c:
 loc_8c041e9e:
 	add 0xBA,r5
 
+;Load A File
 loc_8c041ea0:
 	mov.l @r14,r3
 	tst r3,r3
