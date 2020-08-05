@@ -38891,10 +38891,10 @@ loc_8c04fea4:
 	fmov fr4,@(r0,r4)
 
 ;==============================================
-;Round start walk?
+;Round start walk
 loc_8c04fea8:
-	mov.w @(loc_8c04ff08,PC),r0
-	mov.b @(r0,r4),r3
+	mov.w @(loc_8c04ff08,PC),r0;
+	mov.b @(r0,r4),r3;plmem 0x29e
 	tst r3,r3
 	bf loc_8c04ff84
 	mov 0x01,r3

@@ -187,6 +187,7 @@
 
 #symbol x_opponent_distance 0x0298		; float
 
+#symbol unk29e 0x029e
 #symbol snapout_disable_timer 0x02a0	; int16
 
 ; compared using tst 0x0400 in omega red char programming,
