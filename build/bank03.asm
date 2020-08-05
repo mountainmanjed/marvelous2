@@ -26997,12 +26997,12 @@ loc_8c03b4f8:
 	shll r4
 	jsr @r3
 	add 0x41,r4
-	mov.w @(loc_8c03b62c,PC),r0
+	mov.w @(loc_8c03b62c,PC),r0;524
 	mov.l @(loc_8c03b640,PC),r3
 	mov.b @(r0,r14),r5
 	jsr @r3
 	mov.l @r13,r4
-	mov.w @(loc_8c03b62c,PC),r0
+	mov.w @(loc_8c03b62c,PC),r0;524
 	mov r12,r3
 	add 0x30,r3
 	mov.b @(r0,r14),r2
@@ -27017,7 +27017,7 @@ loc_8c03b4f8:
 	mov.b r0,@(0x6,r14)
 	jsr @r3
 	mov r14,r4
-	mov.w @(loc_8c03b62c,PC),r0
+	mov.w @(loc_8c03b62c,PC),r0;524
 	mov r12,r2
 	add 0x02,r2
 	mov.b @(r0,r14),r3
@@ -27058,20 +27058,22 @@ loc_8c03b56c:
 	mov.l @r13,r4
 	jsr @r3
 	mov.b @(r0,r4),r4
-	mov.w @(loc_8c03b62c,PC),r0
+	mov.w @(loc_8c03b62c,PC),r0;0x524
 	mov.l @r13,r2
-	mov.w @(loc_8c03b632,PC),r1
+	mov.w @(loc_8c03b632,PC),r1;0x52d
 	mov.l @(loc_8c03b658,PC),r3
 	add r2,r1
-	mov.l r1,@-r15
+	mov.l r1,@-r15 ;stack pal_id address
+
 	mov.b @(r0,r14),r0
 	mov.l @r13,r5
 	shll r0
 	mov.w @(r0,r11),r6
-	jsr @r3
+	jsr @r3; loc_8c03cf6a
 	mov r14,r4
+
 	mov.l @r15+,r3
-	mov.b r0,@r3
+	mov.b r0,@r3;write Pal id
 
 loc_8c03b592:
 	lds.l @r15+,pr
@@ -30937,6 +30939,7 @@ loc_8c03cf58:
 	mov.l @r15+,r14
 
 ;==============================================
+;some where at a return r0 is going to pal_id
 loc_8c03cf6a:
 	mov.l r14,@-r15
 	mov.l r13,@-r15

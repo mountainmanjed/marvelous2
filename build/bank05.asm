@@ -16739,7 +16739,7 @@ loc_8c0567b0:
 
 ;----------------------------------------------
 loc_8c0567b4:
-	mov.l @(loc_8c0568b4,PC),r6
+	mov.l @(loc_8c0568b4,PC),r6;loc_8c14f41a
 
 loc_8c0567b6:
 	mov r14,r0
@@ -16750,8 +16750,8 @@ loc_8c0567b6:
 	float fpul,fr5
 
 loc_8c0567c2:
-	mov.w @(loc_8c0568a6,PC),r0
-	mov.b @(r0,r4),r2
+	mov.w @(loc_8c0568a6,PC),r0;0x0411
+	mov.b @(r0,r4),r2;player2 0x0411
 	tst r2,r2
 	bt.s loc_8c0567d2
 	fldi1 fr6
@@ -16769,13 +16769,13 @@ loc_8c0567d2:
 	fmov fr6,fr8
 
 loc_8c0567e0:
-	mov.l @(loc_8c0568b8,PC),r1
+	mov.l @(loc_8c0568b8,PC),r1;loc_8c14f4b6
 	extu.b r0,r0
 	mov.b @(r0,r1),r3
-	mov.w @(loc_8c0568a8,PC),r0
+	mov.w @(loc_8c0568a8,PC),r0;is_CPU
 	extu.b r3,r3
 	lds r3,fpul
-	mov.b @(r0,r4),r3
+	mov.b @(r0,r4),r3;Is_CPU
 	float fpul,fr3
 	tst r3,r3
 	fmov fr3,fr7
@@ -16849,7 +16849,7 @@ loc_8c056828:
 
 loc_8c05686e:
 	mov.w @(loc_8c0568ae,PC),r0
-	mov.l @(r0,r4),r2
+	mov.l @(r0,r4),r2;Enemy Pointer
 	add 0x4D,r0
 	mov.b @(r0,r2),r3
 	mov 0x02,r2
@@ -16869,10 +16869,12 @@ loc_8c056888:
 	fmov fr6,fr5
 
 loc_8c056890:
+;Damage Buff Check
 	mov.w @(loc_8c0568b0,PC),r0
-	mov.b @(r0,r5),r3
+	mov.b @(r0,r5),r3;Damage Buff
 	tst r3,r3
 	bt loc_8c0568d4
+
 	mov.b @(r0,r5),r3
 	extu.b r3,r3
 	lds r3,fpul
@@ -16885,15 +16887,15 @@ loc_8c056890:
 loc_8c0568a6:
 	#data 0x0411
 loc_8c0568a8:
-	#data 0x0525
+	#data pl_mem.is_CPU
 loc_8c0568aa:
 	#data 0x0420
 loc_8c0568ac:
 	#data 0x0543
 loc_8c0568ae:
-	#data 0x020c
+	#data pl_mem.EnemyPointer
 loc_8c0568b0:
-	#data 0x0205
+	#data pl_mem.Buff_Damage
 	#align4
 loc_8c0568b4:
 	#data bank14.loc_8c14f41a
@@ -16926,7 +16928,7 @@ loc_8c0568d4:
 	fmul fr3,fr5
 
 loc_8c0568e8:
-	mov.w @(loc_8c0569b4,PC),r0
+	mov.w @(loc_8c0569b4,PC),r0;Defense Buff
 	mov.b @(r0,r4),r3
 	tst r3,r3
 	bt loc_8c0568fe

@@ -225,6 +225,8 @@
 ; if != 0, controlled by cpu
 #symbol is_cpu 0x0525					; byte
 
+#symbol pal_id 0x052d					; byte
+
 ;==============================================
 ;Character IDs
 ;==============================================
