@@ -7,6 +7,16 @@
 #symbol player_start_charE 0x8c2699d0
 #symbol player_start_charF 0x8c269f74
 
+; pointer to where character programming gets loaded
+; see also loc_8c14E9F8 and loc_8c04f0ec
+#symbol ptr_to_char_programming_A 0x0CE30000
+#symbol ptr_to_char_programming_B 0x0CE38000
+#symbol ptr_to_char_programming_C 0x0CE40000
+#symbol ptr_to_char_programming_D 0x0CE48000
+#symbol ptr_to_char_programming_E 0x0CE50000
+#symbol ptr_to_char_programming_F 0x0CE58000
+
+
 ;==============================================
 ;Player Memory Offsets
 ;==============================================

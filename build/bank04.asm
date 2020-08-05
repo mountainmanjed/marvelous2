@@ -36618,6 +36618,7 @@ loc_8c04f038:
 	mov.l @r15+,r14
 
 ;==============================================
+; calls char programming entry point among other things
 loc_8c04f048:
 	mov.l r14,@-r15
 	mov.l r13,@-r15
@@ -36723,12 +36724,17 @@ loc_8c04f0e8:
 
 ;----------------------------------------------
 loc_8c04f0ec:
+	; plmem[0x25] = plmem[0x52d]
 	mov.w @(loc_8c04f202,PC),r0
 	mov.b @(r0,r14),r3
 	mov 0x25,r0
 	mov.b r3,@(r0,r14)
+	
+	; r0 = plmem[0x01a4]
 	mov.w @(loc_8c04f204,PC),r0
 	mov.b @(r0,r14),r1
+	
+	; r0 = pointer to pointer to char programming
 	mov.l @(loc_8c04f21c,PC),r0
 	extu.b r1,r1
 	shll2 r1
