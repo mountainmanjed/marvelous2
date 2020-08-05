@@ -17832,6 +17832,7 @@ loc_8c14F3D2:
 #data 0x40403020
 #data 0x4040
 
+;CPU damage buffs?
 loc_8c14F3DA:
 #data 0x1818
 #data 0x1C1C1A1A

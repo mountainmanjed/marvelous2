@@ -16266,7 +16266,7 @@ loc_8c0564a0:
 	mulu.w r3,r5
 	sts macl,r5
 	add r2,r5
-	bsr loc_8c05671a
+	bsr Damage_Calc
 	mov r14,r4
 	mov.w r0,@r15
 
@@ -16623,35 +16623,47 @@ loc_8c056700:
 	mov.l @r15+,r14
 
 ;==============================================
-loc_8c05671a:
+;location 8c05671a
+;Damage calculation
+;r4 = Recipient
+;r5 = Attacker
+;r6 = Dat Attack Data
+
+;==============================================
+Damage_Calc:
 	exts.w r7,r3
 	mov.l r14,@-r15
 	lds r3,fpul
-	mova @(loc_8c0567a4,PC),r0
+	mova @(loc_8c0567a4,PC),r0;0x42000000
 	fmov @r0,fr4
-	mov.w @(loc_8c05679a,PC),r0
+	mov.w @(loc_8c05679a,PC),r0;Is_CPU
 	float fpul,fr7
-	mov.l @(loc_8c0567a8,PC),r3
+	mov.l @(loc_8c0567a8,PC),r3;0x8c2896b0
+
+;Attacker CPU CHECK
 	mov.b @(r0,r5),r2
 	tst r2,r2
-	bt.s loc_8c056746
-	mov.l @r3,r7
+	bt.s loc_8c056746; branch if player
+	mov.l @r3,r7;load pointer from 0x8c2896b0
+
+;if attacker is CPU
 	mov 0x49,r0
-	mov.b @(r0,r7),r2
-	mov.l @(loc_8c0567ac,PC),r0
+	mov.b @(r0,r7),r2;0x8c2895f0+0x49?
+	mov.l @(loc_8c0567ac,PC),r0;loc_8c14f3da
 	extu.b r2,r2
-	mov.b @(r0,r2),r2
+	mov.b @(r0,r2),r2;loc_8c14f3da;cpu rank damage buff?
 	extu.b r2,r2
 	lds r2,fpul
 	float fpul,fr3
 	fdiv fr4,fr3
 	fmul fr3,fr7
 
+;attacker_Player
 loc_8c056746:
-	mov.w @(loc_8c05679c,PC),r0
+	mov.w @(loc_8c05679c,PC),r0;270
 	mov 0x14,r2
-	mov.b @(r0,r4),r3
-	mov.w @(r0,r4),r14
+	mov.b @(r0,r4),r3  ;270,r4
+	mov.w @(r0,r4),r14 ;270,r4
 	extu.b r3,r3
 	cmp/gt r2,r3
 	mov 0x13,r2
@@ -16663,21 +16675,23 @@ loc_8c056746:
 
 loc_8c05675e:
 	mov 0x12,r0
-	mov.b @(r0,r6),r0
+	mov.b @(r0,r6),r0;Attack Data Flag Read
 	extu.b r0,r0
 	tst 0x08,r0
-	bf loc_8c0567c2
-	mov.b @(0x2,r6),r0
+	bf loc_8c0567c2 ; branch if doesn't scale
+
+
+	mov.b @(0x2,r6),r0;Hit React
 	extu.b r0,r0
 	tst 0x20,r0
 	bt.s loc_8c0567b4
 	extu.b r14,r14
-	mov.w @(loc_8c05679e,PC),r6
-	mov.b @(0x2,r5),r0
-	add r7,r6
+	mov.w @(loc_8c05679e,PC),r6 ;0x0088
+	mov.b @(0x2,r5),r0;attacker 0x02
+	add r7,r6;0x8c2895f0+0x0088
 	extu.b r0,r0
-	mov.b @(r0,r6),r6
-	mov.l @(loc_8c0567b0,PC),r0
+	mov.b @(r0,r6),r6;read 8c289678 for byte
+	mov.l @(loc_8c0567b0,PC),r0;loc_8c14ee14
 	shll2 r6
 	bra loc_8c0567b6
 	mov.l @(r0,r6),r6
@@ -16706,7 +16720,7 @@ loc_8c056796:
 loc_8c056798:
 	#data 0x01bc
 loc_8c05679a:
-	#data 0x0525
+	#data pl_mem.is_cpu
 loc_8c05679c:
 	#data 0x0270
 loc_8c05679e:
@@ -19247,7 +19261,7 @@ loc_8c057774:
 
 loc_8c057782:
 	mov.l @(loc_8c0577d0,PC),r3
-	jsr @r3
+	jsr @r3; jsr damage calc
 	mov r14,r4
 	mov r0,r13
 	exts.w r13,r3
@@ -19300,7 +19314,7 @@ loc_8c0577c8:
 loc_8c0577cc:
 	#data 0x8c2896b0
 loc_8c0577d0:
-	#data loc_8c05671a
+	#data Damage_Calc
 loc_8c0577d4:
 	#data 0x41000000
 loc_8c0577d8:

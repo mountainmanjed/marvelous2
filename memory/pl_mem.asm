@@ -16,6 +16,12 @@
 #symbol ptr_to_char_programming_E 0x0CE50000
 #symbol ptr_to_char_programming_F 0x0CE58000
 
+#symbol pl_A_datfile 0x0c420000
+#symbol pl_B_datfile 0x0c810000
+#symbol pl_C_datfile 0x0c570000
+#symbol pl_D_datfile 0x0c960000
+#symbol pl_E_datfile 0x0c6c0000
+#symbol pl_F_datfile 0x0cab0000
 
 ;==============================================
 ;Player Memory Offsets
@@ -191,6 +197,9 @@
 #symbol airthrow_protection_counter 0x023a	; byte
 
 #symbol dhc_move_id 0x0258				; byte
+
+;Used in Damage Calc
+#symbol unk270 0x0270					;word and byte
 
 ; 0xff when in hitstun
 #symbol unk275 0x0275					; byte
