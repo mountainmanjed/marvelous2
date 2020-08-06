@@ -16720,7 +16720,7 @@ loc_8c056796:
 loc_8c056798:
 	#data 0x01bc
 loc_8c05679a:
-	#data pl_mem.is_cpu
+	#data16 pl_mem.is_cpu
 loc_8c05679c:
 	#data 0x0270
 loc_8c05679e:
@@ -16887,15 +16887,15 @@ loc_8c056890:
 loc_8c0568a6:
 	#data 0x0411
 loc_8c0568a8:
-	#data pl_mem.is_CPU
+	#data16 pl_mem.is_CPU
 loc_8c0568aa:
 	#data 0x0420
 loc_8c0568ac:
 	#data 0x0543
 loc_8c0568ae:
-	#data pl_mem.EnemyPointer
+	#data16 pl_mem.EnemyPointer
 loc_8c0568b0:
-	#data pl_mem.Buff_Damage
+	#data16 pl_mem.Buff_Damage
 	#align4
 loc_8c0568b4:
 	#data bank14.loc_8c14f41a

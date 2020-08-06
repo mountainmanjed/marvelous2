@@ -2282,9 +2282,9 @@ loc_8C1A1088:
 extu.b r5,r0
 cmp/eq 0x04,r0 
 bf loc_8C1A1014
-mov.l @(loc_8C1A1154,pc),r3
 
 loc_8c1A108E:
+mov.l @(loc_8C1A1154,pc),r3
 mov.b @r3,r0
 extu.b r0,r0
 cmp/eq 0x08,r0 
