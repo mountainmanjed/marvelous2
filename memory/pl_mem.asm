@@ -213,6 +213,9 @@
 ; which indicates it might be bit flags?
 #symbol unk_034e 0x034e					; int16
 
+;in damage_calc
+#symbol unk_0411 0x0411					; byte
+
 ; loaded around loc_8c0518c6 and compared to y position
 #symbol unk_041c_float 0x041c			; float
 

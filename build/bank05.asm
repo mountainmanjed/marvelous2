@@ -16628,16 +16628,16 @@ loc_8c056700:
 ;r4 = Recipient
 ;r5 = Attacker
 ;r6 = Dat Attack Data
-
+;r7 = attack damage
 ;==============================================
 Damage_Calc:
-	exts.w r7,r3
-	mov.l r14,@-r15
-	lds r3,fpul
-	mova @(loc_8c0567a4,PC),r0;0x42000000
-	fmov @r0,fr4
+	exts.w r7,r3;Move Damage to R3
+	mov.l r14,@-r15;Recipeint to stack
+	lds r3,fpul;prepare r3 to be float
+	mova @(loc_8c0567a4,PC),r0;32.0
+	fmov @r0,fr4;32.0000000 to fr4
 	mov.w @(loc_8c05679a,PC),r0;Is_CPU
-	float fpul,fr7
+	float fpul,fr7;damage to fr7
 	mov.l @(loc_8c0567a8,PC),r3;0x8c2896b0
 
 ;Attacker CPU CHECK
@@ -16647,6 +16647,7 @@ Damage_Calc:
 	mov.l @r3,r7;load pointer from 0x8c2896b0
 
 ;if attacker is CPU
+; damage = (cpurank/32)*damage
 	mov 0x49,r0
 	mov.b @(r0,r7),r2;0x8c2895f0+0x49?
 	mov.l @(loc_8c0567ac,PC),r0;loc_8c14f3da
@@ -16670,7 +16671,7 @@ loc_8c056746:
 	extu.b r14,r3
 	cmp/gt r2,r3
 	bf.s loc_8c05675e
-	fmov fr4,fr5
+	fmov fr4,fr5 ; 32.0 to fr5
 	mov r2,r14
 
 loc_8c05675e:
@@ -16679,7 +16680,6 @@ loc_8c05675e:
 	extu.b r0,r0
 	tst 0x08,r0
 	bf loc_8c0567c2 ; branch if doesn't scale
-
 
 	mov.b @(0x2,r6),r0;Hit React
 	extu.b r0,r0
@@ -16694,7 +16694,7 @@ loc_8c05675e:
 	mov.l @(loc_8c0567b0,PC),r0;loc_8c14ee14
 	shll2 r6
 	bra loc_8c0567b6
-	mov.l @(r0,r6),r6
+	mov.l @(r0,r6),r6;select 1 of 4 pointers
 
 ;##############################################
 loc_8c056784:
@@ -16729,7 +16729,7 @@ loc_8c05679e:
 loc_8c0567a0:
 	#data loc_8c05a6c8
 loc_8c0567a4:
-	#data 0x42000000
+	#data 0x42000000 ; float 32.000000
 loc_8c0567a8:
 	#data 0x8c2896b0
 loc_8c0567ac:
@@ -19263,7 +19263,7 @@ loc_8c057774:
 
 loc_8c057782:
 	mov.l @(loc_8c0577d0,PC),r3
-	jsr @r3; jsr damage calc
+	jsr @r3; jsr Damage_Calc
 	mov r14,r4
 	mov r0,r13
 	exts.w r13,r3

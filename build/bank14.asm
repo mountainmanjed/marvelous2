@@ -17340,14 +17340,8 @@ loc_8c14EE10:
 
 loc_8c14EE14:
 #data loc_8c14F42E
-
-loc_8c14EE18:
 #data loc_8c14F42E
-
-loc_8c14EE1C:
 #data loc_8c14F442
-
-loc_8c14EE20:
 #data loc_8c14F456
 
 loc_8c14EE24:
@@ -17855,6 +17849,9 @@ loc_8c14F3FA:
 #data 0x28282626
 #data 0x2828
 
+;======================================
+;Damage Calc Usage
+;======================================
 loc_8c14F41A:
 #data 0x2020
 #data 0x1C1E2020
@@ -17862,6 +17859,9 @@ loc_8c14F41A:
 #data 0x06080A0C
 #data 0x01010204
 #data 0x0101
+
+; Selected with pointer table
+; at loc_8c14EE14
 
 loc_8c14F42E:
 #data 0x2020
@@ -17887,6 +17887,7 @@ loc_8c14F456:
 #data 0x02040608
 #data 0x0202
 
+;==============================
 loc_8c14F46A:
 #data 0x2020
 #data 0x141A1C1E
