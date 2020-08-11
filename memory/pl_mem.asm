@@ -209,9 +209,13 @@
 #symbol unk29e 0x029e
 #symbol snapout_disable_timer 0x02a0	; int16
 
+; 0x340 through 0x350 are inputs?
+
 ; compared using tst 0x0400 in omega red char programming,
 ; which indicates it might be bit flags?
 #symbol unk_034e 0x034e					; int16
+
+; 0x354 and 0x35c might be int16 input timers??
 
 ;in damage_calc
 #symbol unk_0411 0x0411					; byte
