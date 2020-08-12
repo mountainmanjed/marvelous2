@@ -77,42 +77,65 @@ loc_8c0500a8:
 	nop
 
 ;==============================================
+; i am wondering if this is the code that keeps you within the
+; camera if you are flying??
 loc_8c0500ac:
+	; if plmem[0x01f4] != 0 then goto loc_8c0501a8
 	mov.w @(loc_8c050100,PC),r0
+	; r5 = 0x8c26a518
 	mov.l @(loc_8c050118,PC),r5
 	mov.b @(r0,r4),r3
 	tst r3,r3
 	bf loc_8c0501a8
+	
+	; if plmem[0x324] != 0 then goto loc_8c0501a8
 	mov.w @(loc_8c050102,PC),r0
 	mov.b @(r0,r4),r3
 	tst r3,r3
 	bf loc_8c0501a8
+	
+	; if char is not flying then goto loc_8c05015c
 	mov.w @(loc_8c050104,PC),r0
 	mov.b @(r0,r4),r3
 	tst r3,r3
 	bt loc_8c05015c
+	
+	; if plmem[5] == 2 then goto loc_8c05015c
 	mov.b @(0x5,r4),r0
 	extu.b r0,r0
 	cmp/eq 0x02,r0
 	bt loc_8c05015c
+	
+	; r2 = load pointer to enemy plmem struct
 	mov.w @(loc_8c050106,PC),r0
 	mov.l @(r0,r4),r2
+	
+	; fr4 = 274.285705566 + (enemy[0x244] - plmem[0x244])
 	mov 0x38,r0
 	fmov @(r0,r4),fr3
 	fmov @(r0,r2),fr2
-	mova @(loc_8c05011c,PC),r0
+	mova @(loc_8c05011c,PC),r0 ; 0x43892492
 	fsub fr3,fr2
-	fmov @r0,fr3
+	fmov @r0,fr3 ; 274.285705566
 	fmov fr2,fr4
 	fadd fr3,fr4
+	
+	; if (274.285705566 + (enemy[0x244] - plmem[0x244])) <= 0.0
+		; then goto loc_8c050124
 	fldi0 fr2
 	fcmp/gt fr4,fr2
 	bf loc_8c050124
+	
+	; fr3 = plmem[y position] 
+	; fr1 = 8.0
 	mov.l @(loc_8c050120,PC),r1
 	mov 0x38,r0
 	fmov @(r0,r4),fr3
 	lds r1,fpul
-	fsts fpul,fr1
+	fsts fpul,fr1 ; 8.0
+	
+	; fr4 = (274.285705566 + (enemy[0x244] - plmem[0x244])) / 8.0
+	; plmem[y position] += (274.285705566 + (enemy[0x244] - plmem[0x244])) / 8.0
 	fdiv fr1,fr4
 	fadd fr4,fr3
 	bra loc_8c050148
@@ -145,9 +168,9 @@ loc_8c050114:
 loc_8c050118:
 	#data 0x8c26a518
 loc_8c05011c:
-	#data 0x43892492
+	#data 0x43892492 ; 274.285705566
 loc_8c050120:
-	#data 0x41000000
+	#data 0x41000000 ; 8.0
 
 
 ;==============================================
@@ -203,7 +226,7 @@ loc_8c05015c:
 	fmov fr4,@(r0,r4)
 	mov 0x02,r3
 	mov.w @(loc_8c0501f4,PC),r0
-	bra loc_8c0501a8
+	bra loc_8c0501a8 ; return
 	mov.b r3,@(r0,r4)
 
 loc_8c050186:
@@ -219,7 +242,7 @@ loc_8c050186:
 	ftrc fr4,fpul
 	sts fpul,r2
 	cmp/ge r2,r3
-	bf loc_8c0501a8
+	bf loc_8c0501a8 ; return
 	fmov fr4,@(r0,r4)
 	mov 0x01,r3
 	mov.w @(loc_8c0501f4,PC),r0

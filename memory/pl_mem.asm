@@ -143,6 +143,9 @@
 ; set during fly screen dash
 #symbol disable_all_move_counter 0x01f3	; byte
 
+; ?? loaded as byte by loc_8c0500ac
+#symbol unk_1f4 0x01f4					; byte
+
 ; 00 = standing
 ; 01 = crouching
 ; 02 = jumping
@@ -179,6 +182,7 @@
 #symbol Buff_Unk_0a 0x020a				; byte
 #symbol Buff_Unk_0b 0x020b				; byte
 
+; pointer to opponent's currently active character's plmem struct
 #symbol EnemyPointer 0x020c				; pointer
 
 ; 00 normally, 01 once you block in the current jump
@@ -195,6 +199,9 @@
 ; incremented when you get thrown
 ; set to 0 when you press an attack, or when you land
 #symbol airthrow_protection_counter 0x023a	; byte
+
+; loaded by loc_8c0500ac as a float
+#symbol unk244 0x0244					; float
 
 #symbol dhc_move_id 0x0258				; byte
 
