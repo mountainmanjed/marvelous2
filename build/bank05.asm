@@ -174,27 +174,44 @@ loc_8c050120:
 
 
 ;==============================================
+; fr2 was 0.0
 loc_8c050124:
+	; fr0 = plmem[y position] - plmem[0x41c]
 	mov.w @(loc_8c0501f2,PC),r0
 	fmov @(r0,r4),fr1
 	mov 0x38,r0
 	fmov @(r0,r4),fr0
 	mova @(loc_8c0501fc,PC),r0
 	fsub fr1,fr0
+	
+	; fr1 = -34.2857131958
+	; fr4 = plmem[y position] - plmem[0x41c] - 34.2857131958
 	fmov @r0,fr1
 	fmov fr0,fr4
 	fadd fr1,fr4
+	
+	; if plmem[y position] - plmem[0x41c] - 34.2857131958 <= 0.0
+		; then goto loc_8c050148
 	fcmp/gt fr4,fr2
 	bf loc_8c050148
+	
+	; fr3 = 2.0
 	fldi1 fr3
 	fadd fr3,fr3
+	
+	; fr2 = plmem[y pos]
 	mov 0x38,r0
 	fmov @(r0,r4),fr2
+	
+	; fr4 = (plmem[y position] - plmem[0x41c] - 34.2857131958) / 2.0
 	fdiv fr3,fr4
+	
+	; plmem[y position] -= (plmem[y position] - plmem[0x41c] - 34.2857131958) / 2.0
 	fsub fr4,fr2
 	fmov fr2,@(r0,r4)
 
 loc_8c050148:
+	; r3 = 0x8c26a5b8
 	mov.l @(loc_8c050204,PC),r3
 	mova @(0xB4,PC),r0
 	fmov @r0,fr3
@@ -304,7 +321,7 @@ loc_8c0501fa:
 	#align4
 
 loc_8c0501fc:
-	#data 0xc2092492
+	#data 0xc2092492 ; -34.2857131958
 loc_8c050200:
 	#data 0xc34db6db
 loc_8c050204:
