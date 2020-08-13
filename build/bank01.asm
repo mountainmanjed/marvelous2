@@ -2070,7 +2070,7 @@ loc_8c010d26:
 	fmov fr12,@-r15
 	sts.l pr,@-r15
 	fmov @r0,fr13
-	mova @(0x100,PC),r0
+	mova @(loc_8c010e38,PC),r0
 	fmov @r0,fr14
 	fldi0 fr15
 	mov.l @(loc_8c010e30,PC),r14
@@ -2129,7 +2129,7 @@ loc_8c010d96:
 	fmov fr12,@-r15
 	sts.l pr,@-r15
 	fmov @r0,fr13
-	mova @(0x90,PC),r0
+	mova @(loc_8c010e38,PC),r0
 	fmov @r0,fr14
 	fldi0 fr15
 	mov.l @(loc_8c010e30,PC),r14
@@ -2208,6 +2208,7 @@ loc_8c010e30:
 	#data bank12.loc_8c122160
 loc_8c010e34:
 	#data 0x43f00000
+loc_8c010e38:
 	#data 0x44200000
 loc_8c010e3c:
 	#data 0x3a83126f
@@ -7590,7 +7591,7 @@ loc_8c013174:
 ;----------------------------------------------
 loc_8c013188:
 	mov.l r14,@-r15
-	mova @(0x3C,PC),r0
+	mova @(loc_8c0131c8,PC),r0
 	mov.l r13,@-r15
 	mov r4,r14
 	fmov fr15,@-r15
@@ -9103,7 +9104,7 @@ loc_8c013b24:
 	mov 0x38,r0
 	mov.l @r4,r2
 	fmov fr3,@(r0,r2)
-	mova @(0x108,PC),r0
+	mova @(loc_8c013c64,PC),r0
 	fmov @r0,fr3
 	mov 0x3C,r0
 	mov.l @r4,r2
@@ -9111,7 +9112,7 @@ loc_8c013b24:
 	mov 0x50,r0
 	mov.l @r4,r2
 	fmov fr4,@(r0,r2)
-	mova @(0xFC,PC),r0
+	mova @(loc_8c013c68,PC),r0
 	fmov @r0,fr3
 	mov 0x54,r0
 	mov.l @r4,r2
@@ -9145,7 +9146,7 @@ loc_8c013b88:
 	mov 0x38,r0
 	mov.l @r4,r1
 	fmov fr4,@(r0,r1)
-	mova @(0xC4,PC),r0
+	mova @(loc_8c013c70,PC),r0
 	fmov @r0,fr3
 	mov 0x3C,r0
 	mov.l @r4,r2
@@ -9179,7 +9180,7 @@ loc_8c013be2:
 	mov.b r7,@(r0,r5)
 
 loc_8c013be6:
-	mova @(0x90,PC),r0
+	mova @(loc_8c013c78,PC),r0
 	mov.l @(0xC,r4),r5
 	fmov @r0,fr3
 	mov.w @(loc_8c013c56,PC),r0
@@ -15828,7 +15829,7 @@ loc_8c0166fc:
 	add 0x6C,r2
 	jsr @r3
 	mov 0x0C,r0
-	mova @(0xB0,PC),r0
+	mova @(loc_8c01682c,PC),r0
 	fmov @r0,fr3
 	mov 0x3C,r0
 	mov 0x01,r5
@@ -16051,7 +16052,7 @@ loc_8c0168bc:
 	add 0x34,r1
 	jsr @r3
 	mov 0x0C,r0
-	mova @(0x98,PC),r0
+	mova @(loc_8c016988,PC),r0
 	mov r4,r1
 	fmov @r0,fr3
 	mov 0x3C,r0
@@ -16700,11 +16701,11 @@ loc_8c016d42:
 	mov.b r0,@(0x4,r4)
 	mov.w @(loc_8c016d7a,PC),r0
 	mov.b r3,@(r0,r4)
-	mova @(0x38,PC),r0
+	mova @(loc_8c016d90,PC),r0
 	fmov @r0,fr3
 	mov 0x34,r0
 	fmov fr3,@(r0,r4)
-	mova @(0x34,PC),r0
+	mova @(loc_8c016d94,PC),r0
 	fmov @r0,fr3
 	mov 0x38,r0
 	fmov fr3,@(r0,r4)
@@ -17231,7 +17232,7 @@ loc_8c0170b8:
 	fmov fr4,@(r0,r4)
 	mov 0x7C,r0
 	fmov fr3,@(r0,r4)
-	mova @(0xF8,PC),r0
+	mova @(loc_8c0171d0,PC),r0
 	bra loc_8c0170f0
 	fmov @r0,fr3
 
@@ -17308,11 +17309,11 @@ loc_8c017100:
 	extu.b r0,r0
 	shll2 r0
 	fmov @(r0,r5),fr3
-	mova @(0x98,PC),r0
+	mova @(loc_8c0171f8,PC),r0
 	fmov @r0,fr2
-	mova @(0x98,PC),r0
+	mova @(loc_8c0171fc,PC),r0
 	fmov @r0,fr1
-	mova @(0x98,PC),r0
+	mova @(loc_8c017200,PC),r0
 	fmul fr2,fr3
 	fmov @r0,fr0
 	mov 0x48,r0
@@ -17375,6 +17376,7 @@ loc_8c0171ca:
 	#align4
 loc_8c0171cc:
 	#data work.GameGlobalPointer
+loc_8c0171d0:
 	#data 0x3ea8f5c3
 loc_8c0171d4:
 	#data 0x3e947ae1
@@ -17394,8 +17396,11 @@ loc_8c0171f0:
 	#data bank12.loc_8c1294c8
 loc_8c0171f4:
 	#data bank14.loc_8c14465c
+loc_8c0171f8:
 	#data 0x47800000
+loc_8c0171fc:
 	#data 0x43b40000
+loc_8c017200:
 	#data 0x3f000000
 loc_8c017204:
 	#data 0x0000ffff
@@ -17509,13 +17514,13 @@ loc_8c0172c4:
 	mov.b r4,@(r0,r14)
 
 loc_8c0172ca:
-	mova @(0x94,PC),r0
+	mova @(loc_8c017360,PC),r0
 	fmov @r0,fr3
 	mov 0x78,r0
 	fmov fr3,@(r0,r14)
 	mov 0x7C,r0
 	fmov fr4,@(r0,r14)
-	mova @(0x8C,PC),r0
+	mova @(loc_8c017364,PC),r0
 	fmov @r0,fr3
 	mov.w @(loc_8c01733c,PC),r0
 	fmov fr3,@(r0,r14)
@@ -17533,13 +17538,13 @@ loc_8c0172de:
 	mov.w r0,@(0x1E,r14)
 
 loc_8c0172f2:
-	mova @(0x74,PC),r0
+	mova @(loc_8c017368,PC),r0
 	mov.l @(loc_8c017378,PC),r2
 	fmov @r0,fr15
 	mov.w @(0x1E,r14),r0
 	mov r0,r3
 	lds r3,fpul
-	mova @(0x6C,PC),r0
+	mova @(loc_8c01736c,PC),r0
 	mov.l @(loc_8c017374,PC),r3
 	fmov @r0,fr2
 	mova @(loc_8c017370,PC),r0
@@ -17660,7 +17665,7 @@ loc_8c0173ae:
 
 ;----------------------------------------------
 loc_8c0173b2:
-	mova @(0xE0,PC),r0
+	mova @(loc_8c017494,PC),r0
 	mov.l @(loc_8c017498,PC),r5
 	fmov @r0,fr4
 	mov 0x10,r0
@@ -18331,7 +18336,7 @@ loc_8c017826:
 	mov 0x0C,r0
 	mov 0x1B,r0
 	mov.b @(r0,r5),r1
-	mova @(0x94,PC),r0
+	mova @(loc_8c0178e8,PC),r0
 	fmov @r0,fr3
 	mov.l @(loc_8c0178ec,PC),r0
 	shll2 r1
@@ -18495,7 +18500,7 @@ loc_8c017952:
 	mov 0x7C,r0
 
 loc_8c017972:
-	mova @(0x40,PC),r0
+	mova @(loc_8c0179b4,PC),r0
 	bra loc_8c01798a
 	fmov @r0,fr4
 
@@ -18827,9 +18832,9 @@ loc_8c017b80:
 	mov.l @(loc_8c017c60,PC),r0
 	shll2 r1
 	fmov @(r0,r1),fr2
-	mova @(0xBC,PC),r0
+	mova @(loc_8c017c64,PC),r0
 	fmov @r0,fr1
-	mova @(0xBC,PC),r0
+	mova @(loc_8c017c68,PC),r0
 	fmul fr3,fr2
 	fmov @r0,fr0
 	mov.l @(loc_8c017c6c,PC),r1
@@ -19079,7 +19084,7 @@ loc_8c017cfa:
 	fldi1 fr3
 	or r3,r1
 	mov.l r1,@(r0,r4)
-	mova @(0x44,PC),r0
+	mova @(loc_8c017d9c,PC),r0
 	fmov @r0,fr4
 	mov 0x78,r0
 	fmov fr4,@(r0,r4)
@@ -19215,7 +19220,7 @@ loc_8c017e26:
 	fsts fpul,fr3
 	fsub fr3,fr2
 	fmov fr2,@(r0,r14)
-	mova @(0xC0,PC),r0
+	mova @(loc_8c017f00,PC),r0
 	fmov @r0,fr2
 	mov 0x54,r0
 	fmov fr2,@(r0,r14)
@@ -19223,7 +19228,7 @@ loc_8c017e26:
 	mov.w @(0x8,r0),r0
 	cmp/eq 0x05,r0
 	bf loc_8c017e54
-	mova @(0xB4,PC),r0
+	mova @(loc_8c017f04,PC),r0
 	bra loc_8c017e58
 	fmov @r0,fr2
 
@@ -19265,13 +19270,13 @@ loc_8c017e7a:
 	mov.w r0,@(0x1E,r14)
 
 loc_8c017e8e:
-	mova @(0x7C,PC),r0
+	mova @(loc_8c017f0c,PC),r0
 	mov.l @(loc_8c017f1c,PC),r2
 	fmov @r0,fr15
 	mov.w @(0x1E,r14),r0
 	mov r0,r3
 	lds r3,fpul
-	mova @(0x74,PC),r0
+	mova @(loc_8c017f10,PC),r0
 	mov.l @(loc_8c017f18,PC),r3
 	fmov @r0,fr2
 	mova @(loc_8c017f14,PC),r0
@@ -19441,7 +19446,7 @@ loc_8c017f9c:
 	mova @(loc_8c01802c,PC),r0
 	mov.l @(loc_8c018034,PC),r3
 	fmov @r0,fr2
-	mova @(0x80,PC),r0
+	mova @(loc_8c018030,PC),r0
 	float fpul,fr3
 	fmov @r0,fr1
 	fmul fr2,fr3
@@ -19777,13 +19782,13 @@ loc_8c0181d6:
 	mov.w r0,@(0x1E,r14)
 
 loc_8c0181ea:
-	mova @(0xD4,PC),r0
+	mova @(loc_8c0182c0,PC),r0
 	mov.l @(loc_8c0182d0,PC),r2
 	fmov @r0,fr15
 	mov.w @(0x1E,r14),r0
 	mov r0,r3
 	lds r3,fpul
-	mova @(0xCC,PC),r0
+	mova @(loc_8c0182c4,PC),r0
 	mov.l @(loc_8c0182cc,PC),r3
 	fmov @r0,fr2
 	mova @(loc_8c0182c8,PC),r0
@@ -20866,7 +20871,7 @@ loc_8c018920:
 	fmov @r0,fr3
 
 loc_8c018926:
-	mova @(0xD0,PC),r0
+	mova @(loc_8c0189f8,PC),r0
 	fmov @r0,fr3
 
 loc_8c01892a:
@@ -20896,7 +20901,7 @@ loc_8c01894c:
 	fmov @r0,fr3
 
 loc_8c018952:
-	mova @(0xAC,PC),r0
+	mova @(loc_8c018a00,PC),r0
 	fmov @r0,fr3
 
 loc_8c018956:
@@ -22002,13 +22007,13 @@ loc_8c01907e:
 	mov.w r0,@(0x1E,r14)
 
 loc_8c019092:
-	mova @(0x68,PC),r0
+	mova @(loc_8c0190fc,PC),r0
 	mov.l @(loc_8c01910c,PC),r2
 	fmov @r0,fr15
 	mov.w @(0x1E,r14),r0
 	mov r0,r3
 	lds r3,fpul
-	mova @(0x60,PC),r0
+	mova @(loc_8c019100,PC),r0
 	mov.l @(loc_8c019108,PC),r3
 	fmov @r0,fr2
 	mova @(loc_8c019104,PC),r0
@@ -22494,13 +22499,13 @@ loc_8c0193ae:
 	mov.w r0,@(0x1E,r14)
 
 loc_8c0193c2:
-	mova @(0x88,PC),r0
+	mova @(loc_8c01944c,PC),r0
 	mov.l @(loc_8c01945c,PC),r2
 	fmov @r0,fr15
 	mov.w @(0x1E,r14),r0
 	mov r0,r3
 	lds r3,fpul
-	mova @(0x80,PC),r0
+	mova @(loc_8c019450,PC),r0
 	mov.l @(loc_8c019458,PC),r3
 	fmov @r0,fr2
 	mova @(loc_8c019454,PC),r0
@@ -22987,7 +22992,7 @@ loc_8c0196f6:
 	shll2 r4
 	jsr @r2
 	mov.l @(r0,r4),r4
-	mova @(0xD0,PC),r0
+	mova @(loc_8c0197ec,PC),r0
 	mov.l @(loc_8c0197e4,PC),r12
 	fmov @r0,fr13
 	mova @(loc_8c0197f0,PC),r0
@@ -23669,7 +23674,7 @@ loc_8c019b48:
 	bf loc_8c019bba
 
 loc_8c019ba6:
-	mova @(0x8C,PC),r0
+	mova @(loc_8c019c34,PC),r0
 	fldi1 fr3
 	fmov @r0,fr4
 	mov 0x50,r0
@@ -23691,7 +23696,7 @@ loc_8c019bba:
 	extu.w r3,r3
 	cmp/eq r2,r3
 	bf loc_8c019be0
-	mova @(0x68,PC),r0
+	mova @(loc_8c019c38,PC),r0
 	fmov @r0,fr4
 	mov 0x50,r0
 	fmov fr4,@(r0,r4)
@@ -23776,15 +23781,15 @@ loc_8c019c40:
 	mov.b r0,@(0x4,r4)
 	mov.w @(loc_8c019d98,PC),r0
 	mov.b r3,@(r0,r4)
-	mova @(0x148,PC),r0
+	mova @(loc_8c019da4,PC),r0
 	fmov @r0,fr3
 	mov 0x34,r0
 	fmov fr3,@(r0,r4)
-	mova @(0x144,PC),r0
+	mova @(loc_8c019da8,PC),r0
 	fmov @r0,fr3
 	mov 0x38,r0
 	fmov fr3,@(r0,r4)
-	mova @(0x140,PC),r0
+	mova @(loc_8c019dac,PC),r0
 	fmov @r0,fr3
 	mov 0x3C,r0
 	fmov fr3,@(r0,r4)
@@ -23825,11 +23830,11 @@ loc_8c019c92:
 	mov.w @(loc_8c019da0,PC),r0
 	extu.b r2,r2
 	mov.l r2,@(r0,r4)
-	mova @(0x100,PC),r0
+	mova @(loc_8c019db8,PC),r0
 	fmov @r0,fr4
 	mov 0x50,r0
 	fmov fr4,@(r0,r4)
-	mova @(0xFC,PC),r0
+	mova @(loc_8c019dbc,PC),r0
 	fmov @r0,fr3
 	mov 0x54,r0
 	fmov fr4,@(r0,r4)
@@ -23931,7 +23936,7 @@ loc_8c019d5c:
 	mova @(loc_8c019dd0,PC),r0
 	mov.l @(loc_8c019dd8,PC),r3
 	fmov @r0,fr2
-	mova @(0x64,PC),r0
+	mova @(loc_8c019dd4,PC),r0
 	float fpul,fr3
 	fmov @r0,fr1
 	fmul fr2,fr3
@@ -24116,7 +24121,7 @@ loc_8c019e6c:
 	mov.l @(r0,r2),r1
 	mov.w @(loc_8c019eea,PC),r0
 	mov.l r1,@(r0,r4)
-	mova @(0x64,PC),r0
+	mova @(loc_8c019f04,PC),r0
 	fmov @r0,fr3
 	mov 0x38,r0
 	bra loc_8c019f5e
@@ -24245,7 +24250,7 @@ loc_8c019f66:
 	mov.b @(r0,r4),r2
 	tst r2,r2
 	bf loc_8c019f80
-	mova @(0xE8,PC),r0
+	mova @(loc_8c01a064,PC),r0
 	bra loc_8c019f84
 	fmov @r0,fr3
 
@@ -24279,7 +24284,7 @@ loc_8c019fa8:
 	fmov @r0,fr3
 	mov 0x50,r0
 	fmov fr3,@(r0,r4)
-	mova @(0xC8,PC),r0
+	mova @(loc_8c01a07c,PC),r0
 	fmov @r0,fr3
 	mov 0x54,r0
 	fmov fr3,@(r0,r4)
@@ -24320,7 +24325,7 @@ loc_8c019fe8:
 	mov.b @(0x4,r2),r0
 	tst r0,r0
 	bf loc_8c01a004
-	mova @(0x64,PC),r0
+	mova @(loc_8c01a064,PC),r0
 	bra loc_8c01a008
 	fmov @r0,fr3
 
@@ -24332,7 +24337,7 @@ loc_8c01a008:
 	mov 0x34,r0
 	fldi1 fr4
 	fmov fr3,@(r0,r4)
-	mova @(0x5C,PC),r0
+	mova @(loc_8c01a06c,PC),r0
 	fmov @r0,fr3
 	mov 0x38,r0
 	mov.l @(loc_8c01a080,PC),r2
@@ -24866,7 +24871,7 @@ loc_8c01a378:
 	mov.b @(0x4,r2),r0
 	tst r0,r0
 	bf loc_8c01a390
-	mova @(0x3C,PC),r0
+	mova @(loc_8c01a3c8,PC),r0
 	bra loc_8c01a394
 	fmov @r0,fr3
 
@@ -25574,7 +25579,7 @@ loc_8c01a7e8:
 	nop
 
 loc_8c01a866:
-	mova @(0x4C,PC),r0
+	mova @(loc_8c01a8b4,PC),r0
 	mov.l @(0x14,r14),r4
 	fmov @r0,fr3
 	mov 0x34,r0
@@ -25697,7 +25702,7 @@ loc_8c01a90e:
 	mov 0x58,r0
 	fldi1 fr3
 	fmov fr3,@(r0,r14)
-	mova @(0xDC,PC),r0
+	mova @(loc_8c01aa18,PC),r0
 	fmov @r0,fr3
 	mov 0x3C,r0
 	bra loc_8c01a950
@@ -26066,7 +26071,7 @@ loc_8c01ab54:
 	shll2 r4
 	jsr @r2
 	mov.l @(r0,r4),r4
-	mova @(0xD0,PC),r0
+	mova @(loc_8c01ac5c,PC),r0
 	mov.l @(loc_8c01ac58,PC),r14
 	fmov @r0,fr13
 	mova @(loc_8c01ac60,PC),r0
@@ -26335,7 +26340,7 @@ loc_8c01ad48:
 	mova @(loc_8c01adb8,PC),r0
 	mov.l @(loc_8c01adc0,PC),r3
 	fmov @r0,fr2
-	mova @(0x60,PC),r0
+	mova @(loc_8c01adbc,PC),r0
 	float fpul,fr3
 	fmov @r0,fr1
 	fmul fr2,fr3
@@ -26929,7 +26934,7 @@ loc_8c01b182:
 	fmov @(r0,r13),fr5
 	mov 0x34,r0
 	fmov @(r0,r13),fr2
-	mova @(0x124,PC),r0
+	mova @(loc_8c01b2c8,PC),r0
 	fadd fr3,fr5
 	fmov @r14,fr3
 	fadd fr3,fr2
@@ -27100,6 +27105,7 @@ loc_8c01b2bc:
 loc_8c01b2c4:
 	#data 0x00d0
 	#align4
+loc_8c01b2c8:
 	#data 0x42480000 bank12.loc_8c129728 bank12.loc_8c1297d4 bank14.loc_8c146218
 loc_8c01b2d8:
 	#data bank04.loc_8c0450c0 bank14.loc_8c146238 bank14.loc_8c146248
@@ -27693,7 +27699,7 @@ loc_8c01b708:
 	mov.w r0,@(0x1C,r4)
 	mov 0x34,r0
 	fmov @(r0,r4),fr3
-	mova @(0x130,PC),r0
+	mova @(loc_8c01b848,PC),r0
 	fmov @r0,fr2
 	mov.w @(0x1C,r4),r0
 	fneg fr3
@@ -27867,6 +27873,7 @@ loc_8c01b83c:
 loc_8c01b840:
 	#data 0x0244 0x0084 0x0240
 	#align4
+loc_8c01b848:
 	#data 0xc1365604 0xc16676c9 0xc12170a4 0xc1380000
 loc_8c01b858:
 	#data 0x8c212f18 0xc0a00000 0x47800000 0x43b40000
@@ -27884,7 +27891,7 @@ loc_8c01b87c:
 	mov.l @(0x144,PC),r2
 	add 0xFF,r0
 	mov.w r0,@(0x1C,r4)
-	mova @(0x134,PC),r0
+	mova @(loc_8c01b9c0,PC),r0
 	fmov @r0,fr3
 	mov 0x60,r0
 	fmov @(r0,r4),fr2
@@ -28069,6 +28076,7 @@ loc_8c01b9b4:
 loc_8c01b9bc:
 	#data 0x0084
 	#align4
+loc_8c01b9c0:
 	#data 0x47800000 0x43b40000 0x3f000000 0x0000ffff
 loc_8c01b9d0:
 	#data bank04.loc_8c044f12 loc_8c01b91a bank14.loc_8c146288 bank12.loc_8c1294bc
@@ -28862,7 +28870,7 @@ loc_8c01be90:
 	jsr @r12
 	mov r14,r4
 	fmov fr14,fr5
-	mova @(0xC8,PC),r0
+	mova @(loc_8c01c060,PC),r0
 	fmov fr15,fr6
 	mov r14,r5
 	mov 0xFF,r4
@@ -28940,6 +28948,7 @@ loc_8c01c040:
 	#data 0x435c0000 0x8c213b00 0x43b90000 0x8c213b04
 loc_8c01c050:
 	#data bank12.loc_8c129128 bank13.loc_8c13281c 0x43fa0000 bank12.loc_8c1292d4
+loc_8c01c060:
 	#data 0x440e8000 bank04.loc_8c0450c0 loc_8c01b276
 
 ;==============================================
@@ -29642,7 +29651,7 @@ loc_8c01c552:
 	mov.w r0,@(0x1E,r14)
 
 loc_8c01c566:
-	mova @(0x80,PC),r0
+	mova @(loc_8c01c5e8,PC),r0
 	mov.l @(loc_8c01c5f8,PC),r2
 	fmov @r0,fr15
 	mov.w @(0x1E,r14),r0
@@ -29714,6 +29723,7 @@ loc_8c01c5da:
 loc_8c01c5e4:
 	#data 0x0168 0x0080
 	#align4
+loc_8c01c5e8:
 	#data 0x3f000000 0x47800000 0x43b40000 0x0000ffff
 loc_8c01c5f8:
 	#data bank11.loc_8c11e2e0 0x8c1f8b58 0x8c1f8b5a 0x8c2141e5
@@ -29751,7 +29761,7 @@ loc_8c01c632:
 	mov.w r0,@(0x1E,r14)
 
 loc_8c01c646:
-	mova @(0xB4,PC),r0
+	mova @(loc_8c01c6fc,PC),r0
 	mov.l @(loc_8c01c70c,PC),r2
 	fmov @r0,fr15
 	mov.w @(0x1E,r14),r0
@@ -29856,6 +29866,7 @@ loc_8c01c6e8:
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c01c6f6:
 	#data 0x0168 0x0080 0x0000
+loc_8c01c6fc:
 	#data 0x3f000000 0x47800000 0x43b40000 0x0000ffff
 loc_8c01c70c:
 	#data bank11.loc_8c11e2e0 0x8c1f8b59 0x8c1f8b5b 0x8c212f19
@@ -30137,13 +30148,13 @@ loc_8c01c90a:
 	mov.l @(0x60,PC),r2
 	mov r0,r3
 	lds r3,fpul
-	mova @(0x50,PC),r0
+	mova @(loc_8c01c964,PC),r0
 	mov.l @(0x54,PC),r3
 	fmov @r0,fr2
 	mova @(0x4C,PC),r0
 	float fpul,fr3
 	fmov @r0,fr1
-	mova @(0x34,PC),r0
+	mova @(loc_8c01c954,PC),r0
 	fmov @r0,fr0
 	fmul fr2,fr3
 	fdiv fr1,fr3
@@ -30173,6 +30184,7 @@ loc_8c01c94e:
 	#data  0x0080 0x012c 0x0168
 loc_8c01c954:
 	#data  0x3f000000 0x8c1f8b5c 0x8c1f8b5d 0x8c1f8b7e
+loc_8c01c964:
 	#data  0x47800000 0x43b40000 0x0000ffff bank11.loc_8c11e2e0
 loc_8c01c974:
 	#data  0x3f333333 0x3e99999a
@@ -30375,7 +30387,7 @@ loc_8c01caa8:
 	mov.b r0,@(0x4,r4)
 
 loc_8c01cace:
-	mova @(0x100,PC),r0
+	mova @(loc_8c01cbd0,PC),r0
 	mov.l @(loc_8c01cbc0,PC),r3
 	mov.l @(0xF4,PC),r5
 	mov 0x00,r14
@@ -30508,6 +30520,7 @@ loc_8c01cbba:
 	#align4
 loc_8c01cbc0:
 	#data 0x8c2141e7 bank14.loc_8c1466cc bank14.loc_8c1466d0 0x8c213ca8
+loc_8c01cbd0:
 	#data 0x42c00000 0x41fc0000 bank02.loc_8c02a53a 0x41673333
 loc_8c01cbe0:
 	#data 0x8c1f8b7e 0x42700000 bank13.loc_8c132820 bank12.loc_8c129740
@@ -31796,7 +31809,7 @@ loc_8c01d56a:
 	jsr @r2
 	mov.l @(0x4,r4),r4
 	mov.l @(0x40,PC),r13
-	mova @(0x44,PC),r0
+	mova @(loc_8c01d5cc,PC),r0
 	mov.l @(0x38,PC),r12
 	mov.l @(0x34,PC),r11
 	fldi1 fr14
@@ -31812,6 +31825,7 @@ loc_8c01d5ac:
 	#data bank14.loc_8c146934 bank12.loc_8c1294bc bank14.loc_8c146acc bank10.loc_8c108210
 loc_8c01d5bc:
 	#data bank10.loc_8c108060 bank10.loc_8c108086 bank10.loc_8c1081e6 bank10.loc_8c108192
+loc_8c01d5cc:
 	#data 0x3a83126f
 
 ;==============================================
@@ -32444,7 +32458,7 @@ loc_8c01da8a:
 	fmov fr3,@(r0,r4)
 
 loc_8c01da96:
-	mova @(0x98,PC),r0
+	mova @(loc_8c01db30,PC),r0
 	bra loc_8c01db16
 	fmov @r0,fr3
 
@@ -32518,7 +32532,7 @@ loc_8c01db02:
 	fmov @r0,fr3
 	mov 0x38,r0
 	fmov fr3,@(r0,r4)
-	mova @(0x4C,PC),r0
+	mova @(loc_8c01db60,PC),r0
 	fmov @r0,fr3
 
 loc_8c01db16:
@@ -32537,11 +32551,13 @@ loc_8c01db1e:
 	#align4
 loc_8c01db20:
 	#data 0x42080000 0x412a72b0 0x41000000 0xc0833333
+loc_8c01db30:
 	#data 0xc1916e63 0x4218cccd 0x3fcccccd 0x3f4ccccd
 loc_8c01db40:
 	#data 0x3f19999a 0x42030000 0x4049999a 0x40400000
 loc_8c01db50:
 	#data 0xc0e00000 0x3e9eb852 0x42180000 0x40200000
+loc_8c01db60:
 	#data 0xc15e8f5c
 
 ;==============================================
@@ -32595,7 +32611,7 @@ loc_8c01dba6:
 	mov.w @(0x1C,r4),r0
 	tst 0x01,r0
 	bt loc_8c01dbb8
-	mova @(0x54,PC),r0
+	mova @(loc_8c01dc08,PC),r0
 	bra loc_8c01dbba
 	fmov @r0,fr3
 
@@ -32651,6 +32667,7 @@ loc_8c01dbf8:
 loc_8c01dc04:
 	#data 0x0080 0x012c
 	#align4
+loc_8c01dc08:
 	#data 0x3f4ccccd 0x8c212f19
 
 ;==============================================
@@ -32830,7 +32847,7 @@ loc_8c01dd46:
 	mov.b @(0x6,r4),r0
 	add 0x01,r0
 	mov.b r0,@(0x6,r4)
-	mova @(0x48,PC),r0
+	mova @(loc_8c01dd9c,PC),r0
 	fmov @r0,fr4
 	mov 0x23,r0
 	mov.b @(r0,r4),r0
@@ -32882,6 +32899,7 @@ loc_8c01dd98:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+loc_8c01dd9c:
 	#data 0x40800000 0x41033333 0x8c212f20 0x40300000
 loc_8c01ddac:
 	#data 0x41000000
@@ -33106,7 +33124,7 @@ loc_8c01df3c:
 	mov 0xFF,r4
 	mov.b @r3,r5
 	fmov @r0,fr6
-	mova @(0x44,PC),r0
+	mova @(loc_8c01df90,PC),r0
 	muls.w r2,r5
 	fmov @r0,fr5
 	mova @(0x40,PC),r0
@@ -33138,6 +33156,7 @@ loc_8c01df70:
 	#data 0x42080000 0x4218cccd 0x8c212f20 0x42030000
 loc_8c01df80:
 	#data 0x42180000 0x8c2141e9 0x8c213cae 0x41673333
+loc_8c01df90:
 	#data 0x420c0000 0x43d08000 bank02.loc_8c02a53a bank04.loc_8c0450c0
 
 ;==============================================
@@ -33409,7 +33428,7 @@ loc_8c01e170:
 	and r3,r4
 	mova @(0x50,PC),r0
 	fmov @r0,fr3
-	mova @(0x50,PC),r0
+	mova @(loc_8c01e1ec,PC),r0
 	fmov @r0,fr2
 	mov 0x78,r0
 	fmul fr3,fr0
@@ -33430,6 +33449,7 @@ loc_8c01e1cc:
 	#data bank14.loc_8c146b24 bank12.loc_8c1294c8 0x47800000 0x43b40000
 loc_8c01e1dc:
 	#data 0x3f000000 0x0000ffff bank11.loc_8c11e860 0x3e4ccccd
+loc_8c01e1ec:
 	#data 0x3f4ccccd 
 
 ;==============================================
@@ -34512,7 +34532,7 @@ loc_8c01ea0c:
 loc_8c01ea22:
 	mova @(0x6C,PC),r0
 	fmov @r0,fr14
-	mova @(0x6C,PC),r0
+	mova @(loc_8c01ea94,PC),r0
 	fmov @r0,fr15
 	mov.b @(0x2,r4),r0
 	extu.b r0,r0
@@ -34561,6 +34581,7 @@ loc_8c01ea74:
 	#data 0x8c213aee bank02.loc_8c02a53a bank14.loc_8c146cd0 bank12.loc_8c1294c8
 loc_8c01ea84:
 	#data 0x8c26a940 0x8c213b08 0x8c214284 0x42b20000
+loc_8c01ea94:
 	#data 0x414028f6 0x8c21384a 0x8c2141f2 0xff000000
 loc_8c01eaa4:
 	#data bank14.loc_8c147008 bank14.loc_8c146fc0
@@ -34870,7 +34891,7 @@ loc_8c01ecf0:
 	mov.w r0,@(0x1E,r14)
 
 loc_8c01ed16:
-	mova @(0x10C,PC),r0
+	mova @(loc_8c01ee24,PC),r0
 	mov.l @(loc_8c01ee34,PC),r2
 	fmov @r0,fr15
 	mov.w @(0x1E,r14),r0
@@ -35017,6 +35038,7 @@ loc_8c01ee00:
 loc_8c01ee1a:
 	#data 0x0168 0x0080 0x0084 0x012c
 	#align4
+loc_8c01ee24:
 	#data 0x3f000000 0x47800000 0x43b40000 0x0000ffff
 loc_8c01ee34:
 	#data bank11.loc_8c11e2e0 0x8c212f1c bank14.loc_8c146ff0 0x8c26a940
@@ -35625,7 +35647,7 @@ loc_8c01f290:
 	fmov fr2,@(r0,r4)
 
 loc_8c01f2c2:
-	mova @(0x98,PC),r0
+	mova @(loc_8c01f35c,PC),r0
 	mov.l @(0x98,PC),r2
 	fmov @r0,fr4
 	mov 0x50,r0
@@ -35706,6 +35728,7 @@ loc_8c01f342:
 	#align4
 loc_8c01f34c:
 	#data bank04.loc_8c044f12 0xc0d75c29 0xc1600000 0x3dcccccd
+loc_8c01f35c:
 	#data 0x3f8f5c29 0x8c26a940 bank14.loc_8c147178
 
 ;==============================================
@@ -35755,7 +35778,7 @@ loc_8c01f3ac:
 	mov 0x38,r0
 	mov 0x00,r3
 	fmov fr3,@(r0,r4)
-	mova @(0xE4,PC),r0
+	mova @(loc_8c01f4a0,PC),r0
 	fmov @r0,fr3
 	mov 0x3C,r0
 	fmov fr3,@(r0,r4)
@@ -35887,6 +35910,7 @@ loc_8c01f486:
 	#align4
 loc_8c01f490:
 	#data 0x8c26a940 bank14.loc_8c147190 bank14.loc_8c147180 0x3f8ccccd
+loc_8c01f4a0:
 	#data 0xc1487ae1 0x8c213842 loc_8c01fd86 0xff000000
 loc_8c01f4b0:
 	#data 0x414ccccd 0x434d0000 0x42c40000 bank02.loc_8c02a53a
@@ -36285,7 +36309,7 @@ loc_8c01f742:
 	jsr @r2
 	mov r14,r4
 	add 0x10,r15
-	mova @(0x60,PC),r0
+	mova @(loc_8c01f7ec,PC),r0
 	mov.l @r15,r3
 	fmov @r0,fr14
 	mova @(loc_8c01f7f0,PC),r0
@@ -36303,7 +36327,7 @@ loc_8c01f742:
 	fmov @r0,fr5
 
 loc_8c01f7aa:
-	mova @(0x4C,PC),r0
+	mova @(loc_8c01f7f8,PC),r0
 	mov.l @r15,r3
 	fmov @r0,fr3
 	mov 0x38,r0
@@ -36341,11 +36365,13 @@ loc_8c01f7e4:
 	#data bank13.loc_8c1328fc
 loc_8c01f7e8:
 	#data bank12.loc_8c129740
+loc_8c01f7ec:
 	#data 0x4130a3d7
 loc_8c01f7f0:
 	#data 0x41a80000
 loc_8c01f7f4:
 	#data 0x43d78000
+loc_8c01f7f8:
 	#data 0x41333333
 loc_8c01f7fc:
 	#data 0x42d60000
@@ -36455,9 +36481,9 @@ loc_8c01f870:
 	mova @(loc_8c01f990,PC),r0
 	mov.l @(loc_8c01f98c,PC),r6
 	fmov @r0,fr6
-	mova @(0xDC,PC),r0
+	mova @(loc_8c01f994,PC),r0
 	fmov @r0,fr5
-	mova @(0xDC,PC),r0
+	mova @(loc_8c01f998,PC),r0
 	fmov @r0,fr4
 	mov r4,r3
 	mov.b @(0x1,r5),r0
@@ -36575,7 +36601,9 @@ loc_8c01f98c:
 	#data bank14.loc_8c14728c
 loc_8c01f990:
 	#data 0x47800000
+loc_8c01f994:
 	#data 0x43b40000
+loc_8c01f998:
 	#data 0x3f000000
 loc_8c01f99c:
 	#data bank14.loc_8c1472a4
@@ -36649,7 +36677,7 @@ loc_8c01fa0c:
 	mova @(loc_8c01fac0,PC),r0
 	mov.l @(loc_8c01fac8,PC),r3
 	fmov @r0,fr2
-	mova @(0xA4,PC),r0
+	mova @(loc_8c01fac4,PC),r0
 	float fpul,fr3
 	fmov @r0,fr1
 	fmul fr2,fr3
@@ -36710,7 +36738,7 @@ loc_8c01fa82:
 	mov.w @(0x1C,r4),r0
 	tst r6,r0
 	bt loc_8c01fa94
-	mova @(0x40,PC),r0
+	mova @(loc_8c01fad0,PC),r0
 	bra loc_8c01fa96
 	fmov @r0,fr3
 
@@ -36752,11 +36780,13 @@ loc_8c01fabc:
 	#data 0x3f000000
 loc_8c01fac0:
 	#data 0x47800000
+loc_8c01fac4:
 	#data 0x43b40000
 loc_8c01fac8:
 	#data 0x0000ffff
 loc_8c01facc:
 	#data bank11.loc_8c11e2e0
+loc_8c01fad0:
 	#data 0x3f4ccccd
 
 ;==============================================
@@ -36843,7 +36873,7 @@ loc_8c01fb38:
 	mov.l r2,@-r15
 	jsr @r10
 	mov r12,r4
-	mova @(0x140,PC),r0
+	mova @(loc_8c01fca4,PC),r0
 	mov.l @(loc_8c01fca0,PC),r11
 	fmov @r0,fr15
 	mova @(loc_8c01fca8,PC),r0
@@ -36867,7 +36897,7 @@ loc_8c01fb38:
 	bsr loc_8c01fd86
 	mov r12,r4
 
-	mova @(0x124,PC),r0
+	mova @(loc_8c01fcb4,PC),r0
 	mov r14,r5
 	fmov @r0,fr5
 	mova @(loc_8c01fcb8,PC),r0
@@ -36891,7 +36921,7 @@ loc_8c01fb38:
 	mova @(loc_8c01fcc8,PC),r0
 	mov.l @(loc_8c01fcd0,PC),r13
 	fmov @r0,fr14
-	mova @(0x10C,PC),r0
+	mova @(loc_8c01fccc,PC),r0
 	fmov @r0,fr13
 	mov r14,r5
 	fmov fr15,fr6
@@ -36991,7 +37021,7 @@ loc_8c01fb38:
 	mova @(loc_8c01fcec,PC),r0
 	mov.w @(loc_8c01fc90,PC),r4
 	fmov @r0,fr14
-	mova @(0x68,PC),r0
+	mova @(loc_8c01fcf0,PC),r0
 	fmov @r0,fr15
 	mov r12,r5
 	bra loc_8c01fcf4
@@ -37009,6 +37039,7 @@ loc_8c01fc9c:
 	#data bank13.loc_8c13290c
 loc_8c01fca0:
 	#data bank02.loc_8c02a53a
+loc_8c01fca4:
 	#data 0x413e8f5c
 loc_8c01fca8:
 	#data 0x42180000
@@ -37016,6 +37047,7 @@ loc_8c01fcac:
 	#data 0x43dc0000
 loc_8c01fcb0:
 	#data 0x8c213842
+loc_8c01fcb4:
 	#data 0x43830000
 loc_8c01fcb8:
 	#data 0x42a00000
@@ -37027,6 +37059,7 @@ loc_8c01fcc4:
 	#data 0x8c213b92
 loc_8c01fcc8:
 	#data 0x42e80000
+loc_8c01fccc:
 	#data 0x42780000
 loc_8c01fcd0:
 	#data 0xff0affff
@@ -37044,6 +37077,7 @@ loc_8c01fce8:
 	#data 0x8c213af8
 loc_8c01fcec:
 	#data 0x41673333
+loc_8c01fcf0:
 	#data 0x43a60000
 
 ;==============================================
@@ -37083,7 +37117,7 @@ loc_8c01fd28:
 	mova @(loc_8c01fe00,PC),r0
 	fmov fr14,fr6
 	fmov @r0,fr15
-	mova @(0xCC,PC),r0
+	mova @(loc_8c01fe04,PC),r0
 	mov r12,r5
 	mov 0xFF,r4
 	fmov fr15,fr5
@@ -37204,6 +37238,7 @@ loc_8c01fdfc:
 	#data bank12.loc_8c1291dc
 loc_8c01fe00:
 	#data 0x43c80000
+loc_8c01fe04:
 	#data 0x43460000
 loc_8c01fe08:
 	#data bank12.loc_8c12939c
@@ -37337,7 +37372,7 @@ loc_8c01fec0:
 	mov.l r4,@r15
 	mov.l @r15,r9
 	mov r0,r14
-	mova @(0x64,PC),r0
+	mova @(loc_8c01ff48,PC),r0
 	fmov @r0,fr15
 	mov 0x00,r4
 	add r14,r9
@@ -37397,6 +37432,7 @@ loc_8c01ff40:
 	#data bank12.loc_8c129128
 loc_8c01ff44:
 	#data bank12.loc_8c1297c4
+loc_8c01ff48:
 	#data 0x41200000
 
 ;==============================================
