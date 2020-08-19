@@ -234,7 +234,11 @@
 ; might be red health??
 #symbol health2 0x0424					; int16
 
+#symbol UnkCpuData440 0x0440			; word
+
 #symbol assist_type 0x04c9				; byte
+
+
 
 ; if != 0, controlled by cpu
 #symbol is_cpu 0x0525					; byte

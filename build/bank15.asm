@@ -1370,75 +1370,139 @@ loc_8c1515E0:
 ;Cpu scripting
 ;==============================================
 loc_8c1515e4:
-	#data bank05.loc_8c05cd3a bank05.loc_8c05cd54 bank05.loc_8c05cea6 bank05.loc_8c05eca8
-	#data bank05.loc_8c05e0f2 bank05.loc_8c05e142 bank05.loc_8c05dd3c bank05.loc_8c05dd92
-	#data bank05.loc_8c05ecc6 bank05.loc_8c05ef60 bank05.loc_8c05efb4 bank05.loc_8c05f038
-	#data bank05.loc_8c05f09c bank05.loc_8c05dde6 bank05.loc_8c05cfce bank05.loc_8c05ed0c
-	#data bank05.loc_8c05de96 bank05.loc_8c05f330 bank05.loc_8c05d964 bank05.loc_8c05d9d0
-	#data bank05.loc_8c05daf4 bank05.loc_8c05e0ac bank05.loc_8c05ef36 bank05.loc_8c05ec7e
-	#data bank05.loc_8c05ec9a bank05.loc_8c05e23c bank05.loc_8c05f56c bank05.loc_8c05df4c
-	#data bank05.loc_8c05e1ec bank05.loc_8c05ed50 bank05.loc_8c05ed88 bank05.loc_8c05ebb2
-	#data bank05.loc_8c05edde bank05.loc_8c05ee36 bank05.loc_8c05ebce bank05.loc_8c05efec
-	#data bank05.loc_8c05f008 bank05.loc_8c05f7c8 bank05.loc_8c05d676 bank05.loc_8c05ee92
-	#data bank05.loc_8c05e27a bank05.loc_8c05cd3a bank05.loc_8c05f4e8 bank05.loc_8c05f10c
-	#data bank05.loc_8c05f180 bank05.loc_8c05cd3a bank05.loc_8c05cd3a bank05.loc_8c05f808
-	#data bank05.loc_8c05cd3a bank05.loc_8c05d7ce bank05.loc_8c05dc56 bank05.loc_8c05dc78
-	#data bank05.loc_8c05dc9a bank05.loc_8c05dcbc bank05.loc_8c05dcde bank05.loc_8c05dd00
-	#data bank05.loc_8c05cd3a bank05.loc_8c05f20c bank05.loc_8c05f292 bank05.loc_8c05cd3a
-	#data bank05.loc_8c05f56c bank05.loc_8c05cd3a bank05.loc_8c05ec00 bank05.loc_8c05d166
-	#data bank05.loc_8c05d308 bank05.loc_8c05db72 bank05.loc_8c05d4aa bank05.loc_8c05ef8a
-	#data bank05.loc_8c05f946 bank05.loc_8c05f98a bank05.loc_8c05dfe0 bank05.loc_8c05f520
-	#data bank05.loc_8c05f84c bank05.loc_8c05ec9a bank05.loc_8c05fd12 bank05.loc_8c05fd12
-	#data bank05.loc_8c05fda4 bank05.loc_8c05f890 bank05.loc_8c05fe20 bank05.loc_8c05cd3a
-	#data bank05.loc_8c05cd3a bank05.loc_8c05cd3a bank05.loc_8c05cd3a bank05.loc_8c05cd3a
-	#data bank05.loc_8c05cd3a bank05.loc_8c05cd3a bank05.loc_8c05cd3a bank05.loc_8c05cd3a
-	#data bank05.loc_8c05cd3a bank05.loc_8c05cd3a bank05.loc_8c05cd3a bank05.loc_8c05cd3a
-	#data bank05.loc_8c05cd3a bank05.loc_8c05cd3a bank05.loc_8c05cd3a bank05.loc_8c05cd3a
-	#data bank05.loc_8c05e2b8 bank05.loc_8c05e3c4 bank05.loc_8c05e9b2 bank05.loc_8c05e4a4
-	#data bank05.loc_8c05e9ec bank05.loc_8c05eb00 bank05.loc_8c05eb3c bank05.loc_8c05e7f0
-	#data bank05.loc_8c05e948 bank05.loc_8c05e6d8 bank05.loc_8c05e760 bank05.loc_8c05e52c
-	#data bank05.loc_8c05eb76 bank05.loc_8c05e79c bank05.loc_8c05e444 bank05.loc_8c05ea26
-	#data bank05.loc_8c05ea90 bank05.loc_8c05e5d2 bank05.loc_8c05e672 bank05.loc_8c05eac6
-	#data bank05.loc_8c05f9ce bank05.loc_8c05fa24 bank05.loc_8c05fa88 bank05.loc_8c05faca
-	#data bank05.loc_8c05fb34 bank05.loc_8c05fb8c bank05.loc_8c05fbb4 bank05.loc_8c05fbdc
-	#data bank05.loc_8c05fc84 bank05.loc_8c05cd3a bank05.loc_8c05fde0 bank05.loc_8c05cd3a
+	#data cpuscripting.loc_8c05cd3a cpuscripting.loc_8c05cd54
+	#data cpuscripting.loc_8c05cea6 cpuscripting.loc_8c05eca8
+	#data cpuscripting.loc_8c05e0f2 cpuscripting.loc_8c05e142
+	#data cpuscripting.loc_8c05dd3c cpuscripting.loc_8c05dd92
+	#data cpuscripting.loc_8c05ecc6 cpuscripting.loc_8c05ef60
+	#data cpuscripting.loc_8c05efb4 cpuscripting.loc_8c05f038
+	#data cpuscripting.loc_8c05f09c cpuscripting.loc_8c05dde6
+	#data cpuscripting.loc_8c05cfce cpuscripting.loc_8c05ed0c
+	#data cpuscripting.loc_8c05de96 cpuscripting.loc_8c05f330
+	#data cpuscripting.loc_8c05d964 cpuscripting.loc_8c05d9d0
+	#data cpuscripting.loc_8c05daf4 cpuscripting.loc_8c05e0ac
+	#data cpuscripting.loc_8c05ef36 cpuscripting.loc_8c05ec7e
+	#data cpuscripting.loc_8c05ec9a cpuscripting.loc_8c05e23c
+	#data cpuscripting.loc_8c05f56c cpuscripting.loc_8c05df4c
+	#data cpuscripting.loc_8c05e1ec cpuscripting.loc_8c05ed50
+	#data cpuscripting.loc_8c05ed88 cpuscripting.loc_8c05ebb2
+	#data cpuscripting.loc_8c05edde cpuscripting.loc_8c05ee36
+	#data cpuscripting.loc_8c05ebce cpuscripting.loc_8c05efec
+	#data cpuscripting.loc_8c05f008 cpuscripting.loc_8c05f7c8
+	#data cpuscripting.loc_8c05d676 cpuscripting.loc_8c05ee92
+	#data cpuscripting.loc_8c05e27a cpuscripting.loc_8c05cd3a
+	#data cpuscripting.loc_8c05f4e8 cpuscripting.loc_8c05f10c
+	#data cpuscripting.loc_8c05f180 cpuscripting.loc_8c05cd3a
+	#data cpuscripting.loc_8c05cd3a cpuscripting.loc_8c05f808
+	#data cpuscripting.loc_8c05cd3a cpuscripting.loc_8c05d7ce
+	#data cpuscripting.loc_8c05dc56 cpuscripting.loc_8c05dc78
+	#data cpuscripting.loc_8c05dc9a cpuscripting.loc_8c05dcbc
+	#data cpuscripting.loc_8c05dcde cpuscripting.loc_8c05dd00
+	#data cpuscripting.loc_8c05cd3a cpuscripting.loc_8c05f20c
+	#data cpuscripting.loc_8c05f292 cpuscripting.loc_8c05cd3a
+	#data cpuscripting.loc_8c05f56c cpuscripting.loc_8c05cd3a
+	#data cpuscripting.loc_8c05ec00 cpuscripting.loc_8c05d166
+	#data cpuscripting.loc_8c05d308 cpuscripting.loc_8c05db72
+	#data cpuscripting.loc_8c05d4aa cpuscripting.loc_8c05ef8a
+	#data cpuscripting.loc_8c05f946 cpuscripting.loc_8c05f98a
+	#data cpuscripting.loc_8c05dfe0 cpuscripting.loc_8c05f520
+	#data cpuscripting.loc_8c05f84c cpuscripting.loc_8c05ec9a
+	#data cpuscripting.loc_8c05fd12 cpuscripting.loc_8c05fd12
+	#data cpuscripting.loc_8c05fda4 cpuscripting.loc_8c05f890
+	#data cpuscripting.loc_8c05fe20 cpuscripting.loc_8c05cd3a
+	#data cpuscripting.loc_8c05cd3a cpuscripting.loc_8c05cd3a
+	#data cpuscripting.loc_8c05cd3a cpuscripting.loc_8c05cd3a
+	#data cpuscripting.loc_8c05cd3a cpuscripting.loc_8c05cd3a
+	#data cpuscripting.loc_8c05cd3a cpuscripting.loc_8c05cd3a
+	#data cpuscripting.loc_8c05cd3a cpuscripting.loc_8c05cd3a
+	#data cpuscripting.loc_8c05cd3a cpuscripting.loc_8c05cd3a
+	#data cpuscripting.loc_8c05cd3a cpuscripting.loc_8c05cd3a
+	#data cpuscripting.loc_8c05cd3a cpuscripting.loc_8c05cd3a
+	#data cpuscripting.loc_8c05e2b8 cpuscripting.loc_8c05e3c4
+	#data cpuscripting.loc_8c05e9b2 cpuscripting.loc_8c05e4a4
+	#data cpuscripting.loc_8c05e9ec cpuscripting.loc_8c05eb00
+	#data cpuscripting.loc_8c05eb3c cpuscripting.loc_8c05e7f0
+	#data cpuscripting.loc_8c05e948 cpuscripting.loc_8c05e6d8
+	#data cpuscripting.loc_8c05e760 cpuscripting.loc_8c05e52c
+	#data cpuscripting.loc_8c05eb76 cpuscripting.loc_8c05e79c
+	#data cpuscripting.loc_8c05e444 cpuscripting.loc_8c05ea26
+	#data cpuscripting.loc_8c05ea90 cpuscripting.loc_8c05e5d2
+	#data cpuscripting.loc_8c05e672 cpuscripting.loc_8c05eac6
+	#data cpuscripting.loc_8c05f9ce cpuscripting.loc_8c05fa24
+	#data cpuscripting.loc_8c05fa88 cpuscripting.loc_8c05faca
+	#data cpuscripting.loc_8c05fb34 cpuscripting.loc_8c05fb8c
+	#data cpuscripting.loc_8c05fbb4 cpuscripting.loc_8c05fbdc
+	#data cpuscripting.loc_8c05fc84 cpuscripting.loc_8c05cd3a
+	#data cpuscripting.loc_8c05fde0 cpuscripting.loc_8c05cd3a
 
 ;==============================================
-;
+;Another Cpu Scripting table
 ;==============================================
 loc_8c1517e4:
-	#data bank05.loc_8c05cd48 bank05.loc_8c05ce1c bank05.loc_8c05cf8e bank05.loc_8c05cd48
-	#data bank05.loc_8c05e1c4 bank05.loc_8c05e1c4 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05d0d6 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05f41a bank05.loc_8c05ce1c bank05.loc_8c05da78
-	#data bank05.loc_8c05d0d6 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05f64a bank05.loc_8c05cd48
-	#data bank05.loc_8c05e1c4 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05f64a bank05.loc_8c05d714 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05d714 bank05.loc_8c05ce1c bank05.loc_8c05da78
-	#data bank05.loc_8c05ce1c bank05.loc_8c05da78 bank05.loc_8c05ce1c bank05.loc_8c05da78
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05f64a bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05d252
-	#data bank05.loc_8c05d40c bank05.loc_8c05ce1c bank05.loc_8c05d5b0 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05e886
-	#data bank05.loc_8c05e886 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
-	#data bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48 bank05.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05ce1c
+	#data cpuscripting.loc_8c05cf8e cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05e1c4 cpuscripting.loc_8c05e1c4
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05d0d6 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05f41a
+	#data cpuscripting.loc_8c05ce1c cpuscripting.loc_8c05da78
+	#data cpuscripting.loc_8c05d0d6 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05f64a cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05e1c4 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05f64a
+	#data cpuscripting.loc_8c05d714 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05d714
+	#data cpuscripting.loc_8c05ce1c cpuscripting.loc_8c05da78
+	#data cpuscripting.loc_8c05ce1c cpuscripting.loc_8c05da78
+	#data cpuscripting.loc_8c05ce1c cpuscripting.loc_8c05da78
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05f64a cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05d252
+	#data cpuscripting.loc_8c05d40c cpuscripting.loc_8c05ce1c
+	#data cpuscripting.loc_8c05d5b0 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05e886
+	#data cpuscripting.loc_8c05e886 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
+	#data cpuscripting.loc_8c05cd48 cpuscripting.loc_8c05cd48
 
 
 loc_8c1519E4:

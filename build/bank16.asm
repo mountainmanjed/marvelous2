@@ -13257,7 +13257,7 @@ loc_8c166cd8:
 #data 0x4496
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 mov.b @(0x7A,gbr),r0 
@@ -13273,7 +13273,7 @@ mov.b @(0x2F,gbr),r0
 mac.w @r2+,@r4+ 
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0xFA
@@ -13286,7 +13286,7 @@ trapa 0xFA
 trapa 0x96
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 #data 0x43C8
 #data 0x0000
@@ -13304,7 +13304,7 @@ trapa 0x48
 trapa 0x48
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0x48
@@ -13312,7 +13312,7 @@ trapa 0x48
 #data 0x42C8
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0x48
@@ -13328,7 +13328,7 @@ mov.l r0,@(0x320,gbr)
 lds.l @r4+,macl 
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 mov.l r0,@(0x120,gbr) 
@@ -13336,7 +13336,7 @@ mov.l r0,@(0x120,gbr)
 #data 0x4496
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 #data 0x4396
 #data 0x0000
@@ -13344,7 +13344,7 @@ ldc r3, dbr
 lds.l @r4+,macl 
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 mov.l r0,@(0x120,gbr) 
@@ -13359,7 +13359,7 @@ mov.l r0,@(0x320,gbr)
 #data 0x42C8
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0x48
@@ -13368,7 +13368,7 @@ trapa 0x48
 trapa 0x48
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0x48
@@ -13381,7 +13381,7 @@ trapa 0x48
 trapa 0x48
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 #data 0x43C8
 #data 0x0000
@@ -13399,7 +13399,7 @@ trapa 0x96
 mac.w @r2+,@r4+ 
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0xFA
@@ -13414,7 +13414,7 @@ mov.b @(0x2F,gbr),r0
 #data 0x4496
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 mov.b @(0x7A,gbr),r0 
@@ -13441,7 +13441,7 @@ trapa 0xFA
 mov.b @(0x2F,gbr),r0 
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0xC8
@@ -13459,7 +13459,7 @@ trapa 0x96
 trapa 0x48
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0xC8
@@ -13467,7 +13467,7 @@ trapa 0xC8
 #data 0x0000
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0x48
@@ -13484,7 +13484,7 @@ mov.l r0,@(0x320,gbr)
 mov.b @(0x2F,gbr),r0 
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 mov.l r0,@(0x320,gbr) 
@@ -13493,7 +13493,7 @@ mov.l r0,@(0x320,gbr)
 mov.b @(0x48,gbr),r0 
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0x48
@@ -13526,7 +13526,7 @@ mov.l r0,@(0x320,gbr)
 mov.b @(0x48,gbr),r0 
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0x48
@@ -13535,7 +13535,7 @@ trapa 0x48
 mov.b @(0x2F,gbr),r0 
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 mov.l r0,@(0x320,gbr) 
@@ -13551,7 +13551,7 @@ mov.l r0,@(0x320,gbr)
 #data 0x0000
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0x48
@@ -13562,7 +13562,7 @@ trapa 0x48
 loc_8c166e98:
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0xC8
@@ -13580,7 +13580,7 @@ trapa 0x96
 mov.b @(0x2F,gbr),r0 
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0xC8
@@ -13637,7 +13637,7 @@ mov.b @(0x7A,gbr),r0
 trapa 0x48
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0x48
@@ -13684,7 +13684,7 @@ mov.b @(0x7A,gbr),r0
 trapa 0x48
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0x48
@@ -13757,7 +13757,7 @@ mov.w @(0x19C,gbr),r0
 #data 0x4396
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 mov.b r0,@(0x00,r0) 
 mov.w @(0x76,gbr),r0 
 #data 0x0000
@@ -13782,7 +13782,7 @@ mov.b @(0x7A,gbr),r0
 trapa 0xC8
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 mov.l r0,@(0x320,gbr) 
@@ -13805,7 +13805,7 @@ shll r0
 mov.w @(0x19C,gbr),r0 
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 #data 0x43C8
 
@@ -13901,7 +13901,7 @@ mov.w @(0x19C,gbr),r0
 trapa 0xC8
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 shll r0
 shad r9, r5
 #data 0x0000
@@ -13925,7 +13925,7 @@ mov.b @(0x7A,gbr),r0
 trapa 0xFA
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 
 loc_8c1670b8:
 #data 0x0000
@@ -13958,7 +13958,7 @@ mov.w @(0x76,gbr),r0
 #data 0x0000
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 mov.b @(0x7A,gbr),r0 
@@ -13974,7 +13974,7 @@ trapa 0xFA
 #data 0x0000
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0x48
@@ -13999,7 +13999,7 @@ mov.b r0,@(0x00,r0)
 #data 0x4489
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 trapa 0xC8
@@ -16725,7 +16725,7 @@ mov.b r0,@(0x00,r0)
 mov.b @(0xA2,gbr),r0 
 #data 0x0000
 
-ldc r3, dbr 
+#data 0x43fa
 #data 0x0000
 
 mov.l r0,@(0x1C0,gbr) 

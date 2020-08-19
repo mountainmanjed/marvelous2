@@ -17565,16 +17565,29 @@ loc_8c0172f2:
 	bra loc_8c01739e
 	fmov fr2,@(r0,r14)
 
-;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c017326:
-mov 0x21,r0
-mov.b @(r0,r14),r2
-tst r2,r2
-bt loc_8c01737c
-mov.w @(loc_8c017334,pc),r0
-bra loc_8c01739e
-mov.b r4,@(r0,r14)
+	mov 0x21,r0
+	mov.b @(r0,r14),r2
+	tst r2,r2
+	bt loc_8c01737c
+	mov.w @(loc_8c017334,pc),r0
+	bra loc_8c01739e
+	mov.b r4,@(r0,r14)
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+loc_8c017334:
+	#data 0x012c
+loc_8c017336:
+	#data 0x010c
+loc_8c017338:
+	#data 0x0084
+loc_8c01733a:
+	#data 0x0439
+loc_8c01733c:
+	#data 0x0080
+loc_8c01733e:
+	#data 0x0168
+	#align4
 loc_8c017340:
 	#data bank14.loc_8c14465c
 loc_8c017344:
