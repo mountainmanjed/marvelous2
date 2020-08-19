@@ -17568,102 +17568,43 @@ loc_8c0172f2:
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c017326:
 mov 0x21,r0
-
-loc_8c017328:
 mov.b @(r0,r14),r2
-
-loc_8c01732a:
 tst r2,r2
-
-loc_8c01732c:
 bt loc_8c01737c
-
-loc_8c01732e:
-mov.w @(bank01.loc_8c017334,pc),r0
-
-loc_8c017330:
-bra bank01.loc_8c01739e
-
-loc_8c017332:
-mov.b r4,@(r0,r14) 
-
-loc_8c017334:
-#data 0x012C
-
-loc_8c017336:
-#data 0x010C
-
-loc_8c017338:
-#data 0x0084
-
-loc_8c01733a:
-#data 0x0439
-
-loc_8c01733c:
-#data 0x0080
-
-loc_8c01733e:
-#data 0x0168
+mov.w @(loc_8c017334,pc),r0
+bra loc_8c01739e
+mov.b r4,@(r0,r14)
 
 loc_8c017340:
-#data 0x465C
-#data 0x8C14
-
+	#data bank14.loc_8c14465c
 loc_8c017344:
-#data 0x94C8
-#data 0x8C12
-
+	#data bank12.loc_8c1294c8
 loc_8c017348:
-#data 0xA93C
-#data 0x8C26
-
+	#data 0x8c26a93c
 loc_8c01734c:
-#data 0x0000
-#data 0x4120
-
+	#data 0x41200000
 loc_8c017350:
-#data 0x2BFC
-#data 0x8C21
-
+	#data 0x8c212bfc
 loc_8c017354:
-#data 0x3C10
-#data 0x8C14
-
+	#data bank14.loc_8c143c10
 loc_8c017358:
-#data 0x47EC
-#data 0x8C14
-
+	#data bank14.loc_8c1447ec
 loc_8c01735c:
-#data 0x823C
-#data 0x8C26
-
+	#data work.GameGlobalPointer
 loc_8c017360:
-#data 0xE148
-#data 0x3F7A
-
+	#data 0x3f7ae148
 loc_8c017364:
-#data 0xF5C3
-#data 0x3EA8
-
+	#data 0x3ea8f5c3
 loc_8c017368:
-#data 0x0000
-#data 0x3F00
-
+	#data 0x3f000000
 loc_8c01736c:
-#data 0x0000
-#data 0x4780
-
+	#data 0x47800000
 loc_8c017370:
-#data 0x0000
-#data 0x43B4
-
+	#data 0x43b40000
 loc_8c017374:
-#data 0xFFFF
-#data 0x0000
-
+	#data 0x0000ffff
 loc_8c017378:
-#data 0xE2E0
-#data 0x8C11
+	#data bank11.loc_8c11e2e0
 
 loc_8c01737c:
 	mova @(loc_8c017488,PC),r0
