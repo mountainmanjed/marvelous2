@@ -16012,13 +16012,10 @@ loc_8c066aae:
 	mov.l @r15+,r14
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-locc_8c066ab8:
 loc_8c066ab8:
 	#data 0x019f
-locc_8c066aba:
 loc_8c066aba:
 	#data 0x019e
-locc_8c066abc:
 loc_8c066abc:
 	#data 0x041c
 	#align4
@@ -25046,16 +25043,12 @@ loc_8c06a6fa:
 loc_8c06a700:
 	#data 0x012c
 	#align4
-lco_8c06a704:
 loc_8c06a704:
 	#data 0x8c2895f0
-lco_8c06a708:
 loc_8c06a708:
 	#data bank03.loc_8c034dee
-lco_8c06a70c:
 loc_8c06a70c:
 	#data bank04.loc_8c045748
-lco_8c06a710:
 loc_8c06a710:
 	#data bank04.loc_8c0450c0
 

@@ -31160,22 +31160,16 @@ loc_8c04ccaa:
 	nop
 
 ;##############################################
-loc8c04ccf0:
 loc_8c04ccf0:
 	#data 0x0168
-loc8c04ccf2:
 loc_8c04ccf2:
 	#data 0x016c
-loc8c04ccf4:
 loc_8c04ccf4:
 	#data 0x0178
-loc8c04ccf6:
 loc_8c04ccf6:
 	#data 0x0130
-loc8c04ccf8:
 loc_8c04ccf8:
 	#data 0x01fd
-loc8c04ccfa:
 loc_8c04ccfa:
 	#data 0x0158
 	#align4

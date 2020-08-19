@@ -3111,6 +3111,7 @@ loc_8c145C98:
 #data 0x00000000
 #data 0x3E947AE1
 #data 0x3F428F5C
+loc_8c145cb0:
 #data 0x00000000
 #data 0x40B5C28F
 #data 0xC1600000
@@ -4253,6 +4254,7 @@ loc_8c146840:
 #data 0x3F800000
 #data 0x3F800000
 #data 0x3F800000
+loc_8c14684c:
 #data 0x3F8F5C29
 #data 0x3F8F5C29
 #data 0x3F800000
@@ -4297,370 +4299,748 @@ loc_8c1468A0:
 #data 0x00000000
 
 #align4
-loc_8c1468BC:
-#data 0xBFB33333
-#data 0xC14CCCCD
+loc_8c1468bc:
+cmp/ge r3,r3
+bsr bank14.loc_8c146828
+tst.b 0xCD,@(r0,gbr) 
+mov.w r0,@(0x98,gbr) 
 
-#align4
-loc_8c1468C4:
-#data 0x00000000
-#data 0x40733333
-#data 0xC14F3333
-#data 0x00000000
-#data 0x3F99999A
-#data 0xC14F3333
-#data 0x00000000
-#data 0xBFB33333
-#data 0xC14F3333
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
+loc_8c1468c4:
+#data 0x0000
+#data 0x0000
 
-#align4
-loc_8c1468F4:
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3F800000
+cmp/ge r3,r3
+#data 0x4073
 
-#align4
+
+loc_8C1468CC:
+cmp/ge r3,r3
+mov.w r0,@(0x9E,gbr) 
+#data 0x0000
+#data 0x0000
+
+mov.w @(loc_8C146A0C,pc),r9
+#data 0x3F99
+
+cmp/ge r3,r3
+mov.w r0,@(0x9E,gbr) 
+#data 0x0000
+#data 0x0000
+
+cmp/ge r3,r3
+bsr loc_8C14684C
+cmp/ge r3,r3
+mov.w r0,@(0x9E,gbr) 
+
+loc_8C1468E8:
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+
+loc_8c1468f4:
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+
+
+loc_8C1468FA:
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
+
 loc_8c146900:
-#data 0x3EB33333
-#data 0x3F800000
-#data 0x3F800000
+cmp/ge r3,r3
+cmp/ge r11,r14
+#data 0x0000
 
-#align4
-loc_8c14690C:
-#data 0x3F666666
-#data 0x3F666666
-#data 0x3F800000
+cmp/eq r8,r15
+#data 0x0000
 
-#align4
+cmp/eq r8,r15
+
+loc_8c14690c:
+mov.l @r6+,r6
+cmp/hi r6,r15
+mov.l @r6+,r6
+cmp/hi r6,r15
+#data 0x0000
+
+cmp/eq r8,r15
+
 loc_8c146918:
-#data 0x3F266666
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3F800000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
+mov.l @r6+,r6
+cmp/hi r2,r15
+#data 0x0000
 
-#align4
+
+loc_8C14691E:
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+
 loc_8c146934:
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3F800000
+#data 0x0000
 
-#align4
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
+
 loc_8c146944:
-#data 0x00DE0001
-#data 0x01DF0101
+#data 0x0001
 
-#align4
-loc_8c14694C:
-#data 0x02E90201
-#data 0x03E90301
-#data 0x11E21001
-#data 0x13E21101
-#data 0x10DA3101
-#data 0x00E83401
-#data 0x04E54001
-#data 0x05E54101
-#data 0x06E54201
-#data 0x14E00002
-#data 0x16E10102
-#data 0x17E10202
-#data 0x15E30302
-#data 0xFFFFFFFF
+mov.l @(r0,r13),r0
+#data 0x0101
 
-#align4
+mac.l @r13+,@r1+ 
+
+loc_8c14694c:
+#data 0x0201
+#data 0x02E9
+#data 0x0301
+#data 0x03E9
+
+mov.l r0,@(0x04,r0) 
+mov.l r14,@(0x08,r1) 
+mov.l r0,@(0x04,r1) 
+mov.l r14,@(0x08,r3) 
+#data 0x3101
+
+mov.l r13,@(0x28,r0) 
+#data 0x3401
+#data 0x00E8
+
+shlr r0
+mov.w r14,@(r0,r4) 
+shlr r1
+mov.w r14,@(r0,r5) 
+shlr r2
+mov.w r14,@(r0,r6) 
+stc sr, r0
+mov.l r14,@(0x00,r4) 
+stc sr, r1
+mov.l r14,@(0x04,r6) 
+stc sr, r2
+mov.l r14,@(0x04,r7) 
+stc sr, r3
+mov.l r14,@(0x0C,r5) 
+#data 0xFFFF
+#data 0xFFFF
+
 loc_8c146984:
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x40466666
-#data 0xC14E6666
-#data 0x00000000
-#data 0x3F000000
-#data 0xC14E6666
-#data 0x00000000
-#data 0xC0066666
-#data 0xC14E6666
-#data 0x40800000
-#data 0x40466666
-#data 0xC14E6666
-#data 0x40800000
-#data 0x3F000000
-#data 0xC14E6666
-#data 0x40800000
-#data 0xC0066666
-#data 0xC14E6666
-#data 0x40E00000
-#data 0x40400000
-#data 0x6666
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
 
-loc_8c1469E2:
-#data 0xC14E
-#data 0x40E00000
-#data 0x3FC00000
-#data 0xC14E6666
-#data 0x40E00000
-#data 0xBF800000
-#data 0xC14E6666
-#data 0x41280000
-#data 0x40400000
-#data 0xC14E6666
-#data 0x41280000
-#data 0x3FC00000
-#data 0xC14E6666
-#data 0x41280000
-#data 0xBF800000
-#data 0xC14E6666
-#data 0x41033333
-#data 0x40CE6666
-#data 0xC14E6666
-#data 0x41033333
-#data 0x40A66666
-#data 0xC14E6666
-#data 0xC1080000
-#data 0xC0B00000
-#data 0xC14E6666
-#data 0xC0000000
-#data 0xC0B00000
-#data 0xC14E6666
+mov.l @r6+,r6
+#data 0x4046
 
-#align4
-loc_8c146A50:
-#data 0xC1080000
-#data 0xC0B00000
-#data 0xC14E6666
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0xC0000000
-#data 0xC0B00000
-#data 0xC14E6666
-#data 0x00000000
-#data 0x40466666
-#data 0xC14CCCCD
-#data 0xC0A80000
-#data 0xC0B00000
-#data 0xC14CCCCD
-#data 0x00000000
-#data 0x40466666
-#data 0xC1500000
-#data 0x00000000
-#data 0xC0B00000
-#data 0xC1500000
+mov.l @r6+,r6
+mov.w r0,@(0x9C,gbr) 
+#data 0x0000
+#data 0x0000
+#data 0x0000
 
-#align4
-loc_8c146AA4:
-#data 0x3F4CCCCD
-#data 0x40E00000
-#data 0x41280000
+cmp/eq r0,r15
+mov.l @r6+,r6
+mov.w r0,@(0x9C,gbr) 
+#data 0x0000
+#data 0x0000
 
-#align4
-loc_8c146AB0:
-#data 0xC1080000
-#data 0xC0000000
-#data 0x00370027
-#data 0x00000047
+mov.l @r6+,r6
+mov.b r0,@(0x06,gbr) 
+mov.l @r6+,r6
+mov.w r0,@(0x9C,gbr) 
+#data 0x0000
+#data 0x4080
 
-#align4
-loc_8c146AC0:
-#data 0x43190000
-#data 0x435A0000
-#data 0x438D8000
+mov.l @r6+,r6
+#data 0x4046
 
-#align4
-loc_8c146ACC:
-#data bank01.loc_8c01D4FA
+mov.l @r6+,r6
+mov.w r0,@(0x9C,gbr) 
+#data 0x0000
+#data 0x4080
+#data 0x0000
 
-loc_8c146AD0:
-#data bank01.loc_8c01D626
+cmp/eq r0,r15
+mov.l @r6+,r6
+mov.w r0,@(0x9C,gbr) 
+#data 0x0000
+#data 0x4080
 
-loc_8c146AD4:
-#data bank01.loc_8c01D760
+mov.l @r6+,r6
+mov.b r0,@(0x06,gbr) 
+mov.l @r6+,r6
+mov.w r0,@(0x9C,gbr) 
+#data 0x0000
+#data 0x40E0
+#data 0x0000
+#data 0x4040
 
-loc_8c146AD8:
-#data bank01.loc_8c01DA38
+mov.l @r6+,r6
 
-loc_8c146ADC:
-#data bank01.loc_8c01DB64
+loc_8c1469e2:
+mov.w r0,@(0x9C,gbr) 
+#data 0x0000
+#data 0x40E0
+#data 0x0000
 
-loc_8c146AE0:
-#data bank01.loc_8c01DF60
+cmp/eq r12,r15
+mov.l @r6+,r6
+mov.w r0,@(0x9C,gbr) 
+#data 0x0000
+#data 0x40E0
+#data 0x0000
 
-loc_8c146AE4:
-#data bank01.loc_8c01DF68
+bsr loc_8C1468FA
+mov.l @r6+,r6
+mov.w r0,@(0x9C,gbr) 
+#data 0x0000
 
-loc_8c146AE8:
-#data bank01.loc_8c01DCC6
+shll16 r1
+#data 0x0000
+#data 0x4040
 
-loc_8c146AEC:
-#data bank01.loc_8c01DD2C
+mov.l @r6+,r6
+mov.w r0,@(0x9C,gbr) 
+#data 0x0000
 
-loc_8c146AF0:
-#data bank01.loc_8c01DDB0
+shll16 r1
 
-loc_8c146AF4:
-#data bank01.loc_8c01DECC
+loc_8C146A0C:
+#data 0x0000
 
-loc_8c146AF8:
-#data 0xC0E00000
-#data 0x00000000
-#data 0x40E00000
-#data 0x40E00000
+cmp/eq r12,r15
+mov.l @r6+,r6
+mov.w r0,@(0x9C,gbr) 
+#data 0x0000
 
-#align4
-loc_8c146B08:
-#data bank01.loc_8c01E04C
+shll16 r1
+#data 0x0000
 
-loc_8c146B0C:
-#data bank01.loc_8c01E22C
+bsr loc_8C14691E
+mov.l @r6+,r6
+mov.w r0,@(0x9C,gbr) 
+cmp/ge r3,r3
+stc.l sr, @-r1
+mov.l @r6+,r6
+ldc r0, r4_bank 
+mov.l @r6+,r6
+mov.w r0,@(0x9C,gbr) 
+cmp/ge r3,r3
+stc.l sr, @-r1
+mov.l @r6+,r6
+#data 0x40A6
 
-loc_8c146B10:
-#data bank01.loc_8c01E3D6
+mov.l @r6+,r6
+mov.w r0,@(0x9C,gbr) 
+#data 0x0000
 
-loc_8c146B14:
-#data bank01.loc_8c01E0A0
+mov.w r0,@(0x10,gbr) 
+#data 0x0000
 
-loc_8c146B18:
-#data bank01.loc_8c01E0EA
+mov.b r0,@(0xB0,gbr) 
+mov.l @r6+,r6
+mov.w r0,@(0x9C,gbr) 
+#data 0x0000
 
-loc_8c146B1C:
-#data bank01.loc_8c01E5A4
+mov.b r0,@(0x00,gbr) 
+#data 0x0000
 
-loc_8c146B20:
-#data bank01.loc_8c01E5B2
+mov.b r0,@(0xB0,gbr) 
+mov.l @r6+,r6
+mov.w r0,@(0x9C,gbr) 
 
-loc_8c146B24:
-#data 0x3F19999A
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3ECCCCCD
-#data 0x3F4CCCCD
-#data 0x3F666666
-#data 0x3E4CCCCD
-#data 0x3F19999A
-#data 0x3F4CCCCD
+loc_8c146a50:
+#data 0x0000
 
-#align4
-loc_8c146B48:
-#data 0xC1300000
-#data 0xC13028F6
-#data 0xC13051EC
+mov.w r0,@(0x10,gbr) 
+#data 0x0000
 
-#align4
-loc_8c146B54:
-#data bank01.loc_8c01E25A
+mov.b r0,@(0xB0,gbr) 
+mov.l @r6+,r6
+mov.w r0,@(0x9C,gbr) 
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
 
-loc_8c146B58:
-#data bank01.loc_8c01E2B4
+mov.b r0,@(0x00,gbr) 
+#data 0x0000
 
-loc_8c146B5C:
-#data bank01.loc_8c01E5A4
+mov.b r0,@(0xB0,gbr) 
+mov.l @r6+,r6
+mov.w r0,@(0x9C,gbr) 
+#data 0x0000
+#data 0x0000
 
-loc_8c146B60:
-#data bank01.loc_8c01E5B2
+mov.l @r6+,r6
+#data 0x4046
 
-loc_8c146B64:
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3F000000
-#data 0x3F666666
-#data 0x3ECCCCCD
-#data 0x00000000
+tst.b 0xCD,@(r0,gbr) 
+mov.w r0,@(0x98,gbr) 
+#data 0x0000
 
-#align4
-loc_8c146B7C:
-#data bank01.loc_8c01E3E8
+mov.b r0,@(0xA8,gbr) 
+#data 0x0000
 
-loc_8c146B80:
-#data bank01.loc_8c01E488
+mov.b r0,@(0xB0,gbr) 
+tst.b 0xCD,@(r0,gbr) 
+mov.w r0,@(0x98,gbr) 
+#data 0x0000
+#data 0x0000
 
-loc_8c146B84:
-#data bank01.loc_8c01E5A4
+mov.l @r6+,r6
+#data 0x4046
+#data 0x0000
 
-loc_8c146B88:
-#data 0xE5B2
+mov.w r0,@(0xA0,gbr) 
+#data 0x0000
+#data 0x0000
+#data 0x0000
 
-loc_8c146B8A:
+mov.b r0,@(0xB0,gbr) 
+#data 0x0000
+
+mov.w r0,@(0xA0,gbr) 
+
+loc_8c146aa4:
+tst.b 0xCD,@(r0,gbr) 
+add r4,r15
+#data 0x0000
+#data 0x40E0
+#data 0x0000
+
+shll16 r1
+
+loc_8c146ab0:
+#data 0x0000
+
+mov.w r0,@(0x10,gbr) 
+#data 0x0000
+
+mov.b r0,@(0x00,gbr) 
+mul.l r2,r0
+mul.l r3,r0
+mul.l r4,r0
+#data 0x0000
+
+loc_8c146ac0:
+#data 0x0000
+
+shlr8 r3
+#data 0x0000
+
+lds r3,fpul 
+mov.b r0,@(0x00,r0) 
+shld r8, r3
+
+loc_8c146acc:
+mov.l @(loc_8C146EB8,pc),r4
 #data 0x8C01
 
-#align4
-loc_8c146B8C:
-#data 0x000000B2
-#data 0x3F400000
-#data 0xBE99999A
-#data 0xC02CCCCD
-#data 0x3F000000
-#data 0x3F000000
-#data 0x3F000000
-#data 0x000000B2
-#data 0xC1633333
-#data 0xBE99999A
-#data 0xC02CCCCD
-#data 0x3F000000
-#data 0x3F000000
-#data 0x3F000000
-#data 0x0000010C
+
+loc_8c146ad0:
+mov.l @(loc_8C146B6C,pc),r6
+#data 0x8C01
+
+
+loc_8c146ad4:
+mov.l @(loc_8C146C58,pc),r7
+#data 0x8C01
+
+
+loc_8c146ad8:
+mov.l @(loc_8C146BBC,pc),r10
+#data 0x8C01
+
+
+loc_8c146adc:
+mov.l @(loc_8C146C70,pc),r11
+#data 0x8C01
+
+
+loc_8c146ae0:
+mov.l @(loc_8C146C64,pc),r15
+#data 0x8C01
+
+
+loc_8c146ae4:
+mov.l @(bank14.loc_8c146c88,pc),r15
+#data 0x8C01
+
+
+loc_8c146ae8:
+mov.l @(loc_8C146E04,pc),r12
+#data 0x8C01
+
+
+loc_8c146aec:
+mov.l @(loc_8C146BA0,pc),r13
+#data 0x8C01
+
+
+loc_8c146af0:
+mov.l @(loc_8C146DB4,pc),r13
+#data 0x8C01
+
+
+loc_8c146af4:
+mov.l @(loc_8C146E28,pc),r14
+#data 0x8C01
+
+loc_8c146af8:
+#data 0x0000
+
+mov.b r0,@(0xE0,gbr) 
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x40E0
+#data 0x0000
+#data 0x40E0
+
+
+loc_8c146b08:
+mov 0x4C,r0
+#data 0x8C01
+
+
+loc_8c146b0c:
+mov 0x2C,r2
+#data 0x8C01
+
+
+loc_8c146b10:
+mov 0xD6,r3
+#data 0x8C01
+
+
+loc_8c146b14:
+mov 0xA0,r0
+#data 0x8C01
+
+
+loc_8c146b18:
+mov 0xEA,r0
+#data 0x8C01
+
+
+loc_8c146b1c:
+mov 0xA4,r5
+#data 0x8C01
+
+
+loc_8c146b20:
+mov 0xB2,r5
+#data 0x8C01
+
+
+loc_8c146b24:
+mov.w @(loc_8C146C5C,pc),r9
+#data 0x3F19
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
+tst.b 0xCD,@(r0,gbr) 
+add r12,r14
+tst.b 0xCD,@(r0,gbr) 
+add r4,r15
+mov.l @r6+,r6
+cmp/hi r6,r15
+tst.b 0xCD,@(r0,gbr) 
+add r4,r14
+mov.w @(loc_8C146C78,pc),r9
+#data 0x3F19
+
+tst.b 0xCD,@(r0,gbr) 
+add r4,r15
+
+loc_8c146b48:
+#data 0x0000
+
+mov.w r0,@(0x60,gbr) 
+mov.l r15,@-r8
+mov.w r0,@(0x60,gbr) 
+mov.l @(0x30,r14),r1
+mov.w r0,@(0x60,gbr) 
+
+loc_8c146b54:
+mov 0x5A,r2
+#data 0x8C01
+
+
+loc_8c146b58:
+mov 0xB4,r2
+#data 0x8C01
+
+
+loc_8c146b5c:
+mov 0xA4,r5
+#data 0x8C01
+
+
+loc_8c146b60:
+mov 0xB2,r5
+#data 0x8C01
+
+loc_8c146b64:
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
 
 #align4
-loc_8c146BC8:
-#data 0x3FF851EC
-#data 0xBFDC28F6
-#data 0x3F0A3D71
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3F800000
-#data 0x0000010B
-#data 0x3E570A3D
-#data 0x3E19999A
-#data 0x3EB33333
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3F800000
+loc_8C146B6C:
+#data 0x3F000000
+mov.l @r6+,r6
+cmp/hi r6,r15
+tst.b 0xCD,@(r0,gbr) 
+add r12,r14
+#data 0x0000
+#data 0x0000
+
+
+loc_8c146b7c:
+mov 0xE8,r3
+#data 0x8C01
+
+
+loc_8c146b80:
+mov 0x88,r4
+#data 0x8C01
+
+
+loc_8c146b84:
+mov 0xA4,r5
+#data 0x8C01
+
+
+loc_8c146b88:
+mov 0xB2,r5
+
+loc_8c146b8a:
+#data 0x8C01
+
+
+loc_8c146b8c:
+stc r3_bank, r0
+#data 0x0000
+#data 0x0000
+
+cmp/eq r4,r15
+mov.w @(loc_8C146CCC,pc),r9
+bsr loc_8C1468CC
+tst.b 0xCD,@(r0,gbr) 
+mov.b r0,@(0x2C,gbr) 
+#data 0x0000
+
+cmp/eq r0,r15
 
 #align4
-loc_8c146BFC:
-#data 0x00000109
-#data 0x00000000
-#data 0x3FCCCCCD
-#data 0xC14AB852
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3F800000
-#data 0x0000008D
-#data 0x00000000
-#data 0xC0D00000
-#data 0x00000000
-#data 0x3F4CCCCD
-#data 0x3F800000
-#data 0x3F800000
-#data 0x000000D2
-#data 0x00000000
-#data 0x00000000
-#data 0xC10B3333
-#data 0x3FC00000
-#data 0x3FD9999A
-#data 0x3F800000
-#data 0x00000003
-#data 0x3DE147AE
-#data 0x408D1EB8
-#data 0x00000000
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3F800000
-#data 0x00000004
-#data 0x3DE147AE
-#data 0x40966666
-#data 0x00000000
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3F800000
+loc_8C146BA0:
+#data 0x3F000000
+#data 0x0000
 
+cmp/eq r0,r15
+stc r3_bank, r0
+#data 0x0000
+
+cmp/ge r3,r3
+mov.w r0,@(0xC6,gbr) 
+mov.w @(loc_8C146CE8,pc),r9
+bsr loc_8C1468E8
+tst.b 0xCD,@(r0,gbr) 
+mov.b r0,@(0x2C,gbr) 
+#data 0x0000
+
+cmp/eq r0,r15
+
+#align4
+loc_8C146BBC:
+#data 0x3F000000
+#data 0x0000
+
+cmp/eq r0,r15
+mov.b @(r0,r0),r1
+#data 0x0000
+
+
+loc_8c146bc8:
+mov.l @(0x30,r14),r1
+sub r15,r15
+mov.l r15,@-r8
+bsr loc_8c146b8a
+#data 0x3D71
+
+subc r0,r15
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x010B
+#data 0x0000
+
+mov.w @(r0,r3),r10
+cmp/gt r5,r14
+mov.w @(loc_8C146D20,pc),r9
+#data 0x3E19
+
+cmp/ge r3,r3
+cmp/ge r11,r14
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
+
+loc_8c146bfc:
+#data 0x0109
+#data 0x0000
+#data 0x0000
+#data 0x0000
+
+tst.b 0xCD,@(r0,gbr) 
+add r12,r15
+bsr loc_8C145CB0
+mov.w r0,@(0x94,gbr) 
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
+mov.w @(r0,r8),r0
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+
+mov.b r0,@(0xD0,gbr) 
+#data 0x0000
+#data 0x0000
+
+tst.b 0xCD,@(r0,gbr) 
+add r4,r15
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
+stc r5_bank, r0
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+
+cmp/ge r3,r3
+mov.w r0,@(0x16,gbr) 
+#data 0x0000
+
+cmp/eq r12,r15
+mov.w @(loc_8C146D80,pc),r9
+#data 0x3FD9
+#data 0x0000
+
+cmp/eq r8,r15
+bsrf r0
+#data 0x0000
+
+ldc r7, r2_bank 
+#data 0x3DE1
+
+
+#align4
+loc_8C146C58:
+mov.l r11,@(0x20,r14) 
+shld r8, r0
+
+loc_8C146C5C:
+#data 0x0000
+#data 0x0000
+#data 0x0000
+
+cmp/eq r8,r15
+
+#align4
+loc_8C146C64:
+#data 0x3F800000
+#data 0x0000
+
+cmp/eq r8,r15
+mov.b r0,@(r0,r0) 
+#data 0x0000
+
+
+#align4
+loc_8C146C70:
+ldc r7, r2_bank 
+#data 0x3DE1
+
+mov.l @r6+,r6
+#data 0x4096
+
+loc_8C146C78:
+#data 0x0000
+#data 0x0000
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
 
 loc_8c146C88:
 ldc r7, r2_bank
@@ -4698,6 +5078,7 @@ loc_8c146CB8:
 loc_8c146CC4:
 #data 0x3F8F5C29
 #data 0x3F8F5C29
+loc_8c146ccc:
 #data 0x3F800000
 
 #align4
@@ -4708,6 +5089,7 @@ loc_8c146CD0:
 #data 0x3F19999A
 #data 0x3F19999A
 #data 0x3F800000
+loc_8c146ce8:
 #data 0x3F4CCCCD
 #data 0x3F4CCCCD
 #data 0x3F800000
@@ -4734,6 +5116,7 @@ loc_8c146D0C:
 #align4
 loc_8c146D1C:
 #data 0x3F800000
+loc_8c146d20:
 #data 0x3DCCCCCD
 #data 0x3DCCCCCD
 #data 0x3DCCCCCD
@@ -4770,6 +5153,7 @@ loc_8c146D5C:
 #data 0x00040000
 #data 0x00000074
 #data 0x00100000
+loc_8c146d80:
 #data 0x00010073
 #data 0x00110000
 #data 0x00020073
@@ -4783,6 +5167,7 @@ loc_8c146D5C:
 #data 0x00070062
 #data 0x00700000
 #data 0x00080065
+loc_8c146db4:
 #data 0x00710000
 #data 0x00090065
 #data 0x00810000
@@ -4812,6 +5197,7 @@ loc_8c146DF4:
 #data 0x00000061
 #data 0x00030000
 #data 0x00120064
+loc_8c146e04:
 #data 0x00040000
 #data 0x00000074
 #data 0x00100000
@@ -4821,6 +5207,7 @@ loc_8c146DF4:
 #data 0x00200000
 #data 0x0000005F
 #data 0x00210000
+loc_8c146e28:
 #data 0x00000060
 #data 0x00300000
 #data 0x00050068
@@ -4857,6 +5244,7 @@ loc_8c146DF4:
 #data 0x00010001
 #data 0x000A006A
 #data 0x00FF00FF
+loc_8c146eb8:
 #data 0xFFFFFFFF
 
 #align4
@@ -5218,473 +5606,642 @@ loc_8c1471FC:
 #data 0x00000125
 
 #align4
-loc_8c14724C:
-#data 0x00000001
-#data 0x00000000
-#data 0x00000124
-#data 0x00000001
+loc_8c14724c:
+#data 0x0001
+#data 0x0000
+#data 0x0000
+#data 0x0000
 
-#align4
-loc_8c14725C:
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x41066666
-#data 0x40400000
-#data 0xC1500000
-#data 0x41107AE1
-#data 0xC0D9374C
-#data 0xC14CA3D7
-#data 0x406C710D
-#data 0xC043EDFA
-#data 0xC08F1AA0
+mov.b r2,@(r0,r1) 
+#data 0x0000
+#data 0x0001
+#data 0x0000
 
-#align4
-loc_8c14728C:
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0xFFFFFF4C
+loc_8c14725c:
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
 
-#align4
-loc_8c1472A4:
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3FCCCCCD
-#data 0x3FF33333
-#data 0x3FE66666
+mov.l @r6+,r6
+lds.l @r1+,mach 
+#data 0x0000
+#data 0x4040
+#data 0x0000
 
-#align4
-loc_8c1472BC:
-#data 0x3ECCCCCD
-#data 0x3ECCCCCD
-#data 0x3ECCCCCD
+mov.w r0,@(0xA0,gbr) 
+add 0xE1,r10
+dt r1
+add r4,r7
+mov.b r0,@(0xD9,gbr) 
+bra loc_8C147A2E
+mov.w r0,@(0x98,gbr) 
+#data 0x710D
+#data 0x406C
+#data 0xEDFA
+#data 0xC043
+#data 0x1AA0
+#data 0xC08F
 
-#align4
-loc_8c1472C8:
-#data 0x01000000
-#data 0x03000200
-#data 0x05000400
-#data 0x00010600
-#data 0x00030002
-#data 0x07000004
-#data 0x000000FF
+loc_8c14728c:
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0xFF4C
+#data 0xFFFF
 
-#align4
-loc_8c1472E4:
-#data bank01.loc_8c01F870
+loc_8c1472a4:
+#data 0x0000
+#data 0x3F80
+#data 0x0000
+#data 0x3F80
+#data 0x0000
+#data 0x3F80
+#data 0xCCCD
+#data 0x3FCC
+#data 0x3333
+#data 0x3FF3
+#data 0x6666
+#data 0x3FE6
 
-loc_8c1472E8:
-#data bank01.loc_8c01F9A4
+loc_8c1472bc:
+#data 0xCCCD
+#data 0x3ECC
+#data 0xCCCD
+#data 0x3ECC
+#data 0xCCCD
+#data 0x3ECC
 
-loc_8c1472EC:
-#data bank01.loc_8c01FA4E
+loc_8c1472c8:
+#data 0x0000
+#data 0x0100
+#data 0x0200
+#data 0x0300
+#data 0x0400
+#data 0x0500
+#data 0x0600
+#data 0x0001
+#data 0x0002
+#data 0x0003
+#data 0x0004
+#data 0x0700
+#data 0x00FF
+#data 0x0000
 
-loc_8c1472F0:
-#data bank01.loc_8c01FAD4
+loc_8c1472e4:
+#data 0xF870
+#data 0x8C01
 
-loc_8c1472F4:
-#data bank01.loc_8c01FB38
+loc_8c1472e8:
+#data 0xF9A4
+#data 0x8C01
 
-loc_8c1472F8:
-#data 0x4062CD9F
-#data 0xC043EDFA
-#data 0xC08F1AA0
+loc_8c1472ec:
+#data 0xFA4E
+#data 0x8C01
 
-#align4
+loc_8c1472f0:
+#data 0xFAD4
+#data 0x8C01
+
+loc_8c1472f4:
+#data 0xFB38
+#data 0x8C01
+
+loc_8c1472f8:
+#data 0xCD9F
+#data 0x4062
+#data 0xEDFA
+#data 0xC043
+#data 0x1AA0
+#data 0xC08F
+
 loc_8c147304:
-#data 0x4101EB85
-#data 0x40066666
-#data 0xC149999A
+#data 0xEB85
+#data 0x4101
+#data 0x6666
+#data 0x4006
+#data 0x999A
+#data 0xC149
 
-#align4
 loc_8c147310:
-#data bank13.loc_8c132924
+#data 0x2924
+#data 0x8C13
 
 loc_8c147314:
-#data bank13.loc_8c132928
+#data 0x2928
+#data 0x8C13
 
 loc_8c147318:
-#data bank13.loc_8c13292C
+#data 0x292C
+#data 0x8C13
 
-loc_8c14731C:
-#data bank13.loc_8c132930
+loc_8c14731c:
+#data 0x2930
+#data 0x8C13
 
 loc_8c147320:
-#data bank13.loc_8c132934
+#data 0x2934
+#data 0x8C13
 
 loc_8c147324:
-#data bank13.loc_8c132938
+#data 0x2938
+#data 0x8C13
 
 loc_8c147328:
-#data bank13.loc_8c13293C
+#data 0x293C
+#data 0x8C13
 
-loc_8c14732C:
-#data bank13.loc_8c132940
+loc_8c14732c:
+#data 0x2940
+#data 0x8C13
 
 loc_8c147330:
-#data bank13.loc_8c132944
+#data 0x2944
+#data 0x8C13
 
 loc_8c147334:
-#data bank13.loc_8c132948
+#data 0x2948
+#data 0x8C13
 
 loc_8c147338:
-#data bank13.loc_8c13294C
+#data 0x294C
+#data 0x8C13
 
-loc_8c14733C:
-#data bank13.loc_8c132950
+loc_8c14733c:
+#data 0x2950
+#data 0x8C13
 
 loc_8c147340:
-#data bank13.loc_8c132954
+#data 0x2954
+#data 0x8C13
 
 loc_8c147344:
-#data bank13.loc_8c132958
+#data 0x2958
+#data 0x8C13
 
 loc_8c147348:
-#data bank13.loc_8c13295C
+#data 0x295C
+#data 0x8C13
 
-loc_8c14734C:
-#data bank13.loc_8c132960
+loc_8c14734c:
+#data 0x2960
+#data 0x8C13
 
 loc_8c147350:
-#data bank13.loc_8c132964
+#data 0x2964
+#data 0x8C13
 
 loc_8c147354:
-#data bank13.loc_8c132968
+#data 0x2968
+#data 0x8C13
 
 loc_8c147358:
-#data bank13.loc_8c13296C
+#data 0x296C
+#data 0x8C13
 
-loc_8c14735C:
-#data bank13.loc_8c132970
+loc_8c14735c:
+#data 0x2970
+#data 0x8C13
 
 loc_8c147360:
-#data bank13.loc_8c132974
+#data 0x2974
+#data 0x8C13
 
 loc_8c147364:
-#data bank13.loc_8c132978
+#data 0x2978
+#data 0x8C13
 
 loc_8c147368:
-#data bank13.loc_8c13297C
+#data 0x297C
+#data 0x8C13
 
-loc_8c14736C:
-#data bank13.loc_8c132980
+loc_8c14736c:
+#data 0x2980
+#data 0x8C13
 
 loc_8c147370:
-#data bank13.loc_8c132984
+#data 0x2984
+#data 0x8C13
 
 loc_8c147374:
-#data bank13.loc_8c132988
+#data 0x2988
+#data 0x8C13
 
 loc_8c147378:
-#data bank13.loc_8c13298C
+#data 0x298C
+#data 0x8C13
 
-loc_8c14737C:
-#data bank13.loc_8c132990
+loc_8c14737c:
+#data 0x2990
+#data 0x8C13
 
 loc_8c147380:
-#data bank13.loc_8c132994
+#data 0x2994
+#data 0x8C13
 
 loc_8c147384:
-#data bank13.loc_8c132998
+#data 0x2998
+#data 0x8C13
 
 loc_8c147388:
-#data bank13.loc_8c13299C
+#data 0x299C
+#data 0x8C13
 
-loc_8c14738C:
-#data bank13.loc_8c1329A0
+loc_8c14738c:
+#data 0x29A0
+#data 0x8C13
 
 loc_8c147390:
-#data bank13.loc_8c1329A4
+#data 0x29A4
+#data 0x8C13
 
 loc_8c147394:
-#data bank13.loc_8c1329A8
+#data 0x29A8
+#data 0x8C13
 
 loc_8c147398:
-#data bank13.loc_8c1329AC
+#data 0x29AC
+#data 0x8C13
 
-loc_8c14739C:
-#data bank13.loc_8c1329B0
+loc_8c14739c:
+#data 0x29B0
+#data 0x8C13
 
-loc_8c1473A0:
-#data bank13.loc_8c1329B4
+loc_8c1473a0:
+#data 0x29B4
+#data 0x8C13
 
-loc_8c1473A4:
-#data bank13.loc_8c1329B8
+loc_8c1473a4:
+#data 0x29B8
+#data 0x8C13
 
-loc_8c1473A8:
-#data bank13.loc_8c1329BC
+loc_8c1473a8:
+#data 0x29BC
+#data 0x8C13
 
-loc_8c1473AC:
-#data bank13.loc_8c1329C0
+loc_8c1473ac:
+#data 0x29C0
+#data 0x8C13
 
-loc_8c1473B0:
-#data bank13.loc_8c1329C4
+loc_8c1473b0:
+#data 0x29C4
+#data 0x8C13
 
-loc_8c1473B4:
-#data bank13.loc_8c1329C8
+loc_8c1473b4:
+#data 0x29C8
+#data 0x8C13
 
-loc_8c1473B8:
-#data bank13.loc_8c1329CC
+loc_8c1473b8:
+#data 0x29CC
+#data 0x8C13
 
-loc_8c1473BC:
-#data bank13.loc_8c1329D0
+loc_8c1473bc:
+#data 0x29D0
+#data 0x8C13
 
-loc_8c1473C0:
-#data bank13.loc_8c1329D4
+loc_8c1473c0:
+#data 0x29D4
+#data 0x8C13
 
-loc_8c1473C4:
-#data bank13.loc_8c1329D8
+loc_8c1473c4:
+#data 0x29D8
+#data 0x8C13
 
-loc_8c1473C8:
-#data bank13.loc_8c1329DC
+loc_8c1473c8:
+#data 0x29DC
+#data 0x8C13
 
-loc_8c1473CC:
-#data bank13.loc_8c1329E0
+loc_8c1473cc:
+#data 0x29E0
+#data 0x8C13
 
-loc_8c1473D0:
-#data bank13.loc_8c1329E4
+loc_8c1473d0:
+#data 0x29E4
+#data 0x8C13
 
-loc_8c1473D4:
-#data bank13.loc_8c1329E8
+loc_8c1473d4:
+#data 0x29E8
+#data 0x8C13
 
-loc_8c1473D8:
-#data bank13.loc_8c1329EC
+loc_8c1473d8:
+#data 0x29EC
+#data 0x8C13
 
-loc_8c1473DC:
-#data bank13.loc_8c1329F0
+loc_8c1473dc:
+#data 0x29F0
+#data 0x8C13
 
-loc_8c1473E0:
-#data bank13.loc_8c1329F4
+loc_8c1473e0:
+#data 0x29F4
+#data 0x8C13
 
-loc_8c1473E4:
-#data bank13.loc_8c1329F8
+loc_8c1473e4:
+#data 0x29F8
+#data 0x8C13
 
-loc_8c1473E8:
-#data bank13.loc_8c1329FC
+loc_8c1473e8:
+#data 0x29FC
+#data 0x8C13
 
-loc_8c1473EC:
-#data bank13.loc_8c132A00
+loc_8c1473ec:
+#data 0x2A00
+#data 0x8C13
 
-loc_8c1473F0:
-#data bank13.loc_8c132A04
+loc_8c1473f0:
+#data 0x2A04
+#data 0x8C13
 
-loc_8c1473F4:
-#data bank13.loc_8c132A08
+loc_8c1473f4:
+#data 0x2A08
+#data 0x8C13
 
-loc_8c1473F8:
-#data bank13.loc_8c132A0C
+loc_8c1473f8:
+#data 0x2A0C
+#data 0x8C13
 
-loc_8c1473FC:
-#data bank13.loc_8c132A10
+loc_8c1473fc:
+#data 0x2A10
+#data 0x8C13
 
 loc_8c147400:
-#data bank13.loc_8c132A14
+#data 0x2A14
+#data 0x8C13
 
 loc_8c147404:
-#data bank13.loc_8c132A18
+#data 0x2A18
+#data 0x8C13
 
 loc_8c147408:
-#data bank13.loc_8c132924
+#data 0x2924
+#data 0x8C13
 
-loc_8c14740C:
-#data bank13.loc_8c132A1C
+loc_8c14740c:
+#data 0x2A1C
+#data 0x8C13
 
 loc_8c147410:
-#data bank13.loc_8c132924
+#data 0x2924
+#data 0x8C13
 
 loc_8c147414:
-#data bank13.loc_8c132A20
+#data 0x2A20
+#data 0x8C13
 
 loc_8c147418:
-#data bank13.loc_8c132A24
+#data 0x2A24
+#data 0x8C13
 
-loc_8c14741C:
-#data bank13.loc_8c132A28
+loc_8c14741c:
+#data 0x2A28
+#data 0x8C13
 
 loc_8c147420:
-#data bank13.loc_8c132A2C
+#data 0x2A2C
+#data 0x8C13
 
 loc_8c147424:
-#data bank13.loc_8c132A30
+#data 0x2A30
+#data 0x8C13
 
 loc_8c147428:
-#data bank13.loc_8c132A34
+#data 0x2A34
+#data 0x8C13
 
-loc_8c14742C:
-#data bank13.loc_8c132A38
+loc_8c14742c:
+#data 0x2A38
+#data 0x8C13
 
 loc_8c147430:
-#data bank13.loc_8c132A3C
+#data 0x2A3C
+#data 0x8C13
 
 loc_8c147434:
-#data bank13.loc_8c132A40
+#data 0x2A40
+#data 0x8C13
 
 loc_8c147438:
-#data bank13.loc_8c132A44
+#data 0x2A44
+#data 0x8C13
 
-loc_8c14743C:
-#data bank13.loc_8c132A48
+loc_8c14743c:
+#data 0x2A48
+#data 0x8C13
 
 loc_8c147440:
-#data bank13.loc_8c132A4C
+#data 0x2A4C
+#data 0x8C13
 
 loc_8c147444:
-#data bank13.loc_8c132A50
+#data 0x2A50
+#data 0x8C13
 
 loc_8c147448:
-#data bank13.loc_8c132A54
+#data 0x2A54
+#data 0x8C13
 
-loc_8c14744C:
-#data bank13.loc_8c132A58
+loc_8c14744c:
+#data 0x2A58
+#data 0x8C13
 
 loc_8c147450:
-#data bank13.loc_8c132A5C
+#data 0x2A5C
+#data 0x8C13
 
 loc_8c147454:
-#data bank13.loc_8c132A60
+#data 0x2A60
+#data 0x8C13
 
 loc_8c147458:
-#data bank13.loc_8c132A64
+#data 0x2A64
+#data 0x8C13
 
-loc_8c14745C:
-#data bank13.loc_8c132A68
+loc_8c14745c:
+#data 0x2A68
+#data 0x8C13
 
 loc_8c147460:
-#data bank13.loc_8c132A6C
+#data 0x2A6C
+#data 0x8C13
 
 loc_8c147464:
-#data bank13.loc_8c132A70
+#data 0x2A70
+#data 0x8C13
 
 loc_8c147468:
-#data bank13.loc_8c132A74
+#data 0x2A74
+#data 0x8C13
 
-loc_8c14746C:
-#data bank13.loc_8c132A78
+loc_8c14746c:
+#data 0x2A78
+#data 0x8C13
 
 loc_8c147470:
-#data bank13.loc_8c132A7C
+#data 0x2A7C
+#data 0x8C13
 
 loc_8c147474:
-#data bank13.loc_8c132A80
+#data 0x2A80
+#data 0x8C13
 
 loc_8c147478:
-#data bank13.loc_8c132A84
+#data 0x2A84
+#data 0x8C13
 
-loc_8c14747C:
-#data bank13.loc_8c132A88
+loc_8c14747c:
+#data 0x2A88
+#data 0x8C13
 
 loc_8c147480:
-#data bank13.loc_8c132A8C
+#data 0x2A8C
+#data 0x8C13
 
 loc_8c147484:
-#data bank13.loc_8c132A90
+#data 0x2A90
+#data 0x8C13
 
 loc_8c147488:
-#data bank13.loc_8c132924
+#data 0x2924
+#data 0x8C13
 
-loc_8c14748C:
-#data bank13.loc_8c132924
+loc_8c14748c:
+#data 0x2924
+#data 0x8C13
 
 loc_8c147490:
-#data 0x33323130
-#data 0x37363534
-#data 0x00003938
+#data 0x3130
+#data 0x3332
+#data 0x3534
+#data 0x3736
+#data 0x3938
+#data 0x0000
 
-#align4
-loc_8c14749C:
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
+loc_8c14749c:
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
 
-#align4
-loc_8c1474A8:
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3F800000
+loc_8c1474a8:
+#data 0x0000
+#data 0x3F80
+#data 0x0000
+#data 0x3F80
+#data 0x0000
+#data 0x3F80
 
-#align4
-loc_8c1474B4:
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3F800000
+loc_8c1474b4:
+#data 0x0000
+#data 0x3F80
+#data 0x0000
+#data 0x3F80
+#data 0x0000
+#data 0x3F80
+#data 0x0000
+#data 0x3F80
 
-#align4
-loc_8c1474C4:
-#data 0x4A494645
-#data 0x007A4C4B
+loc_8c1474c4:
+#data 0x4645
+#data 0x4A49
+#data 0x4C4B
+#data 0x007A
 
-#align4
-loc_8c1474CC:
-#data bank02.loc_8c0200DE
-
-loc_8c1474D0:
-#data bank02.loc_8c020118
-
-loc_8c1474D4:
-#data bank02.loc_8c0204B6
-
-loc_8c1474D8:
-#data bank02.loc_8c0204C4
-
-loc_8c1474DC:
-#data bank02.loc_8c0201BE
-
-loc_8c1474E0:
-#data bank02.loc_8c0201EC
-
-loc_8c1474E4:
-#data bank02.loc_8c0204B6
-
-loc_8c1474E8:
-#data bank02.loc_8c0204C4
-
-loc_8c1474EC:
-#data bank02.loc_8c020216
-
-loc_8c1474F0:
-#data bank02.loc_8c020216
-
-loc_8c1474F4:
-#data bank02.loc_8c020216
-
-loc_8c1474F8:
-#data 0x0216
-
-loc_8c1474FA:
+loc_8c1474cc:
+#data 0x00DE
 #data 0x8C02
 
-#align4
-loc_8c1474FC:
-#data bank02.loc_8c020216
+loc_8c1474d0:
+#data 0x0118
+#data 0x8C02
+
+loc_8c1474d4:
+#data 0x04B6
+#data 0x8C02
+
+loc_8c1474d8:
+#data 0x04C4
+#data 0x8C02
+
+loc_8c1474dc:
+#data 0x01BE
+#data 0x8C02
+
+loc_8c1474e0:
+#data 0x01EC
+#data 0x8C02
+
+loc_8c1474e4:
+#data 0x04B6
+#data 0x8C02
+
+loc_8c1474e8:
+#data 0x04C4
+#data 0x8C02
+
+loc_8c1474ec:
+#data 0x0216
+#data 0x8C02
+
+loc_8c1474f0:
+#data 0x0216
+#data 0x8C02
+
+loc_8c1474f4:
+#data 0x0216
+#data 0x8C02
+
+loc_8c1474f8:
+#data 0x0216
+
+loc_8c1474fa:
+#data 0x8C02
+
+loc_8c1474fc:
+#data 0x0216
+#data 0x8C02
 
 loc_8c147500:
-#data bank02.loc_8c020216
+#data 0x0216
+#data 0x8C02
 
 loc_8c147504:
-#data bank02.loc_8c020216
+#data 0x0216
+#data 0x8C02
 
 loc_8c147508:
-#data bank02.loc_8c020216
+#data 0x0216
+#data 0x8C02
 
-loc_8c14750C:
-#data bank02.loc_8c020216
+loc_8c14750c:
+#data 0x0216
+#data 0x8C02
 
 loc_8c147510:
-#data bank02.loc_8c020216
+#data 0x0216
+#data 0x8C02
 
 loc_8c147514:
-#data bank02.loc_8c020216
+#data 0x0216
+#data 0x8C02
 
 loc_8c147518:
-#data bank02.loc_8c02021A
+#data 0x021A
+#data 0x8C02
 
-loc_8c14751C:
-#data bank02.loc_8c020216
+loc_8c14751c:
+#data 0x0216
+#data 0x8C02
 
 loc_8c147520:
 #data 0x0216
@@ -5692,37 +6249,47 @@ loc_8c147520:
 loc_8c147522:
 #data 0x8C02
 
-#align4
 loc_8c147524:
-#data bank02.loc_8c02022C
+#data 0x022C
+#data 0x8C02
 
 loc_8c147528:
-#data bank02.loc_8c020324
+#data 0x0324
+#data 0x8C02
 
-loc_8c14752C:
-#data bank02.loc_8c0205B0
+loc_8c14752c:
+#data 0x05B0
+#data 0x8C02
 
 loc_8c147530:
-#data bank02.loc_8c020788
+#data 0x0788
+#data 0x8C02
 
 loc_8c147534:
-#data bank02.loc_8c020876
+#data 0x0876
+#data 0x8C02
 
 loc_8c147538:
-#data bank02.loc_8c020884
+#data 0x0884
+#data 0x8C02
 
-loc_8c14753C:
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3F800000
+loc_8c14753c:
+#data 0x0000
+#data 0x3F80
+#data 0x0000
+#data 0x3F80
+#data 0x0000
+#data 0x3F80
 
-#align4
 loc_8c147548:
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3F800000
-
+#data 0x0000
+#data 0x3F80
+#data 0x0000
+#data 0x3F80
+#data 0x0000
+#data 0x3F80
+#data 0x0000
+#data 0x3F80
 
 loc_8c147558:
 bf/s loc_8c147614
@@ -5819,311 +6386,538 @@ loc_8c1475CC:
 
 #align4
 loc_8c147614:
-#data 0x01050103
-#data 0x005D0073
-#data 0x003A005E
+bsrf r1
+mov.w r0,@(r0,r1) 
+#data 0x0073
 
-#align4
+mov.w @(r0,r5),r0
+mov.l @(r0,r5),r0
+stc sgr, r0
+
 loc_8c147620:
-#data 0x402CCCCD
-#data 0x3F666666
-#data 0xBF666666
+tst.b 0xCD,@(r0,gbr) 
+shad r2, r0
+mov.l @r6+,r6
+cmp/hi r6,r15
+mov.l @r6+,r6
+bsr bank14.loc_8c1474fa
 
-#align4
-loc_8c14762C:
-#data 0xC04CCCCD
-#data 0xC0C00000
+loc_8c14762c:
+tst.b 0xCD,@(r0,gbr) 
+mov.b r0,@(0x4C,gbr) 
+#data 0x0000
 
-#align4
+mov.b r0,@(0xC0,gbr) 
+
 loc_8c147634:
-#data 0x3F800000
-#data 0x3E99999A
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3E99999A
-#data 0x3F800000
-#data 0x3F800000
-#data 0x3E99999A
-#data 0x3F800000
-#data 0x3F99999A
-#data 0x3F000000
-#data 0x3F800000
-#data 0x3F19999A
-#data 0x3E99999A
-#data 0x3F800000
+#data 0x0000
 
-#align4
+cmp/eq r8,r15
+mov.w @(loc_8C147770,pc),r9
+#data 0x3E99
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
+mov.w @(loc_8C14777C,pc),r9
+#data 0x3E99
+#data 0x0000
+
+cmp/eq r8,r15
+#data 0x0000
+
+cmp/eq r8,r15
+mov.w @(loc_8C147788,pc),r9
+#data 0x3E99
+#data 0x0000
+
+cmp/eq r8,r15
+mov.w @(loc_8C147790,pc),r9
+#data 0x3F99
+#data 0x0000
+
+cmp/eq r0,r15
+#data 0x0000
+
+cmp/eq r8,r15
+mov.w @(loc_8C14779C,pc),r9
+#data 0x3F19
+
+mov.w @(loc_8C1477A0,pc),r9
+#data 0x3E99
+#data 0x0000
+
+cmp/eq r8,r15
+
 loc_8c147670:
-#data 0x85848382
-#data 0x00000086
+#data 0x8382
 
-#align4
+mov.w @(0x08,r8),r0 
+mov.l r8,@(r0,r0) 
+#data 0x0000
+
 loc_8c147678:
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x4094CCCD
-#data 0x3F90A3D7
-#data 0xC14B3333
-#data 0x40200000
-#data 0x40470A3D
-#data 0xC14B0A3D
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+loc_8c147684:
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
 
-#align4
-loc_8c1476A8:
-#data 0x4079999A
-#data 0x40470A3D
-#data 0xC14B0A3D
+tst.b 0xCD,@(r0,gbr) 
+#data 0x4094
 
-#align4
-loc_8c1476B4:
-#data 0x8F898781
-#data 0x0000008F
+bra loc_8C147E46
+cmp/eq r9,r15
+#data 0x3333
+#data 0xC14B
+#data 0x0000
+#data 0x4020
+#data 0x0A3D
+#data 0x4047
+#data 0x0A3D
+#data 0xC14B
 
-#align4
-loc_8c1476BC:
-#data 0xBFF33333
-#data 0x4084CCCD
-#data 0xC14B0A3D
+loc_8c1476a8:
+#data 0x999A
+#data 0x4079
+#data 0x0A3D
+#data 0x4047
+#data 0x0A3D
+#data 0xC14B
 
-#align4
-loc_8c1476C8:
-#data 0x3F000000
-#data 0x3F266666
-#data 0x3F800000
+loc_8c1476b4:
+#data 0x8781
+#data 0x8F89
+#data 0x008F
+#data 0x0000
 
-#align4
-loc_8c1476D4:
-#data 0x40666666
-#data 0x40A66666
-#data 0xC14B0A3D
+loc_8c1476bc:
+#data 0x3333
+#data 0xBFF3
+#data 0xCCCD
+#data 0x4084
+#data 0x0A3D
+#data 0xC14B
 
-#align4
-loc_8c1476E0:
-#data 0x3FCCCCCD
-#data 0x40470A3D
-#data 0xC14B0A3D
+loc_8c1476c8:
+#data 0x0000
+#data 0x3F00
+#data 0x6666
+#data 0x3F26
+#data 0x0000
+#data 0x3F80
 
-#align4
-loc_8c1476EC:
-#data 0x40400000
-#data 0x40470A3D
-#data 0xC14B0A3D
+loc_8c1476d4:
+#data 0x6666
+#data 0x4066
+#data 0x6666
+#data 0x40A6
+#data 0x0A3D
+#data 0xC14B
 
-#align4
-loc_8c1476F8:
-#data 0x408CCCCD
-#data 0x40470A3D
-#data 0xC14B0A3D
+loc_8c1476e0:
+#data 0xCCCD
+#data 0x3FCC
+#data 0x0A3D
+#data 0x4047
+#data 0x0A3D
+#data 0xC14B
 
-#align4
+loc_8c1476ec:
+#data 0x0000
+#data 0x4040
+#data 0x0A3D
+#data 0x4047
+#data 0x0A3D
+#data 0xC14B
+
+loc_8c1476f8:
+#data 0xCCCD
+#data 0x408C
+#data 0x0A3D
+#data 0x4047
+#data 0x0A3D
+#data 0xC14B
+
 loc_8c147704:
-#data 0x40666666
-#data 0x3F8CCCCD
-#data 0xC14B0A3D
-#data 0x40666666
-#data 0x3F8CCCCD
-#data 0xC14B0A3D
-#data 0x40800000
-#data 0x00000000
-#data 0xC14B0A3D
-#data 0x408CCCCD
-#data 0xBF800000
-#data 0xC14B0A3D
-#data 0x4099999A
-#data 0xC0033333
-#data 0xC14B0A3D
-#data 0x40A66666
-#data 0xC049999A
-#data 0xC14B0A3D
+#data 0x6666
+#data 0x4066
+#data 0xCCCD
+#data 0x3F8C
+#data 0x0A3D
+#data 0xC14B
+#data 0x6666
+#data 0x4066
+#data 0xCCCD
+#data 0x3F8C
+#data 0x0A3D
+#data 0xC14B
+#data 0x0000
+#data 0x4080
+#data 0x0000
+#data 0x0000
+#data 0x0A3D
+#data 0xC14B
+#data 0xCCCD
+#data 0x408C
+#data 0x0000
+#data 0xBF80
+#data 0x0A3D
+#data 0xC14B
+#data 0x999A
+#data 0x4099
+#data 0x3333
+#data 0xC003
+#data 0x0A3D
+#data 0xC14B
+#data 0x6666
+#data 0x40A6
+#data 0x999A
+#data 0xC049
+#data 0x0A3D
+#data 0xC14B
 
-#align4
-loc_8c14774C:
-#data 0x40000000
-#data 0x40B9999A
-#data 0x4129999A
-#data 0x4190CCCD
-#data 0x41CE6666
+loc_8c14774c:
+#data 0x0000
+#data 0x4000
+#data 0x999A
+#data 0x40B9
+#data 0x999A
+#data 0x4129
+#data 0xCCCD
+#data 0x4190
+#data 0x6666
+#data 0x41CE
 
-#align4
 loc_8c147760:
-#data 0x0000010C
-#data 0x00000107
-#data 0x0000010D
-#data 0x00000108
-#data 0x00000106
-#data 0x0000010A
-#data 0x0000010B
-#data 0x0000010B
-#data 0x00000109
-#data 0x00000104
-#data 0x00000002
-#data 0x00000006
-#data 0x00000003
-#data 0x00000004
+#data 0x010C
+#data 0x0000
+#data 0x0107
+#data 0x0000
+#data 0x010D
+#data 0x0000
+#data 0x0108
+#data 0x0000
 
-#align4
+loc_8C147770:
+#data 0x0106
+#data 0x0000
+#data 0x010A
+#data 0x0000
+#data 0x010B
+#data 0x0000
+
+loc_8C14777C:
+#data 0x010B
+#data 0x0000
+#data 0x0109
+#data 0x0000
+#data 0x0104
+#data 0x0000
+
+loc_8C147788:
+#data 0x0002
+#data 0x0000
+#data 0x0006
+#data 0x0000
+
+loc_8C147790:
+#data 0x0003
+#data 0x0000
+#data 0x0004
+#data 0x0000
+
 loc_8c147798:
-#data 0x3D4CCCCD
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x3FC00000
-#data 0xC0E66666
-#data 0xC13B3333
-#data 0x00000000
-#data 0x4091999A
-#data 0xC14B3333
-#data 0x00000000
-#data 0xC0F851EC
-#data 0xC14B3333
-#data 0x411B3333
-#data 0xC0C00000
-#data 0xC14B3333
-#data 0x00000000
-#data 0x00000000
-#data 0xC152147B
-#data 0x00000000
-#data 0x00000000
-#data 0x3C75C28F
-#data 0x00000000
-#data 0x00000000
-#data 0x3D072B02
-#data 0xC10F3333
-#data 0x40D00000
-#data 0xC15028F6
-#data 0xC10F3333
-#data 0x40D00000
-#data 0xC1500000
+#data 0xCCCD
+#data 0x3D4C
 
-#align4
+loc_8C14779C:
+#data 0x0000
+#data 0x0000
+
+loc_8C1477A0:
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x3FC0
+#data 0x6666
+#data 0xC0E6
+#data 0x3333
+#data 0xC13B
+#data 0x0000
+#data 0x0000
+#data 0x999A
+#data 0x4091
+#data 0x3333
+#data 0xC14B
+#data 0x0000
+#data 0x0000
+#data 0x51EC
+#data 0xC0F8
+#data 0x3333
+#data 0xC14B
+#data 0x3333
+#data 0x411B
+#data 0x0000
+#data 0xC0C0
+#data 0x3333
+#data 0xC14B
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x147B
+#data 0xC152
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0xC28F
+#data 0x3C75
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x2B02
+#data 0x3D07
+#data 0x3333
+#data 0xC10F
+#data 0x0000
+#data 0x40D0
+#data 0x28F6
+#data 0xC150
+#data 0x3333
+#data 0xC10F
+#data 0x0000
+#data 0x40D0
+#data 0x0000
+#data 0xC150
+
 loc_8c147840:
-#data 0x0B061617
-#data 0x390F0A08
-#data 0x0E0D0C09
-#data 0x14131011
-#data 0x05221215
-#data 0x04010002
-#data 0x2C29282F
-#data 0x30072A2D
-#data 0x03371E1F
-#data 0x1B381D1C
-#data 0x3231352B
-#data 0x3436332E
-#data 0x26252127
-#data 0x3A202423
+#data 0x1617
+#data 0x0B06
+#data 0x0A08
+#data 0x390F
+#data 0x0C09
+#data 0x0E0D
+#data 0x1011
+#data 0x1413
+#data 0x1215
+#data 0x0522
+#data 0x0002
+#data 0x0401
+#data 0x282F
+#data 0x2C29
+#data 0x2A2D
+#data 0x3007
+#data 0x1E1F
+#data 0x0337
+#data 0x1D1C
+#data 0x1B38
+#data 0x352B
+#data 0x3231
+#data 0x332E
+#data 0x3436
+#data 0x2127
+#data 0x2625
+#data 0x2423
+#data 0x3A20
 
-#align4
 loc_8c147878:
-#data 0xBFC00000
-#data 0xC00CCCCD
-#data 0xC039999A
-#data 0xC0666666
-#data 0xC089999A
-#data 0xC0A00000
-#data 0xC0B66666
+#data 0x0000
+#data 0xBFC0
+#data 0xCCCD
+#data 0xC00C
+#data 0x999A
+#data 0xC039
+#data 0x6666
+#data 0xC066
+#data 0x999A
+#data 0xC089
+#data 0x0000
+#data 0xC0A0
+#data 0x6666
+#data 0xC0B6
 
-#align4
 loc_8c147894:
-#data 0x000000A7
-#data 0x000000A8
-#data 0x0000003A
-#data 0x000000CB
-#data 0x00000025
-#data 0x00000025
+#data 0x00A7
+#data 0x0000
+#data 0x00A8
+#data 0x0000
+#data 0x003A
+#data 0x0000
+#data 0x00CB
+#data 0x0000
+#data 0x0025
+#data 0x0000
+#data 0x0025
+#data 0x0000
 
-#align4
-loc_8c1478AC:
-#data 0x40C00000
-#data 0x3FE66666
-#data 0xC1500000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x40966666
-#data 0x40900000
-#data 0xC14E147B
-#data 0x40C00000
+loc_8c1478ac:
+#data 0x0000
+#data 0x40C0
+#data 0x6666
+#data 0x3FE6
+#data 0x0000
+#data 0xC150
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x6666
+#data 0x4096
+#data 0x0000
+#data 0x4090
+#data 0x147B
+#data 0xC14E
+#data 0x0000
+#data 0x40C0
 #data 0x3333
 
-loc_8c1478D6:
+loc_8c1478d6:
 #data 0x4053
-#data 0xC14CCCCD
-#data 0x40E9999A
-#data 0x40866666
-#data 0xC14CCCCD
-#data 0x40D00000
-#data 0x40866666
-#data 0xC14CCCCD
+#data 0xCCCD
+#data 0xC14C
+#data 0x999A
+#data 0x40E9
+#data 0x6666
+#data 0x4086
+#data 0xCCCD
+#data 0xC14C
+#data 0x0000
+#data 0x40D0
+#data 0x6666
+#data 0x4086
+#data 0xCCCD
+#data 0xC14C
 
-#align4
-loc_8c1478F4:
-#data 0x40C00000
-#data 0xBF99999A
-#data 0xC1500000
-#data 0x00000000
-#data 0xC0400000
-#data 0x00000000
-#data 0x40966666
-#data 0x3FC00000
-#data 0xC14E147B
-#data 0x40C00000
-#data 0x3E99999A
-#data 0xC14CCCCD
-#data 0x40E9999A
-#data 0x3FA66666
-#data 0xC14CCCCD
-#data 0x40D00000
-#data 0x3FA66666
-#data 0xC14CCCCD
+loc_8c1478f4:
+#data 0x0000
+#data 0x40C0
+#data 0x999A
+#data 0xBF99
+#data 0x0000
+#data 0xC150
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0xC040
+#data 0x0000
+#data 0x0000
+#data 0x6666
+#data 0x4096
+#data 0x0000
+#data 0x3FC0
+#data 0x147B
+#data 0xC14E
+#data 0x0000
+#data 0x40C0
+#data 0x999A
+#data 0x3E99
+#data 0xCCCD
+#data 0xC14C
+#data 0x999A
+#data 0x40E9
+#data 0x6666
+#data 0x3FA6
+#data 0xCCCD
+#data 0xC14C
+#data 0x0000
+#data 0x40D0
+#data 0x6666
+#data 0x3FA6
+#data 0xCCCD
+#data 0xC14C
 
-#align4
-loc_8c14793C:
-#data 0x00000003
-#data 0x00000004
-#data 0x000000A9
-#data 0x000000B4
+loc_8c14793c:
+#data 0x0003
+#data 0x0000
+#data 0x0004
+#data 0x0000
+#data 0x00A9
+#data 0x0000
+#data 0x00B4
+#data 0x0000
 
-#align4
-loc_8c14794C:
-#data 0x40C1999A
-#data 0xC0F4CCCD
-#data 0xC151999A
-#data 0x40C00000
-#data 0xC0F33333
-#data 0xC1500000
-#data 0x40A66666
-#data 0xC0CEB852
-#data 0xC1300000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
+loc_8c14794c:
+#data 0x999A
+#data 0x40C1
+#data 0xCCCD
+#data 0xC0F4
+#data 0x999A
+#data 0xC151
+#data 0x0000
+#data 0x40C0
+#data 0x3333
+#data 0xC0F3
+#data 0x0000
+#data 0xC150
+#data 0x6666
+#data 0x40A6
+#data 0xB852
+#data 0xC0CE
+#data 0x0000
+#data 0xC130
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
 
-#align4
-loc_8c14797C:
-#data 0x3F800000
-#data 0x3E99999A
-#data 0x3F800000
-#data 0x3E99999A
-#data 0x3F99999A
-#data 0x3F99999A
-#data 0x3F800000
-#data 0x3F800000
-
+loc_8c14797c:
+#data 0x0000
+#data 0x3F80
+#data 0x999A
+#data 0x3E99
+#data 0x0000
+#data 0x3F80
+#data 0x999A
+#data 0x3E99
+#data 0x999A
+#data 0x3F99
+#data 0x999A
+#data 0x3F99
+#data 0x0000
+#data 0x3F80
+#data 0x0000
+#data 0x3F80
 
 loc_8c14799C:
 bra loc_8c147B9E
@@ -6174,400 +6968,542 @@ loc_8c147A18:
 #data 0x3F19999A
 
 #align4
-loc_8c147A20:
-#data 0x3F4CCCCD
-#data 0x3F19999A
+loc_8c147a20:
+tst.b 0xCD,@(r0,gbr) 
+add r4,r15
+mov.w @(loc_8C147B5C,pc),r9
+#data 0x3F19
+
+
+loc_8c147a28:
+bsrf r0
+#data 0x0000
+
+mov.b r0,@(r0,r0) 
+loc_8c147a2e:
+#data 0x0000
+#data 0x00A9
+#data 0x0000
+#data 0x00A0
+#data 0x0000
+
+stc r3_bank, r0
+#data 0x0000
+
+loc_8c147a3c:
+#data 0x0000
+#data 0x0000
+#data 0x0000
+
+mov.b r0,@(0x30,gbr) 
+mov.w @(bank14.loc_8c147b7c,pc),r9
+mov.w r0,@(0xA2,gbr) 
+#data 0x0000
+#data 0x0000
+#data 0x0000
+
+mov.b r0,@(0x30,gbr) 
+#data 0x0000
+
+mov.w r0,@(0xA0,gbr) 
+mov.l @(loc_8C147A80,pc),r7
+cmp/ge r2,r12
+bra loc_8C147684
+mov.b r0,@(0x17,gbr) 
+#data 0x0000
+#data 0xC130
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x6666
+#data 0xBE66
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+
+loc_8c147a78:
+#data 0x1617
+#data 0x0B06
+#data 0x0A08
+#data 0x390F
 
 #align4
-loc_8c147A28:
-#data 0x00000003
-#data 0x00000004
-#data 0x000000A9
-#data 0x000000A0
-#data 0x000000B2
-
-#align4
-loc_8c147A3C:
-#data 0x00000000
-#data 0xC0300000
-#data 0xC151999A
-#data 0x00000000
-#data 0xC0300000
-#data 0xC1500000
-#data 0x3C23D70A
-#data 0xC017AE14
-#data 0xC1300000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0xBE666666
-#data 0x00000000
-#data 0x00000000
-
-#align4
-loc_8c147A78:
-#data 0x0B061617
-#data 0x390F0A08
+loc_8C147A80:
 #data 0x0E0D0C09
-#data 0x14131011
-#data 0x05221215
-#data 0x04010002
-#data 0x2C29282F
-#data 0x30072A2D
-#data 0x03371E1F
-#data 0x1B381D1C
-#data 0x3231352B
-#data 0x3436332E
-#data 0x26252127
-#data 0x3A202423
+#data 0x1011
+#data 0x1413
+#data 0x1215
+#data 0x0522
+#data 0x0002
+#data 0x0401
+#data 0x282F
+#data 0x2C29
+#data 0x2A2D
+#data 0x3007
+#data 0x1E1F
+#data 0x0337
+#data 0x1D1C
+#data 0x1B38
+#data 0x352B
+#data 0x3231
+#data 0x332E
+#data 0x3436
+#data 0x2127
+#data 0x2625
+#data 0x2423
+#data 0x3A20
 
-#align4
-loc_8c147AB0:
-#data 0xC10E6666
-#data 0xC0F00000
-#data 0xBFB33333
-#data 0x00000000
-#data 0x40C33333
-#data 0x40F00000
+loc_8c147ab0:
+#data 0x6666
+#data 0xC10E
+#data 0x0000
+#data 0xC0F0
+#data 0x3333
+#data 0xBFB3
+#data 0x0000
+#data 0x0000
+#data 0x3333
+#data 0x40C3
+#data 0x0000
+#data 0x40F0
 
-#align4
-loc_8c147AC8:
-#data 0xC0DCCCCD
-#data 0x3F199999
-#data 0x41019999
+loc_8c147ac8:
+#data 0xCCCD
+#data 0xC0DC
+#data 0x9999
+#data 0x3F19
+#data 0x9999
+#data 0x4101
 
-#align4
-loc_8c147AD4:
-#data 0xC0F00000
-#data 0x00000000
-#data 0x40F00000
+loc_8c147ad4:
+#data 0x0000
+#data 0xC0F0
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x40F0
 
-#align4
-loc_8c147AE0:
-#data 0x00000000
-#data 0x3F666666
-#data 0xC1480000
-#data 0x00000000
-#data 0xBF666666
-#data 0xC1480000
-#data 0x00000000
-#data 0xBF666666
-#data 0xC149999A
-#data 0x00000000
-#data 0x00000000
-#data 0xC14B3333
+loc_8c147ae0:
+#data 0x0000
+#data 0x0000
+#data 0x6666
+#data 0x3F66
+#data 0x0000
+#data 0xC148
+#data 0x0000
+#data 0x0000
+#data 0x6666
+#data 0xBF66
+#data 0x0000
+#data 0xC148
+#data 0x0000
+#data 0x0000
+#data 0x6666
+#data 0xBF66
+#data 0x999A
+#data 0xC149
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x3333
+#data 0xC14B
 
-#align4
-loc_8c147B10:
-#data 0x40800000
-#data 0x3F800000
+loc_8c147b10:
+#data 0x0000
+#data 0x4080
+#data 0x0000
+#data 0x3F80
 
-#align4
-loc_8c147B18:
-#data 0xFFFF0000
-
-#align4
-loc_8c147B1C:
-#data 0xFFFF000A
-
-#align4
-loc_8c147B20:
-#data 0xFFFF000B
-;-------------------------------------------------------------------------------
-
-#align4
-loc_8c147B24:
-#data 0xFFFF030C
-
-#align4
-loc_8c147B28:
-#data 0xFFFF030D
-
-#align4
-loc_8c147B2C:
-#data 0x010F000E
+loc_8c147b18:
+#data 0x0000
 #data 0xFFFF
 
-loc_8c147B32:
+loc_8c147b1c:
+#data 0x000A
+#data 0xFFFF
+
+loc_8c147b20:
+#data 0x000B
+#data 0xFFFF
+;-------------------------------------------------------------------------------
+
+loc_8c147b24:
+#data 0x030C
+#data 0xFFFF
+
+loc_8c147b28:
+#data 0x030D
+#data 0xFFFF
+
+loc_8c147b2c:
+#data 0x000E
+#data 0x010F
+#data 0xFFFF
+
+loc_8c147b32:
 #data 0x0010
 #data 0xFFFF
 
-loc_8c147B36:
+loc_8c147b36:
 #data 0x0011
 #data 0xFFFF
 
-loc_8c147B3A:
+loc_8c147b3a:
 #data 0x0012
 #data 0xFFFF
 
-loc_8c147B3E:
+loc_8c147b3e:
 #data 0x0313
 #data 0xFFFF
 
-loc_8c147B42:
+loc_8c147b42:
 #data 0x0314
 #data 0xFFFF
 
-loc_8c147B46:
+loc_8c147b46:
 #data 0x0015
 #data 0xFFFF
 
-loc_8c147B4A:
+loc_8c147b4a:
 #data 0x0016
 #data 0xFFFF
 
-loc_8c147B4E:
+loc_8c147b4e:
 #data 0x0017
 
-loc_8c147B50:
+loc_8c147b50:
 #data 0xFFFF
 
-loc_8c147B52:
+loc_8c147b52:
 #data 0x0018
 #data 0xFFFF
 
-loc_8c147B56:
+loc_8c147b56:
 #data 0x0019
 #data 0xFFFF
 
-loc_8c147B5A:
+loc_8c147b5a:
 #data 0x001A
+
+loc_8C147B5C:
 #data 0xFFFF
 
-loc_8c147B5E:
+loc_8c147b5e:
 #data 0x001B
 #data 0xFFFF
 
-loc_8c147B62:
+loc_8c147b62:
 #data 0x041C
 #data 0xFFFF
 
-loc_8c147B66:
+loc_8c147b66:
 #data 0x001D
 #data 0xFFFF
 
-loc_8c147B6A:
+loc_8c147b6a:
 #data 0x0008
 #data 0xFFFF
 
-loc_8c147B6E:
+loc_8c147b6e:
 #data 0x0009
 #data 0xFFFF
 
-loc_8c147B72:
+loc_8c147b72:
 #data 0x0007
 #data 0xFFFF
 
-loc_8c147B76:
+loc_8c147b76:
 #data 0x004E
-#data 0x0000FFFF
+#data 0xFFFF
+#data 0x0000
 
-#align4
-loc_8c147B7C:
-#data loc_8c147B18
-
-loc_8c147B80:
-#data loc_8c147B1C
-
-loc_8c147B84:
-#data loc_8c147B20
-
-loc_8c147B88:
-#data loc_8c147B24
-
-loc_8c147B8C:
-#data loc_8c147B28
-
-loc_8c147B90:
-#data loc_8c147B2C
-
-loc_8c147B94:
-#data loc_8c147B32
-
-loc_8c147B98:
-#data loc_8c147B36
-
-loc_8c147B9C:
-#data 0x7B3A
-
-loc_8c147B9E:
+loc_8c147b7c:
+#data 0x7B18
 #data 0x8C14
 
+loc_8c147b80:
+#data 0x7B1C
+#data 0x8C14
+
+loc_8c147b84:
+#data 0x7B20
+#data 0x8C14
+
+loc_8c147b88:
+#data 0x7B24
+#data 0x8C14
+
+loc_8c147b8c:
+#data 0x7B28
+#data 0x8C14
+
+loc_8c147b90:
+#data 0x7B2C
+#data 0x8C14
+
+loc_8c147b94:
+#data 0x7B32
+#data 0x8C14
+
+loc_8c147b98:
+#data 0x7B36
+#data 0x8C14
+
+loc_8c147b9c:
+#data 0x7B3A
+
+loc_8c147b9e:
+#data 0x8C14
+
+loc_8c147ba0:
+#data 0x7B3E
+#data 0x8C14
+
+loc_8c147ba4:
+#data 0x7B42
+#data 0x8C14
+
+loc_8c147ba8:
+#data 0x7B46
+#data 0x8C14
+
+loc_8c147bac:
+#data 0x7B4A
+#data 0x8C14
+
+loc_8c147bb0:
+#data 0x7B4E
+#data 0x8C14
+
+loc_8c147bb4:
+#data 0x7B52
+#data 0x8C14
+
+loc_8c147bb8:
+#data 0x7B56
+#data 0x8C14
+
+loc_8c147bbc:
+#data 0x7B5A
+#data 0x8C14
+
+loc_8c147bc0:
+#data 0x7B5E
+#data 0x8C14
+
+loc_8c147bc4:
+#data 0x7B62
+#data 0x8C14
+
+loc_8c147bc8:
+#data 0x7B66
+#data 0x8C14
+
+loc_8c147bcc:
+#data 0x7B6A
+#data 0x8C14
+
+loc_8c147bd0:
+#data 0x7B6E
+#data 0x8C14
+
+loc_8c147bd4:
+#data 0x7B72
+#data 0x8C14
+
+loc_8c147bd8:
+#data 0x7B76
+#data 0x8C14
+
+loc_8c147bdc:
+#data 0x999A
+#data 0xC0B9
+#data 0x6666
+#data 0xC0D6
+#data 0x3333
+#data 0xC14B
+#data 0x3333
+#data 0xC0A3
+#data 0x6666
+#data 0xC0D6
+#data 0x3333
+#data 0xC14B
+#data 0xCCCD
+#data 0xC08C
+
+loc_8c147bf8:
+#data 0x6666
+#data 0xC0D6
+#data 0x3333
+#data 0xC14B
+#data 0xCCCD
+#data 0xC06C
+#data 0x6666
+#data 0xC0D6
+#data 0x3333
+#data 0xC14B
+#data 0x3333
+#data 0xBFF3
+#data 0x6666
+#data 0xC0D6
+#data 0x3333
+#data 0xC14B
+#data 0x999A
+#data 0xBF99
+#data 0x6666
+#data 0xC0D6
+#data 0x3333
+#data 0xC14B
+#data 0xCCCD
+#data 0x3ECC
+#data 0x6666
+#data 0xC0D6
+#data 0x3333
+#data 0xC14B
+#data 0xCCCD
+#data 0x3F8C
+#data 0x6666
+#data 0xC0D6
+#data 0x3333
+#data 0xC14B
+#data 0x0000
+#data 0x4020
+#data 0x6666
+#data 0xC0D6
+#data 0x3333
+#data 0xC14B
+#data 0xCCCD
+#data 0x404C
+
+loc_8c147c4c:
+#data 0x6666
+#data 0xC0D6
+#data 0x3333
+#data 0xC14B
+#data 0xCCCD
+#data 0x408C
+#data 0x6666
+#data 0xC0D6
+#data 0x3333
+#data 0xC14B
+#data 0x3333
+#data 0x40A3
+
+loc_8c147c64:
+#data 0x6666
+#data 0xC0D6
+#data 0x3333
+#data 0xC14B
+#data 0x0000
+#data 0x4030
+#data 0x3333
+#data 0xC093
+#data 0x3333
+#data 0xC14B
+#data 0x0000
+#data 0x3F00
+#data 0x0000
+#data 0xC0C0
+#data 0x3333
+#data 0xC14B
+#data 0x999A
+#data 0x3F99
+#data 0x0000
+#data 0xC0C0
+#data 0x3333
+#data 0xC14B
+
+loc_8c147c90:
+#data 0x0000
+#data 0x3F00
+
+loc_8c147c94:
+#data 0x999A
+#data 0xC0A9
+
+loc_8c147c98:
+#data 0x3333
+#data 0xC14B
+#data 0x999A
+#data 0x3F99
+#data 0x999A
+#data 0xC0A9
+#data 0x3333
+#data 0xC14B
+#data 0x3333
+#data 0x3FF3
+#data 0xCCCD
+#data 0xC0EC
+#data 0x3333
+#data 0xC14B
+#data 0xCCCD
+#data 0x402C
+#data 0xCCCD
+#data 0xC0EC
+#data 0x3333
+#data 0xC14B
+
+loc_8c147cc0:
+#data 0x999A
+#data 0x4009
+#data 0x999A
+#data 0xC0A9
+#data 0x3333
+#data 0xC14B
+
+loc_8c147ccc:
+#data 0x0000
+#data 0x000C
+#data 0x1311
+#data 0x000F
+
+loc_8c147cd4:
+#data 0x3C82
+#data 0x8C02
+
 #align4
-loc_8c147BA0:
-#data loc_8c147B3E
+loc_8c147cd8:
+#data bank02.loc_8c023ddc
 
-loc_8c147BA4:
-#data loc_8c147B42
+loc_8c147cdc:
+#data bank02.loc_8c023fa0
 
-loc_8c147BA8:
-#data loc_8c147B46
-
-loc_8c147BAC:
-#data loc_8c147B4A
-
-loc_8c147BB0:
-#data loc_8c147B4E
-
-loc_8c147BB4:
-#data loc_8c147B52
-
-loc_8c147BB8:
-#data loc_8c147B56
-
-loc_8c147BBC:
-#data loc_8c147B5A
-
-loc_8c147BC0:
-#data loc_8c147B5E
-
-loc_8c147BC4:
-#data loc_8c147B62
-
-loc_8c147BC8:
-#data loc_8c147B66
-
-loc_8c147BCC:
-#data loc_8c147B6A
-
-loc_8c147BD0:
-#data loc_8c147B6E
-
-loc_8c147BD4:
-#data loc_8c147B72
-
-loc_8c147BD8:
-#data loc_8c147B76
-
-loc_8c147BDC:
-#data 0xC0B9999A
-#data 0xC0D66666
-#data 0xC14B3333
-#data 0xC0A33333
-#data 0xC0D66666
-#data 0xC14B3333
-#data 0xC08CCCCD
-
-#align4
-loc_8c147BF8:
-#data 0xC0D66666
-#data 0xC14B3333
-#data 0xC06CCCCD
-#data 0xC0D66666
-#data 0xC14B3333
-#data 0xBFF33333
-#data 0xC0D66666
-#data 0xC14B3333
-#data 0xBF99999A
-#data 0xC0D66666
-#data 0xC14B3333
-#data 0x3ECCCCCD
-#data 0xC0D66666
-#data 0xC14B3333
-#data 0x3F8CCCCD
-#data 0xC0D66666
-#data 0xC14B3333
-#data 0x40200000
-#data 0xC0D66666
-#data 0xC14B3333
-#data 0x404CCCCD
-
-#align4
-loc_8c147C4C:
-#data 0xC0D66666
-#data 0xC14B3333
-#data 0x408CCCCD
-#data 0xC0D66666
-#data 0xC14B3333
-#data 0x40A33333
-
-#align4
-loc_8c147C64:
-#data 0xC0D66666
-#data 0xC14B3333
-#data 0x40300000
-#data 0xC0933333
-#data 0xC14B3333
-#data 0x3F000000
-#data 0xC0C00000
-#data 0xC14B3333
-#data 0x3F99999A
-#data 0xC0C00000
-#data 0xC14B3333
-
-#align4
-loc_8c147C90:
-#data 0x3F000000
-
-#align4
-loc_8c147C94:
-#data 0xC0A9999A
-
-#align4
-loc_8c147C98:
-#data 0xC14B3333
-#data 0x3F99999A
-#data 0xC0A9999A
-#data 0xC14B3333
-#data 0x3FF33333
-#data 0xC0ECCCCD
-#data 0xC14B3333
-#data 0x402CCCCD
-#data 0xC0ECCCCD
-#data 0xC14B3333
-
-#align4
-loc_8c147CC0:
-#data 0x4009999A
-#data 0xC0A9999A
-#data 0xC14B3333
-
-#align4
-loc_8c147CCC:
-#data 0x000C0000
-#data 0x000F1311
-
-#align4
-loc_8c147CD4:
-#data bank02.loc_8c023C82
-
-loc_8c147CD8:
-#data bank02.loc_8c023DDC
-
-loc_8c147CDC:
-#data bank02.loc_8c023FA0
-
-loc_8c147CE0:
+loc_8c147ce0:
 #data 0x3F800000
 #data 0x3F800000
 #data 0x3F800000
 
 #align4
-loc_8c147CEC:
+loc_8c147cec:
 #data 0x00000000
 #data 0x3F800000
 #data 0x3F800000
 
 #align4
-loc_8c147CF8:
+loc_8c147cf8:
 #data 0x3F800000
 #data 0x3F800000
 #data 0x3F800000
 #data 0x3F800000
 
 #align4
-loc_8c147D08:
+loc_8c147d08:
 #data 0x00000000
 #data 0x3F666666
 #data 0x3333
 
-loc_8c147D12:
+loc_8c147d12:
 #data 0xC14B
 #data 0x00000000
 #data 0xBF666666
 #data 0x3333
 
-loc_8c147D1E:
+loc_8c147d1e:
 #data 0xC14B
 #data 0x00000000
 #data 0xBF666666
@@ -6577,56 +7513,56 @@ loc_8c147D1E:
 #data 0xC14E6666
 
 #align4
-loc_8c147D38:
-#data bank02.loc_8c02407C
+loc_8c147d38:
+#data bank02.loc_8c02407c
 
-loc_8c147D3C:
-#data bank02.loc_8c02407C
+loc_8c147d3c:
+#data bank02.loc_8c02407c
 
-loc_8c147D40:
+loc_8c147d40:
 #data bank02.loc_8c024124
 
-loc_8c147D44:
+loc_8c147d44:
 #data bank02.loc_8c024294
 #data 0x00000000
 #data 0x00000000
 #data 0x00000000
 
 #align4
-loc_8c147D54:
+loc_8c147d54:
 #data 0x3F800000
 #data 0x3F800000
 #data 0x3F800000
 
 #align4
-loc_8c147D60:
+loc_8c147d60:
 #data 0x3F99999A
 #data 0x3F99999A
 #data 0x3F99999A
 
 #align4
-loc_8c147D6C:
+loc_8c147d6c:
 #data 0x3F800000
 #data 0x00000000
 #data 0x00000000
 #data 0x00000000
 
 #align4
-loc_8c147D7C:
+loc_8c147d7c:
 #data 0x3F800000
 #data 0x3F800000
 #data 0x3F800000
 #data 0x3F800000
 
 #align4
-loc_8c147D8C:
+loc_8c147d8c:
 #data 0x3F800000
 #data 0x3F19999A
 #data 0x3F19999A
 #data 0x3F19999A
 
 #align4
-loc_8c147D9C:
+loc_8c147d9c:
 #data 0x00040000
 #data 0x01060100
 #data 0x02050001
@@ -6640,7 +7576,7 @@ loc_8c147D9C:
 #data 0xFFFFFFFF
 
 #align4
-loc_8c147DC8:
+loc_8c147dc8:
 #data 0x00000000
 #data 0x00000000
 #data 0x00000000
@@ -6649,11 +7585,10 @@ loc_8c147DC8:
 #data 0x00000000
 
 #align4
-loc_8c147DE0:
+loc_8c147de0:
 #data 0x00000000
 #data 0x00000000
 #data 0xC1500000
-
 
 loc_8c147DEC:
 mov.l @(loc_8c147E18,pc),r7 ; r7 set to 0x3ED1EB85
@@ -6703,7 +7638,9 @@ loc_8c147E30:
 loc_8c147E3C:
 #data 0x40266666
 #data 0xBF3D70A4
-#data 0xC0828F5C
+#data 0x8F5C
+loc_8c147e46:
+#data 0xC082
 
 #align4
 loc_8c147E48:
@@ -6829,74 +7766,135 @@ loc_8c147F4C:
 #data 0x01260701
 #data 0x0601
 
-loc_8c147F62:
-#data 0x000E
-#data 0x050D0501
-#data 0x06050003
-#data 0x06050103
-#data 0x06050203
-#data 0x06050303
-#data 0x06050403
-#data 0x06050503
-#data 0x06050603
-#data 0x06050703
-#data 0xFFFFFFFF
+loc_8c147f62:
+mov.l @(r0,r0),r0
+#data 0x0501
 
-#align4
-loc_8c147F8C:
-#data 0x01020001
-#data 0x01060101
-#data 0x02030201
-#data 0x02040301
-#data 0x01420701
-#data 0x01090401
-#data 0x04490102
-#data 0x050D0501
-#data 0xFFFFFFFF
+mov.w @(r0,r0),r5
+bsrf r0
+mov.w r0,@(r0,r6) 
+bsrf r1
+mov.w r0,@(r0,r6) 
+bsrf r2
+mov.w r0,@(r0,r6) 
+bsrf r3
+mov.w r0,@(r0,r6) 
+bsrf r4
+mov.w r0,@(r0,r6) 
+bsrf r5
+mov.w r0,@(r0,r6) 
+bsrf r6
+mov.w r0,@(r0,r6) 
+bsrf r7
+mov.w r0,@(r0,r6) 
+#data 0xFFFF
+#data 0xFFFF
 
-#align4
-loc_8c147FB0:
-#data loc_8c147F2C
+loc_8c147f8c:
+#data 0x0001
 
-loc_8c147FB4:
-#data loc_8c147F4C
+stc sr, r1
+#data 0x0101
 
-loc_8c147FB8:
-#data loc_8c147F8C
+mov.l r0,@(r0,r1) 
+#data 0x0201
 
-loc_8c147FBC:
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0xC1123D71
-#data 0x40D00000
-#data 0xC15028F6
-#data 0x00000000
-#data 0x40D00000
-#data 0xC1500000
-#data 0x00000000
-#data 0x407147AE
-#data 0xC14FD70A
-#data 0x00000000
-#data 0xC0C00000
-#data 0xC15147AE
+bsrf r2
+#data 0x0301
 
-#align4
+mov.b r0,@(r0,r2) 
+#data 0x0701
+
+stc spc, r1
+#data 0x0401
+#data 0x0109
+
+stc sr, r1
+#data 0x0449
+#data 0x0501
+
+mov.w @(r0,r0),r5
+#data 0xFFFF
+#data 0xFFFF
+
+
+loc_8c147fb0:
+add 0x2C,r15
+#data 0x8C14
+
+
+loc_8c147fb4:
+add 0x4C,r15
+#data 0x8C14
+
+
+loc_8c147fb8:
+add 0x8C,r15
+#data 0x8C14
+
+loc_8c147fbc:
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x3D71
+
+mov.w r0,@(0x24,gbr) 
+#data 0x0000
+#data 0x40D0
+
+mov.l r15,@-r8
+mov.w r0,@(0xA0,gbr) 
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x40D0
+#data 0x0000
+
+mov.w r0,@(0xA0,gbr) 
+#data 0x0000
+#data 0x0000
+
+ldc r7, r2_bank 
+#data 0x4071
+
+mov.l @(bank14.loc_8c148020,pc),r7
+mov.w r0,@(0x9E,gbr) 
+#data 0x0000
+#data 0x0000
+#data 0x0000
+
+mov.b r0,@(0xC0,gbr) 
+ldc r7, r2_bank 
+mov.w r0,@(0xA2,gbr) 
+
 loc_8c148004:
-#data 0x00000000
-#data 0x00000000
-#data 0xC1500000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
 
-#align4
+mov.w r0,@(0xA0,gbr) 
+
 loc_8c148010:
-#data 0x4019999A
-#data 0xBF451EB8
-#data 0xC07A3D71
-#data 0x00000000
+mov.w @(bank14.loc_8c148148,pc),r9
+shlr8 r0
+mov.l r11,@(0x20,r14) 
+bsr bank14.loc_8c147ea4
+#data 0x3D71
 
+mov.b r0,@(0x7A,gbr) 
+#data 0x0000
+#data 0x0000
 
 loc_8c148020:
 bra loc_8c147C4C
