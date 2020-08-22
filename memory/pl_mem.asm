@@ -205,6 +205,13 @@
 
 #symbol dhc_move_id 0x0258				; byte
 
+; starts out as 0
+; set to 1 when you call assist
+; when you do a team super, it gets set to 3 if you have 3 chars, 2 if you have 2, 1 if you have 1
+; decrements when your assist chars leave screen
+; if it's greater than > 1 while thcing, you cant move
+#symbol unk259 0x0259					; byte
+
 ;Used in Damage Calc
 #symbol unk270 0x0270					;word and byte
 
