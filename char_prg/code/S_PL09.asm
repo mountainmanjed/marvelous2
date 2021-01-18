@@ -76,7 +76,7 @@ loc_CE3000A:
 	mov.l @(r0,r7),r3
 	cmp/hs r5,r4
 	bf/s loc_CE3000A
-	mov.l r3,@(r0,r6) 
+	mov.l r3,@(r0,r6)
 	rts
 	nop
 
@@ -144,15 +144,15 @@ loc_CE3001C:
 	mov.l @(ptr_CE30104_to_fn_extern_8C053E00,pc),r3 ; r3 set to 0x8C053E00
 	jsr @r3
 	mov r14,r4
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.l @(ptr_CE30108_to_fn_extern_8C0542E0,pc),r2 ; r2 set to 0x8C0542E0
 	mov r14,r4
 	jmp @r2
 	mov.l @r15+,r14
 
 loc_CE300A2:
-	lds.l @r15+,pr 
-	rts 
+	lds.l @r15+,pr
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
@@ -234,7 +234,7 @@ loc_CE30114:
 	extu.b r0,r0
 	tst r0,r0
 	bf loc_CE3012E
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov 0x00,r0
 	rts
 	mov.l @r15+,r14
@@ -263,7 +263,7 @@ loc_CE3014E:
 	mov.l r14,@-r15
 	mov r4,r14
 	sts.l pr,@-r15
-	mov.l @(ptr_CE30240_to_loc_ce327BC,pc),r5 ; r5 set to 0xCE327BC
+	mov.l @(ptr_CE30240_to_IceBeamInput,pc),r5 ; r5 set to 0xCE327BC
 	mov.w @(loc_ce3022C,pc),r6 ; r6 set to 0x36C
 	mov.l @(ptr_CE30244_to_fn_extern_8C054E58,pc),r3 ; r3 set to 0x8C054E58
 	jsr @r3
@@ -271,9 +271,9 @@ loc_CE3014E:
 	extu.b r0,r0
 	tst r0,r0
 	bf loc_CE3016C
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov 0x00,r0 ; r0 set to 0x00
-	rts 
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
@@ -286,18 +286,18 @@ loc_CE3016C:
 	mov.l @(ptr_CE3023C_to_fn_extern_8C0530D8,pc),r3 ; r3 set to 0x8C0530D8
 	mov 0x00,r0 ; r0 set to 0x00
 	mov 0x15,r5 ; r5 set to 0x15
-	mov.b r0,@(0x05,r14) 
-	mov.b r0,@(0x07,r14) 
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x05,r14)
+	mov.b r0,@(0x07,r14)
+	mov.b r0,@(0x06,r14)
 	jsr @r3
 	mov r14,r4
 	mov.w @(loc_ce3022A,pc),r0 ; r0 set to 0x1E9
 	mov 0x01,r4 ; r4 set to 0x01
-	mov.b r4,@(r0,r14) 
+	mov.b r4,@(r0,r14)
 	mov r4,r0 ; r0 set to 0x01
-	nop 
-	lds.l @r15+,pr 
-	rts 
+	nop
+	lds.l @r15+,pr
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
@@ -409,16 +409,16 @@ ptr_CE30238_to_fn_extern_8C054DA0:
 	#data fn_extern_8C054DA0
 ptr_CE3023C_to_fn_extern_8C0530D8:
 	#data fn_extern_8C0530D8
-ptr_CE30240_to_loc_ce327BC:
-	#data loc_ce327BC
+ptr_CE30240_to_IceBeamInput:
+	#data IceBeamInput
 ptr_CE30244_to_fn_extern_8C054E58:
 	#data fn_extern_8C054E58
 ptr_CE30248_to_fn_extern_8C055C3A:
 	#data fn_extern_8C055C3A
-ptr_CE3024C_to_loc_ce327CC:
-	#data loc_ce327CC
-ptr_CE30250_to_loc_ce327AC:
-	#data loc_ce327AC
+ptr_CE3024C_to_AirIceBeamInput:
+	#data AirIceBeamInput
+ptr_CE30250_to_AvalancheInput:
+	#data AvalancheInput
 
 ;----------------------------------------------
 loc_ce30254:
@@ -458,7 +458,7 @@ loc_ce30284:
 	mov r4,r14
 	mov.w @(loc_ce30366,PC),r6
 	add r14,r3
-	mov.l @(ptr_CE3037C_to_loc_ce327DC,PC),r5
+	mov.l @(ptr_CE3037C_to_IceFistInput,PC),r5
 	mov.l r3,@r15
 	add r14,r6
 	mov.l @(loc_ce30380,PC),r3
@@ -568,11 +568,11 @@ loc_ce3032A:
 PL09_DlyHyprC:
 	sts.l pr,@-r15
 	bsr loc_ce30388
-	nop 
+	nop
 	tst r0,r0
 	bt loc_CE30358
 	lds.l @r15+,pr
-	rts 
+	rts
 	mov 0x01,r0
 
 loc_CE30358:
@@ -606,8 +606,8 @@ loc_ce30374:
 	#data fn_extern_8C055C3A
 loc_ce30378:
 	#data fn_extern_8C0530D8
-ptr_CE3037C_to_loc_ce327DC:
-	#data loc_ce327DC
+ptr_CE3037C_to_IceFistInput:
+	#data IceFistInput
 loc_ce30380:
 	#data fn_extern_8C054E58
 ptr_CE30384_to_ArcticAttack_Inp:
@@ -640,12 +640,12 @@ loc_ce303A8:
 
 loc_ce303B0:
 	mov.w @(0xF8,PC),r0
-	mov 0x02,r3 
+	mov 0x02,r3
 	mov.b r3,@(r0,r14)
-	mov 0x01,r0 
-	lds.l @r15+,pr 
-	rts 
-	mov.l @r15+,r14 
+	mov 0x01,r0
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
 
 ;----------------------------------------------
 loc_ce303BE:
@@ -833,20 +833,20 @@ loc_CE304DC:
 	mov.w @(loc_ce305D0,pc),r0 ; r0 set to 0x1FE
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	extu.b r0,r0
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bf loc_CE3050A
 	mov.w @(loc_ce305D2,pc),r0 ; r0 set to 0x1F9
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	extu.b r0,r0
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bf loc_CE30502
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov r14,r4
 	bra loc_CE307A8
 	mov.l @r15+,r14
 
 loc_CE30502:
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov r14,r4
 	bra loc_CE306D0
 	mov.l @r15+,r14
@@ -855,15 +855,15 @@ loc_CE3050A:
 	mov.w @(loc_ce305D2,pc),r0 ; r0 set to 0x1F9
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	extu.b r0,r0
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bf loc_CE3051C
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov r14,r4
 	bra loc_CE305FC
 	mov.l @r15+,r14
 
 loc_CE3051C:
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov r14,r4
 	bra loc_CE30524
 	mov.l @r15+,r14
@@ -879,45 +879,45 @@ loc_CE30524:
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	mov.l @(ptr_CE305E4_to_extern_8C04223A,pc),r12 ; r12 set to 0x8C04223A
 	extu.b r0,r0
-	cmp/eq 0x00,r0 
+	cmp/eq 0x00,r0
 	bt/s loc_CE3054A
 	mov 0x00,r13 ; r13 set to 0x00
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bt loc_CE30564
-	cmp/eq 0x02,r0 
+	cmp/eq 0x02,r0
 	bt loc_ce3057E
 	bra loc_CE30598
-	nop 
+	nop
 
 loc_CE3054A:
 	mov.w @(loc_ce305D6,pc),r0 ; r0 set to 0x158
 	mov 0x14,r5 ; r5 set to 0x14
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 	add 0x49,r0 ; r0 set to 0x1A1
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 	jsr @r12
 	mov r14,r4
 	mov.w @(loc_ce305D8,pc),r0 ; r0 set to 0x3F4
 	mov.l @(ptr_CE305E8_to_loc_ce32764,pc),r3 ; r3 set to 0xCE32764
-	mov.l r3,@(r0,r14) 
+	mov.l r3,@(r0,r14)
 	mov.w @(loc_ce305DA,pc),r0 ; r0 set to 0x1A7
 	bra loc_CE30598
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 
 loc_CE30564:
 	mov.w @(loc_ce305D6,pc),r0 ; r0 set to 0x158
 	mov 0x01,r11 ; r11 set to 0x01
 	mov 0x15,r5 ; r5 set to 0x15
-	mov.b r11,@(r0,r14) 
+	mov.b r11,@(r0,r14)
 	add 0x49,r0 ; r0 set to 0x1A1
-	mov.b r11,@(r0,r14) 
+	mov.b r11,@(r0,r14)
 	jsr @r12
 	mov r14,r4
 	mov.w @(loc_ce305D8,pc),r0 ; r0 set to 0x3F4
 	mov.l @(ptr_CE305EC_to_loc_ce32768,pc),r3 ; r3 set to 0xCE32768
-	mov.l r3,@(r0,r14) 
+	mov.l r3,@(r0,r14)
 	bra loc_ce30594
-	nop 
+	nop
 
 loc_ce3057E:
 	mov.w @(0x54,PC),r0
@@ -940,25 +940,25 @@ loc_CE30598:
 	mov.w @(loc_ce305DC,pc),r0 ; r0 set to 0x1AC
 	mov 0x07,r5 ; r5 set to 0x07
 	mov.l @(ptr_CE305F4_to_extern_8C2896B0,pc),r3 ; r3 set to 0x8C2896B0
-	mov.w r13,@(r0,r14) 
+	mov.w r13,@(r0,r14)
 	add 0xF2,r0 ; r0 set to 0x19E
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 	add 0x26,r0 ; r0 set to 0x1C4
-	mov.l r13,@(r0,r14) 
-	mov.b @(0x02,r14),r0 
+	mov.l r13,@(r0,r14)
+	mov.b @(0x02,r14),r0
 	mov.l @r3,r2
 	extu.b r0,r0 ; r0 set to 0xC4
 	shll r0 ; r0 set to 0x188
 	add 0x7C,r2
 	mov.w @(r0,r2),r1
 	add 0x01,r1
-	mov.w r1,@(r0,r2) 
+	mov.w r1,@(r0,r2)
 	mov.w @(loc_ce305D6,pc),r0 ; r0 set to 0x158
 	mov.l @(ptr_CE305F8_to_fn_extern_8C034E8C,pc),r2 ; r2 set to 0x8C034E8C
 	mov.b @(r0,r14),r6
 	jsr @r2
 	mov r14,r4
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov r14,r4
 	mov.l @r15+,r11
 	mov.l @r15+,r12
@@ -1010,15 +1010,15 @@ loc_CE305FC:
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	mov.l @(ptr_CE3071C_to_extern_8C04223A,pc),r12 ; r12 set to 0x8C04223A
 	extu.b r0,r0
-	cmp/eq 0x00,r0 
+	cmp/eq 0x00,r0
 	bt/s loc_CE30622
 	mov 0x09,r4 ; r4 set to 0x09
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bt loc_ce30642
-	cmp/eq 0x02,r0 
+	cmp/eq 0x02,r0
 	bt loc_ce3066C
 	bra loc_CE3069E
-	nop 
+	nop
 
 loc_CE30622:
 	mov.w @(loc_ce30712,pc),r0 ; r0 set to 0x159
@@ -1096,20 +1096,20 @@ loc_CE3069E:
 	mov 0x09,r5 ; r5 set to 0x09
 	mov.l @(ptr_CE30730_to_extern_8C2896B0,pc),r3 ; r3 set to 0x8C2896B0
 	mov r14,r4
-	mov.w r13,@(r0,r14) 
+	mov.w r13,@(r0,r14)
 	add 0xF2,r0 ; r0 set to 0x19E
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 	add 0x26,r0 ; r0 set to 0x1C4
-	mov.l r13,@(r0,r14) 
-	mov.b @(0x02,r14),r0 
+	mov.l r13,@(r0,r14)
+	mov.b @(0x02,r14),r0
 	mov.l @r3,r2
 	extu.b r0,r0 ; r0 set to 0xC4
 	shll r0 ; r0 set to 0x188
 	add 0x7C,r2
 	mov.w @(r0,r2),r1
 	add 0x01,r1
-	mov.w r1,@(r0,r2) 
-	lds.l @r15+,pr 
+	mov.w r1,@(r0,r2)
+	lds.l @r15+,pr
 	mov.w @(loc_ce3071A,pc),r0 ; r0 set to 0x158
 	mov.l @(ptr_CE30734_to_fn_extern_8C034E8C,pc),r2 ; r2 set to 0x8C034E8C
 	mov.l @r15+,r12
@@ -1128,31 +1128,31 @@ loc_CE306D0:
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	mov.l @(ptr_CE3071C_to_extern_8C04223A,pc),r12 ; r12 set to 0x8C04223A
 	extu.b r0,r0
-	cmp/eq 0x00,r0 
+	cmp/eq 0x00,r0
 	bt/s loc_CE306F4
 	mov 0x00,r13 ; r13 set to 0x00
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bt loc_CE3073C
-	cmp/eq 0x02,r0 
+	cmp/eq 0x02,r0
 	bt loc_ce30758
 	bra loc_CE30776
-	nop 
+	nop
 
 loc_CE306F4:
 	mov.w @(loc_ce3071A,pc),r0 ; r0 set to 0x158
 	mov 0x03,r3 ; r3 set to 0x03
 	mov 0x14,r5 ; r5 set to 0x14
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 	add 0x49,r0 ; r0 set to 0x1A1
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	jsr @r12
 	mov r14,r4
 	mov.w @(loc_ce30714,pc),r0 ; r0 set to 0x3F4
 	mov.l @(ptr_CE30738_to_loc_ce32770,pc),r3 ; r3 set to 0xCE32770
-	mov.l r3,@(r0,r14) 
+	mov.l r3,@(r0,r14)
 	mov.w @(loc_ce30716,pc),r0 ; r0 set to 0x1A7
 	bra loc_CE30776
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce30710:
@@ -1191,15 +1191,15 @@ loc_CE3073C:
 	mov.w @(loc_ce30866,pc),r0 ; r0 set to 0x158
 	mov 0x01,r2 ; r2 set to 0x01
 	mov 0x04,r3 ; r3 set to 0x04
-	mov.b r2,@(r0,r14) 
+	mov.b r2,@(r0,r14)
 	add 0x49,r0 ; r0 set to 0x1A1
 	mov 0x15,r5 ; r5 set to 0x15
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	jsr @r12
 	mov r14,r4
 	mov.w @(loc_ce30868,pc),r0 ; r0 set to 0x3F4
 	mov.l @(ptr_CE30874_to_loc_ce32774,pc),r3 ; r3 set to 0xCE32774
-	mov.l r3,@(r0,r14) 
+	mov.l r3,@(r0,r14)
 	bra loc_ce30772
 	mov 0x01,r2
 
@@ -1227,20 +1227,20 @@ loc_CE30776:
 	mov 0x08,r5 ; r5 set to 0x08
 	mov.l @(ptr_CE3087C_to_extern_8C2896B0,pc),r3 ; r3 set to 0x8C2896B0
 	mov r14,r4
-	mov.w r13,@(r0,r14) 
+	mov.w r13,@(r0,r14)
 	add 0xF2,r0 ; r0 set to 0x19E
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 	add 0x26,r0 ; r0 set to 0x1C4
-	mov.l r13,@(r0,r14) 
-	mov.b @(0x02,r14),r0 
+	mov.l r13,@(r0,r14)
+	mov.b @(0x02,r14),r0
 	mov.l @r3,r2
 	extu.b r0,r0 ; r0 set to 0xC4
 	shll r0 ; r0 set to 0x188
 	add 0x7C,r2
 	mov.w @(r0,r2),r1
 	add 0x01,r1
-	mov.w r1,@(r0,r2) 
-	lds.l @r15+,pr 
+	mov.w r1,@(r0,r2)
+	lds.l @r15+,pr
 	mov.w @(loc_ce30866,pc),r0 ; r0 set to 0x158
 	mov.l @(ptr_CE30880_to_fn_extern_8C034E8C,pc),r2 ; r2 set to 0x8C034E8C
 	mov.l @r15+,r12
@@ -1259,45 +1259,45 @@ loc_CE307A8:
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	mov.l @(ptr_CE30884_to_extern_8C04223A,pc),r12 ; r12 set to 0x8C04223A
 	extu.b r0,r0
-	cmp/eq 0x00,r0 
+	cmp/eq 0x00,r0
 	bt/s loc_CE307CC
 	mov 0x00,r13 ; r13 set to 0x00
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bt loc_CE307E8
-	cmp/eq 0x02,r0 
+	cmp/eq 0x02,r0
 	bt loc_ce30804
 	bra loc_CE30822
-	nop 
+	nop
 
 loc_CE307CC:
 	mov.w @(loc_ce30866,pc),r0 ; r0 set to 0x158
 	mov 0x09,r3 ; r3 set to 0x09
 	mov 0x14,r5 ; r5 set to 0x14
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 	add 0x49,r0 ; r0 set to 0x1A1
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	jsr @r12
 	mov r14,r4
 	mov.w @(loc_ce30868,pc),r0 ; r0 set to 0x3F4
 	mov.l @(ptr_CE30888_to_loc_ce32770,pc),r3 ; r3 set to 0xCE32770
-	mov.l r3,@(r0,r14) 
+	mov.l r3,@(r0,r14)
 	mov.w @(loc_ce3086A,pc),r0 ; r0 set to 0x1A7
 	bra loc_CE30822
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 
 loc_CE307E8:
 	mov.w @(loc_ce30866,pc),r0 ; r0 set to 0x158
 	mov 0x01,r2 ; r2 set to 0x01
 	mov 0x0A,r3 ; r3 set to 0x0A
-	mov.b r2,@(r0,r14) 
+	mov.b r2,@(r0,r14)
 	add 0x49,r0 ; r0 set to 0x1A1
 	mov 0x15,r5 ; r5 set to 0x15
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	jsr @r12
 	mov r14,r4
 	mov.w @(loc_ce30868,pc),r0 ; r0 set to 0x3F4
 	mov.l @(ptr_CE30874_to_loc_ce32774,pc),r3 ; r3 set to 0xCE32774
-	mov.l r3,@(r0,r14) 
+	mov.l r3,@(r0,r14)
 	bra loc_ce3081E
 	mov 0x01,r2
 
@@ -1325,20 +1325,20 @@ loc_CE30822:
 	mov 0x0A,r5 ; r5 set to 0x0A
 	mov.l @(ptr_CE3087C_to_extern_8C2896B0,pc),r3 ; r3 set to 0x8C2896B0
 	mov r14,r4
-	mov.w r13,@(r0,r14) 
+	mov.w r13,@(r0,r14)
 	add 0xF2,r0 ; r0 set to 0x19E
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 	add 0x26,r0 ; r0 set to 0x1C4
-	mov.l r13,@(r0,r14) 
-	mov.b @(0x02,r14),r0 
+	mov.l r13,@(r0,r14)
+	mov.b @(0x02,r14),r0
 	mov.l @r3,r2
 	extu.b r0,r0 ; r0 set to 0xC4
 	shll r0 ; r0 set to 0x188
 	add 0x7C,r2
 	mov.w @(r0,r2),r1
 	add 0x01,r1
-	mov.w r1,@(r0,r2) 
-	lds.l @r15+,pr 
+	mov.w r1,@(r0,r2)
+	lds.l @r15+,pr
 	mov.w @(loc_ce30866,pc),r0 ; r0 set to 0x158
 	mov.l @(ptr_CE30880_to_fn_extern_8C034E8C,pc),r2 ; r2 set to 0x8C034E8C
 	mov.l @r15+,r12
@@ -1351,10 +1351,10 @@ loc_CE30854:
 	mov.w @(loc_ce30870,pc),r0 ; r0 set to 0x1FE
 	mov.b @(r0,r4),r0 ; r0 ??? bc r4 is ???
 	extu.b r0,r0
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bf loc_CE30862
 	bra loc_CE309E8
-	nop 
+	nop
 
 loc_CE30862:
 	bra loc_CE3088C
@@ -1400,25 +1400,25 @@ loc_CE3088C:
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	mov.l @(ptr_CE3097C_to_extern_8C04223A,pc),r12 ; r12 set to 0x8C04223A
 	extu.b r0,r0
-	cmp/eq 0x00,r0 
+	cmp/eq 0x00,r0
 	bt/s loc_CE308B2
 	mov 0x00,r13 ; r13 set to 0x00
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bt loc_CE308F0
-	cmp/eq 0x02,r0 
+	cmp/eq 0x02,r0
 	bt loc_CE3092A
 	bra loc_ce309A4
-	nop 
+	nop
 
 loc_CE308B2:
 	mov.w @(loc_ce30970,pc),r0 ; r0 set to 0x159
 	mov 0x0C,r3 ; r3 set to 0x0C
 	mov 0x14,r5 ; r5 set to 0x14
-	mov.b r4,@(r0,r14) 
+	mov.b r4,@(r0,r14)
 	add 0xFF,r0 ; r0 set to 0x158
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 	add 0x49,r0 ; r0 set to 0x1A1
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	jsr @r12
 	mov r14,r4
 	mov.w @(loc_ce30972,pc),r0 ; r0 set to 0x1FC
@@ -1428,16 +1428,16 @@ loc_CE308B2:
 	mov.w @(loc_ce30974,pc),r0 ; r0 set to 0x3F4
 	mov.l @(ptr_CE30980_to_loc_ce3277C,pc),r3 ; r3 set to 0xCE3277C
 	bra loc_CE308DC
-	mov.l r3,@(r0,r14) 
+	mov.l r3,@(r0,r14)
 
 loc_CE308D6:
 	mov.w @(loc_ce30974,pc),r0 ; r0 set to 0x3F4
 	mov.l @(ptr_CE30984_to_loc_ce32794,pc),r1 ; r1 set to 0xCE32794
-	mov.l r1,@(r0,r14) 
+	mov.l r1,@(r0,r14)
 
 loc_CE308DC:
 	mov.w @(loc_ce30976,pc),r0 ; r0 set to 0x1A7, r0 set to 0x1A7
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 	bsr loc_CE30480
 	mov r14,r4
 	mov.l @(ptr_CE30988_to_fn_extern_8C06B364,pc),r2 ; r2 set to 0x8C06B364, r2 set to 0x8C06B364
@@ -1445,18 +1445,18 @@ loc_CE308DC:
 	jsr @r2
 	mov r14,r4
 	bra loc_ce309A4
-	nop 
+	nop
 
 loc_CE308F0:
 	mov.w @(loc_ce30970,pc),r0 ; r0 set to 0x159
 	mov 0x01,r3 ; r3 set to 0x01
 	mov 0x0D,r2 ; r2 set to 0x0D
-	mov.b r4,@(r0,r14) 
+	mov.b r4,@(r0,r14)
 	add 0xFF,r0 ; r0 set to 0x158
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	add 0x49,r0 ; r0 set to 0x1A1
 	mov 0x15,r5 ; r5 set to 0x15
-	mov.b r2,@(r0,r14) 
+	mov.b r2,@(r0,r14)
 	jsr @r12
 	mov r14,r4
 	mov.w @(loc_ce30972,pc),r0 ; r0 set to 0x1FC
@@ -1466,31 +1466,31 @@ loc_CE308F0:
 	mov.w @(loc_ce30974,pc),r0 ; r0 set to 0x3F4
 	mov.l @(ptr_CE3098C_to_loc_ce32780,pc),r3 ; r3 set to 0xCE32780
 	bra loc_CE3091C
-	mov.l r3,@(r0,r14) 
+	mov.l r3,@(r0,r14)
 
 loc_CE30916:
 	mov.w @(loc_ce30974,pc),r0 ; r0 set to 0x3F4
 	mov.l @(ptr_CE30990_to_loc_ce32798,pc),r1 ; r1 set to 0xCE32798
-	mov.l r1,@(r0,r14) 
+	mov.l r1,@(r0,r14)
 
 loc_CE3091C:
 	mov.w @(loc_ce30976,pc),r0 ; r0 set to 0x1A7, r0 set to 0x1A7
 	mov 0x01,r3 ; r3 set to 0x01, r3 set to 0x01
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	bsr loc_CE30480
 	mov r14,r4
 	bra loc_ce309A4
-	nop 
+	nop
 
 loc_CE3092A:
 	mov.w @(loc_ce30970,pc),r0 ; r0 set to 0x159
 	mov 0x02,r3 ; r3 set to 0x02
 	mov 0x0E,r2 ; r2 set to 0x0E
-	mov.b r4,@(r0,r14) 
+	mov.b r4,@(r0,r14)
 	add 0xFF,r0 ; r0 set to 0x158
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	add 0x49,r0 ; r0 set to 0x1A1
-	mov.b r2,@(r0,r14) 
+	mov.b r2,@(r0,r14)
 	add 0x59,r0 ; r0 set to 0x1FA
 	mov.w @(r0,r14),r3 ; r3 ??? bc r14 is ???
 	mov.w @(loc_ce30978,pc),r2 ; r2 set to 0x1000
@@ -1500,10 +1500,10 @@ loc_CE3092A:
 	mov.w @(loc_ce3097A,pc),r0 ; r0 set to 0x158
 	mov 0x05,r3 ; r3 set to 0x05
 	mov 0x41,r1 ; r1 set to 0x41
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	add 0x49,r0 ; r0 set to 0x1A1
 	bra loc_CE30958
-	mov.b r1,@(r0,r14) 
+	mov.b r1,@(r0,r14)
 
 loc_CE30954:
 	bsr loc_CE30480
@@ -1520,7 +1520,7 @@ loc_CE30958:
 	mov.w @(loc_ce30974,pc),r0 ; r0 set to 0x3F4, r0 set to 0x3F4
 	mov.l @(ptr_CE30994_to_loc_ce32784,pc),r3 ; r3 set to 0xCE32784, r3 set to 0xCE32784
 	bra loc_ce3099E
-	mov.l r3,@(r0,r14) 
+	mov.l r3,@(r0,r14)
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce3096E:
@@ -1566,34 +1566,34 @@ loc_ce3099E:
 	mov.b r3,@(r0,r14)
 
 loc_ce309A4:
-	mov.w @(0xC0,PC),r0 
-	mov 0x0B,r5 
-	mov.l @(0xCC,PC),r3 
+	mov.w @(0xC0,PC),r0
+	mov 0x0B,r5
+	mov.l @(0xCC,PC),r3
 	mov.w r13,@(r0,r14)
-	add 0xF2,r0 
+	add 0xF2,r0
 	mov.b r13,@(r0,r14)
-	add 0x26,r0 
+	add 0x26,r0
 	mov.l r13,@(r0,r14)
-	mov.b @(0x2,r14),r0 
-	mov.l @r3,r2 
-	extu.b r0,r0 
-	shll r0 
-	add 0x7C,r2 
-	mov.w @(r0,r2),r1 
-	add 0x01,r1 
+	mov.b @(0x2,r14),r0
+	mov.l @r3,r2
+	extu.b r0,r0
+	shll r0
+	add 0x7C,r2
+	mov.w @(r0,r2),r1
+	add 0x01,r1
 	mov.w r1,@(r0,r2)
-	mov.w @(0xA2,PC),r0 
-	mov.l @(0xB4,PC),r2 
-	mov.b @(r0,r14),r6 
-	jsr @r2 
-	mov r14,r4 
-	mov.w @(0x9A,PC),r0 
-	mov.b @(r0,r14),r0 
-	tst 0x0F,r0 
-	bt loc_ce309de 
-	mov.w @(0x92,PC),r0 
-	mov.b @(r0,r14),r2 
-	add 0xFF,r2 
+	mov.w @(0xA2,PC),r0
+	mov.l @(0xB4,PC),r2
+	mov.b @(r0,r14),r6
+	jsr @r2
+	mov r14,r4
+	mov.w @(0x9A,PC),r0
+	mov.b @(r0,r14),r0
+	tst 0x0F,r0
+	bt loc_ce309de
+	mov.w @(0x92,PC),r0
+	mov.b @(r0,r14),r2
+	add 0xFF,r2
 	mov.b r2,@(r0,r14)
 
 loc_ce309DE:
@@ -1614,23 +1614,23 @@ loc_CE309E8:
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	mov.l @(ptr_CE30A80_to_extern_8C04223A,pc),r12 ; r12 set to 0x8C04223A
 	extu.b r0,r0
-	cmp/eq 0x00,r0 
+	cmp/eq 0x00,r0
 	bt/s loc_CE30A0C
 	mov 0x00,r13 ; r13 set to 0x00
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bt loc_CE30A38
-	cmp/eq 0x02,r0 
+	cmp/eq 0x02,r0
 	bt loc_ce30A94
 	bra loc_ce30ADA
-	nop 
+	nop
 
 loc_CE30A0C:
 	mov.w @(loc_ce30A6A,pc),r0 ; r0 set to 0x158
 	mov 0x0F,r3 ; r3 set to 0x0F
 	mov 0x14,r5 ; r5 set to 0x14
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 	add 0x49,r0 ; r0 set to 0x1A1
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	jsr @r12
 	mov r14,r4
 	mov.w @(loc_ce30A70,pc),r0 ; r0 set to 0x1FC
@@ -1640,26 +1640,26 @@ loc_CE30A0C:
 	mov.w @(loc_ce30A64,pc),r0 ; r0 set to 0x3F4
 	mov.l @(ptr_CE30A84_to_loc_ce32788,pc),r3 ; r3 set to 0xCE32788
 	bra loc_CE30A32
-	mov.l r3,@(r0,r14) 
+	mov.l r3,@(r0,r14)
 
 loc_CE30A2C:
 	mov.w @(loc_ce30A64,pc),r0 ; r0 set to 0x3F4
 	mov.l @(ptr_CE30A88_to_loc_ce327A0,pc),r1 ; r1 set to 0xCE327A0
-	mov.l r1,@(r0,r14) 
+	mov.l r1,@(r0,r14)
 
 loc_CE30A32:
 	mov.w @(loc_ce30A66,pc),r0 ; r0 set to 0x1A7, r0 set to 0x1A7
 	bra loc_ce30ADA
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 
 loc_CE30A38:
 	mov.w @(loc_ce30A6A,pc),r0 ; r0 set to 0x158
 	mov 0x01,r2 ; r2 set to 0x01
 	mov 0x10,r3 ; r3 set to 0x10
-	mov.b r2,@(r0,r14) 
+	mov.b r2,@(r0,r14)
 	add 0x49,r0 ; r0 set to 0x1A1
 	mov 0x15,r5 ; r5 set to 0x15
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	jsr @r12
 	mov r14,r4
 	mov.w @(loc_ce30A70,pc),r0 ; r0 set to 0x1FC
@@ -1669,12 +1669,12 @@ loc_CE30A38:
 	mov.w @(loc_ce30A64,pc),r0 ; r0 set to 0x3F4
 	mov.l @(ptr_CE30A8C_to_loc_ce3278C,pc),r3 ; r3 set to 0xCE3278C
 	bra loc_CE30A60
-	mov.l r3,@(r0,r14) 
+	mov.l r3,@(r0,r14)
 
 loc_CE30A5A:
 	mov.w @(loc_ce30A64,pc),r0 ; r0 set to 0x3F4
 	mov.l @(ptr_CE30A90_to_loc_ce327A4,pc),r1 ; r1 set to 0xCE327A4
-	mov.l r1,@(r0,r14) 
+	mov.l r1,@(r0,r14)
 
 loc_CE30A60:
 	bra loc_ce30AD6
@@ -1895,45 +1895,45 @@ loc_CE30B8E:
 	mov 0x68,r1 ; r1 set to 0x68
 	add r14,r1 ; r1 ??? bc r14 is ???
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x5C,r0 ; r0 set to 0x5C
 	fmov.s @r1,fr3
 	mov 0x60,r1 ; r1 set to 0x60
 	fmov.s @(r0,r14),fr2
 	add r14,r1 ; r1 ??? bc r14 is ???
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x38,r0 ; r0 set to 0x38
 	fmov.s @(r0,r14),fr2
 	fmov.s @r1,fr3
 	mov 0x6C,r1 ; r1 set to 0x6C
 	add r14,r1 ; r1 ??? bc r14 is ???
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x60,r0 ; r0 set to 0x60
 	fmov.s @(r0,r14),fr2
 	fmov.s @r1,fr3
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	jsr @r3
 	mov r14,r4
 	mov.w @(loc_ce30C8A,pc),r0 ; r0 set to 0x1FE
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	extu.b r0,r0
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bf loc_CE30BF6
 	mov.w @(loc_ce30C8C,pc),r0 ; r0 set to 0x1F9
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	extu.b r0,r0
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bf loc_CE30BEE
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov r14,r4
 	bra loc_CE30D50
 	mov.l @r15+,r14
 
 loc_CE30BEE:
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov r14,r4
 	bra loc_CE30CF4
 	mov.l @r15+,r14
@@ -1942,9 +1942,9 @@ loc_CE30BF6:
 	mov.w @(loc_ce30C8C,pc),r0 ; r0 set to 0x1F9
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	extu.b r0,r0
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bf loc_CE30C08
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov r14,r4
 	bra loc_CE30CAC
 	mov.l @r15+,r14
@@ -2063,15 +2063,15 @@ loc_CE30CAC:
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	mov.w @(loc_ce30D72,pc),r4 ; r4 set to 0x2A4
 	extu.b r0,r0
-	cmp/eq 0x00,r0 
+	cmp/eq 0x00,r0
 	bt/s loc_ce30CCC
 	add r14,r4 ; r4 ??? bc r14 is ???
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bt loc_ce30CCC
-	cmp/eq 0x02,r0 
+	cmp/eq 0x02,r0
 	bt loc_CE30CD8
 	bra loc_CE30CEE
-	nop 
+	nop
 
 loc_ce30CCC:
 	mov.b @r4,r3
@@ -2088,7 +2088,7 @@ loc_CE30CD8:
 	exts.b r0,r0
 	cmp/pz r0
 	bt loc_CE30CEE
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.l @(ptr_CE30D80_to_fn_extern_8C051648,pc),r3 ; r3 set to 0x8C051648
 	mov r14,r4
 	jmp @r3
@@ -2107,14 +2107,14 @@ loc_CE30CF4:
 	sts.l pr,@-r15
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	extu.b r0,r0
-	cmp/eq 0x02,r0 
+	cmp/eq 0x02,r0
 	bt loc_CE30D10
-	cmp/eq 0x00,r0 
+	cmp/eq 0x00,r0
 	bt loc_ce30D34
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bt loc_ce30D34
 	bra loc_CE30D4A
-	nop 
+	nop
 
 loc_CE30D10:
 	mov.l @(ptr_CE30D7C_to_fn_extern_8C034DEE,pc),r3 ; r3 set to 0x8C034DEE
@@ -2129,9 +2129,9 @@ loc_CE30D10:
 	bt loc_CE30D4A
 	mov 0x00,r3 ; r3 set to 0x00
 	mov r14,r4
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	mov 0x01,r5 ; r5 set to 0x01
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.l @(ptr_CE30D84_to_fn_extern_8C06B364,pc),r3 ; r3 set to 0x8C06B364
 	jmp @r3
 	mov.l @r15+,r14
@@ -2145,15 +2145,15 @@ loc_ce30D34:
 	bt loc_ce30d4a
 
 loc_CE30D40:
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.l @(ptr_CE30D80_to_fn_extern_8C051648,pc),r3 ; r3 set to 0x8C051648
 	mov r14,r4
 	jmp @r3
 	mov.l @r15+,r14
 
 loc_CE30D4A:
-	lds.l @r15+,pr 
-	rts 
+	lds.l @r15+,pr
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
@@ -2170,7 +2170,7 @@ loc_CE30D50:
 	add 0x04,r15
 	mov.l @(ptr_CE30D80_to_fn_extern_8C051648,pc),r3 ; r3 set to 0x8C051648
 	jmp @r3
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 
 loc_CE30D6A:
 	add 0x04,r15
@@ -2222,12 +2222,12 @@ loc_CE30D9E:
 	mov.w @(loc_ce30E6E,pc),r0 ; r0 set to 0x1FE
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	extu.b r0,r0
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bf loc_CE30DC0
 	bsr loc_CE30E4C
 	mov r14,r4
 	bra loc_CE30DC4
-	nop 
+	nop
 
 loc_CE30DC0:
 	bsr loc_ce30DE0
@@ -2240,15 +2240,15 @@ loc_CE30DC4:
 	extu.b r0,r0
 	tst r0,r0
 	bt loc_CE30DDA
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.l @(ptr_CE30E8C_to_fn_extern_8C052DAC,pc),r3 ; r3 set to 0x8C052DAC, r3 set to 0x8C052DAC
 	mov r14,r4
 	jmp @r3
 	mov.l @r15+,r14
 
 loc_CE30DDA:
-	lds.l @r15+,pr 
-	rts 
+	lds.l @r15+,pr
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
@@ -2332,7 +2332,7 @@ loc_CE30E4C:
 	add 0x04,r15
 	mov.l @(ptr_CE30E98_to_fn_extern_8C05176E,pc),r3 ; r3 set to 0x8C05176E
 	jmp @r3
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 
 loc_CE30E66:
 	add 0x04,r15
@@ -2486,7 +2486,7 @@ PL09_FwdDash:
 	mov r4,r3
 	mov.l @(ptr_CE30FF8_to_ptr_CE3288C_to_loc_CE30F76,pc),r1 ; r1 set to 0xCE3288C
 	mov.l r4,@-r15
-	mov.b @(0x06,r3),r0 
+	mov.b @(0x06,r3),r0
 	extu.b r0,r0
 	shll2 r0
 	mov.l @(r0,r1),r3
@@ -2503,18 +2503,18 @@ loc_CE30F76:
 	mov.b @(r0,r14),r2
 	tst r2,r2
 	bt loc_CE30FC2
-	mov.b @(0x06,r14),r0 
+	mov.b @(0x06,r14),r0
 	fldi0 fr4
 	add 0x01,r0 ; r0 set to 0x142
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x06,r14)
 	mov 0x5C,r0 ; r0 set to 0x5C
-	fmov.s fr4,@(r0,r14) 
+	fmov.s fr4,@(r0,r14)
 	mov 0x60,r0 ; r0 set to 0x60
-	fmov.s fr4,@(r0,r14) 
+	fmov.s fr4,@(r0,r14)
 	mov 0x68,r0 ; r0 set to 0x68
-	fmov.s fr4,@(r0,r14) 
+	fmov.s fr4,@(r0,r14)
 	mov 0x6C,r0 ; r0 set to 0x6C
-	fmov.s fr4,@(r0,r14) 
+	fmov.s fr4,@(r0,r14)
 	mov.w @(loc_ce30FD0,pc),r0 ; r0 set to 0x1D2
 	mov.b @(r0,r14),r3 ; r3 ??? bc r14 is ???
 	tst r3,r3
@@ -2530,16 +2530,16 @@ loc_CE30FAE:
 loc_CE30FB2:
 	mov 0x5C,r0 ; r0 set to 0x5C, r0 set to 0x5C
 	mov r14,r4
-	fmov.s fr3,@(r0,r14) 
+	fmov.s fr3,@(r0,r14)
 	mov 0x10,r0 ; r0 set to 0x10, r0 set to 0x10
-	mov.w r0,@(0x1C,r14) 
-	lds.l @r15+,pr 
+	mov.w r0,@(0x1C,r14)
+	lds.l @r15+,pr
 	bra loc_CE31004
 	mov.l @r15+,r14
 
 loc_CE30FC2:
-	lds.l @r15+,pr 
-	rts 
+	lds.l @r15+,pr
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
@@ -2593,37 +2593,37 @@ loc_CE31004:
 	mov 0x68,r1 ; r1 set to 0x68
 	add r14,r1 ; r1 ??? bc r14 is ???
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x5C,r0 ; r0 set to 0x5C
 	fmov.s @r1,fr3
 	mov 0x60,r1 ; r1 set to 0x60
 	fmov.s @(r0,r14),fr2
 	add r14,r1 ; r1 ??? bc r14 is ???
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x38,r0 ; r0 set to 0x38
 	fmov.s @(r0,r14),fr2
 	fmov.s @r1,fr3
 	mov 0x6C,r1 ; r1 set to 0x6C
 	add r14,r1 ; r1 ??? bc r14 is ???
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x60,r0 ; r0 set to 0x60
 	fmov.s @(r0,r14),fr2
 	fmov.s @r1,fr3
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	jsr @r3
 	mov r14,r4
-	mov.w @(0x1C,r14),r0 
+	mov.w @(0x1C,r14),r0
 	add 0xFF,r0 ; r0 set to 0x5F
-	mov.w r0,@(0x1C,r14) 
+	mov.w r0,@(0x1C,r14)
 	exts.w r0,r0 ; r0 ??
 	cmp/pz r0
 	bt loc_CE31082
-	mov.b @(0x06,r14),r0 
+	mov.b @(0x06,r14),r0
 	add 0x01,r0
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x06,r14)
 	mov.w @(loc_ce31146,pc),r0 ; r0 set to 0x1D2
 	mov.b @(r0,r14),r3
 	tst r3,r3
@@ -2641,17 +2641,17 @@ loc_CE3106C:
 	mov.l @(ptr_CE31158_to_fn_extern_8C034E8C,pc),r3 ; r3 set to 0x8C034E8C, r3 set to 0x8C034E8C
 	mov 0x5C,r0 ; r0 set to 0x5C, r0 set to 0x5C
 	mov r6,r5 ; r5 set to 0x02, r5 set to 0x02
-	fmov.s fr3,@(r0,r14) 
+	fmov.s fr3,@(r0,r14)
 	jsr @r3
 	mov r14,r4
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov r14,r4
 	bra loc_CE31088
 	mov.l @r15+,r14
 
 loc_CE31082:
-	lds.l @r15+,pr 
-	rts 
+	lds.l @r15+,pr
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
@@ -2668,32 +2668,32 @@ loc_CE31088:
 	mov 0x68,r1 ; r1 set to 0x68
 	add r14,r1 ; r1 ??? bc r14 is ???
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x5C,r0 ; r0 set to 0x5C
 	fmov.s @r1,fr3
 	mov 0x60,r1 ; r1 set to 0x60
 	fmov.s @(r0,r14),fr2
 	add r14,r1 ; r1 ??? bc r14 is ???
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x38,r0 ; r0 set to 0x38
 	fmov.s @(r0,r14),fr2
 	fmov.s @r1,fr3
 	mov 0x6C,r1 ; r1 set to 0x6C
 	add r14,r1 ; r1 ??? bc r14 is ???
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x60,r0 ; r0 set to 0x60
 	fmov.s @(r0,r14),fr2
 	fmov.s @r1,fr3
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	jsr @r3
 	mov r14,r4
 	exts.b r0,r0 ; r0 ??
 	cmp/pz r0
 	bt loc_CE310DC
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.l @(ptr_CE3115C_to_fn_extern_8C051648,pc),r3 ; r3 set to 0x8C051648
 	mov r14,r4
 	jmp @r3
@@ -2709,7 +2709,7 @@ PL09_BckDash:
 	mov r4,r3
 	mov.l @(ptr_CE31160_to_ptr_CE32898_to_loc_CE310F4,pc),r1 ; r1 set to 0xCE32898
 	mov.l r4,@-r15
-	mov.b @(0x06,r3),r0 
+	mov.b @(0x06,r3),r0
 	extu.b r0,r0
 	shll2 r0
 	mov.l @(r0,r1),r3
@@ -2726,9 +2726,9 @@ loc_CE310F4:
 	mov.b @(r0,r14),r2
 	tst r2,r2
 	bt loc_CE31140
-	mov.b @(0x06,r14),r0 
+	mov.b @(0x06,r14),r0
 	add 0x01,r0 ; r0 set to 0x142
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x06,r14)
 	mov.w @(loc_ce31146,pc),r0 ; r0 set to 0x1D2
 	mov.b @(r0,r14),r3 ; r3 ??? bc r14 is ???
 	tst r3,r3
@@ -2744,19 +2744,19 @@ loc_CE3111A:
 loc_CE3111E:
 	mov 0x5C,r0 ; r0 set to 0x5C, r0 set to 0x5C
 	mov r14,r4
-	fmov.s fr3,@(r0,r14) 
+	fmov.s fr3,@(r0,r14)
 	mov 0x68,r0 ; r0 set to 0x68, r0 set to 0x68
 	fldi0 fr3
-	fmov.s fr3,@(r0,r14) 
+	fmov.s fr3,@(r0,r14)
 	mova @(loc_ce3116C,pc),r0  ; r0 set to 0xCE3116C, r0 set to 0xCE3116C
 	fmov.s @r0,fr3
 	mov 0x60,r0 ; r0 set to 0x60, r0 set to 0x60
-	fmov.s fr3,@(r0,r14) 
+	fmov.s fr3,@(r0,r14)
 	mova @(loc_ce31170,pc),r0  ; r0 set to 0xCE31170, r0 set to 0xCE31170
 	fmov.s @r0,fr3
 	mov 0x6C,r0 ; r0 set to 0x6C, r0 set to 0x6C
-	fmov.s fr3,@(r0,r14) 
-	lds.l @r15+,pr 
+	fmov.s fr3,@(r0,r14)
+	lds.l @r15+,pr
 	bra loc_CE31174
 	mov.l @r15+,r14
 
@@ -2807,26 +2807,26 @@ loc_CE31174:
 	mov 0x68,r1 ; r1 set to 0x68
 	add r14,r1 ; r1 ??? bc r14 is ???
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x5C,r0 ; r0 set to 0x5C
 	fmov.s @r1,fr3
 	mov 0x60,r1 ; r1 set to 0x60
 	fmov.s @(r0,r14),fr2
 	add r14,r1 ; r1 ??? bc r14 is ???
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x38,r0 ; r0 set to 0x38
 	fmov.s @(r0,r14),fr2
 	fmov.s @r1,fr3
 	mov 0x6C,r1 ; r1 set to 0x6C
 	add r14,r1 ; r1 ??? bc r14 is ???
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x60,r0 ; r0 set to 0x60
 	fmov.s @(r0,r14),fr2
 	fmov.s @r1,fr3
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	jsr @r3
 	mov r14,r4
 	mov.w @(loc_ce312C8,pc),r0 ; r0 set to 0x41C
@@ -2835,14 +2835,14 @@ loc_CE31174:
 	fmov.s @(r0,r14),fr2
 	fcmp/gt fr3,fr2
 	bt loc_CE31204
-	mov.b @(0x06,r14),r0 
+	mov.b @(0x06,r14),r0
 	mov.l @(ptr_CE312D4_to_extern_8C0511B4,pc),r3 ; r3 set to 0x8C0511B4
 	add 0x01,r0 ; r0 set to 0x39
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x06,r14)
 	mov.w @(loc_ce312C8,pc),r0 ; r0 set to 0x41C
 	fmov.s @(r0,r14),fr3 ; r3 ??? bc r14 is ???
 	mov 0x38,r0 ; r0 set to 0x38
-	fmov.s fr3,@(r0,r14) 
+	fmov.s fr3,@(r0,r14)
 	jsr @r3
 	mov r14,r4
 	mov.w @(loc_ce312CA,pc),r0 ; r0 set to 0x1D2
@@ -2860,15 +2860,15 @@ loc_CE311E6:
 loc_CE311EA:
 	mov 0x5C,r0 ; r0 set to 0x5C, r0 set to 0x5C
 	fldi0 fr4
-	fmov.s fr3,@(r0,r14) 
+	fmov.s fr3,@(r0,r14)
 	mov 0x68,r0 ; r0 set to 0x68, r0 set to 0x68
-	fmov.s fr4,@(r0,r14) 
+	fmov.s fr4,@(r0,r14)
 	mov 0x60,r0 ; r0 set to 0x60, r0 set to 0x60
-	fmov.s fr4,@(r0,r14) 
+	fmov.s fr4,@(r0,r14)
 	mov 0x6C,r0 ; r0 set to 0x6C, r0 set to 0x6C
 	mov r14,r4
-	fmov.s fr4,@(r0,r14) 
-	lds.l @r15+,pr 
+	fmov.s fr4,@(r0,r14)
+	lds.l @r15+,pr
 	bra loc_ce3120A
 	mov.l @r15+,r14
 
@@ -2943,7 +2943,7 @@ loc_CE31268:
 	add 0x04,r15
 	mov.l @(ptr_CE312E0_to_fn_extern_8C051648,pc),r3 ; r3 set to 0x8C051648
 	jmp @r3
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 
 loc_CE31282:
 	add 0x04,r15
@@ -2956,7 +2956,7 @@ loc_CE3128A:
 	mov r4,r3
 	mov.l @(ptr_CE312E4_to_ptr_CE328A8_to_loc_CE3129C,pc),r1 ; r1 set to 0xCE328A8
 	mov.l r4,@-r15
-	mov.b @(0x06,r3),r0 
+	mov.b @(0x06,r3),r0
 	extu.b r0,r0
 	shll2 r0
 	mov.l @(r0,r1),r3
@@ -2968,20 +2968,20 @@ loc_CE3129C:
 	mov r4,r14
 	mov 0x01,r3 ; r3 set to 0x01
 	sts.l pr,@-r15
-	mov.b @(0x06,r14),r0 
+	mov.b @(0x06,r14),r0
 	mov 0x00,r2 ; r2 set to 0x00
 	mov 0x12,r5 ; r5 set to 0x12
 	mov r2,r6 ; r6 set to 0x00
 	add 0x01,r0
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x06,r14)
 	mov.w @(loc_ce312CE,pc),r0 ; r0 set to 0x12C
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	add 0x04,r0 ; r0 set to 0x130
 	mov.l @(ptr_CE312E8_to_fn_extern_8C034E8C,pc),r3 ; r3 set to 0x8C034E8C
-	mov.w r2,@(r0,r14) 
+	mov.w r2,@(r0,r14)
 	jsr @r3
 	mov r14,r4
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.l @(ptr_CE312EC_to_fn_extern_8C0C0C98,pc),r2 ; r2 set to 0x8C0C0C98
 	mov r14,r4
 	jmp @r2
@@ -3041,27 +3041,27 @@ loc_ce31310:
 
 ;----------------------------------------------
 loc_CE31316:
-	mov.b @(0x06,r4),r0 
+	mov.b @(0x06,r4),r0
 	tst r0,r0
 	bt loc_CE31320
 	bra loc_CE31394
-	nop 
+	nop
 
 loc_CE31320:
 	mov.l r14,@-r15
 	mov r4,r14
 	mov.l r13,@-r15
 	sts.l pr,@-r15
-	mov.b @(0x06,r14),r0 
+	mov.b @(0x06,r14),r0
 	mov.l @(ptr_CE313E8_to_fn_extern_8C0514B8,pc),r3 ; r3 set to 0x8C0514B8
 	add 0x01,r0
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x06,r14)
 	jsr @r3
 	mov r14,r4
 	mov 0x02,r2 ; r2 set to 0x02
 	cmp/ge r2,r0
 	bf loc_ce3134A
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.l @(ptr_CE313EC_to_fn_extern_8C034E8C,pc),r1 ; r1 set to 0x8C034E8C
 	mov r2,r6 ; r6 set to 0x02
 	mov 0x13,r5 ; r5 set to 0x13
@@ -3123,15 +3123,15 @@ loc_CE31394:
 	mov r14,r4
 	tst r0,r0
 	bt loc_CE313B2
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.l @(ptr_CE31408_to_fn_extern_8C051648,pc),r2 ; r2 set to 0x8C051648
 	mov r14,r4
 	jmp @r2
 	mov.l @r15+,r14
 
 loc_CE313B2:
-	lds.l @r15+,pr 
-	rts 
+	lds.l @r15+,pr
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
@@ -3140,7 +3140,7 @@ PL09_SpecPRG:
 	mov r4,r3
 	mov.l r4,@-r15
 	mov.b @(r0,r3),r2
-	mov.l @(ptr_CE3140C_to_ptr_CE328B8_to_loc_CE313CC,pc),r0 ; r0 set to 0xCE328B8
+	mov.l @(ptr_CE3140C_to_Table_SpecialPRG,pc),r0 ; r0 set to 0xCE328B8
 	extu.b r2,r2
 	shll2 r2
 	mov.l @(r0,r2),r3
@@ -3152,7 +3152,7 @@ loc_CE313CC:
 	mov r4,r3
 	mov.l @(ptr_CE31410_to_ptr_CE328D4_to_loc_CE31414,pc),r1 ; r1 set to 0xCE328D4
 	mov.l r4,@-r15
-	mov.b @(0x06,r3),r0 
+	mov.b @(0x06,r3),r0
 	extu.b r0,r0
 	shll2 r0
 	mov.l @(r0,r1),r3
@@ -3188,8 +3188,8 @@ ptr_CE31404_to_fn_extern_8C046C8A:
 	#data fn_extern_8C046C8A
 ptr_CE31408_to_fn_extern_8C051648:
 	#data fn_extern_8C051648
-ptr_CE3140C_to_ptr_CE328B8_to_loc_CE313CC:
-	#data ptr_CE328B8_to_loc_CE313CC
+ptr_CE3140C_to_Table_SpecialPRG:
+	#data Table_SpecialPRG
 ptr_CE31410_to_ptr_CE328D4_to_loc_CE31414:
 	#data ptr_CE328D4_to_loc_CE31414
 
@@ -3199,17 +3199,17 @@ loc_CE31414:
 	mov r4,r14
 	mov.l r13,@-r15
 	sts.l pr,@-r15
-	mov.b @(0x06,r14),r0 
+	mov.b @(0x06,r14),r0
 	mov.l @(ptr_CE31490_to_fn_extern_8C05218A,pc),r3 ; r3 set to 0x8C05218A
 	add 0x01,r0
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x06,r14)
 	jsr @r3
 	mov r14,r4
 	mov.w @(loc_ce3148C,pc),r0 ; r0 set to 0x1F9
 	mov.l @(ptr_CE31494_to_extern_8C2896B0,pc),r4 ; r4 set to 0x8C2896B0
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	extu.b r0,r0
-	cmp/eq 0x02,r0 
+	cmp/eq 0x02,r0
 	bf/s loc_ce314A0
 	mov 0x00,r13 ; r13 set to 0x00
 	mov.w @(loc_ce3148E,pc),r0 ; r0 set to 0x1A3
@@ -3217,21 +3217,21 @@ loc_CE31414:
 	mov.b @(r0,r14),r2
 	add 0xFE,r0 ; r0 set to 0x1A1
 	add 0x32,r2
-	mov.b r2,@(r0,r14) 
+	mov.b r2,@(r0,r14)
 	add 0x0B,r0 ; r0 set to 0x1AC
-	mov.w r13,@(r0,r14) 
+	mov.w r13,@(r0,r14)
 	add 0xF2,r0 ; r0 set to 0x19E
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 	add 0x26,r0 ; r0 set to 0x1C4
-	mov.l r13,@(r0,r14) 
-	mov.b @(0x02,r14),r0 
+	mov.l r13,@(r0,r14)
+	mov.b @(0x02,r14),r0
 	mov.l @r4,r3 ; r3 ??
 	extu.b r0,r0 ; r0 set to 0xC4
 	shll r0 ; r0 set to 0x188
 	add 0x7C,r3
 	mov.w @(r0,r3),r2
 	add 0x01,r2
-	mov.w r2,@(r0,r3) 
+	mov.w r2,@(r0,r3)
 	mov.l @(ptr_CE31498_to_fn_extern_8C056DE4,pc),r3 ; r3 set to 0x8C056DE4
 	jsr @r3
 	mov r14,r4 ; r4 ??? bc r14 is ???
@@ -3240,19 +3240,19 @@ loc_CE31414:
 	mov 0x5C,r0 ; r0 set to 0x5C
 	fmov.s @(r0,r14),fr3 ; r3 ??? bc r14 is ???
 	fdiv fr4,fr3
-	fmov.s fr3,@(r0,r14) 
+	fmov.s fr3,@(r0,r14)
 	mov 0x60,r0 ; r0 set to 0x60
 	fmov.s @(r0,r14),fr2
 	fdiv fr4,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x68,r0 ; r0 set to 0x68
 	fmov.s @(r0,r14),fr3
 	fdiv fr4,fr3
-	fmov.s fr3,@(r0,r14) 
+	fmov.s fr3,@(r0,r14)
 	mov 0x6C,r0 ; r0 set to 0x6C
 	fmov.s @(r0,r14),fr2
 	fdiv fr4,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	bra loc_ce314F2
 	mov 0x02,r0
 
@@ -3307,14 +3307,14 @@ loc_ce314A0:
 	mov 0x5C,r0
 	fldi0 fr4
 	fmov fr4,@(r0,r14)
-	mov 0x60,r0 
+	mov 0x60,r0
 	fmov fr4,@(r0,r14)
-	mov 0x68,r0 
+	mov 0x68,r0
 	fmov fr4,@(r0,r14)
-	mov 0x6C,r0 
+	mov 0x6C,r0
 	fmov fr4,@(r0,r14)
-	mov r13,r0 
-	nop 
+	mov r13,r0
+	nop
 
 loc_ce314F2:
 	mov.l @(0x104,PC),r3
@@ -3329,66 +3329,66 @@ loc_ce314F2:
 	mov.l @r15+,r14
 
 loc_ce31506:
-	mov.w @(0xE0,PC),r0 
-	mov.l r14,@-r15 
-	mov r4,r14 
-	sts.l pr,@-r15 
-	mov.b @(r0,r14),r0 
-	extu.b r0,r0 
-	cmp/eq 0x02,r0 
-	bf loc_ce31580 
-	mov 0x5C,r1 
-	add r14,r1 
-	mov 0x34,r0 
-	fmov @r1,fr3 
-	fmov @(r0,r14),fr2 
-	mov 0x68,r1 
-	add r14,r1 
-	fadd fr3,fr2 
+	mov.w @(0xE0,PC),r0
+	mov.l r14,@-r15
+	mov r4,r14
+	sts.l pr,@-r15
+	mov.b @(r0,r14),r0
+	extu.b r0,r0
+	cmp/eq 0x02,r0
+	bf loc_ce31580
+	mov 0x5C,r1
+	add r14,r1
+	mov 0x34,r0
+	fmov @r1,fr3
+	fmov @(r0,r14),fr2
+	mov 0x68,r1
+	add r14,r1
+	fadd fr3,fr2
 	fmov fr2,@(r0,r14)
-	mov 0x5C,r0 
-	fmov @(r0,r14),fr2 
-	fmov @r1,fr3 
-	mov 0x60,r1 
-	add r14,r1 
-	fadd fr3,fr2 
+	mov 0x5C,r0
+	fmov @(r0,r14),fr2
+	fmov @r1,fr3
+	mov 0x60,r1
+	add r14,r1
+	fadd fr3,fr2
 	fmov fr2,@(r0,r14)
-	mov 0x38,r0 
-	fmov @(r0,r14),fr2 
-	fmov @r1,fr3 
-	mov 0x6C,r1 
-	add r14,r1 
-	fadd fr3,fr2 
+	mov 0x38,r0
+	fmov @(r0,r14),fr2
+	fmov @r1,fr3
+	mov 0x6C,r1
+	add r14,r1
+	fadd fr3,fr2
 	fmov fr2,@(r0,r14)
-	mov 0x60,r0 
-	fmov @(r0,r14),fr2 
-	fmov @r1,fr3 
-	fadd fr3,fr2 
+	mov 0x60,r0
+	fmov @(r0,r14),fr2
+	fmov @r1,fr3
+	fadd fr3,fr2
 	fmov fr2,@(r0,r14)
-	mov.w @(0x96,PC),r0 
-	fmov @(r0,r14),fr3 
-	mov 0x38,r0 
-	fmov @(r0,r14),fr2 
-	fcmp/gt fr3,fr2 
-	bt loc_ce31580 
-	mov.w @(0x8A,PC),r0 
-	fldi0 fr4 
-	fmov @(r0,r14),fr3 
-	mov 0x38,r0 
-	mov.l @(0x98,PC),r3 
+	mov.w @(0x96,PC),r0
+	fmov @(r0,r14),fr3
+	mov 0x38,r0
+	fmov @(r0,r14),fr2
+	fcmp/gt fr3,fr2
+	bt loc_ce31580
+	mov.w @(0x8A,PC),r0
+	fldi0 fr4
+	fmov @(r0,r14),fr3
+	mov 0x38,r0
+	mov.l @(0x98,PC),r3
 	fmov fr3,@(r0,r14)
-	mov 0x5C,r0 
+	mov 0x5C,r0
 	fmov fr4,@(r0,r14)
-	mov 0x60,r0 
+	mov 0x60,r0
 	fmov fr4,@(r0,r14)
-	mov 0x68,r0 
+	mov 0x68,r0
 	fmov fr4,@(r0,r14)
-	mov 0x6C,r0 
+	mov 0x6C,r0
 	fmov fr4,@(r0,r14)
-	jsr @r3 
-	mov r14,r4 
-	mov.w @(0x6C,PC),r0 
-	mov 0x00,r2 
+	jsr @r3
+	mov r14,r4
+	mov.w @(0x6C,PC),r0
+	mov 0x00,r2
 	mov.b r2,@(r0,r14)
 
 loc_ce31580:
@@ -3446,7 +3446,7 @@ loc_CE315D4:
 	mov r4,r3
 	mov.l @(ptr_CE31614_to_ptr_CE328DC_to_loc_CE31618,pc),r1 ; r1 set to 0xCE328DC
 	mov.l r4,@-r15
-	mov.b @(0x06,r3),r0 
+	mov.b @(0x06,r3),r0
 	extu.b r0,r0
 	shll2 r0
 	mov.l @(r0,r1),r3
@@ -3491,10 +3491,10 @@ loc_CE31618:
 	mov r4,r14
 	mov.l r13,@-r15
 	sts.l pr,@-r15
-	mov.b @(0x06,r14),r0 
+	mov.b @(0x06,r14),r0
 	mov.l @(ptr_CE31788_to_fn_extern_8C05218A,pc),r3 ; r3 set to 0x8C05218A
 	add 0x01,r0
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x06,r14)
 	jsr @r3
 	mov r14,r4
 	mov.w @(loc_ce31780,pc),r0 ; r0 set to 0x41C
@@ -3502,9 +3502,9 @@ loc_CE31618:
 	mov.l @(ptr_CE3178C_to_fn_extern_8C05115A,pc),r3 ; r3 set to 0x8C05115A
 	fmov.s @(r0,r14),fr3 ; r3 ??? bc r14 is ???
 	mov 0x38,r0 ; r0 set to 0x38
-	fmov.s fr3,@(r0,r14) 
+	fmov.s fr3,@(r0,r14)
 	mov.w @(loc_ce31782,pc),r0 ; r0 set to 0x1F9
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 	jsr @r3
 	mov r14,r4
 	mov.w @(loc_ce31784,pc),r0 ; r0 set to 0x1A3
@@ -3513,21 +3513,21 @@ loc_CE31618:
 	mov.b @(r0,r14),r2
 	add 0xFE,r0 ; r0 set to 0x1A1
 	add 0x34,r2
-	mov.b r2,@(r0,r14) 
+	mov.b r2,@(r0,r14)
 	add 0x0B,r0 ; r0 set to 0x1AC
-	mov.w r13,@(r0,r14) 
+	mov.w r13,@(r0,r14)
 	add 0xF2,r0 ; r0 set to 0x19E
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 	add 0x26,r0 ; r0 set to 0x1C4
-	mov.l r13,@(r0,r14) 
-	mov.b @(0x02,r14),r0 
+	mov.l r13,@(r0,r14)
+	mov.b @(0x02,r14),r0
 	mov.l @r3,r2
 	extu.b r0,r0 ; r0 set to 0xC4
 	shll r0 ; r0 set to 0x188
 	add 0x7C,r2
 	mov.w @(r0,r2),r1
 	add 0x01,r1
-	mov.w r1,@(r0,r2) 
+	mov.w r1,@(r0,r2)
 	mov.l @(ptr_CE31794_to_fn_extern_8C056DE4,pc),r2 ; r2 set to 0x8C056DE4
 	jsr @r2
 	mov r14,r4
@@ -3558,20 +3558,20 @@ loc_CE3169C:
 	mov.l r14,@-r15
 	mov r4,r14
 	sts.l pr,@-r15
-	mov.w @(0x1C,r14),r0 
+	mov.w @(0x1C,r14),r0
 	add 0xFF,r0 ; r0 set to 0x6B
 	mov.w r0,@(0x1C,r14)
 	exts.w r0,r0 ; r0 ??
 	cmp/pl r0
 	bt loc_ce316C6
-	mov.b @(0x06,r14),r0 
+	mov.b @(0x06,r14),r0
 	mov r14,r4
 	mov.l @(ptr_CE31798_to_fn_extern_8C034E8C,pc),r3 ; r3 set to 0x8C034E8C, r3 set to 0x8C034E8C
 	mov 0x15,r5 ; r5 set to 0x15, r5 set to 0x15
 	add 0x01,r0
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x06,r14)
 	mov.w @(loc_ce31784,pc),r0 ; r0 set to 0x1A3, r0 set to 0x1A3
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.b @(r0,r14),r6
 	add 0x0A,r6
 	jmp @r3
@@ -3613,11 +3613,11 @@ loc_CE316EA:
 	add 0x04,r15
 	mov.l @(ptr_CE317A4_to_fn_extern_8C051648,pc),r3 ; r3 set to 0x8C051648
 	jmp @r3
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 
 loc_CE31704:
 	add 0x04,r15
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	rts
 	nop
 
@@ -3627,7 +3627,7 @@ loc_CE3170C:
 	mov r4,r3
 	mov.l @(ptr_CE317A8_to_ptr_CE328E8_to_loc_ce317AC,pc),r1 ; r1 set to 0xCE328E8
 	mov.l r4,@-r15
-	mov.b @(0x06,r3),r0 
+	mov.b @(0x06,r3),r0
 	extu.b r0,r0
 	shll2 r0
 	mov.l @(r0,r1),r3
@@ -3669,9 +3669,9 @@ loc_ce3171E:
 	fmov @(r0,r4),fr2
 	fcmp/gt fr3,fr2
 	bt loc_ce3177c
-	mov.w @(0x1A,PC),r0 
+	mov.w @(0x1A,PC),r0
 	fldi0 fr4
-	fmov @(r0,r4),fr3 
+	fmov @(r0,r4),fr3
 	mov 0x38,r0
 	fmov fr3,@(r0,r4)
 	mov 0x5C,r0
@@ -3735,96 +3735,96 @@ loc_ce317AC:
 	mov.b r3,@(r0,r14)
 
 loc_ce317C8:
-	mov.b @(0x6,r14),r0 
-	mov 0x30,r3 
-	mov 0x00,r4 
-	add 0x01,r0 
+	mov.b @(0x6,r14),r0
+	mov 0x30,r3
+	mov 0x00,r4
+	add 0x01,r0
 	mov.b r0,@(0x6,r14)
-	mov.w @(0x10E,PC),r0 
+	mov.w @(0x10E,PC),r0
 	mov.b r3,@(r0,r14)
-	add 0x0B,r0 
+	add 0x0B,r0
 	mov.w r4,@(r0,r14)
-	add 0xF2,r0 
+	add 0xF2,r0
 	mov.b r4,@(r0,r14)
-	add 0x26,r0 
-	mov.l @(0x110,PC),r3 
+	add 0x26,r0
+	mov.l @(0x110,PC),r3
 	mov.l r4,@(r0,r14)
-	mov.b @(0x2,r14),r0 
-	mov.l @r3,r2 
-	extu.b r0,r0 
-	shll r0 
-	add 0x7C,r2 
-	mov.w @(r0,r2),r1 
-	add 0x01,r1 
+	mov.b @(0x2,r14),r0
+	mov.l @r3,r2
+	extu.b r0,r0
+	shll r0
+	add 0x7C,r2
+	mov.w @(r0,r2),r1
+	add 0x01,r1
 	mov.w r1,@(r0,r2)
-	mov.l @(0x100,PC),r2 
-	jsr @r2 
-	mov r14,r4 
-	mov.w @(0xE8,PC),r0 
-	mov.b @(r0,r14),r0 
-	extu.b r0,r0 
-	cmp/eq 0x02,r0 
-	bt loc_ce31838 
-	mov.l @(0xF4,PC),r2 
-	mov 0x16,r5 
-	mov 0x00,r6 
-	jsr @r2 
-	mov r14,r4 
-	mov.w @(0xD4,PC),r0 
-	mov 0x00,r3 
-	fldi0 fr4 
+	mov.l @(0x100,PC),r2
+	jsr @r2
+	mov r14,r4
+	mov.w @(0xE8,PC),r0
+	mov.b @(r0,r14),r0
+	extu.b r0,r0
+	cmp/eq 0x02,r0
+	bt loc_ce31838
+	mov.l @(0xF4,PC),r2
+	mov 0x16,r5
+	mov 0x00,r6
+	jsr @r2
+	mov r14,r4
+	mov.w @(0xD4,PC),r0
+	mov 0x00,r3
+	fldi0 fr4
 	mov.b r3,@(r0,r14)
-	mov.w @(0xCE,PC),r0 
-	mov.l @(0xE4,PC),r3 
-	fmov @(r0,r14),fr3 
-	mov 0x38,r0 
+	mov.w @(0xCE,PC),r0
+	mov.l @(0xE4,PC),r3
+	fmov @(r0,r14),fr3
+	mov 0x38,r0
 	fmov fr3,@(r0,r14)
-	mov 0x5C,r0 
+	mov 0x5C,r0
 	fmov fr4,@(r0,r14)
-	mov 0x60,r0 
+	mov 0x60,r0
 	fmov fr4,@(r0,r14)
-	mov 0x68,r0 
+	mov 0x68,r0
 	fmov fr4,@(r0,r14)
-	mov 0x6C,r0 
+	mov 0x6C,r0
 	fmov fr4,@(r0,r14)
-	jsr @r3 
-	mov r14,r4 
-	bra loc_ce31866 
-	nop 
+	jsr @r3
+	mov r14,r4
+	bra loc_ce31866
+	nop
 
 loc_ce31838:
-	mov.l @(0xC0,PC),r3 
-	mov 0x16,r5 
-	mov 0x01,r6 
-	jsr @r3 
-	mov r14,r4 
-	mova @(0xC0,PC),r0 
-	fmov @r0,fr4 
-	mov 0x5C,r0 
-	fmov @(r0,r14),fr3 
-	fdiv fr4,fr3 
+	mov.l @(0xC0,PC),r3
+	mov 0x16,r5
+	mov 0x01,r6
+	jsr @r3
+	mov r14,r4
+	mova @(0xC0,PC),r0
+	fmov @r0,fr4
+	mov 0x5C,r0
+	fmov @(r0,r14),fr3
+	fdiv fr4,fr3
 	fmov fr3,@(r0,r14)
-	mov 0x68,r0 
-	fmov @(r0,r14),fr2 
-	fdiv fr4,fr2 
+	mov 0x68,r0
+	fmov @(r0,r14),fr2
+	fdiv fr4,fr2
 	fmov fr2,@(r0,r14)
-	mov 0x60,r0 
-	fmov @(r0,r14),fr3 
-	fdiv fr4,fr3 
+	mov 0x60,r0
+	fmov @(r0,r14),fr3
+	fdiv fr4,fr3
 	fmov fr3,@(r0,r14)
-	mov 0x6C,r0 
-	fmov @(r0,r14),fr2 
-	fdiv fr4,fr2 
+	mov 0x6C,r0
+	fmov @(r0,r14),fr2
+	fdiv fr4,fr2
 	fmov fr2,@(r0,r14)
 
 loc_ce31866:
-	mov 0x68,r0 
-	mov r14,r4 
+	mov 0x68,r0
+	mov r14,r4
 	mov.w r0,@(0x1C,r14)
-	mov 0x1E,r0 
+	mov 0x1E,r0
 	mov.w r0,@(0x1E,r14)
-	lds.l @r15+,pr 
-	mov.l @r15+,r14 
+	lds.l @r15+,pr
+	mov.l @r15+,r14
 
 loc_CE31874:
 	mov.l r14,@-r15
@@ -3833,14 +3833,14 @@ loc_CE31874:
 	mov.w @(loc_ce318EA,pc),r0 ; r0 set to 0x3F8
 	mov r4,r14
 	mov 0x02,r3 ; r3 set to 0x02
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	mov 0x05,r2 ; r2 set to 0x05
 	mov.w @(loc_ce318EC,pc),r0 ; r0 set to 0x328
-	mov.b r2,@(r0,r14) 
+	mov.b r2,@(r0,r14)
 	mov.w @(loc_ce318DE,pc),r0 ; r0 set to 0x255
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	extu.b r0,r0
-	cmp/eq 0x06,r0 
+	cmp/eq 0x06,r0
 	bf loc_CE31896
 	bra loc_CE31898
 	mov 0x02,r3
@@ -3850,7 +3850,7 @@ loc_CE31896:
 
 loc_CE31898:
 	mov.w @(loc_ce318EE,pc),r0 ; r0 set to 0x3F1, r0 set to 0x3F1
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	mov.l @(ptr_CE31908_to_fn_extern_8C034DEE,pc),r3 ; r3 set to 0x8C034DEE, r3 set to 0x8C034DEE
 	jsr @r3
 	mov r14,r4
@@ -3860,24 +3860,24 @@ loc_CE31898:
 	mov.b @(r0,r14),r3 ; r3 ??? bc r14 is ???, r3 ??? bc r14 is ???
 	tst r3,r3
 	bt loc_CE31930
-	mov.b @(0x06,r14),r0 
+	mov.b @(0x06,r14),r0
 	mov 0x00,r4 ; r4 set to 0x00, r4 set to 0x00
 	mov.l @(ptr_CE3190C_to_fn_extern_8C035162,pc),r3 ; r3 set to 0x8C035162, r3 set to 0x8C035162
 	mov r4,r5 ; r5 set to 0x00, r5 set to 0x00
 	add 0x01,r0 ; r0 set to 0x142, r0 set to 0x142
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x06,r14)
 	mov.w @(loc_ce318F0,pc),r0 ; r0 set to 0x141, r0 set to 0x141
-	mov.b r4,@(r0,r14) 
+	mov.b r4,@(r0,r14)
 	mov.w @(loc_ce318E2,pc),r0 ; r0 set to 0x3F0, r0 set to 0x3F0
-	mov.b r4,@(r0,r14) 
+	mov.b r4,@(r0,r14)
 	add 0x01,r0 ; r0 set to 0x3F1, r0 set to 0x3F1
-	mov.b r4,@(r0,r14) 
+	mov.b r4,@(r0,r14)
 	jsr @r3
 	mov r14,r4 ; r4 ??? bc r14 is ???, r4 ??? bc r14 is ???
 	mov.w @(loc_ce318E6,pc),r0 ; r0 set to 0x1F9, r0 set to 0x1F9
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???, r0 ??? bc r14 is ???
 	extu.b r0,r0
-	cmp/eq 0x02,r0 
+	cmp/eq 0x02,r0
 	bf/s loc_ce31914
 	fldi0 fr4
 	mova @(loc_ce31910,pc),r0  ; r0 set to 0xCE31910, r0 set to 0xCE31910
@@ -3958,18 +3958,18 @@ loc_CE31938:
 	mov r4,r14
 	mov 0x05,r2 ; r2 set to 0x05
 	sts.l pr,@-r15
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	mov.w @(loc_ce31A12,pc),r0 ; r0 set to 0x328
-	mov.b r2,@(r0,r14) 
-	mov.b @(0x06,r14),r0 
+	mov.b r2,@(r0,r14)
+	mov.b @(0x06,r14),r0
 	add 0x01,r0 ; r0 set to 0x329
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x06,r14)
 	bsr loc_ce3171E
 	mov r14,r4
 	mov.w @(loc_ce31A14,pc),r0 ; r0 set to 0x1F9
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	extu.b r0,r0
-	cmp/eq 0x02,r0 
+	cmp/eq 0x02,r0
 	bt/s loc_CE31964
 	mov 0x16,r5 ; r5 set to 0x16
 	bra loc_CE31966
@@ -3979,7 +3979,7 @@ loc_CE31964:
 	mov 0x03,r6 ; r6 set to 0x03
 
 loc_CE31966:
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.l @(ptr_CE31A2C_to_fn_extern_8C034E8C,pc),r2 ; r2 set to 0x8C034E8C, r2 set to 0x8C034E8C
 	mov r14,r4
 	jmp @r2
@@ -4013,51 +4013,51 @@ loc_ce31970:
 	mov r14,r4
 
 loc_ce319A0:
-	mov.w @(0x1E,r14),r0 
-	cmp/pz r0 
-	bf loc_ce319bc 
-	mov.l @(0x90,PC),r2 
-	jsr @r2 
-	mov r14,r4 
-	tst r0,r0 
-	bt loc_ce319bc 
-	mov.w @(0x1E,r14),r0 
-	add 0xFF,r0 
+	mov.w @(0x1E,r14),r0
+	cmp/pz r0
+	bf loc_ce319bc
+	mov.l @(0x90,PC),r2
+	jsr @r2
+	mov r14,r4
+	tst r0,r0
+	bt loc_ce319bc
+	mov.w @(0x1E,r14),r0
+	add 0xFF,r0
 	mov.w r0,@(0x1E,r14)
-	mov.w @(0x1C,r14),r0 
-	add 0x01,r0 
+	mov.w @(0x1C,r14),r0
+	add 0x01,r0
 	mov.w r0,@(0x1C,r14)
 
 loc_ce319BC:
-	mov.w @(0x1C,r14),r0 
-	add 0xFF,r0 
+	mov.w @(0x1C,r14),r0
+	add 0xFF,r0
 	mov.w r0,@(0x1C,r14)
-	exts.w r0,r0 
-	cmp/pl r0 
-	bt loc_ce31a08 
-	mov.w @(0x4C,PC),r0 
+	exts.w r0,r0
+	cmp/pl r0
+	bt loc_ce31a08
+	mov.w @(0x4C,PC),r0
 	mov.b r13,@(r0,r14)
-	add 0xFF,r0 
+	add 0xFF,r0
 	mov.b r13,@(r0,r14)
-	mov.w @(0x46,PC),r0 
+	mov.w @(0x46,PC),r0
 	mov.b r13,@(r0,r14)
-	add 0x01,r0 
+	add 0x01,r0
 	mov.b r13,@(r0,r14)
-	mov.b @(0x6,r14),r0 
-	add 0x01,r0 
+	mov.b @(0x6,r14),r0
+	add 0x01,r0
 	mov.b r0,@(0x6,r14)
-	mov 0x3C,r0 
+	mov 0x3C,r0
 	mov.w r0,@(0x1C,r14)
-	mov.w @(0x2E,PC),r0 
-	mov.b @(r0,r14),r0 
-	extu.b r0,r0 
-	cmp/eq 0x02,r0 
-	bt.s loc_ce319f6 
-	mov 0x16,r5 
-	mov.w @(0x2A,PC),r0 
-	mov.b @(r0,r14),r7 
+	mov.w @(0x2E,PC),r0
+	mov.b @(r0,r14),r0
+	extu.b r0,r0
+	cmp/eq 0x02,r0
+	bt.s loc_ce319f6
+	mov 0x16,r5
+	mov.w @(0x2A,PC),r0
+	mov.b @(r0,r14),r7
 	bra loc_ce319fc
-	mov 0x06,r6 
+	mov 0x06,r6
 
 loc_ce319F6:
 	mov.w @(0x22,PC),r0
@@ -4121,18 +4121,18 @@ loc_CE31A40:
 	mov r4,r14
 	bsr loc_ce3171E
 	mov r14,r4
-	mov.w @(0x1C,r14),r0 
+	mov.w @(0x1C,r14),r0
 	add 0xFF,r0
-	mov.w r0,@(0x1C,r14) 
+	mov.w r0,@(0x1C,r14)
 	exts.w r0,r0
 	cmp/pl r0
 	bt loc_CE31A78
 	mov.w @(loc_ce31B18,pc),r0 ; r0 set to 0x1F9
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	extu.b r0,r0
-	cmp/eq 0x02,r0 
+	cmp/eq 0x02,r0
 	bf loc_CE31A6E
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.l @(ptr_CE31B24_to_fn_extern_8C05176E,pc),r2 ; r2 set to 0x8C05176E
 	mov r14,r4
 	jmp @r2
@@ -4146,8 +4146,8 @@ loc_CE31A6E:
 	mov.l @r15+,r14
 
 loc_CE31A78:
-	lds.l @r15+,pr 
-	rts 
+	lds.l @r15+,pr
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
@@ -4155,7 +4155,7 @@ loc_CE31A7E:
 	mov r4,r3
 	mov.l @(ptr_CE31B2C_to_ptr_CE328FC_to_loc_CE31A90,pc),r1 ; r1 set to 0xCE328FC
 	mov.l r4,@-r15
-	mov.b @(0x06,r3),r0 
+	mov.b @(0x06,r3),r0
 	extu.b r0,r0
 	shll2 r0
 	mov.l @(r0,r1),r3
@@ -4166,10 +4166,10 @@ loc_CE31A90:
 	mov.l r14,@-r15
 	mov r4,r14
 	sts.l pr,@-r15
-	mov.b @(0x06,r14),r0 
+	mov.b @(0x06,r14),r0
 	mov.l @(ptr_CE31B30_to_fn_extern_8C05218A,pc),r3 ; r3 set to 0x8C05218A
 	add 0x01,r0
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x06,r14)
 	jsr @r3
 	mov r14,r4
 	mov.w @(loc_ce31B1A,pc),r0 ; r0 set to 0x41C
@@ -4177,9 +4177,9 @@ loc_CE31A90:
 	mov 0x05,r5 ; r5 set to 0x05
 	fmov.s @(r0,r14),fr3 ; r3 ??? bc r14 is ???
 	mov 0x38,r0 ; r0 set to 0x38
-	fmov.s fr3,@(r0,r14) 
+	fmov.s fr3,@(r0,r14)
 	mov.w @(loc_ce31B18,pc),r0 ; r0 set to 0x1F9
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	mov.l @(ptr_CE31B34_to_fn_extern_8C056DE4,pc),r3 ; r3 set to 0x8C056DE4
 	jsr @r3
 	mov r14,r4
@@ -4191,7 +4191,7 @@ loc_CE31A90:
 	mov 0x05,r6 ; r6 set to 0x05
 	jsr @r3
 	mov r14,r4
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov r14,r4
 	mov.l @r15+,r14
 
@@ -4210,11 +4210,11 @@ loc_CE31ACE:
 	mov 0x01,r3 ; r3 set to 0x01, r3 set to 0x01
 	mov.l @(ptr_CE31B40_to_fn_extern_8C0C1104,pc),r2 ; r2 set to 0x8C0C1104, r2 set to 0x8C0C1104
 	mov 0x03,r0 ; r0 set to 0x03, r0 set to 0x03
-	mov.b r0,@(0x01,r13) 
+	mov.b r0,@(0x01,r13)
 	mov.b r3,@r13
 	jsr @r2
 	mov r14,r4
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.l @(ptr_CE31B28_to_fn_extern_8C051648,pc),r3 ; r3 set to 0x8C051648, r3 set to 0x8C051648
 	mov r14,r4
 	mov.l @r15+,r13
@@ -4222,9 +4222,9 @@ loc_CE31ACE:
 	mov.l @r15+,r14
 
 loc_CE31AFE:
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.l @r15+,r13
-	rts 
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
@@ -4232,7 +4232,7 @@ loc_CE31B06:
 	mov r4,r3
 	mov.l @(ptr_CE31B44_to_ptr_CE32904_to_loc_CE31B48,pc),r1 ; r1 set to 0xCE32904
 	mov.l r4,@-r15
-	mov.b @(0x06,r3),r0 
+	mov.b @(0x06,r3),r0
 	extu.b r0,r0
 	shll2 r0
 	mov.l @(r0,r1),r3
@@ -4274,10 +4274,10 @@ loc_CE31B48:
 	mov.l r14,@-r15
 	mov r4,r14
 	sts.l pr,@-r15
-	mov.b @(0x06,r14),r0 
+	mov.b @(0x06,r14),r0
 	mov.l @(ptr_CE31C88_to_fn_extern_8C05218A,pc),r3 ; r3 set to 0x8C05218A
 	add 0x01,r0
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x06,r14)
 	jsr @r3
 	mov r14,r4
 	mov.l @(ptr_CE31C8C_to_fn_extern_8C053082,pc),r2 ; r2 set to 0x8C053082
@@ -4289,22 +4289,22 @@ loc_CE31B48:
 	mov.b @(r0,r14),r3 ; r3 ??? bc r14 is ???
 	add 0xFE,r0 ; r0 set to 0x1A1
 	add 0x36,r3
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	add 0x0B,r0 ; r0 set to 0x1AC
-	mov.w r4,@(r0,r14) 
+	mov.w r4,@(r0,r14)
 	add 0xF2,r0 ; r0 set to 0x19E
-	mov.b r4,@(r0,r14) 
+	mov.b r4,@(r0,r14)
 	add 0x26,r0 ; r0 set to 0x1C4
 	mov.l @(ptr_CE31C90_to_extern_8C2896B0,pc),r3 ; r3 set to 0x8C2896B0
-	mov.l r4,@(r0,r14) 
-	mov.b @(0x02,r14),r0 
+	mov.l r4,@(r0,r14)
+	mov.b @(0x02,r14),r0
 	mov.l @r3,r2 ; r2 ??
 	extu.b r0,r0 ; r0 set to 0xC4
 	shll r0 ; r0 set to 0x188
 	add 0x7C,r2
 	mov.w @(r0,r2),r1
 	add 0x01,r1
-	mov.w r1,@(r0,r2) 
+	mov.w r1,@(r0,r2)
 	mov.l @(ptr_CE31C94_to_fn_extern_8C056DE4,pc),r2 ; r2 set to 0x8C056DE4
 	jsr @r2
 	mov r14,r4 ; r4 ??? bc r14 is ???
@@ -4312,7 +4312,7 @@ loc_CE31B48:
 	mov 0x15,r5 ; r5 set to 0x15
 	mov.l @(ptr_CE31C98_to_fn_extern_8C034E8C,pc),r3 ; r3 set to 0x8C034E8C
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
-	xor 0x01,r0 
+	xor 0x01,r0
 	mov r0,r6
 	add 0x08,r6
 	jsr @r3
@@ -4323,44 +4323,44 @@ loc_CE31B48:
 	mov 0x5C,r0 ; r0 set to 0x5C
 	fmov.s @(r0,r14),fr3 ; r3 ??? bc r14 is ???
 	fdiv fr4,fr3
-	fmov.s fr3,@(r0,r14) 
+	fmov.s fr3,@(r0,r14)
 	mov 0x60,r0 ; r0 set to 0x60
 	fmov.s @(r0,r14),fr2 ; r2 ??? bc r14 is ???
 	fdiv fr4,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x68,r0 ; r0 set to 0x68
 	fmov.s @(r0,r14),fr3
 	fdiv fr4,fr3
-	fmov.s fr3,@(r0,r14) 
+	fmov.s fr3,@(r0,r14)
 	mov 0x6C,r0 ; r0 set to 0x6C
 	fmov.s @(r0,r14),fr2
 	fdiv fr4,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x28,r0 ; r0 set to 0x28
-	mov.w r0,@(0x1C,r14) 
-	lds.l @r15+,pr 
+	mov.w r0,@(0x1C,r14)
+	lds.l @r15+,pr
 	mov.l @r15+,r14
 
 loc_CE31BD2:
 	mov.l r14,@-r15
 	mov r4,r14
 	sts.l pr,@-r15
-	mov.w @(0x1C,r14),r0 
+	mov.w @(0x1C,r14),r0
 	add 0xFF,r0 ; r0 set to 0x27
-	mov.w r0,@(0x1C,r14) 
+	mov.w r0,@(0x1C,r14)
 	exts.w r0,r0 ; r0 ??
 	cmp/pl r0
 	bt loc_ce31C00
-	mov.b @(0x06,r14),r0 
+	mov.b @(0x06,r14),r0
 	mov r14,r4
 	mov.l @(ptr_CE31C98_to_fn_extern_8C034E8C,pc),r3 ; r3 set to 0x8C034E8C, r3 set to 0x8C034E8C
 	mov 0x15,r5 ; r5 set to 0x15, r5 set to 0x15
 	add 0x01,r0
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x06,r14)
 	mov.w @(loc_ce31C82,pc),r0 ; r0 set to 0x1A3, r0 set to 0x1A3
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???, r0 ??? bc r14 is ???
-	xor 0x01,r0 
+	xor 0x01,r0
 	mov r0,r6
 	add 0x0C,r6
 	jmp @r3
@@ -4368,70 +4368,70 @@ loc_CE31BD2:
 
 ;==============================================
 loc_ce31C00:
-	mov.l @(0x9C,PC),r2 
-	jsr @r2 
-	mov r14,r4 
-	mov 0x5C,r1 
-	add r14,r1 
-	mov 0x34,r0 
-	fmov @r1,fr3 
-	fmov @(r0,r14),fr2 
-	mov 0x68,r1 
-	add r14,r1 
-	fadd fr3,fr2 
+	mov.l @(0x9C,PC),r2
+	jsr @r2
+	mov r14,r4
+	mov 0x5C,r1
+	add r14,r1
+	mov 0x34,r0
+	fmov @r1,fr3
+	fmov @(r0,r14),fr2
+	mov 0x68,r1
+	add r14,r1
+	fadd fr3,fr2
 	fmov fr2,@(r0,r14)
-	mov 0x5C,r0 
-	fmov @(r0,r14),fr2 
-	fmov @r1,fr3 
-	mov 0x60,r1 
-	add r14,r1 
-	fadd fr3,fr2 
+	mov 0x5C,r0
+	fmov @(r0,r14),fr2
+	fmov @r1,fr3
+	mov 0x60,r1
+	add r14,r1
+	fadd fr3,fr2
 	fmov fr2,@(r0,r14)
-	mov 0x38,r0 
-	fmov @(r0,r14),fr2 
-	fmov @r1,fr3 
-	mov 0x6C,r1 
-	add r14,r1 
-	fadd fr3,fr2 
+	mov 0x38,r0
+	fmov @(r0,r14),fr2
+	fmov @r1,fr3
+	mov 0x6C,r1
+	add r14,r1
+	fadd fr3,fr2
 	fmov fr2,@(r0,r14)
-	mov 0x60,r0 
-	fmov @(r0,r14),fr2 
-	fmov @r1,fr3 
-	fadd fr3,fr2 
+	mov 0x60,r0
+	fmov @(r0,r14),fr2
+	fmov @r1,fr3
+	fadd fr3,fr2
 	fmov fr2,@(r0,r14)
-	mov.w @(0x42,PC),r0 
-	fmov @(r0,r14),fr3 
-	mov 0x38,r0 
-	fmov @(r0,r14),fr2 
-	fcmp/gt fr3,fr2 
-	bt loc_ce31c5c 
-	mov.w @(0x36,PC),r0 
-	fldi0 fr4 
-	fmov @(r0,r14),fr3 
-	mov 0x38,r0 
+	mov.w @(0x42,PC),r0
+	fmov @(r0,r14),fr3
+	mov 0x38,r0
+	fmov @(r0,r14),fr2
+	fcmp/gt fr3,fr2
+	bt loc_ce31c5c
+	mov.w @(0x36,PC),r0
+	fldi0 fr4
+	fmov @(r0,r14),fr3
+	mov 0x38,r0
 	fmov fr3,@(r0,r14)
-	mov 0x60,r0 
+	mov 0x60,r0
 	fmov fr4,@(r0,r14)
-	mov 0x6C,r0 
+	mov 0x6C,r0
 	fmov fr4,@(r0,r14)
 
 loc_ce31C5C:
-	mov.w @(0x26,PC),r0 
-	mov.b @(r0,r14),r3 
-	tst r3,r3 
-	bt loc_ce31c7c 
-	mov 0x00,r3 
-	mov r14,r4 
+	mov.w @(0x26,PC),r0
+	mov.b @(r0,r14),r3
+	tst r3,r3
+	bt loc_ce31c7c
+	mov 0x00,r3
+	mov r14,r4
 	mov.b r3,@(r0,r14)
-	add 0x62,r0 
-	mov.b @(r0,r14),r0 
-	lds.l @r15+,pr 
-	xor 0x01,r0 
-	mov.l @(0x30,PC),r3 
-	mov r0,r5 
-	add 0x02,r5 
-	jmp @r3 
-	mov.l @r15+,r14 
+	add 0x62,r0
+	mov.b @(r0,r14),r0
+	lds.l @r15+,pr
+	xor 0x01,r0
+	mov.l @(0x30,PC),r3
+	mov r0,r5
+	add 0x02,r5
+	jmp @r3
+	mov.l @r15+,r14
 
 loc_ce31C7C:
 	lds.l @r15+,pr
@@ -4466,52 +4466,52 @@ loc_ce31CA4:
 
 ;==============================================
 loc_ce31CA8:
-	mov.l r14,@-r15 
-	mov 0x5C,r1 
-	mov r4,r14 
-	add r14,r1 
-	mov 0x34,r0 
-	sts.l pr,@-r15 
-	fmov @(r0,r14),fr2 
-	fmov @r1,fr3 
-	mov 0x68,r1 
-	add r14,r1 
-	fadd fr3,fr2 
+	mov.l r14,@-r15
+	mov 0x5C,r1
+	mov r4,r14
+	add r14,r1
+	mov 0x34,r0
+	sts.l pr,@-r15
+	fmov @(r0,r14),fr2
+	fmov @r1,fr3
+	mov 0x68,r1
+	add r14,r1
+	fadd fr3,fr2
 	fmov fr2,@(r0,r14)
-	mov 0x5C,r0 
-	fmov @r1,fr3 
-	mov 0x60,r1 
-	fmov @(r0,r14),fr2 
-	add r14,r1 
-	fadd fr3,fr2 
+	mov 0x5C,r0
+	fmov @r1,fr3
+	mov 0x60,r1
+	fmov @(r0,r14),fr2
+	add r14,r1
+	fadd fr3,fr2
 	fmov fr2,@(r0,r14)
-	mov 0x38,r0 
-	fmov @(r0,r14),fr2 
-	fmov @r1,fr3 
-	mov 0x6C,r1 
-	add r14,r1 
-	fadd fr3,fr2 
+	mov 0x38,r0
+	fmov @(r0,r14),fr2
+	fmov @r1,fr3
+	mov 0x6C,r1
+	add r14,r1
+	fadd fr3,fr2
 	fmov fr2,@(r0,r14)
-	mov 0x60,r0 
-	fmov @(r0,r14),fr2 
-	fmov @r1,fr3 
-	fadd fr3,fr2 
+	mov 0x60,r0
+	fmov @(r0,r14),fr2
+	fmov @r1,fr3
+	fadd fr3,fr2
 	fmov fr2,@(r0,r14)
-	mov.w @(0xFC,PC),r0 
-	fmov @(r0,r14),fr3 
-	mov 0x38,r0 
-	fmov @(r0,r14),fr2 
-	fcmp/gt fr3,fr2 
-	bt.s loc_ce31d06 
-	mov r14,r4 
-	mov.w @(0xEE,PC),r0 
-	fldi0 fr4 
-	fmov @(r0,r14),fr3 
-	mov 0x38,r0 
+	mov.w @(0xFC,PC),r0
+	fmov @(r0,r14),fr3
+	mov 0x38,r0
+	fmov @(r0,r14),fr2
+	fcmp/gt fr3,fr2
+	bt.s loc_ce31d06
+	mov r14,r4
+	mov.w @(0xEE,PC),r0
+	fldi0 fr4
+	fmov @(r0,r14),fr3
+	mov 0x38,r0
 	fmov fr3,@(r0,r14)
-	mov 0x60,r0 
+	mov 0x60,r0
 	fmov fr4,@(r0,r14)
-	mov 0x6C,r0 
+	mov 0x6C,r0
 	fmov fr4,@(r0,r14)
 
 loc_ce31D06:
@@ -4537,17 +4537,17 @@ loc_CE31D22:
 	mov.l r14,@-r15
 	mov r4,r14
 	sts.l pr,@-r15
-	mov.b @(0x06,r14),r0 
+	mov.b @(0x06,r14),r0
 	tst r0,r0
 	bf loc_CE31D42
-	mov.b @(0x06,r14),r0 
+	mov.b @(0x06,r14),r0
 	mov r14,r4
 	mov.l @(ptr_CE31DF4_to_fn_extern_8C034E8C,pc),r3 ; r3 set to 0x8C034E8C
 	mov 0x07,r6 ; r6 set to 0x07
 	add 0x01,r0
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x06,r14)
 	mov 0x14,r5 ; r5 set to 0x14
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	jmp @r3
 	mov.l @r15+,r14
 
@@ -4558,15 +4558,15 @@ loc_CE31D42:
 	exts.b r0,r0
 	cmp/pz r0
 	bt loc_CE31D58
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.l @(ptr_CE31DF8_to_fn_extern_8C051648,pc),r3 ; r3 set to 0x8C051648
 	mov r14,r4
 	jmp @r3
 	mov.l @r15+,r14
 
 loc_CE31D58:
-	lds.l @r15+,pr 
-	rts 
+	lds.l @r15+,pr
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
@@ -4574,7 +4574,7 @@ loc_CE31D5E:
 	mov r4,r3
 	mov.l @(ptr_CE31DFC_to_ptr_CE32910_to_loc_CE31D70,pc),r1 ; r1 set to 0xCE32910
 	mov.l r4,@-r15
-	mov.b @(0x06,r3),r0 
+	mov.b @(0x06,r3),r0
 	extu.b r0,r0
 	shll2 r0
 	mov.l @(r0,r1),r3
@@ -4588,25 +4588,25 @@ loc_CE31D70:
 	mov.l r13,@-r15
 	mov 0x00,r13 ; r13 set to 0x00
 	sts.l pr,@-r15
-	mov.b @(0x06,r14),r0 
+	mov.b @(0x06,r14),r0
 	mov r13,r5 ; r5 set to 0x00
 	mov.l @(ptr_CE31E00_to_fn_extern_8C035162,pc),r3 ; r3 set to 0x8C035162
 	add 0x01,r0
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x06,r14)
 	mov 0x5C,r0 ; r0 set to 0x5C
-	fmov.s fr4,@(r0,r14) 
+	fmov.s fr4,@(r0,r14)
 	mov 0x60,r0 ; r0 set to 0x60
-	fmov.s fr4,@(r0,r14) 
+	fmov.s fr4,@(r0,r14)
 	mov 0x68,r0 ; r0 set to 0x68
-	fmov.s fr4,@(r0,r14) 
+	fmov.s fr4,@(r0,r14)
 	mov 0x6C,r0 ; r0 set to 0x6C
-	fmov.s fr4,@(r0,r14) 
+	fmov.s fr4,@(r0,r14)
 	mov.w @(loc_ce31DE8,pc),r0 ; r0 set to 0x1F9
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 	mov.w @(loc_ce31DE6,pc),r0 ; r0 set to 0x41C
 	fmov.s @(r0,r14),fr3 ; r3 ??? bc r14 is ???
 	mov 0x38,r0 ; r0 set to 0x38
-	fmov.s fr3,@(r0,r14) 
+	fmov.s fr3,@(r0,r14)
 	jsr @r3
 	mov r14,r4
 	mov.l @(ptr_CE31E04_to_fn_extern_8C05218A,pc),r2 ; r2 set to 0x8C05218A
@@ -4619,15 +4619,15 @@ loc_CE31D70:
 	mov 0x3C,r2 ; r2 set to 0x3C
 	mov.l @(ptr_CE31E0C_to_extern_8C2896B0,pc),r3 ; r3 set to 0x8C2896B0
 	mov 0x08,r6 ; r6 set to 0x08
-	mov.b r2,@(r0,r14) 
+	mov.b r2,@(r0,r14)
 	add 0x0B,r0 ; r0 set to 0x1AC
-	mov.w r13,@(r0,r14) 
+	mov.w r13,@(r0,r14)
 	add 0xF2,r0 ; r0 set to 0x19E
-	mov.b r13,@(r0,r14) 
+	mov.b r13,@(r0,r14)
 	add 0x26,r0 ; r0 set to 0x1C4
-	mov.l r13,@(r0,r14) 
+	mov.l r13,@(r0,r14)
 	mov 0x14,r5 ; r5 set to 0x14
-	mov.b @(0x02,r14),r0 
+	mov.b @(0x02,r14),r0
 	mov r14,r4
 	mov.l @r3,r2 ; r2 ??
 	extu.b r0,r0 ; r0 set to 0xC4
@@ -4635,8 +4635,8 @@ loc_CE31D70:
 	add 0x7C,r2
 	mov.w @(r0,r2),r1
 	add 0x01,r1
-	mov.w r1,@(r0,r2) 
-	lds.l @r15+,pr 
+	mov.w r1,@(r0,r2)
+	lds.l @r15+,pr
 	mov.l @(ptr_CE31DF4_to_fn_extern_8C034E8C,pc),r2 ; r2 set to 0x8C034E8C
 	mov.l @r15+,r13 ; r13 ??? bc r15 is ???
 	jmp @r2
@@ -4685,45 +4685,45 @@ loc_CE31E10:
 	jsr @r3
 	mov r14,r4
 	add 0x0C,r15
-	lds.l @r15+,pr 
-	rts 
+	lds.l @r15+,pr
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
 loc_ce31E30:
-	mov.w @(0xD6,PC),r0 
-	mov.b @(r0,r14),r2 
-	tst r2,r2 
-	bt loc_ce31e5a 
-	mov 0x00,r3 
-	mov r3,r5 
+	mov.w @(0xD6,PC),r0
+	mov.b @(r0,r14),r2
+	tst r2,r2
+	bt loc_ce31e5a
+	mov 0x00,r3
+	mov r3,r5
 	mov.b r3,@(r0,r14)
-	mov.l @(0xE4,PC),r3 
-	jsr @r3 
-	mov r14,r4 
-	mova @(0xE0,PC),r0 
-	mov.l @(0xE8,PC),r3 
-	fmov @r0,fr3 
-	mova @(0xE0,PC),r0 
-	mov r15,r5 
-	fmov fr3,@r15 
-	fmov @r0,fr3 
-	mov 0x04,r0 
+	mov.l @(0xE4,PC),r3
+	jsr @r3
+	mov r14,r4
+	mova @(0xE0,PC),r0
+	mov.l @(0xE8,PC),r3
+	fmov @r0,fr3
+	mova @(0xE0,PC),r0
+	mov r15,r5
+	fmov fr3,@r15
+	fmov @r0,fr3
+	mov 0x04,r0
 	fmov fr3,@(r0,r15)
-	jsr @r3 
-	mov r14,r4 
+	jsr @r3
+	mov r14,r4
 
 loc_ce31E5A:
-	mov.w @(0xAE,PC),r0 
-	mov.b @(r0,r14),r2 
-	tst r2,r2 
-	bt loc_ce31e6e 
-	mov 0x00,r3 
+	mov.w @(0xAE,PC),r0
+	mov.b @(r0,r14),r2
+	tst r2,r2
+	bt loc_ce31e6e
+	mov 0x00,r3
 	mov.b r3,@(r0,r14)
-	mov 0x05,r5 
-	mov.l @(0xC8,PC),r3 
-	jsr @r3 
-	mov r14,r4 
+	mov 0x05,r5
+	mov.l @(0xC8,PC),r3
+	jsr @r3
+	mov r14,r4
 
 loc_ce31E6E:
 	add 0x0C,r15
@@ -4736,7 +4736,7 @@ loc_CE31E76:
 	add 0xFC,r15
 	mov.l r4,@r15
 	mov r4,r0
-	nop 
+	nop
 	mov.w @(loc_ce31F0E,pc),r1 ; r1 set to 0x1F9
 	mov.l @(ptr_CE31F38_to_ptr_CE32918_to_loc_CE31E8E,pc),r2 ; r2 set to 0xCE32918
 	mov.b @(r0,r1),r0
@@ -4759,7 +4759,7 @@ loc_CE31E8E:
 	extu.w r3,r3
 	and r2,r3
 	shad r1, r3
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	extu.b r3,r3
 	tst r3,r3
 	bt loc_CE31EFE
@@ -4770,7 +4770,7 @@ loc_CE31E8E:
 	mov.w @(loc_ce31F16,pc),r0 ; r0 set to 0x1A3
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	extu.b r0,r0
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bf loc_CE31ECE
 	mov.l @(ptr_CE31F3C_to_fn_extern_8C045790,pc),r2 ; r2 set to 0x8C045790
 	jsr @r2
@@ -4785,12 +4785,12 @@ loc_CE31ECE:
 	mov.w @(loc_ce31F14,pc),r0 ; r0 set to 0x1FE
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	extu.b r0,r0
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bf loc_CE31EFE
 	mov.w @(loc_ce31F16,pc),r0 ; r0 set to 0x1A3
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	extu.b r0,r0
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bf loc_CE31EFE
 	mov.l @(ptr_CE31F3C_to_fn_extern_8C045790,pc),r2 ; r2 set to 0x8C045790
 	jsr @r2
@@ -4802,23 +4802,23 @@ loc_CE31ECE:
 
 loc_CE31EF0:
 	mov.w @(loc_ce31F18,pc),r0 ; r0 set to 0x1F7, r0 set to 0x1F7
-	mov.b r2,@(r0,r14) 
+	mov.b r2,@(r0,r14)
 	mov r4,r0 ; r0 ??? bc r4 is ???, r0 ??? bc r4 is ???
-	nop 
-	lds.l @r15+,pr 
-	rts 
+	nop
+	lds.l @r15+,pr
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
 loc_CE31EFE:
 	mov 0x00,r0 ; r0 set to 0x00
-	lds.l @r15+,pr 
-	rts 
+	lds.l @r15+,pr
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
 loc_CE31F06:
-	rts 
+	rts
 	mov 0x00,r0
 
 ;----------------------------------------------
@@ -4872,7 +4872,7 @@ loc_CE31F40:
 	extu.w r3,r3
 	and r2,r3
 	shad r1, r3
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	extu.b r3,r3
 	tst r3,r3
 	bt loc_CE31F98
@@ -4883,7 +4883,7 @@ loc_CE31F40:
 	mov.w @(loc_ce31FBE,pc),r0 ; r0 set to 0x1A3
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	extu.b r0,r0
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bf loc_CE31F98
 	mova @(loc_ce31FC4,pc),r0  ; r0 set to 0xCE31FC4
 	fmov.s @r0,fr3
@@ -4899,30 +4899,30 @@ loc_CE31F40:
 	mov r0,r4 ; r4 set to 0x38
 	mov.w @(loc_ce31FC0,pc),r0 ; r0 set to 0x1F7
 	mov 0x02,r2 ; r2 set to 0x02
-	mov.b r2,@(r0,r14) 
+	mov.b r2,@(r0,r14)
 	mov r4,r0 ; r0 set to 0x38
-	nop 
-	lds.l @r15+,pr 
-	rts 
+	nop
+	lds.l @r15+,pr
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
 loc_CE31F98:
 	mov 0x00,r0 ; r0 set to 0x00
-	lds.l @r15+,pr 
-	rts 
+	lds.l @r15+,pr
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
 loc_CE31FA0:
 	mov.l r4,@-r15
 	mov r4,r0
-	nop 
+	nop
 	mov.w @(loc_ce31FC0,pc),r1 ; r1 set to 0x1F7
 	mov.l @(ptr_CE31FCC_to_ptr_CE32928_to_loc_ce31FD0,pc),r2 ; r2 set to 0xCE32928
 	mov.b @(r0,r1),r0
 	extu.b r0,r0
-	and 0x3F,r0 
+	and 0x3F,r0
 	shll2 r0
 	mov.l @(r0,r2),r3
 	jmp @r3
@@ -4978,43 +4978,43 @@ loc_ce31FD0:
 	fmov fr3,@(r0,r3
 
 loc_ce32004:
-	mov.w @(0xA6,PC),r0 
-	mov.w @(0xA6,PC),r3 
-	mov.l @(r0,r14),r4 
-	mov 0x00,r0 
-	mov.l @(0xB0,PC),r2 
+	mov.w @(0xA6,PC),r0
+	mov.w @(0xA6,PC),r3
+	mov.l @(r0,r14),r4
+	mov 0x00,r0
+	mov.l @(0xB0,PC),r2
 	mov.l r4,@(0x8,r15)
-	add r3,r4 
-	mov.l @r4,r1 
-	and r2,r1 
-	or r0,r1 
-	tst r1,r1 
-	bt loc_ce32028 
-	mov.w @(0x8E,PC),r0 
-	mov.l @(r0,r14),r3 
-	mova @(0xA0,PC),r0 
-	fmov @r0,fr3 
-	mov 0x38,r0 
+	add r3,r4
+	mov.l @r4,r1
+	and r2,r1
+	or r0,r1
+	tst r1,r1
+	bt loc_ce32028
+	mov.w @(0x8E,PC),r0
+	mov.l @(r0,r14),r3
+	mova @(0xA0,PC),r0
+	fmov @r0,fr3
+	mov 0x38,r0
 	fmov fr3,@(r0,r3)
 
 loc_ce32028:
-	mov.w @(0x82,PC),r0 
-	mov.w @(0x82,PC),r3 
-	mov.l @(r0,r14),r4 
-	mov 0x00,r0 
-	mov.l @(0x94,PC),r2 
+	mov.w @(0x82,PC),r0
+	mov.w @(0x82,PC),r3
+	mov.l @(r0,r14),r4
+	mov 0x00,r0
+	mov.l @(0x94,PC),r2
 	mov.l r4,@(0x4,r15)
-	add r3,r4 
-	mov.l @r4,r1 
-	and r2,r1 
-	or r0,r1 
-	tst r1,r1 
-	bt loc_ce3204c 
-	mov.w @(0x6A,PC),r0 
-	mov.l @(r0,r14),r3 
-	mova @(0x84,PC),r0 
-	fmov @r0,fr3 
-	mov 0x38,r0 
+	add r3,r4
+	mov.l @r4,r1
+	and r2,r1
+	or r0,r1
+	tst r1,r1
+	bt loc_ce3204c
+	mov.w @(0x6A,PC),r0
+	mov.l @(r0,r14),r3
+	mova @(0x84,PC),r0
+	fmov @r0,fr3
+	mov 0x38,r0
 	fmov fr3,@(r0,r3)
 
 loc_ce3204C:
@@ -5161,31 +5161,31 @@ loc_ce32126:
 	fmov fr4,@(r0,r3)
 
 loc_ce3214A:
-	mov.w @(0xBA,PC),r0 
-	mov.w @(0xBA,PC),r3 
-	mov.l @(r0,r14),r4 
-	mov 0x00,r0 
-	mov.l @(0xD0,PC),r2 
+	mov.w @(0xBA,PC),r0
+	mov.w @(0xBA,PC),r3
+	mov.l @(r0,r14),r4
+	mov 0x00,r0
+	mov.l @(0xD0,PC),r2
 	mov.l r4,@(0xC,r15)
-	add r3,r4 
-	mov.l @r4,r1 
-	and r2,r1 
-	or r0,r1 
-	tst r1,r1 
-	bt loc_ce3216e 
-	mov.w @(0xA2,PC),r0 
-	mov.l @(r0,r14),r3 
-	mova @(0xC0,PC),r0 
-	fmov @r0,fr3 
-	mov 0x38,r0 
+	add r3,r4
+	mov.l @r4,r1
+	and r2,r1
+	or r0,r1
+	tst r1,r1
+	bt loc_ce3216e
+	mov.w @(0xA2,PC),r0
+	mov.l @(r0,r14),r3
+	mova @(0xC0,PC),r0
+	fmov @r0,fr3
+	mov 0x38,r0
 	fmov fr3,@(r0,r3)
 
 loc_ce3216E:
-	mov.w @(0x96,PC),r0 
-	mov.w @(0x96,PC),r3 
-	mov.l @(r0,r14),r4 
-	mov 0x00,r0 
-	mov.l @(0xB4,PC),r2 
+	mov.w @(0x96,PC),r0
+	mov.w @(0x96,PC),r3
+	mov.l @(r0,r14),r4
+	mov 0x00,r0
+	mov.l @(0xB4,PC),r2
 	mov.l r4,@(0x8,r15)
 	add r3,r4
 	mov.l @r4,r1
@@ -5193,42 +5193,42 @@ loc_ce3216E:
 	or r0,r1
 	tst r1,r1
 	bt loc_ce3218e
-	mov.w @(0x7E,PC),r0 
-	mov.l @(r0,r14),r3 
-	mov 0x38,r0 
+	mov.w @(0x7E,PC),r0
+	mov.l @(r0,r14),r3
+	mov 0x38,r0
 	fmov fr4,@(r0,r3)
 
 loc_ce3218E:
-	mova @(0xA0,PC),r0 
-	mov.w @(0x76,PC),r3 
-	fmov @r0,fr4 
-	mov.w @(0x70,PC),r0 
-	mov.l @(0x9C,PC),r2 
-	mov.l @(r0,r14),r4 
+	mova @(0xA0,PC),r0
+	mov.w @(0x76,PC),r3
+	fmov @r0,fr4
+	mov.w @(0x70,PC),r0
+	mov.l @(0x9C,PC),r2
+	mov.l @(r0,r14),r4
 	mov.l r4,@(0x4,r15)
-	add r3,r4 
-	mov.l @(0x4,r4),r1 
-	and r2,r1 
-	or r13,r1 
-	tst r1,r1 
-	bt loc_ce321b0 
-	mov.w @(0x5C,PC),r0 
-	mov.l @(r0,r14),r1 
-	mov 0x38,r0 
+	add r3,r4
+	mov.l @(0x4,r4),r1
+	and r2,r1
+	or r13,r1
+	tst r1,r1
+	bt loc_ce321b0
+	mov.w @(0x5C,PC),r0
+	mov.l @(r0,r14),r1
+	mov 0x38,r0
 	fmov fr4,@(r0,r1)
 
 loc_ce321B0:
-	mov.w @(0x54,PC),r0 
-	mov.w @(0x54,PC),r3 
-	mov.l @(r0,r14),r4 
-	mov.l r4,@r15 
-	add r3,r4 
-	mov.l @r4,r0 
-	tst 0x80,r0 
-	bt loc_ce321c8 
-	mov.w @(0x44,PC),r0 
-	mov.l @(r0,r14),r1 
-	mov 0x38,r0 
+	mov.w @(0x54,PC),r0
+	mov.w @(0x54,PC),r3
+	mov.l @(r0,r14),r4
+	mov.l r4,@r15
+	add r3,r4
+	mov.l @r4,r0
+	tst 0x80,r0
+	bt loc_ce321c8
+	mov.w @(0x44,PC),r0
+	mov.l @(r0,r14),r1
+	mov 0x38,r0
 	fmov fr4,@(r0,r1)
 
 loc_ce321C8:
@@ -5323,22 +5323,22 @@ loc_CE3224C:
 	fmov.s fr3,@r15
 	fmov.s @r0,fr3
 	mov 0x04,r0 ; r0 set to 0x04
-	fmov.s fr3,@(r0,r15) 
+	fmov.s fr3,@(r0,r15)
 	jsr @r3
 	mov r14,r4
 	mov.w @(loc_ce32338,pc),r0 ; r0 set to 0x1A0
 	mov 0x0A,r2 ; r2 set to 0x0A
 	fldi0 fr4
-	mov.b r2,@(r0,r14) 
+	mov.b r2,@(r0,r14)
 	mov 0x5C,r0 ; r0 set to 0x5C
-	fmov.s fr4,@(r0,r14) 
+	fmov.s fr4,@(r0,r14)
 	mov 0x60,r0 ; r0 set to 0x60
-	fmov.s fr4,@(r0,r14) 
+	fmov.s fr4,@(r0,r14)
 	mov 0x68,r0 ; r0 set to 0x68
-	fmov.s fr4,@(r0,r14) 
+	fmov.s fr4,@(r0,r14)
 	mov 0x6C,r0 ; r0 set to 0x6C
 	mov.l @(ptr_CE32358_to_fn_extern_8C056F2A,pc),r3 ; r3 set to 0x8C056F2A
-	fmov.s fr4,@(r0,r14) 
+	fmov.s fr4,@(r0,r14)
 	jsr @r3
 	mov r14,r4
 	mov.l @(ptr_CE3235C_to_fn_extern_8C034E8C,pc),r2 ; r2 set to 0x8C034E8C
@@ -5350,8 +5350,8 @@ loc_CE3224C:
 	jsr @r3
 	mov r14,r4
 	add 0x0C,r15
-	lds.l @r15+,pr 
-	rts 
+	lds.l @r15+,pr
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
@@ -5360,13 +5360,13 @@ loc_CE322A8:
 	mov 0x01,r3 ; r3 set to 0x01
 	mov.l r14,@-r15
 	mov r4,r14
-	mov.b r3,@(r0,r14) 
+	mov.b r3,@(r0,r14)
 	add 0x0D,r0 ; r0 set to 0x1F7
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	mov r14,r4
 	mov.l @(ptr_CE32364_to_ptr_CE32934_to_loc_CE322C6,pc),r1 ; r1 set to 0xCE32934
 	extu.b r0,r0
-	and 0x3F,r0 
+	and 0x3F,r0
 	shll2 r0
 	mov.l @(r0,r1),r3 ; r3 ??
 	jmp @r3
@@ -5382,7 +5382,7 @@ loc_CE322C6:
 	exts.b r0,r0
 	cmp/pz r0
 	bt loc_ce322E4
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.l @(ptr_CE3236C_to_fn_extern_8C051648,pc),r3 ; r3 set to 0x8C051648
 	mov r14,r4
 	mov.l @r15+,r13
@@ -5391,43 +5391,43 @@ loc_CE322C6:
 
 ;==============================================
 loc_ce322E4:
-	mov.w @(0x54,PC),r0 
-	mov.b @(r0,r14),r2 
-	tst r2,r2 
-	bt loc_ce32330 
-	mov 0x00,r3 
+	mov.w @(0x54,PC),r0
+	mov.b @(r0,r14),r2
+	tst r2,r2
+	bt loc_ce32330
+	mov 0x00,r3
 	mov.b r3,@(r0,r14)
-	mov 0x04,r3 
-	mov.w @(0x48,PC),r0 
-	mov 0x00,r6 
-	mov 0x02,r2 
-	mov r6,r5 
-	mov.l @(r0,r14),r13 
-	add 0xEC,r0 
+	mov 0x04,r3
+	mov.w @(0x48,PC),r0
+	mov 0x00,r6
+	mov 0x02,r2
+	mov r6,r5
+	mov.l @(r0,r14),r13
+	add 0xEC,r0
 	mov.l r14,@(r0,r13)
-	add 0x42,r0 
+	add 0x42,r0
 	mov.b r3,@(r0,r13)
-	add 0x03,r0 
-	mov.l @(0x40,PC),r3 
+	add 0x03,r0
+	mov.l @(0x40,PC),r3
 	mov.b r2,@(r0,r13)
-	jsr @r3 
-	mov r14,r4 
-	mov.w @(0x2E,PC),r0 
-	mov 0x20,r2 
-	mov.w @(0x2C,PC),r1 
-	mov r2,r5 
+	jsr @r3
+	mov r14,r4
+	mov.w @(0x2E,PC),r0
+	mov 0x20,r2
+	mov.w @(0x2C,PC),r1
+	mov r2,r5
 	mov.b r2,@(r0,r13)
-	add 0x31,r0 
-	mov.b @(r0,r14),r0 
-	add r13,r1 
-	mov.l @(0x50,PC),r3 
-	xor 0x01,r0 
-	mov.b r0,@r1 
-	jsr @r3 
-	mov r14,r4 
-	mov.w @(0x18,PC),r0 
-	fmov @(r0,r14),fr3 
-	mov 0x38,r0 
+	add 0x31,r0
+	mov.b @(r0,r14),r0
+	add r13,r1
+	mov.l @(0x50,PC),r3
+	xor 0x01,r0
+	mov.b r0,@r1
+	jsr @r3
+	mov r14,r4
+	mov.w @(0x18,PC),r0
+	fmov @(r0,r14),fr3
+	mov 0x38,r0
 	fmov fr3,@(r0,r14)
 
 loc_ce32330:
@@ -5478,98 +5478,98 @@ loc_ce32370:
 
 ;==============================================
 loc_ce32374:
-	mov.l r14,@-r15 
-	mov.l r13,@-r15 
-	sts.l pr,@-r15 
-	add 0xF4,r15 
-	mov r4,r14 
-	mov.b @(0x6,r14),r0 
-	tst r0,r0 
-	bf loc_ce32398 
-	mov.w @(0x11C,PC),r0 
-	mov.b @(r0,r14),r3 
-	tst r3,r3 
-	bt loc_ce32398 
-	mov.b @(0x6,r14),r0 
-	mov.l @(0x120,PC),r3 
-	add 0x01,r0 
+	mov.l r14,@-r15
+	mov.l r13,@-r15
+	sts.l pr,@-r15
+	add 0xF4,r15
+	mov r4,r14
+	mov.b @(0x6,r14),r0
+	tst r0,r0
+	bf loc_ce32398
+	mov.w @(0x11C,PC),r0
+	mov.b @(r0,r14),r3
+	tst r3,r3
+	bt loc_ce32398
+	mov.b @(0x6,r14),r0
+	mov.l @(0x120,PC),r3
+	add 0x01,r0
 	mov.b r0,@(0x6,r14)
-	jsr @r3 
-	mov r14,r4 
+	jsr @r3
+	mov r14,r4
 
 loc_ce32398:
-	mov.w @(0x108,PC),r0 
-	mov.b @(r0,r14),r2 
-	cmp/pz r2 
-	bt loc_ce32422 
-	mov.b @(r0,r14),r2 
-	mov 0x0F,r3 
-	mov 0x00,r6 
-	and r3,r2 
-	mov r6,r5 
+	mov.w @(0x108,PC),r0
+	mov.b @(r0,r14),r2
+	cmp/pz r2
+	bt loc_ce32422
+	mov.b @(r0,r14),r2
+	mov 0x0F,r3
+	mov 0x00,r6
+	and r3,r2
+	mov r6,r5
 	mov.b r2,@(r0,r14)
-	mov 0x01,r2 
-	mov.w @(0xF4,PC),r0 
-	mov 0x02,r1 
-	mov.l @(r0,r14),r13 
-	add 0xEC,r0 
+	mov 0x01,r2
+	mov.w @(0xF4,PC),r0
+	mov 0x02,r1
+	mov.l @(r0,r14),r13
+	add 0xEC,r0
 	mov.l r14,@(r0,r13)
-	add 0x42,r0 
+	add 0x42,r0
 	mov.b r2,@(r0,r13)
-	add 0x03,r0 
-	mov.l @(0xF4,PC),r2 
+	add 0x03,r0
+	mov.l @(0xF4,PC),r2
 	mov.b r1,@(r0,r13)
-	jsr @r2 
-	mov r14,r4 
-	mov.w @(0xDE,PC),r0 
-	mov 0x21,r3 
+	jsr @r2
+	mov r14,r4
+	mov.w @(0xDE,PC),r0
+	mov 0x21,r3
 	mov.b r3,@(r0,r13)
-	add 0x31,r0 
-	mov.b @(r0,r14),r2 
+	add 0x31,r0
+	mov.b @(r0,r14),r2
 	mov.b r2,@(r0,r13)
-	mova @(0xE4,PC),r0 
-	fmov @r0,fr3 
-	mov 0x38,r0 
-	fmov @(r0,r14),fr2 
-	mov 0x04,r0 
-	fadd fr3,fr2 
+	mova @(0xE4,PC),r0
+	fmov @r0,fr3
+	mov 0x38,r0
+	fmov @(r0,r14),fr2
+	mov 0x04,r0
+	fadd fr3,fr2
 	fmov fr2,@(r0,r15)
-	mov.w @(0xC6,PC),r0 
-	mov.w @(r0,r14),r3 
-	tst r3,r3 
-	bf loc_ce323ee 
-	mova @(0xD0,PC),r0 
-	bra loc_ce323f2 
-	fmov @r0,fr2 
+	mov.w @(0xC6,PC),r0
+	mov.w @(r0,r14),r3
+	tst r3,r3
+	bf loc_ce323ee
+	mova @(0xD0,PC),r0
+	bra loc_ce323f2
+	fmov @r0,fr2
 
 loc_ce323EE:
 	mova @(0xD0,PC),r0
 	fmov @r0,fr2
 
 loc_ce323F2:
-	mov 0x34,r0 
-	fmov fr2,@r15 
-	fmov @(r0,r14),fr3 
-	mov 0x3C,r0 
-	mov.l @(0xC8,PC),r3 
-	mov 0x00,r7 
-	fadd fr3,fr2 
-	mov 0x02,r6 
-	fmov fr2,@r15 
-	fmov @(r0,r14),fr3 
-	mov 0x08,r0 
+	mov 0x34,r0
+	fmov fr2,@r15
+	fmov @(r0,r14),fr3
+	mov 0x3C,r0
+	mov.l @(0xC8,PC),r3
+	mov 0x00,r7
+	fadd fr3,fr2
+	mov 0x02,r6
+	fmov fr2,@r15
+	fmov @(r0,r14),fr3
+	mov 0x08,r0
 	fmov fr3,@(r0,r15)
-	mov.w @(0x9C,PC),r0 
-	mov.w @(r0,r14),r5 
-	jsr @r3 
-	mov r15,r4 
-	mov.l @(0xB4,PC),r2 
-	mov 0x01,r5 
-	jsr @r2 
-	mov r14,r4 
-	mov.w @(0x8E,PC),r0 
-	fmov @(r0,r14),fr3 
-	mov 0x38,r0 
+	mov.w @(0x9C,PC),r0
+	mov.w @(r0,r14),r5
+	jsr @r3
+	mov r15,r4
+	mov.l @(0xB4,PC),r2
+	mov 0x01,r5
+	jsr @r2
+	mov r14,r4
+	mov.w @(0x8E,PC),r0
+	fmov @(r0,r14),fr3
+	mov 0x38,r0
 	fmov fr3,@(r0,r14)
 
 loc_ce32422:
@@ -5592,41 +5592,41 @@ loc_ce32434:
 
 ;----------------------------------------------
 loc_ce3243E:
-	mov.w @(0x62,PC),r0 
-	mov.l r14,@-r15 
-	mov r4,r14 
-	mov.l r13,@-r15 
-	sts.l pr,@-r15 
-	mov.b @(r0,r14),r3 
-	tst r3,r3 
-	bt loc_ce32484 
-	mov 0x00,r3 
+	mov.w @(0x62,PC),r0
+	mov.l r14,@-r15
+	mov r4,r14
+	mov.l r13,@-r15
+	sts.l pr,@-r15
+	mov.b @(r0,r14),r3
+	tst r3,r3
+	bt loc_ce32484
+	mov 0x00,r3
 	mov.b r3,@(r0,r14)
-	mov 0x01,r3 
-	mov.w @(0x4E,PC),r0 
-	mov 0x00,r6 
-	mov 0x02,r2 
-	mov r6,r5 
-	mov.l @(r0,r14),r13 
-	add 0xEC,r0 
+	mov 0x01,r3
+	mov.w @(0x4E,PC),r0
+	mov 0x00,r6
+	mov 0x02,r2
+	mov r6,r5
+	mov.l @(r0,r14),r13
+	add 0xEC,r0
 	mov.l r14,@(r0,r13)
-	add 0x42,r0 
+	add 0x42,r0
 	mov.b r3,@(r0,r13)
-	add 0x03,r0 
-	mov.l @(0x48,PC),r3 
+	add 0x03,r0
+	mov.l @(0x48,PC),r3
 	mov.b r2,@(r0,r13)
-	jsr @r3 
-	mov r14,r4 
-	mov.w @(0x34,PC),r0 
-	mov 0x22,r2 
-	mov 0x20,r5 
+	jsr @r3
+	mov r14,r4
+	mov.w @(0x34,PC),r0
+	mov 0x22,r2
+	mov 0x20,r5
 	mov.b r2,@(r0,r13)
-	add 0x31,r0 
-	mov.b @(r0,r14),r3 
+	add 0x31,r0
+	mov.b @(r0,r14),r3
 	mov.b r3,@(r0,r13)
-	mov.l @(0x54,PC),r3 
-	jsr @r3 
-	mov r14,r4 
+	mov.l @(0x54,PC),r3
+	jsr @r3
+	mov r14,r4
 
 loc_ce32484:
 	mov.l @(0x44,PC),r2
@@ -5688,12 +5688,12 @@ loc_CE324D8:
 loc_CE324DC:
 	mov.l r4,@-r15
 	mov r4,r0
-	nop 
+	nop
 	mov.w @(loc_ce325AE,pc),r1 ; r1 set to 0x1F7
 	mov.l @(ptr_CE325BC_to_ptr_CE32940_to_loc_CE324F4,pc),r2 ; r2 set to 0xCE32940
 	mov.b @(r0,r1),r0
 	extu.b r0,r0
-	and 0x3F,r0 
+	and 0x3F,r0
 	shll2 r0
 	mov.l @(r0,r2),r3
 	jmp @r3
@@ -5789,7 +5789,7 @@ loc_ce3256C:
 loc_CE32572:
 	mov 0x00,r5 ; r5 set to 0x00
 	mov r5,r0 ; r0 set to 0x00
-	nop 
+	nop
 	mov.b r0,@(0x05,r4)
 	mov.b r0,@(0x07,r4)
 	mov.b r0,@(0x06,r4)
@@ -5803,7 +5803,7 @@ loc_CE32572:
 	cmp/eq 0x02,r0
 	bt loc_ce325A0
 	bra loc_CE325A8
-	nop 
+	nop
 
 loc_CE32594:
 	mov.w @(loc_ce325B6,pc),r0 ; r0 set to 0x1E9
@@ -5821,7 +5821,7 @@ loc_ce325A0:
 
 loc_CE325A4:
 	mov.w @(loc_ce325B8,pc),r0 ; r0 set to 0x1A3
-	mov.b r5,@(r0,r4) 
+	mov.b r5,@(r0,r4)
 
 loc_CE325A8:
 	mov.l @(ptr_CE325C8_to_fn_extern_8C0530D8,pc),r2 ; r2 set to 0x8C0530D8, r2 set to 0x8C0530D8
@@ -5856,20 +5856,20 @@ ptr_CE325C8_to_fn_extern_8C0530D8:
 loc_CE325CC:
 	mov 0x00,r5 ; r5 set to 0x00
 	mov r5,r0 ; r0 set to 0x00
-	nop 
-	mov.b r0,@(0x05,r4) 
-	mov.b r0,@(0x07,r4) 
-	mov.b r0,@(0x06,r4) 
+	nop
+	mov.b r0,@(0x05,r4)
+	mov.b r0,@(0x07,r4)
+	mov.b r0,@(0x06,r4)
 	mov.w @(loc_ce326FC,pc),r0 ; r0 set to 0x4C9
 	mov.b @(r0,r4),r0 ; r0 ??? bc r4 is ???
-	cmp/eq 0x00,r0 
+	cmp/eq 0x00,r0
 	bt loc_CE325EC
-	cmp/eq 0x01,r0 
+	cmp/eq 0x01,r0
 	bt loc_CE325F4
-	cmp/eq 0x02,r0 
+	cmp/eq 0x02,r0
 	bt loc_ce325FA
 	bra loc_CE32602
-	nop 
+	nop
 
 loc_CE325EC:
 	mov.w @(loc_ce326FE,pc),r0 ; r0 set to 0x1E9
@@ -5888,7 +5888,7 @@ loc_ce325FA:
 
 loc_CE325FE:
 	mov.w @(loc_ce32700,pc),r0 ; r0 set to 0x1A3
-	mov.b r5,@(r0,r4) 
+	mov.b r5,@(r0,r4)
 
 loc_CE32602:
 	mov.l @(ptr_CE32708_to_fn_extern_8C0530D8,pc),r2 ; r2 set to 0x8C0530D8, r2 set to 0x8C0530D8
@@ -5900,7 +5900,7 @@ loc_CE32608:
 	mov r4,r3
 	mov.l @(ptr_CE3270C_to_ptr_CE3294C_to_loc_ce3261A,pc),r1 ; r1 set to 0xCE3294C
 	mov.l r4,@-r15
-	mov.b @(0x06,r3),r0 
+	mov.b @(0x06,r3),r0
 	extu.b r0,r0
 	shll2 r0
 	mov.l @(r0,r1),r3
@@ -5987,45 +5987,45 @@ loc_CE32694:
 	mov 0x68,r1 ; r1 set to 0x68
 	add r14,r1 ; r1 ??? bc r14 is ???
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x5C,r0 ; r0 set to 0x5C
 	fmov.s @(r0,r14),fr2
 	fmov.s @r1,fr3
 	mov 0x60,r1 ; r1 set to 0x60
 	add r14,r1 ; r1 ??? bc r14 is ???
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x38,r0 ; r0 set to 0x38
 	fmov.s @(r0,r14),fr2
 	fmov.s @r1,fr3
 	mov 0x6C,r1 ; r1 set to 0x6C
 	add r14,r1 ; r1 ??? bc r14 is ???
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	mov 0x60,r0 ; r0 set to 0x60
 	fmov.s @(r0,r14),fr2
 	fmov.s @r1,fr3
 	fadd fr3,fr2
-	fmov.s fr2,@(r0,r14) 
+	fmov.s fr2,@(r0,r14)
 	jsr @r3
 	mov r14,r4
 	extu.b r0,r0 ; r0 set to 0x60
 	tst r0,r0
 	bt loc_CE326F6
-	mov.b @(0x06,r14),r0 
+	mov.b @(0x06,r14),r0
 	mov r14,r4
 	mov.l @(ptr_CE32724_to_fn_extern_8C034E8C,pc),r3 ; r3 set to 0x8C034E8C
 	mov 0x06,r6 ; r6 set to 0x06
 	add 0x01,r0 ; r0 set to 0x61
-	mov.b r0,@(0x06,r14) 
+	mov.b r0,@(0x06,r14)
 	mov 0x14,r5 ; r5 set to 0x14
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	jmp @r3
 	mov.l @r15+,r14
 
 loc_CE326F6:
 	lds.l @r15+,pr
-	rts 
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
@@ -6078,15 +6078,15 @@ loc_CE32730:
 	mov 0x00,r5 ; r5 set to 0x00
 	jsr @r3
 	mov r14,r4
-	lds.l @r15+,pr 
+	lds.l @r15+,pr
 	mov.l @(ptr_CE32760_to_fn_extern_8C051854,pc),r2 ; r2 set to 0x8C051854
 	mov r14,r4
 	jmp @r2
 	mov.l @r15+,r14
 
 loc_CE32752:
-	lds.l @r15+,pr 
-	rts 
+	lds.l @r15+,pr
+	rts
 	mov.l @r15+,r14
 
 ;----------------------------------------------
@@ -6148,31 +6148,26 @@ loc_ce327A8:
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;Iceman Special Move Inputs
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-;Ice Avalanche Input
-loc_ce327ac:
+AvalancheInput:
 	#data 0x0003
 	#data 0x0000 0x0000 0x0000
 	#data 0x1000 0x1800 0x0800 0x0060 ;236+K
 
-;Ice Beam
-loc_ce327bc:
+IceBeamInput:
 	#data 0x0003
 	#data 0x1000 0x0001 0x0000
 	#data 0x1000 0x1800 0x0800 0x0300 ;236+P
 
-;Ice Beam Air
-loc_ce327cc:
+AirIceBeamInput:
 	#data 0x0003
 	#data 0x2000 0x0004 0x0000
 	#data 0x1000 0x1800 0x0800 0x0300 ;236+P
 
-;Ice Fist Input
-loc_ce327dc:
+IceFistInput:
 	#data 0x0003
 	#data 0x1000 0x0003 0x0000
 	#data 0x1000 0x1400 0x0400 0x0300 ;214+P
 
-;Super Input
 ArcticAttack_Inp:
 	#data 0x0003
 	#data 0x8100 0x0002 0x0000
@@ -6212,14 +6207,22 @@ loc_ce328B0:
 
 loc_CE328B3:
 	#data 0x04 0x04 0x03 0x04 0x04
+	#align4
+
+;==============================================
+;Special Move Jumps ce328b8
+;==============================================
+Table_SpecialPRG:
+	#data loc_CE313CC ;00 Avalanche
+	#data loc_CE315D4 ;01 Ice Beam
+	#data loc_CE3170C ;02 Arctic Attack
+	#data loc_CE31A7E ;03 Ice Fist
+	#data loc_CE31B06 ;04 Air Ice Beam
+	#data loc_CE31D22 ;05 Taunt
+	#data loc_CE31D5E ;06 Snapback
 
 ;==============================================
 ;State Tables
-;==============================================
-ptr_CE328B8_to_loc_CE313CC:
-	#data loc_CE313CC loc_CE315D4 loc_CE3170C loc_CE31A7E
-	#data loc_CE31B06 loc_CE31D22 loc_CE31D5E
-
 ;==============================================
 ptr_CE328D4_to_loc_CE31414:
 	#data loc_CE31414 loc_ce31506
