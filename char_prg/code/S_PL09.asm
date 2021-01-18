@@ -3621,11 +3621,10 @@ loc_CE31704:
 	rts
 	nop
 
-;----------------------------------------------
-;Arctic attack
+;==============================================
 ArcticAttack_PRG:
 	mov r4,r3
-	mov.l @(ptr_CE317A8_to_ptr_CE328E8_to_loc_ce317AC,pc),r1 ; r1 set to 0xCE328E8
+	mov.l @(ptr_CE317A8_to_ArcticAttack_States,pc),r1 ; r1 set to 0xCE328E8
 	mov.l r4,@-r15
 	mov.b @(0x06,r3),r0
 	extu.b r0,r0
@@ -3634,6 +3633,7 @@ ArcticAttack_PRG:
 	jmp @r3
 	add 0x04,r15
 
+;==============================================
 loc_ce3171E:
 	mov 0x5C,r1
 	add r4,r1
@@ -3714,11 +3714,12 @@ loc_ce317a0:
 	#data extern_8C06C430
 ptr_CE317A4_to_fn_extern_8C051648:
 	#data fn_extern_8C051648
-ptr_CE317A8_to_ptr_CE328E8_to_loc_ce317AC:
-	#data ptr_CE328E8_to_loc_ce317AC
+ptr_CE317A8_to_ArcticAttack_States:
+	#data ArcticAttack_States
 
 ;==============================================
-loc_ce317AC:
+;ce317AC
+Arctic_State0:
 	mov.w @(0x12E,PC),r0
 	mov.l r14,@-r15
 	mov r4,r14
@@ -3826,7 +3827,9 @@ loc_ce31866:
 	lds.l @r15+,pr
 	mov.l @r15+,r14
 
-loc_CE31874:
+;==============================================
+;CE31874
+Arctic_State1:
 	mov.l r14,@-r15
 	sts.l pr,@-r15
 	add 0xF4,r15
@@ -3950,8 +3953,9 @@ loc_CE31930:
 	rts
 	mov.l @r15+,r14
 
-;----------------------------------------------
-loc_CE31938:
+;==============================================
+;CE31938
+Arctic_State2:
 	mov.w @(loc_ce31A10,pc),r0 ; r0 set to 0x3F8
 	mov 0x02,r3 ; r3 set to 0x02
 	mov.l r14,@-r15
@@ -3986,7 +3990,8 @@ loc_CE31966:
 	mov.l @r15+,r14
 
 ;==============================================
-loc_ce31970:
+;ce31970
+Arctic_State3:
 	mov.w @(0x9C,PC),r0
 	mov 0x02,r3
 	mov.l r14,@-r15
@@ -4113,7 +4118,8 @@ loc_ce31A3c:
 	#data extern_8C034F54
 
 ;==============================================
-loc_CE31A40:
+;CE31A40
+Arctic_State4:
 	mov.l r14,@-r15
 	sts.l pr,@-r15
 	mov.l @(ptr_CE31B20_to_fn_extern_8C034DEE,pc),r3 ; r3 set to 0x8C034DEE
@@ -6232,9 +6238,12 @@ ptr_CE328DC_to_loc_CE31618:
 	#data loc_CE31618 loc_CE3169C loc_CE316EA
 
 ;==============================================
-ptr_CE328E8_to_loc_ce317AC:
-	#data loc_ce317AC loc_CE31874 loc_CE31938 loc_ce31970
-	#data loc_CE31A40
+ArcticAttack_States:
+	#data Arctic_State0
+	#data Arctic_State1
+	#data Arctic_State2
+	#data Arctic_State3
+	#data Arctic_State4
 
 ;==============================================
 ptr_CE328FC_to_loc_CE31A90:
