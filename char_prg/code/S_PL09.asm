@@ -898,7 +898,7 @@ loc_CE3054A:
 	jsr @r12
 	mov r14,r4
 	mov.w @(loc_ce305D8,pc),r0 ; r0 set to 0x3F4
-	mov.l @(ptr_CE305E8_to_loc_ce32764,pc),r3 ; r3 set to 0xCE32764
+	mov.l @(ptr_CE305E8_to_Stn_LPChain,pc),r3 ; r3 set to 0xCE32764
 	mov.l r3,@(r0,r14)
 	mov.w @(loc_ce305DA,pc),r0 ; r0 set to 0x1A7
 	bra loc_CE30598
@@ -914,7 +914,7 @@ loc_CE30564:
 	jsr @r12
 	mov r14,r4
 	mov.w @(loc_ce305D8,pc),r0 ; r0 set to 0x3F4
-	mov.l @(ptr_CE305EC_to_loc_ce32768,pc),r3 ; r3 set to 0xCE32768
+	mov.l @(ptr_CE305EC_to_Stn_MPChain,pc),r3 ; r3 set to 0xCE32768
 	mov.l r3,@(r0,r14)
 	bra loc_ce30594
 	nop
@@ -987,12 +987,12 @@ ptr_CE305E0_to_fn_extern_8C052B4C:
 	#data fn_extern_8C052B4C
 ptr_CE305E4_to_extern_8C04223A:
 	#data extern_8C04223A
-ptr_CE305E8_to_loc_ce32764:
-	#data loc_ce32764
-ptr_CE305EC_to_loc_ce32768:
-	#data loc_ce32768
-ptr_CE305F0_to_loc_ce3276C:
-	#data loc_ce3276C
+ptr_CE305E8_to_Stn_LPChain:
+	#data Stn_LPChain
+ptr_CE305EC_to_Stn_MPChain:
+	#data Stn_MPChain
+ptr_CE305F0_to_Stn_HPChain:
+	#data Stn_HPChain
 ptr_CE305F4_to_extern_8C2896B0:
 	#data extern_8C2896B0
 ptr_CE305F8_to_fn_extern_8C034E8C:
@@ -1032,7 +1032,7 @@ loc_CE30622:
 	jsr @r12
 	mov r14,r4
 	mov.w @(loc_ce30714,pc),r0 ; r0 set to 0x3F4
-	mov.l @(ptr_CE30720_to_loc_ce32764,pc),r3 ; r3 set to 0xCE32764
+	mov.l @(ptr_CE30720_to_Stn_LPChain,pc),r3 ; r3 set to 0xCE32764
 	mov.l r3,@(r0,r14)
 	mov.w @(loc_ce30716,pc),r0 ; r0 set to 0x1A7
 	bra loc_CE30664
@@ -1148,7 +1148,7 @@ loc_CE306F4:
 	jsr @r12
 	mov r14,r4
 	mov.w @(loc_ce30714,pc),r0 ; r0 set to 0x3F4
-	mov.l @(ptr_CE30738_to_loc_ce32770,pc),r3 ; r3 set to 0xCE32770
+	mov.l @(ptr_CE30738_to_Stn_LKChain,pc),r3 ; r3 set to 0xCE32770
 	mov.l r3,@(r0,r14)
 	mov.w @(loc_ce30716,pc),r0 ; r0 set to 0x1A7
 	bra loc_CE30776
@@ -1171,20 +1171,20 @@ loc_ce3071A:
 
 ptr_CE3071C_to_extern_8C04223A:
 	#data extern_8C04223A
-ptr_CE30720_to_loc_ce32764:
-	#data loc_ce32764
-ptr_CE30724_to_loc_ce32768:
-	#data loc_ce32768
-ptr_CE30728_to_loc_ce3276C:
-	#data loc_ce3276C
+ptr_CE30720_to_Stn_LPChain:
+	#data Stn_LPChain
+ptr_CE30724_to_Stn_MPChain:
+	#data Stn_MPChain
+ptr_CE30728_to_Stn_HPChain:
+	#data Stn_HPChain
 loc_ce3072c:
 	#data fn_extern_8C06B364
 ptr_CE30730_to_extern_8C2896B0:
 	#data extern_8C2896B0
 ptr_CE30734_to_fn_extern_8C034E8C:
 	#data fn_extern_8C034E8C
-ptr_CE30738_to_loc_ce32770:
-	#data loc_ce32770
+ptr_CE30738_to_Stn_LKChain:
+	#data Stn_LKChain
 
 ;==============================================
 loc_CE3073C:
@@ -1198,7 +1198,7 @@ loc_CE3073C:
 	jsr @r12
 	mov r14,r4
 	mov.w @(loc_ce30868,pc),r0 ; r0 set to 0x3F4
-	mov.l @(ptr_CE30874_to_loc_ce32774,pc),r3 ; r3 set to 0xCE32774
+	mov.l @(ptr_CE30874_to_Stn_MKChain,pc),r3 ; r3 set to 0xCE32774
 	mov.l r3,@(r0,r14)
 	bra loc_ce30772
 	mov 0x01,r2
@@ -1279,7 +1279,7 @@ loc_CE307CC:
 	jsr @r12
 	mov r14,r4
 	mov.w @(loc_ce30868,pc),r0 ; r0 set to 0x3F4
-	mov.l @(ptr_CE30888_to_loc_ce32770,pc),r3 ; r3 set to 0xCE32770
+	mov.l @(ptr_CE30888_to_Stn_LKChain,pc),r3 ; r3 set to 0xCE32770
 	mov.l r3,@(r0,r14)
 	mov.w @(loc_ce3086A,pc),r0 ; r0 set to 0x1A7
 	bra loc_CE30822
@@ -1296,7 +1296,7 @@ loc_CE307E8:
 	jsr @r12
 	mov r14,r4
 	mov.w @(loc_ce30868,pc),r0 ; r0 set to 0x3F4
-	mov.l @(ptr_CE30874_to_loc_ce32774,pc),r3 ; r3 set to 0xCE32774
+	mov.l @(ptr_CE30874_to_Stn_MKChain,pc),r3 ; r3 set to 0xCE32774
 	mov.l r3,@(r0,r14)
 	bra loc_ce3081E
 	mov 0x01,r2
@@ -1375,18 +1375,18 @@ loc_ce30870:
 	#data 0x01FE
 	#align4
 
-ptr_CE30874_to_loc_ce32774:
-	#data loc_ce32774
-ptr_CE30878_to_loc_ce32778:
-	#data loc_ce32778
+ptr_CE30874_to_Stn_MKChain:
+	#data Stn_MKChain
+ptr_CE30878_to_Stn_HKChain:
+	#data Stn_HKChain
 ptr_CE3087C_to_extern_8C2896B0:
 	#data extern_8C2896B0
 ptr_CE30880_to_fn_extern_8C034E8C:
 	#data fn_extern_8C034E8C
 ptr_CE30884_to_extern_8C04223A:
 	#data extern_8C04223A
-ptr_CE30888_to_loc_ce32770:
-	#data loc_ce32770
+ptr_CE30888_to_Stn_LKChain:
+	#data Stn_LKChain
 
 ;==============================================
 loc_CE3088C:
@@ -1426,13 +1426,13 @@ loc_CE308B2:
 	tst r3,r3
 	bf loc_CE308D6
 	mov.w @(loc_ce30974,pc),r0 ; r0 set to 0x3F4
-	mov.l @(ptr_CE30980_to_loc_ce3277C,pc),r3 ; r3 set to 0xCE3277C
+	mov.l @(ptr_CE30980_to_Crc_LPChain,pc),r3 ; r3 set to 0xCE3277C
 	bra loc_CE308DC
 	mov.l r3,@(r0,r14)
 
 loc_CE308D6:
 	mov.w @(loc_ce30974,pc),r0 ; r0 set to 0x3F4
-	mov.l @(ptr_CE30984_to_loc_ce32794,pc),r1 ; r1 set to 0xCE32794
+	mov.l @(ptr_CE30984_to_Air_LPChain,pc),r1 ; r1 set to 0xCE32794
 	mov.l r1,@(r0,r14)
 
 loc_CE308DC:
@@ -1464,13 +1464,13 @@ loc_CE308F0:
 	tst r3,r3
 	bf loc_CE30916
 	mov.w @(loc_ce30974,pc),r0 ; r0 set to 0x3F4
-	mov.l @(ptr_CE3098C_to_loc_ce32780,pc),r3 ; r3 set to 0xCE32780
+	mov.l @(ptr_CE3098C_to_Crc_MPChain,pc),r3 ; r3 set to 0xCE32780
 	bra loc_CE3091C
 	mov.l r3,@(r0,r14)
 
 loc_CE30916:
 	mov.w @(loc_ce30974,pc),r0 ; r0 set to 0x3F4
-	mov.l @(ptr_CE30990_to_loc_ce32798,pc),r1 ; r1 set to 0xCE32798
+	mov.l @(ptr_CE30990_to_Air_MPChain,pc),r1 ; r1 set to 0xCE32798
 	mov.l r1,@(r0,r14)
 
 loc_CE3091C:
@@ -1518,7 +1518,7 @@ loc_CE30958:
 	tst r3,r3
 	bf loc_ce30998
 	mov.w @(loc_ce30974,pc),r0 ; r0 set to 0x3F4, r0 set to 0x3F4
-	mov.l @(ptr_CE30994_to_loc_ce32784,pc),r3 ; r3 set to 0xCE32784, r3 set to 0xCE32784
+	mov.l @(ptr_CE30994_to_Crc_HPChain,pc),r3 ; r3 set to 0xCE32784, r3 set to 0xCE32784
 	bra loc_ce3099E
 	mov.l r3,@(r0,r14)
 
@@ -1541,18 +1541,18 @@ loc_ce3097A:
 
 ptr_CE3097C_to_extern_8C04223A:
 	#data extern_8C04223A
-ptr_CE30980_to_loc_ce3277C:
-	#data loc_ce3277C
-ptr_CE30984_to_loc_ce32794:
-	#data loc_ce32794
+ptr_CE30980_to_Crc_LPChain:
+	#data Crc_LPChain
+ptr_CE30984_to_Air_LPChain:
+	#data Air_LPChain
 ptr_CE30988_to_fn_extern_8C06B364:
 	#data fn_extern_8C06B364
-ptr_CE3098C_to_loc_ce32780:
-	#data loc_ce32780
-ptr_CE30990_to_loc_ce32798:
-	#data loc_ce32798
-ptr_CE30994_to_loc_ce32784:
-	#data loc_ce32784
+ptr_CE3098C_to_Crc_MPChain:
+	#data Crc_MPChain
+ptr_CE30990_to_Air_MPChain:
+	#data Air_MPChain
+ptr_CE30994_to_Crc_HPChain:
+	#data Crc_HPChain
 
 ;==============================================
 loc_ce30998:
@@ -1638,13 +1638,13 @@ loc_CE30A0C:
 	tst r3,r3
 	bf loc_CE30A2C
 	mov.w @(loc_ce30A64,pc),r0 ; r0 set to 0x3F4
-	mov.l @(ptr_CE30A84_to_loc_ce32788,pc),r3 ; r3 set to 0xCE32788
+	mov.l @(ptr_CE30A84_to_Crc_LKChain,pc),r3 ; r3 set to 0xCE32788
 	bra loc_CE30A32
 	mov.l r3,@(r0,r14)
 
 loc_CE30A2C:
 	mov.w @(loc_ce30A64,pc),r0 ; r0 set to 0x3F4
-	mov.l @(ptr_CE30A88_to_loc_ce327A0,pc),r1 ; r1 set to 0xCE327A0
+	mov.l @(ptr_CE30A88_to_Air_LKChain,pc),r1 ; r1 set to 0xCE327A0
 	mov.l r1,@(r0,r14)
 
 loc_CE30A32:
@@ -1667,13 +1667,13 @@ loc_CE30A38:
 	tst r3,r3
 	bf loc_CE30A5A
 	mov.w @(loc_ce30A64,pc),r0 ; r0 set to 0x3F4
-	mov.l @(ptr_CE30A8C_to_loc_ce3278C,pc),r3 ; r3 set to 0xCE3278C
+	mov.l @(ptr_CE30A8C_to_Crc_MKChain,pc),r3 ; r3 set to 0xCE3278C
 	bra loc_CE30A60
 	mov.l r3,@(r0,r14)
 
 loc_CE30A5A:
 	mov.w @(loc_ce30A64,pc),r0 ; r0 set to 0x3F4
-	mov.l @(ptr_CE30A90_to_loc_ce327A4,pc),r1 ; r1 set to 0xCE327A4
+	mov.l @(ptr_CE30A90_to_Air_MKChain,pc),r1 ; r1 set to 0xCE327A4
 	mov.l r1,@(r0,r14)
 
 loc_CE30A60:
@@ -1697,22 +1697,22 @@ loc_ce30A70:
 	#data 0x01FC
 	#align4
 
-ptr_CE30A74_to_loc_ce3279C:
-	#data loc_ce3279C
+ptr_CE30A74_to_Air_HPChain:
+	#data Air_HPChain
 loc_ce30A78:
 	#data extern_8C2896B0
 loc_ce30A7c:
 	#data fn_extern_8C034E8C
 ptr_CE30A80_to_extern_8C04223A:
 	#data extern_8C04223A
-ptr_CE30A84_to_loc_ce32788:
-	#data loc_ce32788
-ptr_CE30A88_to_loc_ce327A0:
-	#data loc_ce327A0
-ptr_CE30A8C_to_loc_ce3278C:
-	#data loc_ce3278C
-ptr_CE30A90_to_loc_ce327A4:
-	#data loc_ce327A4
+ptr_CE30A84_to_Crc_LKChain:
+	#data Crc_LKChain
+ptr_CE30A88_to_Air_LKChain:
+	#data Air_LKChain
+ptr_CE30A8C_to_Crc_MKChain:
+	#data Crc_MKChain
+ptr_CE30A90_to_Air_MKChain:
+	#data Air_MKChain
 
 ;==============================================
 loc_ce30A94:
@@ -1861,10 +1861,10 @@ loc_ce30B6A:
 	#data 0x01FF
 	#align4
 
-ptr_CE30B6C_to_loc_ce32790:
-	#data loc_ce32790
-ptr_CE30B70_to_loc_ce327A8:
-	#data loc_ce327A8
+ptr_CE30B6C_to_Crc_HKChain:
+	#data Crc_HKChain
+ptr_CE30B70_to_Air_HKChain:
+	#data Air_HKChain
 loc_ce30b74:
 	#data extern_8C2896B0
 loc_ce30b78:
@@ -3148,7 +3148,7 @@ PL09_SpecPRG:
 	add 0x04,r15
 
 ;==============================================
-loc_CE313CC:
+Avalanche_PRG:
 	mov r4,r3
 	mov.l @(ptr_CE31410_to_ptr_CE328D4_to_loc_CE31414,pc),r1 ; r1 set to 0xCE328D4
 	mov.l r4,@-r15
@@ -3442,7 +3442,7 @@ loc_ce315CE:
 	mov.l @r15+,r14
 
 ;----------------------------------------------
-loc_CE315D4:
+GroundIceBeam_PRG:
 	mov r4,r3
 	mov.l @(ptr_CE31614_to_ptr_CE328DC_to_loc_CE31618,pc),r1 ; r1 set to 0xCE328DC
 	mov.l r4,@-r15
@@ -3622,8 +3622,8 @@ loc_CE31704:
 	nop
 
 ;----------------------------------------------
-;Arctic attack?
-loc_CE3170C:
+;Arctic attack
+ArcticAttack_PRG:
 	mov r4,r3
 	mov.l @(ptr_CE317A8_to_ptr_CE328E8_to_loc_ce317AC,pc),r1 ; r1 set to 0xCE328E8
 	mov.l r4,@-r15
@@ -4151,7 +4151,7 @@ loc_CE31A78:
 	mov.l @r15+,r14
 
 ;----------------------------------------------
-loc_CE31A7E:
+IceFist_PRG:
 	mov r4,r3
 	mov.l @(ptr_CE31B2C_to_ptr_CE328FC_to_loc_CE31A90,pc),r1 ; r1 set to 0xCE328FC
 	mov.l r4,@-r15
@@ -4228,7 +4228,7 @@ loc_CE31AFE:
 	mov.l @r15+,r14
 
 ;----------------------------------------------
-loc_CE31B06:
+AirIceBeam_PRG:
 	mov r4,r3
 	mov.l @(ptr_CE31B44_to_ptr_CE32904_to_loc_CE31B48,pc),r1 ; r1 set to 0xCE32904
 	mov.l r4,@-r15
@@ -4533,7 +4533,7 @@ loc_ce31D1C:
 	mov.l @r15+,r14
 
 ;----------------------------------------------
-loc_CE31D22:
+Taunt_PRG:
 	mov.l r14,@-r15
 	mov r4,r14
 	sts.l pr,@-r15
@@ -4570,7 +4570,7 @@ loc_CE31D58:
 	mov.l @r15+,r14
 
 ;----------------------------------------------
-loc_CE31D5E:
+Snapback_PRG:
 	mov r4,r3
 	mov.l @(ptr_CE31DFC_to_ptr_CE32910_to_loc_CE31D70,pc),r1 ; r1 set to 0xCE32910
 	mov.l r4,@-r15
@@ -6106,43 +6106,43 @@ ptr_CE32760_to_fn_extern_8C051854:
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;Ice Man Chain Data
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-loc_ce32764:
+Stn_LPChain:
 	#data 0x01 0x02 0x01 0x02
-loc_ce32768:
+Stn_MPChain:
 	#data 0xFF 0x02 0xFF 0x02
-loc_ce3276C:
+Stn_HPChain:
 	#data 0xFF 0xFF 0xFF 0xFF
-loc_ce32770:
+Stn_LKChain:
 	#data 0x01 0x02 0x01 0x02
-loc_ce32774:
+Stn_MKChain:
 	#data 0xFF 0x02 0xFF 0x02
-loc_ce32778:
-	#data 0xFF 0xFF 0xFF 0xFF
-
-loc_ce3277C:
-	#data 0x01 0x02 0x01 0x02
-loc_ce32780:
-	#data 0xFF 0x02 0xFF 0x02
-loc_ce32784:
-	#data 0xFF 0xFF 0xFF 0xFF
-loc_ce32788:
-	#data 0x01 0x02 0x01 0x02
-loc_ce3278C:
-	#data 0xFF 0x02 0xFF 0x02
-loc_ce32790:
+Stn_HKChain:
 	#data 0xFF 0xFF 0xFF 0xFF
 
-loc_ce32794:
+Crc_LPChain:
+	#data 0x01 0x02 0x01 0x02
+Crc_MPChain:
+	#data 0xFF 0x02 0xFF 0x02
+Crc_HPChain:
+	#data 0xFF 0xFF 0xFF 0xFF
+Crc_LKChain:
+	#data 0x01 0x02 0x01 0x02
+Crc_MKChain:
+	#data 0xFF 0x02 0xFF 0x02
+Crc_HKChain:
+	#data 0xFF 0xFF 0xFF 0xFF
+
+Air_LPChain:
 	#data 0x00 0x02 0x01 0x02
-loc_ce32798:
+Air_MPChain:
 	#data 0x01 0x02 0xFF 0x02
-loc_ce3279C:
+Air_HPChain:
 	#data 0xFF 0x02 0xFF 0xFF
-loc_ce327A0:
+Air_LKChain:
 	#data 0x01 0x02 0x01 0x02
-loc_ce327A4:
+Air_MKChain:
 	#data 0xFF 0x02 0xFF 0x02
-loc_ce327A8:
+Air_HKChain:
 	#data 0xFF 0xFF 0xFF 0xFF
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
@@ -6213,13 +6213,13 @@ loc_CE328B3:
 ;Special Move Jumps ce328b8
 ;==============================================
 Table_SpecialPRG:
-	#data loc_CE313CC ;00 Avalanche
-	#data loc_CE315D4 ;01 Ice Beam
-	#data loc_CE3170C ;02 Arctic Attack
-	#data loc_CE31A7E ;03 Ice Fist
-	#data loc_CE31B06 ;04 Air Ice Beam
-	#data loc_CE31D22 ;05 Taunt
-	#data loc_CE31D5E ;06 Snapback
+	#data Avalanche_PRG		;00
+	#data GroundIceBeam_PRG	;01
+	#data ArcticAttack_PRG	;02
+	#data IceFist_PRG		;03
+	#data AirIceBeam_PRG	;04
+	#data Taunt_PRG			;05
+	#data Snapback_PRG		;06
 
 ;==============================================
 ;State Tables
