@@ -3150,7 +3150,7 @@ PL09_SpecPRG:
 ;==============================================
 Avalanche_PRG:
 	mov r4,r3
-	mov.l @(ptr_CE31410_to_ptr_CE328D4_to_loc_CE31414,pc),r1 ; r1 set to 0xCE328D4
+	mov.l @(ptr_CE31410_to_Avalanche_States,pc),r1 ; r1 set to 0xCE328D4
 	mov.l r4,@-r15
 	mov.b @(0x06,r3),r0
 	extu.b r0,r0
@@ -3190,11 +3190,11 @@ ptr_CE31408_to_fn_extern_8C051648:
 	#data fn_extern_8C051648
 ptr_CE3140C_to_Table_SpecialPRG:
 	#data Table_SpecialPRG
-ptr_CE31410_to_ptr_CE328D4_to_loc_CE31414:
-	#data ptr_CE328D4_to_loc_CE31414
+ptr_CE31410_to_Avalanche_States:
+	#data Avalanche_States
 
 ;==============================================
-loc_CE31414:
+Avalanche_State0:
 	mov.l r14,@-r15
 	mov r4,r14
 	mov.l r13,@-r15
@@ -3205,12 +3205,14 @@ loc_CE31414:
 	mov.b r0,@(0x06,r14)
 	jsr @r3
 	mov r14,r4
+
 	mov.w @(loc_ce3148C,pc),r0 ; r0 set to 0x1F9
 	mov.l @(ptr_CE31494_to_extern_8C2896B0,pc),r4 ; r4 set to 0x8C2896B0
 	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
 	extu.b r0,r0
 	cmp/eq 0x02,r0
 	bf/s loc_ce314A0
+
 	mov 0x00,r13 ; r13 set to 0x00
 	mov.w @(loc_ce3148E,pc),r0 ; r0 set to 0x1A3
 	mov 0x05,r5 ; r5 set to 0x05
@@ -3328,7 +3330,8 @@ loc_ce314F2:
 	mov.l @r15+,r13
 	mov.l @r15+,r14
 
-loc_ce31506:
+;ce31506
+Avalanche_State1:
 	mov.w @(0xE0,PC),r0
 	mov.l r14,@-r15
 	mov r4,r14
@@ -3391,7 +3394,7 @@ loc_ce31506:
 	mov 0x00,r2
 	mov.b r2,@(r0,r14)
 
-loc_ce31580:
+
 	mov.w @(0x68,PC),r0
 	mov.b @(r0,r14),r3
 	tst r3,r3
@@ -3444,7 +3447,7 @@ loc_ce315CE:
 ;----------------------------------------------
 GroundIceBeam_PRG:
 	mov r4,r3
-	mov.l @(ptr_CE31614_to_ptr_CE328DC_to_loc_CE31618,pc),r1 ; r1 set to 0xCE328DC
+	mov.l @(ptr_CE31614_to_GroundIceBeam_States,pc),r1 ; r1 set to 0xCE328DC
 	mov.l r4,@-r15
 	mov.b @(0x06,r3),r0
 	extu.b r0,r0
@@ -3482,11 +3485,11 @@ loc_CE3160c:
 	#data fn_extern_8C05176E
 loc_CE31610:
 	#data fn_extern_8C051648
-ptr_CE31614_to_ptr_CE328DC_to_loc_CE31618:
-	#data ptr_CE328DC_to_loc_CE31618
+ptr_CE31614_to_GroundIceBeam_States:
+	#data GroundIceBeam_States
 
 ;==============================================
-loc_CE31618:
+GroundIce_State0:
 	mov.l r14,@-r15
 	mov r4,r14
 	mov.l r13,@-r15
@@ -3554,7 +3557,7 @@ loc_CE31618:
 	mov.l @r15+,r13 ; r13 ??? bc r15 is ???
 	mov.l @r15+,r14
 
-loc_CE3169C:
+GroundIce_State1:
 	mov.l r14,@-r15
 	mov r4,r14
 	sts.l pr,@-r15
@@ -3600,7 +3603,7 @@ loc_ce316E4:
 	mov.l @r15+,r14
 
 ;----------------------------------------------
-loc_CE316EA:
+GroundIce_State2:
 	sts.l pr,@-r15
 	add 0xFC,r15
 	mov.l @(ptr_CE3179C_to_fn_extern_8C034DEE,pc),r3 ; r3 set to 0x8C034DEE
@@ -4159,7 +4162,7 @@ loc_CE31A78:
 ;----------------------------------------------
 IceFist_PRG:
 	mov r4,r3
-	mov.l @(ptr_CE31B2C_to_ptr_CE328FC_to_loc_CE31A90,pc),r1 ; r1 set to 0xCE328FC
+	mov.l @(ptr_CE31B2C_to_IceFist_States,pc),r1 ; r1 set to 0xCE328FC
 	mov.l r4,@-r15
 	mov.b @(0x06,r3),r0
 	extu.b r0,r0
@@ -4168,7 +4171,8 @@ IceFist_PRG:
 	jmp @r3
 	add 0x04,r15
 
-loc_CE31A90:
+;==============================================
+IceFist_State0:
 	mov.l r14,@-r15
 	mov r4,r14
 	sts.l pr,@-r15
@@ -4201,7 +4205,7 @@ loc_CE31A90:
 	mov r14,r4
 	mov.l @r15+,r14
 
-loc_CE31ACE:
+IceFist_State1:
 	mov.l r14,@-r15
 	mov r4,r14
 	mov.l r13,@-r15
@@ -4236,7 +4240,7 @@ loc_CE31AFE:
 ;----------------------------------------------
 AirIceBeam_PRG:
 	mov r4,r3
-	mov.l @(ptr_CE31B44_to_ptr_CE32904_to_loc_CE31B48,pc),r1 ; r1 set to 0xCE32904
+	mov.l @(ptr_CE31B44_to_AirIceBeam_States,pc),r1 ; r1 set to 0xCE32904
 	mov.l r4,@-r15
 	mov.b @(0x06,r3),r0
 	extu.b r0,r0
@@ -4260,8 +4264,8 @@ ptr_CE31B24_to_fn_extern_8C05176E:
 	#data fn_extern_8C05176E
 ptr_CE31B28_to_fn_extern_8C051648:
 	#data fn_extern_8C051648
-ptr_CE31B2C_to_ptr_CE328FC_to_loc_CE31A90:
-	#data ptr_CE328FC_to_loc_CE31A90
+ptr_CE31B2C_to_IceFist_States:
+	#data IceFist_States
 ptr_CE31B30_to_fn_extern_8C05218A:
 	#data fn_extern_8C05218A
 ptr_CE31B34_to_fn_extern_8C056DE4:
@@ -4272,11 +4276,11 @@ ptr_CE31B3C_to_fn_extern_8C034E8C:
 	#data fn_extern_8C034E8C
 ptr_CE31B40_to_fn_extern_8C0C1104:
 	#data fn_extern_8C0C1104
-ptr_CE31B44_to_ptr_CE32904_to_loc_CE31B48:
-	#data ptr_CE32904_to_loc_CE31B48
+ptr_CE31B44_to_AirIceBeam_States:
+	#data AirIceBeam_States
 
 ;==============================================
-loc_CE31B48:
+AirIceBeam_State0:
 	mov.l r14,@-r15
 	mov r4,r14
 	sts.l pr,@-r15
@@ -4347,7 +4351,7 @@ loc_CE31B48:
 	lds.l @r15+,pr
 	mov.l @r15+,r14
 
-loc_CE31BD2:
+AirIceBeam_State1:
 	mov.l r14,@-r15
 	mov r4,r14
 	sts.l pr,@-r15
@@ -4471,7 +4475,7 @@ loc_ce31CA4:
 	#data extern_8C06C430
 
 ;==============================================
-loc_ce31CA8:
+AirIceBeam_State2:
 	mov.l r14,@-r15
 	mov 0x5C,r1
 	mov r4,r14
@@ -4578,7 +4582,7 @@ loc_CE31D58:
 ;----------------------------------------------
 Snapback_PRG:
 	mov r4,r3
-	mov.l @(ptr_CE31DFC_to_ptr_CE32910_to_loc_CE31D70,pc),r1 ; r1 set to 0xCE32910
+	mov.l @(ptr_CE31DFC_to_Snapback_States,pc),r1 ; r1 set to 0xCE32910
 	mov.l r4,@-r15
 	mov.b @(0x06,r3),r0
 	extu.b r0,r0
@@ -4587,7 +4591,7 @@ Snapback_PRG:
 	jmp @r3
 	add 0x04,r15
 
-loc_CE31D70:
+Snapback_State0:
 	mov.l r14,@-r15
 	mov r4,r14
 	fldi0 fr4
@@ -4665,8 +4669,8 @@ ptr_CE31DF4_to_fn_extern_8C034E8C:
 	#data fn_extern_8C034E8C
 ptr_CE31DF8_to_fn_extern_8C051648:
 	#data fn_extern_8C051648
-ptr_CE31DFC_to_ptr_CE32910_to_loc_CE31D70:
-	#data ptr_CE32910_to_loc_CE31D70
+ptr_CE31DFC_to_Snapback_States:
+	#data Snapback_States
 ptr_CE31E00_to_fn_extern_8C035162:
 	#data fn_extern_8C035162
 ptr_CE31E04_to_fn_extern_8C05218A:
@@ -4677,7 +4681,7 @@ ptr_CE31E0C_to_extern_8C2896B0:
 	#data extern_8C2896B0
 
 ;==============================================
-loc_CE31E10:
+Snapback_State1:
 	mov.l r14,@-r15
 	sts.l pr,@-r15
 	add 0xF4,r15
@@ -6230,12 +6234,15 @@ Table_SpecialPRG:
 ;==============================================
 ;State Tables
 ;==============================================
-ptr_CE328D4_to_loc_CE31414:
-	#data loc_CE31414 loc_ce31506
+Avalanche_States:
+	#data Avalanche_State0
+	#data Avalanche_State1
 
 ;==============================================
-ptr_CE328DC_to_loc_CE31618:
-	#data loc_CE31618 loc_CE3169C loc_CE316EA
+GroundIceBeam_States:
+	#data GroundIce_State0
+	#data GroundIce_State1
+	#data GroundIce_State2
 
 ;==============================================
 ArcticAttack_States:
@@ -6246,33 +6253,48 @@ ArcticAttack_States:
 	#data Arctic_State4
 
 ;==============================================
-ptr_CE328FC_to_loc_CE31A90:
-	#data loc_CE31A90 loc_CE31ACE
+IceFist_States:
+	#data IceFist_State0
+	#data IceFist_State1
 
 ;==============================================
-ptr_CE32904_to_loc_CE31B48:
-	#data loc_CE31B48 loc_CE31BD2 loc_ce31CA8
+AirIceBeam_States:
+	#data AirIceBeam_State0
+	#data AirIceBeam_State1
+	#data AirIceBeam_State2
 
 ;==============================================
-ptr_CE32910_to_loc_CE31D70:
-	#data loc_CE31D70 loc_CE31E10
+Snapback_States:
+	#data Snapback_State0
+	#data Snapback_State1
 
 ;==============================================
 ptr_CE32918_to_loc_CE31E8E:
-	#data loc_CE31E8E loc_CE31F06 loc_CE31F40 loc_CE31E8E
+	#data loc_CE31E8E
+	#data loc_CE31F06
+	#data loc_CE31F40
+	#data loc_CE31E8E
 
 ;==============================================
 ptr_CE32928_to_loc_ce31FD0:
-	#data loc_ce31FD0 loc_ce320F0 loc_CE3224C
+	#data loc_ce31FD0
+	#data loc_ce320F0
+	#data loc_CE3224C
 
 ;==============================================
 ptr_CE32934_to_loc_CE322C6:
-	#data loc_CE322C6 loc_ce32374 loc_ce3243E
+	#data loc_CE322C6
+	#data loc_ce32374
+	#data loc_ce3243E
 
 ;==============================================
 ptr_CE32940_to_loc_CE324F4:
-	#data loc_CE324F4 loc_CE32502 loc_CE32502
+	#data loc_CE324F4
+	#data loc_CE32502
+	#data loc_CE32502
 
 ;==============================================
 ptr_CE3294C_to_loc_ce3261A:
-	#data loc_ce3261A loc_CE32694 loc_CE32730
+	#data loc_ce3261A
+	#data loc_CE32694
+	#data loc_CE32730
