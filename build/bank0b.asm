@@ -19781,6 +19781,8 @@ loc_8C0B85BC:
 	mov r0,r1
 	mova @(loc_8C0B8600,pc),r0  ; r0 set to 0x8C0B8600
 	mov.w @(r0,r1),r0 ; r0 ??? bc r1 is ???	
+
+braf_8c0b85c4:
 	braf r0
 	nop
 
@@ -19817,31 +19819,30 @@ loc_8C0B85FC:
 	#data 0x8C26A518
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-;Need to fix jump table
 loc_8C0B8600:
-	#data 0x0066
-	#data 0x00b2
-	#data 0x0198
-	#data 0x01f2
-	#data 0x0248
-	#data 0x029c
-	#data 0x02dc
-	#data 0x0340
-	#data 0x0404
-	#data 0x0404
-	#data 0x04c2
-	#data 0x04ec
-	#data 0x050c
-	#data 0x0558
-	#data 0x058a
-	#data 0x0592
-	#data 0x059e
-	#data 0x05ac
-	#data 0x05c2
-	#data 0x060c
-	#data 0x0630
-	#data 0x065c
-	#data 0x068c
+	#data16 {loc_8c0b862e-braf_8c0b85c4-4};0x066
+	#data16 {loc_8c0b867a-braf_8c0b85c4-4};0x0b2
+	#data16 {loc_8c0b8760-braf_8c0b85c4-4};0x198
+	#data16 {loc_8c0b87ba-braf_8c0b85c4-4};0x1f2
+	#data16 {loc_8c0b8810-braf_8c0b85c4-4};0x248
+	#data16 {loc_8c0b8864-braf_8c0b85c4-4};0x29c
+	#data16 {loc_8C0B88a4-braf_8c0b85c4-4};0x2dc
+	#data16 {loc_8c0b8908-braf_8c0b85c4-4};0x340
+	#data16 {loc_8c0b89cc-braf_8c0b85c4-4};0x404
+	#data16 {loc_8c0b89cc-braf_8c0b85c4-4};0x404
+	#data16 {loc_8c0b8a8a-braf_8c0b85c4-4};0x4c2
+	#data16 {loc_8c0b8ab4-braf_8c0b85c4-4};0x4ec
+	#data16 {loc_8c0b8ad4-braf_8c0b85c4-4};0x50c
+	#data16 {loc_8c0b8b20-braf_8c0b85c4-4};0x558
+	#data16 {loc_8c0b8b52-braf_8c0b85c4-4};0x58a
+	#data16 {loc_8c0b8b5a-braf_8c0b85c4-4};0x592
+	#data16 {loc_8c0b8b66-braf_8c0b85c4-4};0x59e
+	#data16 {loc_8c0b8b74-braf_8c0b85c4-4};0x5ac
+	#data16 {loc_8c0b8b8a-braf_8c0b85c4-4};0x5c2
+	#data16 {loc_8c0b8bd4-braf_8c0b85c4-4};0x60c
+	#data16 {loc_8c0b8bf8-braf_8c0b85c4-4};0x630
+	#data16 {loc_8c0b8c24-braf_8c0b85c4-4};0x65c
+	#data16 {loc_8c0b8c54-braf_8c0b85c4-4};0x68c
 
 ;==============================================
 loc_8c0b862e:
