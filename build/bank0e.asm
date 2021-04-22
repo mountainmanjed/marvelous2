@@ -17435,6 +17435,8 @@ loc_8C0E74F0:
 	mov.l @r15+,r14
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+loc_8c0e7504:
+	#data 0x2f04
 loc_8c0e7506:
 	#data 0x0088
 loc_8c0e7508:
@@ -18320,7 +18322,7 @@ loc_8c0e7aa8:
 loc_8c0e7aaa:
 	#data 0x022A
 loc_8c0e7aac:
-	#data 0158
+	#data 0x0158
 loc_8c0e7aae:
 	#data 0x012C
 	#align4
