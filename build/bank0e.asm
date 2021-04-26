@@ -37050,6 +37050,8 @@ loc_8C0EF54E:
 	mov.l @r15+,r11
 	mov.l @r15+,r12
 	mov.l @r15+,r13
+	rts
+	mov.l @r15+, r14
 
 ;----------------------------------------------
 loc_8C0EF59C:
@@ -37340,7 +37342,6 @@ loc_8C0EF774:
 	fmov fr3,@r4
 
 loc_8C0EF790:
-#data 0x8B012EA8
 	tst r10,r14
 	bf loc_8c0ef798
 	bra loc_8c0ef88c
