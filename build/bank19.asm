@@ -3338,54 +3338,79 @@ loc_8c19154C:
 #data 0x00090009
 #data 0x00090009
 
-#align4
 loc_8c191560:
-#data 0x2FD62FE6
-#data 0x7FF84F22
-#data 0x6E53DD16
-#data 0x2F521F41
-#data 0x54F1BED6
-#data 0x89042008
-#data 0x430BD313
-#data 0x200864F2
-#data 0x8B02
+mov.l r14,@-r15
+mov.l r13,@-r15
+sts.l pr,@-r15
+add 0xF8,r15
+mov.l @(loc_8C1915C4,pc),r13
+mov r5,r14
+mov.l r4,@(0x04,r15) 
+mov.l r5,@r15
+bsr bank19.loc_8c191320
+mov.l @(0x04,r15),r4
+tst r0,r0
+bt loc_8c191582
+mov.l @(bank19.loc_8c1915c8,pc),r3
+jsr @r3
+mov.l @r15,r4
+tst r0,r0
+bf loc_8c191588
 
 loc_8c191582:
-#data 0xD012
-#data 0x0009A015
+mov.l @(loc_8C1915CC,pc),r0
+bra loc_8c1915b2
+nop 
+
+loc_8c191588:
+mov.l @r14,r5
+mov 0x01,r4
+mov.l @(0x04,r13),r3
+shad r5, r4
+tst r4,r3
+bt loc_8c1915a2
+mov.l @(0x04,r13),r3
+not r4,r4
+and r4,r3
+mov.l r3,@(0x04,r13) 
+mov.l @(0x08,r13),r2
+add 0xFF,r2
+mov.l r2,@(0x08,r13) 
+
+loc_8c1915a2:
+mov.l @(bank19.loc_8c1915d0,pc),r3
+mov.w @(loc_8C1915C0,pc),r0
+jsr @r3
+mov.l @(r0,r14),r4
+mov 0x00,r4
+mov r4,r0
+mov.l r4,@(0x1C,r14) 
+mov.l r4,@(0x20,r14) 
+
+loc_8c1915b2:
+add 0x08,r15
+lds.l @r15+,pr 
+mov.l @r15+,r13
+rts 
+mov.l @r15+,r14
+;-------------------------------------------------------------------------------
+#data 0x0009
+#data 0x0009
+
+loc_8C1915C0:
+#data 0x0088
+#data 0x0000
 
 #align4
-loc_8c191588:
-#data 0xE40165E2
-#data 0x445C53D1
-#data 0x89062348
-#data 0x644753D1
-#data 0x1D312349
-#data 0x72FF52D2
-#data 0x1D22
-
-loc_8c1915A2:
-#data 0xD30B
-#data 0x430B900C
-#data 0xE40004EE
-#data 0x1E476043
-#data 0x1E48
-
-loc_8c1915B2:
-#data 0x7F08
-#data 0x6DF64F26
-#data 0x6EF6000B
-;-------------------------------------------------------------------------------
-#data 0x00090009
-#data 0x00000088
+loc_8C1915C4:
 #data 0x8C348DF4
 
-#align4
 loc_8c1915C8:
 #data bank1a.loc_8c1a7FC0
+
+loc_8C1915CC:
 #data 0x0000EEEE
 
-#align4
 loc_8c1915D0:
 #data bank1a.loc_8c1a761C
 #data 0x00000000
@@ -3393,64 +3418,106 @@ loc_8c1915D0:
 #data 0x00000000
 
 #align4
-loc_8c1915E0:
-#data 0x2FD62FE6
-#data 0x7FF44F22
-#data 0x430BD31E
-#data 0x20080009
-#data 0x90358B28
-#data 0x6303D41C
-#data 0x334CD21C
-#data 0x1F310E4E
-#data 0x730863F3
-#data 0x2F321F22
-#data 0xDD1953F1
-#data 0x32E06232
-#data 0x61F28B11
-#data 0x23386312
-#data 0x890D
+loc_8c1915e0:
+mov.l r14,@-r15
+mov.l r13,@-r15
+sts.l pr,@-r15
+add 0xF4,r15
+mov.l @(bank19.loc_8c191664,pc),r3
+jsr @r3
+nop 
+tst r0,r0
+bf loc_8c191644
+mov.w @(loc_8C191660,pc),r0
+mov.l @(loc_8C191668,pc),r4
+mov r0,r3
+mov.l @(loc_8C19166C,pc),r2
+add r4,r3
+mov.l @(r0,r4),r14
+mov.l r3,@(0x04,r15) 
+mov r15,r3
+add 0x08,r3
+mov.l r2,@(0x08,r15) 
+mov.l r3,@r15
+mov.l @(0x04,r15),r3
+mov.l @(bank19.loc_8c191670,pc),r13
+mov.l @r3,r2
+cmp/eq r14,r2
+bf loc_8c191636
+mov.l @r15,r1
+mov.l @r1,r3
+tst r3,r3
+bt loc_8c191636
 
-loc_8c19161A:
-#data 0x4D0B
-#data 0x63F2E407
-#data 0x72FF6232
-#data 0x53F12322
-#data 0x32E06232
-#data 0x61F28B03
-#data 0x23386312
-#data 0x8BF1
+loc_8c19161a:
+jsr @r13
+mov 0x07,r4
+mov.l @r15,r3
+mov.l @r3,r2
+add 0xFF,r2
+mov.l r2,@r3
+mov.l @(0x04,r15),r3
+mov.l @r3,r2
+cmp/eq r14,r2
+bf loc_8c191636
+mov.l @r15,r1
+mov.l @r1,r3
+tst r3,r3
+bf loc_8c19161a
 
 loc_8c191636:
-#data 0x63F2
-#data 0x22286232
-#data 0xD40D8B02
-#data 0x0009A001
+mov.l @r15,r3
+mov.l @r3,r2
+tst r2,r2
+bf loc_8c191644
+mov.l @(loc_8C191674,pc),r4
+bra loc_8c191646
+nop 
 
 loc_8c191644:
-#data 0xE400
+mov 0x00,r4
 
 loc_8c191646:
-#data 0x6043
-#data 0x4F267F0C
-#data 0x000B6DF6
-#data 0x00096EF6
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00000940
+mov r4,r0
+add 0x0C,r15
+lds.l @r15+,pr 
+mov.l @r15+,r13
+rts 
+mov.l @r15+,r14
+;-------------------------------------------------------------------------------
+#data 0x0009
+#data 0x0009
+#data 0x0009
+#data 0x0009
+#data 0x0009
+#data 0x0009
+#data 0x0009
+
+loc_8C191660:
+#data 0x0940
+#data 0x0000
 
 #align4
 loc_8c191664:
-#data bank18.loc_8c18DFA0
+#data bank18.loc_8c18dfa0
+
+loc_8C191668:
 #data 0x8C32D278
+
+#align4
+loc_8C19166C:
 #data 0x00100000
 
 #align4
 loc_8c191670:
-#data bank18.loc_8c18F7E0
+#data bank18.loc_8c18f7e0
+
+loc_8C191674:
 #data 0x0000EEEE
-#data 0x00000000
-#data 0x00000000
+#data 0x0000
+#data 0x0000
+#data 0x0000
+#data 0x0000
 
 
 loc_8c191680:
@@ -3544,7 +3611,7 @@ loc_8c19170C:
 #data 0x00090009
 #data 0x00090009
 
-#align4
+#align4_nop
 loc_8c191720:
 mov.l @(0x10,r14),r14
 tst r14,r14
@@ -3567,237 +3634,385 @@ mov.l @r15+,r13
 jmp @r3
 mov.l @r15+,r14
 
-#align4
 loc_8c191744:
-#data 0xD2124F22
-#data 0x23386322
-#data 0xD3118905
-#data 0x0009430B
-#data 0xE200D30E
-#data 0x2322
+sts.l pr,@-r15
+mov.l @(loc_8C191790,pc),r2
+mov.l @r2,r3
+tst r3,r3
+bt loc_8c19175a
+mov.l @(bank19.loc_8c191794,pc),r3
+jsr @r3
+nop 
+mov.l @(loc_8C191790,pc),r3
+mov 0x00,r2
+mov.l r2,@r3
 
-loc_8c19175A:
-#data 0x9514
-#data 0x9611E400
+loc_8c19175a:
+mov.w @(loc_8C191786,pc),r5
+mov 0x00,r4
+mov.w @(loc_8C191784,pc),r6
 
-#align4
 loc_8c191760:
-#data 0x024ED00D
-#data 0x89032228
-#data 0xD00C4F26
-#data 0x0009000B
+mov.l @(loc_8C191798,pc),r0
+mov.l @(r0,r4),r2
+tst r2,r2
+bt loc_8c191770
+lds.l @r15+,pr 
+mov.l @(loc_8C19179C,pc),r0
+rts 
+nop 
 ;-------------------------------------------------------------------------------
 
-#align4
 loc_8c191770:
-#data 0x3452346C
-#data 0xE0008BF4
-#data 0x000B4F26
-#data 0x00090009
+add r6,r4
+cmp/hs r5,r4
+bf loc_8c191760
+mov 0x00,r0
+lds.l @r15+,pr 
+rts 
+nop 
+;-------------------------------------------------------------------------------
+#data 0x0009
 
 loc_8c191780:
 #data 0x0838
 
 loc_8c191782:
 #data 0x095C
-#data 0x0E2001C4
 
-#align4
+loc_8C191784:
+#data 0x01C4
+
+loc_8C191786:
+#data 0x0E20
+
 loc_8c191788:
 #data 0x8C32D278
 
-#align4
-loc_8c19178C:
-#data bank18.loc_8c18F7E0
+loc_8c19178c:
+#data bank18.loc_8C18F7E0
+
+loc_8C191790:
 #data 0x8C32EA9C
 
-#align4
 loc_8c191794:
-#data loc_8c1915E0
+#data bank19.loc_8c1915e0
+
+loc_8C191798:
 #data 0x8C32DC18
+
+loc_8C19179C:
 #data 0x0000EEEE
 
+
 #align4
-loc_8c1917A0:
-#data 0x2FD62FE6
-#data 0xEC102FC6
-#data 0x2FA62FB6
-#data 0x2F96EA08
-#data 0x2F86E9FF
-#data 0xDD134F22
-#data 0x6322D213
-#data 0x8F2F2338
-#data 0xD111EE00
-#data 0x2132D311
-#data 0x64E3
+loc_8c1917a0:
+mov.l r14,@-r15
+mov.l r13,@-r15
+mov.l r12,@-r15
+mov 0x10,r12
+mov.l r11,@-r15
+mov.l r10,@-r15
+mov 0x08,r10
+mov.l r9,@-r15
+mov 0xFF,r9
+mov.l r8,@-r15
+sts.l pr,@-r15
+mov.l @(loc_8C191804,pc),r13
+mov.l @(bank19.loc_8c191808,pc),r2
+mov.l @r2,r3
+tst r3,r3
+bf/s loc_8c191820
+mov 0x00,r14
+mov.l @(bank19.loc_8c191808,pc),r1
+mov.l @(loc_8C19180C,pc),r3
+mov.l r3,@r1
+mov r14,r4
 
-loc_8c1917CA:
-#data 0x9319
-#data 0x334C33DC
-#data 0x34A27404
-#data 0x23E28FF9
-#data 0x64E3
+loc_8c1917ca:
+mov.w @(loc_8C191800,pc),r3
+add r13,r3
+add r4,r3
+add 0x04,r4
+cmp/hs r10,r4
+bf/s loc_8c1917ca
+mov.l r14,@r3
+mov r14,r4
 
-loc_8c1917DA:
-#data 0x9312
-#data 0x334C33DC
-#data 0x34C27404
-#data 0x23E28FF9
-#data 0x0009A045
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x07E007D8
+loc_8c1917da:
+mov.w @(loc_8C191802,pc),r3
+add r13,r3
+add r4,r3
+add 0x04,r4
+cmp/hs r12,r4
+bf/s loc_8c1917da
+mov.l r14,@r3
+bra bank19.loc_8c191876
+nop 
+
+#repeat 10
+nop 
+
+loc_8C191800:
+#data 0x07D8
+
+loc_8C191802:
+#data 0x07E0
+
+#align4
+loc_8C191804:
 #data 0x8C32D278
 
 #align4
 loc_8c191808:
-#data bank1c.loc_8c1c95B8
+#data bank1c.loc_8c1c95b8
+
+loc_8C19180C:
 #data 0x8C32DBE8
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
 
-#align4
+
+#repeat 8
+nop 
+
 loc_8c191820:
-#data 0x410BD142
-#data 0x6BE30009
-#data 0x68E3
+mov.l @(bank19.loc_8c19192c,pc),r1
+jsr @r1
+nop 
+mov r14,r11
+mov r14,r8
 
-loc_8c19182A:
-#data 0x9379
-#data 0x33BC33DC
-#data 0x22286232
-#data 0x95738907
-#data 0x35DCD33D
-#data 0x358C9071
-#data 0x430B6552
-#data 0x04DE
+loc_8c19182a:
+mov.w @(loc_8C191920,pc),r3
+add r13,r3
+add r11,r3
+mov.l @r3,r2
+tst r2,r2
+bt loc_8c191846
+mov.w @(loc_8C191920,pc),r5
+mov.l @(bank19.loc_8c191930,pc),r3
+add r13,r5
+mov.w @(loc_8C191922,pc),r0
+add r8,r5
+mov.l @r5,r5
+jsr @r3
+mov.l @(r0,r13),r4
 
 loc_8c191846:
-#data 0x7B04
-#data 0x8FEE3BA2
-#data 0xD8397804
-#data 0x6AE36BE3
+add 0x04,r11
+cmp/hs r10,r11
+bf/s loc_8c19182a
+add 0x04,r8
+mov.l @(bank19.loc_8c191934,pc),r8
+mov r14,r11
+mov r14,r10
 
-#align4
 loc_8c191854:
-#data 0x0B96D038
-#data 0x33DC9364
-#data 0x623233BC
-#data 0x89042228
-#data 0x34DC945E
-#data 0x480B34AC
-#data 0x6442
+mov.l @(loc_8C191938,pc),r0
+mov.l r9,@(r0,r11) 
+mov.w @(loc_8C191924,pc),r3
+add r13,r3
+add r11,r3
+mov.l @r3,r2
+tst r2,r2
+bt loc_8c19186e
+mov.w @(loc_8C191924,pc),r4
+add r13,r4
+add r10,r4
+jsr @r8
+mov.l @r4,r4
 
-loc_8c19186E:
-#data 0x7B04
-#data 0x8FEF3BC2
-#data 0x7A04
+loc_8c19186e:
+add 0x04,r11
+cmp/hs r12,r11
+bf/s loc_8c191854
+add 0x04,r10
 
 loc_8c191876:
-#data 0xD231
-#data 0xD33122E2
-#data 0xD13123E2
-#data 0xD2312192
-#data 0xD33122E2
-#data 0xD13123E2
-#data 0x720C21E2
-#data 0x730C22E2
-#data 0x710C23E2
-#data 0x720C21E2
-#data 0x730C22E2
-#data 0x710C23E2
-#data 0xD22B21E2
-#data 0xD32B22E2
-#data 0xD12B23E2
-#data 0x953921E2
-#data 0x963664E3
+mov.l @(loc_8C19193C,pc),r2
+mov.l r14,@r2
+mov.l @(loc_8C191940,pc),r3
+mov.l r14,@r3
+mov.l @(loc_8C191944,pc),r1
+mov.l r9,@r1
+mov.l @(loc_8C191948,pc),r2
+mov.l r14,@r2
+mov.l @(loc_8C19194C,pc),r3
+mov.l r14,@r3
+mov.l @(loc_8C191950,pc),r1
+mov.l r14,@r1
+add 0x0C,r2
+mov.l r14,@r2
+add 0x0C,r3
+mov.l r14,@r3
+add 0x0C,r1
+mov.l r14,@r1
+add 0x0C,r2
+mov.l r14,@r2
+add 0x0C,r3
+mov.l r14,@r3
+add 0x0C,r1
+mov.l r14,@r1
+mov.l @(loc_8C191954,pc),r2
+mov.l r14,@r2
+mov.l @(loc_8C191958,pc),r3
+mov.l r14,@r3
+mov.l @(loc_8C19195C,pc),r1
+mov.l r14,@r1
+mov.w @(loc_8C191928,pc),r5
+mov r14,r4
+mov.w @(loc_8C191926,pc),r6
+
+loc_8c1918b8:
+mov.l @(loc_8C191960,pc),r0
+mov.l r14,@(r0,r4) 
+mov r0,r3
+add r4,r3
+mov.l r14,@(0x0C,r3) 
+mov r0,r2
+add r4,r2
+add r6,r4
+cmp/hs r5,r4
+bf/s loc_8c1918b8
+mov.l r14,@(0x10,r2) 
+mov.l @(loc_8C191964,pc),r2
+mov.l r14,@r2
+mov.l @(loc_8C191968,pc),r3
+mov.l r14,@r3
+mov.l @(loc_8C19196C,pc),r1
+mov.l r14,@r1
+mov.l @(bank19.loc_8c191974,pc),r2
+mov 0x00,r6
+mov.l @(bank19.loc_8c191970,pc),r5
+jsr @r2
+mov 0x14,r4
+mov.l @(bank19.loc_8c191974,pc),r3
+mov 0x00,r6
+mov.l @(bank19.loc_8c191978,pc),r5
+jsr @r3
+mov 0x1D,r4
+mov.l @(bank19.loc_8c191980,pc),r2
+mov.l @(bank19.loc_8c19197c,pc),r5
+jsr @r2
+mov 0x00,r4
+lds.l @r15+,pr 
+mov.l @(bank19.loc_8c191980,pc),r3
+mov 0x01,r4
+mov.l @(bank19.loc_8c191984,pc),r5
+mov.l @r15+,r8
+mov.l @r15+,r9
+mov.l @r15+,r10
+mov.l @r15+,r11
+mov.l @r15+,r12
+mov.l @r15+,r13
+jmp @r3
+mov.l @r15+,r14
+
+#repeat 9
+nop 
+
+loc_8C191920:
+#data 0x07D8
+
+loc_8C191922:
+#data 0x07D4
+
+loc_8C191924:
+#data 0x07E0
+
+loc_8C191926:
+#data 0x01C4
+
+loc_8C191928:
+#data 0x0E20
+#data 0x0000
 
 #align4
-loc_8c1918B8:
-#data 0x04E6D029
-#data 0x334C6303
-#data 0x620313E3
-#data 0x346C324C
-#data 0x8FF53452
-#data 0xD22512E4
-#data 0xD32522E2
-#data 0xD12523E2
-#data 0xD22621E2
-#data 0xD524E600
-#data 0xE414420B
-#data 0xE600D323
-#data 0x430BD523
-#data 0xD224E41D
-#data 0x420BD522
-#data 0x4F26E400
-#data 0xE401D321
-#data 0x68F6D521
-#data 0x6AF669F6
-#data 0x6CF66BF6
-#data 0x432B6DF6
-#data 0x00096EF6
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x07D407D8
-#data 0x01C407E0
-#data 0x00000E20
-
-#align4
-loc_8c19192C:
-#data bank1a.loc_8c1a8DC0
+loc_8c19192c:
+#data bank1a.loc_8c1a8dc0
 
 loc_8c191930:
-#data loc_8c191560
+#data bank19.loc_8c191560
 
 loc_8c191934:
-#data bank18.loc_8c18D160
+#data bank18.loc_8c18d160
+
+loc_8C191938:
 #data 0x8C32EA54
+
+#align4
+loc_8C19193C:
 #data 0x8C32EA68
+
+#align4
+loc_8C191940:
 #data 0x8C32EA74
+
+#align4
+loc_8C191944:
 #data 0x8C32EA78
+
+#align4
+loc_8C191948:
 #data 0x8C32DBF4
+
+#align4
+loc_8C19194C:
 #data 0x8C32DBF8
+
+#align4
+loc_8C191950:
 #data 0x8C32DBFC
+
+#align4
+loc_8C191954:
 #data 0x8C32EA88
+
+#align4
+loc_8C191958:
 #data 0x8C32EA8C
+
+#align4
+loc_8C19195C:
 #data 0x8C32EA94
+
+#align4
+loc_8C191960:
 #data 0x8C32DC18
+
+#align4
+loc_8C191964:
 #data 0x8C32EA6C
+
+#align4
+loc_8C191968:
 #data 0x8C32EA70
+
+#align4
+loc_8C19196C:
 #data 0x8C32EA98
 
 #align4
 loc_8c191970:
-#data loc_8c191E56
+#data bank19.loc_8c191e56
 
 loc_8c191974:
-#data bank18.loc_8c18C740
+#data bank18.loc_8c18c740
 
 loc_8c191978:
-#data loc_8c191D86
+#data bank19.loc_8c191d86
 
-loc_8c19197C:
-#data loc_8c191680
+loc_8c19197c:
+#data bank19.loc_8c191680
 
 loc_8c191980:
-#data bank1a.loc_8c1a77E0
+#data bank1a.loc_8c1a77e0
 
 loc_8c191984:
-#data loc_8c1916C0
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
+#data bank19.loc_8c1916c0
 
+
+#repeat 12
+nop
 
 loc_8c1919A0:
 mov.w @(loc_8c191A00,pc),r7 ; r7 set to 0xE20
@@ -3844,137 +4059,210 @@ rts
 add r5,r0
 ;-------------------------------------------------------------------------------
 
-loc_8c1919E0:
+loc_8c1919e0:
 add r6,r4
 cmp/hs r7,r4
-bf/s loc_8c1919CA
+bf/s bank19.loc_8c1919ca
 add r6,r5
-mov 0x00,r0 ; r0 set to 0x00
-rts
-nop
+mov 0x00,r0
+rts 
+nop 
 ;-------------------------------------------------------------------------------
-#data 0x0009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
 
-loc_8c191A00:
+#repeat 9
+nop 
+
+loc_8c191a00:
 #data 0x0E20
 
-loc_8c191A02:
+loc_8c191a02:
 #data 0x01C4
 
-#align4
-loc_8c191A04:
+loc_8c191a04:
 #data 0x8C32DC18
 
-#align4
-loc_8c191A08:
+loc_8c191a08:
 #data 0x8C32DC24
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
 
-#align4
-loc_8c191A20:
-#data 0xE400974E
-#data 0x6543964D
+#repeat 10
+nop
 
-#align4
-loc_8c191A28:
-#data 0x004ED026
-#data 0x8B068801
-#data 0x024ED025
-#data 0x8B022228
-#data 0x000BD022
-#data 0x305C
+loc_8c191a20:
+mov.w @(loc_8C191AC0,pc),r7
+mov 0x00,r4
+mov.w @(loc_8C191AC2,pc),r6
+mov r4,r5
+
+loc_8c191a28:
+mov.l @(loc_8C191AC4,pc),r0
+mov.l @(r0,r4),r0
+cmp/eq 0x01,r0 
+bf loc_8c191a3e
+mov.l @(loc_8C191AC8,pc),r0
+mov.l @(r0,r4),r2
+tst r2,r2
+bf loc_8c191a3e
+mov.l @(loc_8C191AC4,pc),r0
+rts 
+add r5,r0
 ;-------------------------------------------------------------------------------
 
-loc_8c191A3E:
-#data 0x346C
-#data 0x8FF13472
-#data 0xE000356C
-#data 0x0009000B
+loc_8c191a3e:
+add r6,r4
+cmp/hs r7,r4
+bf/s bank19.loc_8c191a28
+add r6,r5
+mov 0x00,r0
+rts 
+nop 
+
+loc_8C191A4A:
+mov.l @(loc_8C191ACC,pc),r3
+mov.l @r3,r5
+tst r5,r5
+bt/s loc_8C191A6E
+mov 0x01,r6
+mov.l @(loc_8C191ACC,pc),r1
+mov 0x00,r7
+mov.l r7,@r1
+mov.l @(loc_8C191AD0,pc),r2
+mov.l r6,@r2
+mov.l @(loc_8C191AD4,pc),r3
+not r5,r5
+mov.l @r3,r0
+and r5,r0
+mov.l r0,@r3
+add 0x18,r3
+mov.l r7,@r3
+
+loc_8C191A6E:
+mov.l @(loc_8C191AD4,pc),r2
+neg r4,r4
+mov.l @r2,r0
+shld r4, r0
+rts 
+and r6,r0
+
 ;-------------------------------------------------------------------------------
-#data 0x6532D31F
-#data 0x8D0C2558
-#data 0xD11DE601
-#data 0x2172E700
-#data 0x2262D21C
-#data 0x6557D31C
-#data 0x20596032
-#data 0x73182302
-#data 0xD2192372
-#data 0x6022644B
-#data 0x000B404D
-#data 0xD3172069
-#data 0x25586532
-#data 0xE6018D0C
-#data 0xE700D114
-#data 0xD2142172
-#data 0xD3142262
-#data 0x60326557
-#data 0x23022059
-#data 0x23727318
-#data 0x644BD210
-#data 0x404D6022
-#data 0x2069000B
+loc_8C191A7A:
+mov.l @(loc_8C191AD8,pc),r3
+mov.l @r3,r5
+tst r5,r5
+bt/s loc_8C191A9C
+mov 0x01,r6
+mov.l @(loc_8C191AD8,pc),r1
+mov 0x00,r7
+mov.l r7,@r1
+mov.l @(loc_8C191ADC,pc),r2
+mov.l r6,@r2
+mov.l @(loc_8C191AE0,pc),r3
+not r5,r5
+mov.l @r3,r0
+and r5,r0
+mov.l r0,@r3
+add 0x18,r3
+mov.l r7,@r3
+
+loc_8C191A9C:
+mov.l @(loc_8C191AE0,pc),r2
+neg r4,r4
+mov.l @r2,r0
+shld r4, r0
+rts 
+and r6,r0
 ;-------------------------------------------------------------------------------
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x01C40E20
+
+#repeat 12
+nop
+
+loc_8C191AC0:
+#data 0x0E20
+
+loc_8C191AC2:
+#data 0x01C4
+
+loc_8C191AC4:
 #data 0x8C32DC18
+
+loc_8C191AC8:
 #data 0x8C32DC28
+
+loc_8C191ACC:
 #data 0x8C32DC00
+
+loc_8C191AD0:
 #data 0x8C32DC0C
+
+loc_8C191AD4:
 #data 0x8C32DBF4
+
+loc_8C191AD8:
 #data 0x8C32DC04
+
+loc_8C191ADC:
 #data 0x8C32DC10
+
+loc_8C191AE0:
 #data 0x8C32DBF8
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
 
-#align4
-loc_8c191B00:
-#data 0x6532D33F
-#data 0x8D0C2558
-#data 0xD13DE601
-#data 0x2172E700
-#data 0x2262D23C
-#data 0x6557D33C
-#data 0x20596032
-#data 0x73182302
-#data 0x2372
+#repeat 14
+nop
 
-loc_8c191B22:
-#data 0xD239
-#data 0x6022644B
-#data 0x000B404D
-#data 0xD3372069
-#data 0x2352E501
-#data 0x454CD236
-#data 0x215B6122
-#data 0x60332212
-#data 0x000BE200
-#data 0xD32F2022
-#data 0x2352E501
-#data 0x454CD22E
-#data 0x215B6122
-#data 0x60332212
-#data 0x000BE200
-#data 0x2022
+loc_8c191b00:
+mov.l @(loc_8C191C00,pc),r3
+mov.l @r3,r5
+tst r5,r5
+bt/s loc_8c191b22
+mov 0x01,r6
+mov.l @(loc_8C191C00,pc),r1
+mov 0x00,r7
+mov.l r7,@r1
+mov.l @(loc_8C191C04,pc),r2
+mov.l r6,@r2
+mov.l @(loc_8C191C08,pc),r3
+not r5,r5
+mov.l @r3,r0
+and r5,r0
+mov.l r0,@r3
+add 0x18,r3
+mov.l r7,@r3
+
+loc_8c191b22:
+mov.l @(loc_8C191C08,pc),r2
+neg r4,r4
+mov.l @r2,r0
+shld r4, r0
+rts 
+and r6,r0
+
+loc_8C191B2e:
+mov.l @(loc_8C191C0C,pc),r3
+mov 0x01,r5
+mov.l r5,@r3
+mov.l @(loc_8C191C10,pc),r2
+shad r4, r5
+mov.l @r2,r1
+or r5,r1
+mov.l r1,@r2
+mov r3,r0
+mov 0x00,r2
+rts 
+mov.l r2,@r0
+;-------------------------------------------------------------------------------
+
+loc_8C191B46:
+mov.l @(loc_8C191C04,pc),r3
+mov 0x01,r5
+mov.l r5,@r3
+mov.l @(loc_8C191C08,pc),r2
+shad r4, r5
+mov.l @r2,r1
+or r5,r1
+mov.l r1,@r2
+mov r3,r0
+mov 0x00,r2
+rts 
+mov.l r2,@r0
 ;-------------------------------------------------------------------------------
 
 loc_8c191b5e:
@@ -4064,30 +4352,32 @@ nop
 #data 0x0009
 #data 0x0009
 #data 0x0009
-#data 0xDC08
-#data 0x8C32
-#data 0xDC14
-#data 0x8C32
-#data 0xDBFC
-#data 0x8C32
-#data 0xDC0C
-#data 0x8C32
-#data 0xDBF4
-#data 0x8C32
 
 #align4
+loc_8C191C00:
+#data 0x8C32DC08
+
+loc_8C191C04:
+#data 0x8C32DC14
+
+loc_8C191C08:
+#data 0x8C32DBFC
+
+loc_8C191C0C:
+#data 0x8C32DC0C
+
+loc_8C191C10:
+#data 0x8C32DBF4
+
 loc_8C191C14:
 #data 0x8C32DC10
 
-#align4
 loc_8C191C18:
 #data 0x8C32DBF8
 
-#align4
 loc_8C191C1C:
 #data 0x8C32EA9C
 
-#align4
 loc_8C191C20:
 #data 0x8C32EA98
 #data 0xDBE8
