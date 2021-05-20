@@ -149,7 +149,8 @@
 ; 00 = standing
 ; 01 = crouching
 ; 02 = jumping
-; 03 = ??? used near loc_8c05470c
+; 03 = otg stun? used near loc_8c05470c
+
 #symbol stance 0x01f9					; byte
 
 ; 00 = not superjumping
