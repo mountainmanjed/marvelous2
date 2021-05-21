@@ -9641,7 +9641,13 @@ loc_8c013ea6:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c013ec8:
-	#data bank11.loc_8c11e730 bank12.loc_8c1292d4 work.GameGlobalPointer 0x8c28977a
+	#data bank11.loc_8c11e730
+loc_8c013ecc:
+	#data bank12.loc_8c1292d4
+loc_8c013ed0:
+	#data work.GameGlobalPointer
+loc_8c013ed4:
+	#data 0x8c28977a
 
 ;----------------------------------------------
 loc_8c013ed8:
