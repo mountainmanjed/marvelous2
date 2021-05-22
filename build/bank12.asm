@@ -24084,7 +24084,7 @@ fmul fr7,fr6
 fmov.s @r14+,fr2
 fmul fr7,fr5
 fmov.s fr0,@-r6
-fsca fpul,fr9
+ftrv xmtrx,fv8
 fmov.s fr6,@-r6
 add 0xE0,r4
 fmov.s fr4,@-r6
@@ -24250,7 +24250,7 @@ fmul fr7,fr6
 fmov.s @r14+,fr2
 fmul fr7,fr5
 fmov.s fr0,@-r6
-fsca fpul,fr9
+ftrv xmtrx,fv8
 fmov.s fr6,@-r6
 add 0xE0,r4
 fmov.s fr4,@-r6
@@ -24435,7 +24435,7 @@ fmul fr7,fr6
 fmov.s @r14+,fr2
 fmul fr7,fr5
 fmov.s fr0,@-r6
-fsca fpul,fr9
+ftrv xmtrx,fv8
 fmov.s fr6,@-r6
 fmov.s fr4,@-r6
 add 0x20,r5
@@ -25447,7 +25447,7 @@ loc_8c12cb08:
 add 0x20,r4
 pref @r4
 add 0xE0,r4
-fsca fpul,fr1
+ftrv xmtrx,fv0
 flds fr7,fpul
 mov.l @r4,r0
 tst 0x01,r0
@@ -25823,7 +25823,7 @@ fmul fr7,fr6
 fmov.s @r14+,fr2
 fmul fr7,fr5
 fmov.s fr0,@-r6
-fsca fpul,fr9
+ftrv xmtrx,fv8
 fmov.s fr6,@-r6
 add 0xE0,r4
 fmov.s fr4,@-r6
@@ -25989,7 +25989,7 @@ fmul fr7,fr6
 fmov.s @r14+,fr2
 fmul fr7,fr5
 fmov.s fr0,@-r6
-fsca fpul,fr9
+ftrv xmtrx,fv8
 fmov.s fr6,@-r6
 add 0xE0,r4
 fmov.s fr4,@-r6
@@ -26174,7 +26174,7 @@ fmul fr7,fr6
 fmov.s @r14+,fr2
 fmul fr7,fr5
 fmov.s fr0,@-r6
-fsca fpul,fr9
+ftrv xmtrx,fv8
 fmov.s fr6,@-r6
 fmov.s fr4,@-r6
 add 0x20,r5
@@ -27251,7 +27251,7 @@ loc_8c12d768:
 add 0x20,r4
 pref @r4
 add 0xE0,r4
-fsca fpul,fr1
+ftrv xmtrx,fv0
 flds fr7,fpul
 mov.l @r4,r0
 tst 0x01,r0

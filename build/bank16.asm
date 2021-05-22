@@ -5388,7 +5388,7 @@ mov.b r11,@(r0,r0)
 #data 0x0000
 #data 0x4040
 
-fsca fpul,fr15
+#data 0xfffd
 sts pr,r3
 #data 0x0000
 
@@ -5524,7 +5524,7 @@ shll r0
 #data 0x0000
 
 shll r0
-fsca fpul,fr15
+#data 0xfffd
 sts pr,r3
 #data 0x0000
 
@@ -18977,7 +18977,7 @@ fsub fr15,fr15
 fcmp/eq fr15,fr15
 fmov.s fr15,@(r0,r15) 
 fmov.s fr15,@r15
-fsca fpul,fr15
+#data 0xfffd
 fadd fr13,fr15
 bsrf r0
 
@@ -19024,7 +19024,7 @@ fsub fr15,fr15
 fcmp/eq fr15,fr15
 fmov.s fr15,@(r0,r15) 
 fmov.s fr15,@r15
-fsca fpul,fr15
+#data 0xfffd
 fadd fr13,fr15
 bsrf r0
 
@@ -19066,7 +19066,7 @@ fsub fr15,fr15
 fcmp/eq fr15,fr15
 fmov.s fr15,@(r0,r15) 
 fmov.s fr15,@r15
-fsca fpul,fr15
+#data 0xfffd
 #data 0x0000
 
 bsrf r0
@@ -19109,7 +19109,7 @@ loc_8C169788:
 fcmp/eq fr15,fr15
 fmov.s fr15,@(r0,r15) 
 fmov.s fr15,@r15
-fsca fpul,fr15
+#data 0xfffd
 fadd fr13,fr15
 #data 0x0000
 
@@ -19153,7 +19153,7 @@ fsub fr15,fr15
 fcmp/eq fr15,fr15
 fmov.s fr15,@(r0,r15) 
 fmov.s fr15,@r15
-fsca fpul,fr15
+#data 0xfffd
 fadd fr13,fr15
 bsrf r0
 mov.l r0,@(r0,r0) 

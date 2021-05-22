@@ -4995,19 +4995,16 @@ loc_8c132620:
 	rts
 
 loc_8c132624:
-;	fsca fpul,fr0 ;fix
-	#data 0xf0fd
+	fsca fpul,fr0
 	nop
 	lds r4,fpul
-;	fsca fpul,fr0 ;fix
-	#data 0xf0fd
+	fsca fpul,fr0
 	rts
 
 loc_8c13262e:
 	fmov fr1,fr0
 	lds r4,fpul
-;	fsca fpul,fr0 ;fix
-	#data 0xf0fd
+	fsca fpul,fr0
 	fmov fr0,@r5
 	rts
 	fmov fr1,@r6
@@ -5067,7 +5064,7 @@ mov.l @r4,r1
 add 0x24,r4
 pref @r4
 add 0xE0,r4
-fsca fpul,fr5
+ftrv xmtrx,fv4
 and r0,r1
 fmov fr1,fr2
 fmov fr1,fr3
@@ -5154,7 +5151,7 @@ mov.l @r4,r1
 add 0x24,r4
 pref @r4
 add 0xE0,r4
-fsca fpul,fr5
+ftrv xmtrx,fv4
 and r0,r1
 fmov fr1,fr2
 fmov fr1,fr3
