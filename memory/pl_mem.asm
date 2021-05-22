@@ -41,6 +41,9 @@
 ; airdash direction(?)
 #symbol airdash_direction 0x22			; byte
 
+;Color Selected in match
+#symbol pl_palid_match 0x25				; byte
+
 ; absolute to world/stage
 #symbol x_pos 0x34						; float
 #symbol y_pos 0x38						; float
@@ -63,9 +66,13 @@
 #symbol x_pos_screenspace 0xe0			; float
 #symbol y_pos_screenspace 0xe4			; float
 
+#symbol xflip_copy_2 0x110				;byte
+
 ; not sure, seems to be 1 all the time
 ; loc_8c05176e sets it to 1
-#symbol unk_012c 0x012c				; byte
+#symbol unk_012c 0x012c					; byte
+
+#symbol xflip_copy 0x130				; byte
 
 ; if == 128 then opponent can preblock
 ; also seems to control whether special cancels are allowed

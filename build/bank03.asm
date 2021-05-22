@@ -1351,11 +1351,11 @@ loc_8c030950:
 	mov.l @(r0,r14),r3
 	mov.w @(loc_8c030ab0,PC),r0
 	mov.l r3,@(r0,r14)
-	add 0x2C,r0
-	mov.w @(r0,r14),r2
+	add 0x2C,r0	;0x104+0x2c = 0x130
+	mov.w @(r0,r14),r2;grab xflip_copy
 	add 0xE0,r0
 	mov 0x00,r3
-	mov.l r2,@(r0,r14)
+	mov.l r2,@(r0,r14);write xflip_copy2
 	add 0xFC,r0
 	mov.l r3,@(r0,r14)
 	mov 0x4C,r0
@@ -27143,7 +27143,6 @@ loc_8c03b56c:
 	mov.w @(r0,r11),r6
 	jsr @r3; loc_8c03cf6a
 	mov r14,r4
-
 	mov.l @r15+,r3
 	mov.b r0,@r3;write Pal id
 
