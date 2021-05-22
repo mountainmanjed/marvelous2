@@ -1558,8 +1558,7 @@ loc_8C120C60:
 ;==============================================
 loc_8c120c70:
 	lds r4,fpul
-	#data 0xf4fd ;Fix Later
-;	ftrv xmtrx,fv4
+	fsca fpul,fr4
 	fldi0 fr0
 	fldi0 fr3
 	fldi0 fr7
@@ -1675,8 +1674,7 @@ loc_8C120D00:
 ;==============================================
 loc_8c120d30:
 	lds r4,fpul
-	#data 0xf4fd;Fix Later
-;	ftrv xmtrx,fv4 
+	fsca fpul,fr4
 	fldi0 fr1
 	fldi0 fr3
 	fldi0 fr7
@@ -1755,10 +1753,10 @@ loc_8C120D90:
 	nop
 
 ;==============================================
-nop
-nop
-nop
-nop
+	nop
+	nop
+	nop
+	nop
 
 ;==============================================
 loc_8C120DC0:
@@ -1792,8 +1790,7 @@ loc_8C120DC0:
 ;==============================================
 loc_8C120df0:
 	lds r4,fpul
-	#data 0xf4fd;Fix Later
-;	ftrv xmtrx,fv4
+	fsca fpul,fr4
 	fldi0 fr2
 	fldi0 fr3
 	fldi0 fr6
@@ -24022,8 +24019,7 @@ loc_8c12c080:
 #data 0x0000
 
 loc_8c12c160:
-#data 0xEEA0
-#data 0x8C2D
+	#data 0x8C2DEEA0
 	nop
 	nop
 	nop
