@@ -28491,18 +28491,22 @@ loc_8C11BED2:
 
 ;==============================================
 loc_8C11BEE0:
-#data 0x6463
+	mov r6,r4
 
 loc_8C11BEE2:
-#data 0xE210
-#data 0x3B237B01
-#data 0x8FEB3EEc
-#data 0x7701
+	mov 0x10,r2
+	add 0x01,r11
+	cmp/ge r2,r11
+	add r14,r14
+	bf.s loc_8c11bec4
+	add 0x01,r7
 
 loc_8C11BEEE:
-#data 0xE204
-#data 0x3C237C01
-#data 0xA01F8BDe
+	mov 0x04,r2
+	add 0x01,r12
+	cmp/ge r2,r12
+	bf loc_8c11beb4
+	bra loc_8c11bf38
 
 ;==============================================
 	nop
@@ -32444,7 +32448,7 @@ loc_8C11D6F4:
 loc_8C11D6F8:
 	#data bank17.loc_8c17AE80
 loc_8C11D6Fc:
-#data 0x8C2AA2F0
+	#data 0x8C2AA2F0
 loc_8C11D700:
 	#data 0xA05F811c
 loc_8C11D704:
