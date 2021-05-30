@@ -21894,7 +21894,7 @@ loc_8C1294C8:
 	#align4
 loc_8C1294D4:
 	#data loc_8c12951c
-	#align4_nop
+	nop
 
 ;==============================================
 loc_8C1294DA:
@@ -22404,7 +22404,8 @@ loc_8c12978a:
 	rts
 	mov r4,r0
 
-
+;==============================================
+	#align4
 
 ;==============================================
 loc_8C12979C:
@@ -23064,9 +23065,9 @@ loc_8c129bf8:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c129bfc:
-	#data 0xF0FF
-loc_8c129bfe:
 	#data 0xFF3f
+loc_8c129bfe:
+	#data 0xF0FF
 	#align4
 
 loc_8c129c00:
