@@ -480,7 +480,6 @@ loc_8c150CEC:
 	#data 0xFB00 0x0500 ;39 BoneWolv
 	#data 0xFC00 0x0400 ;3a Servbot
 
-#align4
 loc_8c150DD8:
 	#data 0xFC00 0x0400 ;00 Ryu
 	#data 0xFC00 0x0400 ;01 Zangief
@@ -962,124 +961,65 @@ loc_8c1511FE:
 
 ;airdash heights
 loc_8c151274:
-; ryu
-#data 0x3000
-; zangief
-#data 0x3000
-; guile
-#data 0x3000
-; morrigan
-#data 0x3000
-; anakaris
-#data 0x3000
-; strider
-#data 0x3000
-; cyclops
-#data 0x3000
-; wolverine
-#data 0x3000
-; psylocke
-#data 0x3000
-; iceman
-#data 0x3000
-; rogue
-#data 0x3000
-; captain america
-#data 0x3000
-; spiderman
-#data 0x3000
-; hulk
-#data 0x3000
-; venom
-#data 0x3000
-; dr doom
-#data 0x3000
-; tron
-#data 0x3000
-; jill
-#data 0x3000
-; hayato
-#data 0x3000
-; ruby
-#data 0x3000
-; sonson
-#data 0x3000
-; amingo
-#data 0x3000
-; marrow
-#data 0x3000
-; cable
-#data 0x3000
-; abyss 1
-#data 0x3000
-; abyss 2
-#data 0x3000
-; abyss 3
-#data 0x3000
-; chun li
-#data 0x3000
-; megaman
-#data 0x3000
-; roll
-#data 0x3000
-; akuma
-#data 0x3000
-; bb hood
-#data 0x3000
-; felicia
-#data 0x3000
-; charlie
-#data 0x3000
-; sakura
-#data 0x3000
-; dan
-#data 0x3000
-; cammy
-#data 0x3000
-; dhalsim
-#data 0x3000
-; dictator mister bison
-#data 0x3000
-; ken
-#data 0x3000
-; gambit
-#data 0x3000
-; juggernaut
-#data 0x3000
-; storm
-#data 0x3800
-; sabretooth
-#data 0x3000
-; magneto
-#data 0x3800
-; shuma
-#data 0x3000
-; war machine
-#data 0x3000
-; silsam
-#data 0x3000
-; omegared
-#data 0x3000
-; spiral
-#data 0x3000
-; colossus
-#data 0x3000
-; iron man
-#data 0x3000
-; sent
-#data 0x3000
-; blackheart
-#data 0x3000
-; thanos
-#data 0x3000
-; jin
-#data 0x3000
-; capcom
-#data 0x3000
-; bonerine
-#data 0x3000
-; servbot
-#data 0x3000
+	#data 0x3000; ryu
+	#data 0x3000; zangief
+	#data 0x3000; guile
+	#data 0x3000; morrigan
+	#data 0x3000; anakaris
+	#data 0x3000; strider
+	#data 0x3000; cyclops
+	#data 0x3000; wolverine
+	#data 0x3000; psylocke
+	#data 0x3000; iceman
+	#data 0x3000; rogue
+	#data 0x3000; captain america
+	#data 0x3000; spiderman
+	#data 0x3000; hulk
+	#data 0x3000; venom
+	#data 0x3000; dr doom
+	#data 0x3000; tron
+	#data 0x3000; jill
+	#data 0x3000; hayato
+	#data 0x3000; ruby heart
+	#data 0x3000; sonson
+	#data 0x3000; amingo
+	#data 0x3000; marrow
+	#data 0x3000; cable
+	#data 0x3000; abyss 1
+	#data 0x3000; abyss 2
+	#data 0x3000; abyss 3
+	#data 0x3000; chun li
+	#data 0x3000; megaman
+	#data 0x3000; roll
+	#data 0x3000; akuma
+	#data 0x3000; bb hood
+	#data 0x3000; felicia
+	#data 0x3000; charlie
+	#data 0x3000; sakura
+	#data 0x3000; dan
+	#data 0x3000; cammy
+	#data 0x3000; dhalsim
+	#data 0x3000; dictator mister bison
+	#data 0x3000; ken
+	#data 0x3000; gambit
+	#data 0x3000; juggernaut
+	#data 0x3800; storm
+	#data 0x3000; sabretooth
+	#data 0x3800; magneto
+	#data 0x3000; shuma
+	#data 0x3000; war machine
+	#data 0x3000; silsam
+	#data 0x3000; omegared
+	#data 0x3000; spiral
+	#data 0x3000; colossus
+	#data 0x3000; iron man
+	#data 0x3000; sent
+	#data 0x3000; blackheart
+	#data 0x3000; thanos
+	#data 0x3000; jin
+	#data 0x3000; capcom
+	#data 0x3000; bonerine
+	#data 0x3000; servbot
 
 #data 0x0000
 
@@ -2219,18 +2159,11 @@ loc_8c151FD0:
 
 
 loc_8c151FD4:
-rts
-clrt
-;-------------------------------------------------------------------------------
-#data 0xFE001000
-#data 0x0009000D
-#data 0xFE201200
-#data 0x000A000F
-#data 0xFE401400
-#data 0x000B0011
-#data 0xFE601600
-#data 0x000C0013
-#data 0xFE801800
+	#data 0x000b 0x0008 0x1000 0xFE00
+	#data 0x000D 0x0009 0x1200 0xFE20
+	#data 0x000F 0x000A 0x1400 0xFE40
+	#data 0x0011 0x000B 0x1600 0xFE60
+	#data 0x0013 0x000C 0x1800 0xFE80
 
 #align4
 loc_8c151FFC:
@@ -2624,7 +2557,6 @@ loc_8c1522AC:
 #data 0x0000000D
 #data 0x0000000C
 #data 0x0000000B
-;-------------------------------------------------------------------------------
 #data 0x0000000A
 #data 0x00000009
 
@@ -3418,7 +3350,6 @@ loc_8c152904:
 #data 0x00000010
 #data 0x0005000E
 #data 0x0007000B
-;-------------------------------------------------------------------------------
 #data 0x000B0006
 #data 0x000C0000
 #data 0x000BFFFA
@@ -4058,7 +3989,7 @@ loc_8c152EF0:
 #data 0xFFEE0013
 #data 0xFFB30042
 #data 0xFF8A002B
-;-------------------------------------------------------------------------------
+
 #data 0xFF8AFFD4
 #data 0xFFE5FFE6
 #data 0xFF80FFF1
@@ -4516,7 +4447,6 @@ loc_8c1532E0:
 #data 0x0036FFBD
 #data 0x0002FFC3
 #data 0x001B000B
-;-------------------------------------------------------------------------------
 
 #align4
 loc_8c1532F0:
@@ -4574,14 +4504,11 @@ loc_8c153334:
 #data bank07.loc_8c070344
 
 loc_8c153338:
-#data bank07.loc_8c070424
-
-#align4
+	#data bank07.loc_8c070424
 loc_8c15333C:
-#data bank07.loc_8c070432
-
+	#data bank07.loc_8c070432
 loc_8c153340:
-#data bank07.loc_8c07036E
+	#data bank07.loc_8c07036E
 
 loc_8c153344:
 #data bank07.loc_8c0704FA
@@ -4661,25 +4588,26 @@ loc_8c1533A4:
 loc_8c1533A8:
 #data bank07.loc_8c070B34
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1533AC:
-#data 0x18171615
-#data 0x19171A19
+	#data 0x15 0x16 0x17 0x18
+	#data 0x19 0x1A 0x17 0x19
 
-#align4
 loc_8c1533B4:
-#data 0x1E1D1C1C
-#data 0x1E1E1D1C
+	#data 0x1C 0x1C 0x1D 0x1E
+	#data 0x1C 0x1D 0x1E 0x1E
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1533BC:
-#data 0x06000100
-#data 0x0500FE00
-#data 0x04000200
-#data 0x0300FF00
+	#data 0x0100 0x0600
+	#data 0xFE00 0x0500
+	#data 0x0200 0x0400
+	#data 0xFF00 0x0300
+	#align4
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1533CC:
-#data bank07.loc_8c070C5E
+	#data bank07.loc_8c070C5E
 
 loc_8c1533D0:
 #data bank07.loc_8c070D8A
@@ -4785,58 +4713,45 @@ loc_8c153454:
 #data 0x00000000
 #data 0x00080000
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c15346C:
-#data 0x2D 0x37
-#data 0x37
+	#data 0x2D 0x37 0x37
+
 loc_8C15346F:
-#data 0x41
-#data 0x00004B4B
+	#data 0x41 0x4B 0x4B
+	#align4
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c153474:
-#data bank07.loc_8c071AD4
-
+	#data bank07.loc_8c071AD4
 loc_8c153478:
-#data bank07.loc_8c071BA2
-
+	#data bank07.loc_8c071BA2
 loc_8c15347C:
-#data bank07.loc_8c071EC8
-
+	#data bank07.loc_8c071EC8
 loc_8c153480:
-#data bank07.loc_8c071BE8
-
+	#data bank07.loc_8c071BE8
 loc_8c153484:
-#data bank07.loc_8c071DC2
-
+	#data bank07.loc_8c071DC2
 loc_8c153488:
-#data bank07.loc_8c071EA8
-
+	#data bank07.loc_8c071EA8
 loc_8c15348C:
-#data bank07.loc_8c071F3C
-
+	#data bank07.loc_8c071F3C
 loc_8c153490:
-#data bank07.loc_8c071F4E
-
+	#data bank07.loc_8c071F4E
 loc_8c153494:
-#data bank07.loc_8c0720A2
-
+	#data bank07.loc_8c0720A2
 loc_8c153498:
-#data bank07.loc_8c0722AA
-
+	#data bank07.loc_8c0722AA
 loc_8c15349C:
-#data bank07.loc_8c07230C
-
+	#data bank07.loc_8c07230C
 loc_8c1534A0:
-#data bank07.loc_8c072114
-
+	#data bank07.loc_8c072114
 loc_8c1534A4:
-#data bank07.loc_8c072194
-
+	#data bank07.loc_8c072194
 loc_8c1534A8:
-#data bank07.loc_8c0722BC
-
+	#data bank07.loc_8c0722BC
 loc_8c1534AC:
-#data bank07.loc_8c0722EA
+	#data bank07.loc_8c0722EA
 
 loc_8c1534B0:
 #data bank07.loc_8c072394
@@ -5049,7 +4964,7 @@ loc_8c1535F4:
 #data 0x00000000
 #data 0x0024FFD0
 #data 0x0718000B
-;-------------------------------------------------------------------------------
+
 #data 0xFFFE0000
 #data 0x00000000
 #data 0x0024FFD0
@@ -5058,7 +4973,7 @@ loc_8c1535F4:
 #data 0x00000000
 #data 0x0024FFD0
 #data 0x3C18000B
-;-------------------------------------------------------------------------------
+
 
 #align4
 loc_8c153634:
@@ -5167,7 +5082,7 @@ loc_8c1536CC:
 #data 0xFFFCE000
 #data 0x0060FFA0
 #data 0x3020000B
-;-------------------------------------------------------------------------------
+
 
 #align4
 loc_8c1536DC:
@@ -7790,7 +7705,7 @@ nop
 sts mach,r0
 rts
 mov.b @(r0,r0),r0
-;-------------------------------------------------------------------------------
+
 #data 0x000D
 
 #align4
@@ -8823,7 +8738,7 @@ loc_8c155050:
 loc_8c155054:
 rts
 movt r0
-;-------------------------------------------------------------------------------
+
 #data 0x0048FFEC
 #data 0x00300016
 #data 0x0047FFFA
@@ -11150,7 +11065,7 @@ fmov.s @r15+,fr15
 loc_8c156240:
 rts
 mov.b r2,@(r0,r0)
-;-------------------------------------------------------------------------------
+
 #data 0x00140000
 #data 0x003A0015
 #data 0x00200000
@@ -11167,7 +11082,7 @@ mov.b r2,@(r0,r0)
 loc_8c156270:
 rts
 mov.b @(r0,r0),r0
-;-------------------------------------------------------------------------------
+
 #data 0x00140000
 #data 0x00220015
 #data 0x00200000
@@ -11592,7 +11507,7 @@ loc_8c156544:
 #data 0x002D0005
 #data 0x00000000
 #data 0x002E000B
-;-------------------------------------------------------------------------------
+
 #data 0x00000000
 #data 0x002F000C
 #data 0x00000000
@@ -12073,7 +11988,7 @@ loc_8c156A20:
 loc_8c156A40:
 #data 0xFFF4FFFF
 #data 0xFFF5000B
-;-------------------------------------------------------------------------------
+
 #data 0xFFFD000F
 #data 0x0008000C
 #data 0x00090002
@@ -12086,10 +12001,10 @@ loc_8c156A40:
 #data 0x0008FFF4
 #data 0x000AFFFF
 #data 0x000B000B
-;-------------------------------------------------------------------------------
+
 #data 0x0003000E
 #data 0xFFF8000B
-;-------------------------------------------------------------------------------
+
 #data 0xFFF0FFFF
 #data 0xFFEF000C
 #data 0xFFFD0014
@@ -12127,7 +12042,7 @@ loc_8c156A40:
 #data 0xFFFC002C
 #data 0x000E0021
 #data 0x0027000B
-;-------------------------------------------------------------------------------
+
 #data 0x001AFFE4
 #data 0x0004FFD1
 #data 0xFFF3FFDF
@@ -12415,7 +12330,7 @@ loc_8c156DCC:
 #data 0x00E001F0
 #data 0xFFFCE000
 #data 0x004A002B
-;-------------------------------------------------------------------------------
+
 #data 0xFF100C20
 #data 0xF0000050
 #data 0xFFF2FFFC
@@ -12444,7 +12359,7 @@ loc_8c156DCC:
 #data 0x00E001F0
 #data 0xFFFCE000
 #data 0x0062002B
-;-------------------------------------------------------------------------------
+
 #data 0xFF100C20
 #data 0xF0000050
 #data 0x0002FFFC
@@ -12473,7 +12388,7 @@ loc_8c156DCC:
 #data 0x008001F0
 #data 0xFFFCE000
 #data 0x004A002B
-;-------------------------------------------------------------------------------
+
 #data 0x01F01020
 #data 0xF00000C0
 #data 0x0030FFFC
@@ -12502,7 +12417,7 @@ loc_8c156DCC:
 #data 0x008001F0
 #data 0xFFFCE000
 #data 0x0062002B
-;-------------------------------------------------------------------------------
+
 #data 0x01F01020
 #data 0xF00000C0
 #data 0x0040FFFC
@@ -13169,12 +13084,12 @@ loc_8c1574C0:
 #data 0x00210005
 #data 0x00000000
 #data 0x0022000B
-;-------------------------------------------------------------------------------
+
 #data 0x00000000
 #data 0x0000000C
 #data 0x00000000
 #data 0x0000000B
-;-------------------------------------------------------------------------------
+
 #data 0x003FFFD9
 #data 0x001A0047
 #data 0x0046FFAE
@@ -14681,7 +14596,7 @@ loc_8c15835C:
 #data 0x0060FFE0
 #data 0x00080A01
 #data 0x001C000B
-;-------------------------------------------------------------------------------
+
 #data 0x00090B01
 #data 0x00340010
 #data 0x00080A01
@@ -15223,7 +15138,7 @@ loc_8c158C1A:
 #data 0x00400004
 #data 0x00080B01
 #data 0x004C000B
-;-------------------------------------------------------------------------------
+
 #data 0x00070C01
 #data 0x00220005
 #data 0x00090B01
@@ -15776,7 +15691,7 @@ loc_8c1592F4:
 #data 0x003BFFFC
 #data 0x00140000
 #data 0x0054000B
-;-------------------------------------------------------------------------------
+
 #data 0x000E0002
 #data 0x00540022
 #data 0x000C0004
@@ -16619,7 +16534,7 @@ loc_8c159880:
 #data 0x000A0001
 #data 0x00010001
 #data 0x0001000B
-;-------------------------------------------------------------------------------
+
 #data 0x000D0001
 #data 0x00010001
 #data 0x0001000E
@@ -18071,7 +17986,7 @@ fsub fr0,fr14
 #data 0x0018FFF1
 #data 0xFFCFFE00
 #data 0xFE00002B
-;-------------------------------------------------------------------------------
+
 #data 0x003BFFE7
 #data 0xFFE6FE00
 #data 0xFE000023
@@ -18793,7 +18708,7 @@ loc_8c15B060:
 #data 0x00160009
 #data 0x0004000C
 #data 0x0018000B
-;-------------------------------------------------------------------------------
+
 #data 0x0004000C
 #data 0x001B000E
 #data 0x0005000C
@@ -19384,7 +19299,7 @@ loc_8c15B528:
 #data 0xFFEE0013
 #data 0xFFB30042
 #data 0xFF8A002B
-;-------------------------------------------------------------------------------
+
 #data 0xFF8AFFD4
 #data 0xFFE5FFE6
 #data 0xFF80FFF1
@@ -20202,7 +20117,7 @@ loc_8c15BBF8:
 #data 0x0059FFDA
 #data 0x0040FFFC
 #data 0x0012000B
-;-------------------------------------------------------------------------------
+
 #data 0x0000FFE0
 #data 0x0054FFE2
 #data 0x003E0009
@@ -23703,7 +23618,7 @@ loc_8c15D2C8:
 #data 0x0000191B
 #data 0x0033FFFE
 #data 0x1A1B000B
-;-------------------------------------------------------------------------------
+
 #data 0xFFFE0000
 #data 0x0004003E
 #data 0x00001B1B
@@ -26920,7 +26835,7 @@ loc_8c15EF34:
 #data 0x00250015
 #data 0x00250015
 #data 0x0016000B
-;-------------------------------------------------------------------------------
+
 
 #align4
 loc_8c15EF78:
@@ -28860,7 +28775,6 @@ loc_8c15FC80:
 #data 0x00000009
 #data 0x0000000A
 #data 0x0000000B
-;-------------------------------------------------------------------------------
 #data 0x0000000C
 #data 0x0000000D
 #data 0x0000000E
