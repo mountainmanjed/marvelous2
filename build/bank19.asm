@@ -91,8 +91,7 @@ loc_8c190168:
 #data 0xFFD8
 
 loc_8c19016c:
-#data 0xC32A
-#data 0x8C18
+#data bank18.loc_8C18C32A
 #data 0x0000
 #data 0x0000
 #data 0x0000
@@ -877,18 +876,9 @@ mov r4,r0
 add 0x01,r0
 bra loc_8c1906da
 mov.l r0,@(0x08,r14) 
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
+
+#repeat 12
+nop
 
 #align4
 loc_8c1906a0:
@@ -976,15 +966,9 @@ cmp/eq 0x04,r0
 bt loc_8c1907a6
 bra loc_8c1908e6
 nop 
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
+
+#repeat 9
+nop
 
 loc_8C190740:
 #data 0x0401
@@ -1004,12 +988,9 @@ loc_8c19074c:
 
 loc_8C190750:
 #data 0x8C343430
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
+
+#repeat 6
+nop
 
 
 loc_8c190760:
@@ -1161,20 +1142,9 @@ mov.l @(0x04,r14),r0
 add 0xFF,r0
 bra loc_8c1908e4
 mov.l r0,@(0x04,r14) 
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
+
+#repeat 14
+nop
 
 loc_8C190860:
 #data 0x0800
@@ -1254,16 +1224,9 @@ loc_8C1908C4:
 #align4
 loc_8C1908C8:
 #data 0x8C3434F0
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
+
+#repeat 10
+nop
 
 
 loc_8c1908e0:
@@ -1741,11 +1704,9 @@ loc_8c190BE4:
 
 loc_8c190BE8:
 #data 0x00800000
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
+
+#repeat 10
+nop
 
 
 loc_8c190C00:
@@ -2448,8 +2409,7 @@ loc_8c190fe8:
 #data 0xFFD8
 
 loc_8c190fec:
-#data 0xC32A
-#data 0x8C18
+#data bank18.loc_8C18C32A
 #data 0x0009
 #data 0x0009
 #data 0x0009
@@ -2514,13 +2474,9 @@ mov.l r0,@r3 ; r3 ??
 mov.l @(loc_8c19109C,pc),r10 ; r10 set to 0x15D1C951
 bra loc_8c1910A2
 nop
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
+
+#repeat 14
+nop
 
 #align4
 loc_8c191080:
@@ -2600,12 +2556,9 @@ mov r12,r13
 loc_8c1910E4:
 bra loc_8c191130
 mov 0x03,r1
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
-#data 0x00090009
+
+#repeat 12
+nop
 
 loc_8c191100:
 #data 0x0101
@@ -3158,20 +3111,8 @@ loc_8c191440:
 rts 
 mov 0x00,r0
 ;-------------------------------------------------------------------------------
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
-#data 0x0009
+#repeat 14
+nop
 loc_8C191460:
 #data 0x03B8
 loc_8C191462:
@@ -3182,7 +3123,7 @@ loc_8C191464:
 #data 0x0000
 
 loc_8c191468:
-#data 0x8C19135E
+#data loc_8C19135E
 
 loc_8c19146c:
 #data loc_8c19132A
@@ -7402,8 +7343,7 @@ loc_8c193200:
 #data 0x0000
 
 loc_8c193204:
-#data 0x19C2
-#data 0x8C19
+#data loc_8C1919C2
 
 #align4
 loc_8C193208:
@@ -8872,8 +8812,7 @@ loc_8C193BB0:
 #data 0x8C32
 
 loc_8c193bb8:
-#data 0x70A0
-#data 0x8C1A
+#data bank1a.loc_8C1A70A0
 #data 0x0009
 #data 0x0009
 
@@ -8951,8 +8890,7 @@ loc_8c193c10:
 #data 0x8C32
 
 loc_8c193c48:
-#data 0xD268
-#data 0x8C18
+#data bank18.loc_8C18D268
 #data 0x0000
 #data 0xFFFC
 #data 0x0009
@@ -9090,20 +9028,16 @@ loc_8c193d2c:
 #data 0x8C32
 
 loc_8c193d4c:
-#data 0xD268
-#data 0x8C18
+#data bank18.loc_8C18D268
 
 loc_8c193d50:
-#data 0x4900
-#data 0x8C1A
+#data bank1a.loc_8C1A4900
 
 loc_8c193d54:
-#data 0xD160
-#data 0x8C18
+#data bank18.loc_8C18D160
 
 loc_8c193d58:
-#data 0xD016
-#data 0x8C18
+#data bank18.loc_8C18D016
 #data 0x0009
 #data 0x0009
 
