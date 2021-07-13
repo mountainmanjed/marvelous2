@@ -10812,6 +10812,7 @@ loc_8c13bfa0:
 	#data 0x3f800000 0x3f800000 0x3f800000
 
 ;==============================
+;Character Select
 loc_8c13bfac:
 	#data 0xc21151ec 0xc1e93333 0x4258b852 ;00 Ryu
 	#data 0xc2110a3d 0xc1e8cccd 0x42583333 ;01 Zangief
