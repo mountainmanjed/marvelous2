@@ -16872,7 +16872,7 @@ loc_8c1793ea:
 	mov r13,r4
 	tst r0,r0
 	bt loc_8c17940a
-	bra loc_8c17942a+0xa
+	bra loc_8c17942a
 	mov 0xFF,r0
 
 loc_8c17940a:
@@ -17679,7 +17679,7 @@ loc_8c179930:
 	mov r14,r4
 	tst r0,r0
 	bt loc_8c17994a
-	bra loc_8c17996a+0x1a
+	bra loc_8c17996a
 	mov 0xFF,r0
 
 loc_8c17994a:
@@ -18506,7 +18506,7 @@ loc_8c179e48:
 	nop 
 
 loc_8c179e50:
-	bra loc_8c17a052+0x240
+	bra loc_8c17a052
 	nop 
 
 loc_8c179e54:
@@ -18556,11 +18556,11 @@ loc_8c179e8a:
 	bt loc_8c179e96
 	cmp/eq 0x09,r0
 	bt loc_8c179e96
-	bra loc_8c17a052+0x240
+	bra loc_8c17a052
 	nop 
 
 loc_8c179e96:
-	bra loc_8c17a052+0x240
+	bra loc_8c17a052
 	mov r14,r4
 
 loc_8c179e9a:
@@ -18582,7 +18582,7 @@ loc_8c179e9a:
 	bt loc_8c179f3a
 	cmp/eq 0x09,r0
 	bt loc_8c179f3a
-	bra loc_8c17a052+0x240
+	bra loc_8c17a052
 	nop 
 
 loc_8c179ec2:
@@ -18597,7 +18597,7 @@ loc_8c179ec2:
 	shll2 r4
 	shll r4
 	add r3,r4
-	bra loc_8c17a052+0x240
+	bra loc_8c17a052
 	shll2 r4
 
 loc_8c179edc:
@@ -18609,7 +18609,7 @@ loc_8c179edc:
 	mov.w @(0x38,PC),r2
 	add r3,r4
 	shll2 r4
-	bra loc_8c17a052+0x240
+	bra loc_8c17a052
 	add r2,r4
 
 loc_8c179ef0:
@@ -18627,7 +18627,7 @@ loc_8c179ef0:
 
 loc_8c179f06:
 	mov.w @(0x1A,PC),r4
-	bra loc_8c17a052+0x240
+	bra loc_8c17a052
 	nop 
 
 loc_8c179f0c:
@@ -18640,7 +18640,7 @@ loc_8c179f0e:
 	shll2 r4
 	shll r4
 	add r3,r4
-	bra loc_8c17a052+0x240
+	bra loc_8c17a052
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c179f1c:
@@ -18664,11 +18664,11 @@ loc_8c179f26:
 	mov.w @(0x8C,PC),r2
 	add r3,r4
 	shll2 r4
-	bra loc_8c17a052+0x240
+	bra loc_8c17a052
 	add r2,r4
 
 loc_8c179f3a:
-	bra loc_8c17a052+0x240
+	bra loc_8c17a052
 	mov r14,r4
 
 loc_8c179f3e:
@@ -18687,11 +18687,11 @@ loc_8c179f3e:
 	bt loc_8c179f60
 	cmp/eq 0x09,r0
 	bt loc_8c179f60
-	bra loc_8c17a052+0x240
+	bra loc_8c17a052
 	nop 
 
 loc_8c179f60:
-	bra loc_8c17a052+0x240
+	bra loc_8c17a052
 	mov r14,r4
 
 loc_8c179f64:
@@ -18710,7 +18710,7 @@ loc_8c179f64:
 	bt loc_8c179fbc
 	cmp/eq 0x09,r0
 	bt loc_8c179fbc
-	bra loc_8c17a052+0x240
+	bra loc_8c17a052
 	nop 
 
 loc_8c179f86:
@@ -18745,7 +18745,7 @@ loc_8c179f8a:
 	shll r4
 
 loc_8c179fbc:
-	bra loc_8c17a052+0x240
+	bra loc_8c17a052
 	mov r14,r4
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
@@ -18774,7 +18774,7 @@ loc_8c179fc8:
 	bt loc_8c17a050
 	cmp/eq 0x09,r0
 	bt loc_8c17a050
-	bra loc_8c17a052+0x240
+	bra loc_8c17a052
 	nop 
 
 loc_8c179fea:
@@ -18803,7 +18803,7 @@ loc_8c179fec:
 	add r3,r4
 	shll2 r4
 	shll r4
-	bra loc_8c17a052+0x240
+	bra loc_8c17a052
 	add r14,r4
 
 loc_8c17a01c:
@@ -18833,7 +18833,7 @@ loc_8c17a01c:
 	shll r4
 
 loc_8c17a04c:
-	bra loc_8c17a052+0x240
+	bra loc_8c17a052
 	add r2,r4
 
 loc_8c17a050:
@@ -18891,13 +18891,15 @@ loc_8c17a060:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c17a0ac:
-	mov 0xBE,r14
-	.word 0x0000
-	mov.b r9,@r15
-	mov.b r0,@(r0,r0)
+	#data 0xeebe
+	#align4
+
+loc_8c17a0b0:
+	#data 0x00042f90
+
 
 ;==============================================
-loc_8c17a0b4
+loc_8c17a0b4:
 	mov r6,r0
 	cmp/eq 0x00,r0
 	bt loc_8c17a0ca
