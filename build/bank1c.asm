@@ -9835,37 +9835,23 @@ loc_8C1C3F0C:
 
 #align4
 loc_8C1C3F10:
-#data 0x8C34B0BC
-
-#align4
+	#data 0x8C34B0BC
 loc_8C1C3F14:
-#data 0x8C34B0BB
-
-#align4
+	#data 0x8C34B0BB
 loc_8c1c3f18:
-#data bank1b.loc_8c1bec26
-
+	#data bank1b.loc_8c1bec26
 loc_8c1c3f1c:
-#data bank1b.loc_8c1bec20
-
+	#data bank1b.loc_8c1bec20
 loc_8c1c3f20:
-#data bank1b.loc_8c1b3eec
-
+	#data bank1b.loc_8c1b3eec
 loc_8c1c3f24:
-#data 0x0000
-#data 0x8C01
-
+	#data bank01.loc_8c010000
 loc_8c1c3f28:
-#data 0x0060
-#data 0x8C01
-
+	#data bank01.loc_8c010060
 loc_8c1c3f2c:
-#data 0x0060
-#data 0x8C01
-
+	#data bank01.loc_8c010060
 loc_8c1c3f30:
-#data 0x0080
-#data 0x8C01
+	#data bank01.loc_8c010080
 
 loc_8c1c3f34:
 #data 0x90E0

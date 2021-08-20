@@ -9373,7 +9373,7 @@ loc_8C083DD6:
 	#data 0x012C
 	#align4
 loc_8c083dd8:
-	#data 0x8c1294c8
+	#data bank12.loc_8c1294c8
 loc_8c083ddc:
 	#data 0x430f0000
 loc_8c083de0:

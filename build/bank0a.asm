@@ -17786,7 +17786,7 @@ loc_8c0a7706:
 	rts 
 	mov.l @r15+,r14
 
-;----------------------------------------------
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c0a770e:
 	#data 0x01B0
 loc_8c0a7710:
@@ -17798,18 +17798,13 @@ loc_8C0A7714:
 	#align4
 
 loc_8c0a7718:
-#data 0x72AE
-#data 0x8C15
-
+	#data bank15.loc_8C1572AE
 loc_8c0a771c:
-#data 0x50C0
-#data 0x8C04
-
-#align4
+	#data bank04.loc_8C0450C0
 loc_8c0a7720:
-#data bank04.loc_8c045748
+	#data bank04.loc_8c045748
 
-;====================================
+;==============================================
 ;unused
 loc_8c0a7724:
 	sts.l pr,@-r15

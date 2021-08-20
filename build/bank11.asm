@@ -24909,14 +24909,16 @@ loc_8c11a75a:
 	mov.l @(0x24,PC),r3
 	jsr @r3
 	nop 
-	bra loc_8c11a842              ; loc_8c11a5a2+0x2a0
+	bra loc_8c11a842
 	nop 
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-loc_8c11a764:
-#data 0x8c03563a
-#data 0xFF000000
+	#align4
 
+loc_8c11a764:
+	#data bank03.loc_8c03563a
+loc_8c11a768:
+	#data 0xFF000000
 loc_8c11a76c:
 	#data bank03.loc_8c0355b2
 loc_8c11a770:

@@ -20561,11 +20561,8 @@ loc_8c15BFA4:
 #data bank0c.loc_8c0c739A
 
 loc_8c15BFA8:
-#data 0x00010000
-#data 0x0001
-
-loc_8c15BFAE:
-#data 0x0000
+	#data 0x00010000
+	#data 0x00000001
 
 #align4
 loc_8c15BFB0:
@@ -20573,10 +20570,7 @@ loc_8c15BFB0:
 #data 0x00000010
 
 loc_8c15BFB8:
-#data 0xBFA8
-
-loc_8c15BFBA:
-#data 0x8C15
+	#data loc_8C15BFA8
 
 #align4
 loc_8c15BFBC:

@@ -9067,7 +9067,7 @@ loc_8C123F8C:
 loc_8C123F90:
 	#data 0x8C2DAD48
 loc_8c123f94:
-	#data 0x8C129128
+	#data bank12.loc_8c129128
 loc_8C123F98:
 	#data 0x8C2DAD4C
 loc_8C123F9C:
@@ -10816,7 +10816,7 @@ loc_8c124bb2:
 loc_8c124bc8:
 	#data 0x8C2D6CEC
 loc_8c124bcc:
-	#data 0x8C11BDC0
+	#data bank11.loc_8c11BDC0
 loc_8c124bd0:
 	#data 0x0000FFFF
 loc_8c124bd4:
@@ -10832,7 +10832,7 @@ loc_8c124be4:
 loc_8c124be8:
 	#data bank13.loc_8C13F548
 loc_8c124bec:
-	#data 0x8C1294BC
+	#data bank12.loc_8c1294BC
 loc_8c124bf0:
 	#data 0x437F0000
 loc_8c124bf4:
