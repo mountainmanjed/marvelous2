@@ -6705,7 +6705,7 @@ loc_8c042e16:
 	add 0x04,r15
 
 loc_8c042e2a:
-	mov.w @(loc_8c042e66,PC),r0
+	mov.w @(loc_8c042e66,PC),r0;0x4c0
 	mov.w @(r0,r14),r3
 	tst r3,r3
 	bf loc_8c042e46
@@ -6721,7 +6721,7 @@ loc_8c042e2a:
 	mov.w r2,@(r0,r14)
 
 loc_8c042e46:
-	mov.w @(loc_8c042e66,PC),r0
+	mov.w @(loc_8c042e66,PC),r0;0x4c0
 	mov.w @(r0,r14),r3
 	add 0xFF,r3
 	mov.w r3,@(r0,r14)
@@ -6766,13 +6766,13 @@ loc_8c042e80:
 	mov 0x04,r13
 
 loc_8c042e82:
-	mov.l @(loc_8c042f7c,PC),r2
+	mov.l @(loc_8c042f7c,PC),r2;GameGlobalPointer
 	mov 0x0B,r6
-	mov.l @(loc_8c042f78,PC),r3
-	mov.w @(loc_8c042f66,PC),r0
+	mov.l @(loc_8c042f78,PC),r3;loc_8c13a1a0;PRESS START BUTTON
+	mov.w @(loc_8c042f66,PC),r0;0x00b2
 	mov.l r3,@-r15
 	mov.l @r2,r5
-	mov.l @(loc_8c042f80,PC),r3
+	mov.l @(loc_8c042f80,PC),r3;loc_8c0395c6
 	mov.b @(r0,r5),r5
 	jsr @r3
 	mov r13,r4

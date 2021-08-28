@@ -4015,9 +4015,9 @@ loc_8c031bba:
 	mov.l r8,@-r15
 	sts.l pr,@-r15
 	add 0xFC,r15
-	mov.l @(loc_8c031c68,PC),r5
+	mov.l @(loc_8c031c68,PC),r5 ; loc_8c14cf7c
 	mov 0x00,r14
-	mov.l @(loc_8c031c4c,PC),r10
+	mov.l @(loc_8c031c4c,PC),r10 ; 0x8c26822c
 	mov r5,r9
 	mov r5,r11
 	mov r5,r4
@@ -4030,12 +4030,12 @@ loc_8c031bdc:
 	mov r14,r8
 
 loc_8c031be2:
-	mov.l @(loc_8c031c6c,PC),r3
+	mov.l @(loc_8c031c6c,PC),r3 ; loc_8c17a4b4
 	jsr @r3
 	mov.l @r12,r4
 	tst r0,r0
 	bt loc_8c031bf2
-	mov.l @(loc_8c031c70,PC),r3
+	mov.l @(loc_8c031c70,PC),r3 ; loc_8c17a54c
 	jsr @r3
 	mov.l @r13,r4
 
@@ -16590,7 +16590,7 @@ loc_8c036ef4:
 	jsr @r3
 	mov 0x39,r4
 	mov.w @(loc_8c036f76,PC),r0 ; 8c036f76 ; 4650
-	mov.l @(loc_8c036f8c,PC),r3 ; 8c036f8c ; 8c031bba
+	mov.l @(loc_8c036f8c,PC),r3 ; 8c036f8c ; 	
 	mov.w r0,@(0x8,r14)
 	mov 0x0A,r0
 	mov.w r0,@(0xA,r14)
@@ -16992,13 +16992,13 @@ loc_8c037188:
 
 ;==============================================
 ;internal pause render
-;white border, green selector, window bg postion?, etc
+;white border, green selector, window bg postion, etc
 ;==============================================
 loc_8c03718c:
 	mov.l r14,@-r15
 	mov.l r13,@-r15
 	mov.l r12,@-r15
-	mov.l @(loc_8c037360,PC),r13
+	mov.l @(loc_8c037360,PC),r13 ; 0x8c212c9c
 	mov.l r11,@-r15
 	fmov fr15,@-r15
 	sts.l pr,@-r15
@@ -17039,9 +17039,9 @@ loc_8c0371c8:
 	add 0x10,r4
 	cmp/hs r6,r4
 	bf loc_8c0371c8
-	mov.l @(loc_8c037370,PC),r11  ;8c127af0
+	mov.l @(loc_8c037370,PC),r11 ; loc_8c127af0
 	mov r14,r5
-	jsr @r11
+	jsr @r11 ; loc_8c127af0
 	mov 0x04,r4
 
 	mov.w @(0xA,r13),r0
@@ -17064,7 +17064,7 @@ loc_8c0371c8:
 	fmov fr3,fr15
 	fdiv fr2,fr15
 	fmov @(r0,r13),fr3
-	mova @(loc_8c03737c,PC),r0
+	mova @(loc_8c03737c,PC),r0 ; 0x439e0000 ; WhiteBoxL
 	fmul fr15,fr3
 	fmov fr15,fr0
 	fneg fr3
@@ -17077,7 +17077,7 @@ loc_8c0371c8:
 	fmov @(r0,r12),fr3
 	fmov @(r0,r13),fr2
 	fmac fr0,fr2,fr3
-	mova @(loc_8c037380,PC),r0
+	mova @(loc_8c037380,PC),r0 ; 0x43a20000 ; WhiteBoxR
 	fmov @r0,fr2
 	mov 0x14,r0
 	fadd fr2,fr3
@@ -17085,7 +17085,7 @@ loc_8c0371c8:
 	fmov fr3,@r5
 	fmov @(r0,r13),fr3
 	fmov @(r0,r12),fr0
-	mova @(loc_8c037384,PC),r0
+	mova @(loc_8c037384,PC),r0;0x436c0000 ; WhiteBoxT
 	fmul fr15,fr3
 	fneg fr3
 	fadd fr0,fr3
@@ -17099,18 +17099,19 @@ loc_8c0371c8:
 	mov 0x14,r0
 	fmov @(r0,r13),fr1
 	fmov @(r0,r12),fr3
-	mova @(loc_8c037388,PC),r0
+	mova @(loc_8c037388,PC),r0 ;0x43740000 ; WhiteBoxB
 	fmac fr0,fr1,fr3
 	fmov @r0,fr1
 	mov 0x04,r0
 	fadd fr1,fr3
 	fmov fr3,@(r0,r4)
 	fmov fr3,@(r0,r6)
-	jsr @r11
+	jsr @r11 ; loc_8c127af0
 	mov r0,r4
 
 ;Blue BG X pos
-	mova @(loc_8c03738c,PC),r0 ;8c03738c
+;8c03725c
+	mova @(loc_8c03738c,PC),r0 ; 0x43a00000; XInBox
 	fmov fr15,fr0
 	fmov @r0,fr4
 	mov 0x10,r0
@@ -17133,7 +17134,8 @@ loc_8c0371c8:
 	fmov @(r0,r13),fr2
 
 ;Blue BG Y pos
-	mova @(loc_8c037390,PC),r0 ;8c037390
+;8c037286
+	mova @(loc_8c037390,PC),r0 ; 0x43700000 ; YInBox
 	fmac fr0,fr2,fr3
 	fadd fr4,fr3
 	fmov fr3,@r5
@@ -17152,15 +17154,16 @@ loc_8c0371c8:
 	mov 0x14,r0
 	fmov @(r0,r13),fr2
 	fmov @(r0,r12),fr3
-	mov 0x04,r0
+	mov 0x04,r0;Number of Vertexes
 	fmac fr0,fr2,fr3
 	fadd fr4,fr3
 	fmov fr3,@(r0,r5)
 	mov r14,r5
 	fmov fr3,@(r0,r4)
-	jsr @r11
+	jsr @r11 ; loc_8c127af0
 	mov r0,r4
 
+;Cursor Size Render
 	mov.w @(0xA,r13),r0
 	tst r0,r0
 	bf loc_8c037352
@@ -17169,7 +17172,7 @@ loc_8c0371c8:
 	bt loc_8c037352
 	mov.b @(0xF,r13),r0
 	add 0x40,r14
-	mov.l @(loc_8c037394,PC),r3
+	mov.l @(loc_8c037394,PC),r3; Text Table
 	mov r14,r6
 	mov r0,r4
 	shll2 r4
@@ -17178,13 +17181,13 @@ loc_8c0371c8:
 	add r3,r4
 	mov r14,r5
 	mov.b @r4,r2
-	mova @(loc_8c037398,PC),r0
+	mova @(loc_8c037398,PC),r0 ; 0x40800000 CursorZ?
 	fmov @r0,fr4
 	mov 0x10,r0
 	extu.b r2,r2
 	fmov @(r0,r12),fr2
 	lds r2,fpul
-	mova @(loc_8c03739c,PC),r0
+	mova @(loc_8c03739c,PC),r0 ; CursorL
 	fmov fr4,fr0
 	add 0x20,r6
 	add 0x10,r7
@@ -17201,7 +17204,7 @@ loc_8c0371c8:
 	float fpul,fr2
 	mov 0x10,r0
 	fmov @(r0,r12),fr1
-	mova @(loc_8c0373a0,PC),r0
+	mova @(loc_8c0373a0,PC),r0 ; CursorR
 	fmac fr0,fr2,fr1
 	fmov @r0,fr2
 	fadd fr2,fr1
@@ -17212,7 +17215,7 @@ loc_8c0371c8:
 	lds r2,fpul
 	mov 0x14,r0
 	fmov @(r0,r12),fr3
-	mova @(loc_8c0373a4,PC),r0
+	mova @(loc_8c0373a4,PC),r0 ; CursorT
 	float fpul,fr1
 	fmac fr0,fr1,fr3
 	fmov @r0,fr1
@@ -17225,7 +17228,7 @@ loc_8c0371c8:
 	lds r2,fpul
 	mov 0x14,r0
 	fmov @(r0,r12),fr2
-	mova @(loc_8c0373a8,PC),r0
+	mova @(loc_8c0373a8,PC),r0 ; CursorB
 	float fpul,fr3
 	fmac fr0,fr3,fr2
 	fmov @r0,fr3
@@ -17234,7 +17237,7 @@ loc_8c0371c8:
 	fmov fr2,@(r0,r5)
 	mov r14,r5
 	fmov fr2,@(r0,r6)
-	jsr @r11
+	jsr @r11  ; loc_8c127af0
 	mov r0,r4
 
 loc_8c037352:
@@ -17248,6 +17251,7 @@ loc_8c037352:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c037360:
 	#data 0x8c212c9c
 loc_8c037364:
@@ -18077,7 +18081,7 @@ loc_8c0378a4:
 	mov.l r2,@-r15
 	mov 0x2C,r5 ; Y postion
 	mov.l @(loc_8c037928,PC),r2 ; 8c0395c6
-	add 0x20,r6 ; handles color
+	add 0x20,r6 ; handles text color
 	mov.l r3,@-r15
 	jsr @r2
 	mov 0x44,r4
@@ -21228,15 +21232,15 @@ loc_8c038dd0:
 ;==============================================
 loc_8c038dd4:
 	mov.l r14,@-r15
-	mov.l @(loc_8c038ea0,PC),r14;8c038ea0;0x8c212c9c
+	mov.l @(loc_8c038ea0,PC),r14;0x8c212c9c
 	mov.l r13,@-r15
 	sts.l pr,@-r15
 	mov.b @r14,r0
-	mov.l @(loc_8c038ea4,PC),r13
+	mov.l @(loc_8c038ea4,PC),r13;0x8c212ccc
 	tst 0x04,r0
 	bt loc_8c038df0
 	lds.l @r15+,pr
-	mov.l @(loc_8c038ea8,PC),r2
+	mov.l @(loc_8c038ea8,PC),r2;loc_8c0373d2
 	mov r14,r4
 	mov.l @r15+,r13
 	jmp @r2
@@ -21267,7 +21271,7 @@ loc_8c038e02:
 	nop
 
 loc_8c038e18:
-	mov.l @(loc_8c038eac,PC),r2
+	mov.l @(loc_8c038eac,PC),r2;loc_8c028294
 	mov 0x1C,r0
 	mov 0x01,r3
 	jsr @r2
@@ -22533,6 +22537,7 @@ loc_8c03969c:
 loc_8c0396a0:
 	#data 0x0080
 	#align4
+
 loc_8c0396a4:
 	#data 0x8c289f80
 loc_8c0396a8:
