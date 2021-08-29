@@ -38724,15 +38724,15 @@ loc_8c04fd8c:
 ;==============================================
 ;Walk forward
 loc_8c04fd92:
-	mov.w @(loc_8c04fde8,PC),r0
-	mov.w @(loc_8c04fde6,PC),r6
+	mov.w @(loc_8c04fde8,PC),r0;Buff_HyperArmor
+	mov.w @(loc_8c04fde6,PC),r6;0x0080
 	mov.b @(r0,r4),r3
-	mov.l @(loc_8c04fe0c,PC),r5
+	mov.l @(loc_8c04fe0c,PC),r5;loc_8c14f7b8
 	extu.b r3,r3
 	tst r6,r3
 	bt.s loc_8c04fda4
 	mov.b @(0x1,r4),r0
-	mov.l @(loc_8c04fe10,PC),r5
+	mov.l @(loc_8c04fe10,PC),r5;loc_8c14f990
 
 loc_8c04fda4:
 	mov.w @(loc_8c04fdea,PC),r3

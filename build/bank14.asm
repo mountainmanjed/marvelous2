@@ -18800,6 +18800,7 @@ loc_8c14F8A4:
 	#data 0x0300 0xFD80 ; 39 Bonerine wolverine
 	#data 0x0400 0xFD00 ; 3A Kobun / Servbot
 
+;Hyper Armor walkspeed?
 loc_8c14F990:
 	#data 0x0400 0xFD00 ; 00 Ryu
 	#data 0x0200 0xFE40 ; 01 Zangief
