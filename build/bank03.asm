@@ -36016,7 +36016,7 @@ loc_8c03f0d0:
 	#data bank04.loc_8c041ecc
 
 ;==============================================
-;Credits text render?
+;Credits render?
 loc_8c03f0d4:
 	mov.l @(loc_8c03f1fc,PC),r2
 	mov.l @(loc_8c03f200,PC),r1
