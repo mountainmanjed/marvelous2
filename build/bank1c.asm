@@ -9853,353 +9853,85 @@ loc_8c1c3f5c:
 
 ;==============================================
 loc_8c1c4020:
-#data 0x730A
-#data 0x5379
-#data 0x6174
-#data 0x7472
-#data 0x5620
-#data 0x7265
-#data 0x3120
-#data 0x312E
-#data 0x2035
-#data 0x7542
-#data 0x6C69
-#data 0x3A64
-#data 0x6F4E
-#data 0x2076
-#data 0x3630
-#data 0x3120
-#data 0x3939
-#data 0x2039
-#data 0x3332
-#data 0x303A
-#data 0x3A30
-#data 0x3033
-#data 0x000A
-#data 0x0000
+	#data 0x0A
+	#data "syStart Ver 1.15 Build:Nov 06 1999 23:00:30"
+	#data 0x0A
+	#data 0x00
+	#data 0x0000
 
 loc_8c1c4050:
-#data 0x7325
-#data 0x0000
+	#data "%s"
+	#data 0x0000
 
 loc_8c1c4054:
-#data 0x3845
-#data 0x3031
-#data 0x3231
-#data 0x3230
-#data 0x203A
-#data 0x6163
-#data 0x276E
-#data 0x2074
-#data 0x706F
-#data 0x6E65
-#data 0x2520
-#data 0x2C64
-#data 0x2520
-#data 0x2064
-#data 0x4128
-#data 0x5844
-#data 0x5F54
-#data 0x7453
-#data 0x7261
-#data 0x4174
-#data 0x7366
-#data 0x0A29
-#data 0x0000
-#data 0x0000
+	#data "E8101202: can't open %d, %d (ADXT_StartAfs)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
 loc_8c1c4084:
-#data 0x3845
-#data 0x3031
-#data 0x3231
-#data 0x3530
-#data 0x203A
-#data 0x6163
-#data 0x276E
-#data 0x2074
-#data 0x706F
-#data 0x6E65
-#data 0x2720
-#data 0x7325
-#data 0x2027
-#data 0x4128
-#data 0x5844
-#data 0x5F54
-#data 0x7453
-#data 0x7261
-#data 0x4674
-#data 0x616E
-#data 0x656D
-#data 0x0029
+	#data "E8101205: can't open '%s' (ADXT_StartFname)"
+	#data 0x00
 
 loc_8c1c40b0:
-#data 0x3845
-#data 0x3031
-#data 0x3231
-#data 0x3730
-#data 0x203A
-#data 0x6163
-#data 0x276E
-#data 0x2074
-#data 0x7263
-#data 0x6165
-#data 0x6574
-#data 0x7320
-#data 0x206A
-#data 0x4128
-#data 0x5844
-#data 0x5F54
-#data 0x7453
-#data 0x7261
-#data 0x4D74
-#data 0x6D65
-#data 0x0A29
-#data 0x0000
+	#data "E8101207: can't create sj (ADXT_StartMem)"
+	#data 0x0A
+	#align4
 
 loc_8c1c40dc:
-#data 0x3845
-#data 0x3031
-#data 0x3231
-#data 0x3730
-#data 0x203A
-#data 0x6163
-#data 0x276E
-#data 0x2074
-#data 0x7263
-#data 0x6165
-#data 0x6574
-#data 0x7320
-#data 0x206A
-#data 0x4128
-#data 0x5844
-#data 0x5F54
-#data 0x7453
-#data 0x7261
-#data 0x4D74
-#data 0x6D65
-#data 0x6449
-#data 0x2978
-#data 0x0000
-#data 0x0000
+	#data "E8101207: can't create sj (ADXT_StartMemIdx)"
+	#data 0x0000
+	#data 0x0000
 
 loc_8c1c410c:
-#data 0x410A
-#data 0x5844
-#data 0x2054
-#data 0x6556
-#data 0x2E72
-#data 0x2E35
-#data 0x3636
-#data 0x4220
-#data 0x6975
-#data 0x646C
-#data 0x413A
-#data 0x6775
-#data 0x3220
-#data 0x2036
-#data 0x3931
-#data 0x3939
-#data 0x3120
-#data 0x3A32
-#data 0x3633
-#data 0x323A
-#data 0x0A37
-#data 0x0000
+	#data 0x0a
+	#data "ADXT Ver.5.66 Build:Aug 26 1999 12:36:27"
+	#data 0x0a
+	#data 0x0000
 
 loc_8c1c4138:
-#data 0x3845
-#data 0x3031
-#data 0x3231
-#data 0x3830
-#data 0x203A
-#data 0x6170
-#data 0x6172
-#data 0x656D
-#data 0x6574
-#data 0x2072
-#data 0x7265
-#data 0x6F72
-#data 0x2072
-#data 0x4128
-#data 0x5844
-#data 0x5F54
-#data 0x6553
-#data 0x4F74
-#data 0x7475
-#data 0x6150
-#data 0x296E
-#data 0x0000
+	#data "E8101208: parameter error (ADXT_SetOutPan)"
+	#data 0x0000
 
 loc_8c1c4164:
-#data 0x2D0A
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x0A2D
-#data 0x5320
-#data 0x6968
-#data 0x6F6E
-#data 0x6962
-#data 0x4C20
-#data 0x6269
-#data 0x6172
-#data 0x7972
-#data 0x6620
-#data 0x726F
-#data 0x4420
-#data 0x6572
-#data 0x6D61
-#data 0x6163
-#data 0x7473
-#data 0x5620
-#data 0x7265
-#data 0x6973
-#data 0x6E6F
-#data 0x3120
-#data 0x362E
-#data 0x0A32
-#data 0x4320
-#data 0x706F
-#data 0x7279
-#data 0x6769
-#data 0x7468
-#data 0x2820
-#data 0x2943
-#data 0x3120
-#data 0x3939
-#data 0x2C38
-#data 0x3931
-#data 0x3939
-#data 0x5320
-#data 0x4745
-#data 0x0A41
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x2D2D
-#data 0x530A
-#data 0x6968
-#data 0x6F6E
-#data 0x6962
-#data 0x5620
-#data 0x7265
-#data 0x3120
-#data 0x362E
-#data 0x2032
-#data 0x7542
-#data 0x6C69
-#data 0x3A64
-#data 0x7541
-#data 0x2067
-#data 0x3033
-#data 0x3120
-#data 0x3939
-#data 0x2039
-#data 0x3731
-#data 0x333A
-#data 0x3A32
-#data 0x3330
-#data 0x000A
-#data 0x0000
+	#data 0x0a
+	#data "--------------------------------------------------"
+	#data 0x0a
+	#data " Shinobi Library for Dreamcast Version 1.62"
+	#data 0x0a
+	#data " Copyright (C) 1998,1999 SEGA"
+	#data 0x0a
+	#data "--------------------------------------------------"
+	#data 0x0a
+	#data "Shinobi Ver 1.62 Build:Aug 30 1999 17:32:03"
+	#data 0x0a
 
 	#align4
 loc_8c1c4244:
 	#data loc_8c1c4268
 
 loc_8c1c4248:
-#data 0x694C
-#data 0x2062
-#data 0x6148
-#data 0x646E
-#data 0x656C
-#data 0x5320
-#data 0x6174
-#data 0x7472
+	#data "Lib Handle Start"
 
 loc_8c1c4258:
-#data 0x694C
-#data 0x2062
-#data 0x6148
-#data 0x646E
-#data 0x656C
-#data 0x4520
-#data 0x646E
-#data 0x2020
+	#data "Lib Handle End  "
 
 loc_8c1c4268:
-#data 0x6F0A
-#data 0x2076
-#data 0x6556
-#data 0x2E72
-#data 0x2E31
-#data 0x3030
-#data 0x7542
-#data 0x6C69
-#data 0x3A64
-#data 0x7041
-#data 0x2072
-#data 0x3332
-#data 0x3120
-#data 0x3939
-#data 0x2039
-#data 0x3232
-#data 0x313A
-#data 0x3A33
-#data 0x3130
-#data 0x000A
+	#data 0x0a
+	#data "ov Ver.1.00Build:Apr 23 1999 22:13:01"
+	#data 0x0a
+	#data 0x00
 
 loc_8c1c4290:
 	#data loc_8c1c4320
 
 loc_8c1c4294:
-#data 0x0000
-#data 0x0000
-#data 0x0000
-#data 0x0000
-#data 0x0000
-#data 0x0000
+	#data 0x0000
+	#data 0x0000
+	#data 0x0000
+	#data 0x0000
+	#data 0x0000
+	#data 0x0000
 
 loc_8c1c42a0:
 	#data bank17.loc_8c175B44
@@ -10260,118 +9992,59 @@ loc_8c1c430c:
 
 loc_8c1c4310:
 	#data 0x000000A6
-
 loc_8c1c4314:
 	#data 0x00000001
 
 loc_8c1c4318:
-#data 0x4443
-#data 0x3030
-#data 0x0031
-#data 0x0000
+	#data "CD001"
+	#data 0x00
+	#align4
 
 loc_8c1c4320:
-#data 0x670A
-#data 0x4664
-#data 0x2073
-#data 0x6556
-#data 0x2072
-#data 0x2E31
-#data 0x3830
-#data 0x4220
-#data 0x6975
-#data 0x646C
-#data 0x413A
-#data 0x7270
-#data 0x3220
-#data 0x2036
-#data 0x3931
-#data 0x3939
-#data 0x3120
-#data 0x3A34
-#data 0x3932
-#data 0x353A
-#data 0x0A38
-#data 0x0000
-#data 0x700A
-#data 0x4B64
-#data 0x6462
-#data 0x5620
-#data 0x7265
-#data 0x3120
-#data 0x352E
-#data 0x2031
-#data 0x7542
-#data 0x6C69
-#data 0x3A64
-#data 0x754A
-#data 0x206C
-#data 0x3033
-#data 0x3120
-#data 0x3939
-#data 0x2039
-#data 0x3531
-#data 0x303A
-#data 0x3A31
-#data 0x3533
-#data 0x000A
+	#data 0x0a
+	#data "gdFs Ver 1.08 Build:Apr 26 1999 14:29:58"
+	#data 0x0a
+	#data 0x00
+	#align4
+
+loc_8c1c434c:
+	#data 0x0a
+	#data "pdKbd Ver 1.51 Build:Jul 30 1999 15:01:35"
+	#data 0x0a
+	#data 0x00
+	#align4
 
 loc_8c1c4378:
-#data 0x0600
-#data 0x120C
-#data 0x700A
-#data 0x2064
-#data 0x6556
-#data 0x2072
-#data 0x2E31
-#data 0x3035
-#data 0x4220
-#data 0x6975
-#data 0x646C
-#data 0x4A3A
-#data 0x6C75
-#data 0x3320
-#data 0x2030
-#data 0x3931
-#data 0x3939
-#data 0x3120
-#data 0x3A35
-#data 0x3130
-#data 0x333A
-#data 0x0A33
-#data 0x0000
-#data 0x0000
+	#data 0x00 0x06 0x0c 0x12
+	#data 0x0a
+	#data "pd Ver 1.50 Build:Jul 30 1999 15:01:33"
+	#data 0x0a
+	#data 0x00
+	#align4
 
 loc_8c1c43a8:
-#data 0x000A
-#data 0x0000
+	#data 0x0A
+	#data 0x00
+	#align4
 
 loc_8c1c43ac:
-#data 0x0001
-#data 0x0000
+	#data 0x0001
+	#data 0x0000
 
 loc_8c1c43b0:
-#data 0x6E28
-#data 0x206F
-#data 0x6564
-#data 0x6976
-#data 0x6563
-#data 0x0029
+	#data "(no device)"
+	#data 0x00
 
 loc_8c1c43bc:
-#data 0x0000
-#data 0x0000
-#data 0x0006
-#data 0x0000
-#data 0x000C
-#data 0x0000
-#data 0x0012
-#data 0x0000
+	#data 0x00000000
+	#data 0x00000006
+	#data 0x0000000C
+	#data 0x00000012
 
 loc_8c1c43cc:
-#data loc_8c1c43E4
-#data 0x0501
-#data 0x0000
+	#data loc_8c1c43E4
+	#data 0x0501
+	#data 0x0000
 
 loc_8c1c43d4:
 	#data bank17.loc_8c177CFE
@@ -10386,4064 +10059,2533 @@ loc_8c1c43e0:
 	#data bank17.loc_8c177E84
 
 loc_8c1c43e4:
-#data 0x730A
-#data 0x4D79
-#data 0x6C61
-#data 0x6F6C
-#data 0x2063
-#data 0x6556
-#data 0x2072
-#data 0x2E31
-#data 0x3035
-#data 0x4220
-#data 0x6975
-#data 0x646C
-#data 0x4D3A
-#data 0x7961
-#data 0x3320
-#data 0x2031
-#data 0x3931
-#data 0x3939
-#data 0x3120
-#data 0x3A36
-#data 0x3933
-#data 0x303A
-#data 0x0A36
-#data 0x0000
+	#data 0x0a
+	#data "syMalloc Ver 1.50 Build:May 31 1999 16:39:06"
+	#data 0x0a
+	#data 0x0000
 
 loc_8c1c4414:
-#data loc_8c1c4478
+	#data loc_8c1c4478
 
 loc_8c1c4418:
-#data 0x0000
-#data 0x0000
-#data 0x001F
-#data 0x0000
-#data 0x003B
-#data 0x0000
-#data 0x005A
-#data 0x0000
-#data 0x0078
-#data 0x0000
-#data 0x0097
-#data 0x0000
-#data 0x00B5
-#data 0x0000
-#data 0x00D4
-#data 0x0000
-#data 0x00F3
-#data 0x0000
-#data 0x0111
-#data 0x0000
-#data 0x0130
-#data 0x0000
-#data 0x014E
-#data 0x0000
+	#data 0x00000000 0x0000001f 0x0000003b
+	#data 0x0000005a 0x00000078 0x00000097
+	#data 0x000000b5 0x000000d4 0x000000f3
+	#data 0x00000111 0x00000130 0x0000014e
 
 loc_8c1c4448:
-#data 0x0000
-#data 0x0000
-#data 0x001F
-#data 0x0000
-#data 0x003B
-#data 0x0000
-#data 0x005A
-#data 0x0000
-#data 0x0078
-#data 0x0000
-#data 0x0097
-#data 0x0000
-#data 0x00B5
-#data 0x0000
-#data 0x00D4
-#data 0x0000
-#data 0x00F3
-#data 0x0000
-#data 0x0111
-#data 0x0000
-#data 0x0130
-#data 0x0000
-#data 0x014E
-#data 0x0000
+	#data 0x00000000 0x0000001f 0x0000003b
+	#data 0x0000005a 0x00000078 0x00000097
+	#data 0x000000b5 0x000000d4 0x000000f3
+	#data 0x00000111 0x00000130 0x0000014e
 
 loc_8c1c4478:
-#data 0x730A
-#data 0x5279
-#data 0x6374
-#data 0x5620
-#data 0x7265
-#data 0x3120
-#data 0x302E
-#data 0x2032
-#data 0x7542
-#data 0x6C69
-#data 0x3A64
-#data 0x614D
-#data 0x2079
-#data 0x3133
-#data 0x3120
-#data 0x3939
-#data 0x2039
-#data 0x3930
-#data 0x303A
-#data 0x3A35
-#data 0x3032
-#data 0x000A
-#data 0x730A
-#data 0x4879
-#data 0x2077
-#data 0x6556
-#data 0x2072
-#data 0x2E31
-#data 0x3730
-#data 0x4220
-#data 0x6975
-#data 0x646C
-#data 0x413A
-#data 0x7270
-#data 0x3220
-#data 0x2036
-#data 0x3931
-#data 0x3939
-#data 0x3120
-#data 0x3A36
-#data 0x3535
-#data 0x333A
-#data 0x0A31
-#data 0x0000
+	#data 0x0a
+	#data "syRtc Ver 1.02 Build:May 31 1999 09:05:20"
+	#data 0x0a
+	#data 0x00
+	#data 0x0a
+	#data "syHw Ver 1.07 Build:Apr 26 1999 16:55:31"
+	#data 0x0a
+	#align4
 
 loc_8c1c44d0:
-#data 0x0105
-#data 0x0000
+	#data 0x00000105
 
 loc_8c1c44d4:
-#data 0x0000
-#data 0x0000
+	#data 0x00000000
 
 loc_8c1c44d8:
-#data 0x6800
-#data 0xA05F
-#data 0x0000
-#data 0x11FF
-#data 0x6804
-#data 0xA05F
-#data 0x0020
-#data 0x0000
-#data 0x6810
-#data 0xA05F
-#data 0x0000
-#data 0x0CFF
-#data 0x6814
-#data 0xA05F
-#data 0x0000
-#data 0x0CFF
-#data 0x6818
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x681C
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6840
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6844
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6848
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x684C
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6884
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6888
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x68A0
-#data 0xA05F
-#data 0x0000
-#data 0x8000
-#data 0x68A4
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x68AC
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6910
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6914
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6918
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6920
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6924
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6928
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6930
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6934
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6938
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6940
-#data 0xA05F
+	#data 0xa05f6800 0x11ff0000 0xa05f6804 0x00000020
+	#data 0xa05f6810 0x0cff0000 0xa05f6814 0x0cff0000
+	#data 0xa05f6818 0x00000000 0xa05f681c 0x00000000
+	#data 0xa05f6840 0x00000000 0xa05f6844 0x00000000
+	#data 0xa05f6848 0x00000000 0xa05f684c 0x00000000
+	#data 0xa05f6884 0x00000000 0xa05f6888 0x00000000
+	#data 0xa05f68a0 0x80000000 0xa05f68a4 0x00000000
+	#data 0xa05f68ac 0x00000000 0xa05f6910 0x00000000
+	#data 0xa05f6914 0x00000000 0xa05f6918 0x00000000
+	#data 0xa05f6920 0x00000000 0xa05f6924 0x00000000
+	#data 0xa05f6928 0x00000000 0xa05f6930 0x00000000
+	#data 0xa05f6934 0x00000000 0xa05f6938 0x00000000
+	#data 0xa05f6940 0x00000000 0xa05f6944 0x00000000
+	#data 0xa05f6950 0x00000000 0xa05f6954 0x00000000
+	#data 0xa05f6c04 0x0cff0000 0xa05f6c10 0x00000000
+	#data 0xa05f6c14 0x00000000 0xa05f6c80 0xc3500000
+	#data 0xa05f6c8c 0x61557f00 0xa05f6ce8 0x00000001
+	#data 0xa05f7800 0x009f0000 0xa05f7804 0x0cff0000
+	#data 0xa05f7808 0x00000020 0xa05f780c 0x00000000
+	#data 0xa05f7810 0x00000005 0xa05f7814 0x00000000
+	#data 0xa05f781c 0x00000000 0xa05f7820 0x009f0000
+	#data 0xa05f7824 0x0cff0000 0xa05f7828 0x00000020
+	#data 0xa05f782c 0x00000000 0xa05f7830 0x00000005
+	#data 0xa05f7834 0x00000000 0xa05f783c 0x00000000
+	#data 0xa05f7840 0x009f0000 0xa05f7844 0x0cff0000
+	#data 0xa05f7848 0x00000020 0xa05f784c 0x00000000
+	#data 0xa05f7850 0x00000005 0xa05f7854 0x00000000
+	#data 0xa05f785c 0x00000000 0xa05f7890 0x0000001b
+	#data 0xa05f7894 0x00000271 0xa05f7898 0x00000000
+	#data 0xa05f789c 0x00000001 0xa05f78a0 0x00000000
+	#data 0xa05f78a4 0x00000000 0xa05f78a8 0x00000000
+	#data 0xa05f78ac 0x00000000 0xa05f78b0 0x00000000
+	#data 0xa05f78b4 0x00000000 0xa05f78b8 0x00000000
+	#data 0xa05f78bc 0x46597f00 0xa05f7c00 0x04ff0000
+	#data 0xa05f7c04 0x0cff0000 0xa05f7c08 0x00000020
+	#data 0xa05f7c0c 0x00000000 0xa05f7c10 0x00000000
+	#data 0xa05f7c14 0x00000000 0xa05f7c80 0x67027f00
+	#data 0xa05f6808 0x00000000 0xa05f6820 0x00000000
+	#data 0xa05f6c18 0x00000000 0xa05f7418 0x00000000
+	#data 0xa05f7818 0x00000000 0xa05f7838 0x00000000
+	#data 0xa05f7858 0x00000000 0xa05f7c18 0x00000000
+	#data 0xa05f6900 0xffffffff 0xa05f6908 0xffffffff
 
-loc_8c1c459c:
-#data 0x0000
-#data 0x0000
-#data 0x6944
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6950
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6954
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6C04
-#data 0xA05F
-#data 0x0000
-#data 0x0CFF
-#data 0x6C10
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6C14
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6C80
-#data 0xA05F
-#data 0x0000
-#data 0xC350
-#data 0x6C8C
-#data 0xA05F
-#data 0x7F00
-#data 0x6155
-#data 0x6CE8
-#data 0xA05F
-#data 0x0001
-#data 0x0000
-#data 0x7800
-#data 0xA05F
-#data 0x0000
-#data 0x009F
-#data 0x7804
-#data 0xA05F
-#data 0x0000
-#data 0x0CFF
-#data 0x7808
-#data 0xA05F
-#data 0x0020
-#data 0x0000
-#data 0x780C
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x7810
-#data 0xA05F
-#data 0x0005
-#data 0x0000
-#data 0x7814
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x781C
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x7820
-#data 0xA05F
-#data 0x0000
-#data 0x009F
-#data 0x7824
-#data 0xA05F
-#data 0x0000
-#data 0x0CFF
-#data 0x7828
-#data 0xA05F
-#data 0x0020
-#data 0x0000
-#data 0x782C
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x7830
-#data 0xA05F
-#data 0x0005
-#data 0x0000
-#data 0x7834
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x783C
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x7840
-#data 0xA05F
-#data 0x0000
-#data 0x009F
-#data 0x7844
-#data 0xA05F
-#data 0x0000
-#data 0x0CFF
-#data 0x7848
-#data 0xA05F
-#data 0x0020
-#data 0x0000
-#data 0x784C
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x7850
-#data 0xA05F
-#data 0x0005
-#data 0x0000
-#data 0x7854
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x785C
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x7890
-#data 0xA05F
-#data 0x001B
-#data 0x0000
-#data 0x7894
-#data 0xA05F
-#data 0x0271
-#data 0x0000
-#data 0x7898
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x789C
-#data 0xA05F
-#data 0x0001
-#data 0x0000
-#data 0x78A0
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x78A4
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x78A8
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x78AC
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x78B0
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x78B4
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x78B8
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x78BC
-#data 0xA05F
-#data 0x7F00
-#data 0x4659
-#data 0x7C00
-#data 0xA05F
-#data 0x0000
-#data 0x04FF
-#data 0x7C04
-#data 0xA05F
-#data 0x0000
-#data 0x0CFF
-#data 0x7C08
-#data 0xA05F
-#data 0x0020
-#data 0x0000
-#data 0x7C0C
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x7C10
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x7C14
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x7C80
-#data 0xA05F
-#data 0x7F00
-#data 0x6702
-#data 0x6808
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6820
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6C18
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x7418
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x7818
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x7838
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x7858
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x7C18
-#data 0xA05F
-#data 0x0000
-#data 0x0000
-#data 0x6900
-#data 0xA05F
-#data 0xFFFF
-#data 0xFFFF
-#data 0x6908
-#data 0xA05F
-#data 0xFFFF
-#data 0xFFFF
-#data 0x0000
-#data 0x0000
-#data 0x0000
-#data 0x0000
-#data 0x0000
-#data 0x0000
-#data 0x0000
-#data 0x0000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+	#data 0x00000000 0x00000000
+	#data 0x00000000 0x00000000
+	#data 0x00000000 0x00000000
+	#data 0x00000000 0x00000000
+	#data 0x00000000 0x00000000
+	#data 0x00000000 0x00000000
+	#data 0x00000000 0x00000000
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+	#align4
 loc_8c1c47b0:
-#data loc_8c1c47b4
+	#data loc_8c1c47b4
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c47b4:
-#data 0x5479730A
-#data 0x5620726D
-#data 0x31207265
-#data 0x2034302E
-#data 0x6C697542
-#data 0x70413A64
-#data 0x36322072
-#data 0x39393120
-#data 0x34312039
-#data 0x3A33343A
-#data 0x000A3135
-#data 0x4C64700A
-#data 0x56206463
-#data 0x31207265
-#data 0x2034302E
-#data 0x6C697542
-#data 0x70413A64
-#data 0x36322072
-#data 0x39393120
-#data 0x36312039
-#data 0x3A35353A
-#data 0x000A3532
+	#data 0x0a
+	#data "syTmr Ver 1.04 Build:Apr 26 1999 14:43:51"
+	#data 0x0A
+	#data 0x00
+	#data 0x0a
+	#data "pdLcd Ver 1.04 Build:Apr 26 1999 16:55:25"
+	#data 0x0a
+	#align4
 
-#align4
 loc_8c1c480c:
-#data 0x03020001
-#data 0x02030100
-#data 0x00010203
-#data 0x01000302
+	#data 0x03020001
+	#data 0x02030100
+	#data 0x00010203
+	#data 0x01000302
 
-#align4
 loc_8c1c481c:
-#data 0xFF0100FF
-#data 0x02FFFFFF
-#data 0xFFFFFF03
-#data 0xFF0504FF
-#data 0x06FFFFFF
-#data 0xFFFFFF07
+	#data 0xFF0100FF
+	#data 0x02FFFFFF
+	#data 0xFFFFFF03
+	#data 0xFF0504FF
+	#data 0x06FFFFFF
+	#data 0xFFFFFF07
 
-#align4
 loc_8c1c4834:
-#data 0x00000000
-#data 0x06060000
-#data 0x06060606
-#data 0x0C0C0C0C
-#data 0x12120C0C
-#data 0x12121212
-#data 0x2075620A
-#data 0x20726556
-#data 0x37342E31
-#data 0x69754220
-#data 0x4D3A646C
-#data 0x32207961
-#data 0x39312035
-#data 0x31203939
-#data 0x37323A37
-#data 0x0A39323A
-#data 0x20534D56
-#data 0x656C6946
-#data 0x73795320
-#data 0x206D6574
-#data 0x20726F66
-#data 0x6C707041
-#data 0x74616369
-#data 0x286E6F69
-#data 0x616E7964
-#data 0x2063696D
-#data 0x6B726F77
-#data 0x6C6C6120
-#data 0x2029636F
-#data 0x00000000
+	#data 0x0000 0x0000
+	#data 0x0000 0x0606
+	#data 0x0606 0x0606
+	#data 0x0c0c 0x0c0c
+	#data 0x0c0c 0x1212
+	#data 0x1212 0x1212
+	#data 0x0A
+	#data "bu Ver 1.47 Build:May 25 1999 17:27:29"
+	#data 0x0a
+	#data "VMS File System for Application(dynamic work alloc) "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c48ac:
-#data 0x00000014
-
-#align4
+	#data 0x00000014
 loc_8c1c48b0:
-#data loc_8c1c48b4
+	#data loc_8c1c48b4
 
 loc_8c1c48b4:
-#data 0x4279730A
-#data 0x746E4674
-#data 0x72655620
-#data 0x302E3120
-#data 0x75422032
-#data 0x3A646C69
-#data 0x2079614D
-#data 0x31203133
-#data 0x20393939
-#data 0x303A3930
-#data 0x39313A31
-#data 0x0000000A
+	#data 0x0a
+	#data "syBtFnt Ver 1.02 Build:May 31 1999 09:01:19"
+	#data 0x0A
+	#align4
 
-#align4
 loc_8c1c48e4:
-#data 0x4379730A
-#data 0x56206766
-#data 0x31207265
-#data 0x2035312E
-#data 0x6C697542
-#data 0x70413A64
-#data 0x36322072
-#data 0x39393120
-#data 0x34312039
-#data 0x3A38333A
-#data 0x000A3935
+	#data 0x0a
+	#data "syCfg Ver 1.15 Build:Apr 26 1999 14:38:59"
+	#data 0x0A
+	#align4
 
-#align4
 loc_8c1c4910:
-#data loc_8c1c4914
+	#data loc_8c1c4914
 
 loc_8c1c4914:
-#data 0x4279730A
-#data 0x65562074
-#data 0x2E312072
-#data 0x42203630
-#data 0x646C6975
-#data 0x79614D3A
-#data 0x20363220
-#data 0x39393931
-#data 0x3A333120
-#data 0x353A3935
-#data 0x00000A35
+	#data 0x0a
+	#data "syBt Ver 1.06 Build:May 26 1999 13:59:55"
+	#data 0x0A
+	#align4
 
-#align4
 loc_8c1c4940:
-#data 0x00000001
-#data 0x00000000
+	#data 0x00000001
+	#data 0x00000000
 
-#align4
 loc_8c1c4948:
-#data 0x554D414B
-#data 0x43203249
-#data 0x7279706F
-#data 0x74686769
-#data 0x29432820
-#data 0x43454E20
-#data 0x726F4320
-#data 0x61726F70
-#data 0x6E6F6974
-#data 0x39393120
-#data 0x6B0A2039
-#data 0x69756D61
-#data 0x65562032
-#data 0x36312072
-#data 0x322C332C
-#data 0x4220302C
-#data 0x646C6975
-#data 0x6C754A3A
-#data 0x20333220
-#data 0x39393931
-#data 0x3A313120
-#data 0x353A3630
-#data 0x00000A34
+	#data "KAMUI2 Copyright (C) NEC Corporation 1999 "
+	#data 0x0a
+	#data "kamui2 Ver 16,3,2,0 Build:Jul 23 1999 11:06:54"
+	#data 0x0a
+	#data 0x0000
 
-#align4
 loc_8c1c49a4:
-#data 0x332C3631
-#data 0x302C322C
-#data 0x00000000
+	#data "16,3,2,0"
+	#data 0x00000000
 
-#align4
 loc_8c1c49b0:
-#data 0x20000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
+	#data 0x20000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
 
-#align4
 loc_8c1c49d0:
-#data 0xFFFFFFFF
-#data 0x01000000
-#data 0x00800440
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0xFFFFFFFF
-#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
+	#data 0x01000000
+	#data 0x00800440
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
 
-#align4
 loc_8c1c49f0:
-#data 0xF0000000
-#data 0xBFC00000
-#data 0xBF800000
-#data 0x3DCCCCCD
-#data 0xBF000000
-#data 0xBF800000
-#data 0x3DCCCCCD
-#data 0xBF000000
-#data 0xBF000000
-#data 0x3DCCCCCD
-#data 0xBFC00000
-#data 0xBF000000
-#data 0xFFFFFFFF
-#data 0xFFFFFFFF
-#data 0xFFFFFFFF
-#data 0xFFFFFFFF
+	#data 0xF0000000
+	#data 0xBFC00000
+	#data 0xBF800000
+	#data 0x3DCCCCCD
+	#data 0xBF000000
+	#data 0xBF800000
+	#data 0x3DCCCCCD
+	#data 0xBF000000
+	#data 0xBF000000
+	#data 0x3DCCCCCD
+	#data 0xBFC00000
+	#data 0xBF000000
+	#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
 
-#align4
 loc_8c1c4a30:
-#data 0x00000004
-#data 0x00000004
-#data 0x00000005
+	#data 0x00000004
+	#data 0x00000004
+	#data 0x00000005
 
-#align4
 loc_8c1c4a3c:
-#data 0x000000FF
-#data 0x000000FF
-#data 0x00000006
-#data 0x00000002
-#data 0x00000007
-#data 0x00000003
-#data 0x00000005
-#data 0x00000003
-#data 0x00000004
-#data 0x00000002
-#data 0x00000001
-#data 0x00000000
+	#data 0x000000FF
+	#data 0x000000FF
+	#data 0x00000006
+	#data 0x00000002
+	#data 0x00000007
+	#data 0x00000003
+	#data 0x00000005
+	#data 0x00000003
+	#data 0x00000004
+	#data 0x00000002
+	#data 0x00000001
+	#data 0x00000000
 
-#align4
 loc_8c1c4a6c:
-#data 0x00000000
-#data 0x00000002
-#data 0x00000008
-#data 0x0000000A
+	#data 0x00000000
+	#data 0x00000002
+	#data 0x00000008
+	#data 0x0000000A
 
-#align4
 loc_8c1c4a7c:
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000001
-#data 0x00000002
-#data 0x00000000
-#data 0x00000000
-#data 0x00000003
-#data 0x00000003
-#data 0x000000FF
-#data 0x000000FF
-#data 0x00000004
-#data 0x00000004
-#data 0x00000003
-#data 0x00000003
-#data 0x00000006
-#data 0x00000006
-#data 0x00000006
-#data 0x00000006
-#data 0x00000006
-#data 0x00000006
-#data 0x00000006
-#data 0x00000006
-#data 0x00000006
-#data 0x00000006
-#data 0x00000006
-#data 0x00000006
-#data 0x00000006
-#data 0x00000006
-#data 0x00000006
-#data 0x00000006
-#data 0x00000005
-#data 0x00000005
-#data 0x00000005
-#data 0x00000005
-#data 0x00000005
-#data 0x00000005
-#data 0x00000005
-#data 0x00000005
-#data 0x00000005
-#data 0x00000005
-#data 0x00000005
-#data 0x00000005
-#data 0x00000005
-#data 0x00000005
-#data 0x00000005
-#data 0x00000005
-#data 0x000000FF
-#data 0x000000FF
-#data 0x000000FF
-#data 0x000000FF
-#data 0x000000FF
-#data 0x000000FF
-#data 0x000000FF
-#data 0x000000FF
-#data 0x000000FF
-#data 0x000000FF
-#data 0x000000FF
-#data 0x000000FF
-#data 0x000000FF
-#data 0x000000FF
-#data 0x000000FF
-#data 0x000000FF
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000001
+	#data 0x00000002
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000003
+	#data 0x00000003
+	#data 0x000000FF
+	#data 0x000000FF
+	#data 0x00000004
+	#data 0x00000004
+	#data 0x00000003
+	#data 0x00000003
+	#data 0x00000006
+	#data 0x00000006
+	#data 0x00000006
+	#data 0x00000006
+	#data 0x00000006
+	#data 0x00000006
+	#data 0x00000006
+	#data 0x00000006
+	#data 0x00000006
+	#data 0x00000006
+	#data 0x00000006
+	#data 0x00000006
+	#data 0x00000006
+	#data 0x00000006
+	#data 0x00000006
+	#data 0x00000006
+	#data 0x00000005
+	#data 0x00000005
+	#data 0x00000005
+	#data 0x00000005
+	#data 0x00000005
+	#data 0x00000005
+	#data 0x00000005
+	#data 0x00000005
+	#data 0x00000005
+	#data 0x00000005
+	#data 0x00000005
+	#data 0x00000005
+	#data 0x00000005
+	#data 0x00000005
+	#data 0x00000005
+	#data 0x00000005
+	#data 0x000000FF
+	#data 0x000000FF
+	#data 0x000000FF
+	#data 0x000000FF
+	#data 0x000000FF
+	#data 0x000000FF
+	#data 0x000000FF
+	#data 0x000000FF
+	#data 0x000000FF
+	#data 0x000000FF
+	#data 0x000000FF
+	#data 0x000000FF
+	#data 0x000000FF
+	#data 0x000000FF
+	#data 0x000000FF
+	#data 0x000000FF
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c4b7c:
-#data 0x30313845
-#data 0x30313231
-#data 0x6163203A
-#data 0x2074276E
-#data 0x6E65706F
-#data 0x73252720
-#data 0x41282027
-#data 0x54535844
-#data 0x704F5F4D
-#data 0x6E466E65
-#data 0x29656D61
-#data 0x00000000
+	#data "E8101210: can't open '%s' (ADXSTM_OpenFname)"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4bac:
-#data 0x30313845
-#data 0x31313231
-#data 0x6163203A
-#data 0x2074276E
-#data 0x46746547
-#data 0x53656C69
-#data 0x20657A69
-#data 0x58444128
-#data 0x5F4D5453
-#data 0x6E65704F
-#data 0x6D616E46
-#data 0x00002965
+	#data "E8101211: can't GetFileSize (ADXSTM_OpenFname)"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4bdc:
-#data 0x30313845
-#data 0x32313231
-#data 0x6163203A
-#data 0x2074276E
-#data 0x6E65706F
-#data 0x64616620
-#data 0x2C64253D
-#data 0x63736E20
-#data 0x64253D74
-#data 0x44412820
-#data 0x4D545358
-#data 0x65704F5F
-#data 0x6E61526E
-#data 0x00296567
+	#data "E8101212: can't open fad=%d, nsct=%d (ADXSTM_OpenRange)"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4c14:
-#data 0x6E65704F
-#data 0x676E6152
-#data 0x00000065
+	#data "OpenRange"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4c20:
-#data 0x30313845
-#data 0x33313231
-#data 0x6163203A
-#data 0x2074276E
-#data 0x6E65706F
-#data 0x73252720
-#data 0x44412827
-#data 0x4D545358
-#data 0x65704F5F
-#data 0x616E466E
-#data 0x6152656D
-#data 0x2965676E
-#data 0x00000000
+	#data "E8101213: can't open '%s'(ADXSTM_OpenFnameRange)"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4c54:
-#data 0x30313845
-#data 0x34313231
-#data 0x4447203A
-#data 0x65205346
-#data 0x726F7272
-#data 0x64612820
-#data 0x6D747378
-#data 0x74735F66
-#data 0x655F7461
-#data 0x29636578
-#data 0x0000000A
+	#data "E8101214: GDFS error (adxstmf_stat_exec)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4c80:
-#data 0x30313845
-#data 0x31303231
-#data 0x6F6E203A
-#data 0x6E652074
-#data 0x6867756F
-#data 0x74616420
-#data 0x61282061
-#data 0x5F747864
-#data 0x70617274
-#data 0x746E655F
-#data 0x0A297972
-#data 0x00000000
+	#data "E8101201: not enough data (adxt_trap_entry)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4cb0:
-#data 0x38303945
-#data 0x31303031
-#data 0x6163203A
-#data 0x2074276E
-#data 0x79616C70
-#data 0x20642520
-#data 0x64206863
-#data 0x20617461
-#data 0x78616D28
-#data 0x253D6863
-#data 0x5B202964
-#data 0x74786461
-#data 0x6174735F
-#data 0x65645F74
-#data 0x666E6963
-#data 0x000A5D6F
+	#data "E9081001: can't play %d ch data (maxch=%d) [adxt_stat_decinfo]"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4cf0:
-#data loc_8c1c5330
+	#data loc_8c1c5330
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c4cf4:
-#data 0x34303945
-#data 0x31303830
-#data 0x7470273A
-#data 0x20276469
-#data 0x72207369
-#data 0x65676E61
-#data 0x74756F20
-#data 0x65646973
-#data 0x6461282E
-#data 0x435F6678
-#data 0x72506B68
-#data 0x2974506D
-#data 0x0000000A
+	#data "E9040801:'ptid' is range outside.(adxf_ChkPrmPt)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4d28:
-#data 0x34303945
-#data 0x32303830
-#data 0x7470273A
-#data 0x6F666E69
-#data 0x73692027
-#data 0x4C554E20
-#data 0x61282E4C
-#data 0x5F667864
-#data 0x506B6843
-#data 0x74506D72
-#data 0x00000A29
+	#data "E9040802:'ptinfo' is NULL.(adxf_ChkPrmPt)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4d54:
-#data 0x34303945
-#data 0x33303830
-#data 0x6E61633A
-#data 0x67207427
-#data 0x46207465
-#data 0x6F204441
-#data 0x25272066
-#data 0x282E2773
-#data 0x46584441
-#data 0x616F4C5F
-#data 0x72615064
-#data 0x69746974
-#data 0x0A296E6F
-#data 0x00000000
+	#data "E9040803:can't get FAD of '%s'.(ADXF_LoadPartition)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4d8c:
-#data 0x34303945
-#data 0x34303830
-#data 0x6E61633A
-#data 0x6F207427
-#data 0x206E6570
-#data 0x27732527
-#data 0x4441282E
-#data 0x4C5F4658
-#data 0x5064616F
-#data 0x69747261
-#data 0x6E6F6974
-#data 0x00000A29
+	#data "E9040804:can't open '%s'.(ADXF_LoadPartition)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4dbc:
-#data 0x34303945
-#data 0x35303830
-#data 0x6165723A
-#data 0x72652064
-#data 0x27726F72
-#data 0x2E277325
-#data 0x58444128
-#data 0x6F4C5F46
-#data 0x61506461
-#data 0x7472
+	#data "E9040805:read error'%s'.(ADXF_LoadPartition)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-loc_8c1c4de2:
-#data 0x7469
-#data 0x296E6F69
-#data 0x0000000A
-
-#align4
 loc_8c1c4dec:
-#data 0x34303945
-#data 0x36303830
-#data 0x7325273A
-#data 0x73692027
-#data 0x6F726220
-#data 0x2E6E656B
-#data 0x58444128
-#data 0x6F4C5F46
-#data 0x61506461
-#data 0x74697472
-#data 0x296E6F69
-#data 0x0000000A
+	#data "E9040806:'%s' is broken.(ADXF_LoadPartition)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4e1c:
-#data 0x34303945
-#data 0x37303830
-#data 0x6E61633A
-#data 0x66207427
-#data 0x20646E69
-#data 0x27732527
-#data 0x4441282E
-#data 0x415F4658
-#data 0x61506464
-#data 0x74697472
-#data 0x296E6F69
-#data 0x0000000A
+	#data "E9040807:can't find '%s'.(ADXF_AddPartition)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4e4c:
-#data 0x34303945
-#data 0x38303830
-#data 0x6E61633A
-#data 0x20746F6E
-#data 0x6E65706F
-#data 0x73252720
-#data 0x41282E27
-#data 0x5F465844
-#data 0x50646441
-#data 0x69747261
-#data 0x6E6F6974
-#data 0x00000A29
+	#data "E9040808:cannot open '%s'.(ADXF_AddPartition)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4e7c:
-#data 0x34303945
-#data 0x39303830
-#data 0x6165723A
-#data 0x72652064
-#data 0x27726F72
-#data 0x2E277325
-#data 0x58444128
-#data 0x6F4C5F46
-#data 0x61506461
-#data 0x74697472
-#data 0x296E6F69
-#data 0x0000000A
+	#data "E9040809:read error'%s'.(ADXF_LoadPartition)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4eac:
-#data 0x34303945
-#data 0x30313830
-#data 0x7325273A
-#data 0x73692027
-#data 0x6F726220
-#data 0x2E6E656B
-#data 0x58444128
-#data 0x6F4C5F46
-#data 0x61506461
-#data 0x74697472
-#data 0x296E6F69
-#data 0x0000000A
+	#data "E9040810:'%s' is broken.(ADXF_LoadPartition)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4edc:
-#data 0x34303945
-#data 0x31303930
-#data 0x6E61633A
-#data 0x66207427
-#data 0x20646E69
-#data 0x27732527
-#data 0x4441282E
-#data 0x4F5F4658
-#data 0x296E6570
-#data 0x0000000A
+	#data "E9040901:can't find '%s'.(ADXF_Open)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4f04:
-#data 0x34303945
-#data 0x32303930
-#data 0x6E61633A
-#data 0x67207427
-#data 0x66207465
-#data 0x20656C69
-#data 0x657A6973
-#data 0x74637328
-#data 0x25272029
-#data 0x282E2773
-#data 0x46584441
-#data 0x65704F5F
-#data 0x000A296E
+	#data "E9040902:can't get file size(sct) '%s'.(ADXF_Open)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4f38:
-#data 0x34303945
-#data 0x33303930
-#data 0x6E61633A
-#data 0x67207427
-#data 0x66207465
-#data 0x20656C69
-#data 0x657A6973
-#data 0x74796228
-#data 0x27202965
-#data 0x2E277325
-#data 0x58444128
-#data 0x704F5F46
-#data 0x0A296E65
-#data 0x00000000
+	#data "E9040903:can't get file size(byte) '%s'.(ADXF_Open)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4f70:
-#data 0x34303945
-#data 0x31313830
-#data 0x6461273A
-#data 0x20276678
-#data 0x4E207369
-#data 0x2E4C4C55
-#data 0x78646128
-#data 0x65725F66
-#data 0x735F6461
-#data 0x2932336A
-#data 0x0000000A
+	#data "E9040811:'adxf' is NULL.(adxf_read_sj32)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4f9c:
-#data 0x34303945
-#data 0x32313830
-#data 0x736E273A
-#data 0x69277463
-#data 0x656E2073
-#data 0x69746167
-#data 0x282E6576
-#data 0x66786461
-#data 0x6165725F
-#data 0x6A735F64
-#data 0x0A293233
-#data 0x00000000
+	#data "E9040812:'nsct'is negative.(adxf_read_sj32)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4fcc:
-#data 0x34303945
-#data 0x33313830
-#data 0x6A73273A
-#data 0x20736927
-#data 0x4C4C554E
-#data 0x6461282E
-#data 0x725F6678
-#data 0x5F646165
-#data 0x32336A73
-#data 0x00000A29
+	#data "E9040813:'sj'is NULL.(adxf_read_sj32)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c4ff4:
-#data 0x34303945
-#data 0x35313830
-#data 0x6461273A
-#data 0x3E2D6678
-#data 0x276D7473
-#data 0x6E736920
-#data 0x4E207427
-#data 0x2E4C4C55
-#data 0x78646128
-#data 0x65725F66
-#data 0x735F6461
-#data 0x2932336A
-#data 0x0000000A
+	#data "E9040815:'adxf->stm' isn't NULL.(adxf_read_sj32)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5028:
-#data 0x34303945
-#data 0x36313830
-#data 0x6461273A
-#data 0x20276678
-#data 0x4E207369
-#data 0x2E4C4C55
-#data 0x58444128
-#data 0x65525F46
-#data 0x774E6461
-#data 0x0A293233
-#data 0x00000000
+	#data "E9040816:'adxf' is NULL.(ADXF_ReadNw32)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5054:
-#data 0x34303945
-#data 0x37313830
-#data 0x736E273A
-#data 0x20277463
-#data 0x6E207369
-#data 0x74616765
-#data 0x2E657669
-#data 0x58444128
-#data 0x65525F46
-#data 0x774E6461
-#data 0x0A293233
-#data 0x00000000
+	#data "E9040817:'nsct' is negative.(ADXF_ReadNw32)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5084:
-#data 0x34303945
-#data 0x38313830
-#data 0x7562273A
-#data 0x69202766
-#data 0x554E2073
-#data 0x282E4C4C
-#data 0x46584441
-#data 0x6165525F
-#data 0x33774E64
-#data 0x000A2932
+	#data "E9040818:'buf' is NULL.(ADXF_ReadNw32)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c50ac:
-#data 0x34303945
-#data 0x39313830
-#data 0x696C613A
-#data 0x656D6E67
-#data 0x6F20746E
-#data 0x62272066
-#data 0x20276675
-#data 0x276E7369
-#data 0x32332074
-#data 0x65747962
-#data 0x4441282E
-#data 0x525F4658
-#data 0x4E646165
-#data 0x29323377
-#data 0x0000000A
+	#data "E9040819:alignment of 'buf' isn't 32byte.(ADXF_ReadNw32)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c50e8:
-#data 0x34303945
-#data 0x31323830
-#data 0x6A73273A
-#data 0x73692027
-#data 0x4C554E20
-#data 0x41282E4C
-#data 0x5F465844
-#data 0x64616552
-#data 0x3233774E
-#data 0x00000A29
+	#data "E9040821:'sj' is NULL.(ADXF_ReadNw32)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5110:
-#data 0x34303945
-#data 0x32323830
-#data 0x6461273A
-#data 0x20276678
-#data 0x4E207369
-#data 0x2E4C4C55
-#data 0x58444128
-#data 0x74535F46
-#data 0x0A29706F
-#data 0x00000000
+	#data "E9040822:'adxf' is NULL.(ADXF_Stop)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5138:
-#data 0x34303945
-#data 0x33323830
-#data 0x6461273A
-#data 0x3E2D6678
-#data 0x276D7473
-#data 0x20736920
-#data 0x4C4C554E
-#data 0x4441282E
-#data 0x535F4658
-#data 0x29706F74
-#data 0x0000000A
+	#data "E9040823:'adxf->stm' is NULL.(ADXF_Stop)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5164:
-#data 0x34303945
-#data 0x35323830
-#data 0x6461273A
-#data 0x20276678
-#data 0x4E207369
-#data 0x2E4C4C55
-#data 0x58444128
-#data 0x65535F46
-#data 0x0A296B65
-#data 0x00000000
+	#data "E9040825:'adxf' is NULL.(ADXF_Seek)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c518c:
-#data 0x34303945
-#data 0x36323830
-#data 0x7974273A
-#data 0x20276570
-#data 0x69207369
-#data 0x67696C6C
-#data 0x282E6C61
-#data 0x46584441
-#data 0x6565535F
-#data 0x000A296B
+	#data "E9040826:'type' is illigal.(ADXF_Seek)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c51b4:
-#data 0x34303945
-#data 0x37323830
-#data 0x6461273A
-#data 0x20276678
-#data 0x4E207369
-#data 0x2E4C4C55
-#data 0x58444128
-#data 0x65545F46
-#data 0x0A296C6C
-#data 0x00000000
-
-#align4
+	#data "E9040827:'adxf' is NULL.(ADXF_Tell)"
+	#data 0x0a
+	#data 0x00
+	#align4
+	
 loc_8c1c51dc:
-#data 0x34303945
-#data 0x38323830
-#data 0x6461273A
-#data 0x20276678
-#data 0x4E207369
-#data 0x2E4C4C55
-#data 0x58444128
-#data 0x65475F46
-#data 0x69734674
-#data 0x6353657A
-#data 0x000A2974
+	#data "E9040828:'adxf' is NULL.(ADXF_GetFsizeSct)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5208:
-#data 0x34303945
-#data 0x39323830
-#data 0x6461273A
-#data 0x20276678
-#data 0x4E207369
-#data 0x2E4C4C55
-#data 0x58444128
-#data 0x65475F46
-#data 0x69734674
-#data 0x7942657A
-#data 0x0A296574
-#data 0x00000000
+	#data "E9040829:'adxf' is NULL.(ADXF_GetFsizeByte)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5238:
-#data 0x34303945
-#data 0x30333830
-#data 0x6461273A
-#data 0x20276678
-#data 0x4E207369
-#data 0x2E4C4C55
-#data 0x58444128
-#data 0x65475F46
-#data 0x6D754E74
-#data 0x53716552
-#data 0x0A297463
-#data 0x00000000
-
-#align4
+	#data "E9040830:'adxf' is NULL.(ADXF_GetNumReqSct)"
+	#data 0x0a
+	#data 0x00
+	#align4
+	
 loc_8c1c5268:
-#data 0x34303945
-#data 0x31333830
-#data 0x6461273A
-#data 0x20276678
-#data 0x4E207369
-#data 0x2E4C4C55
-#data 0x58444128
-#data 0x65475F46
-#data 0x6D754E74
-#data 0x64616552
-#data 0x29746353
-#data 0x0000000A
+	#data "E9040831:'adxf' is NULL.(ADXF_GetNumReadSct)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5298:
-#data 0x34303945
-#data 0x32333830
-#data 0x6461273A
-#data 0x20276678
-#data 0x4E207369
-#data 0x2E4C4C55
-#data 0x58444128
-#data 0x65475F46
-#data 0x61745374
-#data 0x000A2974
+	#data "E9040832:'adxf' is NULL.(ADXF_GetStat)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c52c0:
-#data 0x34303945
-#data 0x38323830
-#data 0x7470273A
-#data 0x20276469
-#data 0x72207369
-#data 0x65676E61
-#data 0x74756F20
-#data 0x65646973
-#data 0x4441282E
-#data 0x475F4658
-#data 0x69467465
-#data 0x6152656C
-#data 0x2965676E
-#data 0x0000000A
+	#data "E9040828:'ptid' is range outside.(ADXF_GetFileRange)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c52f8:
-#data 0x34303945
-#data 0x38323830
-#data 0x6C66273A
-#data 0x20276469
-#data 0x72207369
-#data 0x65676E61
-#data 0x74756F20
-#data 0x65646973
-#data 0x4441282E
-#data 0x475F4658
-#data 0x69467465
-#data 0x6152656C
-#data 0x2965676E
-#data 0x0000000A
+	#data "E9040828:'flid' is range outside.(ADXF_GetFileRange)"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5330:
-#data 0x5844410A
-#data 0x65562046
-#data 0x2E352E72
-#data 0x42203335
-#data 0x646C6975
-#data 0x6E754A3A
-#data 0x20373020
-#data 0x39393931
-#data 0x3A313120
-#data 0x313A3434
-#data 0x00000A36
+	#data 0x0a
+	#data "ADXF Ver.5.53 Build:Jun 07 1999 11:44:16"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c535c:
-#data loc_8c1c5514
+	#data loc_8c1c5514
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c5360:
-#data 0x30323145
-#data 0x776D3A31
-#data 0x43616E52
-#data 0x74616572
-#data 0x6C492065
-#data 0x6167696C
-#data 0x6170206C
-#data 0x656D6172
-#data 0x20726574
-#data 0x58414D28
-#data 0x2948434E
-#data 0x00000000
+	#data "E1201:mwRnaCreate Illigal parameter (MAXNCH)"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5390:
-#data 0x30323145
-#data 0x776D3A32
-#data 0x43616E52
-#data 0x74616572
-#data 0x6C492065
-#data 0x6167696C
-#data 0x6170206C
-#data 0x656D6172
-#data 0x20726574
-#data 0x294A5328
-#data 0x00000000
+	#data "E1202:mwRnaCreate Illigal parameter (SJ)"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c53bc:
-#data 0x30323145
-#data 0x776D3A33
-#data 0x43616E52
-#data 0x74616572
-#data 0x6F4E2065
-#data 0x6E652074
-#data 0x6867756F
-#data 0x736E6920
-#data 0x636E6174
-#data 0x4D282065
-#data 0x414E5257
-#data 0x00000029
+	#data "E1203:mwRnaCreate Not enough instance (MWRNA)"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c53ec:
-#data 0x30323145
-#data 0x776D3A34
-#data 0x43616E52
-#data 0x74616572
-#data 0x61432065
-#data 0x746F6E6E
-#data 0x65706F20
-#data 0x574D206E
-#data 0x00444E53
+	#data "E1204:mwRnaCreate Cannot open MWSND"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5410:
-#data 0x30323145
-#data 0x6C493A35
-#data 0x6167696C
-#data 0x6170206C
-#data 0x656D6172
-#data 0x20726574
-#data 0x52574D28
-#data 0x4E3D414E
-#data 0x294C4C55
-#data 0x00000000
+	#data "E1205:Illigal parameter (MWRNA=NULL)"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5438:
-#data 0x31323145
-#data 0x776D3A33
-#data 0x616E526C
-#data 0x57646441
-#data 0x736F5072
-#data 0x616E7220
-#data 0x6A733E2D
-#data 0x4C554E3D
-#data 0x0000004C
+	#data "E1213:mwlRnaAddWrPos rna->sj=NULL"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c545c:
-#data 0x30323145
-#data 0x776D3A39
-#data 0x50616E52
-#data 0x65737561
-#data 0x6D695420
-#data 0x756F2065
-#data 0x666F2074
-#data 0x69617720
-#data 0x6F662074
-#data 0x4D442072
-#data 0x69662041
-#data 0x6873696E
-#data 0x00000000
+	#data "E1209:mwRnaPause Time out of wait for DMA finish"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5490:
-#data 0x31323145
-#data 0x776D3A32
-#data 0x616E526C
-#data 0x72617453
-#data 0x61725474
-#data 0x7220736E
-#data 0x3E2D616E
-#data 0x4E3D6A73
-#data 0x004C4C55
+	#data "E1212:mwlRnaStartTrans rna->sj=NULL"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c54b4:
-#data 0x31323145
-#data 0x776D3A31
-#data 0x53616E52
-#data 0x754E7465
-#data 0x6168436D
-#data 0x6C49206E
-#data 0x6167696C
-#data 0x6170206C
-#data 0x656D6172
-#data 0x28726574
-#data 0x3E48434E
-#data 0x4E58414D
-#data 0x00294843
+	#data "E1211:mwRnaSetNumChan Illigal parameter(NCH>MAXNCH)"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c54e8:
-#data 0x30323145
-#data 0x776D3A37
-#data 0x53616E52
-#data 0x78467465
-#data 0x6C6C4920
-#data 0x6C616769
-#data 0x72617020
-#data 0x74656D61
-#data 0x28207265
-#data 0x48435846
-#data 0x00000029
+	#data "E1207:mwRnaSetFx Illigal parameter (FXCH)"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5514:
-#data 0x52776D0A
-#data 0x5620616E
-#data 0x312E7265
-#data 0x2036322E
-#data 0x6C697542
-#data 0x75413A64
-#data 0x35322067
-#data 0x39393120
-#data 0x31322039
-#data 0x3A35353A
-#data 0x000A3633
+	#data 0x0a
+	#data "mwRna Ver.1.26 Build:Aug 25 1999 21:55:36"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c5540:
-#data 0xDD9EEE41
-#data 0x11D21679
-#data 0x60006C93
-#data 0xBC489408
+	#data 0xDD9EEE41
+	#data 0x11D21679
+	#data 0x60006C93
+	#data 0xBC489408
 
-#align4
 loc_8c1c5550:
-#data 0x3B9A9E81
-#data 0x11D20DBB
-#data 0x4544BFA6
-#data 0x00005453
+	#data 0x3B9A9E81
+	#data 0x11D20DBB
+	#data 0x4544BFA6
+	#data 0x00005453
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c5560:
-#data 0x204A530A
-#data 0x2E726556
-#data 0x30352E35
-#data 0x69754220
-#data 0x4A3A646C
-#data 0x31206E75
-#data 0x39312030
-#data 0x31203939
-#data 0x31323A38
-#data 0x0A31303A
-#data 0x00000000
+	#data 0x0a
+	#data "SJ Ver.5.50 Build:Jun 10 1999 18:21:01"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c558c:
-#data 0x2E534FA3
-#data 0x11D2AF97
-#data 0x600027A5
-#data 0xBC489408
+	#data 0x2E534FA3
+	#data 0x11D2AF97
+	#data 0x600027A5
+	#data 0xBC489408
 
-#align4
 loc_8c1c559c:
-#data 0x10210000
-#data 0x30632042
-#data 0x50A54084
-#data 0x70E760C6
-#data 0x91298108
-#data 0xB16BA14A
-#data 0xD1ADC18C
-#data 0xF1EFE1CE
-#data 0x02101231
-#data 0x22523273
-#data 0x429452B5
-#data 0x62D672F7
-#data 0x83189339
-#data 0xA35AB37B
-#data 0xC39CD3BD
-#data 0xE3DEF3FF
-#data 0x34432462
-#data 0x14010420
-#data 0x74C764E6
-#data 0x548544A4
-#data 0xB54BA56A
-#data 0x95098528
-#data 0xF5CFE5EE
-#data 0xD58DC5AC
-#data 0x26723653
-#data 0x06301611
-#data 0x66F676D7
-#data 0x46B45695
-#data 0xA77AB75B
-#data 0x87389719
-#data 0xE7FEF7DF
-#data 0xC7BCD79D
-#data 0x58E548C4
-#data 0x78A76886
-#data 0x18610840
-#data 0x38232802
-#data 0xD9EDC9CC
-#data 0xF9AFE98E
-#data 0x99698948
-#data 0xB92BA90A
-#data 0x4AD45AF5
-#data 0x6A967AB7
-#data 0x0A501A71
-#data 0x2A123A33
-#data 0xCBDCDBFD
-#data 0xEB9EFBBF
-#data 0x8B589B79
-#data 0xAB1ABB3B
-#data 0x7C876CA6
-#data 0x5CC54CE4
-#data 0x3C032C22
-#data 0x1C410C60
-#data 0xFD8FEDAE
-#data 0xDDCDCDEC
-#data 0xBD0BAD2A
-#data 0x9D498D68
-#data 0x6EB67E97
-#data 0x4EF45ED5
-#data 0x2E323E13
-#data 0x0E701E51
-#data 0xEFBEFF9F
-#data 0xCFFCDFDD
-#data 0xAF3ABF1B
-#data 0x8F789F59
-#data 0x81A99188
-#data 0xA1EBB1CA
-#data 0xC12DD10C
-#data 0xE16FF14E
-#data 0x00A11080
-#data 0x20E330C2
-#data 0x40255004
-#data 0x60677046
-#data 0x939883B9
-#data 0xB3DAA3FB
-#data 0xD31CC33D
-#data 0xF35EE37F
-#data 0x129002B1
-#data 0x32D222F3
-#data 0x52144235
-#data 0x72566277
-#data 0xA5CBB5EA
-#data 0x858995A8
-#data 0xE54FF56E
-#data 0xC50DD52C
-#data 0x24C334E2
-#data 0x048114A0
-#data 0x64477466
-#data 0x44055424
-#data 0xB7FAA7DB
-#data 0x97B88799
-#data 0xF77EE75F
-#data 0xD73CC71D
-#data 0x36F226D3
-#data 0x16B00691
-#data 0x76766657
-#data 0x56344615
-#data 0xC96DD94C
-#data 0xE92FF90E
-#data 0x89E999C8
-#data 0xA9ABB98A
-#data 0x48655844
-#data 0x68277806
-#data 0x08E118C0
-#data 0x28A33882
-#data 0xDB5CCB7D
-#data 0xFB1EEB3F
-#data 0x9BD88BF9
-#data 0xBB9AABBB
-#data 0x5A544A75
-#data 0x7A166A37
-#data 0x1AD00AF1
-#data 0x3A922AB3
-#data 0xED0FFD2E
-#data 0xCD4DDD6C
-#data 0xAD8BBDAA
-#data 0x8DC99DE8
-#data 0x6C077C26
-#data 0x4C455C64
-#data 0x2C833CA2
-#data 0x0CC11CE0
-#data 0xFF3EEF1F
-#data 0xDF7CCF5D
-#data 0xBFBAAF9B
-#data 0x9FF88FD9
-#data 0x7E366E17
-#data 0x5E744E55
-#data 0x3EB22E93
-#data 0x1EF00ED1
+	#data 0x10210000
+	#data 0x30632042
+	#data 0x50A54084
+	#data 0x70E760C6
+	#data 0x91298108
+	#data 0xB16BA14A
+	#data 0xD1ADC18C
+	#data 0xF1EFE1CE
+	#data 0x02101231
+	#data 0x22523273
+	#data 0x429452B5
+	#data 0x62D672F7
+	#data 0x83189339
+	#data 0xA35AB37B
+	#data 0xC39CD3BD
+	#data 0xE3DEF3FF
+	#data 0x34432462
+	#data 0x14010420
+	#data 0x74C764E6
+	#data 0x548544A4
+	#data 0xB54BA56A
+	#data 0x95098528
+	#data 0xF5CFE5EE
+	#data 0xD58DC5AC
+	#data 0x26723653
+	#data 0x06301611
+	#data 0x66F676D7
+	#data 0x46B45695
+	#data 0xA77AB75B
+	#data 0x87389719
+	#data 0xE7FEF7DF
+	#data 0xC7BCD79D
+	#data 0x58E548C4
+	#data 0x78A76886
+	#data 0x18610840
+	#data 0x38232802
+	#data 0xD9EDC9CC
+	#data 0xF9AFE98E
+	#data 0x99698948
+	#data 0xB92BA90A
+	#data 0x4AD45AF5
+	#data 0x6A967AB7
+	#data 0x0A501A71
+	#data 0x2A123A33
+	#data 0xCBDCDBFD
+	#data 0xEB9EFBBF
+	#data 0x8B589B79
+	#data 0xAB1ABB3B
+	#data 0x7C876CA6
+	#data 0x5CC54CE4
+	#data 0x3C032C22
+	#data 0x1C410C60
+	#data 0xFD8FEDAE
+	#data 0xDDCDCDEC
+	#data 0xBD0BAD2A
+	#data 0x9D498D68
+	#data 0x6EB67E97
+	#data 0x4EF45ED5
+	#data 0x2E323E13
+	#data 0x0E701E51
+	#data 0xEFBEFF9F
+	#data 0xCFFCDFDD
+	#data 0xAF3ABF1B
+	#data 0x8F789F59
+	#data 0x81A99188
+	#data 0xA1EBB1CA
+	#data 0xC12DD10C
+	#data 0xE16FF14E
+	#data 0x00A11080
+	#data 0x20E330C2
+	#data 0x40255004
+	#data 0x60677046
+	#data 0x939883B9
+	#data 0xB3DAA3FB
+	#data 0xD31CC33D
+	#data 0xF35EE37F
+	#data 0x129002B1
+	#data 0x32D222F3
+	#data 0x52144235
+	#data 0x72566277
+	#data 0xA5CBB5EA
+	#data 0x858995A8
+	#data 0xE54FF56E
+	#data 0xC50DD52C
+	#data 0x24C334E2
+	#data 0x048114A0
+	#data 0x64477466
+	#data 0x44055424
+	#data 0xB7FAA7DB
+	#data 0x97B88799
+	#data 0xF77EE75F
+	#data 0xD73CC71D
+	#data 0x36F226D3
+	#data 0x16B00691
+	#data 0x76766657
+	#data 0x56344615
+	#data 0xC96DD94C
+	#data 0xE92FF90E
+	#data 0x89E999C8
+	#data 0xA9ABB98A
+	#data 0x48655844
+	#data 0x68277806
+	#data 0x08E118C0
+	#data 0x28A33882
+	#data 0xDB5CCB7D
+	#data 0xFB1EEB3F
+	#data 0x9BD88BF9
+	#data 0xBB9AABBB
+	#data 0x5A544A75
+	#data 0x7A166A37
+	#data 0x1AD00AF1
+	#data 0x3A922AB3
+	#data 0xED0FFD2E
+	#data 0xCD4DDD6C
+	#data 0xAD8BBDAA
+	#data 0x8DC99DE8
+	#data 0x6C077C26
+	#data 0x4C455C64
+	#data 0x2C833CA2
+	#data 0x0CC11CE0
+	#data 0xFF3EEF1F
+	#data 0xDF7CCF5D
+	#data 0xBFBAAF9B
+	#data 0x9FF88FD9
+	#data 0x7E366E17
+	#data 0x5E744E55
+	#data 0x3EB22E93
+	#data 0x1EF00ED1
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c579c:
-#data bank18.loc_8c1832e0
-
+	#data bank18.loc_8c1832e0
 loc_8c1c57a0:
-#data bank18.loc_8c1832ee
-
+	#data bank18.loc_8c1832ee
 loc_8c1c57a4:
-#data bank18.loc_8c18336e
-
+	#data bank18.loc_8c18336e
 loc_8c1c57a8:
-#data bank18.loc_8c18338a
-
+	#data bank18.loc_8c18338a
 loc_8c1c57ac:
-#data bank18.loc_8c1833e2
-
+	#data bank18.loc_8c1833e2
 loc_8c1c57b0:
-#data bank18.loc_8c18349c
-
+	#data bank18.loc_8c18349c
 loc_8c1c57b4:
-#data bank18.loc_8c1834a2
-
+	#data bank18.loc_8c1834a2
 loc_8c1c57b8:
-#data bank18.loc_8c1834c0
-
+	#data bank18.loc_8c1834c0
 loc_8c1c57bc:
-#data bank18.loc_8c1834f4
-
+	#data bank18.loc_8c1834f4
 loc_8c1c57c0:
-#data bank18.loc_8c183510
-
+	#data bank18.loc_8c183510
 loc_8c1c57c4:
-#data bank18.loc_8c18351e
-
+	#data bank18.loc_8c18351e
 loc_8c1c57c8:
-#data bank18.loc_8c183540
-
+	#data bank18.loc_8c183540
 loc_8c1c57cc:
-#data bank18.loc_8c183562
-
+	#data bank18.loc_8c183562
 loc_8c1c57d0:
-#data bank18.loc_8c183572
-
+	#data bank18.loc_8c183572
 loc_8c1c57d4:
-#data bank18.loc_8c183590
-
+	#data bank18.loc_8c183590
 loc_8c1c57d8:
-#data bank18.loc_8c1835ac
-
+	#data bank18.loc_8c1835ac
 loc_8c1c57dc:
-#data bank18.loc_8c1835ce
-
+	#data bank18.loc_8c1835ce
 loc_8c1c57e0:
-#data bank18.loc_8c1835dc
-
+	#data bank18.loc_8c1835dc
 loc_8c1c57e4:
-#data bank18.loc_8c1835e2
-
+	#data bank18.loc_8c1835e2
 loc_8c1c57e8:
-#data bank18.loc_8c183602
+	#data bank18.loc_8c183602
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c57ec:
-#data 0x00005C2F
-
-#align4
+	#data 0x00005C2F
 loc_8c1c57f0:
-#data loc_8c1c57f8
-#data 0x00020501
+	#data loc_8c1c57f8
+	#data 0x00020501
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c57f8:
-#data 0x4379730A
-#data 0x65686361
-#data 0x72655620
-#data 0x352E3120
-#data 0x75422032
-#data 0x3A646C69
-#data 0x206C754A
-#data 0x31203232
-#data 0x20393939
-#data 0x353A3831
-#data 0x38313A35
-#data 0x0000000A
+	#data 0x0a
+	#data "syCache Ver 1.52 Build:Jul 22 1999 18:55:18"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5828:
-#data loc_8c1c5830
-#data 0x00000501
+	#data loc_8c1c5830
+	#data 0x00000501
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c5830:
-#data 0x4379730A
-#data 0x6E696168
-#data 0x72655620
-#data 0x352E3120
-#data 0x75422030
-#data 0x3A646C69
-#data 0x2079614D
-#data 0x31203133
-#data 0x20393939
-#data 0x333A3631
-#data 0x31323A35
-#data 0x0000000A
+	#data 0x0a
+	#data "syChain Ver 1.50 Build:May 31 1999 16:35:21"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5860:
-#data loc_8c1c5868
-#data 0x00000501
+	#data loc_8c1c5868
+	#data 0x00000501
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c5868:
-#data 0x4979730A
-#data 0x5620746E
-#data 0x31207265
-#data 0x2030352E
-#data 0x6C697542
-#data 0x614D3A64
-#data 0x31332079
-#data 0x39393120
-#data 0x36312039
-#data 0x3A38333A
-#data 0x000A3031
+	#data 0x0a
+	#data "syInt Ver 1.50 Build:May 31 1999 16:38:10"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5894:
-#data loc_8c1c589c
-#data 0x00000501
+	#data loc_8c1c589c
+	#data 0x00000501
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c589c:
-#data 0x5379730A
-#data 0x65562071
-#data 0x2E312072
-#data 0x42203035
-#data 0x646C6975
-#data 0x79614D3A
-#data 0x20313320
-#data 0x39393931
-#data 0x3A363120
-#data 0x303A3632
-#data 0x00000A30
+	#data 0x0a
+	#data "sySq Ver 1.50 Build:May 31 1999 16:26:00"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c58c8:
-#data 0x00000038
-#data 0x00000001
-#data 0x00000040
-#data 0x00000001
+	#data 0x00000038
+	#data 0x00000001
+	#data 0x00000040
+	#data 0x00000001
 
-#align4
 loc_8c1c58d8:
-#data 0x0000012C
+	#data 0x0000012C
 
-#align4
 loc_8c1c58dc:
-#data 0x120C0600
+	#data 0x120C0600
 
-#align4
 loc_8c1c58e0:
-#data 0x462A2A2A
-#data 0x4C415441
-#data 0x52524520
-#data 0x433A524F
-#data 0x6F6E6E61
-#data 0x65672074
-#data 0x65732074
-#data 0x6870616D
-#data 0x2165726F
-#data 0x0000000A
+	#data "***FATAL ERROR:Cannot get semaphore!"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5908:
-#data 0x20646B0A
-#data 0x20726556
-#data 0x38342E31
-#data 0x69754220
-#data 0x4A3A646C
-#data 0x33206C75
-#data 0x39312030
-#data 0x31203939
-#data 0x39353A34
-#data 0x0A32353A
-#data 0x00000000
+	#data 0x0a
+	#data "kd Ver 1.48 Build:Jul 30 1999 14:59:52"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5934:
-#data loc_8c1c5938
+	#data loc_8c1c5938
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c5938:
-#data 0x4379730A
-#data 0x56206C62
-#data 0x31207265
-#data 0x2030312E
-#data 0x6C697542
-#data 0x70413A64
-#data 0x37322072
-#data 0x39393120
-#data 0x33312039
-#data 0x3A34353A
-#data 0x000A3930
+	#data 0x0a
+	#data "syCbl Ver 1.10 Build:Apr 27 1999 13:54:09"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5964:
-#data 0x00000001
-
-#align4
+	#data 0x00000001
 loc_8c1c5968:
-#data 0x00000000
-
-#align4
+	#data 0x00000000
 loc_8c1c596c:
-#data 0x00000000
+	#data 0x00000000
 
-#align4
 loc_8c1c5970:
-#data 0x02010006
-#data 0xFF050403
+	#data 0x02010006
+	#data 0xFF050403
 
-#align4
 loc_8c1c5978:
-#data 0x04030201
-#data 0xFF000605
+	#data 0x04030201
+	#data 0xFF000605
 
-#align4
 loc_8c1c5980:
-#data loc_8c1c5998
+	#data loc_8c1c5998
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c5984:
-#data 0x4154414B
-#data 0x465F414E
-#data 0x4853414C
-#data 0x5F5F5F5F
-#data 0x00000000
+	#data "KATANA_FLASH____"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5998:
-#data 0x4D6D660A
-#data 0x5620676E
-#data 0x31207265
-#data 0x2034302E
-#data 0x6C697542
-#data 0x70413A64
-#data 0x36322072
-#data 0x39393120
-#data 0x34312039
-#data 0x3A34333A
-#data 0x000A3134
+	#data 0x0a
+	#data "fmMng Ver 1.04 Build:Apr 26 1999 14:34:41"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c59c4:
-#data 0x4279730A
-#data 0x67664374
-#data 0x72655620
-#data 0x302E3120
-#data 0x75422033
-#data 0x3A646C69
-#data 0x20727041
-#data 0x31203632
-#data 0x20393939
-#data 0x333A3431
-#data 0x32353A36
-#data 0x0000000A
-#data 0x5664700A
-#data 0x56206269
-#data 0x31207265
-#data 0x2032302E
-#data 0x6C697542
-#data 0x70413A64
-#data 0x36322072
-#data 0x39393120
-#data 0x36312039
-#data 0x3A35353A
-#data 0x000A3233
+	#data 0x0a
+	#data "syBtCfg Ver 1.03 Build:Apr 26 1999 14:36:52"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
+;loc_8c1c59f4:
+	#data 0x0a
+	#data "pdVib Ver 1.02 Build:Apr 26 1999 16:55:32"
+	#data 0x0a
+	#data 0x00
+	#align4
+
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c5a20:
-#data 0x00000000
-#data 0x06060000
-#data 0x06060606
-#data 0x0C0C0C0C
-#data 0x12120C0C
-#data 0x12121212
+	#data 0x00000000
+	#data 0x06060000
+	#data 0x06060606
+	#data 0x0C0C0C0C
+	#data 0x12120C0C
+	#data 0x12121212
 
-#align4
 loc_8c1c5a38:
-#data 0x03020001
-#data 0x02030100
-#data 0x00010203
-#data 0x01000302
+	#data 0x03020001
+	#data 0x02030100
+	#data 0x00010203
+	#data 0x01000302
 
-#align4
+	#align4
 loc_8c1c5a48:
-#data loc_8c1c5a4c
+	#data loc_8c1c5a4c
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c5a4c:
-#data 0x646F6D0A
-#data 0x56206D65
-#data 0x31207265
-#data 0x3033302E
-#data 0x75422036
-#data 0x3A646C69
-#data 0x20626546
-#data 0x32203130
-#data 0x20303030
-#data 0x303A3731
-#data 0x36323A30
-#data 0x0000000A
+	#data 0x0a
+	#data "modem Ver 1.0306 Build:Feb 01 2000 17:00:26"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5a7c:
-#data 0x00000000
-#data 0x00000008
-#data 0x00000010
-#data 0x00000020
+	#data 0x00000000
+	#data 0x00000008
+	#data 0x00000010
+	#data 0x00000020
 
-#align4
 loc_8c1c5a8c:
-#data 0x00000002
-#data 0x00000002
-#data 0x00000002
-#data 0x00000002
-#data 0x00000003
-#data 0x00000004
+	#data 0x00000002
+	#data 0x00000002
+	#data 0x00000002
+	#data 0x00000002
+	#data 0x00000003
+	#data 0x00000004
 
-#align4
 loc_8c1c5aa4:
-#data 0x00000002
-#data 0x00000002
-#data 0x00000002
-#data 0x00000002
-#data 0x00000003
-#data 0x00000004
+	#data 0x00000002
+	#data 0x00000002
+	#data 0x00000002
+	#data 0x00000002
+	#data 0x00000003
+	#data 0x00000004
 
-#align4
 loc_8c1c5abc:
-#data 0x00000014
-#data 0x00000015
-#data 0x00000016
-#data 0x00000017
-#data 0x00000018
+	#data 0x00000014
+	#data 0x00000015
+	#data 0x00000016
+	#data 0x00000017
+	#data 0x00000018
 
-#align4
 loc_8c1c5ad0:
-#data 0x0000001E
-#data 0x0000001F
-#data 0x00000020
-#data 0x00000021
-#data 0x00000022
+	#data 0x0000001E
+	#data 0x0000001F
+	#data 0x00000020
+	#data 0x00000021
+	#data 0x00000022
 
-#align4
 loc_8c1c5ae4:
-#data 0x000001F0
-#data 0x00000200
-#data 0x00000210
-#data 0x00000220
-#data 0x00000230
+	#data 0x000001F0
+	#data 0x00000200
+	#data 0x00000210
+	#data 0x00000220
+	#data 0x00000230
 
-#align4
 loc_8c1c5af8:
-#data 0x0000002A
-#data 0x00000026
-#data 0x00000022
-#data 0x0000001E
-#data 0x0000001A
+	#data 0x0000002A
+	#data 0x00000026
+	#data 0x00000022
+	#data 0x0000001E
+	#data 0x0000001A
 
-#align4
 loc_8c1c5b0c:
-#data 0x00000010
-#data 0x00000010
-#data 0x00000010
-#data 0x00000010
-#data 0x00000018
-#data 0x00000020
+	#data 0x00000010
+	#data 0x00000010
+	#data 0x00000010
+	#data 0x00000010
+	#data 0x00000018
+	#data 0x00000020
 
-#align4
 loc_8c1c5b24:
-#data 0x000003DE
-#data 0x000003BF
-#data 0x000003A2
-#data 0x00000387
-#data 0x0000036D
+	#data 0x000003DE
+	#data 0x000003BF
+	#data 0x000003A2
+	#data 0x00000387
+	#data 0x0000036D
 
-#align4
 loc_8c1c5b38:
-#data 0x000007BD
-#data 0x00000780
-#data 0x00000745
-#data 0x0000070F
-#data 0x000006DB
+	#data 0x000007BD
+	#data 0x00000780
+	#data 0x00000745
+	#data 0x0000070F
+	#data 0x000006DB
 
-#align4
 loc_8c1c5b4c:
-#data 0x00000001
-#data 0x00000001
-#data 0x00000001
-#data 0x00000001
-#data 0x00000002
-#data 0x00000003
+	#data 0x00000001
+	#data 0x00000001
+	#data 0x00000001
+	#data 0x00000001
+	#data 0x00000002
+	#data 0x00000003
 
-#align4
 loc_8c1c5b64:
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000080
-#data 0x00000080
-#data 0x00000100
-#data 0x00000400
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000080
+	#data 0x00000080
+	#data 0x00000100
+	#data 0x00000400
 
-#align4
 loc_8c1c5b80:
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000080
-#data 0x00000080
-#data 0x00000200
-#data 0x00000800
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000080
+	#data 0x00000080
+	#data 0x00000200
+	#data 0x00000800
 
-#align4
 loc_8c1c5b9c:
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x000000AC
-#data 0x000002AC
-#data 0x00000AAC
-#data 0x00002AAC
-#data 0x0000AAAC
-#data 0x0002AAAC
-#data 0x000AAAAC
-#data 0x002AAAAC
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x000000AC
+	#data 0x000002AC
+	#data 0x00000AAC
+	#data 0x00002AAC
+	#data 0x0000AAAC
+	#data 0x0002AAAC
+	#data 0x000AAAAC
+	#data 0x002AAAAC
 
-#align4
 loc_8c1c5bc8:
-#data 0x00000000
-#data 0x00000001
-#data 0x00000004
-#data 0x00000010
-#data 0x00000040
-#data 0x00000100
-#data 0x00000400
-#data 0x00001000
-#data 0x00004000
-#data 0x00010000
-#data 0x00040000
+	#data 0x00000000
+	#data 0x00000001
+	#data 0x00000004
+	#data 0x00000010
+	#data 0x00000040
+	#data 0x00000100
+	#data 0x00000400
+	#data 0x00001000
+	#data 0x00004000
+	#data 0x00010000
+	#data 0x00040000
 
-#align4
 loc_8c1c5bf4:
-#data 0x00000001
-#data 0x00000002
-#data 0x00000006
-#data 0x00000016
-#data 0x00000056
-#data 0x00000156
-#data 0x00000556
-#data 0x00001556
-#data 0x00005556
-#data 0x00015556
-#data 0x00055556
-#data 0x00050301
+	#data 0x00000001
+	#data 0x00000002
+	#data 0x00000006
+	#data 0x00000016
+	#data 0x00000056
+	#data 0x00000156
+	#data 0x00000556
+	#data 0x00001556
+	#data 0x00005556
+	#data 0x00015556
+	#data 0x00055556
+	#data 0x00050301
 
-#align4
 loc_8c1c5c24:
-#data 0x02020100
-#data 0x03030303
-#data 0x04040404
-#data 0x04040404
-#data 0x05050505
-#data 0x05050505
-#data 0x05050505
-#data 0x05050505
-#data 0x06060606
-#data 0x06060606
-#data 0x06060606
-#data 0x06060606
-#data 0x06060606
-#data 0x06060606
-#data 0x06060606
-#data 0x06060606
-#data 0x07070707
-#data 0x07070707
-#data 0x07070707
-#data 0x07070707
-#data 0x07070707
-#data 0x07070707
-#data 0x07070707
-#data 0x07070707
-#data 0x07070707
-#data 0x07070707
-#data 0x07070707
-#data 0x07070707
-#data 0x07070707
-#data 0x07070707
-#data 0x07070707
-#data 0x07070707
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
-#data 0x08080808
+	#data 0x02020100
+	#data 0x03030303
+	#data 0x04040404
+	#data 0x04040404
+	#data 0x05050505
+	#data 0x05050505
+	#data 0x05050505
+	#data 0x05050505
+	#data 0x06060606
+	#data 0x06060606
+	#data 0x06060606
+	#data 0x06060606
+	#data 0x06060606
+	#data 0x06060606
+	#data 0x06060606
+	#data 0x06060606
+	#data 0x07070707
+	#data 0x07070707
+	#data 0x07070707
+	#data 0x07070707
+	#data 0x07070707
+	#data 0x07070707
+	#data 0x07070707
+	#data 0x07070707
+	#data 0x07070707
+	#data 0x07070707
+	#data 0x07070707
+	#data 0x07070707
+	#data 0x07070707
+	#data 0x07070707
+	#data 0x07070707
+	#data 0x07070707
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
+	#data 0x08080808
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1c5d24:
-#data 0x32323145
-#data 0x6C493A31
-#data 0x6167696C
-#data 0x6170206C
-#data 0x656D6172
-#data 0x28726574
-#data 0x2948434E
-#data 0x206E6920
-#data 0x6E53776D
-#data 0x65704F64
-#data 0x726F506E
-#data 0x00000074
+	#data "E1221:Illigal parameter(NCH) in mwSndOpenPort"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5d54:
-#data 0x32323145
-#data 0x6F4E3A32
-#data 0x6E652074
-#data 0x6867756F
-#data 0x736E6920
-#data 0x636E6174
-#data 0x574D2865
-#data 0x29444E53
-#data 0x206E6920
-#data 0x6E53776D
-#data 0x65704F64
-#data 0x726F506E
-#data 0x00000074
+	#data "E1222:Not enough instance(MWSND) in mwSndOpenPort"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5d88:
-#data 0x32323145
-#data 0x61433A36
-#data 0x746F6E6E
-#data 0x65706F20
-#data 0x3247206E
-#data 0x414D4420
-#data 0x6E616820
-#data 0x20656C64
-#data 0x6D206E69
-#data 0x646E5377
-#data 0x6E65704F
-#data 0x74726F50
-#data 0x00000000
+	#data "E1226:Cannot open G2 DMA handle in mwSndOpenPort"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5dbc:
-#data 0x32323145
-#data 0x61433A37
-#data 0x746F6E6E
-#data 0x6F6C6320
-#data 0x47206573
-#data 0x4D442032
-#data 0x61682041
-#data 0x656C646E
-#data 0x206E6920
-#data 0x6E53776D
-#data 0x65704F64
-#data 0x726F506E
-#data 0x00000074
+	#data "E1227:Cannot close G2 DMA handle in mwSndOpenPort"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5df0:
-#data 0x32323145
-#data 0x6C6E3A33
-#data 0x53646E73
-#data 0x61657274
-#data 0x65704F6D
-#data 0x6572206E
-#data 0x6E727574
-#data 0x6C6C6920
-#data 0x6C616769
-#data 0x6C617620
-#data 0x69206575
-#data 0x776D206E
-#data 0x4F646E53
-#data 0x506E6570
-#data 0x0074726F
+	#data "E1223:nlsndStreamOpen return illigal value in mwSndOpenPort"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5e2c:
-#data 0x32323145
-#data 0x61433A34
-#data 0x746F6E6E
-#data 0x65726320
-#data 0x20657461
-#data 0x48444853
-#data 0x6E69204E
-#data 0x53776D20
-#data 0x704F646E
-#data 0x6F506E65
-#data 0x00007472
+	#data "E1224:Cannot create SHDHN in mwSndOpenPort"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5e58:
-#data 0x32323145
-#data 0x61433A38
-#data 0x746F6E6E
-#data 0x6F6C6320
-#data 0x47206573
-#data 0x4D442032
-#data 0x61682041
-#data 0x656C646E
-#data 0x206E6920
-#data 0x6E53776D
-#data 0x6F6C4364
-#data 0x6F506573
-#data 0x00007472
+	#data "E1228:Cannot close G2 DMA handle in mwSndClosePort"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5e8c:
-#data 0x32323145
-#data 0x61433A35
-#data 0x746F6E6E
-#data 0x74656720
-#data 0x61656820
-#data 0x20726564
-#data 0x6F666E69
-#data 0x6974616D
-#data 0x69206E6F
-#data 0x7473206E
-#data 0x6D616572
-#data 0x206E6920
-#data 0x6E53776D
-#data 0x74655364
-#data 0x6E496448
-#data 0x00006F66
+	#data "E1225:Cannot get header infomation in stream in mwSndSetHdInfo"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5ecc:
-#data 0x33323145
-#data 0x32473A30
-#data 0x414D4420
-#data 0x6E616820
-#data 0x20656C64
-#data 0x4E207369
-#data 0x284C4C55
-#data 0x6E736C6E
-#data 0x44324764
-#data 0x6552616D
-#data 0x73657571
-#data 0x00002974
+	#data "E1230:G2 DMA handle is NULL(nlsndG2DmaRequest)"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5efc:
-#data 0x33323145
-#data 0x72733A31
-#data 0x73692063
-#data 0x746F6E20
-#data 0x206E6920
-#data 0x67696C61
-#data 0x6E656D6E
-#data 0x69772074
-#data 0x33206874
-#data 0x74796232
-#data 0x6E287365
-#data 0x646E736C
-#data 0x6D443247
-#data 0x71655261
-#data 0x74736575
-#data 0x00000029
+	#data "E1231:src is not in alignment with 32bytes(nlsndG2DmaRequest)"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5f3c:
-#data 0x33323145
-#data 0x73643A32
-#data 0x73692074
-#data 0x746F6E20
-#data 0x206E6920
-#data 0x67696C61
-#data 0x6E656D6E
-#data 0x69772074
-#data 0x33206874
-#data 0x74796232
-#data 0x6E287365
-#data 0x646E736C
-#data 0x6D443247
-#data 0x71655261
-#data 0x74736575
-#data 0x00000029
+	#data "E1232:dst is not in alignment with 32bytes(nlsndG2DmaRequest)"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5f7c:
-#data 0x33323145
-#data 0x69733A33
-#data 0x6920657A
-#data 0x6F6E2073
-#data 0x6E692074
-#data 0x696C6120
-#data 0x656D6E67
-#data 0x7720746E
-#data 0x20687469
-#data 0x79623233
-#data 0x28736574
-#data 0x6E736C6E
-#data 0x44324764
-#data 0x6552616D
-#data 0x73657571
-#data 0x00002974
+	#data "E1233:size is not in alignment with 32bytes(nlsndG2DmaRequest)"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5fbc:
-#data 0x32323145
-#data 0x6C6E3A39
-#data 0x47646E73
-#data 0x616D4432
-#data 0x53746547
-#data 0x75746174
-#data 0x65722073
-#data 0x6E727574
-#data 0x72726520
-#data 0x6920726F
-#data 0x776D206E
-#data 0x47646E53
-#data 0x624D7465
-#data 0x74536B6C
-#data 0x00007461
+	#data "E1229:nlsndG2DmaGetStatus return error in mwSndGetMblkStat"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c5ff8:
-#data loc_8c1c6000
-#data 0x00000501
+	#data loc_8c1c6000
+	#data 0x00000501
 
-#align4
 loc_8c1c6000:
-#data 0x4D79730A
-#data 0x5620756D
-#data 0x31207265
-#data 0x2030352E
-#data 0x6C697542
-#data 0x614D3A64
-#data 0x31332079
-#data 0x39393120
-#data 0x36312039
-#data 0x3A35323A
-#data 0x000A3331
+	#data 0x0a
+	#data "syMmu Ver 1.50 Build:May 31 1999 16:25:13"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c602c:
-#data 0x4779730A
-#data 0x65562032
-#data 0x2E312072
-#data 0x312E3130
-#data 0x75422030
-#data 0x3A646C69
-#data 0x20677541
-#data 0x31203033
-#data 0x20393939
-#data 0x303A3731
-#data 0x30353A33
-#data 0x0000000A
+	#data 0x0a
+	#data "syG2 Ver 1.01.10 Build:Aug 30 1999 17:03:50"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c605c:
-#data 0x462A2A2A
-#data 0x4C415441
-#data 0x52524520
-#data 0x433A524F
-#data 0x6F6E6E61
-#data 0x65672074
-#data 0x65732074
-#data 0x6870616D
-#data 0x2165726F
-#data 0x0000000A
+	#data "***FATAL ERROR:Cannot get semaphore!"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c6084:
-#data 0x08040201
+	#data 0x08040201
 
-#align4
 loc_8c1c6088:
-#data 0x462A2A2A
-#data 0x4C415441
-#data 0x52524520
-#data 0x433A524F
-#data 0x6F6E6E61
-#data 0x65672074
-#data 0x65732074
-#data 0x6870616D
-#data 0x2165726F
-#data 0x0000000A
+	#data "***FATAL ERROR:Cannot get semaphore!"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c60b0:
-#data 0x04020120
-#data 0x41601008
-#data 0x50484442
-#data 0x848281A0
-#data 0xC1E09088
-#data 0xD0C8C4C2
+	#data 0x04020120
+	#data 0x41601008
+	#data 0x50484442
+	#data 0x848281A0
+	#data 0xC1E09088
+	#data 0xD0C8C4C2
 
-#align4
 loc_8c1c60c8:
-#data 0x00000000
-#data 0x00000006
-#data 0x0000000C
-#data 0x00000012
+	#data 0x00000000
+	#data 0x00000006
+	#data 0x0000000C
+	#data 0x00000012
 
-#align4
 loc_8c1c60d8:
-#data 0x00000001
+	#data 0x00000001
 
-#align4
 loc_8c1c60dc:
-#data 0x00000003
+	#data 0x00000003
 
-#align4
 loc_8c1c60e0:
-#data 0x00000001
-#data 0x00000002
-#data 0x00000007
-#data 0x00000008
-#data 0x0000000D
-#data 0x0000000E
-#data 0x00000013
-#data 0x00000014
-
-#align4
+	#data 0x00000001
+	#data 0x00000002
+	#data 0x00000007
+	#data 0x00000008
+	#data 0x0000000D
+	#data 0x0000000E
+	#data 0x00000013
+	#data 0x00000014
+	
 loc_8c1c6100:
-#data 0x10210000
-#data 0x30632042
-#data 0x50A54084
-#data 0x70E760C6
-#data 0x91298108
-#data 0xB16BA14A
-#data 0xD1ADC18C
-#data 0xF1EFE1CE
-#data 0x02101231
-#data 0x22523273
-#data 0x429452B5
-#data 0x62D672F7
-#data 0x83189339
-#data 0xA35AB37B
-#data 0xC39CD3BD
-#data 0xE3DEF3FF
-#data 0x34432462
-#data 0x14010420
-#data 0x74C764E6
-#data 0x548544A4
-#data 0xB54BA56A
-#data 0x95098528
-#data 0xF5CFE5EE
-#data 0xD58DC5AC
-#data 0x26723653
-#data 0x06301611
-#data 0x66F676D7
-#data 0x46B45695
-#data 0xA77AB75B
-#data 0x87389719
-#data 0xE7FEF7DF
-#data 0xC7BCD79D
-#data 0x58E548C4
-#data 0x78A76886
-#data 0x18610840
-#data 0x38232802
-#data 0xD9EDC9CC
-#data 0xF9AFE98E
-#data 0x99698948
-#data 0xB92BA90A
-#data 0x4AD45AF5
-#data 0x6A967AB7
-#data 0x0A501A71
-#data 0x2A123A33
-#data 0xCBDCDBFD
-#data 0xEB9EFBBF
-#data 0x8B589B79
-#data 0xAB1ABB3B
-#data 0x7C876CA6
-#data 0x5CC54CE4
-#data 0x3C032C22
-#data 0x1C410C60
-#data 0xFD8FEDAE
-#data 0xDDCDCDEC
-#data 0xBD0BAD2A
-#data 0x9D498D68
-#data 0x6EB67E97
-#data 0x4EF45ED5
-#data 0x2E323E13
-#data 0x0E701E51
-#data 0xEFBEFF9F
-#data 0xCFFCDFDD
-#data 0xAF3ABF1B
-#data 0x8F789F59
-#data 0x81A99188
-#data 0xA1EBB1CA
-#data 0xC12DD10C
-#data 0xE16FF14E
-#data 0x00A11080
-#data 0x20E330C2
-#data 0x40255004
-#data 0x60677046
-#data 0x939883B9
-#data 0xB3DAA3FB
-#data 0xD31CC33D
-#data 0xF35EE37F
-#data 0x129002B1
-#data 0x32D222F3
-#data 0x52144235
-#data 0x72566277
-#data 0xA5CBB5EA
-#data 0x858995A8
-#data 0xE54FF56E
-#data 0xC50DD52C
-#data 0x24C334E2
-#data 0x048114A0
-#data 0x64477466
-#data 0x44055424
-#data 0xB7FAA7DB
-#data 0x97B88799
-#data 0xF77EE75F
-#data 0xD73CC71D
-#data 0x36F226D3
-#data 0x16B00691
-#data 0x76766657
-#data 0x56344615
-#data 0xC96DD94C
-#data 0xE92FF90E
-#data 0x89E999C8
-#data 0xA9ABB98A
-#data 0x48655844
-#data 0x68277806
-#data 0x08E118C0
-#data 0x28A33882
-#data 0xDB5CCB7D
-#data 0xFB1EEB3F
-#data 0x9BD88BF9
-#data 0xBB9AABBB
-#data 0x5A544A75
-#data 0x7A166A37
-#data 0x1AD00AF1
-#data 0x3A922AB3
-#data 0xED0FFD2E
-#data 0xCD4DDD6C
-#data 0xAD8BBDAA
-#data 0x8DC99DE8
-#data 0x6C077C26
-#data 0x4C455C64
-#data 0x2C833CA2
-#data 0x0CC11CE0
-#data 0xFF3EEF1F
-#data 0xDF7CCF5D
-#data 0xBFBAAF9B
-#data 0x9FF88FD9
-#data 0x7E366E17
-#data 0x5E744E55
-#data 0x3EB22E93
-#data 0x1EF00ED1
+	#data 0x10210000
+	#data 0x30632042
+	#data 0x50A54084
+	#data 0x70E760C6
+	#data 0x91298108
+	#data 0xB16BA14A
+	#data 0xD1ADC18C
+	#data 0xF1EFE1CE
+	#data 0x02101231
+	#data 0x22523273
+	#data 0x429452B5
+	#data 0x62D672F7
+	#data 0x83189339
+	#data 0xA35AB37B
+	#data 0xC39CD3BD
+	#data 0xE3DEF3FF
+	#data 0x34432462
+	#data 0x14010420
+	#data 0x74C764E6
+	#data 0x548544A4
+	#data 0xB54BA56A
+	#data 0x95098528
+	#data 0xF5CFE5EE
+	#data 0xD58DC5AC
+	#data 0x26723653
+	#data 0x06301611
+	#data 0x66F676D7
+	#data 0x46B45695
+	#data 0xA77AB75B
+	#data 0x87389719
+	#data 0xE7FEF7DF
+	#data 0xC7BCD79D
+	#data 0x58E548C4
+	#data 0x78A76886
+	#data 0x18610840
+	#data 0x38232802
+	#data 0xD9EDC9CC
+	#data 0xF9AFE98E
+	#data 0x99698948
+	#data 0xB92BA90A
+	#data 0x4AD45AF5
+	#data 0x6A967AB7
+	#data 0x0A501A71
+	#data 0x2A123A33
+	#data 0xCBDCDBFD
+	#data 0xEB9EFBBF
+	#data 0x8B589B79
+	#data 0xAB1ABB3B
+	#data 0x7C876CA6
+	#data 0x5CC54CE4
+	#data 0x3C032C22
+	#data 0x1C410C60
+	#data 0xFD8FEDAE
+	#data 0xDDCDCDEC
+	#data 0xBD0BAD2A
+	#data 0x9D498D68
+	#data 0x6EB67E97
+	#data 0x4EF45ED5
+	#data 0x2E323E13
+	#data 0x0E701E51
+	#data 0xEFBEFF9F
+	#data 0xCFFCDFDD
+	#data 0xAF3ABF1B
+	#data 0x8F789F59
+	#data 0x81A99188
+	#data 0xA1EBB1CA
+	#data 0xC12DD10C
+	#data 0xE16FF14E
+	#data 0x00A11080
+	#data 0x20E330C2
+	#data 0x40255004
+	#data 0x60677046
+	#data 0x939883B9
+	#data 0xB3DAA3FB
+	#data 0xD31CC33D
+	#data 0xF35EE37F
+	#data 0x129002B1
+	#data 0x32D222F3
+	#data 0x52144235
+	#data 0x72566277
+	#data 0xA5CBB5EA
+	#data 0x858995A8
+	#data 0xE54FF56E
+	#data 0xC50DD52C
+	#data 0x24C334E2
+	#data 0x048114A0
+	#data 0x64477466
+	#data 0x44055424
+	#data 0xB7FAA7DB
+	#data 0x97B88799
+	#data 0xF77EE75F
+	#data 0xD73CC71D
+	#data 0x36F226D3
+	#data 0x16B00691
+	#data 0x76766657
+	#data 0x56344615
+	#data 0xC96DD94C
+	#data 0xE92FF90E
+	#data 0x89E999C8
+	#data 0xA9ABB98A
+	#data 0x48655844
+	#data 0x68277806
+	#data 0x08E118C0
+	#data 0x28A33882
+	#data 0xDB5CCB7D
+	#data 0xFB1EEB3F
+	#data 0x9BD88BF9
+	#data 0xBB9AABBB
+	#data 0x5A544A75
+	#data 0x7A166A37
+	#data 0x1AD00AF1
+	#data 0x3A922AB3
+	#data 0xED0FFD2E
+	#data 0xCD4DDD6C
+	#data 0xAD8BBDAA
+	#data 0x8DC99DE8
+	#data 0x6C077C26
+	#data 0x4C455C64
+	#data 0x2C833CA2
+	#data 0x0CC11CE0
+	#data 0xFF3EEF1F
+	#data 0xDF7CCF5D
+	#data 0xBFBAAF9B
+	#data 0x9FF88FD9
+	#data 0x7E366E17
+	#data 0x5E744E55
+	#data 0x3EB22E93
+	#data 0x1EF00ED1
 
-#align4
 loc_8c1c6300:
-#data 0x06040006
-#data 0xFF0AFF08
-#data 0xFF0CFFFF
-#data 0xFFFFFFFF
-#data 0xFFFFFFFF
-#data 0xFFFFFFFF
-#data 0x0EFFFFFF
-#data 0xFFFFFFFF
-#data 0xFFFFFFFF
-#data 0xFFFFFFFF
-#data 0xFFFFFFFF
-#data 0xFF02FFFF
-#data 0xFEFFFFFF
-#data 0xFFFEFEFF
-#data 0xFFFFFFFF
+	#data 0x06040006
+	#data 0xFF0AFF08
+	#data 0xFF0CFFFF
+	#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
+	#data 0x0EFFFFFF
+	#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
+	#data 0xFF02FFFF
+	#data 0xFEFFFFFF
+	#data 0xFFFEFEFF
+	#data 0xFFFFFFFF
 
-#align4
 loc_8c1c633c:
-#data 0x0101FF00
-#data 0xFF00FF00
-#data 0xFF00FF01
-#data 0xFF01FF00
-#data 0xFF000601
-#data 0x0301FF00
-#data 0xFF010301
-#data 0x0001FF01
-#data 0xFF000201
-#data 0x00010001
-#data 0x0101FF00
-#data 0x07010301
-#data 0x03010101
+	#data 0x0101FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF01
+	#data 0xFF01FF00
+	#data 0xFF000601
+	#data 0x0301FF00
+	#data 0xFF010301
+	#data 0x0001FF01
+	#data 0xFF000201
+	#data 0x00010001
+	#data 0x0101FF00
+	#data 0x07010301
+	#data 0x03010101
 
-#align4
 loc_8c1c6370:
-#data 0x0101FF01
-#data 0x03010101
-#data 0xFF00FF01
-#data 0xFF000201
-#data 0xFF010201
-#data 0x01011401
-#data 0xFF010001
-#data 0xFF01FF01
-#data 0x0101FF00
-#data 0x0A010101
-#data 0xFF01FF01
-#data 0x02010301
-#data 0xFF000301
+	#data 0x0101FF01
+	#data 0x03010101
+	#data 0xFF00FF01
+	#data 0xFF000201
+	#data 0xFF010201
+	#data 0x01011401
+	#data 0xFF010001
+	#data 0xFF01FF01
+	#data 0x0101FF00
+	#data 0x0A010101
+	#data 0xFF01FF01
+	#data 0x02010301
+	#data 0xFF000301
 
-#align4
 loc_8c1c63a4:
-#data 0x4001FF00
-#data 0xFF01FF01
-#data 0xFF00FF01
-#data 0xFF001F01
-#data 0xFF00FF00
-#data 0x09010F01
-#data 0xFF00FF00
-#data 0xFF01FF00
-#data 0xFF01FF01
-#data 0xFF01FF01
-#data 0x0401FF00
-#data 0xFF003F01
-#data 0xFF00FF01
+	#data 0x4001FF00
+	#data 0xFF01FF01
+	#data 0xFF00FF01
+	#data 0xFF001F01
+	#data 0xFF00FF00
+	#data 0x09010F01
+	#data 0xFF00FF00
+	#data 0xFF01FF00
+	#data 0xFF01FF01
+	#data 0xFF01FF01
+	#data 0x0401FF00
+	#data 0xFF003F01
+	#data 0xFF00FF01
 
-#align4
 loc_8c1c63d8:
-#data 0x09010301
-#data 0xFF000201
-#data 0xFF00FF00
-#data 0xFF00FF01
-#data 0xFF01FF00
-#data 0xFF000501
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF01
-#data 0xFF01FF00
-#data 0xFF00FF00
-#data 0x00010001
+	#data 0x09010301
+	#data 0xFF000201
+	#data 0xFF00FF00
+	#data 0xFF00FF01
+	#data 0xFF01FF00
+	#data 0xFF000501
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF01
+	#data 0xFF01FF00
+	#data 0xFF00FF00
+	#data 0x00010001
 
-#align4
 loc_8c1c640c:
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
 
-#align4
 loc_8c1c6440:
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0xFF00FF00
-#data 0x00000000
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0xFF00FF00
+	#data 0x00000000
 
-#align4
 loc_8c1c6478:
-#data 0x414C4544
-#data 0x20444559
-#data 0x00000000
+	#data "DELAYED "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1c6484:
-#data 0x0000003A
-
-#align4
+	#data 0x0000003A
 loc_8c1c6488:
-#data 0x00002020
-
-#align4
+	#data 0x00002020
 loc_8c1c648c:
-#data 0x00000020
+	#data 0x00000020
 
-#align4
 loc_8c1c6490:
-#data 0x18342C14
-#data 0x2C1C3830
-#data 0x0040
+	#data 0x18342C14
+	#data 0x2C1C3830
+	#data 0x0040
 
 loc_8c1c649a:
-#data 0x1C00
-#data 0x25002000
-#data 0x20001C00
-#data 0x1C002500
-#data 0x25002000
+	#data 0x1C00
+	#data 0x25002000
+	#data 0x20001C00
+	#data 0x1C002500
+	#data 0x25002000
 
-#align4
 loc_8c1c64ac:
-#data 0x20001C00
-#data 0x1C002500
-#data 0x25002000
-#data 0x20001C00
-#data 0x2500
+	#data 0x20001C00
+	#data 0x1C002500
+	#data 0x25002000
+	#data 0x20001C00
+	#data 0x2500
 
 loc_8c1c64be:
-#data 0x0100
-#data 0x05040302
-#data 0x09080706
-#data 0x0F0E0D0C
-#data 0x0B0A
+	#data 0x0100
+	#data 0x05040302
+	#data 0x09080706
+	#data 0x0F0E0D0C
+	#data 0x0B0A
 
 loc_8c1c64ce:
-#data 0x390A
-#data 0x2D4E32D6
-#data 0x23FD2861
-#data 0x1C962013
-#data 0x16B5197A
-#data 0x1209143D
-#data 0x0E531013
-#data 0x0B610CC5
-#data 0x090A0A24
-#data 0x072E080E
-#data 0x05B40666
-#data 0x04870515
-#data 0x03990409
+	#data 0x390A
+	#data 0x2D4E32D6
+	#data 0x23FD2861
+	#data 0x1C962013
+	#data 0x16B5197A
+	#data 0x1209143D
+	#data 0x0E531013
+	#data 0x0B610CC5
+	#data 0x090A0A24
+	#data 0x072E080E
+	#data 0x05B40666
+	#data 0x04870515
+	#data 0x03990409
 
-#align4
 loc_8c1c6500:
-#data 0x21562156
-#data 0x1A7B1DB6
-#data 0x15081799
-#data 0x10B512BF
-#data 0x0D450EE4
-#data 0x0A8A0BD4
-#data 0x085F0965
-#data 0x06A60776
-#data 0x05ED
+	#data 0x21562156
+	#data 0x1A7B1DB6
+	#data 0x15081799
+	#data 0x10B512BF
+	#data 0x0D450EE4
+	#data 0x0A8A0BD4
+	#data 0x085F0965
+	#data 0x06A60776
+	#data 0x05ED
 
 loc_8c1c6522:
-#data 0x2567
-#data 0x21562567
-#data 0x1A7B1DB6
-#data 0x15081799
-#data 0x10B512BF
-#data 0x0D450EE4
-#data 0x0A8A0BD4
-#data 0x085F0965
-#data 0x06A60776
+	#data 0x2567
+	#data 0x21562567
+	#data 0x1A7B1DB6
+	#data 0x15081799
+	#data 0x10B512BF
+	#data 0x0D450EE4
+	#data 0x0A8A0BD4
+	#data 0x085F0965
+	#data 0x06A60776
 
-#align4
 loc_8c1c6544:
-#data 0x1F781F78
-#data 0x19001C0C
-#data 0x13DB1648
-#data 0x0FC611B2
-#data 0x0C870E0E
-#data 0x09F30B2A
-#data 0x07E708DE
-#data 0x0647070B
-#data 0x0598
+	#data 0x1F781F78
+	#data 0x19001C0C
+	#data 0x13DB1648
+	#data 0x0FC611B2
+	#data 0x0C870E0E
+	#data 0x09F30B2A
+	#data 0x07E708DE
+	#data 0x0647070B
+	#data 0x0598
 
 loc_8c1c6566:
-#data 0x279F
-#data 0x2350279F
-#data 0x1C0C1F78
-#data 0x16481900
-#data 0x11B213DB
-#data 0x0E0E0FC6
-#data 0x0B2A0C87
-#data 0x08DE09F3
-#data 0x070B07E7
+	#data 0x279F
+	#data 0x2350279F
+	#data 0x1C0C1F78
+	#data 0x16481900
+	#data 0x11B213DB
+	#data 0x0E0E0FC6
+	#data 0x0B2A0C87
+	#data 0x08DE09F3
+	#data 0x070B07E7
 
-#align4
 loc_8c1c6588:
-#data 0x1A7B1A7B
-#data 0x17991A7B
-#data 0x12BF1508
-#data 0x0EE410B5
-#data 0x0BD40D45
-#data 0x09650A8A
-#data 0x0776085F
-#data 0x05ED06A6
-#data 0x0548
+	#data 0x1A7B1A7B
+	#data 0x17991A7B
+	#data 0x12BF1508
+	#data 0x0EE410B5
+	#data 0x0BD40D45
+	#data 0x09650A8A
+	#data 0x0776085F
+	#data 0x05ED06A6
+	#data 0x0548
 
 loc_8c1c65aa:
-#data 0x2567
-#data 0x25672567
-#data 0x1DB62156
-#data 0x17991A7B
-#data 0x12BF1508
-#data 0x0EE410B5
-#data 0x0BD40D45
-#data 0x09650A8A
-#data 0x0776085F
+	#data 0x2567
+	#data 0x25672567
+	#data 0x1DB62156
+	#data 0x17991A7B
+	#data 0x12BF1508
+	#data 0x0EE410B5
+	#data 0x0BD40D45
+	#data 0x09650A8A
+	#data 0x0776085F
 
-#align4
 loc_8c1c65cc:
-#data 0x0D910006
-#data 0x0DD10007
-#data 0x0FD10008
-#data 0x0FF1000B
-;==============================================
-#data 0x0FF9000C
+	#data 0x0D910006
+	#data 0x0DD10007
+	#data 0x0FD10008
+	#data 0x0FF1000B
+	#data 0x0FF9000C
 
-#align4
 loc_8c1c65e0:
-#data 0x0FF90006
-#data 0x0BF90007
-#data 0x0BB90008
-#data 0x09B9000B
-;==============================================
-#data 0x0999000C
+	#data 0x0FF90006
+	#data 0x0BF90007
+	#data 0x0BB90008
+	#data 0x09B9000B
+	#data 0x0999000C
 
-#align4
 loc_8c1c65f4:
-#data 0x00010005
-#data 0x00030006
-#data 0x00070007
-#data 0x000F0008
-#data 0x001F000B
-;==============================================
-#data 0x003F000C
-#data 0x007F000D
-#data 0x00FF000E
-#data 0x01FF0015
-#data 0x03FF0016
-#data 0x07FF0017
-#data 0x0FFF0019
-#data 0x1FFF001D
-#data 0x1FFF001E
-#data 0x3FFF0020
+	#data 0x00010005
+	#data 0x00030006
+	#data 0x00070007
+	#data 0x000F0008
+	#data 0x001F000B
+	#data 0x003F000C
+	#data 0x007F000D
+	#data 0x00FF000E
+	#data 0x01FF0015
+	#data 0x03FF0016
+	#data 0x07FF0017
+	#data 0x0FFF0019
+	#data 0x1FFF001D
+	#data 0x1FFF001E
+	#data 0x3FFF0020
 
+;==============================================
 loc_8c1C6630:
-mov.w r0,@(r0,r0)
-addv r15,r15
-mov.l r0,@(r0,r0)
-addc r15,r15
-mul.l r0,r0
-add r15,r15
-clrt
-sub r15,r15
-rts
-cmp/eq r15,r15
-;==============================================
-#data 0x3FE0000C
-#data 0x3FC0000D
-#data 0x3F80000E
-#data 0x3F000015
-#data 0x3E000016
-#data 0x3C000017
-#data 0x38000019
-#data 0x3000001D
-#data 0x2000001E
-#data 0x20000020
+	#data 0x3fff0005
+	#data 0x3ffe0006
+	#data 0x3ffc0007
+	#data 0x3ff80008
+	#data 0x3ff0000b
+	#data 0x3FE0000C
+	#data 0x3FC0000D
+	#data 0x3F80000E
+	#data 0x3F000015
+	#data 0x3E000016
+	#data 0x3C000017
+	#data 0x38000019
+	#data 0x3000001D
+	#data 0x2000001E
+	#data 0x20000020
 
-#align4
 loc_8c1C666C:
-#data 0x02060105
-#data 0x04080307
-#data 0x060C050B
-#data 0x080E070D
-#data 0x0A160915
-#data 0x0C190B17
-#data 0x0D1E0D1D
-#data 0x011E0E20
-#data 0x02210120
-#data 0x04250323
-#data 0x062A0528
-#data 0x082E072C
-#data 0x0A320930
-#data 0x0C360B34
-#data 0x0D38
+	#data 0x02060105
+	#data 0x04080307
+	#data 0x060C050B
+	#data 0x080E070D
+	#data 0x0A160915
+	#data 0x0C190B17
+	#data 0x0D1E0D1D
+	#data 0x011E0E20
+	#data 0x02210120
+	#data 0x04250323
+	#data 0x062A0528
+	#data 0x082E072C
+	#data 0x0A320930
+	#data 0x0C360B34
+	#data 0x0D38
 
 loc_8c1C66A6:
-#data 0x0118
-#data 0x031C021A
-#data 0x051F041E
-#data 0x07230622
-#data 0x09270824
-#data 0x0B290A28
-#data 0x0D2C0C2B
-#data 0x0F2F0E2D
-#data 0x11311030
-#data 0x13341233
-#data 0x15371435
-#data 0x00001638
+	#data 0x0118
+	#data 0x031C021A
+	#data 0x051F041E
+	#data 0x07230622
+	#data 0x09270824
+	#data 0x0B290A28
+	#data 0x0D2C0C2B
+	#data 0x0F2F0E2D
+	#data 0x11311030
+	#data 0x13341233
+	#data 0x15371435
+	#data 0x00001638
 
-#align4
 loc_8c1C66D4:
-#data 0x00000960
-#data 0x000003E8
-#data 0x00000AF0
-#data 0x00000BB8
-#data 0x00000C80
-#data 0x00000D65
-#data 0x00000000
-#data 0x6E756F43
-#data 0x20797274
-#data 0x6C696146
-#data 0x206F5420
-#data 0x74696E49
-#data 0x00000000
+	#data 0x00000960
+	#data 0x000003E8
+	#data 0x00000AF0
+	#data 0x00000BB8
+	#data 0x00000C80
+	#data 0x00000D65
+	#data 0x00000000
+	#data 0x6E756F43
+	#data 0x20797274
+	#data 0x6C696146
+	#data 0x206F5420
+	#data 0x74696E49
+	#data 0x00000000
 
-#align4
 loc_8c1C6708:
-#data 0x00000000
+	#data 0x00000000
 
-#align4
 loc_8c1C670C:
-#data 0x61746144
-#data 0x6D755020
-#data 0x72452070
-#data 0x20726F72
-#data 0x65646F43
-#data 0x20203D20
-#data 0x00000020
+	#data "Data Pump Error Code =   "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6728:
-#data 0x00000064
-#data 0x00000064
-#data 0x00000090
-#data 0x00000120
-#data 0x00000240
-#data 0x00000360
-#data 0x00000480
-#data 0x000005A0
-#data 0x000006C0
-#data 0x000007E0
-#data 0x00000780
-#data 0x00000A20
-#data 0x00000B40
-#data 0x00000C60
-#data 0x00000D20
-#data 0x00000D80
-#data 0x00000DC0
-#data 0x00000E60
-#data 0x00000E9C
-#data 0x00000F00
-#data 0x00000FA0
-#data 0x00000FC0
-#data 0x00000FF0
-#data 0x00001040
-#data 0x000010E0
-#data 0x00001180
-#data 0x000011D0
-#data 0x00001200
-#data 0x00001220
-#data 0x000012C0
-#data 0x00001360
-#data 0x000013B0
-#data 0x00001400
-#data 0x000014A0
-#data 0x00001540
-#data 0x00001590
-#data 0x000015E0
-#data 0x00001680
-#data 0x00001720
-#data 0x00001770
-#data 0x000017C0
-#data 0x00001860
-#data 0x00001900
-#data 0x00001950
-#data 0x000019A0
-#data 0x00001A40
-#data 0x00001B00
-#data 0x00001E00
-#data 0x000021C0
-#data 0x00002400
-#data 0x00002D00
-#data 0x00003600
-#data 0x00003C00
-#data 0x00006C00
-#data 0x0000D800
-#data 0x00014400
-#data 0x00014400
-#data 0x0001B000
-#data 0x0001B000
-#data 0x0001B000
+	#data 0x00000064
+	#data 0x00000064
+	#data 0x00000090
+	#data 0x00000120
+	#data 0x00000240
+	#data 0x00000360
+	#data 0x00000480
+	#data 0x000005A0
+	#data 0x000006C0
+	#data 0x000007E0
+	#data 0x00000780
+	#data 0x00000A20
+	#data 0x00000B40
+	#data 0x00000C60
+	#data 0x00000D20
+	#data 0x00000D80
+	#data 0x00000DC0
+	#data 0x00000E60
+	#data 0x00000E9C
+	#data 0x00000F00
+	#data 0x00000FA0
+	#data 0x00000FC0
+	#data 0x00000FF0
+	#data 0x00001040
+	#data 0x000010E0
+	#data 0x00001180
+	#data 0x000011D0
+	#data 0x00001200
+	#data 0x00001220
+	#data 0x000012C0
+	#data 0x00001360
+	#data 0x000013B0
+	#data 0x00001400
+	#data 0x000014A0
+	#data 0x00001540
+	#data 0x00001590
+	#data 0x000015E0
+	#data 0x00001680
+	#data 0x00001720
+	#data 0x00001770
+	#data 0x000017C0
+	#data 0x00001860
+	#data 0x00001900
+	#data 0x00001950
+	#data 0x000019A0
+	#data 0x00001A40
+	#data 0x00001B00
+	#data 0x00001E00
+	#data 0x000021C0
+	#data 0x00002400
+	#data 0x00002D00
+	#data 0x00003600
+	#data 0x00003C00
+	#data 0x00006C00
+	#data 0x0000D800
+	#data 0x00014400
+	#data 0x00014400
+	#data 0x0001B000
+	#data 0x0001B000
+	#data 0x0001B000
 
-#align4
 loc_8c1C6818:
-#data 0x00000010
-#data 0x00000010
-#data 0x00000010
-#data 0x00000010
-#data 0x00000018
-#data 0x00000020
+	#data 0x00000010
+	#data 0x00000010
+	#data 0x00000010
+	#data 0x00000010
+	#data 0x00000018
+	#data 0x00000020
 
-#align4
 loc_8c1C6830:
-#data 0x554D414B
-#data 0x61442D49
-#data 0x656E6B72
-#data 0x43207373
-#data 0x7279706F
-#data 0x74686769
-#data 0x29432820
-#data 0x43454E20
-#data 0x726F4320
-#data 0x61726F70
-#data 0x6E6F6974
-#data 0x39393120
-#data 0x6B0A2039
-#data 0x206B646D
-#data 0x20726556
-#data 0x2C332C31
-#data 0x20302C30
-#data 0x6C697542
-#data 0x754A3A64
-#data 0x3332206C
-#data 0x39393120
-#data 0x31312039
-#data 0x3A33303A
-#data 0x000A3835
+	#data "KAMUI-Darkness Copyright (C) NEC Corporation 1999 "
+	#data 0x0a
+	#data "kmdk Ver 1,3,0,0 Build:Jul 23 1999 11:03:58"
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6890:
-#data 0x2C332C31
-#data 0x00302C30
+	#data "1,3,0,0"
+	#data 0x00
+	#align4
 
-#align4
-loc_8c1C6898:
-#data 0x4D524F46
-#data 0x00000000
+loc_8c1c6898:
+	#data "FORM"
+	#data 0x00
+	#align4
 
-#align4
-loc_8c1C68A0:
-#data 0x46464941
-#data 0x00000000
+loc_8c1c68a0:
+	#data "AIFF"
+	#data 0x00
+	#align4
 
-#align4
-loc_8c1C68A8:
-#data 0x646E732E
-#data 0x00000000
+loc_8c1c68a8:
+	#data ".snd"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C68B0:
-#data 0x0064732E
+	#data ".sd"
+	#data 0x00
 
-#align4
-loc_8c1C68B4:
-#data 0x44535053
-#data 0x00000000
+loc_8c1c68b4:
+	#data "SPSD"
+	#data 0x00
+	#align4
 
-#align4
-loc_8c1C68BC:
-#data 0x46464952
-#data 0x00000000
+loc_8c1c68bc:
+	#data "RIFF"
+	#data 0x00
+	#align4
 
-#align4
-loc_8c1C68C4:
-#data 0x20746D66
-#data 0x00000000
+loc_8c1c68c4:
+	#data "fmt "
+	#data 0x00
+	#align4
 
-#align4
-loc_8c1C68CC:
-#data 0x45564157
-#data 0x00000000
+loc_8c1c68cc:
+	#data "WAVE"
+	#data 0x00
+	#align4
 
-#align4
-loc_8c1C68D4:
-#data 0x61746164
-#data 0x00000000
+loc_8c1c68d4:
+	#data "data"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C68DC:
-#data 0xFF000010
-#data 0xFF00001C
-#data 0xFF000038
-#data 0xFF00003C
-#data 0xFFA00000
-#data 0xFFA00004
-#data 0xFFA00010
-#data 0xFFA00014
-#data 0xFFA0001C
-#data 0xFFA00020
-#data 0xFFA00028
-#data 0xFFA0002C
-#data 0xFFA00030
-#data 0xFFA00034
-#data 0xFFA0003C
-#data 0xFFA00040
-#data 0xA05F6800
-#data 0xA05F6804
-#data 0xA05F6810
-#data 0xA05F6814
-#data 0xA05F6C04
-#data 0xA05F6C10
-#data 0xA05F7404
-#data 0xA05F7408
-#data 0xA05F740C
-#data 0xA05F7800
-#data 0xA05F7804
-#data 0xA05F7808
-#data 0xA05F780C
-#data 0xA05F7810
-#data 0xA05F7820
-#data 0xA05F7824
-#data 0xA05F7828
-#data 0xA05F782C
-#data 0xA05F7830
-#data 0xA05F7840
-#data 0xA05F7844
-#data 0xA05F7848
-#data 0xA05F784C
-#data 0xA05F7850
-#data 0xA05F7860
-#data 0xA05F7864
-#data 0xA05F7868
-#data 0xA05F786C
-#data 0xA05F7870
-#data 0xA05F7C00
-#data 0xA05F7C04
-#data 0xA05F7C08
-#data 0xA05F7C0C
-#data 0xA05F7C10
-#data 0xA05F8020
-#data 0xA05F802C
-#data 0xA05F8044
-#data 0xA05F8048
-#data 0xA05F8050
-#data 0xA05F8054
-#data 0xA05F8058
-#data 0xA05F805C
-#data 0xA05F8060
-#data 0xA05F8064
-#data 0xA05F8124
-#data 0xA05F8128
-#data 0xA05F812C
-#data 0xA05F8130
-#data 0xA05F8134
-#data 0xA05F8138
-#data 0xA05F8148
-#data 0xA05F814C
-#data 0xA05F8150
+	#data 0xFF000010
+	#data 0xFF00001C
+	#data 0xFF000038
+	#data 0xFF00003C
+	#data 0xFFA00000
+	#data 0xFFA00004
+	#data 0xFFA00010
+	#data 0xFFA00014
+	#data 0xFFA0001C
+	#data 0xFFA00020
+	#data 0xFFA00028
+	#data 0xFFA0002C
+	#data 0xFFA00030
+	#data 0xFFA00034
+	#data 0xFFA0003C
+	#data 0xFFA00040
+	#data 0xA05F6800
+	#data 0xA05F6804
+	#data 0xA05F6810
+	#data 0xA05F6814
+	#data 0xA05F6C04
+	#data 0xA05F6C10
+	#data 0xA05F7404
+	#data 0xA05F7408
+	#data 0xA05F740C
+	#data 0xA05F7800
+	#data 0xA05F7804
+	#data 0xA05F7808
+	#data 0xA05F780C
+	#data 0xA05F7810
+	#data 0xA05F7820
+	#data 0xA05F7824
+	#data 0xA05F7828
+	#data 0xA05F782C
+	#data 0xA05F7830
+	#data 0xA05F7840
+	#data 0xA05F7844
+	#data 0xA05F7848
+	#data 0xA05F784C
+	#data 0xA05F7850
+	#data 0xA05F7860
+	#data 0xA05F7864
+	#data 0xA05F7868
+	#data 0xA05F786C
+	#data 0xA05F7870
+	#data 0xA05F7C00
+	#data 0xA05F7C04
+	#data 0xA05F7C08
+	#data 0xA05F7C0C
+	#data 0xA05F7C10
+	#data 0xA05F8020
+	#data 0xA05F802C
+	#data 0xA05F8044
+	#data 0xA05F8048
+	#data 0xA05F8050
+	#data 0xA05F8054
+	#data 0xA05F8058
+	#data 0xA05F805C
+	#data 0xA05F8060
+	#data 0xA05F8064
+	#data 0xA05F8124
+	#data 0xA05F8128
+	#data 0xA05F812C
+	#data 0xA05F8130
+	#data 0xA05F8134
+	#data 0xA05F8138
+	#data 0xA05F8148
+	#data 0xA05F814C
+	#data 0xA05F8150
 
-#align4
 loc_8c1C69F0:
-#data 0x2D200A0D
-#data 0x41202D2D
-#data 0x45524444
-#data 0x43205353
-#data 0x4B434548
-#data 0x54205245
-#data 0x20504152
-#data 0x202D2D2D
-#data 0x00000A0D
+	#data 0x0d
+	#data 0x0a
+	#data " --- ADDRESS CHECKER TRAP --- "
+	#data 0x0D
+	#data 0x0a
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6A14:
-#data 0x2D305246
-#data 0x20203A37
-#data 0x00002020
+	#data "FR0-7:    "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6A20:
-#data 0x2D385246
-#data 0x203A3531
-#data 0x00002020
+	#data "FR8-15:   "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6A2C:
-#data 0x2D305246
-#data 0x29422837
-#data 0x0000203A
+	#data "FR0-7(B): "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6A38:
-#data 0x2D385246
-#data 0x42283531
-#data 0x00003A29
+	#data "FR8-15(B):"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6A44:
-#data 0x4C555046
-#data 0x0000203A
+	#data "FPUL: "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6A4C:
-#data 0x53504620
-#data 0x203A5243
-#data 0x00000000
+	#data " FPSCR: "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6A58:
-#data 0x30520A0D
-#data 0x203A372D
-#data 0x20202020
-#data 0x00000000
+	#data 0x0d
+	#data 0x0a
+	#data "R0-7:     "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6A68:
-#data 0x312D3852
-#data 0x20203A35
-#data 0x00002020
+	#data "R8-15:    "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6A74:
-#data 0x30520A0D
-#data 0x4228372D
-#data 0x20203A29
-#data 0x00000000
+	#data 0x0d
+	#data 0x0a
+	#data "R0-7(B):  "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6A84:
-#data 0x4C43414D
-#data 0x0000203A
+	#data "MACL: "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6A8C:
-#data 0x43414D20
-#data 0x00203A48
+	#data " MACH: "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6A94:
-#data 0x42560A0D
-#data 0x00203A52
+	#data 0x0d
+	#data 0x0a
+	#data "VBR: "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6A9C:
-#data 0x52424720
-#data 0x0000203A
+	#data " GBR: "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6AA4:
-#data 0x52424420
-#data 0x0000203A
+	#data " DBR: "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6AAC:
-#data 0x52500A0D
-#data 0x0000203A
+	#data 0x0d
+	#data 0x0a
+	#data "PR: "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6AB4:
-#data 0x3A435020
-#data 0x00000020
+	#data " PC: "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6ABC:
-#data 0x3A525320
-#data 0x00000020
+	#data " SR: "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6AC4:
-#data 0x00000A0D
+	#data 0x00000A0D
 
-#align4
 loc_8c1C6AC8:
-#data 0x0000003A
+	#data 0x0000003A
 
-#align4
 loc_8c1C6ACC:
-#data 0x00000020
+	#data 0x00000020
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1C6AD0:
-#data 0x61656C50
-#data 0x202C6573
-#data 0x636E6163
-#data 0x74206C65
-#data 0x69206568
-#data 0x7265746E
-#data 0x74707572
-#data 0x6F726620
-#data 0x4441206D
-#data 0x53534552
-#data 0x45484320
-#data 0x52454B43
-#data 0x200A0D2C
-#data 0x6E656874
-#data 0x74696820
-#data 0x54455220
-#data 0x204E5255
-#data 0x2E79656B
-#data 0x00000000
+	#data "Please, cancel the interrupt from ADRESS CHECKER,"
+	#data 0x0d
+	#data 0x0a
+	#data " then hit RETURN key."
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6B1C:
-#data 0x61656C50
-#data 0x202C6573
-#data 0x636E6163
-#data 0x74206C65
-#data 0x69206568
-#data 0x7265746E
-#data 0x74707572
-#data 0x6F726620
-#data 0x4441206D
-#data 0x53534552
-#data 0x45484320
-#data 0x52454B43
-#data 0x0000002E
+	#data "Please, cancel the interrupt from ADRESS CHECKER."
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6B50:
-#data 0x00000000
-#data 0x01020000
-#data 0x32010100
-#data 0x00000000
-#data 0x00000000
-#data 0x00000001
-#data 0x00000000
-#data 0x00000000
-#data 0x00000A00
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
+	#data 0x00000000
+	#data 0x01020000
+	#data 0x32010100
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000001
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000A00
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
 
-#align4
 loc_8c1C6BA0:
-#data 0x7FFF00FF
-#data 0xFFFFFF7F
-#data 0xFFFFFFFF
-#data 0xFFFFFFFF
-#data 0xFFFFFFFF
-#data 0xFFFFFF2C
-#data 0xFFFFFFFF
-#data 0xFFFFFFFF
-#data 0x320923FF
-#data 0xFFFFFFFF
-#data 0xFFFF0AFF
-#data 0x7F7FFFFF
-#data 0xFFFFFF7F
-#data 0xFFFFFFBF
-#data 0xFFFFFFFF
-#data 0xFFFFFFFF
-#data 0xFFFFFFFF
-#data 0xFFFFFFFF
-#data 0xFFFFFFFF
-#data 0xFFFFFFFF
+	#data 0x7FFF00FF
+	#data 0xFFFFFF7F
+	#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
+	#data 0xFFFFFF2C
+	#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
+	#data 0x320923FF
+	#data 0xFFFFFFFF
+	#data 0xFFFF0AFF
+	#data 0x7F7FFFFF
+	#data 0xFFFFFF7F
+	#data 0xFFFFFFBF
+	#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
+	#data 0xFFFFFFFF
 
-#align4
 loc_8c1C6BF0:
-#data 0x0D2B0000
-#data 0x1E02080A
-#data 0x5F0E0102
-#data 0x008A0032
-#data 0x00000000
-#data 0x17763003
-#data 0x400105EC
-#data 0x000F00C3
-#data 0x0A001A00
-#data 0x8214FFAA
-#data 0x1EEB0000
-#data 0x110D0000
-#data 0x00000313
-#data 0x0007FF3F
-#data 0x00000000
-#data 0x000000FF
-#data 0xFA0F0000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
+	#data 0x0D2B0000
+	#data 0x1E02080A
+	#data 0x5F0E0102
+	#data 0x008A0032
+	#data 0x00000000
+	#data 0x17763003
+	#data 0x400105EC
+	#data 0x000F00C3
+	#data 0x0A001A00
+	#data 0x8214FFAA
+	#data 0x1EEB0000
+	#data 0x110D0000
+	#data 0x00000313
+	#data 0x0007FF3F
+	#data 0x00000000
+	#data 0x000000FF
+	#data 0xFA0F0000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
 
-#align4
 loc_8c1C6C40:
-#data 0x0D2B0000
-#data 0x1E02080A
-#data 0x5F0E0102
-#data 0x008A0032
-#data 0x00000000
-#data 0x17763003
-#data 0x4001059C
-#data 0x000F00C3
-#data 0x0A001A00
-#data 0x8214FF66
-#data 0x1EEB0000
-#data 0x110D0000
-#data 0x00000313
-#data 0x0007FFBF
-#data 0x00000000
-#data 0x000000FF
-#data 0xFA0F0000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
+	#data 0x0D2B0000
+	#data 0x1E02080A
+	#data 0x5F0E0102
+	#data 0x008A0032
+	#data 0x00000000
+	#data 0x17763003
+	#data 0x4001059C
+	#data 0x000F00C3
+	#data 0x0A001A00
+	#data 0x8214FF66
+	#data 0x1EEB0000
+	#data 0x110D0000
+	#data 0x00000313
+	#data 0x0007FFBF
+	#data 0x00000000
+	#data 0x000000FF
+	#data 0xFA0F0000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
 
-#align4
 loc_8c1C6C90:
-#data 0x0D2B0000
-#data 0x1E02080A
-#data 0x5F0E0102
-#data 0x008A0032
-#data 0x00000000
-#data 0x17763003
-#data 0x4001059C
-#data 0x000F00C3
-#data 0x0A001A00
-#data 0x8214FF22
-#data 0x1EEB0000
-#data 0x110D0000
-#data 0x00000313
-#data 0x0007FFBF
-#data 0x00000000
-#data 0x000000FF
-#data 0xFA0F0000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-
-#align4
+	#data 0x0D2B0000
+	#data 0x1E02080A
+	#data 0x5F0E0102
+	#data 0x008A0032
+	#data 0x00000000
+	#data 0x17763003
+	#data 0x4001059C
+	#data 0x000F00C3
+	#data 0x0A001A00
+	#data 0x8214FF22
+	#data 0x1EEB0000
+	#data 0x110D0000
+	#data 0x00000313
+	#data 0x0007FFBF
+	#data 0x00000000
+	#data 0x000000FF
+	#data 0xFA0F0000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	
 loc_8c1C6CE0:
-#data 0x60504000
-#data 0x30201070
+	#data 0x60504000
+	#data 0x30201070
 
-#align4
 loc_8c1C6CE8:
-#data 0x07060500
-#data 0x04030201
+	#data 0x07060500
+	#data 0x04030201
 
-#align4
 loc_8c1C6CF0:
-#data 0x03010200
-
-#align4
+	#data 0x03010200
+	
 loc_8c1C6CF4:
-#data 0x02010200
+	#data 0x02010200
 
-#align4
 loc_8c1C6CF8:
-#data 0x00010305
+	#data 0x00010305
 
-#align4
 loc_8c1C6CFC:
-#data 0x00000108
-#data 0x03030202
-#data 0x05050404
-#data 0x07070606
+	#data 0x00000108
+	#data 0x03030202
+	#data 0x05050404
+	#data 0x07070606
 
-#align4
 loc_8c1C6D0C:
-#data 0x00000000
-#data 0x03020101
+	#data 0x00000000
+	#data 0x03020101
 
-#align4
 loc_8c1C6D14:
-#data 0x03020100
-#data 0x07060504
-#data 0x0B0A0908
-#data 0x1A19120C
-#data 0x28262524
-#data 0xFF2E2C29
+	#data 0x03020100
+	#data 0x07060504
+	#data 0x0B0A0908
+	#data 0x1A19120C
+	#data 0x28262524
+	#data 0xFF2E2C29
 
-#align4
 loc_8c1C6D2C:
-#data 0x04020100
-#data 0x08070605
-#data 0x0C0B0A09
-#data 0x241A1912
-#data 0xFF282625
+	#data 0x04020100
+	#data 0x08070605
+	#data 0x0C0B0A09
+	#data 0x241A1912
+	#data 0xFF282625
 
-#align4
 loc_8c1C6D40:
-#data 0x03022E01
-#data 0x1B0A0604
-#data 0x00363533
-#data 0x04030201
-#data 0x08070605
-#data 0x0C0B0A09
-#data 0x13120F0D
-#data 0x2D251B15
-#data 0x31302F2E
-#data 0x35343332
-#data 0x00000036
+	#data 0x03022E01
+	#data 0x1B0A0604
+	#data 0x00363533
+	#data 0x04030201
+	#data 0x08070605
+	#data 0x0C0B0A09
+	#data 0x13120F0D
+	#data 0x2D251B15
+	#data 0x31302F2E
+	#data 0x35343332
+	#data 0x00000036
 
-#align4
 loc_8c1C6D6C:
-#data 0x00323339
+	#data 0x00323339
 
-#align4
 loc_8c1C6D70:
-#data 0x61676553
-#data 0x69754220
-#data 0x6E49746C
-#data 0x646F6D20
-#data 0x0D0A6D65
-#data 0x20564552
-#data 0x33302E31
-#data 0x00003630
+	#data "Sega BuiltIn modem"
+	#data 0x0a
+	#data 0x0d
+	#data "REV 1.0306"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6D90:
-#data 0x37393061
-#data 0x46303438
-#data 0x43343832
-#data 0x33303436
-#data 0x00000046
+	#data 0x37393061
+	#data 0x46303438
+	#data 0x43343832
+	#data 0x33303436
+	#data 0x00000046
 
-#align4
 loc_8c1C6DA4:
-#data 0x30364662
-#data 0x30303334
-#data 0x00003030
+	#data 0x30364662
+	#data 0x30303334
+	#data 0x00003030
 
-#align4
 loc_8c1C6DB0:
-#data 0x33303172
-#data 0x31313131
-#data 0x30313131
-#data 0x30303031
-#data 0x00000030
+	#data 0x33303172
+	#data 0x31313131
+	#data 0x30313131
+	#data 0x30303031
+	#data 0x00000030
 
-#align4
 loc_8c1C6DC4:
-#data 0x30303372
-#data 0x31313130
-#data 0x30303130
-#data 0x30303030
-#data 0x00000030
-
-#align4
+	#data 0x30303372
+	#data 0x31313130
+	#data 0x30303130
+	#data 0x30303030
+	#data 0x00000030
+	
 loc_8c1C6DD8:
-#data 0x00000042
-
-#align4
+	#data 0x00000042
 loc_8c1C6DDC:
-#data 0x00000045
-
-#align4
+	#data 0x00000045
 loc_8c1C6DE0:
-#data 0x0000004C
-
-#align4
+	#data 0x0000004C
 loc_8c1C6DE4:
-#data 0x0000004D
-
-#align4
+	#data 0x0000004D
 loc_8c1C6DE8:
-#data 0x0000004E
-
-#align4
+	#data 0x0000004E
 loc_8c1C6DEC:
-#data 0x00000051
-
-#align4
+	#data 0x00000051
 loc_8c1C6DF0:
-#data 0x00000056
-
-#align4
+	#data 0x00000056
 loc_8c1C6DF4:
-#data 0x00000057
-
-#align4
+	#data 0x00000057
 loc_8c1C6DF8:
-#data 0x00000058
-
-#align4
+	#data 0x00000058
 loc_8c1C6DFC:
-#data 0x00000059
-
-#align4
+	#data 0x00000059
 loc_8c1C6E00:
-#data 0x00004226
-
-#align4
+	#data 0x00004226
 loc_8c1C6E04:
-#data 0x00004326
-
-#align4
+	#data 0x00004326
 loc_8c1C6E08:
-#data 0x00004426
-
-#align4
+	#data 0x00004426
 loc_8c1C6E0C:
-#data 0x00004526
-
-#align4
+	#data 0x00004526
 loc_8c1C6E10:
-#data 0x00004726
-
-#align4
+	#data 0x00004726
 loc_8c1C6E14:
-#data 0x00004926
-
-#align4
+	#data 0x00004926
 loc_8c1C6E18:
-#data 0x00004A26
-
-#align4
+	#data 0x00004A26
 loc_8c1C6E1C:
-#data 0x00004B26
-
-#align4
+	#data 0x00004B26
 loc_8c1C6E20:
-#data 0x00004C26
-
-#align4
+	#data 0x00004C26
 loc_8c1C6E24:
-#data 0x00004E26
-
-#align4
+	#data 0x00004E26
 loc_8c1C6E28:
-#data 0x00004F26
-
-#align4
+	#data 0x00004F26
 loc_8c1C6E2C:
-#data 0x00005026
-
-#align4
+	#data 0x00005026
 loc_8c1C6E30:
-#data 0x00005126
-
-#align4
+	#data 0x00005126
 loc_8c1C6E34:
-#data 0x00005226
-
-#align4
+	#data 0x00005226
 loc_8c1C6E38:
-#data 0x00005326
-
-#align4
+	#data 0x00005326
 loc_8c1C6E3C:
-#data 0x00005526
-
-#align4
+	#data 0x00005526
 loc_8c1C6E40:
-#data 0x00005826
-
-#align4
+	#data 0x00005826
 loc_8c1C6E44:
-#data 0x00005926
-
-#align4
+	#data 0x00005926
 loc_8c1C6E48:
-#data 0x00004325
-
-#align4
+	#data 0x00004325
 loc_8c1C6E4C:
-#data 0x00004425
-
-#align4
+	#data 0x00004425
 loc_8c1C6E50:
-#data 0x0000415C
-
-#align4
+	#data 0x0000415C
 loc_8c1C6E54:
-#data 0x0000435C
-
-#align4
+	#data 0x0000435C
 loc_8c1C6E58:
-#data 0x0000465C
-
-#align4
+	#data 0x0000465C
 loc_8c1C6E5C:
-#data 0x0000475C
-
-#align4
+	#data 0x0000475C
 loc_8c1C6E60:
-#data 0x00004A5C
-
-#align4
+	#data 0x00004A5C
 loc_8c1C6E64:
-#data 0x00004B5C
-
-#align4
+	#data 0x00004B5C
 loc_8c1C6E68:
-#data 0x00004E5C
-
-#align4
+	#data 0x00004E5C
 loc_8c1C6E6C:
-#data 0x0000565C
-
-#align4
+	#data 0x0000565C
 loc_8c1C6E70:
-#data 0x00004340
+	#data 0x00004340
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1C6E74:
-#data 0x4E4F4850
-#data 0x554E2045
-#data 0x5245424D
-#data 0x003A2053
+	#data "PHONE NUMBERS :"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6E84:
-#data 0x00005A26
-
-#align4
+	#data 0x00005A26
 loc_8c1C6E88:
-#data 0x0000003D
-
-#align4
+	#data 0x0000003D
 loc_8c1C6E8C:
-#data 0x00000020
+	#data 0x00000020
 
-#align4
 loc_8c1C6E90:
-#data 0x75646F4D
-#data 0x6974616C
-#data 0x74206E6F
-#data 0x3A657079
-#data 0x00000020
+	#data "Modulation type: "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6EA4:
-#data 0x6C6C6542
-#data 0x33303120
-#data 0x00000000
+	#data "Bell 103"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6EB0:
-#data 0x6C6C6542
-#data 0x30323120
-#data 0x00000030
+	#data "Bell 1200"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6EBC:
-#data 0x20313256
-#data 0x00303033
+	#data "V21 300"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6EC4:
-#data 0x20333256
-#data 0x58543537
-#data 0x3032312F
-#data 0x00585230
+	#data "V23 75TX/1200RX"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6ED4:
-#data 0x20333256
-#data 0x30303231
-#data 0x372F5854
-#data 0x00585235
+	#data "V23 1200TX/75RX"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6EE4:
-#data 0x20323256
-#data 0x30303231
-#data 0x00000000
+	#data "V22 1200"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6EF0:
-#data 0x20323256
-#data 0x00303036
-
-#align4
+	#data "V22 600"
+	#data 0x00
+	#align4
+	
 loc_8c1C6EF8:
-#data 0x62323256
-#data 0x31207369
-#data 0x00303032
-
-#align4
+	#data "V22bis 1200"
+	#data 0x00
+	#align4
+	
 loc_8c1C6F04:
-#data 0x62323256
-#data 0x32207369
-#data 0x00303034
+	#data "V22bis 2400"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6F10:
-#data 0x20323356
-#data 0x30303834
-#data 0x00000000
-
-#align4
+	#data "V32 4800"
+	#data 0x00
+	#align4
+	
 loc_8c1C6F1C:
-#data 0x20323356
-#data 0x30303639
-#data 0x72742820
-#data 0x6C6C6965
-#data 0x63207369
-#data 0x6465646F
-#data 0x00000029
+	#data "V32 9600 (treillis coded)"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6F38:
-#data 0x20323356
-#data 0x30303639
-#data 0x6E752820
-#data 0x65646F63
-#data 0x00002964
+	#data "V32 9600 (uncoded)"
+	#data 0x00
+	#align4
 
-#align4
-loc_8c1C6F4C:
-#data 0x62323356
-#data 0x34207369
-#data 0x00303038
+loc_8c1c6f4c:
+	#data "V32bis 4800"
+	#data 0x00
+	#align4
 
-#align4
-loc_8c1C6F58:
-#data 0x62323356
-#data 0x37207369
-#data 0x00303032
+loc_8c1c6f58:
+	#data "V32bis 7200"
+	#data 0x00
+	#align4
 
-#align4
-loc_8c1C6F64:
-#data 0x62323356
-#data 0x39207369
-#data 0x00303036
+loc_8c1c6f64:
+	#data "V32bis 9600"
+	#data 0x00
+	#align4
 
-#align4
-loc_8c1C6F70:
-#data 0x62323356
-#data 0x31207369
-#data 0x30303032
-#data 0x00000000
+loc_8c1c6f70:
+	#data "V32bis 12000"
+	#data 0x00
+	#align4
 
-#align4
-loc_8c1C6F80:
-#data 0x62323356
-#data 0x31207369
-#data 0x30303434
-#data 0x00000000
+loc_8c1c6f80:
+	#data "V32bis 14400"
+	#data 0x00
+	#align4
 
-#align4
-loc_8c1C6F90:
-#data 0x74323356
-#data 0x6F627265
-#data 0x38363120
-#data 0x00003030
+loc_8c1c6f90:
+	#data "V32terbo 16800"
+	#data 0x00
+	#align4
 
-#align4
-loc_8c1C6FA0:
-#data 0x74323356
-#data 0x6F627265
-#data 0x32393120
-#data 0x00003030
+loc_8c1c6fa0:
+	#data "V32terbo 19200"
+	#data 0x00
+	#align4
 
-#align4
-loc_8c1C6FB0:
-#data 0x20343356
-#data 0x00000000
+loc_8c1c6fb0:
+	#data "V34 "
+	#data 0x00
+	#align4
 
-#align4
-loc_8c1C6FB8:
-#data 0x2036354B
-#data 0x00000000
+loc_8c1c6fb8:
+	#data "K56 "
+	#data 0x00
+	#align4
 
-#align4
-loc_8c1C6FC0:
-#data 0x20303956
-#data 0x00000000
+loc_8c1c6fc0:
+	#data "V90 "
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6FC8:
-#data 0x7373656D
-#data 0x20656761
-#data 0x20746F6E
-#data 0x7473696C
-#data 0x00006465
+	#data "message not listed"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6FDC:
-#data 0x00006425
+	#data "%d"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6FE0:
-#data 0x65636552
-#data 0x20657669
-#data 0x6576656C
-#data 0x2D203A6C
-#data 0x00000000
+	#data "Receive level: -"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C6FF4:
-#data 0x60505344
-#data 0x65522073
-#data 0x76696563
-#data 0x656D2065
-#data 0x73206E61
-#data 0x72617571
-#data 0x72652065
-#data 0x3A726F72
-#data 0x00783020
+	#data "DSP`s Receive mean square error: 0x"
+	#data 0x00
+	#align4
 
-#align4
 loc_8c1C7018:
 #data 0x6E756F52
 #data 0x72742064
