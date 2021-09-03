@@ -2422,6 +2422,8 @@ loc_8c031094:
 	mov r0,r1
 	mova @(loc_8c0310b4,PC),r0
 	mov.w @(r0,r1),r0
+
+braf_8c0310ac:
 	braf r0
 	nop
 
@@ -2429,20 +2431,21 @@ loc_8c031094:
 	#align4
 loc_8c0310b0:
 	#data 0x8c26a8e4
+
 loc_8c0310b4:
-	#data 0x001e
-	#data 0x0022
-	#data 0x0026
-	#data 0x002a
-	#data 0x002a
-	#data 0x002a
-	#data 0x002a
-	#data 0x002e
-	#data 0x002e
-	#data 0x0032
-	#data 0x0036
-	#data 0x0036
-	#data 0x0036
+	#data16 {loc_8c0310ce-braf_8c0310ac-4} ; 0x001e
+	#data16 {loc_8c0310d2-braf_8c0310ac-4} ; 0x0022
+	#data16 {loc_8c0310d6-braf_8c0310ac-4} ; 0x0026
+	#data16 {loc_8c0310da-braf_8c0310ac-4} ; 0x002a
+	#data16 {loc_8c0310da-braf_8c0310ac-4} ; 0x002a
+	#data16 {loc_8c0310da-braf_8c0310ac-4} ; 0x002a
+	#data16 {loc_8c0310da-braf_8c0310ac-4} ; 0x002a
+	#data16 {loc_8c0310de-braf_8c0310ac-4} ; 0x002e
+	#data16 {loc_8c0310de-braf_8c0310ac-4} ; 0x002e
+	#data16 {loc_8c0310e2-braf_8c0310ac-4} ; 0x0032
+	#data16 {loc_8c0310e6-braf_8c0310ac-4} ; 0x0036
+	#data16 {loc_8c0310e6-braf_8c0310ac-4} ; 0x0036
+	#data16 {loc_8c0310e6-braf_8c0310ac-4} ; 0x0036
 
 ;----------------------------------------------
 loc_8c0310ce:
@@ -6510,6 +6513,8 @@ loc_8c032c14:
 	mov r0,r1
 	mova @(loc_8c032c3c,PC),r0
 	mov.w @(r0,r1),r0
+
+braf_8c032c1c:
 	braf r0
 	nop
 
@@ -6530,33 +6535,33 @@ loc_8c032c34:
 loc_8c032c38:
 	#data 0x8c26a95c
 
-;8c032c1c
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c032c3c:
-	#data 0x004e
-	#data 0x0056
-	#data 0x034e
-	#data 0x0060
-	#data 0x0088
-	#data 0x009e
-	#data 0x034e
-	#data 0x00b4
-	#data 0x00c8
-	#data 0x00de
-	#data 0x00f4
-	#data 0x0108
-	#data 0x012a
-	#data 0x013a
-	#data 0x0198
-	#data 0x01b0
-	#data 0x01fc
-	#data 0x0240
-	#data 0x0258
-	#data 0x0270
-	#data 0x0288
-	#data 0x034e
-	#data 0x0304
-	#data 0x0320
-	#data 0x032e
+	#data16 {loc_8c032c6e-braf_8c032c1c-4}; 0x004e
+	#data16 {loc_8c032c76-braf_8c032c1c-4}; 0x0056
+	#data16 {loc_8c032f6e-braf_8c032c1c-4}; 0x034e
+	#data16 {loc_8c032c80-braf_8c032c1c-4}; 0x0060
+	#data16 {loc_8c032ca8-braf_8c032c1c-4}; 0x0088
+	#data16 {loc_8c032cbe-braf_8c032c1c-4}; 0x009e
+	#data16 {loc_8c032f6e-braf_8c032c1c-4}; 0x034e
+	#data16 {loc_8c032cd4-braf_8c032c1c-4}; 0x00b4
+	#data16 {loc_8c032ce8-braf_8c032c1c-4}; 0x00c8
+	#data16 {loc_8c032cfe-braf_8c032c1c-4}; 0x00de
+	#data16 {loc_8c032d14-braf_8c032c1c-4}; 0x00f4
+	#data16 {loc_8c032d28-braf_8c032c1c-4}; 0x0108
+	#data16 {loc_8c032d4a-braf_8c032c1c-4}; 0x012a
+	#data16 {loc_8c032d5a-braf_8c032c1c-4}; 0x013a
+	#data16 {loc_8c032db8-braf_8c032c1c-4}; 0x0198
+	#data16 {loc_8c032dd0-braf_8c032c1c-4}; 0x01b0
+	#data16 {loc_8c032e1c-braf_8c032c1c-4}; 0x01fc
+	#data16 {loc_8c032e60-braf_8c032c1c-4}; 0x0240
+	#data16 {loc_8c032e78-braf_8c032c1c-4}; 0x0258
+	#data16 {loc_8c032e90-braf_8c032c1c-4}; 0x0270
+	#data16 {loc_8c032ea8-braf_8c032c1c-4}; 0x0288
+	#data16 {loc_8c032f6e-braf_8c032c1c-4}; 0x034e
+	#data16 {loc_8c032f24-braf_8c032c1c-4}; 0x0304
+	#data16 {loc_8c032f40-braf_8c032c1c-4}; 0x0320
+	#data16 {loc_8c032f4e-braf_8c032c1c-4}; 0x032e
 
 ;----------------------------------------------
 loc_8c032c6e:
@@ -6864,6 +6869,9 @@ loc_8c032e60:
 	mov r14,r6
 	bra loc_8c032ebe
 	mov r11,r4
+
+;----------------------------------------------
+loc_8c032e78:
 	mov.w @(loc_8c032ee2,PC),r4
 	mov 0x00,r6
 	jsr @r13
@@ -6891,6 +6899,9 @@ loc_8c032e90:
 	mov r14,r6
 	bra loc_8c032ebe
 	mov r11,r4
+
+;----------------------------------------------
+loc_8c032ea8:
 	mov.w @(loc_8c032eea,PC),r4
 	mov 0x00,r6
 	jsr @r13
@@ -7004,7 +7015,7 @@ loc_8c032f46:
 	bra loc_8c032f5c
 	mov r10,r6
 
-loc_08c32f4e:
+loc_8c032f4e:
 	mov.l @(loc_8c033048,PC),r5
 	mov.l @(loc_8c033044,PC),r6
 	jsr @r9
@@ -23991,7 +24002,7 @@ loc_8c03a036:
 	mova @(loc_8c03a05a,PC),r0
 	mov.w @(r0,r1),r0
 
-;8c03a03e
+braf_8c03a03e:
 	braf r0
 	nop
 
@@ -24007,40 +24018,43 @@ loc_8c03a050:
 	#data bank11.loc_8c11b800
 loc_8c03a054:
 	#data bank11.loc_8c11b810
-	;braf 8c03a03e
-	#data 0x0050
+
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;loc_8c03a058
+	#data16 {loc_8c03a092-braf_8c03a03e-4} ; 0x0050
+
 loc_8c03a05a:
-	#data 0x0058
-	#data 0x0060
-	#data 0x006e
-	#data 0x006e
-	#data 0x0084
-	#data 0x0084
-	#data 0x0084
-	#data 0x0084
-	#data 0x0084
-	#data 0x009e
-	#data 0x009e
-	#data 0x00e2
-	#data 0x00e2
-	#data 0x00e2
-	#data 0x00e2
-	#data 0x00e2
-	#data 0x00e2
-	#data 0x00e2
-	#data 0x00e2
-	#data 0x00e2
-	#data 0x00e2
-	#data 0x00e2
-	#data 0x00e2
-	#data 0x00e2
-	#data 0x00e2
-	#data 0x00e2
-	#data 0x00e2
+	#data16 {loc_8c03a09a-braf_8c03a03e-4} ; 0x0058
+	#data16 {loc_8c03a0a2-braf_8c03a03e-4} ; 0x0060
+	#data16 {loc_8c03a0b0-braf_8c03a03e-4} ; 0x006e
+	#data16 {loc_8c03a0b0-braf_8c03a03e-4} ; 0x006e
+	#data16 {loc_8c03a0c6-braf_8c03a03e-4} ; 0x0084
+	#data16 {loc_8c03a0c6-braf_8c03a03e-4} ; 0x0084
+	#data16 {loc_8c03a0c6-braf_8c03a03e-4} ; 0x0084
+	#data16 {loc_8c03a0c6-braf_8c03a03e-4} ; 0x0084
+	#data16 {loc_8c03a0c6-braf_8c03a03e-4} ; 0x0084
+	#data16 {loc_8c03a0e0-braf_8c03a03e-4} ; 0x009e
+	#data16 {loc_8c03a0e0-braf_8c03a03e-4} ; 0x009e
+	#data16 {loc_8c03a124-braf_8c03a03e-4} ; 0x00e2
+	#data16 {loc_8c03a124-braf_8c03a03e-4} ; 0x00e2
+	#data16 {loc_8c03a124-braf_8c03a03e-4} ; 0x00e2
+	#data16 {loc_8c03a124-braf_8c03a03e-4} ; 0x00e2
+	#data16 {loc_8c03a124-braf_8c03a03e-4} ; 0x00e2
+	#data16 {loc_8c03a124-braf_8c03a03e-4} ; 0x00e2
+	#data16 {loc_8c03a124-braf_8c03a03e-4} ; 0x00e2
+	#data16 {loc_8c03a124-braf_8c03a03e-4} ; 0x00e2
+	#data16 {loc_8c03a124-braf_8c03a03e-4} ; 0x00e2
+	#data16 {loc_8c03a124-braf_8c03a03e-4} ; 0x00e2
+	#data16 {loc_8c03a124-braf_8c03a03e-4} ; 0x00e2
+	#data16 {loc_8c03a124-braf_8c03a03e-4} ; 0x00e2
+	#data16 {loc_8c03a124-braf_8c03a03e-4} ; 0x00e2
+	#data16 {loc_8c03a124-braf_8c03a03e-4} ; 0x00e2
+	#data16 {loc_8c03a124-braf_8c03a03e-4} ; 0x00e2
+	#data16 {loc_8c03a124-braf_8c03a03e-4} ; 0x00e2
+	#data16 {loc_8c03a144-braf_8c03a03e-4} ; 0x0102
 
 ;----------------------------------------------
-loc_8c03a090:
-	stc sr,r1
+loc_8c03a092:
 	bsr loc_8c039f40
 	nop
 	bra loc_8c03a162
@@ -24202,6 +24216,7 @@ loc_8c03a186:
 loc_8c03a188:
 	#data 0x0914
 	#align4
+
 loc_8c03a18c:
 	#data 0x0c420000
 loc_8c03a190:

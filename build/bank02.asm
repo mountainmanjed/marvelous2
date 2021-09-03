@@ -909,6 +909,8 @@ loc_8c0205ec:
 	mov r0,r1
 	mova @(loc_8c020610,PC),r0
 	mov.w @(r0,r1),r0
+
+braf_8c0205f4:
 	braf r0
 	nop
 
@@ -926,22 +928,22 @@ loc_8c020608:
 loc_8c02060c:
 	#data 0x3f99999a
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c020610:
-	#data 0x0034
-	#data 0x0034
-	#data 0x0034
-	#data 0x0034
-	#data 0x0082
-	#data 0x0098
-	#data 0x00b2
-	#data 0x0050
-	#data 0x005e
-	#data 0x0070
-	#data 0x00d8
-	#data 0x0034
-	#data 0x0102
-	#data 0x011c
-	#align4
+	#data16 {loc_8c02062c-braf_8c0205f4-4} ; 0x0034
+	#data16 {loc_8c02062c-braf_8c0205f4-4} ; 0x0034
+	#data16 {loc_8c02062c-braf_8c0205f4-4} ; 0x0034
+	#data16 {loc_8c02062c-braf_8c0205f4-4} ; 0x0034
+	#data16 {loc_8c02067a-braf_8c0205f4-4} ; 0x0082
+	#data16 {loc_8c020690-braf_8c0205f4-4} ; 0x0098
+	#data16 {loc_8c0206aa-braf_8c0205f4-4} ; 0x00b2
+	#data16 {loc_8c020648-braf_8c0205f4-4} ; 0x0050
+	#data16 {loc_8c020656-braf_8c0205f4-4} ; 0x005e
+	#data16 {loc_8c020668-braf_8c0205f4-4} ; 0x0070
+	#data16 {loc_8c0206d0-braf_8c0205f4-4} ; 0x00d8
+	#data16 {loc_8c02062c-braf_8c0205f4-4} ; 0x0034
+	#data16 {loc_8c0206fa-braf_8c0205f4-4} ; 0x0102
+	#data16 {loc_8c020714-braf_8c0205f4-4} ; 0x011c
 
 ;----------------------------------------------
 loc_8c02062c:
@@ -9412,6 +9414,8 @@ loc_8c023e6c:
 	mov r0,r1
 	mova @(loc_8c023e88,PC),r0
 	mov.w @(r0,r1),r0
+
+braf_8c023e74:
 	braf r0
 	nop
 
@@ -9429,19 +9433,20 @@ loc_8c023e80:
 loc_8c023e84:
 	#data bank11.loc_8c1160f8
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c023e88:
-	#data 0x0028
-	#data 0x002e
-	#data 0x0042
-	#data 0x005e
-	#data 0x007a
-	#data 0x0096
-	#data 0x00a4
-	#data 0x00c4
-	#data 0x00d2
-	#data 0x00e2
-	#data 0x00ee
-	#data 0x00fa
+	#data16 {loc_8c023ea0-braf_8c023e74-4} ; 0x0028
+	#data16 {loc_8c023ea6-braf_8c023e74-4} ; 0x002e
+	#data16 {loc_8c023eba-braf_8c023e74-4} ; 0x0042
+	#data16 {loc_8c023ed6-braf_8c023e74-4} ; 0x005e
+	#data16 {loc_8c023ef2-braf_8c023e74-4} ; 0x007a
+	#data16 {loc_8c023f0e-braf_8c023e74-4} ; 0x0096
+	#data16 {loc_8c023f1c-braf_8c023e74-4} ; 0x00a4
+	#data16 {loc_8c023f3c-braf_8c023e74-4} ; 0x00c4
+	#data16 {loc_8c023f4a-braf_8c023e74-4} ; 0x00d2
+	#data16 {loc_8c023f5a-braf_8c023e74-4} ; 0x00e2
+	#data16 {loc_8c023f66-braf_8c023e74-4} ; 0x00ee
+	#data16 {loc_8c023f72-braf_8c023e74-4} ; 0x00fa
 
 ;----------------------------------------------
 loc_8c023ea0:
@@ -18685,6 +18690,8 @@ loc_8c027b9e:
 	mov r0,r1
 	mova @(loc_8c027bc2,PC),r0
 	mov.w @(r0,r1),r0
+
+braf_8c027ba6:
 	braf r0
 	nop
 
@@ -18703,33 +18710,35 @@ loc_8c027bb8:
 loc_8c027bbc:
 	#data 0x8c1f978d
 
-;8c027ba6
-	#data 0x0048
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;loc_8c027bc0:
+	#data16 {loc_8c027bf2-braf_8c027ba6-4} ; 0x0048
+
 loc_8c027bc2:
-	#data 0x00b6
-	#data 0x00ba
-	#data 0x00c2
-	#data 0x0182
-	#data 0x01b8
-	#data 0x01e4
-	#data 0x01f8
-	#data 0x0262
-	#data 0x0288
-	#data 0x029c
-	#data 0x02b4
-	#data 0x0266
-	#data 0x031a
-	#data 0x031e
-	#data 0x03b0
-	#data 0x03b0
-	#data 0x03e2
-	#data 0x03fa
-	#data 0x04a2
-	#data 0x0418
-	#data 0x04be
-	#data 0x043e
-	#data 0x0512
-	#data 0x03ca
+	#data16 {loc_8c027c60-braf_8c027ba6-4} ; 0x00b6
+	#data16 {loc_8c027c64-braf_8c027ba6-4} ; 0x00ba
+	#data16 {loc_8c027c6c-braf_8c027ba6-4} ; 0x00c2
+	#data16 {loc_8c027d2c-braf_8c027ba6-4} ; 0x0182
+	#data16 {loc_8c027d62-braf_8c027ba6-4} ; 0x01b8
+	#data16 {loc_8c027d8e-braf_8c027ba6-4} ; 0x01e4
+	#data16 {loc_8c027da2-braf_8c027ba6-4} ; 0x01f8
+	#data16 {loc_8c027e0c-braf_8c027ba6-4} ; 0x0262
+	#data16 {loc_8c027e32-braf_8c027ba6-4} ; 0x0288
+	#data16 {loc_8c027e46-braf_8c027ba6-4} ; 0x029c
+	#data16 {loc_8c027e5e-braf_8c027ba6-4} ; 0x02b4
+	#data16 {loc_8c027e10-braf_8c027ba6-4} ; 0x0266
+	#data16 {loc_8c027ec4-braf_8c027ba6-4} ; 0x031a
+	#data16 {loc_8c027ec8-braf_8c027ba6-4} ; 0x031e
+	#data16 {loc_8c027f5a-braf_8c027ba6-4} ; 0x03b0
+	#data16 {loc_8c027f5a-braf_8c027ba6-4} ; 0x03b0
+	#data16 {loc_8c027f8c-braf_8c027ba6-4} ; 0x03e2
+	#data16 {loc_8c027fa4-braf_8c027ba6-4} ; 0x03fa
+	#data16 {loc_8c02804c-braf_8c027ba6-4} ; 0x04a2
+	#data16 {loc_8c027fc2-braf_8c027ba6-4} ; 0x0418
+	#data16 {loc_8c028068-braf_8c027ba6-4} ; 0x04be
+	#data16 {loc_8c027fe8-braf_8c027ba6-4} ; 0x043e
+	#data16 {loc_8c0280bc-braf_8c027ba6-4} ; 0x0512
+	#data16 {loc_8c027f74-braf_8c027ba6-4} ; 0x03ca
 
 ;----------------------------------------------
 loc_8c027bf2:
@@ -19081,6 +19090,8 @@ loc_8c027e08:
 loc_8c027e0c:
 	bsr loc_8c027910
 	nop
+
+loc_8c027e10:
 	mov.w @(loc_8c027efc,PC),r5
 	mov.l @(loc_8c027f0c,PC),r6
 	bsr loc_8c0279e4
@@ -19357,6 +19368,8 @@ loc_8c027fac:
 	mov.l @r15+,r13
 	bra loc_8c028158
 	mov.l @r15+,r14
+
+loc_8c027fc2:
 	tst r13,r5
 	bf loc_8c027fca
 	bra loc_8c02812e
@@ -19501,6 +19514,7 @@ loc_8c0280a6:
 	bra loc_8c028158
 	mov.l @r15+,r14
 
+;==============================================
 loc_8c0280bc:
 	tst r9,r5
 	bt loc_8c02812e
