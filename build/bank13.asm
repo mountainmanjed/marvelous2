@@ -14311,8 +14311,7 @@ loc_8C13F761:
 	#align16
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-;Text Graphics
-;Indexed 16px wide?
+;Leftover Naomi Game Settings Graphics
 loc_8c13F780:
 #data 0x00000000
 #data 0x00000000

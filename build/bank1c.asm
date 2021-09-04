@@ -9795,15 +9795,15 @@ loc_8c1c3f30:
 loc_8c1c3f34:
 	#data loc_8c1c90E0
 loc_8c1c3f38:
-	#data 0x8C1C9DA0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
 loc_8c1c3f3c:
-	#data 0x8C1C9DA0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
 loc_8c1c3f40:
-	#data 0x8C1C9DA0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
 loc_8c1c3f44:
-	#data 0x8C1C9DA0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
 loc_8c1c3f48:
-	#data 0x8C1C9DA0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
 loc_8c1c3f4c:
 	#data 0x8C32C4A0
 loc_8c1c3f50:
@@ -9813,39 +9813,39 @@ loc_8c1c3f54:
 loc_8c1c3f58:
 	#data 0x8C3539C0
 loc_8c1c3f5c:
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
-	#data 0x8C1C9DA0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
+	#data {loc_8c1c9d98+8} ; 0x8c1c9da0
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#repeat 32
@@ -16516,3 +16516,5 @@ loc_8c1C9D90:
 
 loc_8c1C9D98:
 	#data 0x0000
+
+EndofFile:
