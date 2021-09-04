@@ -16515,6 +16515,6 @@ loc_8c1C9D90:
 	#data 0x00000000
 
 loc_8c1C9D98:
-	#data 0x0000
+	#data 0x00
 
 EndofFile:
