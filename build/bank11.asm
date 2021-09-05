@@ -16140,7 +16140,7 @@ loc_8C116DB4:
 	mov r15,r5
 	mov.l @(r0,r4),r3
 	mov 0x01,r1 ; r1 set to 0x01, r1 set to 0x01
-	mov.l @(loc_8C116E40,pc),r0 ; r0 set to bank16.loc_8c16AC84, r0 set to bank16.loc_8c16AC84
+	mov.l @(loc_8C116E40,pc),r0 ; r0 set to loc_8c16AC84, r0 set to loc_8c16AC84
 	mov.l r3,@r2
 	mov r15,r2
 	mov.l @(r0,r4),r3
@@ -19038,8 +19038,6 @@ loc_8C1180B2:
 
 loc_8c1180fe:
 	mov.l @(loc_8c118214,pc),r3
-
-loc_8c118100:
 	mov.l @(loc_8c118234,pc),r4
 	mov.l r13,@(0x38,r14)
 	jsr @r3

@@ -25,10 +25,8 @@ loc_8c010020:
 
 loc_8c010024:
 	#data 0xff00001c
-
 loc_8c010028:
 	#data 0x000089af
-
 label_8c01002c:
 	#data bank17.loc_8c1742c0
 
@@ -223,47 +221,34 @@ loc_8c0101a4:
 ;##############################################
 loc_8c0101ae:
 	#data 0x2000
-
 loc_8c0101b0:
 	#data 0x1000
-
 loc_8c0101b2:
 	#data 0x0800
-
 loc_8c0101b4:
 	#data 0x0080
-
 loc_8c0101b6:
 	#data 0x0400
-
 loc_8c0101b8:
 	#data 0x1fff
 	#align4
 
 loc_8c0101bc:
 	#data bank17.loc_8c17794e
-
 loc_8c0101c0:
 	#data bank17.loc_8c177a54
-
 loc_8c0101c4:
 	#data 0x8c212be0
-
 loc_8c0101c8:
 	#data 0x8c213046
-
 loc_8c0101cc:
 	#data 0x8c2681dc
-
 loc_8c0101d0:
 	#data 0x45c80000
-
 loc_8c0101d4:
 	#data bank11.loc_8c11e210
-
 loc_8c0101d8:
 	#data bank14.loc_8c143c00
-
 loc_8c0101dc:
 	#data 0x00008000
 
@@ -625,52 +610,36 @@ loc_8c010412:
 
 loc_8c010414:
 	#data work.GameGlobalPointer
-
 loc_8c010418:
 	#data bank11.loc_8c11c0c0
-
 loc_8c01041c:
 	#data 0x8c212fb0
-
 loc_8c010420:
 	#data bank12.loc_8c1290a0
-
 loc_8c010424:
 	#data bank12.loc_8c1290f6
-
 loc_8c010428:
 	#data bank17.loc_8c1743a4
-
 loc_8c01042c:
 	#data 0x8c1f8ac4
-
 loc_8c010430:
 	#data bank17.loc_8c1744ca
-
 loc_8c010434:
 	#data bank17.loc_8c17a21e
-
 loc_8c010438:
 	#data bank17.loc_8c177156
-
 loc_8c01043c:
 	#data bank17.loc_8c177a78
-
 loc_8c010440:
 	#data bank17.loc_8c1774f8
-
 loc_8c010444:
 	#data bank11.loc_8c11d620
-
 loc_8c010448:
 	#data bank17.loc_8c177c76
-
 loc_8c01044c:
 	#data bank17.loc_8c178686
-
 loc_8c010450:
 	#data bank17.loc_8c17a454
-
 loc_8c010454:
 	#data 0x8c212bf8
 
@@ -786,43 +755,30 @@ loc_8c0104f2:
 
 loc_8c010508:
 	#data 0x8c1cbe04
-
 loc_8c01050c:
 	#data bank17.loc_8c1772b0
-
 loc_8c010510:
 	#data bank17.loc_8c17723e
-
 loc_8c010514:
 	#data 0x8c1cbe00
-
 loc_8c010518:
 	#data bank17.loc_8c176eb0
-
 loc_8c01051c:
 	#data bank17.loc_8c177298
-
 loc_8c010520:
 	#data 0x8c212bf8
-
 loc_8c010524:
 	#data work.GameGlobalPointer
-
 loc_8c010528:
 	#data 0x8c2152d0
-
 loc_8c01052c:
 	#data 0x8c2152cc
-
 loc_8c010530:
 	#data 0x8c21528a
-
 loc_8c010534:
 	#data 0x8c21528c
-
 loc_8c010538:
 	#data 0x8c26a963
-
 loc_8c01053c:
 	#data bank17.loc_8c174dfc
 
@@ -884,39 +840,28 @@ loc_8c010598:
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c0105a0:
 	#data 0xfdfc
-
 loc_8c0105a2:
 	#data 0xff0f
-
 loc_8c0105a4:
 	#data 0x4800
-
 loc_8c0105a6:
 	#data 0x0080
-
 	#align4
 
 loc_8c0105a8:
 	#data bank13.loc_8c1327a8
-
 loc_8c0105ac:
 	#data bank12.loc_8c122cc0
-
 loc_8c0105b0:
 	#data bank17.loc_8c17864c
-
 loc_8c0105b4:
 	#data 0x8ce2a020
-
 loc_8c0105b8:
 	#data bank17.loc_8c177c1c
-
 loc_8c0105bc:
 	#data bank11.loc_8c11c610
-
 loc_8c0105c0:
 	#data bank17.loc_8c178d1a
-
 
 ;----------------------------------------------
 loc_8c0105c4:
@@ -1063,149 +1008,102 @@ loc_8c0106b2:
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c0106ce:
 	#data 0xff0f
-
 loc_8c0106d0:
 	#data 0x4000
-
 loc_8c0106d2:
 	#data 0x1000
-
 loc_8c0106d4:
 	#data 0x0c00
-
 loc_8c0106d6:
 	#data 0x1d28
-
 loc_8c0106d8:
 	#data 0x0204
 	#align4
 
 loc_8c0106dc:
 	#data 0x00100000
-
 loc_8c0106e0:
 	#data bank11.loc_8c11ca00
-
 loc_8c0106e4:
 	#data bank17.loc_8c178676
-
 loc_8c0106e8:
 	#data 0x8c206bc0
-
 loc_8c0106ec:
 	#data 0x8c1faba0
-
 loc_8c0106f0:
 	#data bank17.loc_8c177558
-
 loc_8c0106f4:
 	#data bank17.loc_8c177380
-
 loc_8c0106f8:
 	#data bank11.loc_8c11d140
-
 loc_8c0106fc:
 	#data bank17.loc_8c174352
-
 loc_8c010700:
 	#data bank11.loc_8c11ca10
-
 loc_8c010704:
 	#data bank11.loc_8c11cad0
-
 loc_8c010708:
 	#data 0x0cf00000
-
 loc_8c01070c:
 	#data bank11.loc_8c11cb90
-
 loc_8c010710:
 	#data 0x00010000
-
 loc_8c010714:
 	#data bank11.loc_8c11cb80
-
 loc_8c010718:
 	#data 0x00024000
-
 loc_8c01071c:
 	#data bank11.loc_8c11cfc0
-
 loc_8c010720:
 	#data bank11.loc_8c11ec90
-
 loc_8c010724:
 	#data bank11.loc_8c11efa0
-
 loc_8c010728:
 	#data bank11.loc_8c11c720
-
 loc_8c01072c:
 	#data 0x8c21631c
-
 loc_8c010730:
 	#data bank11.loc_8c11b700
-
 loc_8c010734:
 	#data 0x8c24b65c
-
 loc_8c010738:
 	#data bank12.loc_8c123d50
-
 loc_8c01073c:
 	#data 0x8c2657dc
-
 loc_8c010740:
 	#data bank11.loc_8c11bd70
-
 loc_8c010744:
 	#data 0x43f00000
-
 loc_8c010748:
 	#data 0x44200000
-
 loc_8c01074c:
 	#data bank12.loc_8c124480
-
 loc_8c010750:
 	#data bank11.loc_8c11c010
-
 loc_8c010754:
 	#data bank11.loc_8c11bff0
-
 loc_8c010758:
 	#data 0x8c2152dc
-
 loc_8c01075c:
 	#data bank11.loc_8c11fcd0
-
 loc_8c010760:
 	#data bank12.loc_8c1204f0
-
 loc_8c010764:
 	#data bank12.loc_8c121100
-
 loc_8c010768:
 	#data 0x463b8000
-
 loc_8c01076c:
 	#data 0x3e99999a
-
 loc_8c010770:
 	#data 0x3faaaaab
-
 loc_8c010774:
 	#data bank12.loc_8c121730
-
 loc_8c010778:
 	#data 0x00101010
-
 loc_8c01077c:
 	#data bank11.loc_8c11f280
-
 loc_8c010780:
 	#data 0x0000ff09
-
 loc_8c010784:
 	#data bank11.loc_8c11f2c0
 
@@ -1322,80 +1220,56 @@ loc_8c010830:
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c010842:
 	#data 0x0100
-
 loc_8c010844:
 	#data 0x0400
-
 loc_8c010846:
 	#data 0x00ff
 	#align4
 
 loc_8c010848:
 	#data 0x8c1f8ac4
-
 loc_8c01084c:
 	#data 0x8c1cd1c0
-
 loc_8c010850:
 	#data bank17.loc_8c175b3e
-
 loc_8c010854:
 	#data 0x8c1cbe20
-
 loc_8c010858:
 	#data loc_8c0103f8
-
 loc_8c01085c:
 	#data bank17.loc_8c17726a
-
 loc_8c010860:
 	#data 0x0ce26000
-
 loc_8c010864:
 	#data 0x8c1f8ac8
-
 loc_8c010868:
 	#data bank17.loc_8c17a20c
-
 loc_8c01086c:
 	#data 0x0cc00000
-
 loc_8c010870:
 	#data bank02.loc_8c0273ae
-
 loc_8c010874:
 	#data bank12.loc_8c1250c0
-
 loc_8c010878:
 	#data bank04.loc_8c041cee
-
 loc_8c01087c:
 	#data bank04.loc_8c041b22
-
 loc_8c010880:
 	#data bank12.loc_8c125e20
-
 loc_8c010884:
 	#data bank17.loc_8c17447a
-
 loc_8c010888:
 	#data 0x000208c4
-
 loc_8c01088c:
 	#data 0x8c1d8200
-
 loc_8c010890:
 	#data bank17.loc_8c174768
-
 loc_8c010894:
 	#data bank17.loc_8c174dec
-
 loc_8c010898:
 	#data 0x8c212cbc
-
 loc_8c01089c:
 	#data bank04.loc_8c041b00
-
 
 ;----------------------------------------------
 loc_8c0108a0:
@@ -1739,6 +1613,7 @@ loc_8c010a5a:
 loc_8c010af4:
 	#data 0x00ff
 	#align4
+
 loc_8c010af8:
 	#data 0x8c212bfc
 loc_8c010afc:
@@ -1985,6 +1860,7 @@ loc_8c010c7c:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c010ca4:
 	#data 0x8c212bf4
 loc_8c010ca8:
@@ -2200,6 +2076,7 @@ loc_8c010e02:
 loc_8c010e26:
 	#data 0x0084
 	#align4
+
 loc_8c010e28:
 	#data work.GameGlobalPointer
 loc_8c010e2c:
@@ -2556,6 +2433,7 @@ loc_8c011048:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c011074:
 	#data bank11.loc_8c115cb0
 loc_8c011078:
@@ -2953,6 +2831,7 @@ loc_8c0112fe:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c011308:
 	#data bank11.loc_8c11863c
 loc_8c01130c:
@@ -3262,6 +3141,7 @@ loc_8c011502:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c01150c:
 	#data 0xff000000
 loc_8c011510:
@@ -3599,6 +3479,8 @@ loc_8c011726:
 	mov.b r5,@(r0,r4)
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+	#align4
+
 loc_8c011758:
 	#data loc_8c0195c8
 loc_8c01175c:
@@ -3791,6 +3673,7 @@ loc_8c01187a:
 loc_8c011888:
 	#data 0x270f
 	#align4
+
 loc_8c01188c:
 	#data 0x8c289750
 loc_8c011890:
@@ -3944,6 +3827,7 @@ loc_8c011970:
 loc_8c011972:
 	#data 0x3000
 	#align4
+
 loc_8c011974:
 	#data bank11.loc_8c115d2e
 loc_8c011978:
@@ -4092,6 +3976,7 @@ loc_8c011a4a:
 loc_8c011a4c:
 	#data 0x3c00
 	#align4
+
 loc_8c011a50:
 	#data bank14.loc_8c143d28
 loc_8c011a54:
@@ -4261,6 +4146,7 @@ loc_8c011b54:
 loc_8c011b5e:
 	#data 0x0101
 	#align4
+
 loc_8c011b60:
 	#data 0x8c212be0
 loc_8c011b64:
@@ -4548,6 +4434,7 @@ loc_8c011d20:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c011d28:
 	#data 0x8c2681dc
 loc_8c011d2c:
@@ -4724,6 +4611,7 @@ loc_8c011e5a:
 loc_8c011e5c:
 	#data 0x2110
 	#align4
+
 loc_8c011e60:
 	#data pl_mem.player_start
 loc_8c011e64:
@@ -4859,6 +4747,7 @@ loc_8c011f46:
 loc_8c011f48:
 	#data 0x04dc
 	#align4
+
 loc_8c011f4c:
 	#data 0x8c1f8ad0
 loc_8c011f50:
@@ -5123,6 +5012,7 @@ loc_8c0120f8:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c012118:
 	#data loc_8c010b18
 loc_8c01211c:
@@ -5305,6 +5195,7 @@ loc_8c012250:
 loc_8c012252:
 	#data 0x0400
 	#align4
+
 loc_8c012254:
 	#data 0x8c1f8af8
 loc_8c012258:
@@ -5449,6 +5340,7 @@ loc_8c01233c:
 loc_8c01233e:
 	#data 0x1000
 	#align4
+
 loc_8c012340:
 	#data bank14.loc_8c14416c
 
@@ -5609,6 +5501,7 @@ loc_8c012446:
 loc_8c01244c:
 	#data 0x0101
 	#align4
+
 loc_8c012450:
 	#data bank03.loc_8c03563a
 loc_8c012454:
@@ -5980,6 +5873,7 @@ loc_8c0126b4:
 loc_8c0126b6:
 	#data 0x04c8
 	#align4
+
 loc_8c0126b8:
 	#data bank12.loc_8c129728
 loc_8c0126bc:
@@ -6520,6 +6414,7 @@ loc_8c012a40:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c012a58:
 	#data bank03.loc_8c03563a
 loc_8c012a5c:
@@ -6939,6 +6834,7 @@ loc_8c012d1a:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c012d24:
 	#data bank03.loc_8c03563a
 loc_8c012d28:
@@ -7134,6 +7030,7 @@ loc_8c012e68:
 loc_8c012e6a:
 	#data 0x1000
 	#align4
+
 loc_8c012e6c:
 	#data loc_8c011a9a
 loc_8c012e70:
@@ -7271,6 +7168,7 @@ loc_8c012f5a:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c012f64:
 	#data work.GameGlobalPointer
 loc_8c012f68:
@@ -7450,6 +7348,7 @@ loc_8c01309a:
 loc_8c01309c:
 	#data 0x0400
 	#align4
+
 loc_8c0130a0:
 	#data work.GameGlobalPointer
 loc_8c0130a4:
@@ -7621,6 +7520,7 @@ loc_8c013188:
 loc_8c0131bc:
 	#data 0x0800
 	#align4
+
 loc_8c0131c0:
 	#data bank04.loc_8c04257c
 loc_8c0131c4:
@@ -7783,6 +7683,7 @@ loc_8c0132cc:
 loc_8c0132ce:
 	#data 0x1000
 	#align4
+
 loc_8c0132d0:
 	#data bank04.loc_8c04257c
 loc_8c0132d4:
@@ -7985,6 +7886,8 @@ loc_8c01341a:
 	mov.l @r15+,r14
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+	#align4
+
 loc_8c013420:
 	#data bank03.loc_8c03563a
 loc_8c013424:
@@ -8309,6 +8212,7 @@ loc_8c0135f6:
 loc_8c0135f8:
 	#data 0x3c00
 	#align4
+
 loc_8c0135fc:
 	#data 0x8c2681dc
 loc_8c013600:
@@ -8628,6 +8532,7 @@ loc_8c0137c8:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c013818:
 	#data bank03.loc_8c0355b2
 loc_8c01381c:
@@ -9258,6 +9163,7 @@ loc_8c013c56:
 loc_8c013c58:
 	#data 0x0298
 	#align4
+
 loc_8c013c5c:
 	#data 0x8c26a944
 loc_8c013c60:
@@ -9436,8 +9342,9 @@ loc_8c013d78:
 loc_8c013d7a:
 	#data 0x0bb8
 	#align4
+
 loc_8c013d7c:
-	#data 0x8c1441f0
+	#data bank14.loc_8c1441f0
 loc_8c013d80:
 	#data bank12.loc_8c1292d4
 loc_8c013d84:
@@ -9640,6 +9547,8 @@ loc_8c013ea6:
 	mov.w r2,@r6
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+	#align4
+
 loc_8c013ec8:
 	#data bank11.loc_8c11e730
 loc_8c013ecc:
@@ -10573,6 +10482,7 @@ loc_8c0144b0:
 loc_8c0144b2:
 	#data 0x2000
 	#align4
+
 loc_8c0144b4:
 	#data loc_8c011ada
 loc_8c0144b8:
@@ -10743,6 +10653,7 @@ loc_8c0145be:
 loc_8c0145d0:
 	#data 0x00d8
 	#align4
+
 loc_8c0145d4:
 	#data 0x8c212c3e
 loc_8c0145d8:
@@ -10793,7 +10704,8 @@ loc_8c014610:
 	mov.l @r15+,r14
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-	#data 0x0000
+	#align4
+
 loc_8c014620:
 	#data bank03.loc_8c03563a
 
@@ -10939,6 +10851,8 @@ loc_8c014706:
 	mov.l @r15+,r14
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+	#align4
+
 loc_8c01470c:
 	#data work.GameGlobalPointer
 loc_8c014710:
@@ -11066,10 +10980,22 @@ loc_8c0147d4:
 	mov.l @r15+,r14
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+	#align4
+
 loc_8c0147e0:
-	#data work.GameGlobalPointer bank04.loc_8c044e56 bank02.loc_8c021cb4 0xff000000
+	#data work.GameGlobalPointer
+loc_8c0147e4:
+	#data bank04.loc_8c044e56
+loc_8c0147e8:
+	#data bank02.loc_8c021cb4
+loc_8c0147ec:
+	#data 0xff000000
 loc_8c0147f0:
-	#data bank03.loc_8c0355b2 bank03.loc_8c03563a loc_8c011bbc
+	#data bank03.loc_8c0355b2
+loc_8c0147f4:
+	#data bank03.loc_8c03563a
+loc_8c0147f8:
+	#data loc_8c011bbc
 
 ;==============================================
 loc_8c0147fc:
@@ -11215,10 +11141,10 @@ loc_8c0148e0:
 	nop
 
 loc_8c0148e8:
-	cmp/eq 0x07,r0					   
-	bf loc_8c0148f0						
-	bra loc_8c014b06					   
-	nop								  
+	cmp/eq 0x07,r0
+	bf loc_8c0148f0
+	bra loc_8c014b06
+	nop
 
 loc_8c0148f0:
 	bra loc_8c014b70
@@ -11455,8 +11381,12 @@ loc_8c014a5e:
 	mov.b r0,@r1
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+	#align4
+
 loc_8c014a6c:
-	#data  loc_8c013572 bank02.loc_8c023bc0 
+	#data loc_8c013572
+loc_8c014a70:
+	#data bank02.loc_8c023bc0
 
 ;----------------------------------------------
 loc_8c014a74:
@@ -11626,6 +11556,7 @@ loc_8c014b70:
 loc_8c014b82:
 	#data 0x00ff
 	#align4
+
 loc_8c014b84:
 	#data bank03.loc_8c03563a
 loc_8c014b88:
@@ -11964,6 +11895,8 @@ loc_8c014da0:
 	mov.l @r15+,r8
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+	#align4
+
 loc_8c014da8:
 	#data loc_8c011898
 loc_8c014dac:
@@ -12240,6 +12173,7 @@ loc_8c014f84:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c014f90:
 	#data bank11.loc_8c115efe
 loc_8c014f94:
@@ -12432,6 +12366,7 @@ loc_8c0150a6:
 loc_8c0150c2:
 	#data 0x00ff
 	#align4
+
 loc_8c0150c4:
 	#data loc_8c011bbc
 loc_8c0150c8:
@@ -12746,7 +12681,8 @@ loc_8c0152bc:
 	mov.b r2,@r0
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-	#data 0x0000
+	#align4
+	
 loc_8c0152d4:
 	#data loc_8c011d0c
 loc_8c0152d8:
@@ -12918,6 +12854,7 @@ loc_8c0153d2:
 loc_8c0153f2:
 	#data 0x00ff
 	#align4
+
 loc_8c0153f4:
 	#data work.GameGlobalPointer
 loc_8c0153f8:
@@ -13049,6 +12986,7 @@ loc_8c0154c8:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c0154d0:
 	#data loc_8c011d0c
 loc_8c0154d4:
@@ -13375,6 +13313,7 @@ loc_8c0156e2:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c0156f8:
 	#data work.GameGlobalPointer
 loc_8c0156fc:
@@ -13723,6 +13662,7 @@ loc_8c01591e:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c015934:
 	#data loc_8c011910
 loc_8c015938:
@@ -13913,6 +13853,8 @@ loc_8c015a66:
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c015a6a:
 	#data 0x00ff
+	#align4
+
 loc_8c015a6c:
 	#data loc_8c013572 loc_8c011a9a loc_8c011bbc bank11.loc_8c115f7c
 
@@ -14102,10 +14044,20 @@ loc_8c015ba8:
 	nop
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+	#align4
+
 loc_8c015bb8:
-	#data bank11.loc_8c116f34 bank11.loc_8c115e8c bank11.loc_8c1180b2 loc_8c013572
+	#data bank11.loc_8c116f34
+loc_8c015bbc:
+	#data bank11.loc_8c115e8c
+loc_8c015bc0:
+	#data bank11.loc_8c1180b2
+loc_8c015bc4:
+	#data loc_8c013572
 loc_8c015bc8:
-	#data loc_8c011a9a bank11.loc_8c116166
+	#data loc_8c011a9a
+loc_8c015bcc:
+	#data bank11.loc_8c116166
 
 ;----------------------------------------------
 loc_8c015bd0:
@@ -14240,6 +14192,7 @@ loc_8c015c94:
 loc_8c015ca8:
 	#data 0x00ff
 	#align4
+
 loc_8c015cac:
 	#data loc_8c011bbc
 loc_8c015cb0:
@@ -14563,6 +14516,7 @@ loc_8c015ec4:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c015ed4:
 	#data loc_8c011898
 loc_8c015ed8:
@@ -14774,11 +14728,20 @@ loc_8c01602a:
 	nop
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-	#data 0x0000
+	#align4
+
 loc_8c01603c:
-	#data bank11.loc_8c115c40 bank02.loc_8c0268a4 bank04.loc_8c04257c bank11.loc_8c11843c
+	#data bank11.loc_8c115c40
+loc_8c016040:
+	#data bank02.loc_8c0268a4
+loc_8c016044:
+	#data bank04.loc_8c04257c
+loc_8c016048:
+	#data bank11.loc_8c11843c
 loc_8c01604c:
-	#data loc_8c013572 loc_8c011a9a
+	#data loc_8c013572
+loc_8c016050:
+	#data loc_8c011a9a
 
 ;----------------------------------------------
 loc_8c016054:
@@ -14943,6 +14906,7 @@ loc_8c016114:
 loc_8c016158:
 	#data 0x00ff
 	#align4
+
 loc_8c01615c:
 	#data loc_8c011bbc
 loc_8c016160:
@@ -14999,7 +14963,8 @@ loc_8c0161aa:
 	mov.l @r15+,r14
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-	#data 0x0000
+	#align4
+
 loc_8c0161bc:
 	#data bank02.loc_8c0268a4
 
@@ -15316,6 +15281,7 @@ loc_8c0163d0:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c0163e4:
 	#data loc_8c01357a
 loc_8c0163e8:
@@ -15432,6 +15398,7 @@ loc_8c0164a6:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c0164b4:
 	#data loc_8c011bbc
 loc_8c0164b8:
@@ -15558,6 +15525,7 @@ loc_8c01656e:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c016584:
 	#data 0x8c2136fd
 loc_8c016588:
@@ -15753,6 +15721,7 @@ loc_8c0166d6:
 loc_8c0166d8:
 	#data 0x0084
 	#align4
+
 loc_8c0166dc:
 	#data bank04.loc_8c044f12
 loc_8c0166e0:
@@ -15933,6 +15902,7 @@ loc_8c016816:
 loc_8c016818:
 	#data 0x0080
 	#align4
+
 loc_8c01681c:
 	#data 0x8c26a93c
 loc_8c016820:
@@ -16130,6 +16100,7 @@ loc_8c016966:
 loc_8c016968:
 	#data 0x0084
 	#align4
+
 loc_8c01696c:
 	#data 0x8c212be0
 loc_8c016970:
@@ -16737,6 +16708,7 @@ loc_8c016d7c:
 loc_8c016d7e:
 	#data 0x0084
 	#align4
+
 loc_8c016d80:
 	#data 0x8c26a948
 loc_8c016d84:
@@ -16828,6 +16800,7 @@ loc_8c016e10:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c016e18:
 	#data bank14.loc_8c144634
 
@@ -17006,6 +16979,7 @@ loc_8c016f4a:
 loc_8c016f4c:
 	#data 0x0084
 	#align4
+
 loc_8c016f50:
 	#data bank04.loc_8c044f12
 loc_8c016f54:
@@ -17194,6 +17168,7 @@ loc_8c017086:
 loc_8c017088:
 	#data 0x0084
 	#align4
+
 loc_8c01708c:
 	#data bank14.loc_8c144768
 loc_8c017090:
@@ -17380,6 +17355,7 @@ loc_8c0171c8:
 loc_8c0171ca:
 	#data 0x00d4
 	#align4
+
 loc_8c0171cc:
 	#data work.GameGlobalPointer
 loc_8c0171d0:
@@ -17594,6 +17570,7 @@ loc_8c01733c:
 loc_8c01733e:
 	#data 0x0168
 	#align4
+
 loc_8c017340:
 	#data bank14.loc_8c14465c
 loc_8c017344:
@@ -17787,6 +17764,7 @@ loc_8c017482:
 loc_8c017484:
 	#data 0x012c
 	#align4
+
 loc_8c017488:
 	#data 0x3e947ae1
 loc_8c01748c:
@@ -18197,6 +18175,7 @@ loc_8c01775a:
 loc_8c01775c:
 	#data 0x00d0
 	#align4
+
 loc_8c017760:
 	#data bank04.loc_8c044f12
 loc_8c017764:
@@ -18399,6 +18378,7 @@ loc_8c0178bc:
 loc_8c0178be:
 	#data 0x00d8
 	#align4
+
 loc_8c0178c0:
 	#data bank04.loc_8c044f12
 loc_8c0178c4:
@@ -18536,6 +18516,7 @@ loc_8c01799a:
 loc_8c01799c:
 	#data 0x0080
 	#align4
+
 loc_8c0179a0:
 	#data 0x3f333333
 loc_8c0179a4:
@@ -18733,6 +18714,7 @@ loc_8c017afc:
 loc_8c017afe:
 	#data 0x00d4
 	#align4
+
 loc_8c017b00:
 	#data bank14.loc_8c1448dc
 loc_8c017b04:
@@ -18919,6 +18901,7 @@ loc_8c017c3e:
 loc_8c017c40:
 	#data 0x012c
 	#align4
+
 loc_8c017c44:
 	#data bank14.loc_8c145090
 loc_8c017c48:
@@ -19133,6 +19116,7 @@ loc_8c017d96:
 loc_8c017d98:
 	#data 0x00cc
 	#align4
+
 loc_8c017d9c:
 	#data 0x3f333333
 loc_8c017da0:
@@ -19324,6 +19308,7 @@ loc_8c017ee2:
 loc_8c017ee4:
 	#data 0x0168
 	#align4
+
 loc_8c017ee8:
 	#data work.GameGlobalPointer
 loc_8c017eec:
@@ -19508,6 +19493,8 @@ loc_8c01800a:
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c01800e:
 	#data 0x0168
+	#align4
+
 loc_8c018010:
 	#data 0x3f333333
 loc_8c018014:
@@ -19701,6 +19688,7 @@ loc_8c018154:
 loc_8c018156:
 	#data 0x00d4
 	#align4
+
 loc_8c018158:
 	#data 0x8c212cbc
 loc_8c01815c:
@@ -19911,6 +19899,7 @@ loc_8c0182ac:
 loc_8c0182ae:
 	#data 0x0168
 	#align4
+
 loc_8c0182b0:
 	#data work.GameGlobalPointer
 loc_8c0182b4:
@@ -20097,6 +20086,7 @@ loc_8c0183e2:
 loc_8c0183e4:
 	#data 0x0088
 	#align4
+
 loc_8c0183e8:
 	#data bank12.loc_8c120950
 loc_8c0183ec:
@@ -20220,6 +20210,7 @@ loc_8c0184a2:
 loc_8c0184b8:
 	#data 0x0080
 	#align4
+
 loc_8c0184bc:
 	#data bank14.loc_8c144830
 loc_8c0184c0:
@@ -20431,6 +20422,7 @@ loc_8c01862c:
 loc_8c01862e:
 	#data 0x0084
 	#align4
+
 loc_8c018630:
 	#data bank04.loc_8c044f12
 loc_8c018634:
@@ -20602,6 +20594,7 @@ loc_8c018758:
 loc_8c01875a:
 	#data 0x0101
 	#align4
+
 loc_8c01875c:
 	#data bank14.loc_8c145870
 loc_8c018760:
@@ -20796,6 +20789,7 @@ loc_8c01889e:
 loc_8c0188a0:
 	#data 0x02ec
 	#align4
+
 loc_8c0188a4:
 	#data bank14.loc_8c145550
 loc_8c0188a8:
@@ -20992,6 +20986,7 @@ loc_8c0189e2:
 loc_8c0189e4:
 	#data 0x00cc
 	#align4
+
 loc_8c0189e8:
 	#data bank14.loc_8c1457c0
 loc_8c0189ec:
@@ -21189,6 +21184,7 @@ loc_8c018b30:
 loc_8c018b32:
 	#data 0x0084
 	#align4
+
 loc_8c018b34:
 	#data bank14.loc_8c1458d4
 loc_8c018b38:
@@ -21291,8 +21287,11 @@ loc_8c018bbc:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c018bd4:
-	#data bank14.loc_8c1458ec bank14.loc_8c145904
+	#data bank14.loc_8c1458ec
+loc_8c018bd8:
+	#data bank14.loc_8c145904
 
 ;----------------------------------------------
 loc_8c018bdc:
@@ -21474,6 +21473,7 @@ loc_8c018d0e:
 loc_8c018d10:
 	#data 0x0084
 	#align4
+
 loc_8c018d14:
 	#data bank04.loc_8c044f12
 loc_8c018d18:
@@ -21686,6 +21686,7 @@ loc_8c018e70:
 loc_8c018e72:
 	#data 0x04c8
 	#align4
+
 loc_8c018e74:
 	#data bank14.loc_8c145920
 loc_8c018e78:
@@ -21875,6 +21876,7 @@ loc_8c018faa:
 loc_8c018fac:
 	#data 0x04dc
 	#align4
+
 loc_8c018fb0:
 	#data 0x8c26a940
 loc_8c018fb4:
@@ -22061,6 +22063,7 @@ loc_8c0190e2:
 loc_8c0190e4:
 	#data 0x0168
 	#align4
+
 loc_8c0190e8:
 	#data work.GameGlobalPointer
 loc_8c0190ec:
@@ -22219,6 +22222,7 @@ loc_8c0191ea:
 loc_8c0191ec:
 	#data 0x04a8
 	#align4
+
 loc_8c0191f0:
 	#data 0x8c26a93c
 loc_8c0191f4:
@@ -29254,7 +29258,7 @@ loc_8c01c274:
 loc_8c01c278:
 	#data bank04.loc_8c044e56
 loc_8c01c27c:
-	#data 0x8c1466d8
+	#data bank14.loc_8c1466d8
 loc_8c01c280:
 	#data loc_8c01b276
 loc_8c01c284:
@@ -29460,14 +29464,37 @@ loc_8c01c3e2:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c01c3e8:
-	#data 0x012c 0x00cc 0x0084
+	#data 0x012c
+loc_8c01c3ea:
+	#data 0x00cc
+loc_8c01c3ec:
+	#data 0x0084
 	#align4
+
 loc_8c01c3f0:
-	#data 0x8c1f8b55 0xff000000 bank03.loc_8c0355b2 bank03.loc_8c03563a
+	#data 0x8c1f8b55
+loc_8c01c3f4:
+	#data 0xff000000
+loc_8c01c3f8:
+	#data bank03.loc_8c0355b2
+loc_8c01c3fc:
+	#data bank03.loc_8c03563a
 loc_8c01c400:
-	#data loc_8c01cd58 loc_8c01b276 bank04.loc_8c044f12 loc_8c01c312
+	#data loc_8c01cd58
+loc_8c01c404:
+	#data loc_8c01b276
+loc_8c01c408:
+	#data bank04.loc_8c044f12
+loc_8c01c40c:
+	#data loc_8c01c312
 loc_8c01c410:
-	#data bank14.loc_8c146554 bank12.loc_8c1294c8 bank14.loc_8c1463bc 0x8c26a940
+	#data bank14.loc_8c146554
+loc_8c01c414:
+	#data bank12.loc_8c1294c8
+loc_8c01c418:
+	#data bank14.loc_8c1463bc
+loc_8c01c41c:
+	#data 0x8c26a940
 loc_8c01c420:
 	#data bank14.loc_8c146568
 
@@ -29613,11 +29640,27 @@ loc_8c01c50e:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c01c512:
-	#data 0x012c 0x00cc 0x0084
+	#data 0x012c
+loc_8c01c514:
+	#data 0x00cc
+loc_8c01c516:
+	#data 0x0084
+	#align4
+
 loc_8c01c518:
-	#data bank04.loc_8c044f12 loc_8c01c4ea bank14.loc_8c1463d8 bank12.loc_8c1294c8
+	#data bank04.loc_8c044f12
+loc_8c01c51c:
+	#data loc_8c01c4ea
+loc_8c01c520:
+	#data bank14.loc_8c1463d8
+loc_8c01c524:
+	#data bank12.loc_8c1294c8
 loc_8c01c528:
-	#data bank14.loc_8c1463bc 0x8c26a940 bank14.loc_8c1466e8
+	#data bank14.loc_8c1463bc
+loc_8c01c52c:
+	#data 0x8c26a940
+loc_8c01c530:
+	#data bank14.loc_8c1466e8
 
 ;==============================================
 loc_8c01c534:
@@ -29720,14 +29763,33 @@ loc_8c01c5da:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c01c5e4:
-	#data 0x0168 0x0080
+	#data 0x0168
+loc_8c01c5e6:
+	#data 0x0080
 	#align4
+
 loc_8c01c5e8:
-	#data 0x3f000000 0x47800000 0x43b40000 0x0000ffff
+	#data 0x3f000000
+loc_8c01c5ec:
+	#data 0x47800000
+loc_8c01c5f0:
+	#data 0x43b40000
+loc_8c01c5f4:
+	#data 0x0000ffff
 loc_8c01c5f8:
-	#data bank11.loc_8c11e2e0 0x8c1f8b58 0x8c1f8b5a 0x8c2141e5
+	#data bank11.loc_8c11e2e0
+loc_8c01c5fc:
+	#data 0x8c1f8b58
+loc_8c01c600:
+	#data 0x8c1f8b5a
+loc_8c01c604:
+	#data 0x8c2141e5
 loc_8c01c608:
-	#data bank14.loc_8c14657c bank12.loc_8c1294c8 0x8c1f8b5c
+	#data bank14.loc_8c14657c
+loc_8c01c60c:
+	#data bank12.loc_8c1294c8
+loc_8c01c610:
+	#data 0x8c1f8b5c
 
 ;==============================================
 loc_8c01c614:
@@ -29864,13 +29926,35 @@ loc_8c01c6e8:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c01c6f6:
-	#data 0x0168 0x0080 0x0000
+	#data 0x0168
+loc_8c01c6f8:
+	#data 0x0080
+	#align4
+
 loc_8c01c6fc:
-	#data 0x3f000000 0x47800000 0x43b40000 0x0000ffff
+	#data 0x3f000000
+loc_8c01c700:
+	#data 0x47800000
+loc_8c01c704:
+	#data 0x43b40000
+loc_8c01c708:
+	#data 0x0000ffff
 loc_8c01c70c:
-	#data bank11.loc_8c11e2e0 0x8c1f8b59 0x8c1f8b5b 0x8c212f19
+	#data bank11.loc_8c11e2e0
+loc_8c01c710:
+	#data 0x8c1f8b59
+loc_8c01c714:
+	#data 0x8c1f8b5b
+loc_8c01c718:
+	#data 0x8c212f19
 loc_8c01c71c:
-	#data bank14.loc_8c1465b8 bank12.loc_8c1294c8 0x8c1f8b5c 0x3f4ccccd
+	#data bank14.loc_8c1465b8
+loc_8c01c720:
+	#data bank12.loc_8c1294c8
+loc_8c01c724:
+	#data 0x8c1f8b5c
+loc_8c01c728:
+	#data 0x3f4ccccd
 
 ;==============================================
 loc_8c01c72c:
@@ -30008,13 +30092,33 @@ loc_8c01c802:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c01c816:
-	#data 0x0084 0x012c 0x02c4
+	#data 0x0084
+loc_8c01c818:
+	#data 0x012c
+loc_8c01c81a:
+	#data 0x02c4
+	#align4
+
 loc_8c01c81c:
-	#data bank10.loc_8c108210 0x8c1f8b5c 0x8c1f8b5d 0x8c26a940
+	#data bank10.loc_8c108210
+loc_8c01c820:
+	#data 0x8c1f8b5c
+loc_8c01c824:
+	#data 0x8c1f8b5d
+loc_8c01c828:
+	#data 0x8c26a940
 loc_8c01c82c:
-	#data bank10.loc_8c108060 bank10.loc_8c1081e6 bank10.loc_8c108086 bank10.loc_8c108192
+	#data bank10.loc_8c108060
+loc_8c01c830:
+	#data bank10.loc_8c1081e6
+loc_8c01c834:
+	#data bank10.loc_8c108086
+loc_8c01c838:
+	#data bank10.loc_8c108192
 loc_8c01c83c:
-	#data bank14.loc_8c146630 0x3c23d70a
+	#data bank14.loc_8c146630
+loc_8c01c840:
+	#data 0x3c23d70a
 
 ;==============================================
 loc_8c01c844:
@@ -30180,13 +30284,33 @@ loc_8c01c90a:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c01c94e:
-	#data  0x0080 0x012c 0x0168
+	#data 0x0080
+loc_8c01c950:
+	#data 0x012c
+loc_8c01c952:
+	#data 0x0168
+	#align4
+
 loc_8c01c954:
-	#data  0x3f000000 0x8c1f8b5c 0x8c1f8b5d 0x8c1f8b7e
+	#data 0x3f000000
+loc_8c01c958:
+	#data 0x8c1f8b5c
+loc_8c01c95c:
+	#data 0x8c1f8b5d
+loc_8c01c960:
+	#data 0x8c1f8b7e
 loc_8c01c964:
-	#data  0x47800000 0x43b40000 0x0000ffff bank11.loc_8c11e2e0
+	#data 0x47800000
+loc_8c01c968:
+	#data 0x43b40000
+loc_8c01c96c:
+	#data 0x0000ffff
+loc_8c01c970:
+	#data bank11.loc_8c11e2e0
 loc_8c01c974:
-	#data  0x3f333333 0x3e99999a
+	#data 0x3f333333
+loc_8c01c978:
+	#data 0x3e99999a
 
 ;==============================================
 loc_8c01c97c:
@@ -30834,18 +30958,53 @@ loc_8c01cdf0:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c01cdf4:
-	#data 0x8c1f8b8b 0x8c1f8b8a 0x8c1f8b89 0x8c1f8b88
+	#data 0x8c1f8b8b
+loc_8c01cdf8:
+	#data 0x8c1f8b8a
+loc_8c01cdfc:
+	#data 0x8c1f8b89
+loc_8c01ce00:
+	#data 0x8c1f8b88
 loc_8c01ce04:
-	#data bank04.loc_8c044d8c work.GameGlobalPointer 0x8c1f8b8c bank03.loc_8c03563a
+	#data bank04.loc_8c044d8c
+loc_8c01ce08:
+	#data work.GameGlobalPointer
+loc_8c01ce0c:
+	#data 0x8c1f8b8c
+loc_8c01ce10:
+	#data bank03.loc_8c03563a
 loc_8c01ce14:
-	#data loc_8c011bbc loc_8c011a9a 0xff000000 bank03.loc_8c0355b2
+	#data loc_8c011bbc
+loc_8c01ce18:
+	#data loc_8c011a9a
+loc_8c01ce1c:
+	#data 0xff000000
+loc_8c01ce20:
+	#data bank03.loc_8c0355b2
 loc_8c01ce24:
-	#data loc_8c01357a loc_8c013572 0x8c212f1b loc_8c01d070
+	#data loc_8c01357a
+loc_8c01ce28:
+	#data loc_8c013572
+loc_8c01ce2c:
+	#data 0x8c212f1b
+loc_8c01ce30:
+	#data loc_8c01d070
 loc_8c01ce34:
-	#data loc_8c01d0dc loc_8c01656e bank04.loc_8c044f12 bank14.loc_8c146870
+	#data loc_8c01d0dc
+loc_8c01ce38:
+	#data loc_8c01656e
+loc_8c01ce3c:
+	#data bank04.loc_8c044f12
+loc_8c01ce40:
+	#data bank14.loc_8c146870
 loc_8c01ce44:
-	#data loc_8c01cddc loc_8c01b276 bank14.loc_8c146890
+	#data loc_8c01cddc
+loc_8c01ce48:
+	#data loc_8c01b276
+loc_8c01ce4c:
+	#data bank14.loc_8c146890
 
 ;==============================================
 loc_8c01ce50:
@@ -30944,12 +31103,25 @@ loc_8c01cefe:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c01cf04:
-	#data 0x012c 0x00cc 0x0084
+	#data 0x012c
+loc_8c01cf06:
+	#data 0x00cc
+loc_8c01cf08:
+	#data 0x0084
 	#align4
+
 loc_8c01cf0c:
-	#data bank14.loc_8c146720 bank14.loc_8c1467b0 bank12.loc_8c1294c8 bank14.loc_8c146834
+	#data bank14.loc_8c146720
+loc_8c01cf10:
+	#data bank14.loc_8c1467b0
+loc_8c01cf14:
+	#data bank12.loc_8c1294c8
+loc_8c01cf18:
+	#data bank14.loc_8c146834
 loc_8c01cf1c:
-	#data bank14.loc_8c146840 0x8c26a940
+	#data bank14.loc_8c146840
+loc_8c01cf20:
+	#data 0x8c26a940
 
 ;==============================================
 loc_8c01cf24:
@@ -37581,6 +37753,7 @@ loc_8c02002c:
 loc_8c02002e:
 	#data 0x00cc
 	#align4
+
 loc_8c020030:
 	#data bank04.loc_8c044e56
 loc_8c020034:

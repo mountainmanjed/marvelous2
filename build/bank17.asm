@@ -1,13 +1,6 @@
-
-
-#align4
-loc_8c17061C:
 #data 0x8c118100
 #data 0x62071510
 #data 0x62008080
-
-#align4
-loc_8c170628:
 #data 0x8C0710C3
 #data 0x00171002
 #data 0x00171100
@@ -239,9 +232,6 @@ loc_8c170628:
 #data 0x00072100
 #data 0x00470900
 #data 0x002A01A0
-
-#align4
-loc_8c1709C4:
 #data 0x8c072100
 #data 0x00072060
 #data 0x002A00EC
