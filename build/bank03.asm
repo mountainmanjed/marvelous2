@@ -16601,7 +16601,7 @@ loc_8c036ef4:
 	jsr @r3
 	mov 0x39,r4
 	mov.w @(loc_8c036f76,PC),r0 ; 8c036f76 ; 4650
-	mov.l @(loc_8c036f8c,PC),r3 ; 8c036f8c ; 	
+	mov.l @(loc_8c036f8c,PC),r3 ; 8c036f8c ; 
 	mov.w r0,@(0x8,r14)
 	mov 0x0A,r0
 	mov.w r0,@(0xA,r14)
