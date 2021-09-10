@@ -3933,8 +3933,7 @@ loc_8c1742B4:
 
 
 ;==============================================
-;User:
-;Start up?
+;Start Up Code
 loc_8c1742C0:
 	mov.l @(loc_8c1743F8,pc),r2 ; r2 set to 0x8C1C4164
 	sts.l pr,@-r15
@@ -4148,12 +4147,13 @@ loc_8c1743E8:
 
 ;==============================================
 	#align4
+
 loc_8c1743F8:
 	#data bank1c.loc_8c1c4164
 loc_8c1743FC:
 	#data 0x8C00C000
 loc_8c174400:
-	#data 0x41474553
+	#data "SEGA"
 loc_8c174404:
 	#data 0x8C00F400
 loc_8c174408:

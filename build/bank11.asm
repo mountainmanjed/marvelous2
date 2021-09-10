@@ -12249,6 +12249,10 @@ loc_8c1154a8:
 	#data bank13.loc_8C13EC4C
 
 ;==============================================
+;Set up VMU Graphic
+;R4 = Pointer to Graphic
+;R7 = 0x1e0 Pointer to VMU a-1?
+;==============================================
 loc_8C1154AC:
 	mov.l r13,@-r15
 	mov 0x00,r13 ; r13 set to 0x00
@@ -12258,7 +12262,7 @@ loc_8C1154AC:
 	mov 0x01,r12 ; r12 set to 0x01
 	mov.l r10,@-r15
 	mov 0x07,r10 ; r10 set to 0x07
-	mov.l @(loc_8C1155B0,pc),r5 ; r5 set to bank16.loc_8c1698Fc
+	mov.l @(loc_8C1155B0,pc),r5 ; r5 set to loc_8c1698Fc
 	mov 0x08,r11 ; r11 set to 0x08
 	mov.w @(loc_8C1155AC,pc),r0 ; r0 set to 0xC0
 	mov.l r9,@-r15
@@ -12714,7 +12718,7 @@ loc_8C11576C:
 	mov r14,r4
 	mov.l @r15+,r3 ; r3 ??? bc r15 is ???, r3 ??? bc r15 is ???
 	mov.l @(loc_8C1157D0,pc),r2 ; r2 set to 0x8C28977C, r2 set to 0x8C28977c
-	mov.l @(loc_8C1157D4,pc),r4 ; r4 set to bank16.loc_8c169EFC, r4 set to bank16.loc_8c169EFc
+	mov.l @(loc_8C1157D4,pc),r4 ; r4 set to VMUGraphic, r4 set to VMUGraphic
 	mov.l r0,@r3
 	bsr loc_8C1154Ac
 	mov.l r14,@r2 ; r2 ??? bc r14 is ???, r2 ??? bc r14 is ???
@@ -16406,7 +16410,7 @@ loc_8C116F34:
 
 loc_8C116F80:
 	mov.l @(loc_8C117204,pc),r3 ; r3 set to 0x8C1154Ac
-	mov.l @(loc_8C117200,pc),r4 ; r4 set to bank16.loc_8c169FBc
+	mov.l @(loc_8C117200,pc),r4 ; r4 set to VMUGAccess
 	mov.l r11,@(0x38,r14)
 	jsr @r3
 	mov.l r10,@(0x30,r14)
@@ -16742,7 +16746,7 @@ loc_8C11714E:
 
 loc_8C1171D8:
 	mov.l @(loc_8C117204,pc),r3 ; r3 set to 0x8C1154AC, r3 set to 0x8C1154Ac
-	mov.l @(loc_8C117220,pc),r4 ; r4 set to bank16.loc_8c169EFC, r4 set to bank16.loc_8c169EFc
+	mov.l @(loc_8C117220,pc),r4 ; r4 set to VMUGraphic, r4 set to VMUGraphic
 	jsr @r3
 	nop
 	mov.l @(loc_8C117208,pc),r2 ; r2 set to 0x8C1154F2, r2 set to 0x8C1154F2
@@ -18112,7 +18116,7 @@ loc_8C117AC6:
 
 loc_8C117ACA:
 	mov.l @(loc_8C117B78,pc),r3 ; r3 set to 0x8C1154Ac
-	mov.l @(loc_8C117B74,pc),r4 ; r4 set to bank16.loc_8c169FBc
+	mov.l @(loc_8C117B74,pc),r4 ; r4 set to VMUGAccess
 	mov.l r13,@(0x38,r14)
 	jsr @r3
 	mov.l r12,@(0x30,r14)
@@ -18319,7 +18323,7 @@ loc_8C117C1C:
 
 loc_8C117C22:
 	mov.l @(loc_8C117C88,pc),r3 ; r3 set to 0x8C1154AC, r3 set to 0x8C1154Ac
-	mov.l @(loc_8C117C84,pc),r4 ; r4 set to bank16.loc_8c169EFC, r4 set to bank16.loc_8c169EFc
+	mov.l @(loc_8C117C84,pc),r4 ; r4 set to VMUGraphic
 	jsr @r3
 	nop
 	mov.l @(loc_8C117C8C,pc),r2 ; r2 set to 0x8C1154F2, r2 set to 0x8C1154F2
@@ -18336,7 +18340,7 @@ loc_8C117C3A:
 	jsr @r2
 	mov r10,r4
 	mov.l @(loc_8C117C88,pc),r3 ; r3 set to 0x8C1154Ac
-	mov.l @(loc_8C117C84,pc),r4 ; r4 set to bank16.loc_8c169EFc
+	mov.l @(loc_8C117C84,pc),r4 ; r4 set to VMUGraphic
 	jsr @r3
 	nop
 	mov.l @(loc_8C117C8C,pc),r2 ; r2 set to 0x8C1154F2
@@ -18486,7 +18490,7 @@ loc_8C117D3A:
 
 loc_8C117D3E:
 	mov.l @(loc_8C117EB4,pc),r3 ; r3 set to 0x8C1154Ac
-	mov.l @(loc_8C117EB0,pc),r4 ; r4 set to bank16.loc_8c169FBc
+	mov.l @(loc_8C117EB0,pc),r4 ; r4 set to VMUGAccess
 	mov.l r13,@(0x38,r14)
 	jsr @r3
 	mov.l r12,@(0x30,r14)
@@ -18647,7 +18651,7 @@ loc_8C117E4C:
 	tst r2,r13
 	bf loc_8C117E76
 	mov.l @(loc_8C117EB4,pc),r2 ; r2 set to 0x8C1154Ac
-	mov.l @(loc_8C117EC8,pc),r4 ; r4 set to bank16.loc_8c169EFc
+	mov.l @(loc_8C117EC8,pc),r4 ; r4 set to VMUGraphic
 	jsr @r2
 	nop
 	mov.l @(loc_8C117EB8,pc),r3 ; r3 set to 0x8C1154F2
@@ -19162,7 +19166,7 @@ loc_8C1181D0:
 	tst r2,r13
 	bf loc_8C1181Fa
 	mov.l @(loc_8C118214,pc),r2 ; r2 set to 0x8C1154Ac
-	mov.l @(loc_8C118210,pc),r4 ; r4 set to bank16.loc_8c169EFc
+	mov.l @(loc_8C118210,pc),r4 ; r4 set to VMUGraphic
 	jsr @r2
 	nop
 	mov.l @(loc_8C118218,pc),r3 ; r3 set to 0x8C1154F2

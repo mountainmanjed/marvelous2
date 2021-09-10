@@ -181,6 +181,7 @@ loc_8c020184:
 loc_8c020186:
 	#data 0x0084
 	#align4
+
 loc_8c020188:
 	#data bank04.loc_8c044f12
 loc_8c02018c:
@@ -19416,10 +19417,19 @@ loc_8c027ff0:
 
 ;############################################### 
 loc_8c02800c:
-	#data 0x055c 0x052c 0x21d8
+	#data 0x055c
+loc_8c02800e:
+	#data 0x052c
+loc_8c028010:
+	#data 0x21d8
 loc_8c028012:
-	#data 0x0094 0x008c 0x1690
+	#data 0x0094
+loc_8c028014:
+	#data 0x008c
+loc_8c028016:
+	#data 0x1690
 	#align4
+
 loc_8c028018:
 	#data bank13.loc_8c135484
 loc_8c02801c:
