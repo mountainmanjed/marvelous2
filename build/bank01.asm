@@ -33607,7 +33607,7 @@ loc_8c01dcf6:
 loc_8c01dcfa:
 	#data 0x012c
 loc_8c01dcfc:
-	0x0080
+	#data 0x0080
 	#align4
 
 loc_8c01dd00:
@@ -33708,13 +33708,14 @@ loc_8c01dd98:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c01dd9c:
 	#data 0x40800000
 loc_8c01dda0:
 	#data 0x41033333
 loc_8c01dda4:
 	#data 0x8c212f20
-loc_8c01ddac:
+loc_8c01dda8:
 	#data 0x40300000
 loc_8c01ddac:
 	#data 0x41000000
@@ -34732,9 +34733,9 @@ loc_8c01e478:
 loc_8c01e47c:
 	#data 0xc0400000
 loc_8c01e480:
-:	#data 0x8c26a940
+	#data 0x8c26a940
 loc_8c01e484:
-:	#data bank04.loc_8c04257c
+	#data bank04.loc_8c04257c
 
 ;==============================================
 loc_8c01e488:
@@ -35825,11 +35826,11 @@ loc_8c01ebe4:
 loc_8c01ebe8:
 	#data 0x8c213af2
 loc_8c01ebec:
-	bank14.loc_8c146d2c
+	#data bank14.loc_8c146d2c
 loc_8c01ebf0:
-	0x8c214286
+	#data 0x8c214286
 loc_8c01ebf4:
-	0x8c214288
+	#data 0x8c214288
 loc_8c01ebf8:
 	#data 0x8c21428c
 loc_8c01ebfc:
@@ -37317,7 +37318,7 @@ loc_8c01f5d2:
 	#data 0x0084
 loc_8c01f5d4:
 	#data 0x00cc
-loc_8c01f5d8:
+loc_8c01f5d6:
 	#data 0x00d0
 	#align4
 
