@@ -17023,7 +17023,7 @@ loc_8c03718c:
 
 loc_8c0371a4:
 	mov.b @(0x2,r13),r0
-	mov.l @(loc_8c037364,PC),r14
+	mov.l @(loc_8c037364,PC),r14;Load Vector table
 	mov r0,r4
 	extu.b r4,r5
 	extu.b r4,r4
