@@ -20043,7 +20043,7 @@ loc_8c16BC30:
 loc_8c16BC34:
 	#data 0x4479FFFF
 loc_8c16BC38:
-	#data Font.NaomiFont
+	#data bank13.NaomiFont
 
 loc_8c16BC3C:
 #data 0x00000000

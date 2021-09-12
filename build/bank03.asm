@@ -2505,6 +2505,8 @@ loc_8c0310fe:
 	nop
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+	#align4
+
 loc_8c031104:
 	#data 0x8c26a8e4
 
@@ -17025,7 +17027,7 @@ loc_8c0371a4:
 	mov r0,r4
 	extu.b r4,r5
 	extu.b r4,r4
-	add 0x60,r5
+	add 0x60,r5;Darken Box Alpha
 	tst r4,r4
 	shll16 r5
 	bt.s loc_8c0371be
@@ -17948,6 +17950,7 @@ loc_8c0377e8:
 loc_8c0377ea:
 	#data 0x1000
 	#align4
+
 loc_8c0377ec:
 	#data bank13.loc_8c1366c4
 loc_8c0377f0:
@@ -18168,7 +18171,7 @@ loc_8c037920:
 	#data work.GameGlobalPointer
 
 loc_8c037924:
-	#data bank13.loc_8c1367c4
+	#data bank13.PLIDPause_String
 
 loc_8c037928:
 	#data loc_8c0395c6
@@ -18329,6 +18332,8 @@ loc_8c0379c8:
 	mov.l @r15+,r12
 
 ;==============================================
+;Button Config Cursor Box Render
+;==============================================
 loc_8c037a46:
 	mov.l r14,@-r15
 	mov.l r13,@-r15
@@ -18343,18 +18348,25 @@ loc_8c037a46:
 	fmov fr12,@-r15
 	sts.l pr,@-r15
 	add 0xFC,r15
+
+;Pause Render
 	bsr loc_8c03718c
 	nop
-	mov.l @(loc_8c037b94,PC),r3
+
+;Actual Code Start 8c037a64
+
+;Check to Render
+	mov.l @(loc_8c037b94,PC),r3;0x8c212cb6 to r3
 	mov.b @r3,r2
 	tst r2,r2
 	bt loc_8c037b1a
-	mova @(loc_8c037b9c,PC),r0
-	mov.l @(loc_8c037b90,PC),r4
-	mov.l @(loc_8c037b98,PC),r13
+
+	mova @(loc_8c037b9c,PC),r0; -2 float
+	mov.l @(loc_8c037b90,PC),r4; 0x8c212ee4 ; option buffer
+	mov.l @(loc_8c037b98,PC),r13; loc_8c14d310
 	mov 0x00,r12
 	mov r4,r11
-	mov.l @(loc_8c037b8c,PC),r14
+	mov.l @(loc_8c037b8c,PC),r14;0x8c212bfc
 	mov r13,r10
 	add 0x20,r4
 	mov r13,r9
@@ -18362,11 +18374,11 @@ loc_8c037a46:
 	add 0x30,r8
 	mov.l r4,@r15
 	fmov @r0,fr12
-	mova @(loc_8c037ba0,PC),r0
+	mova @(loc_8c037ba0,PC),r0 ; float 17 ; Box Bottom
 	fmov @r0,fr13
-	mova @(loc_8c037ba4,PC),r0
+	mova @(loc_8c037ba4,PC),r0 ; float 16 ; Box Y Pos
 	fmov @r0,fr14
-	mova @(loc_8c037ba8,PC),r0
+	mova @(loc_8c037ba8,PC),r0 ; float 4 ; Box X Pos
 	fmov @r0,fr15
 	add 0x20,r9
 	add 0x10,r10
@@ -18374,7 +18386,7 @@ loc_8c037a46:
 loc_8c037a96:
 	mov r11,r4
 	mov.b @(0xA,r4),r0
-	mov.l @(loc_8c037bac,PC),r3
+	mov.l @(loc_8c037bac,PC),r3 ; loc_8c136694;Strings
 	mov r0,r5
 	shll2 r5
 	shll r5
@@ -18383,7 +18395,7 @@ loc_8c037a96:
 	mov.b @r5,r2
 	mov 0x10,r0
 	fmov @(r0,r14),fr2
-	mova @(loc_8c037bb0,PC),r0
+	mova @(loc_8c037bb0,PC),r0;float -4 ; Box Left
 	extu.b r2,r2
 	add r12,r2
 	lds r2,fpul
@@ -18399,7 +18411,7 @@ loc_8c037a96:
 	lds r0,fpul
 	mov 0x10,r0
 	fmov @(r0,r14),fr1
-	mova @(loc_8c037bb4,PC),r0
+	mova @(loc_8c037bb4,PC),r0;float 8 ; Box Right
 	float fpul,fr2
 	fmac fr0,fr2,fr1
 	fmov @r0,fr2
@@ -18425,7 +18437,7 @@ loc_8c037a96:
 	mov 0x04,r0
 	add 0x0B,r2
 	lds r2,fpul
-	mov.l @(loc_8c037bb8,PC),r2
+	mov.l @(loc_8c037bb8,PC),r2 ; loc_8c127af0
 	float fpul,fr3
 	fmac fr0,fr3,fr1
 	fadd fr13,fr1
@@ -18507,6 +18519,7 @@ loc_8c037b7e:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8c037b8c:
 	#data 0x8c212bfc
 loc_8c037b90:
@@ -18518,11 +18531,11 @@ loc_8c037b98:
 loc_8c037b9c:
 	#data 0xc0000000
 loc_8c037ba0:
-	#data 0x41880000
+	#data 17.0
 loc_8c037ba4:
-	#data 0x41800000
+	#data 16.0
 loc_8c037ba8:
-	#data 0x40800000
+	#data 4.0
 loc_8c037bac:
 	#data bank13.loc_8c136694
 loc_8c037bb0:
@@ -18597,7 +18610,7 @@ loc_8c037c28:
 loc_8c037c2c:
 	#data loc_8c0395c6
 loc_8c037c30:
-	#data bank13.loc_8c1367d0
+	#data bank13.Player_String
 loc_8c037c34:
 	#data 0x8c212be0
 
@@ -19074,7 +19087,7 @@ loc_8c037f58:
 loc_8c037f5c:
 	#data work.GameGlobalPointer
 loc_8c037f60:
-	#data bank13.loc_8c1367e8
+	#data bank13.Pause_ButtonConfig
 loc_8c037f64:
 	#data loc_8c0395c6
 loc_8c037f68:
@@ -22409,6 +22422,12 @@ loc_8c0395c2:
 	rts
 	nop
 
+;==============================================
+;Text Function
+;Stack subtract 4 for Text Pointer
+;r4 xpos
+;r5 ypos
+;r6 Color
 ;==============================================
 loc_8c0395c6:
 	mov.l r14,@-r15
