@@ -19,7 +19,7 @@
 ;0x8c268298 Text Name Flag
 
 ;0x8C26A8C8 Abyss Stage Flag
-;0x8c26A95C Stage ID
+#symbol STG_ID 0x8c26A95C
 
 ;==============================================
 ;Varibles

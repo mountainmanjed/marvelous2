@@ -9491,6 +9491,8 @@ loc_8C0F3F0C:
 	#data 0x8C28C41b
 
 ;==============================================
+;Part of Score Attack Mode
+;==============================================
 loc_8C0F3F10:
 	mov.l r14,@-r15
 	mov.l r13,@-r15
@@ -9722,8 +9724,9 @@ loc_8C0F4086:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
+
 loc_8C0F408C:
-	#data bank16.loc_8c161A7c
+	#data bank16.loc_8c161A7c;score attack
 loc_8C0F4090:
 	#data 0x3F333333
 loc_8C0F4094:

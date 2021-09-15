@@ -1,6 +1,8 @@
 ;==============================================
+;Set Fall Speed of Normals in Super Jump
+;==============================================
 loc_8c050048:
-	mov.w @(loc_8c0500fa,PC),r0
+	mov.w @(loc_8c0500fa,PC),r0;1fc superjump state
 	mov.b @(r0,r4),r0
 	extu.b r0,r0
 	cmp/eq 0x01,r0
@@ -10,20 +12,20 @@ loc_8c050048:
 	fmov @(r0,r4),fr2
 	fcmp/gt fr3,fr2
 	bt loc_8c050080
-	mov.w @(loc_8c0500fa,PC),r0
+	mov.w @(loc_8c0500fa,PC),r0;1fc super jump state
 	mov 0x02,r2
-	mov.l @(loc_8c050108,PC),r1
+	mov.l @(loc_8c050108,PC),r1;loc_8c150ec4
 	mov.b r2,@(r0,r4)
 	mov.b @(0x1,r4),r0
 	extu.b r0,r0
 	shll r0
 	mov.w @(r0,r1),r3
-	mova @(loc_8c05010c,PC),r0
+	mova @(loc_8c05010c,PC),r0;CpsYScale
 	fmov @r0,fr2
-	mova @(loc_8c050110,PC),r0
+	mova @(loc_8c050110,PC),r0;float 256.0
 	lds r3,fpul
 	fmov @r0,fr1
-	mov 0x6C,r0
+	mov 0x6C,r0;Y drag
 	float fpul,fr3
 	fmul fr2,fr3
 	fdiv fr1,fr3

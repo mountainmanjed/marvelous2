@@ -1878,70 +1878,69 @@ loc_8c1617A0:
 #data 0x00000000
 #data 0x00000000
 
-;Naomi Cursor Table
 loc_8c1617b8:
 	#data 0xc2600000 0x42500000
 
 loc_8c1617C0:
-	#data 0x43370000 ;00 Ryu
-	#data 0xc2640000 0x41880000 0x433d0000 ;01 Zangief
-	#data 0xc2500000 0x42a80000 0x432c0000 ;02 Guile
-	#data 0xc2600000 0xc2500000 0x43370000 ;03 Morrigan
-	#data 0xc2640000 0xc1880000 0x433d0000 ;04 Anakaris
-	#data 0xc2500000 0xc2a80000 0x432c0000 ;05 Strider Hiryu
-	#data 0x41900000 0x42a80000 0x43330000 ;06 Cyclops
-	#data 0x42600000 0x42500000 0x43370000 ;07 Wolverine
-	#data 0x41800000 0x42e40000 0x43220000 ;08 Psylocke
-	#data 0x42640000 0x41880000 0x433d0000 ;09 Iceman
-	#data 0x423c0000 0x42e40000 0x431c0000 ;0a Rogue
-	#data 0x41980000 0xc1880000 0x43450000 ;0b Captain America
-	#data 0x42640000 0xc1880000 0x433d0000 ;0c Spiderman
-	#data 0x42500000 0xc2a80000 0x432c0000 ;0d Hulk
-	#data 0x42600000 0xc2500000 0x43370000 ;0e Venom
-	#data 0x41980000 0xc2500000 0x433f0000 ;0f Dr.Doom
-	#data 0xc2b40000 0x42500000 0x43290000 ;10 Tron Bonne
-	#data 0xc2aa0000 0x42a80000 0x431f0000 ;11 Jill
-	#data 0xc1980000 0xc1880000 0x43450000 ;12 Hayato
-	#data 0xc1980000 0x41880000 0x43450000 ;13 Ruby Heart
-	#data 0xc1980000 0x42500000 0x433f0000 ;14 Sonson
-	#data 0xc1900000 0x42a80000 0x43330000 ;15 Amingo
-	#data 0x41980000 0x42500000 0x433f0000 ;16 Marrow
-	#data 0x41980000 0x41880000 0x43450000 ;17 Cable
-	#data 0xbf800000 0xbf800000 0xbf800000 ;18 Abyss 1
-	#data 0xbf800000 0xbf800000 0xbf800000 ;19 Abyss 2
-	#data 0xbf800000 0xbf800000 0xbf800000 ;1a Abyss 3
-	#data 0xc1800000 0xc2e40000 0x43220000 ;1b Chun-li
-	#data 0xc23c0000 0x42e40000 0x431c0000 ;1c Megaman
-	#data 0xc23c0000 0xc2e40000 0x431c0000 ;1d Roll
-	#data 0xc2ba0000 0x41880000 0x432e0000 ;1e Akuma
-	#data 0xc1980000 0xc2500000 0x433f0000 ;1f BBHood
-	#data 0xc29a0000 0x42e40000 0x430f0000 ;20 Felica
-	#data 0xc2fa0000 0x41880000 0x43190000 ;21 Charlie
-	#data 0xc2b40000 0xc2500000 0x43290000 ;22 Sakura
-	#data 0xc2f40000 0xc2500000 0x43140000 ;23 Dan
-	#data 0xc2aa0000 0xc2a80000 0x431f0000 ;24 Cammy
-	#data 0xc2fa0000 0xc1880000 0x43190000 ;25 Dhalsim
-	#data 0xc1800000 0x42e40000 0x43220000 ;26 Dict
-	#data 0xc2f40000 0x42500000 0x43140000 ;27 Ken
-	#data 0x42ba0000 0x41880000 0x432e0000 ;28 Gambit
-	#data 0x42ba0000 0xc1880000 0x432e0000 ;29 Juggernaut
-	#data 0x423c0000 0xc2e40000 0x431c0000 ;2a Storm
-	#data 0x42f40000 0xc2500000 0x43140000 ;2b Sabretooth
-	#data 0x42500000 0x42a80000 0x432c0000 ;2c Magneto
-	#data 0x41900000 0xc2a80000 0x43330000 ;2d Shuma
-	#data 0x42aa0000 0x42a80000 0x431f0000 ;2e War Machine
-	#data 0x42b40000 0x42500000 0x43290000 ;2f Silver Samurai
-	#data 0x41800000 0xc2e40000 0x43220000 ;30 Omega Red
-	#data 0x42fa0000 0xc1880000 0x43190000 ;31 Spiral
-	#data 0x42f40000 0x42500000 0x43140000 ;32 Colossus
-	#data 0x42aa0000 0xc2a80000 0x431f0000 ;33 Ironman
-	#data 0x429a0000 0xc2e40000 0x430f0000 ;34 Sentinel
-	#data 0x42fa0000 0x41880000 0x43190000 ;35 Blackheart
-	#data 0x429a0000 0x42e40000 0x430f0000 ;36 Thanos
-	#data 0xc2ba0000 0xc1880000 0x432e0000 ;37 Jin
-	#data 0xc1900000 0xc2a80000 0x43330000 ;38 Captain Commando
-	#data 0x42b40000 0xc2500000 0x43290000 ;39 BoneWolv
-	#data 0xc29a0000 0xc2e40000 0x430f0000 ;3a Servbot
+	#data 0x43370000 
+	#data 0xc2640000 0x41880000 0x433d0000
+	#data 0xc2500000 0x42a80000 0x432c0000
+	#data 0xc2600000 0xc2500000 0x43370000
+	#data 0xc2640000 0xc1880000 0x433d0000
+	#data 0xc2500000 0xc2a80000 0x432c0000
+	#data 0x41900000 0x42a80000 0x43330000
+	#data 0x42600000 0x42500000 0x43370000
+	#data 0x41800000 0x42e40000 0x43220000
+	#data 0x42640000 0x41880000 0x433d0000
+	#data 0x423c0000 0x42e40000 0x431c0000
+	#data 0x41980000 0xc1880000 0x43450000
+	#data 0x42640000 0xc1880000 0x433d0000
+	#data 0x42500000 0xc2a80000 0x432c0000
+	#data 0x42600000 0xc2500000 0x43370000
+	#data 0x41980000 0xc2500000 0x433f0000
+	#data 0xc2b40000 0x42500000 0x43290000
+	#data 0xc2aa0000 0x42a80000 0x431f0000
+	#data 0xc1980000 0xc1880000 0x43450000
+	#data 0xc1980000 0x41880000 0x43450000
+	#data 0xc1980000 0x42500000 0x433f0000
+	#data 0xc1900000 0x42a80000 0x43330000
+	#data 0x41980000 0x42500000 0x433f0000
+	#data 0x41980000 0x41880000 0x43450000
+	#data 0xbf800000 0xbf800000 0xbf800000
+	#data 0xbf800000 0xbf800000 0xbf800000
+	#data 0xbf800000 0xbf800000 0xbf800000
+	#data 0xc1800000 0xc2e40000 0x43220000
+	#data 0xc23c0000 0x42e40000 0x431c0000
+	#data 0xc23c0000 0xc2e40000 0x431c0000
+	#data 0xc2ba0000 0x41880000 0x432e0000
+	#data 0xc1980000 0xc2500000 0x433f0000
+	#data 0xc29a0000 0x42e40000 0x430f0000
+	#data 0xc2fa0000 0x41880000 0x43190000
+	#data 0xc2b40000 0xc2500000 0x43290000
+	#data 0xc2f40000 0xc2500000 0x43140000
+	#data 0xc2aa0000 0xc2a80000 0x431f0000
+	#data 0xc2fa0000 0xc1880000 0x43190000
+	#data 0xc1800000 0x42e40000 0x43220000
+	#data 0xc2f40000 0x42500000 0x43140000
+	#data 0x42ba0000 0x41880000 0x432e0000
+	#data 0x42ba0000 0xc1880000 0x432e0000
+	#data 0x423c0000 0xc2e40000 0x431c0000
+	#data 0x42f40000 0xc2500000 0x43140000
+	#data 0x42500000 0x42a80000 0x432c0000
+	#data 0x41900000 0xc2a80000 0x43330000
+	#data 0x42aa0000 0x42a80000 0x431f0000
+	#data 0x42b40000 0x42500000 0x43290000
+	#data 0x41800000 0xc2e40000 0x43220000
+	#data 0x42fa0000 0xc1880000 0x43190000
+	#data 0x42f40000 0x42500000 0x43140000
+	#data 0x42aa0000 0xc2a80000 0x431f0000
+	#data 0x429a0000 0xc2e40000 0x430f0000
+	#data 0x42fa0000 0x41880000 0x43190000
+	#data 0x429a0000 0x42e40000 0x430f0000
+	#data 0xc2ba0000 0xc1880000 0x432e0000
+	#data 0xc1900000 0xc2a80000 0x43330000
+	#data 0x42b40000 0xc2500000 0x43290000
+	#data 0xc29a0000 0xc2e40000 0x430f0000
 
 ;Dreamcast Cursor Table
 loc_8c161a7c:
@@ -2176,6 +2175,7 @@ loc_8c161F28:
 #data 0x00010000
 #data 0x00000400
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;Naomi Character Select ID Table
 loc_8c161fac:
 	#data 0xff 0x20 0x1c 0x26 0x08 0x0a 0x36 0xff
@@ -2187,6 +2187,7 @@ loc_8c161fac:
 	#data 0xff 0x24 0x05 0x38 0x2d 0x0d 0x33 0xff
 	#data 0xff 0x3a 0x1d 0x1b 0x30 0x2a 0x34 0xff
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;Dreamcast Character Select ID Table
 loc_8c161fec:
 	#data 0xff 0x20 0x1c 0x38 0x07 0x2d 0x36 0xff
@@ -2198,34 +2199,22 @@ loc_8c161fec:
 	#data 0xff 0x24 0x05 0x11 0x0a 0x0d 0x33 0xff
 	#data 0xff 0x3a 0x1d 0x1b 0x30 0x2a 0x34 0xff
 
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c16202C:
-#data bank0f.loc_8c0f447A
+	#data bank0f.loc_8c0f447A
+	#data bank0f.loc_8c0f44C6
+	#data bank0f.loc_8c0f456C
+	#data bank0f.loc_8c0f45AE
 
-loc_8c162030:
-#data bank0f.loc_8c0f44C6
-
-loc_8c162034:
-#data bank0f.loc_8c0f456C
-
-loc_8c162038:
-#data bank0f.loc_8c0f45AE
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c16203C:
-#data bank0f.loc_8c0f4858
+	#data bank0f.loc_8c0f4858
+	#data bank0f.loc_8c0f487C
+	#data bank0f.loc_8c0f48A6
+	#data bank0f.loc_8c0f4914
+	#data bank0f.loc_8c0f4952
 
-loc_8c162040:
-#data bank0f.loc_8c0f487C
-
-loc_8c162044:
-#data bank0f.loc_8c0f48A6
-
-loc_8c162048:
-#data bank0f.loc_8c0f4914
-
-loc_8c16204C:
-#data bank0f.loc_8c0f4952
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c162050:
 #data 0xC3960000
 #data 0x43820000
@@ -2291,97 +2280,50 @@ loc_8c162128:
 #data 0x0000C71D
 #data 0x0000FBBD
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c162140:
-#data bank0f.loc_8c0f4B98
-
-loc_8c162144:
-#data bank0f.loc_8c0f4B98
-
-loc_8c162148:
-#data bank0f.loc_8c0f4B98
-
-loc_8c16214C:
-#data bank0f.loc_8c0f4BC8
-
-loc_8c162150:
-#data bank0f.loc_8c0f4D82
+	#data bank0f.loc_8c0f4B98
+	#data bank0f.loc_8c0f4B98
+	#data bank0f.loc_8c0f4B98
+	#data bank0f.loc_8c0f4BC8
+	#data bank0f.loc_8c0f4D82
 
 loc_8c162154:
-#data bank0f.loc_8c0f4BDA
-
-loc_8c162158:
-#data bank0f.loc_8c0f4C20
-
-loc_8c16215C:
-#data bank0f.loc_8c0f4C6C
-
-loc_8c162160:
-#data bank0f.loc_8c0f4CA6
-
-loc_8c162164:
-#data bank0f.loc_8c0f4C6C
-
-loc_8c162168:
-#data bank0f.loc_8c0f4CF2
-
-loc_8c16216C:
-#data bank0f.loc_8c0f4D48
+	#data bank0f.loc_8c0f4BDA
+	#data bank0f.loc_8c0f4C20
+	#data bank0f.loc_8c0f4C6C
+	#data bank0f.loc_8c0f4CA6
+	#data bank0f.loc_8c0f4C6C
+	#data bank0f.loc_8c0f4CF2
+	#data bank0f.loc_8c0f4D48
 
 loc_8c162170:
-#data bank0f.loc_8c0f4D9A
-
-loc_8c162174:
-#data bank0f.loc_8c0f4DA4
-
-loc_8c162178:
-#data bank0f.loc_8c0f4D82
+	#data bank0f.loc_8c0f4D9A
+	#data bank0f.loc_8c0f4DA4
+	#data bank0f.loc_8c0f4D82
 
 loc_8c16217C:
-#data bank0f.loc_8c0f4DD4
-
-loc_8c162180:
-#data bank0f.loc_8c0f4E0E
-
-loc_8c162184:
-#data bank0f.loc_8c0f4E2A
-
-loc_8c162188:
-#data bank0f.loc_8c0f530E
+	#data bank0f.loc_8c0f4DD4
+	#data bank0f.loc_8c0f4E0E
+	#data bank0f.loc_8c0f4E2A
+	#data bank0f.loc_8c0f530E
 
 loc_8c16218C:
-#data bank0f.loc_8c0f4E3E
-
-loc_8c162190:
-#data bank0f.loc_8c0f4E3E
-
-loc_8c162194:
-#data bank0f.loc_8c0f4E44
-
-loc_8c162198:
-#data bank0f.loc_8c0f4E3E
-
-loc_8c16219C:
-#data bank0f.loc_8c0f5088
-
-loc_8c1621A0:
-#data bank0f.loc_8c0f4E3E
-
-loc_8c1621A4:
-#data bank0f.loc_8c0f529C
+	#data bank0f.loc_8c0f4E3E
+	#data bank0f.loc_8c0f4E3E
+	#data bank0f.loc_8c0f4E44
+	#data bank0f.loc_8c0f4E3E
+	#data bank0f.loc_8c0f5088
+	#data bank0f.loc_8c0f4E3E
+	#data bank0f.loc_8c0f529C
 
 loc_8c1621A8:
-#data bank0f.loc_8c0f4DD4
+	#data bank0f.loc_8c0f4DD4
+	#data bank0f.loc_8c0f5324
+	#data bank0f.loc_8c0f4E2A
+	#data bank0f.loc_8c0f530E
 
-loc_8c1621AC:
-#data bank0f.loc_8c0f5324
-
-loc_8c1621B0:
-#data bank0f.loc_8c0f4E2A
-
-loc_8c1621B4:
-#data bank0f.loc_8c0f530E
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1621B8:
 #data 0x00000000
 #data 0x00000000
@@ -2390,28 +2332,17 @@ loc_8c1621B8:
 #data 0x00000000
 #data 0x80000000
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1621D0:
-#data bank0f.loc_8c0f55A0
+	#data bank0f.loc_8c0f55A0
+	#data bank0f.loc_8c0f55B6
+	#data bank0f.loc_8c0f55D6
+	#data bank0f.loc_8c0f561C
+	#data bank0f.loc_8c0f5640
+	#data bank0f.loc_8c0f5664
+	#data bank03.loc_8c03D46A
 
-loc_8c1621D4:
-#data bank0f.loc_8c0f55B6
-
-loc_8c1621D8:
-#data bank0f.loc_8c0f55D6
-
-loc_8c1621DC:
-#data bank0f.loc_8c0f561C
-
-loc_8c1621E0:
-#data bank0f.loc_8c0f5640
-
-loc_8c1621E4:
-#data bank0f.loc_8c0f5664
-
-loc_8c1621E8:
-#data bank03.loc_8c03D46A
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1621EC:
 #data 0x55545352
 #data 0x00005756
@@ -2423,7 +2354,6 @@ loc_8c1621EC:
 #data 0x0000000A
 #data 0x0000000A
 
-#align4
 loc_8c162210:
 #data 0xC3250000
 #data 0x42F00000

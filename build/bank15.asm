@@ -541,6 +541,8 @@ loc_8c150DD8:
 	#data 0xFB00 0x0500 ;39 BoneWolv
 	#data 0xFC00 0x0400 ;3a Servbot
 
+
+;Atack Super Jump Y Drag
 loc_8c150EC4:
 	#data 0xFFB0 ;00 Ryu
 	#data 0xFFB0 ;01 Zangief
@@ -7693,14 +7695,10 @@ loc_8c154864:
 
 
 loc_8c15486A:
-nop
-sts mach,r0
-rts
-mov.b @(r0,r0),r0
+	#data 0x0009 0x000a
+	#data 0x000b 0x000c
+	#data 0x000d
 
-#data 0x000D
-
-#align4
 loc_8c154874:
 #data 0x44200000
 #data 0x432B6DB6
@@ -7738,44 +7736,36 @@ loc_8c1548B2:
 #data 0x10141016
 #data 0x0E180F12
 
-#align4
 loc_8c1548BC:
-#data 0x44200000
-#data 0x42892492
-#data 0x442D5555
-#data 0x43452492
-#data 0x440DAAAA
+	#data 0x44200000
+	#data 0x42892492
+	#data 0x442D5555
+	#data 0x43452492
+	#data 0x440DAAAA
 
-#align4
 loc_8c1548D0:
-#data 0x439A4924
-#data 0x43E95555
-#data 0x435EDB6D
-#data 0x43AA0000
-#data 0x439C6DB7
+	#data 0x439A4924
+	#data 0x43E95555
+	#data 0x435EDB6D
+	#data 0x43AA0000
+	#data 0x439C6DB7
 
-#align4
 loc_8c1548E4:
-#data 0x43820000
-#data 0x43AFB6DB
-#data 0x43200000
-#data 0x43F00000
-#data 0x43695555
-#data 0x43A94924
+	#data 0x43820000
+	#data 0x43AFB6DB
+	#data 0x43200000
+	#data 0x43F00000
+	#data 0x43695555
+	#data 0x43A94924
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1548FC:
-#data bank08.loc_8c08B71A
+	#data bank08.loc_8c08B71A
+	#data bank08.loc_8c08B7AA
+	#data bank08.loc_8c08B7DC
+	#data bank08.loc_8c08B7EA
 
-loc_8c154900:
-#data bank08.loc_8c08B7AA
-
-loc_8c154904:
-#data bank08.loc_8c08B7DC
-
-loc_8c154908:
-#data bank08.loc_8c08B7EA
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c15490C:
 #data 0xFFFA0000
 #data 0x00000000
@@ -7804,25 +7794,18 @@ loc_8c154928:
 #data 0x002FFFD7
 #data 0x00003D02
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c15495C:
-#data bank08.loc_8c08B858
-
-loc_8c154960:
-#data bank08.loc_8c08BA14
-
-loc_8c154964:
-#data bank08.loc_8c08BB22
-
-loc_8c154968:
-#data bank08.loc_8c08BB30
+	#data bank08.loc_8c08B858
+	#data bank08.loc_8c08BA14
+	#data bank08.loc_8c08BB22
+	#data bank08.loc_8c08BB30
 
 loc_8c15496C:
-#data bank08.loc_8c08BA28
+	#data bank08.loc_8c08BA28
+	#data bank08.loc_8c08BB00
 
-loc_8c154970:
-#data bank08.loc_8c08BB00
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c154974:
 #data 0xFFFA0000
 #data 0x00000000
