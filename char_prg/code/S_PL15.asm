@@ -7175,7 +7175,7 @@ code_CE32BB6:
 
 ;-------------------------------------------------------------------------------
 ;Write Tree Super
-PL15_Assists:
+PL15_TmHypMn:
 	mov 0x00,r0 ; r0 set to 0x00
 	mov.b r0,@(0x05,r4) 
 	mov 0x03,r3 ; r3 set to 0x03
@@ -7187,7 +7187,7 @@ PL15_Assists:
 	jmp @r3
 	mov 0x1D,r5
 
-code_CE32BCE:
+PL15_TmHypAs:
 	mov 0x00,r0 ; r0 set to 0x00
 	mov.b r0,@(0x05,r4) 
 	mov 0x03,r3 ; r3 set to 0x03
@@ -7201,7 +7201,7 @@ code_CE32BCE:
 
 ;==============================================
 ;Assist Write
-code_CE32BE2:
+PL15_Assists:
 	mov 0x00,r5 ; r5 set to 0x00
 	mov r5,r0 ; r0 set to 0x00
 	nop 
@@ -7241,7 +7241,7 @@ code_CE32C10:
 	mov 0x15,r5
 
 ;##############################################
-code_CE32C1C:
+PL15_AlpCntr:
 	mov 0x00,r0 ; r0 set to 0x00
 	mov.b r0,@(0x05,r4) 
 	mov.b r0,@(0x07,r4) 
@@ -7438,7 +7438,7 @@ SPL_JumpTable:
 	#data PL15_FwdDash PL15_BckDash code_CE3112E code_CE3118C
 	#data PL15_SpecPRG code_CE327F0 code_CE328F8 code_CE329E8
 	#data code_CE32B90 PL15_DlyHypC code_CE31250 code_CE30D98
-	#data PL15_Assists code_CE32BCE code_CE32BE2 code_CE32C1C
+	#data PL15_TmHypMn PL15_TmHypAs PL15_Assists PL15_AlpCntr
 	#data 0x00000000 0x00000000 0x00000000 code_CE32C76
 	#data 0x00000000 0x00000000 0x00000000 0x00000000
 

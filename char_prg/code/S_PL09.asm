@@ -5748,7 +5748,7 @@ loc_CE3251E:
 	mov.l @r15+,r14
 
 ;==============================================
-PL09_Assists:
+PL09_TmHypMn:
 	mov 0x00,r0
 	mov.b r0,@(0x5,r4)
 	mov.b r0,@(0x7,r4)
@@ -5773,7 +5773,7 @@ loc_ce32548:
 	mov 0x1D,r5
 
 ;==============================================
-loc_ce3254E:
+PL09_TmHypAs:
 	mov 0x00,r0
 	mov.b r0,@(0x5,r4)
 	mov.b r0,@(0x7,r4)
@@ -5798,7 +5798,7 @@ loc_ce3256C:
 	mov 0x1D,r5
 
 ;==============================================
-loc_CE32572:
+PL09_Assists:
 	mov 0x00,r5 ; r5 set to 0x00
 	mov r5,r0 ; r0 set to 0x00
 	nop
@@ -5865,7 +5865,7 @@ ptr_CE325C8_to_fn_extern_8C0530D8:
 	#data fn_extern_8C0530D8
 
 ;==============================================
-loc_CE325CC:
+PL09_AlpCntr:
 	mov 0x00,r5 ; r5 set to 0x00
 	mov r5,r0 ; r0 set to 0x00
 	nop
@@ -6193,7 +6193,7 @@ SPL_JumpTable:
 	#data PL09_FwdDash PL09_BckDash loc_CE3128A loc_CE31316
 	#data PL09_SpecPRG loc_CE31E76 loc_CE31FA0 loc_CE322A8
 	#data loc_CE324DC PL09_DlyHyprC loc_CE32608 loc_ce30E9C
-	#data PL09_Assists loc_ce3254E loc_CE32572 loc_CE325CC
+	#data PL09_TmHypMn PL09_TmHypAs PL09_Assists PL09_AlpCntr
 	#data 0x00000000 0x00000000 0x00000000 0x00000000
 	#data 0x00000000 0x00000000 0x00000000 0x00000000
 
