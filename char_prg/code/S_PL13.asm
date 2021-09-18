@@ -424,29 +424,29 @@ loc_ce30254_to_loc_ce343BC:
 
 ;==============================================
 loc_ce30258:
-	mov.l r14,@-r15                     
-	mov r4,r14                          
-	sts.l pr,@-r15                      
-	mov.l @(0xfc,pc),r5                 
-	mov.w @(0xe8,pc),r6                 
-	mov.l @(0xfc,pc),r3                 
-	jsr @r3                              
-	add r14,r6                          
-	extu.b r0,r0                        
-	tst r0,r0                           
-	bt loc_ce30290                        
-	mov.w @(0xdc,pc),r0                 
-	mov.b @(r0,r14),r0                  
-	extu.b r0,r0                        
-	cmp/eq 0x02,r0                      
-	bf loc_ce30286                        
-	mov.w @(0xd4,pc),r0                 
-	mov.b @(r0,r14),r2                  
-	tst r2,r2                           
-	bf loc_ce30290                        
-	mov.b @(r0,r14),r2                  
-	add 0x01,r2                         
-	mov.b r2,@(r0,r14)                
+	mov.l r14,@-r15
+	mov r4,r14
+	sts.l pr,@-r15
+	mov.l @(0xfc,pc),r5
+	mov.w @(0xe8,pc),r6
+	mov.l @(0xfc,pc),r3
+	jsr @r3
+	add r14,r6
+	extu.b r0,r0
+	tst r0,r0
+	bt loc_ce30290
+	mov.w @(0xdc,pc),r0
+	mov.b @(r0,r14),r0
+	extu.b r0,r0
+	cmp/eq 0x02,r0
+	bf loc_ce30286
+	mov.w @(0xd4,pc),r0
+	mov.b @(r0,r14),r2
+	tst r2,r2
+	bf loc_ce30290
+	mov.b @(r0,r14),r2
+	add 0x01,r2
+	mov.b r2,@(r0,r14)
 
 loc_ce30286:
 	mov.w @(0xc8,pc),r0
@@ -462,25 +462,25 @@ loc_ce30290:
 	mov.l @r15+,r14
 
 loc_ce30298:
-	mov.w @(0xb0,pc),r5                 
-	mov.l @(0xc8,pc),r3                 
-	add r14,r5                          
-	jsr @r3                              
-	mov r14,r4                          
-	mov 0x00,r0                         
-	mov.b r0,@(0x5,r14)                 
-	mov 0x03,r3                         
-	mov.b r0,@(0x7,r14)                 
-	mov 0x1D,r5                         
-	mov.b r0,@(0x6,r14)                 
-	mov.w @(0xa2,pc),r0                 
-	mov.b r3,@(r0,r14)                  
-	mov.l @(0xb4,pc),r3                 
-	jsr @r3                              
-	mov r14,r4                          
-	mov 0x01,r0                         
-	lds.l @r15+,pr                      
-	rts                                  
+	mov.w @(0xb0,pc),r5
+	mov.l @(0xc8,pc),r3
+	add r14,r5
+	jsr @r3
+	mov r14,r4
+	mov 0x00,r0
+	mov.b r0,@(0x5,r14)
+	mov 0x03,r3
+	mov.b r0,@(0x7,r14)
+	mov 0x1D,r5
+	mov.b r0,@(0x6,r14)
+	mov.w @(0xa2,pc),r0
+	mov.b r3,@(r0,r14)
+	mov.l @(0xb4,pc),r3
+	jsr @r3
+	mov r14,r4
+	mov 0x01,r0
+	lds.l @r15+,pr
+	rts
 	mov.l @r15+,r14
 
 ;==============================================
@@ -538,33 +538,33 @@ loc_ce302F2:
 
 ;==============================================
 loc_ce3031A:
-	mov.l r14,@-r15                     
-	mov r4,r14                          
-	sts.l pr,@-r15                      
-	mov.l @(0x4c,pc),r5                 
-	mov.w @(0x34,pc),r6                 
-	mov.l @(0x38,pc),r3                 
-	jsr @r3                              
-	add r14,r6                          
-	extu.b r0,r0                        
-	tst r0,r0                           
-	bt loc_ce30344                        
+	mov.l r14,@-r15
+	mov r4,r14
+	sts.l pr,@-r15
+	mov.l @(0x4c,pc),r5
+	mov.w @(0x34,pc),r6
+	mov.l @(0x38,pc),r3
+	jsr @r3
+	add r14,r6
+	extu.b r0,r0
+	tst r0,r0
+	bt loc_ce30344
 	bsr loc_ce3001c
-	mov r14,r4                          
-	extu.b r0,r0                        
-	tst r0,r0                           
-	bt loc_ce30344                        
-	mov.w @(0x14,pc),r0                 
-	mov.l @(r0,r14),r2                  
-	mov.b @r2,r3                        
-	tst r3,r3                           
-	bf loc_ce30374                        
+	mov r14,r4
+	extu.b r0,r0
+	tst r0,r0
+	bt loc_ce30344
+	mov.w @(0x14,pc),r0
+	mov.l @(r0,r14),r2
+	mov.b @r2,r3
+	tst r3,r3
+	bf loc_ce30374
 
 loc_ce30344:
-	lds.l @r15+,pr                      
-	mov 0x00,r0                         
-	rts                                  
-	mov.l @r15+,r14  
+	lds.l @r15+,pr
+	mov 0x00,r0
+	rts
+	mov.l @r15+,r14
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce30346:
@@ -938,7 +938,7 @@ loc_ce30598:
 	lds.l @r15+,pr
 	mov 0x00,r0
 	rts
-	mov.l @r15+,r14 
+	mov.l @r15+,r14
 
 loc_ce305A0:
 	mov.w @(0x10,pc),r0
@@ -2302,7 +2302,7 @@ loc_ce30E20:
 	jmp @r2
 	mov.l @r15+,r14
 
-	loc_ce30E36:
+loc_ce30E36:
 	lds.l @r15+,pr
 	rts
 	mov.l @r15+,r14
@@ -3688,7 +3688,7 @@ loc_ce3171C:
 loc_ce3172E:
 	lds.l @r15+,pr
 	rts
-	mov.l @r15+,r14 
+	mov.l @r15+,r14
 
 ;==============================================
 Rby_SpecPRG:
@@ -3696,7 +3696,7 @@ Rby_SpecPRG:
 	mov r4,r3
 	mov.l r4,@-r15
 	mov.b @(r0,r3),r2
-	mov.l @(loc_ce31788_to_loc_ce34988_to_loc_ce31748,pc),r0 ; r0 set to 0xCE34988
+	mov.l @(loc_ce31788_to_Special_PRG_Table,pc),r0 ; r0 set to 0xCE34988
 	extu.b r2,r2
 	shll2 r2
 	mov.l @(r0,r2),r3
@@ -3746,8 +3746,8 @@ loc_ce31780_to_loc_ce34968:
 	#data loc_ce34968
 loc_ce31784:
 	#data loc_8c0514B8
-loc_ce31788_to_loc_ce34988_to_loc_ce31748:
-	#data loc_ce34988_to_loc_ce31748
+loc_ce31788_to_Special_PRG_Table:
+	#data Special_PRG_Table
 loc_ce3178C_to_loc_ce349BC_to_loc_ce31790:
 	#data loc_ce349BC_to_loc_ce31790
 
@@ -3806,16 +3806,16 @@ loc_ce317E2:
 	bra loc_ce317F2
 	mov 0x3F,r3
 
-	loc_ce317F0:
+loc_ce317F0:
 	mov 0x46,r3 ; r3 set to 0x46
 
-	loc_ce317F2:
+loc_ce317F2:
 	shll2 r3 ; r3 set to 0x118
 	add r3,r13
 	bra loc_ce3181E
 	nop
 
-	loc_ce317FA:
+loc_ce317FA:
 	mov.w @(loc_ce3189E,pc),r0 ; r0 set to 0x130
 	mov.w @(r0,r14),r3
 	tst r3,r3
@@ -3824,10 +3824,10 @@ loc_ce317E2:
 	bra loc_ce3180A
 	mov 0x01,r2
 
-	loc_ce31808:
+loc_ce31808:
 	mov 0x02,r2 ; r2 set to 0x02
 
-	loc_ce3180A:
+loc_ce3180A:
 	mov.b r2,@(r0,r14)
 	mov.w @(loc_ce3189E,pc),r0 ; r0 set to 0x130,r0 set to 0x130
 	mov.w @(r0,r14),r1
@@ -3907,7 +3907,7 @@ loc_ce3182E:
 	nop
 	mov.b r0,@(0x6,r5)
 	bra loc_ce318E6
-	mov.w r0,@(0x1e,r14) 
+	mov.w r0,@(0x1e,r14)
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce3189A:
@@ -4067,7 +4067,7 @@ loc_ce3197A:
 	mov r7,r5
 	mov 0x13,r6
 	jsr @r13
-	mov r14,r4 
+	mov r14,r4
 
 loc_ce319A8:
 	lds.l @r15+,pr
@@ -7218,7 +7218,7 @@ loc_ce32E6C:
 	mov.b @(r0,r14),r0
 	extu.b r0,r0
 	cmp/eq 0x02,r0
-	bt 0x00002eee
+	bt loc_ce32eee
 	mov.w @(0xc2,pc),r0
 	mov.l @(0xd8,pc),r3
 	mov.b r13,@(r0,r14)
@@ -7258,7 +7258,7 @@ loc_ce32F08:
 	mov.w @(0x8a,pc),r0
 	mov.b @(r0,r14),r0
 	cmp/eq 0x01,r0
-	bf 0x00002f42
+	bf loc_ce32f42
 	mov.w @(0x82,pc),r0
 	mov 0x00,r2
 	mov.l @(0xa0,pc),r3
@@ -7279,7 +7279,7 @@ loc_ce32F42:
 	mov.w @(0x64,pc),r0
 	mov.b @(r0,r14),r0
 	cmp/eq 0x02,r0
-	bf 0x00002f6a
+	bf loc_ce32f6a
 	mov.b @(0x6,r14),r0
 	mov 0x00,r3
 	mov 0x10,r7
@@ -7423,7 +7423,7 @@ loc_ce33012:
 	mov 0x38,r0
 	fmov @(r0,r14),fr2
 	fcmp/gt fr2,fr3
-	bf 0x0000306a
+	bf loc_ce3306a
 	mov.b @(0x6,r14),r0
 	fldi0 fr4
 	add 0x01,r0
@@ -7566,392 +7566,474 @@ loc_ce33124_to_loc_ce34A6C_to_loc_ce33128:
 
 ;==============================================
 loc_ce33128:
-#data 0x6E432FE6
-#data 0x2FD6E341
-#data 0xF48DED00
-#data 0x84E64F22
-#data 0x80E67001
-#data 0x0E34908B
-#data 0x0ED5700B
-#data 0x0ED470F2
-#data 0xD3487026
-#data 0x84E20ED6
-#data 0x600C6232
-#data 0x727C4000
-#data 0x7101012D
-#data 0xE05C0215
-#data 0xE060FE47
-#data 0xE068FE47
-#data 0xE06CFE47
-#data 0x9073FE47
-#data 0x0ED4D23F
-#data 0xF3E69071
-#data 0xFE37E038
-#data 0x64E3420B
-#data 0x65D3D33C
-#data 0x64E3430B
-#data 0x00EC9068
-#data 0x8806600C
-#data 0x64E38F06
-#data 0xE3109064
-#data 0x0E249261
-#data 0x0E347001
+	mov.l r14,@-r15
+	mov r4,r14
+	mov 0x41,r3
+	mov.l r13,@-r15
+	mov 0x00,r13
+	fldi0 fr4
+	sts.l pr,@-r15
+	mov.b @(0x6,r14),r0
+	add 0x01,r0
+	mov.b r0,@(0x6,r14)
+	mov.w @(0x116,pc),r0
+	mov.b r3,@(r0,r14)
+	add 0x0B,r0
+	mov.w r13,@(r0,r14)
+	add 0xF2,r0
+	mov.b r13,@(r0,r14)
+	add 0x26,r0
+	mov.l @(0x120,pc),r3
+	mov.l r13,@(r0,r14)
+	mov.b @(0x2,r14),r0
+	mov.l @r3,r2
+	extu.b r0,r0
+	shll r0
+	add 0x7C,r2
+	mov.w @(r0,r2),r1
+	add 0x01,r1
+	mov.w r1,@(r0,r2)
+	mov 0x5C,r0
+	fmov fr4,@(r0,r14)
+	mov 0x60,r0
+	fmov fr4,@(r0,r14)
+	mov 0x68,r0
+	fmov fr4,@(r0,r14)
+	mov 0x6C,r0
+	fmov fr4,@(r0,r14)
+	mov.w @(0xe6,pc),r0
+	mov.l @(0xfc,pc),r2
+	mov.b r13,@(r0,r14)
+	mov.w @(0xe2,pc),r0
+	fmov @(r0,r14),fr3
+	mov 0x38,r0
+	fmov fr3,@(r0,r14)
+	jsr @r2
+	mov r14,r4
+	mov.l @(0xf0,pc),r3
+	mov r13,r5
+	jsr @r3
+	mov r14,r4
+	mov.w @(0xd0,pc),r0
+	mov.b @(r0,r14),r0
+	extu.b r0,r0
+	cmp/eq 0x06,r0
+	bf.s loc_ce331a0
+	mov r14,r4
+	mov.w @(0xc8,pc),r0
+	mov 0x10,r3
+	mov.w @(0xc2,pc),r2
+	mov.b r2,@(r0,r14)
+	add 0x01,r0
+	mov.b r3,@(r0,r14)
 
-#align4
 loc_ce331A0:
-#data 0x430BD335
-#data 0xE0230009
-#data 0xE0210ED4
-#data 0x60D30ED4
-#data 0xD3320009
-#data 0x81EE64E3
-#data 0x81EFE516
-#data 0x4F26E60A
-#data 0x432B6DF6
-#data 0x6EF6
+	mov.l @(0xd4,pc),r3
+	jsr @r3
+	nop
+	mov 0x23,r0
+	mov.b r13,@(r0,r14)
+	mov 0x21,r0
+	mov.b r13,@(r0,r14)
+	mov r13,r0
+	nop
+	mov.l @(0xc8,pc),r3
+	mov r14,r4
+	mov.w r0,@(0x1c,r14)
+	mov 0x16,r5
+	mov.w r0,@(0x1e,r14)
+	mov 0x0A,r6
+	lds.l @r15+,pr
+	mov.l @r15+,r13
+	jmp @r3
+	mov.l @r15+,r14
 
 loc_ce331C6:
-#data 0x2FE6
-#data 0x7FF44F22
-#data 0x6E439049
-#data 0x0E34E302
-#data 0x9045E205
-#data 0x90440E24
-#data 0x880100EC
-#data 0x90408B16
-#data 0xD328E200
-#data 0x0E2465F3
-#data 0xF308C724
-#data 0xE601C724
-#data 0xF308FF3A
-#data 0xFF37E004
-#data 0x64E3430B
-#data 0xE70ED222
-#data 0xE6136573
-#data 0x64E3420B
-#data 0x81EE902C
+	mov.l r14,@-r15
+	sts.l pr,@-r15
+	add 0xF4,r15
+	mov.w @(0x92,pc),r0
+	mov r4,r14
+	mov 0x02,r3
+	mov.b r3,@(r0,r14)
+	mov 0x05,r2
+	mov.w @(0x8a,pc),r0
+	mov.b r2,@(r0,r14)
+	mov.w @(0x88,pc),r0
+	mov.b @(r0,r14),r0
+	cmp/eq 0x01,r0
+	bf loc_ce33210
+	mov.w @(0x80,pc),r0
+	mov 0x00,r2
+	mov.l @(0xa0,pc),r3
+	mov r15,r5
+	mov.b r2,@(r0,r14
+	mova @(0x90,pc),r0
+	fmov @r0,fr3
+	mova @(0x90,pc),r0
+	mov 0x01,r6
+	fmov fr3,@r15
+	fmov @r0,fr3
+	mov 0x04,r0
+	fmov fr3,@(r0,r15)
+	jsr @r3
+	mov r14,r4
+	mov.l @(0x88,pc),r2
+	mov 0x0E,r7
+	mov r7,r5
+	mov 0x13,r6
+	jsr @r2
+	mov r14,r4
+	mov.w @(0x58,pc),r0
+	mov.w r0,@(0x1c,r14)
 
-#align4
 loc_ce33210:
-#data 0x03EC902B
-#data 0x8d034311
-#data 0x84E664E3
-#data 0x80E67001
+	mov.w @(0x56,pc),r0
+	mov.b @(r0,r14),r3
+	cmp/pz r3
+	bt.s loc_ce33220
+	mov r14,r4
+	mov.b @(0x6,r14),r0
+	add 0x01,r0
+	mov.b r0,@(0x6,r14)
 
-#align4
 loc_ce33220:
-#data 0x430BD31B
-#data 0x7F0C0009
-#data 0x000B4F26
-#data 0x6EF6
-;==============================================
+	mov.l @(0x6c,pc),r3
+	jsr @r3
+	nop
+	add 0x0C,r15
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
 
+;==============================================
 loc_ce3322E:
-#data 0x9018
-#data 0xE205E302
-#data 0x90150434
-#data 0x854E0424
-#data 0x814E70FF
-#data 0x600F7001
-#data 0x8B042008
-#data 0x70018446
-#data 0xE0788046
-#data 0x814E
+	mov.w @(0x30,pc),r0
+	mov 0x02,r3
+	mov 0x05,r2
+	mov.b r3,@(r0,r4
+	mov.w @(0x2a,pc),r0
+	mov.b r2,@(r0,r4
+	mov.w @(0x1c,r4),r0
+	add 0xFF,r0
+	mov.w r0,@(0x1c,r4)
+	add 0x01,r0
+	exts.w r0,r0
+	tst r0,r0
+	bf loc_ce33252
+	mov.b @(0x6,r4),r0
+	add 0x01,r0
+	mov.b r0,@(0x6,r4)
+	mov 0x78,r0
+	mov.w r0,@(0x1c,r4)
 
 loc_ce33252:
-#data 0x000B
-#data 0x01A10009
-#data 0x041C01F9
-#data 0x00FF0255
-#data 0x03F803F0
-#data 0x01410328
-#data 0x014300B4
-#data mem_8c2896b0
-#data loc_8c05218A
-#data loc_8c035162
-#data loc_8c05115A
-#data loc_8c034E8C
-#data 0xC1D55555
-#data 0x43892492
-#data loc_8c050834
-#data loc_8c07A428
-#data loc_8c034DEE
+	rts
+	nop
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+loc_ce33256:
+	#data 0x01A1
+loc_ce33258:
+	#data 0x01F9
+loc_ce3325a:
+	#data 0x041C
+loc_ce3325c:
+	#data 0x0255
+loc_ce3325e:
+	#data 0x00FF
+loc_ce33260:
+	#data 0x03F0
+loc_ce33262:
+	#data 0x03F8
+loc_ce33264:
+	#data 0x0328
+loc_ce33266:
+	#data 0x0141
+loc_ce33268:
+	#data 0x00B4
+loc_ce3326a:
+	#data 0x0143
+	#align4
 
+loc_ce3326c:
+	#data mem_8c2896b0
+loc_ce33270:
+	#data loc_8c05218A
+loc_ce33274:
+	#data loc_8c035162
+loc_ce33278:
+	#data loc_8c05115A
+loc_ce3327c:
+	#data loc_8c034E8C
+loc_ce33280:
+	#data 0xC1D55555
+loc_ce33284:
+	#data 0x43892492
+loc_ce33288:
+	#data loc_8c050834
+loc_ce3328c:
+	#data loc_8c07A428
+loc_ce33290:
+	#data loc_8c034DEE
+
+;==============================================
 loc_ce33294:
-mov.w @(loc_ce333B2,pc),r0 ; r0 set to 0x3F8
-mov 0x02,r3 ; r3 set to 0x02
-mov.l r14,@-r15
-mov r4,r14
-mov 0x05,r2 ; r2 set to 0x05
-sts.l pr,@-r15
-mov.b r3,@(r0,r14)
-mov 0x01,r5 ; r5 set to 0x01
-mov.w @(loc_ce333B4,pc),r0 ; r0 set to 0x328
-mov 0x0D,r6 ; r6 set to 0x0D
-mov.l @(loc_ce333C0_to_loc_8c02FEC4,pc),r3 ; r3 set to 0x8C02FEC4
-mov.b r2,@(r0,r14)
-mov.b @(0x06,r14),r0
-add 0x01,r0 ; r0 set to 0x329
-mov.b r0,@(0x06,r14)
-jsr @r3
-mov r14,r4
-mov.w @(loc_ce333B6,pc),r0 ; r0 set to 0x130
-mov.w @(r0,r14),r3 ; r3 ??? bc r14 is ???
-tst r3,r3
-bt loc_ce332C8
-mov.l @(loc_ce333C8_to_loc_8c26A5A0,pc),r3 ; r3 set to 0x8C26A5A0
-mova @(loc_ce333C4,pc),r0  ; r0 set to 0xCE333C4
-fmov.s @r3,fr3 ; r3 ??
-bra loc_ce332D0
-fmov.s @r0,fr2
+	mov.w @(loc_ce333B2,pc),r0 ; r0 set to 0x3F8
+	mov 0x02,r3 ; r3 set to 0x02
+	mov.l r14,@-r15
+	mov r4,r14
+	mov 0x05,r2 ; r2 set to 0x05
+	sts.l pr,@-r15
+	mov.b r3,@(r0,r14)
+	mov 0x01,r5 ; r5 set to 0x01
+	mov.w @(loc_ce333B4,pc),r0 ; r0 set to 0x328
+	mov 0x0D,r6 ; r6 set to 0x0D
+	mov.l @(loc_ce333C0_to_loc_8c02FEC4,pc),r3 ; r3 set to 0x8C02FEC4
+	mov.b r2,@(r0,r14)
+	mov.b @(0x06,r14),r0
+	add 0x01,r0 ; r0 set to 0x329
+	mov.b r0,@(0x06,r14)
+	jsr @r3
+	mov r14,r4
+	mov.w @(loc_ce333B6,pc),r0 ; r0 set to 0x130
+	mov.w @(r0,r14),r3 ; r3 ??? bc r14 is ???
+	tst r3,r3
+	bt loc_ce332C8
+	mov.l @(loc_ce333C8_to_loc_8c26A5A0,pc),r3 ; r3 set to 0x8C26A5A0
+	mova @(loc_ce333C4,pc),r0  ; r0 set to 0xCE333C4
+	fmov.s @r3,fr3 ; r3 ??
+	bra loc_ce332D0
+	fmov.s @r0,fr2
 
 loc_ce332C8:
-mov.l @(loc_ce333D0_to_loc_8c26A5A4,pc),r2 ; r2 set to 0x8C26A5A4
-mova @(loc_ce333CC,pc),r0  ; r0 init to 0xCE333CC
-fmov.s @r0,fr2 ; r2 ??
-fmov.s @r2,fr3
+	mov.l @(loc_ce333D0_to_loc_8c26A5A4,pc),r2 ; r2 set to 0x8C26A5A4
+	mova @(loc_ce333CC,pc),r0  ; r0 init to 0xCE333CC
+	fmov.s @r0,fr2 ; r2 ??
+	fmov.s @r2,fr3
 
 loc_ce332D0:
-fadd fr2,fr3
-mov 0x34,r0 ; r0 set to 0x34,r0 set to 0x34
-mov 0x0F,r7 ; r7 set to 0x0F,r7 set to 0x0F
-mov.l @(loc_ce333D4_to_loc_8c07A428,pc),r3 ; r3 set to 0x8C07A428,r3 set to 0x8C07A428
-mov r7,r5 ; r5 set to 0x0F,r5 set to 0x0F
-mov 0x13,r6 ; r6 set to 0x13,r6 set to 0x13
-fmov.s fr3,@(r0,r14)
-mov.w @(loc_ce333B8,pc),r0 ; r0 set to 0xB4,r0 set to 0xB4
-mov.w r0,@(0x1C,r14)
-jsr @r3
-mov r14,r4
-mov.l @(loc_ce333D8_to_loc_8c03319E,pc),r2 ; r2 set to 0x8C03319E,r2 set to 0x8C03319E
-jsr @r2
-nop
-mov.b r0,@(0x07,r14)
-mov 0x05,r5 ; r5 set to 0x05,r5 set to 0x05
-mov.b @(0x07,r14),r0
-mov.l @(loc_ce333DC_to_loc_8c042008,pc),r3 ; r3 set to 0x8C042008,r3 set to 0x8C042008
-and 0x01,r0
-mov.b r0,@(0x07,r14)
-jsr @r3
-mov r14,r4
-mov.l @(loc_ce333E0_to_loc_8c034E8C,pc),r2 ; r2 set to 0x8C034E8C,r2 set to 0x8C034E8C
-mov 0x16,r5 ; r5 set to 0x16,r5 set to 0x16
-mov 0x0B,r6 ; r6 set to 0x0B,r6 set to 0x0B
-jsr @r2
-mov r14,r4
-lds.l @r15+,pr
-mov.l @(loc_ce333E4_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE,r3 set to 0x8C034DEE
-mov r14,r4
-jmp @r3
-mov.l @r15+,r14
+	fadd fr2,fr3
+	mov 0x34,r0 ; r0 set to 0x34,r0 set to 0x34
+	mov 0x0F,r7 ; r7 set to 0x0F,r7 set to 0x0F
+	mov.l @(loc_ce333D4_to_loc_8c07A428,pc),r3 ; r3 set to 0x8C07A428,r3 set to 0x8C07A428
+	mov r7,r5 ; r5 set to 0x0F,r5 set to 0x0F
+	mov 0x13,r6 ; r6 set to 0x13,r6 set to 0x13
+	fmov.s fr3,@(r0,r14)
+	mov.w @(loc_ce333B8,pc),r0 ; r0 set to 0xB4,r0 set to 0xB4
+	mov.w r0,@(0x1C,r14)
+	jsr @r3
+	mov r14,r4
+	mov.l @(loc_ce333D8_to_loc_8c03319E,pc),r2 ; r2 set to 0x8C03319E,r2 set to 0x8C03319E
+	jsr @r2
+	nop
+	mov.b r0,@(0x07,r14)
+	mov 0x05,r5 ; r5 set to 0x05,r5 set to 0x05
+	mov.b @(0x07,r14),r0
+	mov.l @(loc_ce333DC_to_loc_8c042008,pc),r3 ; r3 set to 0x8C042008,r3 set to 0x8C042008
+	and 0x01,r0
+	mov.b r0,@(0x07,r14)
+	jsr @r3
+	mov r14,r4
+	mov.l @(loc_ce333E0_to_loc_8c034E8C,pc),r2 ; r2 set to 0x8C034E8C,r2 set to 0x8C034E8C
+	mov 0x16,r5 ; r5 set to 0x16,r5 set to 0x16
+	mov 0x0B,r6 ; r6 set to 0x0B,r6 set to 0x0B
+	jsr @r2
+	mov r14,r4
+	lds.l @r15+,pr
+	mov.l @(loc_ce333E4_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE,r3 set to 0x8C034DEE
+	mov r14,r4
+	jmp @r3
+	mov.l @r15+,r14
 
 loc_ce33310:
-mov.w @(loc_ce333B2,pc),r0 ; r0 set to 0x3F8
-mov 0x02,r3 ; r3 set to 0x02
-mov.l r14,@-r15
-mov r4,r14
-mov.l @(loc_ce333E8_to_loc_8c26A8E4,pc),r1 ; r1 set to 0x8C26A8E4
-mov 0x05,r2 ; r2 set to 0x05
-mov.l r13,@-r15
-mov.l r12,@-r15
-sts.l pr,@-r15
-mov.b r3,@(r0,r14)
-mov.w @(loc_ce333B4,pc),r0 ; r0 set to 0x328
-mov.b r2,@(r0,r14)
-mov.l @r1,r3 ; r3 ??
-tst r3,r3
-bt loc_ce33332
-bra loc_ce33440
-nop
+	mov.w @(loc_ce333B2,pc),r0 ; r0 set to 0x3F8
+	mov 0x02,r3 ; r3 set to 0x02
+	mov.l r14,@-r15
+	mov r4,r14
+	mov.l @(loc_ce333E8_to_loc_8c26A8E4,pc),r1 ; r1 set to 0x8C26A8E4
+	mov 0x05,r2 ; r2 set to 0x05
+	mov.l r13,@-r15
+	mov.l r12,@-r15
+	sts.l pr,@-r15
+	mov.b r3,@(r0,r14)
+	mov.w @(loc_ce333B4,pc),r0 ; r0 set to 0x328
+	mov.b r2,@(r0,r14)
+	mov.l @r1,r3 ; r3 ??
+	tst r3,r3
+	bt loc_ce33332
+	bra loc_ce33440
+	nop
 
 loc_ce33332:
-mov.w @(loc_ce333BA,pc),r0 ; r0 set to 0x525
-mov.l @(loc_ce333D4_to_loc_8c07A428,pc),r12 ; r12 set to 0x8C07A428
-mov.b @(r0,r14),r3
-tst r3,r3
-bt/s loc_ce33392
-mov 0x10,r13 ; r13 set to 0x10
-mov.w @(0x1C,r14),r0
-cmp/eq 0x1E,r0
-bt loc_ce33392
-mov.l @(loc_ce333D8_to_loc_8c03319E,pc),r2 ; r2 set to 0x8C03319E
-jsr @r2
-nop
-mov 0x01,r3 ; r3 set to 0x01
-mov r0,r4 ; r4 set to 0x525
-and r3,r4 ; r4 ??
-extu.b r4,r4
-tst r4,r4
-bt/s loc_ce33368
-mov 0x13,r6 ; r6 set to 0x13
-mov.b @(0x06,r14),r0
-add 0x01,r0 ; r0 set to 0x526
-mov.b r0,@(0x06,r14)
-mov r13,r0 ; r0 set to 0x10
-nop
-mov.w r0,@(0x1C,r14)
-bra loc_ce3337C
-mov 0x0C,r7
+	mov.w @(loc_ce333BA,pc),r0 ; r0 set to 0x525
+	mov.l @(loc_ce333D4_to_loc_8c07A428,pc),r12 ; r12 set to 0x8C07A428
+	mov.b @(r0,r14),r3
+	tst r3,r3
+	bt/s loc_ce33392
+	mov 0x10,r13 ; r13 set to 0x10
+	mov.w @(0x1C,r14),r0
+	cmp/eq 0x1E,r0
+	bt loc_ce33392
+	mov.l @(loc_ce333D8_to_loc_8c03319E,pc),r2 ; r2 set to 0x8C03319E
+	jsr @r2
+	nop
+	mov 0x01,r3 ; r3 set to 0x01
+	mov r0,r4 ; r4 set to 0x525
+	and r3,r4 ; r4 ??
+	extu.b r4,r4
+	tst r4,r4
+	bt/s loc_ce33368
+	mov 0x13,r6 ; r6 set to 0x13
+	mov.b @(0x06,r14),r0
+	add 0x01,r0 ; r0 set to 0x526
+	mov.b r0,@(0x06,r14)
+	mov r13,r0 ; r0 set to 0x10
+	nop
+	mov.w r0,@(0x1C,r14)
+	bra loc_ce3337C
+	mov 0x0C,r7
 
 loc_ce33368:
-mov.b @(0x06,r14),r0
-add 0x01,r0
-mov.b r0,@(0x06,r14)
-mov.b @(0x07,r14),r0
-xor r3,r0
-mov.b r0,@(0x07,r14)
-mov r13,r0
-nop
-mov 0x0D,r7 ; r7 set to 0x0D
-mov.w r0,@(0x1C,r14)
+	mov.b @(0x06,r14),r0
+	add 0x01,r0
+	mov.b r0,@(0x06,r14)
+	mov.b @(0x07,r14),r0
+	xor r3,r0
+	mov.b r0,@(0x07,r14)
+	mov r13,r0
+	nop
+	mov 0x0D,r7 ; r7 set to 0x0D
+	mov.w r0,@(0x1C,r14)
 
 loc_ce3337C:
-mov r7,r5 ; r5 set to 0x0D
-jsr @r12
-mov r14,r4
-mov.l @(loc_ce333EC_to_loc_8c289732,pc),r2 ; r2 set to 0x8C289732,r2 set to 0x8C289732
-mov 0x18,r1 ; r1 set to 0x18,r1 set to 0x18
-mov.w @r2,r3
-cmp/ge r1,r3
-bf loc_ce33440
-mov 0x01,r0 ; r0 set to 0x01,r0 set to 0x01
-bra loc_ce33440
-mov.b r0,@(0x07,r14)
+	mov r7,r5 ; r5 set to 0x0D
+	jsr @r12
+	mov r14,r4
+	mov.l @(loc_ce333EC_to_loc_8c289732,pc),r2 ; r2 set to 0x8C289732,r2 set to 0x8C289732
+	mov 0x18,r1 ; r1 set to 0x18,r1 set to 0x18
+	mov.w @r2,r3
+	cmp/ge r1,r3
+	bf loc_ce33440
+	mov 0x01,r0 ; r0 set to 0x01,r0 set to 0x01
+	bra loc_ce33440
+	mov.b r0,@(0x07,r14)
 
 loc_ce33392:
-mov.w @(loc_ce333BC,pc),r0 ; r0 set to 0x348
-mov.w @(loc_ce333BE,pc),r2 ; r2 set to 0x200
-mov.w @(r0,r14),r3
-extu.w r3,r3
-tst r2,r3
-bt loc_ce333F0
-mov.b @(0x06,r14),r0
-add 0x01,r0 ; r0 set to 0x349
-mov.b r0,@(0x06,r14)
-mov r13,r0 ; r0 ??? bc r13 is ???
-nop
-mov 0x13,r6 ; r6 set to 0x13
-mov.w r0,@(0x1C,r14)
-mov 0x0C,r7 ; r7 set to 0x0C
-bra loc_ce33410
-mov r7,r5
+	mov.w @(loc_ce333BC,pc),r0 ; r0 set to 0x348
+	mov.w @(loc_ce333BE,pc),r2 ; r2 set to 0x200
+	mov.w @(r0,r14),r3
+	extu.w r3,r3
+	tst r2,r3
+	bt loc_ce333F0
+	mov.b @(0x06,r14),r0
+	add 0x01,r0 ; r0 set to 0x349
+	mov.b r0,@(0x06,r14)
+	mov r13,r0 ; r0 ??? bc r13 is ???
+	nop
+	mov 0x13,r6 ; r6 set to 0x13
+	mov.w r0,@(0x1C,r14)
+	mov 0x0C,r7 ; r7 set to 0x0C
+	bra loc_ce33410
+	mov r7,r5
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce333B2:
-#data 0x03F8
-
+	#data 0x03F8
 loc_ce333B4:
-#data 0x0328
-
+	#data 0x0328
 loc_ce333B6:
-#data 0x0130
-
+	#data 0x0130
 loc_ce333B8:
-#data 0x00B4
-
+	#data 0x00B4
 loc_ce333BA:
-#data 0x0525
-
+	#data 0x0525
 loc_ce333BC:
-#data 0x0348
-
+	#data 0x0348
 loc_ce333BE:
-#data 0x0200
+	#data 0x0200
+	#align4
 
-#align4
 loc_ce333C0_to_loc_8c02FEC4:
-#data loc_8c02FEC4
-
+	#data loc_8c02FEC4
 loc_ce333C4:
-#data 0x42A00000
-
-#align4
+	#data 0x42A00000
 loc_ce333C8_to_loc_8c26A5A0:
-#data loc_8c26A5A0
-
+	#data loc_8c26A5A0
 loc_ce333CC:
-#data 0xC2A00000
-
-#align4
+	#data 0xC2A00000
 loc_ce333D0_to_loc_8c26A5A4:
-#data loc_8c26A5A4
-
+	#data loc_8c26A5A4
 loc_ce333D4_to_loc_8c07A428:
-#data loc_8c07A428
-
+	#data loc_8c07A428
 loc_ce333D8_to_loc_8c03319E:
-#data loc_8c03319E
-
+	#data loc_8c03319E
 loc_ce333DC_to_loc_8c042008:
-#data loc_8c042008
-
+	#data loc_8c042008
 loc_ce333E0_to_loc_8c034E8C:
-#data loc_8c034E8C
-
+	#data loc_8c034E8C
 loc_ce333E4_to_loc_8c034DEE:
-#data loc_8c034DEE
-
+	#data loc_8c034DEE
 loc_ce333E8_to_loc_8c26A8E4:
-#data loc_8c26A8E4
-
+	#data loc_8c26A8E4
 loc_ce333EC_to_loc_8c289732:
-#data loc_8c289732
+	#data loc_8c289732
 
-
+;==============================================
 loc_ce333F0:
-mov.w @(r0,r14),r0
-extu.w r0,r0
-tst 0x40,r0
-bt loc_ce33418
-mov.b @(0x06,r14),r0
-add 0x01,r0
-mov.b r0,@(0x06,r14)
-mov.b @(0x07,r14),r0
-xor 0x01,r0
-mov.b r0,@(0x07,r14)
-mov r13,r0
-nop
-mov 0x13,r6 ; r6 set to 0x13
-mov.w r0,@(0x1C,r14)
-mov 0x0D,r5 ; r5 set to 0x0D
-mov 0x0D,r7 ; r7 set to 0x0D
+	mov.w @(r0,r14),r0
+	extu.w r0,r0
+	tst 0x40,r0
+	bt loc_ce33418
+	mov.b @(0x06,r14),r0
+	add 0x01,r0
+	mov.b r0,@(0x06,r14)
+	mov.b @(0x07,r14),r0
+	xor 0x01,r0
+	mov.b r0,@(0x07,r14)
+	mov r13,r0
+	nop
+	mov 0x13,r6 ; r6 set to 0x13
+	mov.w r0,@(0x1C,r14)
+	mov 0x0D,r5 ; r5 set to 0x0D
+	mov 0x0D,r7 ; r7 set to 0x0D
 
 loc_ce33410:
-jsr @r12
-mov r14,r4
-bra loc_ce33440
-nop
+	jsr @r12
+	mov r14,r4
+	bra loc_ce33440
+	nop
 
 loc_ce33418:
-mov.w @(0x1C,r14),r0
-add 0xFF,r0
-mov.w r0,@(0x1C,r14)
-add 0x01,r0
-exts.w r0,r0
-tst r0,r0
-bf loc_ce33440
-mov 0x0C,r0 ; r0 set to 0x0C
-mov.l @(loc_ce334E8_to_loc_8c034E8C,pc),r3 ; r3 set to 0x8C034E8C
-mov.b r0,@(0x06,r14)
-mov 0x0A,r0 ; r0 set to 0x0A
-mov 0x0D,r6 ; r6 set to 0x0D
-mov.w r0,@(0x1C,r14)
-lds.l @r15+,pr
-mov r14,r4
-mov 0x16,r5 ; r5 set to 0x16
-mov.l @r15+,r12
-mov.l @r15+,r13
-jmp @r3
-mov.l @r15+,r14
+	mov.w @(0x1C,r14),r0
+	add 0xFF,r0
+	mov.w r0,@(0x1C,r14)
+	add 0x01,r0
+	exts.w r0,r0
+	tst r0,r0
+	bf loc_ce33440
+	mov 0x0C,r0 ; r0 set to 0x0C
+	mov.l @(loc_ce334E8_to_loc_8c034E8C,pc),r3 ; r3 set to 0x8C034E8C
+	mov.b r0,@(0x06,r14)
+	mov 0x0A,r0 ; r0 set to 0x0A
+	mov 0x0D,r6 ; r6 set to 0x0D
+	mov.w r0,@(0x1C,r14)
+	lds.l @r15+,pr
+	mov r14,r4
+	mov 0x16,r5 ; r5 set to 0x16
+	mov.l @r15+,r12
+	mov.l @r15+,r13
+	jmp @r3
+	mov.l @r15+,r14
 
 loc_ce33440:
-lds.l @r15+,pr
-mov.l @r15+,r12
-mov.l @r15+,r13
-rts
-mov.l @r15+,r14
-;==============================================
+	lds.l @r15+,pr
+	mov.l @r15+,r12
+	mov.l @r15+,r13
+	rts
+	mov.l @r15+,r14
 
+;==============================================
 loc_ce3344A:
 #data 0x9049
 #data 0xE205E302
@@ -7985,1104 +8067,1279 @@ loc_ce33498:
 #data 0x432BD314
 #data 0x0009
 
-
 loc_ce3349E:
-mov.l r14,@-r15
-sts.l pr,@-r15
-add 0xF0,r15
-mov.w @(loc_ce334E4,pc),r0 ; r0 set to 0x20C
-mov r4,r14
-mov 0x02,r2 ; r2 set to 0x02
-mov.l @(r0,r14),r3
-mov.w @(loc_ce334E0,pc),r0 ; r0 set to 0x3F8
-mov.l r3,@r15
-mov 0x05,r3 ; r3 set to 0x05
-mov.b r2,@(r0,r14)
-mov.w @(loc_ce334E2,pc),r0 ; r0 set to 0x328
-mov.b r3,@(r0,r14)
-mov.w @(0x1C,r14),r0
-cmp/eq 0x0A,r0
-bf loc_ce33566
-mov.b @(0x07,r14),r0
-tst r0,r0
-bt loc_ce33550
-mov 0x23,r0 ; r0 set to 0x23
-mov 0x01,r3 ; r3 set to 0x01
-mov.b r3,@(r0,r14)
-mov 0x21,r0 ; r0 set to 0x21
-mov.b @(r0,r14),r3 ; r3 ??? bc r14 is ???
-add 0x01,r3
-mov.b r3,@(r0,r14)
-mov.w @(loc_ce334E6,pc),r0 ; r0 set to 0x130
-mov.w @(r0,r14),r2 ; r2 ??? bc r14 is ???
-tst r2,r2
-bt loc_ce334F4
-mova @(loc_ce334F0,pc),r0  ; r0 set to 0xCE334F0
-bra loc_ce334F8
-fmov.s @r0,fr3
+	mov.l r14,@-r15
+	sts.l pr,@-r15
+	add 0xF0,r15
+	mov.w @(loc_ce334E4,pc),r0 ; r0 set to 0x20C
+	mov r4,r14
+	mov 0x02,r2 ; r2 set to 0x02
+	mov.l @(r0,r14),r3
+	mov.w @(loc_ce334E0,pc),r0 ; r0 set to 0x3F8
+	mov.l r3,@r15
+	mov 0x05,r3 ; r3 set to 0x05
+	mov.b r2,@(r0,r14)
+	mov.w @(loc_ce334E2,pc),r0 ; r0 set to 0x328
+	mov.b r3,@(r0,r14)
+	mov.w @(0x1C,r14),r0
+	cmp/eq 0x0A,r0
+	bf loc_ce33566
+	mov.b @(0x07,r14),r0
+	tst r0,r0
+	bt loc_ce33550
+	mov 0x23,r0 ; r0 set to 0x23
+	mov 0x01,r3 ; r3 set to 0x01
+	mov.b r3,@(r0,r14)
+	mov 0x21,r0 ; r0 set to 0x21
+	mov.b @(r0,r14),r3 ; r3 ??? bc r14 is ???
+	add 0x01,r3
+	mov.b r3,@(r0,r14)
+	mov.w @(loc_ce334E6,pc),r0 ; r0 set to 0x130
+	mov.w @(r0,r14),r2 ; r2 ??? bc r14 is ???
+	tst r2,r2
+	bt loc_ce334F4
+	mova @(loc_ce334F0,pc),r0  ; r0 set to 0xCE334F0
+	bra loc_ce334F8
+	fmov.s @r0,fr3
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce334E0:
-#data 0x03F8
-
+	#data 0x03F8
 loc_ce334E2:
-#data 0x0328
-
+	#data 0x0328
 loc_ce334E4:
-#data 0x020C
-
+	#data 0x020C
 loc_ce334E6:
-#data 0x0130
+	#data 0x0130
+	#align4
 
-#align4
 loc_ce334E8_to_loc_8c034E8C:
-#data loc_8c034E8C
-#data loc_8c034DEE
-
-#align4
+	#data loc_8c034E8C
+loc_ce334ec:
+	#data loc_8c034DEE
 loc_ce334F0:
-#data 0x43C80000
+	#data 0x43C80000
 
-
+;==============================================
 loc_ce334F4:
-mova @(loc_ce33610,pc),r0  ; r0 init to 0xCE33610
-fmov.s @r0,fr3
+	mova @(loc_ce33610,pc),r0  ; r0 init to 0xCE33610
+	fmov.s @r0,fr3
 
 loc_ce334F8:
-mov 0x04,r0 ; r0 set to 0x04,r0 set to 0x04
-mov.w @(loc_ce33608,pc),r7 ; r7 set to 0xC9,r7 set to 0xC9
-fmov.s @(r0,r15),fr2
-mov 0x04,r0 ; r0 set to 0x04,r0 set to 0x04
-mov r15,r5
-mov.l @(loc_ce33618_to_loc_8c10235C,pc),r3 ; r3 set to 0x8C10235C,r3 set to 0x8C10235C
-fadd fr3,fr2
-add 0x04,r5
-mov 0x01,r6 ; r6 set to 0x01,r6 set to 0x01
-fmov.s fr2,@(r0,r15)
-mova @(loc_ce33614,pc),r0  ; r0 set to 0xCE33614,r0 set to 0xCE33614
-fmov.s @r0,fr3 ; r3 ??,r3 ??
-mov 0x08,r0 ; r0 set to 0x08,r0 set to 0x08
-fmov.s fr3,@(r0,r15)
-mov 0x04,r0 ; r0 set to 0x04,r0 set to 0x04
-fmov.s @(r0,r15),fr3
-mov 0x34,r0 ; r0 set to 0x34,r0 set to 0x34
-fmov.s @(r0,r14),fr2
-mov 0x04,r0 ; r0 set to 0x04,r0 set to 0x04
-fadd fr3,fr2
-fmov.s fr2,@(r0,r15)
-mov 0x08,r0 ; r0 set to 0x08,r0 set to 0x08
-fmov.s @(r0,r15),fr3
-mov 0x38,r0 ; r0 set to 0x38,r0 set to 0x38
-fmov.s @(r0,r14),fr2
-mov 0x08,r0 ; r0 set to 0x08,r0 set to 0x08
-fadd fr3,fr2
-fmov.s fr2,@(r0,r15)
-jsr @r3
-mov r14,r4
-mov.l @(loc_ce3361C_to_loc_8c04223A,pc),r2 ; r2 set to 0x8C04223A,r2 set to 0x8C04223A
-mov 0x49,r5 ; r5 set to 0x49,r5 set to 0x49
-jsr @r2
-mov r14,r4
-mov 0x21,r0 ; r0 set to 0x21,r0 set to 0x21
-mov.l @(loc_ce33620_to_loc_8c05923C,pc),r3 ; r3 set to 0x8C05923C,r3 set to 0x8C05923C
-mov.b @(r0,r14),r5 ; r5 ??? bc r14 is ???,r5 ??? bc r14 is ???
-extu.b r5,r5
-shll2 r5
-neg r5,r5
-jsr @r3
-mov.l @r15,r4
-bra loc_ce33566
-nop
+	mov 0x04,r0 ; r0 set to 0x04,r0 set to 0x04
+	mov.w @(loc_ce33608,pc),r7 ; r7 set to 0xC9,r7 set to 0xC9
+	fmov.s @(r0,r15),fr2
+	mov 0x04,r0 ; r0 set to 0x04,r0 set to 0x04
+	mov r15,r5
+	mov.l @(loc_ce33618_to_loc_8c10235C,pc),r3 ; r3 set to 0x8C10235C,r3 set to 0x8C10235C
+	fadd fr3,fr2
+	add 0x04,r5
+	mov 0x01,r6 ; r6 set to 0x01,r6 set to 0x01
+	fmov.s fr2,@(r0,r15)
+	mova @(loc_ce33614,pc),r0  ; r0 set to 0xCE33614,r0 set to 0xCE33614
+	fmov.s @r0,fr3 ; r3 ??,r3 ??
+	mov 0x08,r0 ; r0 set to 0x08,r0 set to 0x08
+	fmov.s fr3,@(r0,r15)
+	mov 0x04,r0 ; r0 set to 0x04,r0 set to 0x04
+	fmov.s @(r0,r15),fr3
+	mov 0x34,r0 ; r0 set to 0x34,r0 set to 0x34
+	fmov.s @(r0,r14),fr2
+	mov 0x04,r0 ; r0 set to 0x04,r0 set to 0x04
+	fadd fr3,fr2
+	fmov.s fr2,@(r0,r15)
+	mov 0x08,r0 ; r0 set to 0x08,r0 set to 0x08
+	fmov.s @(r0,r15),fr3
+	mov 0x38,r0 ; r0 set to 0x38,r0 set to 0x38
+	fmov.s @(r0,r14),fr2
+	mov 0x08,r0 ; r0 set to 0x08,r0 set to 0x08
+	fadd fr3,fr2
+	fmov.s fr2,@(r0,r15)
+	jsr @r3
+	mov r14,r4
+	mov.l @(loc_ce3361C_to_loc_8c04223A,pc),r2 ; r2 set to 0x8C04223A,r2 set to 0x8C04223A
+	mov 0x49,r5 ; r5 set to 0x49,r5 set to 0x49
+	jsr @r2
+	mov r14,r4
+	mov 0x21,r0 ; r0 set to 0x21,r0 set to 0x21
+	mov.l @(loc_ce33620_to_loc_8c05923C,pc),r3 ; r3 set to 0x8C05923C,r3 set to 0x8C05923C
+	mov.b @(r0,r14),r5 ; r5 ??? bc r14 is ???,r5 ??? bc r14 is ???
+	extu.b r5,r5
+	shll2 r5
+	neg r5,r5
+	jsr @r3
+	mov.l @r15,r4
+	bra loc_ce33566
+	nop
 
 loc_ce33550:
-mov.l @(loc_ce33624_to_loc_8c034E8C,pc),r3 ; r3 set to 0x8C034E8C
-mov 0x0C,r0 ; r0 set to 0x0C
-mov 0x16,r5 ; r5 set to 0x16
-mov.b r0,@(0x06,r14)
-mov 0x0D,r6 ; r6 set to 0x0D
-jsr @r3
-mov r14,r4
-add 0x10,r15
-lds.l @r15+,pr
-rts
-mov.l @r15+,r14
-;==============================================
+	mov.l @(loc_ce33624_to_loc_8c034E8C,pc),r3 ; r3 set to 0x8C034E8C
+	mov 0x0C,r0 ; r0 set to 0x0C
+	mov 0x16,r5 ; r5 set to 0x16
+	mov.b r0,@(0x06,r14)
+	mov 0x0D,r6 ; r6 set to 0x0D
+	jsr @r3
+	mov r14,r4
+	add 0x10,r15
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
 
+;==============================================
 loc_ce33566:
-mov.w @(0x1C,r14),r0
-cmp/pl r0
-bt loc_ce3359E
-mov.w @(0x1E,r14),r0
-cmp/eq 0x03,r0
-bf loc_ce3357E
-mov 0x09,r0 ; r0 set to 0x09
-mov.b r0,@(0x06,r14)
-add 0x10,r15
-lds.l @r15+,pr
-rts
-mov.l @r15+,r14
-;==============================================
+	mov.w @(0x1C,r14),r0
+	cmp/pl r0
+	bt loc_ce3359E
+	mov.w @(0x1E,r14),r0
+	cmp/eq 0x03,r0
+	bf loc_ce3357E
+	mov 0x09,r0 ; r0 set to 0x09
+	mov.b r0,@(0x06,r14)
+	add 0x10,r15
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
 
+;==============================================
 loc_ce3357E:
-mov.b @(0x06,r14),r0
-mov 0x00,r3 ; r3 set to 0x00
-mov 0x10,r5 ; r5 set to 0x10
-add 0x01,r0
-mov.b r0,@(0x06,r14)
-mov 0x17,r0 ; r0 set to 0x17
-mov.w r0,@(0x1C,r14)
-mov 0x23,r0 ; r0 set to 0x23
-mov.b r3,@(r0,r14)
-mov.l @(loc_ce33628_to_loc_8c042008,pc),r3 ; r3 set to 0x8C042008
-jsr @r3
-mov r14,r4
-add 0x10,r15
-lds.l @r15+,pr
-rts
-mov.l @r15+,r14
-;==============================================
+	mov.b @(0x06,r14),r0
+	mov 0x00,r3 ; r3 set to 0x00
+	mov 0x10,r5 ; r5 set to 0x10
+	add 0x01,r0
+	mov.b r0,@(0x06,r14)
+	mov 0x17,r0 ; r0 set to 0x17
+	mov.w r0,@(0x1C,r14)
+	mov 0x23,r0 ; r0 set to 0x23
+	mov.b r3,@(r0,r14)
+	mov.l @(loc_ce33628_to_loc_8c042008,pc),r3 ; r3 set to 0x8C042008
+	jsr @r3
+	mov r14,r4
+	add 0x10,r15
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
 
+;==============================================
 loc_ce3359E:
-mov.l @(loc_ce3362C_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
-add 0xFF,r0
-mov.w r0,@(0x1C,r14)
-jsr @r3
-mov r14,r4
-add 0x10,r15
-lds.l @r15+,pr
-rts
-mov.l @r15+,r14
-;==============================================
+	mov.l @(loc_ce3362C_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
+	add 0xFF,r0
+	mov.w r0,@(0x1C,r14)
+	jsr @r3
+	mov r14,r4
+	add 0x10,r15
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
 
+;==============================================
 loc_ce335B0:
-mov.w @(loc_ce3360A,pc),r0 ; r0 set to 0x3F8
-mov 0x02,r3 ; r3 set to 0x02
-mov 0x05,r2 ; r2 set to 0x05
-mov.b r3,@(r0,r4)
-mov.w @(loc_ce3360C,pc),r0 ; r0 set to 0x328
-mov.b r2,@(r0,r4)
-mov.w @(0x1C,r4),r0
-add 0xFF,r0 ; r0 set to 0x327
-mov.w r0,@(0x1C,r4)
-add 0x01,r0 ; r0 set to 0x328
-exts.w r0,r0 ; r0 ??
-tst r0,r0
-bf loc_ce335D6
-mov.b @(0x06,r4),r0
-add 0x01,r0
-mov.b r0,@(0x06,r4)
-mov 0x14,r0 ; r0 set to 0x14
-rts
-mov.w r0,@(0x1C,r4)
-;==============================================
+	mov.w @(loc_ce3360A,pc),r0 ; r0 set to 0x3F8
+	mov 0x02,r3 ; r3 set to 0x02
+	mov 0x05,r2 ; r2 set to 0x05
+	mov.b r3,@(r0,r4)
+	mov.w @(loc_ce3360C,pc),r0 ; r0 set to 0x328
+	mov.b r2,@(r0,r4)
+	mov.w @(0x1C,r4),r0
+	add 0xFF,r0 ; r0 set to 0x327
+	mov.w r0,@(0x1C,r4)
+	add 0x01,r0 ; r0 set to 0x328
+	exts.w r0,r0 ; r0 ??
+	tst r0,r0
+	bf loc_ce335D6
+	mov.b @(0x06,r4),r0
+	add 0x01,r0
+	mov.b r0,@(0x06,r4)
+	mov 0x14,r0 ; r0 set to 0x14
+	rts
+	mov.w r0,@(0x1C,r4)
 
+;==============================================
 loc_ce335D6:
-mov 0x21,r0 ; r0 set to 0x21
-mov.b @(r0,r4),r3
-tst r3,r3
-bf loc_ce335E4
-mov.l @(loc_ce3362C_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
-jmp @r3
-nop
+	mov 0x21,r0 ; r0 set to 0x21
+	mov.b @(r0,r4),r3
+	tst r3,r3
+	bf loc_ce335E4
+	mov.l @(loc_ce3362C_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
+	jmp @r3
+	nop
 
 loc_ce335E4:
-rts
-nop
-;==============================================
+	rts
+	nop
 
-#align4
+;==============================================
 loc_ce335E8:
-#data 0xE302900F
-#data 0x0434E205
-#data 0x0424900C
-#data 0x034C900B
-#data 0x89024311
-#data 0x70018446
-#data 0x8046
+	mov.w @(0x1e,pc),r0
+	mov 0x02,r3
+	mov 0x05,r2
+	mov.b r3,@(r0,r4)
+	mov.w @(0x18,pc),r0
+	mov.b r2,@(r0,r4)
+	mov.w @(0x16,pc),r0
+	mov.b @(r0,r4),r3
+	cmp/pz r3
+	bt loc_ce33602
+	mov.b @(0x6,r4),r0
+	add 0x01,r0
+	mov.b r0,@(0x6,r4)
 
 loc_ce33602:
-#data 0xD30A
-#data 0x0009432B
+	mov.l @(0x28,pc),r3
+	jmp @r3
+	nop
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce33608:
-#data 0x00C9
-
+	#data 0x00C9
 loc_ce3360A:
-#data 0x03F8
-
+	#data 0x03F8
 loc_ce3360C:
-#data 0x0328
-#data 0x0143
+	#data 0x0328
+loc_ce3360e:
+	#data 0x0143
+	#align4
 
-#align4
 loc_ce33610:
-#data 0xC3C80000
-
-#align4
+	#data 0xC3C80000
 loc_ce33614:
-#data 0x43892492
-
-#align4
+	#data 0x43892492
 loc_ce33618_to_loc_8c10235C:
-#data loc_8c10235C
-
+	#data loc_8c10235C
 loc_ce3361C_to_loc_8c04223A:
-#data loc_8c04223A
-
+	#data loc_8c04223A
 loc_ce33620_to_loc_8c05923C:
-#data loc_8c05923C
-
+	#data loc_8c05923C
 loc_ce33624_to_loc_8c034E8C:
-#data loc_8c034E8C
-
+	#data loc_8c034E8C
 loc_ce33628_to_loc_8c042008:
-#data loc_8c042008
-
+	#data loc_8c042008
 loc_ce3362C_to_loc_8c034DEE:
-#data loc_8c034DEE
+	#data loc_8c034DEE
 
-
+;==============================================
 loc_ce33630:
-mov.w @(loc_ce3375A,pc),r0 ; r0 set to 0x3F8
-mov 0x02,r3 ; r3 set to 0x02
-mov.l r14,@-r15
-mov r4,r14
-sts.l pr,@-r15
-mov.b r3,@(r0,r14)
-mov 0x05,r2 ; r2 set to 0x05
-mov.w @(loc_ce3375C,pc),r0 ; r0 set to 0x328
-mov.l @(loc_ce33768_to_loc_8c03319E,pc),r3 ; r3 set to 0x8C03319E
-jsr @r3
-mov.b r2,@(r0,r14)
-mov.b r0,@(0x07,r14)
-mov 0x02,r3 ; r3 set to 0x02
-mov.b @(0x07,r14),r0
-and 0x01,r0
-mov.b r0,@(0x07,r14)
-mov 0x78,r0 ; r0 set to 0x78
-mov.w r0,@(0x1C,r14)
-mov.w @(0x1E,r14),r0
-cmp/gt r3,r0
-bt loc_ce33686
-mov 0x04,r0 ; r0 set to 0x04
-mov.b r0,@(0x06,r14)
-mov.w @(0x1E,r14),r0
-add 0x01,r0 ; r0 set to 0x05
-mov.w r0,@(0x1E,r14)
-mov.w @(0x1E,r14),r0
-cmp/eq 0x03,r0
-bf loc_ce33678
-lds.l @r15+,pr
-mov.l @(loc_ce3376C_to_loc_8c034E8C,pc),r1 ; r1 set to 0x8C034E8C
-mov r14,r4
-mov 0x0C,r6 ; r6 set to 0x0C
-mov 0x16,r5 ; r5 set to 0x16
-jmp @r1
-mov.l @r15+,r14
+	mov.w @(loc_ce3375A,pc),r0 ; r0 set to 0x3F8
+	mov 0x02,r3 ; r3 set to 0x02
+	mov.l r14,@-r15
+	mov r4,r14
+	sts.l pr,@-r15
+	mov.b r3,@(r0,r14)
+	mov 0x05,r2 ; r2 set to 0x05
+	mov.w @(loc_ce3375C,pc),r0 ; r0 set to 0x328
+	mov.l @(loc_ce33768_to_loc_8c03319E,pc),r3 ; r3 set to 0x8C03319E
+	jsr @r3
+	mov.b r2,@(r0,r14)
+	mov.b r0,@(0x07,r14)
+	mov 0x02,r3 ; r3 set to 0x02
+	mov.b @(0x07,r14),r0
+	and 0x01,r0
+	mov.b r0,@(0x07,r14)
+	mov 0x78,r0 ; r0 set to 0x78
+	mov.w r0,@(0x1C,r14)
+	mov.w @(0x1E,r14),r0
+	cmp/gt r3,r0
+	bt loc_ce33686
+	mov 0x04,r0 ; r0 set to 0x04
+	mov.b r0,@(0x06,r14)
+	mov.w @(0x1E,r14),r0
+	add 0x01,r0 ; r0 set to 0x05
+	mov.w r0,@(0x1E,r14)
+	mov.w @(0x1E,r14),r0
+	cmp/eq 0x03,r0
+	bf loc_ce33678
+	lds.l @r15+,pr
+	mov.l @(loc_ce3376C_to_loc_8c034E8C,pc),r1 ; r1 set to 0x8C034E8C
+	mov r14,r4
+	mov 0x0C,r6 ; r6 set to 0x0C
+	mov 0x16,r5 ; r5 set to 0x16
+	jmp @r1
+	mov.l @r15+,r14
 
 loc_ce33678:
-lds.l @r15+,pr
-mov.l @(loc_ce3376C_to_loc_8c034E8C,pc),r2 ; r2 set to 0x8C034E8C
-mov r14,r4
-mov 0x0B,r6 ; r6 set to 0x0B
-mov 0x16,r5 ; r5 set to 0x16
-jmp @r2
-mov.l @r15+,r14
+	lds.l @r15+,pr
+	mov.l @(loc_ce3376C_to_loc_8c034E8C,pc),r2 ; r2 set to 0x8C034E8C
+	mov r14,r4
+	mov 0x0B,r6 ; r6 set to 0x0B
+	mov 0x16,r5 ; r5 set to 0x16
+	jmp @r2
+	mov.l @r15+,r14
 
 loc_ce33686:
-mov.b @(0x06,r14),r0
-add 0x01,r0
-mov.b r0,@(0x06,r14)
-lds.l @r15+,pr
-rts
-mov.l @r15+,r14
-;==============================================
+	mov.b @(0x06,r14),r0
+	add 0x01,r0
+	mov.b r0,@(0x06,r14)
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
 
+;==============================================
 loc_ce33692:
-mov.w @(loc_ce3375A,pc),r0 ; r0 set to 0x3F8
-mov 0x02,r3 ; r3 set to 0x02
-mov 0x05,r2 ; r2 set to 0x05
-mov.b r3,@(r0,r4)
-mov.w @(loc_ce3375C,pc),r0 ; r0 set to 0x328
-mov.b r2,@(r0,r4)
-mov.w @(loc_ce3375E,pc),r0 ; r0 set to 0x143
-mov.b @(r0,r4),r3 ; r3 ??? bc r4 is ???
-cmp/pz r3
-bt loc_ce336B8
-mov.b @(0x06,r4),r0
-mov 0x0D,r6 ; r6 set to 0x0D
-mov.l @(loc_ce3376C_to_loc_8c034E8C,pc),r3 ; r3 set to 0x8C034E8C
-add 0x01,r0 ; r0 set to 0x144
-mov.b r0,@(0x06,r4)
-mov 0x0A,r0 ; r0 set to 0x0A
-mov.w r0,@(0x1C,r4)
-jmp @r3
-mov 0x16,r5
+	mov.w @(loc_ce3375A,pc),r0 ; r0 set to 0x3F8
+	mov 0x02,r3 ; r3 set to 0x02
+	mov 0x05,r2 ; r2 set to 0x05
+	mov.b r3,@(r0,r4)
+	mov.w @(loc_ce3375C,pc),r0 ; r0 set to 0x328
+	mov.b r2,@(r0,r4)
+	mov.w @(loc_ce3375E,pc),r0 ; r0 set to 0x143
+	mov.b @(r0,r4),r3 ; r3 ??? bc r4 is ???
+	cmp/pz r3
+	bt loc_ce336B8
+	mov.b @(0x06,r4),r0
+	mov 0x0D,r6 ; r6 set to 0x0D
+	mov.l @(loc_ce3376C_to_loc_8c034E8C,pc),r3 ; r3 set to 0x8C034E8C
+	add 0x01,r0 ; r0 set to 0x144
+	mov.b r0,@(0x06,r4)
+	mov 0x0A,r0 ; r0 set to 0x0A
+	mov.w r0,@(0x1C,r4)
+	jmp @r3
+	mov 0x16,r5
 
 loc_ce336B8:
-mov.l @(loc_ce33770_to_loc_8c034DEE,pc),r2 ; r2 set to 0x8C034DEE
-jmp @r2
-nop
+	mov.l @(loc_ce33770_to_loc_8c034DEE,pc),r2 ; r2 set to 0x8C034DEE
+	jmp @r2
+	nop
 
 loc_ce336BE:
-#data 0x904C
-#data 0xE205E302
-#data 0x90490434
-#data 0x854E0424
-#data 0x814E70FF
-#data 0x600F7001
-#data 0x8B022008
-#data 0x70018446
-#data 0x8046
+	mov.w @(0x98,pc),r0
+	mov 0x02,r3
+	mov 0x05,r2
+	mov.b r3,@(r0,r4
+	mov.w @(0x92,pc),r0
+	mov.b r2,@(r0,r4
+	mov.w @(0x1c,r4),r0
+	add 0xFF,r0
+	mov.w r0,@(0x1c,r4)
+	add 0x01,r0
+	exts.w r0,r0
+	tst r0,r0
+	bf loc_ce336DE
+	mov.b @(0x6,r4),r0
+	add 0x01,r0
+	mov.b r0,@(0x6,r4)
 
 loc_ce336DE:
-#data 0x000B
-#data 0x0009
-;==============================================
+	rts
+	nop
 
+;==============================================
 loc_ce336E2:
-mov.w @(loc_ce33760,pc),r0 ; r0 set to 0x141
-mov.l r14,@-r15
-mov r4,r14
-mov.l r13,@-r15
-sts.l pr,@-r15
-mov.b @(r0,r14),r3
-tst r3,r3
-bt/s loc_ce3370E
-mov 0x00,r13 ; r13 set to 0x00
-mov.b r13,@(r0,r14)
-mov 0x21,r0 ; r0 set to 0x21
-mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
-extu.b r0,r0
-cmp/eq 0x04,r0
-bf/s loc_ce33706
-mov r14,r4
-bra loc_ce33708
-mov 0x0F,r5
+	mov.w @(loc_ce33760,pc),r0 ; r0 set to 0x141
+	mov.l r14,@-r15
+	mov r4,r14
+	mov.l r13,@-r15
+	sts.l pr,@-r15
+	mov.b @(r0,r14),r3
+	tst r3,r3
+	bt/s loc_ce3370E
+	mov 0x00,r13 ; r13 set to 0x00
+	mov.b r13,@(r0,r14)
+	mov 0x21,r0 ; r0 set to 0x21
+	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
+	extu.b r0,r0
+	cmp/eq 0x04,r0
+	bf/s loc_ce33706
+	mov r14,r4
+	bra loc_ce33708
+	mov 0x0F,r5
 
 loc_ce33706:
-#data 0xE50C
+	mov 0x0C,r5
 
-#align4
 loc_ce33708:
-#data 0x420BD21A
-#data 0x0009
-
+	mov.l @(0x68,pc),r2
+	jsr @r2
+	nop
 
 loc_ce3370E:
-mov.w @(loc_ce3375E,pc),r0 ; r0 set to 0x143
-mov.b @(r0,r14),r3
-cmp/pz r3
-bt loc_ce3373C
-mov.w @(loc_ce33762,pc),r0 ; r0 set to 0x3F9
-mov 0x00,r5 ; r5 set to 0x00
-mov.l @(loc_ce33778_to_loc_8c02FEC4,pc),r3 ; r3 set to 0x8C02FEC4
-mov 0x0D,r6 ; r6 set to 0x0D
-mov.b r13,@(r0,r14)
-add 0xFF,r0 ; r0 set to 0x3F8
-mov.b r13,@(r0,r14)
-mov.w @(loc_ce33764,pc),r0 ; r0 set to 0x327
-mov.b r13,@(r0,r14)
-add 0x01,r0 ; r0 set to 0x328
-mov.b r13,@(r0,r14)
-jsr @r3
-mov r14,r4
-lds.l @r15+,pr
-mov.l @(loc_ce3377C_to_loc_8c051648,pc),r2 ; r2 set to 0x8C051648
-mov r14,r4
-mov.l @r15+,r13
-jmp @r2
-mov.l @r15+,r14
+	mov.w @(loc_ce3375E,pc),r0 ; r0 set to 0x143
+	mov.b @(r0,r14),r3
+	cmp/pz r3
+	bt loc_ce3373C
+	mov.w @(loc_ce33762,pc),r0 ; r0 set to 0x3F9
+	mov 0x00,r5 ; r5 set to 0x00
+	mov.l @(loc_ce33778_to_loc_8c02FEC4,pc),r3 ; r3 set to 0x8C02FEC4
+	mov 0x0D,r6 ; r6 set to 0x0D
+	mov.b r13,@(r0,r14)
+	add 0xFF,r0 ; r0 set to 0x3F8
+	mov.b r13,@(r0,r14)
+	mov.w @(loc_ce33764,pc),r0 ; r0 set to 0x327
+	mov.b r13,@(r0,r14)
+	add 0x01,r0 ; r0 set to 0x328
+	mov.b r13,@(r0,r14)
+	jsr @r3
+	mov r14,r4
+	lds.l @r15+,pr
+	mov.l @(loc_ce3377C_to_loc_8c051648,pc),r2 ; r2 set to 0x8C051648
+	mov r14,r4
+	mov.l @r15+,r13
+	jmp @r2
+	mov.l @r15+,r14
 
 loc_ce3373C:
-lds.l @r15+,pr
-mov.l @(loc_ce33770_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
-mov r14,r4
-mov.l @r15+,r13
-jmp @r3
-mov.l @r15+,r14
+	lds.l @r15+,pr
+	mov.l @(loc_ce33770_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
+	mov r14,r4
+	mov.l @r15+,r13
+	jmp @r3
+	mov.l @r15+,r14
 
 loc_ce33748:
-mov r4,r3
-mov.l @(loc_ce33780_to_loc_ce34AA4_to_loc_ce33784,pc),r1 ; r1 set to 0xCE34AA4
-mov.l r4,@-r15
-mov.b @(0x06,r3),r0
-extu.b r0,r0
-shll2 r0
-mov.l @(r0,r1),r3
-jmp @r3
-add 0x04,r15
+	mov r4,r3
+	mov.l @(loc_ce33780_to_loc_ce34AA4_to_loc_ce33784,pc),r1 ; r1 set to 0xCE34AA4
+	mov.l r4,@-r15
+	mov.b @(0x06,r3),r0
+	extu.b r0,r0
+	shll2 r0
+	mov.l @(r0,r1),r3
+	jmp @r3
+	add 0x04,r15
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce3375A:
-#data 0x03F8
-
+	#data 0x03F8
 loc_ce3375C:
-#data 0x0328
-
+	#data 0x0328
 loc_ce3375E:
-#data 0x0143
-
+	#data 0x0143
 loc_ce33760:
-#data 0x0141
-
+	#data 0x0141
 loc_ce33762:
-#data 0x03F9
-
+	#data 0x03F9
 loc_ce33764:
 	#data 0x0327
 	#align4
 
 loc_ce33768_to_loc_8c03319E:
-#data loc_8c03319E
-
+	#data loc_8c03319E
 loc_ce3376C_to_loc_8c034E8C:
-#data loc_8c034E8C
-
+	#data loc_8c034E8C
 loc_ce33770_to_loc_8c034DEE:
-#data loc_8c034DEE
-#data loc_8c042008
-
-#align4
+	#data loc_8c034DEE
+loc_ce33774:
+	#data loc_8c042008
 loc_ce33778_to_loc_8c02FEC4:
-#data loc_8c02FEC4
-
+	#data loc_8c02FEC4
 loc_ce3377C_to_loc_8c051648:
-#data loc_8c051648
-
+	#data loc_8c051648
 loc_ce33780_to_loc_ce34AA4_to_loc_ce33784:
-#data loc_ce34AA4_to_loc_ce33784
+	#data loc_ce34AA4_to_loc_ce33784
 
-
+;==============================================
 loc_ce33784:
-mov.l r14,@-r15
-mov r4,r14
-mov 0x47,r3 ; r3 set to 0x47
-mov.l r13,@-r15
-mov.l r12,@-r15
-mov 0x00,r12 ; r12 set to 0x00
-sts.l pr,@-r15
-mov.b @(0x06,r14),r0
-add 0x01,r0
-mov.b r0,@(0x06,r14)
-mov.w @(loc_ce3384C,pc),r0 ; r0 set to 0x1A1
-mov.b r3,@(r0,r14)
-add 0x0B,r0 ; r0 set to 0x1AC
-mov.w r12,@(r0,r14)
-add 0xF2,r0 ; r0 set to 0x19E
-mov.b r12,@(r0,r14)
-add 0x26,r0 ; r0 set to 0x1C4
-mov.l @(loc_ce33854_to_mem_8c2896b0,pc),r3 ; r3 set to 0x8C2896B0
-mov.l r12,@(r0,r14)
-mov.b @(0x02,r14),r0
-mov.l @r3,r2
-extu.b r0,r0 ; r0 set to 0xC4
-shll r0 ; r0 set to 0x188
-add 0x7C,r2
-mov.w @(r0,r2),r1
-add 0x01,r1
-mov.w r1,@(r0,r2)
-mov.l @(loc_ce33858_to_loc_8c05218A,pc),r2 ; r2 set to 0x8C05218A
-jsr @r2
-mov r14,r4
-mov.l @(loc_ce3385C_to_loc_8c035162,pc),r3 ; r3 set to 0x8C035162
-mov r12,r5 ; r5 set to 0x00
-jsr @r3
-mov r14,r4
-mov.l @(loc_ce33864_to_loc_8c034E8C,pc),r2 ; r2 set to 0x8C034E8C
-mov 0x16,r5 ; r5 set to 0x16
-mov.l @(loc_ce33860_to_loc_ce345E4,pc),r13 ; r13 set to 0xCE345E4
-mov r12,r6 ; r6 set to 0x00
-jsr @r2
-mov r14,r4
-mov.w @(loc_ce3384E,pc),r0 ; r0 set to 0x130
-mov.w @(r0,r14),r2 ; r2 ??? bc r14 is ???
-tst r2,r2
-bt/s loc_ce337E2
-mov 0x23,r0 ; r0 set to 0x23
-bra loc_ce337E4
-mov 0x01,r3
+	mov.l r14,@-r15
+	mov r4,r14
+	mov 0x47,r3 ; r3 set to 0x47
+	mov.l r13,@-r15
+	mov.l r12,@-r15
+	mov 0x00,r12 ; r12 set to 0x00
+	sts.l pr,@-r15
+	mov.b @(0x06,r14),r0
+	add 0x01,r0
+	mov.b r0,@(0x06,r14)
+	mov.w @(loc_ce3384C,pc),r0 ; r0 set to 0x1A1
+	mov.b r3,@(r0,r14)
+	add 0x0B,r0 ; r0 set to 0x1AC
+	mov.w r12,@(r0,r14)
+	add 0xF2,r0 ; r0 set to 0x19E
+	mov.b r12,@(r0,r14)
+	add 0x26,r0 ; r0 set to 0x1C4
+	mov.l @(loc_ce33854_to_mem_8c2896b0,pc),r3 ; r3 set to 0x8C2896B0
+	mov.l r12,@(r0,r14)
+	mov.b @(0x02,r14),r0
+	mov.l @r3,r2
+	extu.b r0,r0 ; r0 set to 0xC4
+	shll r0 ; r0 set to 0x188
+	add 0x7C,r2
+	mov.w @(r0,r2),r1
+	add 0x01,r1
+	mov.w r1,@(r0,r2)
+	mov.l @(loc_ce33858_to_loc_8c05218A,pc),r2 ; r2 set to 0x8C05218A
+	jsr @r2
+	mov r14,r4
+	mov.l @(loc_ce3385C_to_loc_8c035162,pc),r3 ; r3 set to 0x8C035162
+	mov r12,r5 ; r5 set to 0x00
+	jsr @r3
+	mov r14,r4
+	mov.l @(loc_ce33864_to_loc_8c034E8C,pc),r2 ; r2 set to 0x8C034E8C
+	mov 0x16,r5 ; r5 set to 0x16
+	mov.l @(loc_ce33860_to_loc_ce345E4,pc),r13 ; r13 set to 0xCE345E4
+	mov r12,r6 ; r6 set to 0x00
+	jsr @r2
+	mov r14,r4
+	mov.w @(loc_ce3384E,pc),r0 ; r0 set to 0x130
+	mov.w @(r0,r14),r2 ; r2 ??? bc r14 is ???
+	tst r2,r2
+	bt/s loc_ce337E2
+	mov 0x23,r0 ; r0 set to 0x23
+	bra loc_ce337E4
+	mov 0x01,r3
 
 loc_ce337E2:
-mov 0x02,r3 ; r3 set to 0x02
+	mov 0x02,r3 ; r3 set to 0x02
 
 loc_ce337E4:
-mov.b r3,@(r0,r14)
-mov.w @(loc_ce3384E,pc),r0 ; r0 set to 0x130,r0 set to 0x130
-mov.w @(r0,r14),r1
-tst r1,r1
-bt loc_ce337F2
-bra loc_ce337F4
-mov 0x07,r2
+	mov.b r3,@(r0,r14)
+	mov.w @(loc_ce3384E,pc),r0 ; r0 set to 0x130,r0 set to 0x130
+	mov.w @(r0,r14),r1
+	tst r1,r1
+	bt loc_ce337F2
+	bra loc_ce337F4
+	mov 0x07,r2
 
 loc_ce337F2:
-#data 0xE20E
+	mov 0x0E,r2
 
-#align4
 loc_ce337F4:
-#data 0x4208902C
-#data 0x600C00EC
-#data 0x8d038802
-#data 0xD2193D2C
-#data 0x64E3420B
+	mov.w @(0x58,pc),r0
+	shll2 r2
+	mov.b @(r0,r14),r0
+	extu.b r0,r0
+	cmp/eq 0x02,r0
+	bt.s loc_ce33808
+	add r2,r13
+	mov.l @(0x64,pc),r2
+	jsr @r2
+	mov r14,r4
 
-#align4
 loc_ce33808:
-#data 0xE504D318
-#data 0xE607E701
-#data 0x64E3430B
-#data 0xE05CF3D8
-#data 0xFE37941B
-#data 0xF3D6E004
-#data 0x34ECE068
-#data 0xE008FE37
-#data 0xE060F3D6
-#data 0xE00CFE37
-#data 0xE06CF3D6
-#data 0xE05AFE37
-#data 0x60C381EE
-#data 0x804A0009
-#data 0x4F268146
-#data 0x6DF66CF6
-#data 0x6EF6000B
-;==============================================
+	mov.l @(0x60,pc),r3
+	mov 0x04,r5
+	mov 0x01,r7
+	mov 0x07,r6
+	jsr @r3
+	mov r14,r4
+	fmov @r13,fr3
+	mov 0x5C,r0
+	mov.w @(0x36,pc),r4
+	fmov fr3,@(r0,r14)
+	mov 0x04,r0
+	fmov @(r0,r13),fr3
+	mov 0x68,r0
+	add r14,r4
+	fmov fr3,@(r0,r14)
+	mov 0x08,r0
+	fmov @(r0,r13),fr3
+	mov 0x60,r0
+	fmov fr3,@(r0,r14)
+	mov 0x0C,r0
+	fmov @(r0,r13),fr3
+	mov 0x6C,r0
+	fmov fr3,@(r0,r14)
+	mov 0x5A,r0
+	mov.w r0,@(0x1c,r14)
+	mov r12,r0
+	nop
+	mov.b r0,@(0xa,r4)
+	mov.w r0,@(0xc,r4)
+	lds.l @r15+,pr
+	mov.l @r15+,r12
+	mov.l @r15+,r13
+	rts
+	mov.l @r15+,r14
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce3384C:
-#data 0x01A1
-
+	#data 0x01A1
 loc_ce3384E:
-#data 0x0130
-#data 0x02A401F9
+	#data 0x0130
+loc_ce33850:
+	#data 0x01F9
+loc_ce33852:
+	#data 0x02A4
+	#align4
 
-#align4
 loc_ce33854_to_mem_8c2896b0:
-#data mem_8c2896b0
-
+	#data mem_8c2896b0
 loc_ce33858_to_loc_8c05218A:
-#data loc_8c05218A
-
+	#data loc_8c05218A
 loc_ce3385C_to_loc_8c035162:
-#data loc_8c035162
-
+	#data loc_8c035162
 loc_ce33860_to_loc_ce345E4:
-#data loc_ce345E4
-
+	#data loc_ce345E4
 loc_ce33864_to_loc_8c034E8C:
-#data loc_8c034E8C
-#data loc_8c05115A
-#data loc_8c03544C
+	#data loc_8c034E8C
+loc_ce33868:
+	#data loc_8c05115A
+loc_ce3386c:
+	#data loc_8c03544C
 
-#align4
+;==============================================
 loc_ce33870:
-#data 0x2FD62FE6
-#data 0x7FF44F22
-#data 0x6E439050
-#data 0x0E34E305
-#data 0x430BD329
-#data 0x600E64E3
-#data 0x8B124011
-#data 0x00EC9047
-#data 0x8B0E8801
-#data 0xE2009043
-#data 0x65F3D326
-#data 0xC7230E24
-#data 0xC723F308
-#data 0xFF3AE601
-#data 0xE004F308
-#data 0x430BFF37
-#data 0x64E3
+	mov.l r14,@-r15
+	mov.l r13,@-r15
+	sts.l pr,@-r15
+	add 0xF4,r15
+	mov.w @(0xa0,pc),r0
+	mov r4,r14
+	mov 0x05,r3
+	mov.b r3,@(r0,r14)
+	mov.l @(0xa4,pc),r3
+	jsr @r3
+	mov r14,r4
+	exts.b r0,r0
+	cmp/pz r0
+	bf loc_ce338B2
+	mov.w @(0x8e,pc),r0
+	mov.b @(r0,r14),r0
+	cmp/eq 0x01,r0
+	bf loc_ce338B2
+	mov.w @(0x86,pc),r0
+	mov 0x00,r2
+	mov.l @(0x98,pc),r3
+	mov r15,r5
+	mov.b r2,@(r0,r14)
+	mova @(0x8c,pc),r0
+	fmov @r0,fr3
+	mova @(0x8c,pc),r0
+	mov 0x01,r6
+	fmov fr3,@r15
+	fmov @r0,fr3
+	mov 0x04,r0
+	fmov fr3,@(r0,r15)
+	jsr @r3
+	mov r14,r4
 
 loc_ce338B2:
-#data 0x9035
-#data 0x421102EC
-#data 0x84E68928
-#data 0x80E67001
-#data 0x00EC902F
-#data 0x8802600C
-#data 0x902A8909
-#data 0x0E24E202
-#data 0xF308C719
-#data 0xF2E69026
-#data 0xF230E038
-#data 0xFE27
+	mov.w @(0x6a,pc),r0
+	mov.b @(r0,r14),r2
+	cmp/pz r2
+	bt loc_ce3390c
+	mov.b @(0x6,r14),r0
+	add 0x01,r0
+	mov.b r0,@(0x6,r14
+	mov.w @(0x5e,pc),r0
+	mov.b @(r0,r14),r0
+	extu.b r0,r0
+	cmp/eq 0x02,r0
+	bt loc_ce338de
+	mov.w @(0x54,pc),r0
+	mov 0x02,r2
+	mov.b r2,@(r0,r14
+	mova @(0x64,pc),r0
+	fmov @r0,fr3
+	mov.w @(0x4c,pc),r0
+	fmov @(r0,r14),fr2
+	mov 0x38,r0
+	fadd fr3,fr2
+	fmov fr2,@(r0,r14)
 
 loc_ce338DE:
-#data 0xD317
-#data 0xE516E000
-#data 0xE60380E7
-#data 0x64E3430B
-#data 0xDD14E70A
-#data 0xE6136573
-#data 0x64E34D0B
-#data 0x6573E709
-#data 0x4D0BE613
-#data 0xE70B64E3
-#data 0xE6136573
-#data 0x64E34D0B
+	mov.l @(0x5c,pc),r3
+	mov 0x00,r0
+	mov 0x16,r5
+	mov.b r0,@(0x7,r14)
+	mov 0x03,r6
+	jsr @r3
+	mov r14,r4
+	mov 0x0A,r7
+	mov.l @(0x50,pc),r13
+	mov r7,r5
+	mov 0x13,r6
+	jsr @r13
+	mov r14,r4
+	mov 0x09,r7
+	mov r7,r5
+	mov 0x13,r6
+	jsr @r13
+	mov r14,r4
+	mov 0x0B,r7
+	mov r7,r5
+	mov 0x13,r6
+	jsr @r13
+	mov r14,r4
 
-#align4
 loc_ce3390C:
-#data 0x420BD206
-#data 0x7F0C64E3
-#data 0x6DF64F26
-#data 0x6EF6000B
-;==============================================
-#data 0x01410328
-#data 0x01F90143
-#data 0x0000041C
-#data loc_8c034DEE
-#data 0xC1D55555
-#data 0x43092492
-#data loc_8c050834
-#data 0x41AB6DB6
-#data loc_8c034E8C
-#data loc_8c07A428
+	mov.l @(0x18,pc),r2
+	jsr @r2
+	mov r14,r4
+	add 0x0C,r15
+	lds.l @r15+,pr
+	mov.l @r15+,r13
+	rts
+	mov.l @r15+,r14
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+loc_ce3391c:
+	#data 0x0328
+loc_ce3391e:
+	#data 0x0141
+loc_ce33920:
+	#data 0x0143
+loc_ce33922:
+	#data 0x01F9
+loc_ce33924:
+	#data 0x041C
+	#align4
+
+loc_ce33928:
+	#data loc_8c034DEE
+loc_ce3392c:
+	#data 0xC1D55555
+loc_ce33930:
+	#data 0x43092492
+loc_ce33934:
+	#data loc_8c050834
+loc_ce33938:
+	#data 0x41AB6DB6
+loc_ce3393c:
+	#data loc_8c034E8C
+loc_ce33940:
+	#data loc_8c07A428
+
+;==============================================
 loc_ce33944:
-#data 0xE305909F
-#data 0x6E432FE6
-#data 0x2FD6D252
-#data 0x0E344F22
-#data 0xF428C74F
-#data 0xE038F308
-#data 0xF430F2E6
-#data 0x8B00F245
-#data 0xFE47
+	mov.w @(0x13e,pc),r0
+	mov 0x05,r3
+	mov.l r14,@-r15
+	mov r4,r14
+	mov.l @(0x148,pc),r2
+	mov.l r13,@-r15
+	sts.l pr,@-r15
+	mov.b r3,@(r0,r14)
+	mova @(0x13c,pc),r0
+	fmov @r2,fr4
+	fmov @r0,fr3
+	mov 0x38,r0
+	fmov @(r0,r14),fr2
+	fadd fr3,fr4
+	fcmp/gt fr4,fr2
+	bf loc_ce33966
+	fmov fr4,@(r0,r14)
 
 loc_ce33966:
-#data 0xC74D
-#data 0x908DF308
-#data 0xE038F2E6
-#data 0xF230F1E6
-#data 0x8F07F215
-#data 0xC749ED00
-#data 0x9083F208
-#data 0xE038F1E6
-#data 0xFE17F120
+	mova @(0x134,pc),r0
+	fmov @r0,fr3
+	mov.w @(0x11a,pc),r0
+	fmov @(r0,r14),fr2
+	mov 0x38,r0
+	fmov @(r0,r14),fr1
+	fadd fr3,fr2
+	fcmp/gt fr1,fr2
+	bf.s loc_ce33988
+	mov 0x00,r13
+	mova @(0x124,pc),r0
+	fmov @r0,fr2
+	mov.w @(0x106,pc),r0
+	fmov @(r0,r14),fr1
+	mov 0x38,r0
+	fadd fr2,fr1
+	fmov fr1,@(r0,r14)
 
-#align4
 loc_ce33988:
-#data 0x00EC907F
-#data 0x8B078802
-#data 0xE715907B
-#data 0x6573D343
-#data 0xE6130ED4
-#data 0x64E3430B
+	mov.w @(0xfe,pc),r0
+	mov.b @(r0,r14),r0
+	cmp/eq 0x02,r0
+	bf loc_ce339a0
+	mov.w @(0xf6,pc),r0
+	mov 0x15,r7
+	mov.l @(0x10c,pc),r3
+	mov r7,r5
+	mov.b r13,@(r0,r14)
+	mov 0x13,r6
+	jsr @r3
+	mov r14,r4
 
-#align4
 loc_ce339A0:
-#data 0x34EC9474
-#data 0x70FF8546
-#data 0x70018146
-#data 0x4015600D
-#data 0xA0838B01
-#data 0x0009
+	mov.w @(0xe8,pc),r4
+	add r14,r4
+	mov.w @(0xc,r4),r0
+	add 0xFF,r0
+	mov.w r0,@(0xc,r4)
+	add 0x01,r0
+	extu.w r0,r0
+	cmp/pl r0
+	bf loc_ce339b6
+	bra loc_ce33abc
+	nop
 
 loc_ce339B6:
-#data 0x60D3
-#data 0x81460009
-#data 0x03EC9067
-#data 0x891B2338
-#data 0xE309844A
-#data 0x3033600C
-#data 0x905F8916
-#data 0xD235E147
-#data 0x700B0E14
-#data 0x70F20ED5
-#data 0x70260ED4
-#data 0x84E20ED6
-#data 0x600C6122
-#data 0x717C4000
-#data 0x7301031D
-#data 0x844A0135
-#data 0x804A7001
-#data 0x8146E004
+	mov r13,r0
+	nop
+	mov.w r0,@(0xc,r4)
+	mov.w @(0xce,pc),r0
+	mov.b @(r0,r14),r3
+	tst r3,r3
+	bt loc_ce339fc
+	mov.b @(0xa,r4),r0
+	mov 0x09,r3
+	extu.b r0,r0
+	cmp/ge r3,r0
+	bt loc_ce339fc
+	mov.w @(0xbe,pc),r0
+	mov 0x47,r1
+	mov.l @(0xd4,pc),r2
+	mov.b r1,@(r0,r14)
+	add 0x0B,r0
+	mov.w r13,@(r0,r14)
+	add 0xF2,r0
+	mov.b r13,@(r0,r14)
+	add 0x26,r0
+	mov.l r13,@(r0,r14)
+	mov.b @(0x2,r14),r0
+	mov.l @r2,r1
+	extu.b r0,r0
+	shll r0
+	add 0x7C,r1
+	mov.w @(r0,r1),r3
+	add 0x01,r3
+	mov.w r3,@(r0,r1)
+	mov.b @(0xa,r4),r0
+	add 0x01,r0
+	mov.b r0,@(0xa,r4)
+	mov 0x04,r0
+	mov.w r0,@(0xc,r4)
 
-#align4
 loc_ce339FC:
-#data 0xD32BE15C
-#data 0xE03431EC
-#data 0xF2E6F318
-#data 0x31ECE168
-#data 0xFE27F230
-#data 0xF2E6E05C
-#data 0xE160F318
-#data 0xF23031EC
-#data 0xE038FE27
-#data 0xF318F2E6
-#data 0x31ECE16C
-#data 0xFE27F230
-#data 0xF2E6E060
-#data 0xF230F318
-#data 0x430BFE27
-#data 0x85EE64E3
-#data 0x81EE70FF
-#data 0x2008600F
-#data 0x90248B3A
-#data 0xD319E202
-#data 0x0E24E500
-#data 0x80E6E004
-#data 0x64E3430B
-#data 0xE06CF39D
-#data 0xFE37F34D
-#data 0xF308C714
-#data 0xF2E69010
-#data 0xF1E6E038
-#data 0xF125F230
-#data 0xE5168F02
-#data 0xE602A001
+	mov 0x5C,r1
+	mov.l @(0xac,pc),r3
+	add r14,r1
+	mov 0x34,r0
+	fmov @r1,fr3
+	fmov @(r0,r14),fr2
+	mov 0x68,r1
+	add r14,r1
+	fadd fr3,fr2
+	fmov fr2,@(r0,r14)
+	mov 0x5C,r0
+	fmov @(r0,r14),fr2
+	fmov @r1,fr3
+	mov 0x60,r1
+	add r14,r1
+	fadd fr3,fr2
+	fmov fr2,@(r0,r14)
+	mov 0x38,r0
+	fmov @(r0,r14),fr2
+	fmov @r1,fr3
+	mov 0x6C,r1
+	add r14,r1
+	fadd fr3,fr2
+	fmov fr2,@(r0,r14)
+	mov 0x60,r0
+	fmov @(r0,r14),fr2
+	fmov @r1,fr3
+	fadd fr3,fr2
+	fmov fr2,@(r0,r14)
+	jsr @r3
+	mov r14,r4
+	mov.w @(0x1c,r14),r0
+	add 0xFF,r0
+	mov.w r0,@(0x1c,r14)
+	exts.w r0,r0
+	tst r0,r0
+	bf loc_ce33abc
+	mov.w @(0x48,pc),r0
+	mov 0x02,r2
+	mov.l @(0x64,pc),r3
+	mov 0x00,r5
+	mov.b r2,@(r0,r14)
+	mov 0x04,r0
+	mov.b r0,@(0x6,r14)
+	jsr @r3
+	mov r14,r4
+	fldi1 fr3
+	mov 0x6C,r0
+	fneg fr3
+	fmov fr3,@(r0,r14)
+	mova @(0x50,pc),r0
+	fmov @r0,fr3
+	mov.w @(0x20,pc),r0
+	fmov @(r0,r14),fr2
+	mov 0x38,r0
+	fmov @(r0,r14),fr1
+	fadd fr3,fr2
+	fcmp/gt fr2,fr1
+	bf.s loc_ce33a78
+	mov 0x16,r5
+	bra loc_ce33a7a
+	mov 0x02,r6
 
 loc_ce33A78:
-#data 0xE611
+	mov 0x11,r6
 
 loc_ce33A7A:
-#data 0x4F26
-#data 0x64E3D20E
-#data 0x422B6DF6
-#data 0x03286EF6
-#data 0x0141041C
-#data 0x019E02A4
-#data 0x01F501A1
-#data 0xC2CDB6DB
-#data loc_8c26A5B8
-#data 0x40092492
-#data 0x41892492
-#data loc_8c07A428
-#data mem_8c2896b0
-#data loc_8c034DEE
-#data loc_8c035162
-#data 0x42855555
-#data loc_8c034E8C
+	lds.l @r15+,pr
+	mov.l @(0x38,pc),r2
+	mov r14,r4
+	mov.l @r15+,r13
+	jmp @r2
+	mov.l @r15+,r14
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+loc_ce33A86:
+	#data 0x0328
+loc_ce33A88:
+	#data 0x041C
+loc_ce33A8a:
+	#data 0x0141
+loc_ce33A8c:
+	#data 0x02A4
+loc_ce33A8e:
+	#data 0x019E
+loc_ce33A90:
+	#data 0x01A1
+loc_ce33A92:
+	#data 0x01F5
+	#align4
+
+loc_ce33A94:
+	#data 0xC2CDB6DB
+loc_ce33A98:
+	#data loc_8c26A5B8
+loc_ce33A9c:
+	#data 0x40092492
+loc_ce33AA0:
+	#data 0x41892492
+loc_ce33AA4:
+	#data loc_8c07A428
+loc_ce33AA8:
+	#data mem_8c2896b0
+loc_ce33AAc:
+	#data loc_8c034DEE
+loc_ce33AB0:
+	#data loc_8c035162
+loc_ce33AB4:
+	#data 0x42855555
+loc_ce33AB8:
+	#data loc_8c034E8C
+
+;==============================================
 loc_ce33ABC:
-#data 0x6DF64F26
-#data 0x6EF6000B
-;==============================================
+	lds.l @r15+,pr
+	mov.l @r15+,r13
+	rts
+	mov.l @r15+,r14
 
+;==============================================
 loc_ce33AC4:
-rts
-nop
-;==============================================
+	rts
+	nop
 
+;==============================================
 loc_ce33AC8:
-mov.l r14,@-r15
-mov r4,r14
-mov.w @(loc_ce33C10,pc),r0 ; r0 set to 0x3F9
-mov 0x00,r4 ; r4 set to 0x00
-sts.l pr,@-r15
-mov.b r4,@(r0,r14)
-add 0xFF,r0 ; r0 set to 0x3F8
-mov.b r4,@(r0,r14)
-mov.w @(loc_ce33C12,pc),r0 ; r0 set to 0x327
-mov.b r4,@(r0,r14)
-add 0x01,r0 ; r0 set to 0x328
-mov.b r4,@(r0,r14)
-mov.w @(loc_ce33C14,pc),r0 ; r0 set to 0x41C
-fmov.s @(r0,r14),fr3
-mov 0x38,r0 ; r0 set to 0x38
-fmov.s @(r0,r14),fr2
-fcmp/gt fr2,fr3
-bf loc_ce33B20
-mov.b @(0x06,r14),r0
-fldi0 fr4
-add 0x01,r0 ; r0 set to 0x39
-mov.l @(loc_ce33C18_to_loc_8c0511B4,pc),r3 ; r3 set to 0x8C0511B4
-mov.b r0,@(0x06,r14)
-mov 0x5C,r0 ; r0 set to 0x5C
-fmov.s fr4,@(r0,r14)
-mov 0x68,r0 ; r0 set to 0x68
-fmov.s fr4,@(r0,r14)
-mov 0x60,r0 ; r0 set to 0x60
-fmov.s fr4,@(r0,r14)
-mov 0x6C,r0 ; r0 set to 0x6C
-fmov.s fr4,@(r0,r14)
-mov.w @(loc_ce33C14,pc),r0 ; r0 set to 0x41C
-fmov.s @(r0,r14),fr3 ; r3 ??? bc r14 is ???
-mov 0x38,r0 ; r0 set to 0x38
-fmov.s fr3,@(r0,r14)
-jsr @r3
-mov r14,r4 ; r4 ??? bc r14 is ???
-lds.l @r15+,pr
-mov.l @(loc_ce33C1C_to_loc_8c034E8C,pc),r2 ; r2 set to 0x8C034E8C
-mov r14,r4
-mov 0x08,r6 ; r6 set to 0x08
-mov 0x16,r5 ; r5 set to 0x16
-jmp @r2
-mov.l @r15+,r14
+	mov.l r14,@-r15
+	mov r4,r14
+	mov.w @(loc_ce33C10,pc),r0 ; r0 set to 0x3F9
+	mov 0x00,r4 ; r4 set to 0x00
+	sts.l pr,@-r15
+	mov.b r4,@(r0,r14)
+	add 0xFF,r0 ; r0 set to 0x3F8
+	mov.b r4,@(r0,r14)
+	mov.w @(loc_ce33C12,pc),r0 ; r0 set to 0x327
+	mov.b r4,@(r0,r14)
+	add 0x01,r0 ; r0 set to 0x328
+	mov.b r4,@(r0,r14)
+	mov.w @(loc_ce33C14,pc),r0 ; r0 set to 0x41C
+	fmov.s @(r0,r14),fr3
+	mov 0x38,r0 ; r0 set to 0x38
+	fmov.s @(r0,r14),fr2
+	fcmp/gt fr2,fr3
+	bf loc_ce33B20
+	mov.b @(0x06,r14),r0
+	fldi0 fr4
+	add 0x01,r0 ; r0 set to 0x39
+	mov.l @(loc_ce33C18_to_loc_8c0511B4,pc),r3 ; r3 set to 0x8C0511B4
+	mov.b r0,@(0x06,r14)
+	mov 0x5C,r0 ; r0 set to 0x5C
+	fmov.s fr4,@(r0,r14)
+	mov 0x68,r0 ; r0 set to 0x68
+	fmov.s fr4,@(r0,r14)
+	mov 0x60,r0 ; r0 set to 0x60
+	fmov.s fr4,@(r0,r14)
+	mov 0x6C,r0 ; r0 set to 0x6C
+	fmov.s fr4,@(r0,r14)
+	mov.w @(loc_ce33C14,pc),r0 ; r0 set to 0x41C
+	fmov.s @(r0,r14),fr3 ; r3 ??? bc r14 is ???
+	mov 0x38,r0 ; r0 set to 0x38
+	fmov.s fr3,@(r0,r14)
+	jsr @r3
+	mov r14,r4 ; r4 ??? bc r14 is ???
+	lds.l @r15+,pr
+	mov.l @(loc_ce33C1C_to_loc_8c034E8C,pc),r2 ; r2 set to 0x8C034E8C
+	mov r14,r4
+	mov 0x08,r6 ; r6 set to 0x08
+	mov 0x16,r5 ; r5 set to 0x16
+	jmp @r2
+	mov.l @r15+,r14
 
 loc_ce33B20:
-mov 0x5C,r1 ; r1 set to 0x5C
-mov.l @(loc_ce33C20_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
-add r14,r1 ; r1 ??? bc r14 is ???
-mov r14,r4
-mov 0x34,r0 ; r0 set to 0x34
-fmov.s @r1,fr3 ; r3 ??? bc r1 is ???
-fmov.s @(r0,r14),fr2
-mov 0x68,r1 ; r1 set to 0x68
-add r14,r1 ; r1 ??? bc r14 is ???
-fadd fr3,fr2
-fmov.s fr2,@(r0,r14)
-mov 0x5C,r0 ; r0 set to 0x5C
-fmov.s @(r0,r14),fr2
-fmov.s @r1,fr3
-mov 0x60,r1 ; r1 set to 0x60
-add r14,r1 ; r1 ??? bc r14 is ???
-fadd fr3,fr2
-fmov.s fr2,@(r0,r14)
-mov 0x38,r0 ; r0 set to 0x38
-fmov.s @(r0,r14),fr2
-fmov.s @r1,fr3
-mov 0x6C,r1 ; r1 set to 0x6C
-add r14,r1 ; r1 ??? bc r14 is ???
-fadd fr3,fr2
-fmov.s fr2,@(r0,r14)
-mov 0x60,r0 ; r0 set to 0x60
-fmov.s @(r0,r14),fr2
-fmov.s @r1,fr3
-fadd fr3,fr2
-fmov.s fr2,@(r0,r14)
-lds.l @r15+,pr
-jmp @r3
-mov.l @r15+,r14
+	mov 0x5C,r1 ; r1 set to 0x5C
+	mov.l @(loc_ce33C20_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
+	add r14,r1 ; r1 ??? bc r14 is ???
+	mov r14,r4
+	mov 0x34,r0 ; r0 set to 0x34
+	fmov.s @r1,fr3 ; r3 ??? bc r1 is ???
+	fmov.s @(r0,r14),fr2
+	mov 0x68,r1 ; r1 set to 0x68
+	add r14,r1 ; r1 ??? bc r14 is ???
+	fadd fr3,fr2
+	fmov.s fr2,@(r0,r14)
+	mov 0x5C,r0 ; r0 set to 0x5C
+	fmov.s @(r0,r14),fr2
+	fmov.s @r1,fr3
+	mov 0x60,r1 ; r1 set to 0x60
+	add r14,r1 ; r1 ??? bc r14 is ???
+	fadd fr3,fr2
+	fmov.s fr2,@(r0,r14)
+	mov 0x38,r0 ; r0 set to 0x38
+	fmov.s @(r0,r14),fr2
+	fmov.s @r1,fr3
+	mov 0x6C,r1 ; r1 set to 0x6C
+	add r14,r1 ; r1 ??? bc r14 is ???
+	fadd fr3,fr2
+	fmov.s fr2,@(r0,r14)
+	mov 0x60,r0 ; r0 set to 0x60
+	fmov.s @(r0,r14),fr2
+	fmov.s @r1,fr3
+	fadd fr3,fr2
+	fmov.s fr2,@(r0,r14)
+	lds.l @r15+,pr
+	jmp @r3
+	mov.l @r15+,r14
 
 loc_ce33B62:
-mov.l r14,@-r15
-mov 0x00,r3 ; r3 set to 0x00
-mov 0x48,r0 ; r0 set to 0x48
-mov r4,r14
-sts.l pr,@-r15
-mov.l r3,@(r0,r14)
-mov.l @(loc_ce33C20_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
-jsr @r3
-mov r14,r4
-exts.b r0,r0 ; r0 ??
-cmp/pz r0
-bt loc_ce33B84
-lds.l @r15+,pr
-mov.l @(loc_ce33C24_to_loc_8c051648,pc),r3 ; r3 set to 0x8C051648
-mov r14,r4
-jmp @r3
-mov.l @r15+,r14
+	mov.l r14,@-r15
+	mov 0x00,r3 ; r3 set to 0x00
+	mov 0x48,r0 ; r0 set to 0x48
+	mov r4,r14
+	sts.l pr,@-r15
+	mov.l r3,@(r0,r14)
+	mov.l @(loc_ce33C20_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
+	jsr @r3
+	mov r14,r4
+	exts.b r0,r0 ; r0 ??
+	cmp/pz r0
+	bt loc_ce33B84
+	lds.l @r15+,pr
+	mov.l @(loc_ce33C24_to_loc_8c051648,pc),r3 ; r3 set to 0x8C051648
+	mov r14,r4
+	jmp @r3
+	mov.l @r15+,r14
 
 loc_ce33B84:
-lds.l @r15+,pr
-rts
-mov.l @r15+,r14
-;==============================================
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
 
+;==============================================
 loc_ce33B8A:
-mov r4,r3
-mov.l @(loc_ce33C28_to_loc_ce34ABC_to_loc_ce33B9C,pc),r1 ; r1 set to 0xCE34ABC
-mov.l r4,@-r15
-mov.b @(0x06,r3),r0
-extu.b r0,r0
-shll2 r0
-mov.l @(r0,r1),r3
-jmp @r3
-add 0x04,r15
+	mov r4,r3
+	mov.l @(loc_ce33C28_to_loc_ce34ABC_to_loc_ce33B9C,pc),r1 ; r1 set to 0xCE34ABC
+	mov.l r4,@-r15
+	mov.b @(0x06,r3),r0
+	extu.b r0,r0
+	shll2 r0
+	mov.l @(r0,r1),r3
+	jmp @r3
+	add 0x04,r15
 
 loc_ce33B9C:
-mov.l r14,@-r15
-mov r4,r14
-fldi0 fr4
-mov 0x00,r3 ; r3 set to 0x00
-sts.l pr,@-r15
-mov.b @(0x06,r14),r0
-add 0x01,r0
-mov.b r0,@(0x06,r14)
-mov 0x5C,r0 ; r0 set to 0x5C
-fmov.s fr4,@(r0,r14)
-mov 0x60,r0 ; r0 set to 0x60
-fmov.s fr4,@(r0,r14)
-mov 0x68,r0 ; r0 set to 0x68
-fmov.s fr4,@(r0,r14)
-mov 0x6C,r0 ; r0 set to 0x6C
-fmov.s fr4,@(r0,r14)
-mov.w @(loc_ce33C16,pc),r0 ; r0 set to 0x1F9
-mov.b r3,@(r0,r14)
-mov.w @(loc_ce33C14,pc),r0 ; r0 set to 0x41C
-mov.l @(loc_ce33C2C_to_loc_8c05218A,pc),r3 ; r3 set to 0x8C05218A
-fmov.s @(r0,r14),fr3 ; r3 ??? bc r14 is ???
-mov 0x38,r0 ; r0 set to 0x38
-fmov.s fr3,@(r0,r14)
-jsr @r3
-mov r14,r4
-lds.l @r15+,pr
-mov.l @(loc_ce33C1C_to_loc_8c034E8C,pc),r2 ; r2 set to 0x8C034E8C
-mov r14,r4
-mov 0x1F,r6 ; r6 set to 0x1F
-mov 0x15,r5 ; r5 set to 0x15
-jmp @r2
-mov.l @r15+,r14
+	mov.l r14,@-r15
+	mov r4,r14
+	fldi0 fr4
+	mov 0x00,r3 ; r3 set to 0x00
+	sts.l pr,@-r15
+	mov.b @(0x06,r14),r0
+	add 0x01,r0
+	mov.b r0,@(0x06,r14)
+	mov 0x5C,r0 ; r0 set to 0x5C
+	fmov.s fr4,@(r0,r14)
+	mov 0x60,r0 ; r0 set to 0x60
+	fmov.s fr4,@(r0,r14)
+	mov 0x68,r0 ; r0 set to 0x68
+	fmov.s fr4,@(r0,r14)
+	mov 0x6C,r0 ; r0 set to 0x6C
+	fmov.s fr4,@(r0,r14)
+	mov.w @(loc_ce33C16,pc),r0 ; r0 set to 0x1F9
+	mov.b r3,@(r0,r14)
+	mov.w @(loc_ce33C14,pc),r0 ; r0 set to 0x41C
+	mov.l @(loc_ce33C2C_to_loc_8c05218A,pc),r3 ; r3 set to 0x8C05218A
+	fmov.s @(r0,r14),fr3 ; r3 ??? bc r14 is ???
+	mov 0x38,r0 ; r0 set to 0x38
+	fmov.s fr3,@(r0,r14)
+	jsr @r3
+	mov r14,r4
+	lds.l @r15+,pr
+	mov.l @(loc_ce33C1C_to_loc_8c034E8C,pc),r2 ; r2 set to 0x8C034E8C
+	mov r14,r4
+	mov 0x1F,r6 ; r6 set to 0x1F
+	mov 0x15,r5 ; r5 set to 0x15
+	jmp @r2
+	mov.l @r15+,r14
 
 loc_ce33BDC:
-sts.l pr,@-r15
-add 0xFC,r15
-mov.l @(loc_ce33C20_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
-jsr @r3
-mov.l r4,@r15
-exts.b r0,r0
-cmp/pz r0
-bt loc_ce33BF6
-mov.l @r15,r4
-add 0x04,r15
-mov.l @(loc_ce33C24_to_loc_8c051648,pc),r3 ; r3 set to 0x8C051648
-jmp @r3
-lds.l @r15+,pr
+	sts.l pr,@-r15
+	add 0xFC,r15
+	mov.l @(loc_ce33C20_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
+	jsr @r3
+	mov.l r4,@r15
+	exts.b r0,r0
+	cmp/pz r0
+	bt loc_ce33BF6
+	mov.l @r15,r4
+	add 0x04,r15
+	mov.l @(loc_ce33C24_to_loc_8c051648,pc),r3 ; r3 set to 0x8C051648
+	jmp @r3
+	lds.l @r15+,pr
 
 loc_ce33BF6:
-add 0x04,r15
-lds.l @r15+,pr
-rts
-nop
+	add 0x04,r15
+	lds.l @r15+,pr
+	rts
+	nop
+
 ;==============================================
-
 loc_ce33BFE:
-mov r4,r3
-mov.l @(loc_ce33C30_to_loc_ce34AC4_to_loc_ce33C34,pc),r1 ; r1 set to 0xCE34AC4
-mov.l r4,@-r15
-mov.b @(0x06,r3),r0
-extu.b r0,r0
-shll2 r0
-mov.l @(r0,r1),r3
-jmp @r3
-add 0x04,r15
+	mov r4,r3
+	mov.l @(loc_ce33C30_to_loc_ce34AC4_to_loc_ce33C34,pc),r1 ; r1 set to 0xCE34AC4
+	mov.l r4,@-r15
+	mov.b @(0x06,r3),r0
+	extu.b r0,r0
+	shll2 r0
+	mov.l @(r0,r1),r3
+	jmp @r3
+	add 0x04,r15
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce33C10:
-#data 0x03F9
-
+	#data 0x03F9
 loc_ce33C12:
-#data 0x0327
-
+	#data 0x0327
 loc_ce33C14:
-#data 0x041C
-
+	#data 0x041C
 loc_ce33C16:
-#data 0x01F9
+	#data 0x01F9
+	#align4
 
-#align4
 loc_ce33C18_to_loc_8c0511B4:
-#data loc_8c0511B4
-
+	#data loc_8c0511B4
 loc_ce33C1C_to_loc_8c034E8C:
-#data loc_8c034E8C
-
+	#data loc_8c034E8C
 loc_ce33C20_to_loc_8c034DEE:
-#data loc_8c034DEE
-
+	#data loc_8c034DEE
 loc_ce33C24_to_loc_8c051648:
-#data loc_8c051648
-
+	#data loc_8c051648
 loc_ce33C28_to_loc_ce34ABC_to_loc_ce33B9C:
-#data loc_ce34ABC_to_loc_ce33B9C
-
+	#data loc_ce34ABC_to_loc_ce33B9C
 loc_ce33C2C_to_loc_8c05218A:
-#data loc_8c05218A
-
+	#data loc_8c05218A
 loc_ce33C30_to_loc_ce34AC4_to_loc_ce33C34:
-#data loc_ce34AC4_to_loc_ce33C34
+	#data loc_ce34AC4_to_loc_ce33C34
 
-
+;==============================================
 loc_ce33C34:
-mov.l r14,@-r15
-mov r4,r14
-fldi0 fr4
-mov.l r13,@-r15
-mov 0x00,r13 ; r13 set to 0x00
-sts.l pr,@-r15
-mov.b @(0x06,r14),r0
-mov.l @(loc_ce33D88_to_loc_8c05218A,pc),r3 ; r3 set to 0x8C05218A
-add 0x01,r0
-mov.b r0,@(0x06,r14)
-mov 0x5C,r0 ; r0 set to 0x5C
-fmov.s fr4,@(r0,r14)
-mov 0x60,r0 ; r0 set to 0x60
-fmov.s fr4,@(r0,r14)
-mov 0x68,r0 ; r0 set to 0x68
-fmov.s fr4,@(r0,r14)
-mov 0x6C,r0 ; r0 set to 0x6C
-fmov.s fr4,@(r0,r14)
-mov.w @(loc_ce33D7E,pc),r0 ; r0 set to 0x1F9
-mov.b r13,@(r0,r14)
-mov.w @(loc_ce33D80,pc),r0 ; r0 set to 0x41C
-fmov.s @(r0,r14),fr3 ; r3 ??? bc r14 is ???
-mov 0x38,r0 ; r0 set to 0x38
-fmov.s fr3,@(r0,r14)
-jsr @r3
-mov r14,r4
-mov.l @(loc_ce33D8C_to_loc_8c05115A,pc),r2 ; r2 set to 0x8C05115A
-jsr @r2
-mov r14,r4
-mov.w @(loc_ce33D82,pc),r0 ; r0 set to 0x1A1
-mov 0x14,r3 ; r3 set to 0x14
-mov 0x02,r6 ; r6 set to 0x02
-mov r14,r4
-mov.b r3,@(r0,r14)
-add 0x0B,r0 ; r0 set to 0x1AC
-mov.w r13,@(r0,r14)
-add 0xF2,r0 ; r0 set to 0x19E
-mov.b r13,@(r0,r14)
-add 0x26,r0 ; r0 set to 0x1C4
-mov.l @(loc_ce33D90_to_mem_8c2896b0,pc),r3 ; r3 set to 0x8C2896B0
-mov 0x14,r5 ; r5 set to 0x14
-mov.l r13,@(r0,r14)
-mov.b @(0x02,r14),r0
-mov.l @r3,r2 ; r2 ??
-extu.b r0,r0 ; r0 set to 0xC4
-shll r0 ; r0 set to 0x188
-add 0x7C,r2
-mov.w @(r0,r2),r1
-add 0x01,r1
-mov.w r1,@(r0,r2)
-lds.l @r15+,pr
-mov.l @(loc_ce33D94_to_loc_8c034E8C,pc),r2 ; r2 set to 0x8C034E8C
-mov.l @r15+,r13 ; r13 ??? bc r15 is ???
-jmp @r2
-mov.l @r15+,r14
+	mov.l r14,@-r15
+	mov r4,r14
+	fldi0 fr4
+	mov.l r13,@-r15
+	mov 0x00,r13 ; r13 set to 0x00
+	sts.l pr,@-r15
+	mov.b @(0x06,r14),r0
+	mov.l @(loc_ce33D88_to_loc_8c05218A,pc),r3 ; r3 set to 0x8C05218A
+	add 0x01,r0
+	mov.b r0,@(0x06,r14)
+	mov 0x5C,r0 ; r0 set to 0x5C
+	fmov.s fr4,@(r0,r14)
+	mov 0x60,r0 ; r0 set to 0x60
+	fmov.s fr4,@(r0,r14)
+	mov 0x68,r0 ; r0 set to 0x68
+	fmov.s fr4,@(r0,r14)
+	mov 0x6C,r0 ; r0 set to 0x6C
+	fmov.s fr4,@(r0,r14)
+	mov.w @(loc_ce33D7E,pc),r0 ; r0 set to 0x1F9
+	mov.b r13,@(r0,r14)
+	mov.w @(loc_ce33D80,pc),r0 ; r0 set to 0x41C
+	fmov.s @(r0,r14),fr3 ; r3 ??? bc r14 is ???
+	mov 0x38,r0 ; r0 set to 0x38
+	fmov.s fr3,@(r0,r14)
+	jsr @r3
+	mov r14,r4
+	mov.l @(loc_ce33D8C_to_loc_8c05115A,pc),r2 ; r2 set to 0x8C05115A
+	jsr @r2
+	mov r14,r4
+	mov.w @(loc_ce33D82,pc),r0 ; r0 set to 0x1A1
+	mov 0x14,r3 ; r3 set to 0x14
+	mov 0x02,r6 ; r6 set to 0x02
+	mov r14,r4
+	mov.b r3,@(r0,r14)
+	add 0x0B,r0 ; r0 set to 0x1AC
+	mov.w r13,@(r0,r14)
+	add 0xF2,r0 ; r0 set to 0x19E
+	mov.b r13,@(r0,r14)
+	add 0x26,r0 ; r0 set to 0x1C4
+	mov.l @(loc_ce33D90_to_mem_8c2896b0,pc),r3 ; r3 set to 0x8C2896B0
+	mov 0x14,r5 ; r5 set to 0x14
+	mov.l r13,@(r0,r14)
+	mov.b @(0x02,r14),r0
+	mov.l @r3,r2 ; r2 ??
+	extu.b r0,r0 ; r0 set to 0xC4
+	shll r0 ; r0 set to 0x188
+	add 0x7C,r2
+	mov.w @(r0,r2),r1
+	add 0x01,r1
+	mov.w r1,@(r0,r2)
+	lds.l @r15+,pr
+	mov.l @(loc_ce33D94_to_loc_8c034E8C,pc),r2 ; r2 set to 0x8C034E8C
+	mov.l @r15+,r13 ; r13 ??? bc r15 is ???
+	jmp @r2
+	mov.l @r15+,r14
 
 loc_ce33CA2:
-mov.l r14,@-r15
-sts.l pr,@-r15
-add 0xF4,r15
-mov.l @(loc_ce33D98_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
-jsr @r3
-mov r4,r14
-exts.b r0,r0
-cmp/pz r0
-bt loc_ce33CC2
-mov.l @(loc_ce33D9C_to_loc_8c051648,pc),r3 ; r3 set to 0x8C051648
-jsr @r3
-mov r14,r4
-add 0x0C,r15
-lds.l @r15+,pr
-rts
-mov.l @r15+,r14
-;==============================================
+	mov.l r14,@-r15
+	sts.l pr,@-r15
+	add 0xF4,r15
+	mov.l @(loc_ce33D98_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
+	jsr @r3
+	mov r4,r14
+	exts.b r0,r0
+	cmp/pz r0
+	bt loc_ce33CC2
+	mov.l @(loc_ce33D9C_to_loc_8c051648,pc),r3 ; r3 set to 0x8C051648
+	jsr @r3
+	mov r14,r4
+	add 0x0C,r15
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
 
+;==============================================
 loc_ce33CC2:
-#data 0x905F
-#data 0x880100EC
-#data 0x905B8B0D
-#data 0xD336E200
-#data 0x0E2465F3
-#data 0xF308C732
-#data 0xFF3AC732
-#data 0xE004F308
-#data 0x430BFF37
-#data 0x64E3
+	mov.w @(0xbe,pc),r0
+	mov.b @(r0,r14),r0
+	cmp/eq 0x01,r0
+	bf loc_ce33ce6
+	mov.w @(0xb6,pc),r0
+	mov 0x00,r2
+	mov.l @(0xd8,pc),r3
+	mov r15,r5
+	mov.b r2,@(r0,r14)
+	mova @(0xc8,pc),r0
+	fmov @r0,fr3
+	mova @(0xc8,pc),r0
+	fmov fr3,@r15
+	fmov @r0,fr3
+	mov 0x04,r0
+	fmov fr3,@(r0,r15)
+	jsr @r3
+	mov r14,r4
 
 loc_ce33CE6:
-#data 0x904D
-#data 0x880200EC
-#data 0x90498B06
-#data 0xD32EE200
-#data 0x0E24E51A
-#data 0x64E3430B
+	mov.w @(0x9a,pc),r0
+	mov.b @(r0,r14),r0
+	cmp/eq 0x02,r0
+	bf loc_ce33cfc
+	mov.w @(0x92,pc),r0
+	mov 0x00,r2
+	mov.l @(0xb8,pc),r3
+	mov 0x1A,r5
+	mov.b r2,@(r0,r14)
+	jsr @r3
+	mov r14,r4
 
-#align4
 loc_ce33CFC:
-#data 0x4F267F0C
-#data 0x6EF6000B
+	add 0x0C,r15
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
+
 ;==============================================
 loc_ce33D04:
 	mov r4,r3
@@ -9097,607 +9354,762 @@ loc_ce33D04:
 
 ;==============================================
 loc_ce33D16:
-#data 0x8446
-#data 0x7001E302
-#data 0x902E8046
-#data 0xC7240434
-#data 0xE05CF308
-#data 0x902CF437
-#data 0x2338034C
-#data 0xE05C8B03
-#data 0xF34DF346
-#data 0xF437
+	mov.b @(0x6,r4),r0
+	mov 0x02,r3
+	add 0x01,r0
+	mov.b r0,@(0x6,r4)
+	mov.w @(0x5c,pc),r0
+	mov.b r3,@(r0,r4
+	mova @(0x90,pc),r0
+	fmov @r0,fr3
+	mov 0x5C,r0
+	fmov fr3,@(r0,r4)
+	mov.w @(0x58,pc),r0
+	mov.b @(r0,r4),r3
+	tst r3,r3
+	bf loc_ce33D3A
+	mov 0x5C,r0
+	fmov @(r0,r4),fr3
+	fneg fr3
+	fmov fr3,@(r0,r4)
 
 loc_ce33D3A:
-#data 0xE068
-#data 0xF437F38D
-#data 0xF308C71D
-#data 0xE313E060
-#data 0xC71CF437
-#data 0xE06CF308
-#data 0xF437E500
-#data 0x90146653
-#data 0x700B0434
-#data 0x70F20455
-#data 0x70260454
-#data 0x0456D30A
-#data 0x62328442
-#data 0x4000600C
-#data 0x012D727C
-#data 0x02157101
-#data 0x422BD206
-#data 0xE514
+	mov 0x68,r0
+	fldi0 fr3
+	fmov fr3,@(r0,r4)
+	mova @(0x74,pc),r0
+	fmov @r0,fr3
+	mov 0x60,r0
+	mov 0x13,r3
+	fmov fr3,@(r0,r4)
+	mova @(0x70,pc),r0
+	fmov @r0,fr3
+	mov 0x6C,r0
+	mov 0x00,r5
+	fmov fr3,@(r0,r4)
+	mov r5,r6
+	mov.w @(0x28,pc),r0
+	mov.b r3,@(r0,r4)
+	add 0x0B,r0
+	mov.w r5,@(r0,r4)
+	add 0xF2,r0
+	mov.b r5,@(r0,r4)
+	add 0x26,r0
+	mov.l @(0x28,pc),r3
+	mov.l r5,@(r0,r4)
+	mov.b @(0x2,r4),r0
+	mov.l @r3,r2
+	extu.b r0,r0
+	shll r0
+	add 0x7C,r2
+	mov.w @(r0,r2),r1
+	add 0x01,r1
+	mov.w r1,@(r0,r2)
+	mov.l @(0x18,pc),r2
+	jmp @r2
+	mov 0x14,r5
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce33D7E:
-#data 0x01F9
-
+	#data 0x01F9
 loc_ce33D80:
-#data 0x041C
-
+	#data 0x041C
 loc_ce33D82:
-#data 0x01A1
-#data 0x01D20141
+	#data 0x01A1
+loc_ce33D84:
+	#data 0x0141
+loc_ce33D86:
+	#data 0x01D2
+	#align4
 
-#align4
 loc_ce33D88_to_loc_8c05218A:
-#data loc_8c05218A
-
+	#data loc_8c05218A
 loc_ce33D8C_to_loc_8c05115A:
-#data loc_8c05115A
-
+	#data loc_8c05115A
 loc_ce33D90_to_mem_8c2896b0:
-#data mem_8c2896b0
-
+	#data mem_8c2896b0
 loc_ce33D94_to_loc_8c034E8C:
-#data loc_8c034E8C
-
+	#data loc_8c034E8C
 loc_ce33D98_to_loc_8c034DEE:
-#data loc_8c034DEE
-
+	#data loc_8c034DEE
 loc_ce33D9C_to_loc_8c051648:
-#data loc_8c051648
-#data 0x42555555
-#data 0x43092492
-#data loc_8c050EA4
-#data loc_8c04223A
-
-#align4
+	#data loc_8c051648
+loc_ce33Da0:
+	#data 0x42555555
+loc_ce33Da4:
+	#data 0x43092492
+loc_ce33Da8:
+	#data loc_8c050EA4
+loc_ce33Dac:
+	#data loc_8c04223A
 loc_ce33DB0_to_loc_ce34ACC_to_loc_ce33D16:
-#data loc_ce34ACC_to_loc_ce33D16
-#data 0x41F00000
-#data 0x40892492
-#data 0xBF4DB6DB
+	#data loc_ce34ACC_to_loc_ce33D16
+loc_ce33DB4:
+	#data 0x41F00000
+loc_ce33DB8:
+	#data 0x40892492
+loc_ce33DBc:
+	#data 0xBF4DB6DB
 
-
+;==============================================
 loc_ce33DC0:
-mov.l r14,@-r15
-sts.l pr,@-r15
-mov.l @(loc_ce33ED8_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
-jsr @r3
-mov r4,r14
-mov 0x5C,r1 ; r1 set to 0x5C
-mov.l @(loc_ce33EDC_to_loc_8c052CE2,pc),r3 ; r3 set to 0x8C052CE2
-add r14,r1 ; r1 ??? bc r14 is ???
-mov 0x34,r0 ; r0 set to 0x34
-fmov.s @r1,fr3 ; r3 ??? bc r1 is ???
-fmov.s @(r0,r14),fr2
-mov 0x68,r1 ; r1 set to 0x68
-add r14,r1 ; r1 ??? bc r14 is ???
-fadd fr3,fr2
-fmov.s fr2,@(r0,r14)
-mov 0x5C,r0 ; r0 set to 0x5C
-fmov.s @(r0,r14),fr2
-fmov.s @r1,fr3
-mov 0x60,r1 ; r1 set to 0x60
-add r14,r1 ; r1 ??? bc r14 is ???
-fadd fr3,fr2
-fmov.s fr2,@(r0,r14)
-mov 0x38,r0 ; r0 set to 0x38
-fmov.s @(r0,r14),fr2
-fmov.s @r1,fr3
-mov 0x6C,r1 ; r1 set to 0x6C
-add r14,r1 ; r1 ??? bc r14 is ???
-fadd fr3,fr2
-fmov.s fr2,@(r0,r14)
-mov 0x60,r0 ; r0 set to 0x60
-fmov.s @(r0,r14),fr2
-fmov.s @r1,fr3
-fadd fr3,fr2
-fmov.s fr2,@(r0,r14)
-jsr @r3
-mov r14,r4
-extu.b r0,r0 ; r0 set to 0x60
-tst r0,r0
-bt loc_ce33E34
-mov.b @(0x06,r14),r0
-mov r14,r4
-fldi0 fr4
-mov 0x01,r6 ; r6 set to 0x01
-add 0x01,r0 ; r0 set to 0x61
-mov.l @(loc_ce33EE0_to_loc_8c034E8C,pc),r3 ; r3 set to 0x8C034E8C
-mov.b r0,@(0x06,r14)
-mov 0x5C,r0 ; r0 set to 0x5C
-fmov.s fr4,@(r0,r14)
-mov 0x60,r0 ; r0 set to 0x60
-fmov.s fr4,@(r0,r14)
-mov 0x68,r0 ; r0 set to 0x68
-fmov.s fr4,@(r0,r14)
-mov 0x6C,r0 ; r0 set to 0x6C
-fmov.s fr4,@(r0,r14)
-mov 0x14,r5 ; r5 set to 0x14
-lds.l @r15+,pr
-jmp @r3
-mov.l @r15+,r14
+	mov.l r14,@-r15
+	sts.l pr,@-r15
+	mov.l @(loc_ce33ED8_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
+	jsr @r3
+	mov r4,r14
+	mov 0x5C,r1 ; r1 set to 0x5C
+	mov.l @(loc_ce33EDC_to_loc_8c052CE2,pc),r3 ; r3 set to 0x8C052CE2
+	add r14,r1 ; r1 ??? bc r14 is ???
+	mov 0x34,r0 ; r0 set to 0x34
+	fmov.s @r1,fr3 ; r3 ??? bc r1 is ???
+	fmov.s @(r0,r14),fr2
+	mov 0x68,r1 ; r1 set to 0x68
+	add r14,r1 ; r1 ??? bc r14 is ???
+	fadd fr3,fr2
+	fmov.s fr2,@(r0,r14)
+	mov 0x5C,r0 ; r0 set to 0x5C
+	fmov.s @(r0,r14),fr2
+	fmov.s @r1,fr3
+	mov 0x60,r1 ; r1 set to 0x60
+	add r14,r1 ; r1 ??? bc r14 is ???
+	fadd fr3,fr2
+	fmov.s fr2,@(r0,r14)
+	mov 0x38,r0 ; r0 set to 0x38
+	fmov.s @(r0,r14),fr2
+	fmov.s @r1,fr3
+	mov 0x6C,r1 ; r1 set to 0x6C
+	add r14,r1 ; r1 ??? bc r14 is ???
+	fadd fr3,fr2
+	fmov.s fr2,@(r0,r14)
+	mov 0x60,r0 ; r0 set to 0x60
+	fmov.s @(r0,r14),fr2
+	fmov.s @r1,fr3
+	fadd fr3,fr2
+	fmov.s fr2,@(r0,r14)
+	jsr @r3
+	mov r14,r4
+	extu.b r0,r0 ; r0 set to 0x60
+	tst r0,r0
+	bt loc_ce33E34
+	mov.b @(0x06,r14),r0
+	mov r14,r4
+	fldi0 fr4
+	mov 0x01,r6 ; r6 set to 0x01
+	add 0x01,r0 ; r0 set to 0x61
+	mov.l @(loc_ce33EE0_to_loc_8c034E8C,pc),r3 ; r3 set to 0x8C034E8C
+	mov.b r0,@(0x06,r14)
+	mov 0x5C,r0 ; r0 set to 0x5C
+	fmov.s fr4,@(r0,r14)
+	mov 0x60,r0 ; r0 set to 0x60
+	fmov.s fr4,@(r0,r14)
+	mov 0x68,r0 ; r0 set to 0x68
+	fmov.s fr4,@(r0,r14)
+	mov 0x6C,r0 ; r0 set to 0x6C
+	fmov.s fr4,@(r0,r14)
+	mov 0x14,r5 ; r5 set to 0x14
+	lds.l @r15+,pr
+	jmp @r3
+	mov.l @r15+,r14
 
 loc_ce33E34:
-lds.l @r15+,pr
-rts
-mov.l @r15+,r14
-;==============================================
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
 
+;==============================================
 loc_ce33E3A:
-sts.l pr,@-r15
-add 0xFC,r15
-mov.l @(loc_ce33ED8_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
-jsr @r3
-mov.l r4,@r15
-exts.b r0,r0
-cmp/pz r0
-bt loc_ce33E54
-mov.l @r15,r4
-add 0x04,r15
-mov.l @(loc_ce33EE4_to_loc_8c051648,pc),r3 ; r3 set to 0x8C051648
-jmp @r3
-lds.l @r15+,pr
+	sts.l pr,@-r15
+	add 0xFC,r15
+	mov.l @(loc_ce33ED8_to_loc_8c034DEE,pc),r3 ; r3 set to 0x8C034DEE
+	jsr @r3
+	mov.l r4,@r15
+	exts.b r0,r0
+	cmp/pz r0
+	bt loc_ce33E54
+	mov.l @r15,r4
+	add 0x04,r15
+	mov.l @(loc_ce33EE4_to_loc_8c051648,pc),r3 ; r3 set to 0x8C051648
+	jmp @r3
+	lds.l @r15+,pr
 
 loc_ce33E54:
-add 0x04,r15
-lds.l @r15+,pr
-rts
-nop
-;==============================================
+	add 0x04,r15
+	lds.l @r15+,pr
+	rts
+	nop
 
+;==============================================
 loc_ce33E5C:
-add 0xFC,r15
-mov.l r4,@r15
-mov r4,r0
-nop
-mov.w @(loc_ce33ECC,pc),r1 ; r1 set to 0x1F9
-mov.l @(loc_ce33EE8_to_loc_ce34AD8_to_loc_ce33E74,pc),r2 ; r2 set to 0xCE34AD8
-mov.b @(r0,r1),r0
-extu.b r0,r0
-shll2 r0
-mov.l @(r0,r2),r0
-jmp @r0
-add 0x04,r15
+	add 0xFC,r15
+	mov.l r4,@r15
+	mov r4,r0
+	nop
+	mov.w @(loc_ce33ECC,pc),r1 ; r1 set to 0x1F9
+	mov.l @(loc_ce33EE8_to_loc_ce34AD8_to_loc_ce33E74,pc),r2 ; r2 set to 0xCE34AD8
+	mov.b @(r0,r1),r0
+	extu.b r0,r0
+	shll2 r0
+	mov.l @(r0,r2),r0
+	jmp @r0
+	add 0x04,r15
 
 loc_ce33E74:
-mov.w @(loc_ce33ECE,pc),r0 ; r0 set to 0x1FA
-mov 0xF6,r1 ; r1 set to 0xFFFFFFF6
-mov.l r14,@-r15
-mov r4,r14
-mov.w @(loc_ce33ED0,pc),r2 ; r2 set to 0xC00
-sts.l pr,@-r15
-mov.w @(r0,r14),r3
-mov 0x22,r0 ; r0 set to 0x22
-extu.w r3,r3
-and r2,r3
-shad r1,r3
-mov.b r3,@(r0,r14)
-extu.b r3,r3
-tst r3,r3
-bt loc_ce33EC0
-mov.w @(loc_ce33ED2,pc),r0 ; r0 set to 0x1FE
-mov.b @(r0,r14),r3
-tst r3,r3
-bf loc_ce33EC0
-mov.w @(loc_ce33ED4,pc),r0 ; r0 set to 0x1A3
-mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
-extu.b r0,r0
-cmp/eq 0x01,r0
-bf loc_ce33EC0
-mov.l @(loc_ce33EEC_to_loc_8c045790,pc),r2 ; r2 set to 0x8C045790
-jsr @r2
-mov r14,r4
-tst r0,r0
-bt/s loc_ce33EC0
-mov r0,r4
-mov.w @(loc_ce33ED6,pc),r0 ; r0 set to 0x1F7
-mov 0x00,r2 ; r2 set to 0x00
-mov.b r2,@(r0,r14)
-mov r4,r0 ; r0 ??? bc r4 is ???
-nop
-lds.l @r15+,pr
-rts
-mov.l @r15+,r14
-;==============================================
+	mov.w @(loc_ce33ECE,pc),r0 ; r0 set to 0x1FA
+	mov 0xF6,r1 ; r1 set to 0xFFFFFFF6
+	mov.l r14,@-r15
+	mov r4,r14
+	mov.w @(loc_ce33ED0,pc),r2 ; r2 set to 0xC00
+	sts.l pr,@-r15
+	mov.w @(r0,r14),r3
+	mov 0x22,r0 ; r0 set to 0x22
+	extu.w r3,r3
+	and r2,r3
+	shad r1,r3
+	mov.b r3,@(r0,r14)
+	extu.b r3,r3
+	tst r3,r3
+	bt loc_ce33EC0
+	mov.w @(loc_ce33ED2,pc),r0 ; r0 set to 0x1FE
+	mov.b @(r0,r14),r3
+	tst r3,r3
+	bf loc_ce33EC0
+	mov.w @(loc_ce33ED4,pc),r0 ; r0 set to 0x1A3
+	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
+	extu.b r0,r0
+	cmp/eq 0x01,r0
+	bf loc_ce33EC0
+	mov.l @(loc_ce33EEC_to_loc_8c045790,pc),r2 ; r2 set to 0x8C045790
+	jsr @r2
+	mov r14,r4
+	tst r0,r0
+	bt/s loc_ce33EC0
+	mov r0,r4
+	mov.w @(loc_ce33ED6,pc),r0 ; r0 set to 0x1F7
+	mov 0x00,r2 ; r2 set to 0x00
+	mov.b r2,@(r0,r14)
+	mov r4,r0 ; r0 ??? bc r4 is ???
+	nop
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
 
+;==============================================
 loc_ce33EC0:
-mov 0x00,r0 ; r0 set to 0x00
-lds.l @r15+,pr
-rts
-mov.l @r15+,r14
-;==============================================
+	mov 0x00,r0 ; r0 set to 0x00
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
 
+;==============================================
 loc_ce33EC8:
-rts
-mov 0x00,r0
-;==============================================
+	rts
+	mov 0x00,r0
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce33ECC:
-#data 0x01F9
-
+	#data 0x01F9
 loc_ce33ECE:
-#data 0x01FA
-
+	#data 0x01FA
 loc_ce33ED0:
-#data 0x0C00
-
+	#data 0x0C00
 loc_ce33ED2:
-#data 0x01FE
-
+	#data 0x01FE
 loc_ce33ED4:
-#data 0x01A3
-
+	#data 0x01A3
 loc_ce33ED6:
-#data 0x01F7
+	#data 0x01F7
+	#align4
 
-#align4
 loc_ce33ED8_to_loc_8c034DEE:
-#data loc_8c034DEE
-
+	#data loc_8c034DEE
 loc_ce33EDC_to_loc_8c052CE2:
-#data loc_8c052CE2
-
+	#data loc_8c052CE2
 loc_ce33EE0_to_loc_8c034E8C:
-#data loc_8c034E8C
-
+	#data loc_8c034E8C
 loc_ce33EE4_to_loc_8c051648:
-#data loc_8c051648
-
+	#data loc_8c051648
 loc_ce33EE8_to_loc_ce34AD8_to_loc_ce33E74:
-#data loc_ce34AD8_to_loc_ce33E74
-
+	#data loc_ce34AD8_to_loc_ce33E74
 loc_ce33EEC_to_loc_8c045790:
-#data loc_8c045790
+	#data loc_8c045790
 
-
+;==============================================
 loc_ce33EF0:
-mov.w @(loc_ce33FC8,pc),r0 ; r0 set to 0x1FA
-mov 0xF6,r1 ; r1 set to 0xFFFFFFF6
-mov.l r14,@-r15
-mov r4,r14
-mov.w @(loc_ce33FCA,pc),r2 ; r2 set to 0x1C00
-sts.l pr,@-r15
-mov.w @(r0,r14),r3
-mov 0x22,r0 ; r0 set to 0x22
-extu.w r3,r3
-and r2,r3
-shad r1,r3
-mov.b r3,@(r0,r14)
-extu.b r3,r3
-tst r3,r3
-bt loc_ce33F48
-mov.w @(loc_ce33FCC,pc),r0 ; r0 set to 0x1FE
-mov.b @(r0,r14),r3
-tst r3,r3
-bf loc_ce33F48
-mov.w @(loc_ce33FCE,pc),r0 ; r0 set to 0x1A3
-mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
-extu.b r0,r0
-cmp/eq 0x01,r0
-bf loc_ce33F48
-mova @(loc_ce33FDC,pc),r0  ; r0 set to 0xCE33FDC
-fmov.s @r0,fr3
-mov 0x38,r0 ; r0 set to 0x38
-fmov.s @(r0,r14),fr2 ; r2 ??? bc r14 is ???
-fcmp/gt fr3,fr2
-bf loc_ce33F48
-mov.l @(loc_ce33FE0_to_loc_8c045790,pc),r2 ; r2 set to 0x8C045790
-jsr @r2
-mov r14,r4
-tst r0,r0
-bt/s loc_ce33F48
-mov r0,r4 ; r4 set to 0x38
-mov.w @(loc_ce33FD0,pc),r0 ; r0 set to 0x1F7
-mov 0x01,r2 ; r2 set to 0x01
-mov.b r2,@(r0,r14)
-mov r4,r0 ; r0 set to 0x38
-nop
-lds.l @r15+,pr
-rts
-mov.l @r15+,r14
-;==============================================
+	mov.w @(loc_ce33FC8,pc),r0 ; r0 set to 0x1FA
+	mov 0xF6,r1 ; r1 set to 0xFFFFFFF6
+	mov.l r14,@-r15
+	mov r4,r14
+	mov.w @(loc_ce33FCA,pc),r2 ; r2 set to 0x1C00
+	sts.l pr,@-r15
+	mov.w @(r0,r14),r3
+	mov 0x22,r0 ; r0 set to 0x22
+	extu.w r3,r3
+	and r2,r3
+	shad r1,r3
+	mov.b r3,@(r0,r14)
+	extu.b r3,r3
+	tst r3,r3
+	bt loc_ce33F48
+	mov.w @(loc_ce33FCC,pc),r0 ; r0 set to 0x1FE
+	mov.b @(r0,r14),r3
+	tst r3,r3
+	bf loc_ce33F48
+	mov.w @(loc_ce33FCE,pc),r0 ; r0 set to 0x1A3
+	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
+	extu.b r0,r0
+	cmp/eq 0x01,r0
+	bf loc_ce33F48
+	mova @(loc_ce33FDC,pc),r0  ; r0 set to 0xCE33FDC
+	fmov.s @r0,fr3
+	mov 0x38,r0 ; r0 set to 0x38
+	fmov.s @(r0,r14),fr2 ; r2 ??? bc r14 is ???
+	fcmp/gt fr3,fr2
+	bf loc_ce33F48
+	mov.l @(loc_ce33FE0_to_loc_8c045790,pc),r2 ; r2 set to 0x8C045790
+	jsr @r2
+	mov r14,r4
+	tst r0,r0
+	bt/s loc_ce33F48
+	mov r0,r4 ; r4 set to 0x38
+	mov.w @(loc_ce33FD0,pc),r0 ; r0 set to 0x1F7
+	mov 0x01,r2 ; r2 set to 0x01
+	mov.b r2,@(r0,r14)
+	mov r4,r0 ; r0 set to 0x38
+	nop
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
 
+;==============================================
 loc_ce33F48:
-mov 0x00,r0 ; r0 set to 0x00
-lds.l @r15+,pr
-rts
-mov.l @r15+,r14
+	mov 0x00,r0 ; r0 set to 0x00
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
+
 ;==============================================
-
 loc_ce33F50:
-mov.l r4,@-r15
-mov r4,r0
-nop
-mov.w @(loc_ce33FD0,pc),r1 ; r1 set to 0x1F7
-mov.l @(loc_ce33FE4_to_loc_ce34AE8_to_loc_ce33F68,pc),r2 ; r2 set to 0xCE34AE8
-mov.b @(r0,r1),r0
-extu.b r0,r0
-and 0x3F,r0
-shll2 r0
-mov.l @(r0,r2),r3
-jmp @r3
-add 0x04,r15
+	mov.l r4,@-r15
+	mov r4,r0
+	nop
+	mov.w @(loc_ce33FD0,pc),r1 ; r1 set to 0x1F7
+	mov.l @(loc_ce33FE4_to_loc_ce34AE8_to_loc_ce33F68,pc),r2 ; r2 set to 0xCE34AE8
+	mov.b @(r0,r1),r0
+	extu.b r0,r0
+	and 0x3F,r0
+	shll2 r0
+	mov.l @(r0,r2),r3
+	jmp @r3
+	add 0x04,r15
 
-#align4
+;==============================================
 loc_ce33F68:
-#data 0x4F222FE6
-#data 0x902B7FF4
-#data 0x922E6E43
-#data 0x633D03ED
-#data 0x8d0C2328
-#data 0x9029E30A
-#data 0x00EC9128
-#data 0xCA0131EC
-#data 0x90242100
-#data 0x00ED9123
-#data 0xCA0131EC
-#data 0x2101
+	mov.l r14,@-r15
+	sts.l pr,@-r15
+	add 0xF4,r15
+	mov.w @(0x56,pc),r0
+	mov r4,r14
+	mov.w @(0x5c,pc),r2
+	mov.w @(r0,r14),r3
+	extu.w r3,r3
+	tst r2,r3
+	bt.s loc_ce33f96
+	mov 0x0A,r3
+	mov.w @(0x52,pc),r0
+	mov.w @(0x50,pc),r1
+	mov.b @(r0,r14),r0
+	add r14,r1
+	xor 0x01,r0
+	mov.b r0,@r1
+	mov.w @(0x48,pc),r0
+	mov.w @(0x46,pc),r1
+	mov.w @(r0,r14),r0
+	add r14,r1
+	xor 0x01,r0
+	mov.w r0,@r1
 
 loc_ce33F96:
-#data 0x901F
-#data 0x0E3465F3
-#data 0xF308C712
-#data 0xD313C712
-#data 0xF308FF3A
-#data 0xFF37E004
-#data 0x64E3430B
-#data 0x420BD210
-#data 0xD31064E3
-#data 0xE600E50F
-#data 0x64E3430B
-#data 0x4F267F0C
-#data 0x6EF6000B
-;==============================================
+	mov.w @(0x3e,pc),r0
+	mov r15,r5
+	mov.b r3,@(r0,r14)
+	mova @(0x48,pc),r0
+	fmov @r0,fr3
+	mova @(0x48,pc),r0
+	mov.l @(0x4c,pc),r3
+	fmov fr3,@r15
+	fmov @r0,fr3
+	mov 0x04,r0
+	fmov fr3,@(r0,r15)
+	jsr @r3
+	mov r14,r4
+	mov.l @(0x40,pc),r2
+	jsr @r2
+	mov r14,r4
+	mov.l @(0x40,pc),r3
+	mov 0x0F,r5
+	mov 0x00,r6
+	jsr @r3
+	mov r14,r4
+	add 0x0C,r15
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce33FC8:
-#data 0x01FA
-
+	#data 0x01FA
 loc_ce33FCA:
-#data 0x1C00
-
+	#data 0x1C00
 loc_ce33FCC:
-#data 0x01FE
-
+	#data 0x01FE
 loc_ce33FCE:
-#data 0x01A3
-
+	#data 0x01A3
 loc_ce33FD0:
-#data 0x01F7
-#data 0x0400
-#data 0x013001D2
-#data 0x000001A0
+	#data 0x01F7
+loc_ce33FD2:
+	#data 0x0400
+loc_ce33FD4:
+	#data 0x01D2
+loc_ce33FD6:
+	#data 0x0130
+loc_ce33FD8:
+	#data 0x01A0
+	#align4
 
-#align4
 loc_ce33FDC:
-#data 0x43092492
-
-#align4
+	#data 0x43092492
 loc_ce33FE0_to_loc_8c045790:
-#data loc_8c045790
-
+	#data loc_8c045790
 loc_ce33FE4_to_loc_ce34AE8_to_loc_ce33F68:
-#data loc_ce34AE8_to_loc_ce33F68
-#data 0xC2A6AAAA
-#data 0x431E9249
-#data loc_8c103660
-#data loc_8c056F2A
-#data loc_8c034E8C
+	#data loc_ce34AE8_to_loc_ce33F68
+loc_ce33Fe8:
+	#data 0xC2A6AAAA
+loc_ce33Fec:
+	#data 0x431E9249
+loc_ce33Ff0:
+	#data loc_8c103660
+loc_ce33Ff4:
+	#data loc_8c056F2A
+loc_ce33Ff8:
+	#data loc_8c034E8C
 
-#align4
-loc_ce33FFC:
-#data 0x4F222FE6
-#data 0x90977FF4
-#data 0x92966E43
-#data 0x633D03ED
-#data 0x890B2328
-#data 0x91919092
-#data 0x31EC00EC
-#data 0x2100CA01
-#data 0x918C908D
-#data 0x31EC00ED
-#data 0x2101CA01
-
-#align4
-loc_ce34028:
-#data 0xD348C746
-#data 0xC746F308
-#data 0xFF3A65F3
-#data 0xE004F308
-#data 0x430BFF37
-#data 0x907D64E3
-#data 0xF48DE20A
-#data 0xE05C0E24
-#data 0xE068FE47
-#data 0xF330F39D
-#data 0xE060FE47
-#data 0xD33FF2E6
-#data 0xFE27F233
-#data 0xF208C73C
-#data 0xFE27E06C
-#data 0x64E3430B
-#data 0xE50FD23B
-#data 0x420BE601
-#data 0x7F0C64E3
-#data 0x000B4F26
-#data 0x6EF6
 ;==============================================
+loc_ce33FFC:
+	mov.l r14,@-r15
+	sts.l pr,@-r15
+	add 0xF4,r15
+	mov.w @(0x12e,pc),r0
+	mov r4,r14
+	mov.w @(0x12c,pc),r2
+	mov.w @(r0,r14),r3
+	extu.w r3,r3
+	tst r2,r3
+	bt loc_ce34028
+	mov.w @(0x124,pc),r0
+	mov.w @(0x122,pc),r1
+	mov.b @(r0,r14),r0
+	add r14,r1
+	xor 0x01,r0
+	mov.b r0,@r1
+	mov.w @(0x11a,pc),r0
+	mov.w @(0x118,pc),r1
+	mov.w @(r0,r14),r0
+	add r14,r1
+	xor 0x01,r0
+	mov.w r0,@r1
 
+loc_ce34028:
+	mova @(0x118,pc),r0
+	mov.l @(0x120,pc),r3
+	fmov @r0,fr3
+	mova @(0x118,pc),r0
+	mov r15,r5
+	fmov fr3,@r15
+	fmov @r0,fr3
+	mov 0x04,r0
+	fmov fr3,@(r0,r15)
+	jsr @r3
+	mov r14,r4
+	mov.w @(0xfa,pc),r0
+	mov 0x0A,r2
+	fldi0 fr4
+	mov.b r2,@(r0,r14)
+	mov 0x5C,r0
+	fmov fr4,@(r0,r14)
+	mov 0x68,r0
+	fldi1 fr3
+	fadd fr3,fr3
+	fmov fr4,@(r0,r14)
+	mov 0x60,r0
+	fmov @(r0,r14),fr2
+	mov.l @(0xfc,pc),r3
+	fdiv fr3,fr2
+	fmov fr2,@(r0,r14)
+	mova @(0xf0,pc),r0
+	fmov @r0,fr2
+	mov 0x6C,r0
+	fmov fr2,@(r0,r14)
+	jsr @r3
+	mov r14,r4
+	mov.l @(0xec,pc),r2
+	mov 0x0F,r5
+	mov 0x01,r6
+	jsr @r2
+	mov r14,r4
+	add 0x0C,r15
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
+
+;==============================================
 loc_ce3407A:
-mov.w @(loc_ce3413E,pc),r0 ; r0 set to 0x1EA
-mov 0x01,r3 ; r3 set to 0x01
-mov.l r14,@-r15
-mov r4,r14
-mov.b r3,@(r0,r14)
-add 0x0D,r0 ; r0 set to 0x1F7
-mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
-mov r14,r4
-mov.l @(loc_ce3415C_to_loc_ce34AF0_to_loc_ce34098,pc),r1 ; r1 set to 0xCE34AF0
-extu.b r0,r0
-and 0x3F,r0
-shll2 r0
-mov.l @(r0,r1),r3 ; r3 ??
-jmp @r3
-mov.l @r15+,r14
+	mov.w @(loc_ce3413E,pc),r0 ; r0 set to 0x1EA
+	mov 0x01,r3 ; r3 set to 0x01
+	mov.l r14,@-r15
+	mov r4,r14
+	mov.b r3,@(r0,r14)
+	add 0x0D,r0 ; r0 set to 0x1F7
+	mov.b @(r0,r14),r0 ; r0 ??? bc r14 is ???
+	mov r14,r4
+	mov.l @(loc_ce3415C_to_loc_ce34AF0_to_loc_ce34098,pc),r1 ; r1 set to 0xCE34AF0
+	extu.b r0,r0
+	and 0x3F,r0
+	shll2 r0
+	mov.l @(r0,r1),r3 ; r3 ??
+	jmp @r3
+	mov.l @r15+,r14
 
-#align4
 loc_ce34098:
-#data 0x4F222FE6
-#data 0x904F7FF4
-#data 0x00EC6E43
-#data 0x8B2F8801
-#data 0xD32FC72D
-#data 0xC72DF308
-#data 0xE60265F3
-#data 0xF308FF3A
-#data 0xFF37E004
-#data 0x64E3430B
-#data 0xE502D22A
-#data 0x64E3420B
-#data 0xE300903A
-#data 0xE2209135
-#data 0xE6000E34
-#data 0x65639035
-#data 0x70EC04EE
-#data 0x314C04E6
-#data 0x03EC902B
-#data 0x0E349028
-#data 0x600C00EC
-#data 0x2101CA01
-#data 0x034C9023
-#data 0x04349020
-#data 0x042470CF
-#data 0xE3017055
-#data 0xD31B0434
-#data 0x64E3430B
+	mov.l r14,@-r15
+	sts.l pr,@-r15
+	add 0xF4,r15
+	mov.w @(0x9e,pc),r0
+	mov r4,r14
+	mov.b @(r0,r14),r0
+	cmp/eq 0x01,r0
+	bf loc_ce34108
+	mova @(0xb4,pc),r0
+	mov.l @(0xbc,pc),r3
+	fmov @r0,fr3
+	mova @(0xb4,pc),r0
+	mov r15,r5
+	mov 0x02,r6
+	fmov fr3,@r15
+	fmov @r0,fr3
+	mov 0x04,r0
+	fmov fr3,@(r0,r15)
+	jsr @r3
+	mov r14,r4
+	mov.l @(0xa8,pc),r2
+	mov 0x02,r5
+	jsr @r2
+	mov r14,r4
+	mov.w @(0x74,pc),r0
+	mov 0x00,r3
+	mov.w @(0x6a,pc),r1
+	mov 0x20,r2
+	mov.b r3,@(r0,r14)
+	mov 0x00,r6
+	mov.w @(0x6a,pc),r0
+	mov r6,r5
+	mov.l @(r0,r14),r4
+	add 0xEC,r0
+	mov.l r14,@(r0,r4)
+	add r4,r1
+	mov.w @(0x56,pc),r0
+	mov.b @(r0,r14),r3
+	mov.w @(0x50,pc),r0
+	mov.b r3,@(r0,r14)
+	mov.b @(r0,r14),r0
+	extu.b r0,r0
+	xor 0x01,r0
+	mov.w r0,@r1
+	mov.w @(0x46,pc),r0
+	mov.b @(r0,r4),r3
+	mov.w @(0x40,pc),r0
+	mov.b r3,@(r0,r4)
+	add 0xCF,r0
+	mov.b r2,@(r0,r4)
+	add 0x55,r0
+	mov 0x01,r3
+	mov.b r3,@(r0,r4)
+	mov.l @(0x6c,pc),r3
+	jsr @r3
+	mov r14,r4
 
-#align4
 loc_ce34108:
-#data 0x420BD21A
-#data 0x600E64E3
-#data 0x89024011
-#data 0x420BD218
-#data 0x64E3
+	mov.l @(0x68,pc),r2
+	jsr @r2
+	mov r14,r4
+	exts.b r0,r0
+	cmp/pz r0
+	bt loc_ce3411A
+	mov.l @(0x60,pc),r2
+	jsr @r2
+	mov r14,r4
 
 loc_ce3411A:
-#data 0x7F0C
-#data 0x000B4F26
-#data 0x6EF6
+	add 0x0C,r15
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
+
 ;==============================================
-
 loc_ce34122:
-mov r4,r3
-mov.l @(loc_ce3417C_to_loc_ce34AF8_to_loc_ce34180,pc),r1 ; r1 set to 0xCE34AF8
-mov.l r4,@-r15
-mov.b @(0x06,r3),r0
-extu.b r0,r0
-shll2 r0
-mov.l @(r0,r1),r3
-jmp @r3
-add 0x04,r15
-#data 0x040001FA
-#data 0x013001D2
-#data 0x01A0
+	mov r4,r3
+	mov.l @(loc_ce3417C_to_loc_ce34AF8_to_loc_ce34180,pc),r1 ; r1 set to 0xCE34AF8
+	mov.l r4,@-r15
+	mov.b @(0x06,r3),r0
+	extu.b r0,r0
+	shll2 r0
+	mov.l @(r0,r1),r3
+	jmp @r3
+	add 0x04,r15
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+loc_ce34134:
+	#data 0x01FA
+loc_ce34136:
+	#data 0x0400
+loc_ce34138:
+	#data 0x01D2
+loc_ce3413a:
+	#data 0x0130
+loc_ce3413c:
+	#data 0x01A0
 loc_ce3413E:
-#data 0x01EA
-#data 0x01C80141
-#data 0xC2A6AAAA
-#data 0x431E9249
-#data loc_8c103660
-#data 0xBF4DB6DB
-#data loc_8c056F2A
-#data loc_8c034E8C
+	#data 0x01EA
+loc_ce34140:
+	#data 0x0141
+loc_ce34142:
+	#data 0x01C8
+	#align4
 
-#align4
+loc_ce34144:
+	#data 0xC2A6AAAA
+loc_ce34148:
+	#data 0x431E9249
+loc_ce3414c:
+	#data loc_8c103660
+loc_ce34150:
+	#data 0xBF4DB6DB
+loc_ce34154:
+	#data loc_8c056F2A
+loc_ce34158:
+	#data loc_8c034E8C
+
 loc_ce3415C_to_loc_ce34AF0_to_loc_ce34098:
-#data loc_ce34AF0_to_loc_ce34098
-#data 0xC3200000
-#data 0x431A4924
-#data loc_8c0FDAB6
-#data loc_8c04223A
-#data loc_8c02FEC4
-#data loc_8c034DEE
-#data loc_8c051648
-
-#align4
+	#data loc_ce34AF0_to_loc_ce34098
+loc_ce34160:
+	#data 0xC3200000
+loc_ce34164:
+	#data 0x431A4924
+loc_ce34168:
+	#data loc_8c0FDAB6
+loc_ce3416c:
+	#data loc_8c04223A
+loc_ce34170:
+	#data loc_8c02FEC4
+loc_ce34174:
+	#data loc_8c034DEE
+loc_ce34178:
+	#data loc_8c051648
 loc_ce3417C_to_loc_ce34AF8_to_loc_ce34180:
-#data loc_ce34AF8_to_loc_ce34180
+	#data loc_ce34AF8_to_loc_ce34180
 
+;==============================================
 loc_ce34180:
-#data 0x4F222FE6
-#data 0x90807FF4
-#data 0x00EC6E43
-#data 0x8B248801
-#data 0xD342C740
-#data 0xC740F308
-#data 0xE60265F3
-#data 0xF308FF3A
-#data 0xFF37E004
-#data 0x64E3430B
-#data 0xE502D23D
-#data 0x64E3420B
-#data 0xE300906B
-#data 0x0E34E221
-#data 0x9067E600
-#data 0x04EE6563
-#data 0x04E670EC
-#data 0x03EC701E
-#data 0x70CF0434
-#data 0x70550424
-#data 0x0434E301
-#data 0x430BD333
-#data 0x64E3
+	mov.l r14,@-r15
+	sts.l pr,@-r15
+	add 0xF4,r15
+	mov.w @(0x100,pc),r0
+	mov r4,r14
+	mov.b @(r0,r14),r0
+	cmp/eq 0x01,r0
+	bf loc_ce341DA
+	mova @(0x100,pc),r0
+	mov.l @(0x108,pc),r3
+	fmov @r0,fr3
+	mova @(0x100,pc),r0
+	mov r15,r5
+	mov 0x02,r6
+	fmov fr3,@r15
+	fmov @r0,fr3
+	mov 0x04,r0
+	fmov fr3,@(r0,r15)
+	jsr @r3
+	mov r14,r4
+	mov.l @(0xf4,pc),r2
+	mov 0x02,r5
+	jsr @r2
+	mov r14,r4
+	mov.w @(0xd6,pc),r0
+	mov 0x00,r3
+	mov 0x21,r2
+	mov.b r3,@(r0,r14)
+	mov 0x00,r6
+	mov.w @(0xce,pc),r0
+	mov r6,r5
+	mov.l @(r0,r14),r4
+	add 0xEC,r0
+	mov.l r14,@(r0,r4)
+	add 0x1E,r0
+	mov.b @(r0,r14),r3
+	mov.b r3,@(r0,r4)
+	add 0xCF,r0
+	mov.b r2,@(r0,r4)
+	add 0x55,r0
+	mov 0x01,r3
+	mov.b r3,@(r0,r4)
+	mov.l @(0xcc,pc),r3
+	jsr @r3
+	mov r14,r4
 
 loc_ce341DA:
-#data 0xD233
-#data 0x64E3420B
-#data 0x4011600E
-#data 0xD2318902
-#data 0x64E3420B
+	mov.l @(0xcc,pc),r2
+	jsr @r2
+	mov r14,r4
+	exts.b r0,r0
+	cmp/pz r0
+	bt loc_ce341EC
+	mov.l @(0xc4,pc),r2
+	jsr @r2
+	mov r14,r4
 
-#align4
 loc_ce341EC:
-#data 0x4F267F0C
-#data 0x6EF6000B
+	add 0x0C,r15
+	lds.l @r15+,pr
+	rts
+	mov.l @r15+,r14
+
 ;==============================================
 loc_ce341F4:
-mov.l r4,@-r15
-mov r4,r0
-nop
-mov.w @(loc_ce3428E,pc),r1 ; r1 set to 0x1F7
-mov.l @(loc_ce342B0_to_loc_ce34AFC_to_loc_ce3420C,pc),r2 ; r2 set to 0xCE34AFC
-mov.b @(r0,r1),r0
-extu.b r0,r0
-and 0x3F,r0
-shll2 r0
-mov.l @(r0,r2),r3
-jmp @r3
-add 0x04,r15
+	mov.l r4,@-r15
+	mov r4,r0
+	nop
+	mov.w @(loc_ce3428E,pc),r1 ; r1 set to 0x1F7
+	mov.l @(loc_ce342B0_to_loc_ce34AFC_to_loc_ce3420C,pc),r2 ; r2 set to 0xCE34AFC
+	mov.b @(r0,r1),r0
+	extu.b r0,r0
+	and 0x3F,r0
+	shll2 r0
+	mov.l @(r0,r2),r3
+	jmp @r3
+	add 0x04,r15
 
 loc_ce3420C:
-mov.w @(loc_ce3428C,pc),r0 ; r0 set to 0x1C8
-mov r4,r5
-mov.l r4,@-r15
-mov.l @(loc_ce342B4_to_loc_8c04CC1C,pc),r3 ; r3 set to 0x8C04CC1C
-mov.l @(r0,r4),r4
-jmp @r3
-add 0x04,r15
+	mov.w @(loc_ce3428C,pc),r0 ; r0 set to 0x1C8
+	mov r4,r5
+	mov.l r4,@-r15
+	mov.l @(loc_ce342B4_to_loc_8c04CC1C,pc),r3 ; r3 set to 0x8C04CC1C
+	mov.l @(r0,r4),r4
+	jmp @r3
+	add 0x04,r15
 
 loc_ce3421A:
-rts
-nop
+	rts
+	nop
 
 ;==============================================
 Rby_TmHypMn:
@@ -9710,27 +10122,27 @@ Rby_TmHypMn:
 	mov.w @(loc_ce34290,pc),r0 ; r0 set to 0x4C9
 	mov.b @(r0,r4),r0 ;Get Assist Type
 	cmp/eq 0x00,r0
-	bt Rby_AssistA
+	bt Rby_MainTeamHypA
 	cmp/eq 0x01,r0
-	bt Rby_AssistB
+	bt Rby_MainTeamHypB
 	cmp/eq 0x02,r0
-	bt Rby_AssistC
+	bt Rby_MainTeamHypC
 	bra loc_ce34254
 	nop
 
-Rby_AssistA:
+Rby_MainTeamHypA:
 	mov.w @(loc_ce34292,pc),r0 ; r0 set to 0x1E9
 	mov 0x05,r3 ; r3 set to 0x05
 	bra loc_ce34254
 	mov.b r3,@(r0,r4)
 
-Rby_AssistB:
+Rby_MainTeamHypB:
 	mov.w @(loc_ce34292,pc),r0 ; r0 set to 0x1E9
 	mov 0x04,r1 ; r1 set to 0x04
 	bra loc_ce34254
 	mov.b r1,@(r0,r4)
 
-Rby_AssistC:
+Rby_MainTeamHypC:
 	mov.w @(0x40,pc),r0
 	mov 0x0C,r2
 	mov.b r2,@(r0,r4)
@@ -9798,7 +10210,6 @@ loc_ce342a8:
 	#data loc_8c034DEE
 loc_ce342ac:
 	#data loc_8c05176E
-
 loc_ce342B0_to_loc_ce34AFC_to_loc_ce3420C:
 	#data loc_ce34AFC_to_loc_ce3420C
 loc_ce342B4_to_loc_8c04CC1C:
@@ -9838,33 +10249,33 @@ Rby_Assists:
 	nop
 
 loc_ce342E8:
-mov.w @(loc_ce3434A,pc),r0 ; r0 set to 0x1E9
-mov 0x02,r3 ; r3 set to 0x02
-bra loc_ce342F6
-mov.b r3,@(r0,r4)
+	mov.w @(loc_ce3434A,pc),r0 ; r0 set to 0x1E9
+	mov 0x02,r3 ; r3 set to 0x02
+	bra loc_ce342F6
+	mov.b r3,@(r0,r4)
 
-#align4
 loc_ce342F0:
-#data 0xE207902B
-#data 0x0424
-
+	mov.w @(loc_ce3434A,pc),r0
+	mov 0x07,r2
+	mov.b r2,@(r0,r4)
 
 loc_ce342F6:
-mov.w @(loc_ce3434E,pc),r0 ; r0 set to 0x1A3
-bra loc_ce34308
-mov.b r5,@(r0,r4)
+	mov.w @(loc_ce3434E,pc),r0 ; r0 set to 0x1A3
+	bra loc_ce34308
+	mov.b r5,@(r0,r4)
 
-#align4
 loc_ce342FC:
-#data 0xE2089025
-#data 0x0424E301
-#data 0x043470BA
-
+	mov.w @(loc_ce3434A,pc),r0
+	mov 0x08,r2
+	mov 0x01,r3
+	mov.b r2,@(r0,r4)
+	add 0xBA,r0
+	mov.b r3,@(r0,r4)
 
 loc_ce34308:
-mov.l @(loc_ce34350_to_loc_8c0530D8,pc),r3 ; r3 set to 0x8C0530D8
-jmp @r3
-mov 0x15,r5
+	mov.l @(loc_ce34350_to_loc_8c0530D8,pc),r3 ; r3 set to 0x8C0530D8
+	jmp @r3
+	mov 0x15,r5
 
 ;==============================================
 Rby_AlpCntr:
@@ -10289,18 +10700,11 @@ SPL_JumpTable:
 	#data 0x00000000 0x00000000 0x00000000 0x00000000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-#align4
 loc_ce348D4_to_loc_ce3066A:
-#data loc_ce3066A
-
-loc_ce348D8_to_loc_ce309C2:
-#data loc_ce309C2
-
-loc_ce348DC_to_loc_ce309EA:
-#data loc_ce309EA
-
-loc_ce348E0_to_loc_ce30622:
-#data loc_ce30622
+	#data loc_ce3066A
+	#data loc_ce309C2
+	#data loc_ce309EA
+	#data loc_ce30622
 
 loc_ce348E4_to_loc_ce30CFE:
 #data loc_ce30CFE
@@ -10419,291 +10823,159 @@ loc_ce34968:
 	#data 0x000A
 	#data 0x000A
 
-#align4
-loc_ce34988_to_loc_ce31748:
-#data loc_ce31748
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Special_PRG_Table:
+	#data loc_ce31748 ; 00 Schwarzaile
+	#data loc_ce31DEA ; 01 Fantome
+	#data loc_ce31ECE ; 02 Sublimation
+	#data loc_ce32524 ; 03 Flammeile
+	#data loc_ce32CB6 ; 04 Mille Fantomes/Ghost Hyper
+	#data loc_ce32E32 ; 05 Pare-tonn're/Ship Hyper
+	#data loc_ce32030 ; 06 Rafale Cannon
+	#data loc_ce322B2 ; 07 Rafale Cannon Assist
+	#data loc_ce3240E ; 08 Assist Power up
+	#data loc_ce330EC ; 09 Tour De Magie
+	#data loc_ce33BFE ; 0a Snap Back
+	#data loc_ce33B8A ; 0b Taunt
+	#data loc_ce33748 ; 0c Team Hyper Flammeile
 
-loc_ce3498C_to_loc_ce31DEA:
-#data loc_ce31DEA
-
-loc_ce34990_to_loc_ce31ECE:
-#data loc_ce31ECE
-
-loc_ce34994_to_loc_ce32524:
-#data loc_ce32524
-
-loc_ce34998_to_loc_ce32CB6:
-#data loc_ce32CB6
-
-loc_ce3499C_to_loc_ce32E32:
-#data loc_ce32E32
-
-loc_ce349A0_to_loc_ce32030:
-#data loc_ce32030
-
-loc_ce349A4_to_loc_ce322B2:
-#data loc_ce322B2
-
-loc_ce349A8_to_loc_ce3240E:
-#data loc_ce3240E
-
-loc_ce349AC_to_loc_ce330EC:
-#data loc_ce330EC
-
-loc_ce349B0_to_loc_ce33BFE:
-#data loc_ce33BFE
-
-loc_ce349B4_to_loc_ce33B8A:
-#data loc_ce33B8A
-
-loc_ce349B8_to_loc_ce33748:
-#data loc_ce33748
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;Schwarzaile PRG Table
 loc_ce349BC_to_loc_ce31790:
-#data loc_ce31790
+	#data loc_ce31790
+	#data loc_ce318EE
+	#data loc_ce319EC
+	#data loc_ce31B96
+	#data loc_ce31C58
+	#data loc_ce31CE0
 
-loc_ce349C0_to_loc_ce318EE:
-#data loc_ce318EE
-
-loc_ce349C4_to_loc_ce319EC:
-#data loc_ce319EC
-
-loc_ce349C8_to_loc_ce31B96:
-#data loc_ce31B96
-
-loc_ce349CC_to_loc_ce31C58:
-#data loc_ce31C58
-
-loc_ce349D0_to_loc_ce31CE0:
-#data loc_ce31CE0
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce349D4_to_loc_ce31DFC:
-#data loc_ce31DFC
+	#data loc_ce31DFC
+	#data loc_ce31E7A
+	#data loc_ce31EAC
 
-loc_ce349D8_to_loc_ce31E7A:
-#data loc_ce31E7A
-
-loc_ce349DC_to_loc_ce31EAC:
-#data loc_ce31EAC
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce349E0_to_loc_ce31F1C:
-#data loc_ce31F1C
+	#data loc_ce31F1C
+	#data loc_ce31F9E
+	#data loc_ce31FE0
+	#data loc_ce3200E
 
-loc_ce349E4_to_loc_ce31F9E:
-#data loc_ce31F9E
-
-loc_ce349E8_to_loc_ce31FE0:
-#data loc_ce31FE0
-
-loc_ce349EC_to_loc_ce3200E:
-#data loc_ce3200E
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce349F0_to_loc_ce32042:
-#data loc_ce32042
+	#data loc_ce32042
+	#data loc_ce320EC
+	#data loc_ce32150
+	#data loc_ce32184
+	#data loc_ce321CC
+	#data loc_ce3220E
+	#data loc_ce32230
+	#data loc_ce3237A
+	#data loc_ce323BC
+	#data loc_ce323EC
 
-loc_ce349F4_to_loc_ce320EC:
-#data loc_ce320EC
-
-loc_ce349F8_to_loc_ce32150:
-#data loc_ce32150
-
-loc_ce349FC_to_loc_ce32184:
-#data loc_ce32184
-
-loc_ce34A00_to_loc_ce321CC:
-#data loc_ce321CC
-
-loc_ce34A04_to_loc_ce3220E:
-#data loc_ce3220E
-
-loc_ce34A08_to_loc_ce32230:
-#data loc_ce32230
-
-loc_ce34A0C_to_loc_ce3237A:
-#data loc_ce3237A
-
-loc_ce34A10_to_loc_ce323BC:
-#data loc_ce323BC
-
-loc_ce34A14_to_loc_ce323EC:
-#data loc_ce323EC
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34A18_to_loc_ce322F8:
-#data loc_ce322F8
+	#data loc_ce322F8
+	#data loc_ce3237A
+	#data loc_ce323BC
+	#data loc_ce323EC
 
-loc_ce34A1C_to_loc_ce3237A:
-#data loc_ce3237A
-
-loc_ce34A20_to_loc_ce323BC:
-#data loc_ce323BC
-
-loc_ce34A24_to_loc_ce323EC:
-#data loc_ce323EC
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34A28_to_loc_ce32454:
-#data loc_ce32454
+	#data loc_ce32454
+	#data loc_ce324D2
+	#data loc_ce32502
 
-loc_ce34A2C_to_loc_ce324D2:
-#data loc_ce324D2
-
-loc_ce34A30_to_loc_ce32502:
-#data loc_ce32502
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34A34_to_loc_ce32536:
-#data loc_ce32536
+	#data loc_ce32536
+	#data loc_ce32640
+	#data loc_ce32730
+	#data loc_ce3295C
+	#data loc_ce32A08
+	#data loc_ce32AD6
 
-loc_ce34A38_to_loc_ce32640:
-#data loc_ce32640
-
-loc_ce34A3C_to_loc_ce32730:
-#data loc_ce32730
-
-loc_ce34A40_to_loc_ce3295C:
-#data loc_ce3295C
-
-loc_ce34A44_to_loc_ce32A08:
-#data loc_ce32A08
-
-loc_ce34A48_to_loc_ce32AD6:
-#data loc_ce32AD6
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34A4C_to_loc_ce32CC8:
-#data loc_ce32CC8
+	#data loc_ce32CC8
+	#data loc_ce32D7C
+	#data loc_ce32DF2
 
-loc_ce34A50_to_loc_ce32D7C:
-#data loc_ce32D7C
-
-loc_ce34A54_to_loc_ce32DF2:
-#data loc_ce32DF2
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34A58_to_loc_ce32E6C:
-#data loc_ce32E6C
+	#data loc_ce32E6C
+	#data loc_ce32F08
+	#data loc_ce32F78
+	#data loc_ce33012
+	#data loc_ce330AE
 
-loc_ce34A5C_to_loc_ce32F08:
-#data loc_ce32F08
-
-loc_ce34A60_to_loc_ce32F78:
-#data loc_ce32F78
-
-loc_ce34A64_to_loc_ce33012:
-#data loc_ce33012
-
-loc_ce34A68_to_loc_ce330AE:
-#data loc_ce330AE
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34A6C_to_loc_ce33128:
-#data loc_ce33128
+	#data loc_ce33128
+	#data loc_ce331C6
+	#data loc_ce3322E
+	#data loc_ce33294
+	#data loc_ce33310
+	#data loc_ce3344A
+	#data loc_ce33474
+	#data loc_ce3349E
+	#data loc_ce335B0
+	#data loc_ce335E8
+	#data loc_ce33630
+	#data loc_ce33692
+	#data loc_ce336BE
+	#data loc_ce336E2
 
-loc_ce34A70_to_loc_ce331C6:
-#data loc_ce331C6
-
-loc_ce34A74_to_loc_ce3322E:
-#data loc_ce3322E
-
-loc_ce34A78_to_loc_ce33294:
-#data loc_ce33294
-
-loc_ce34A7C_to_loc_ce33310:
-#data loc_ce33310
-
-loc_ce34A80_to_loc_ce3344A:
-#data loc_ce3344A
-
-loc_ce34A84_to_loc_ce33474:
-#data loc_ce33474
-
-loc_ce34A88_to_loc_ce3349E:
-#data loc_ce3349E
-
-loc_ce34A8C_to_loc_ce335B0:
-#data loc_ce335B0
-
-loc_ce34A90_to_loc_ce335E8:
-#data loc_ce335E8
-
-loc_ce34A94_to_loc_ce33630:
-#data loc_ce33630
-
-loc_ce34A98_to_loc_ce33692:
-#data loc_ce33692
-
-loc_ce34A9C_to_loc_ce336BE:
-#data loc_ce336BE
-
-loc_ce34AA0_to_loc_ce336E2:
-#data loc_ce336E2
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34AA4_to_loc_ce33784:
-#data loc_ce33784
+	#data loc_ce33784
+	#data loc_ce33870
+	#data loc_ce33944
+	#data loc_ce33AC4
+	#data loc_ce33AC8
+	#data loc_ce33B62
 
-loc_ce34AA8_to_loc_ce33870:
-#data loc_ce33870
-
-loc_ce34AAC_to_loc_ce33944:
-#data loc_ce33944
-
-loc_ce34AB0_to_loc_ce33AC4:
-#data loc_ce33AC4
-
-loc_ce34AB4_to_loc_ce33AC8:
-#data loc_ce33AC8
-
-loc_ce34AB8_to_loc_ce33B62:
-#data loc_ce33B62
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34ABC_to_loc_ce33B9C:
-#data loc_ce33B9C
+	#data loc_ce33B9C
+	#data loc_ce33BDC
 
-loc_ce34AC0_to_loc_ce33BDC:
-#data loc_ce33BDC
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34AC4_to_loc_ce33C34:
-#data loc_ce33C34
+	#data loc_ce33C34
+	#data loc_ce33CA2
 
-loc_ce34AC8_to_loc_ce33CA2:
-#data loc_ce33CA2
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34ACC_to_loc_ce33D16:
-#data loc_ce33D16
-
-loc_ce34AD0_to_loc_ce33DC0:
-#data loc_ce33DC0
-
-loc_ce34AD4_to_loc_ce33E3A:
+	#data loc_ce33D16
+	#data loc_ce33DC0
 	#data loc_ce33E3A
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34AD8_to_loc_ce33E74:
 	#data loc_ce33E74
-
-loc_ce34ADC_to_loc_ce33EC8:
 	#data loc_ce33EC8
-
-loc_ce34AE0_to_loc_ce33EF0:
 	#data loc_ce33EF0
-
-loc_ce34AE4_to_loc_ce33E74:
 	#data loc_ce33E74
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34AE8_to_loc_ce33F68:
 	#data loc_ce33F68
-
-loc_ce34AEC_to_loc_ce33FFC:
 	#data loc_ce33FFC
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34AF0_to_loc_ce34098:
 	#data loc_ce34098
-
-loc_ce34AF4_to_loc_ce34122:
 	#data loc_ce34122
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34AF8_to_loc_ce34180:
 	#data loc_ce34180
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34AFC_to_loc_ce3420C:
 	#data loc_ce3420C
-
-loc_ce34B00_to_loc_ce3420C:
 	#data loc_ce3420C
-
-loc_ce34B04_to_loc_ce3421A:
 	#data loc_ce3421A
