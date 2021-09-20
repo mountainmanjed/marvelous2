@@ -22188,6 +22188,9 @@ loc_8c039432:
 	nop
 
 ;==============================================
+;Unused
+;For a game mechanic dev menu
+;==============================================
 loc_8c03943a:
 	mov.l r14,@-r15
 	mov.l r13,@-r15
@@ -22337,6 +22340,8 @@ loc_8c039538:
 loc_8c03953c:
 	#data bank13.loc_8c136994
 
+;==============================================
+;Unused
 ;==============================================
 loc_8c039540:
 	mov.l @(loc_8c03958c,PC),r4
@@ -33432,7 +33437,6 @@ loc_8c03df20:
 	bf loc_8c03df30
 
 ;Jump for Pause input and flags
-;	macjsr loc_8c036f90,r2
 	mov.l @(loc_8c03df90,PC),r2;8c03df90,8c036f90
 	jsr @r2
 	nop

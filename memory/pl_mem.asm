@@ -174,6 +174,11 @@
 ; 01 if doing a kick attack
 #symbol limb_choice 0x01fe				; byte
 
+; 00 ground
+; 01 normal jump
+; 02 super jump
+#symbol in_air_normal 0x1ff				; byte
+
 ;Buffs
 #symbol Buff_Speed 0x0200				; byte
 #symbol Flight_Flag 0x0201				; byte

@@ -754,7 +754,6 @@ code_CE30404:
 	mov.l @r15+,r14
 
 ;##############################################################
-;TREE SUPER
 code_CE30424:
 	mov.w @(data_CE30498,pc),r0 ; r0 set to 0x1D1
 	sts.l pr,@-r15
@@ -7486,8 +7485,6 @@ ptr_CE32DF8_to_code_CE310FC:
 
 ptr_CE32DFC_to_code_CE31140:
 	#data code_CE31140
-
-ptr_CE32E00_to_code_CE3116C:
 	#data code_CE3116C
 
 ptr_CE32E04_to_code_CE3119E:

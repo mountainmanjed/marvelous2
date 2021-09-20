@@ -1017,7 +1017,8 @@ loc_ce3060A:
 	nop
 
 ;==============================================
-loc_ce3060E:
+;Normals Start up
+Rby_Normal1:
 	mov.w @(loc_ce306B8,pc),r0 ; r0 set to 0x1FF
 	mov r4,r3
 	mov.l r4,@-r15
@@ -1987,7 +1988,7 @@ loc_ce30C28:
 	mov.l @r15+,r14
 
 ;==============================================
-loc_ce30C32:
+Rby_Normal2:
 	mov.w @(loc_ce30C52,pc),r0 ; r0 set to 0x1FF
 	mov r4,r3
 	mov.l r4,@-r15
@@ -3253,7 +3254,9 @@ loc_ce31460:
 	nop
 
 ;==============================================
-loc_ce31468:
+;Fight Intro
+;==============================================
+Rby_FMIntro:
 	mov r4,r3
 	mov.l @(loc_ce314C4_to_loc_ce34914_to_loc_ce3147A,pc),r1 ; r1 set to 0xCE34914
 	mov.l r4,@-r15
@@ -3264,6 +3267,7 @@ loc_ce31468:
 	jmp @r3
 	add 0x04,r15
 
+;==============================================
 loc_ce3147A:
 	mov.l r14,@-r15
 	mov r4,r14
@@ -10691,8 +10695,8 @@ loc_ce347A4:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 SPL_JumpTable:
-	#data loc_ce3060A loc_ce30054 loc_ce3060E loc_ce30C32
-	#data Rby_FwdDash Rby_BckDash loc_ce31468 loc_ce3151C
+	#data loc_ce3060A loc_ce30054 Rby_Normal1 Rby_Normal2
+	#data Rby_FwdDash Rby_BckDash Rby_FMIntro loc_ce3151C
 	#data Rby_SpecPRG loc_ce33E5C loc_ce33F50 loc_ce3407A
 	#data loc_ce341F4 Rby_DlyHypC loc_ce33D04 loc_ce30FCA
 	#data Rby_TmHypMn Rby_TmHypAs Rby_Assists Rby_AlpCntr
@@ -10706,60 +10710,43 @@ loc_ce348D4_to_loc_ce3066A:
 	#data loc_ce309EA
 	#data loc_ce30622
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce348E4_to_loc_ce30CFE:
-#data loc_ce30CFE
+	#data loc_ce30CFE
+	#data loc_ce30ECE
+	#data loc_ce30EB8
+	#data loc_ce30C78
 
-loc_ce348E8_to_loc_ce30ECE:
-#data loc_ce30ECE
-
-loc_ce348EC_to_loc_ce30EB8:
-#data loc_ce30EB8
-
-loc_ce348F0_to_loc_ce30C78:
-#data loc_ce30C78
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce348F4_to_loc_ce310E0:
-#data loc_ce310E0
+	#data loc_ce310E0
+	#data loc_ce3114C
+	#data loc_ce31200
+	#data loc_ce31276
 
-loc_ce348F8_to_loc_ce3114C:
-#data loc_ce3114C
-
-loc_ce348FC_to_loc_ce31200:
-#data loc_ce31200
-
-loc_ce34900_to_loc_ce31276:
-#data loc_ce31276
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34904_to_loc_ce312AA:
-#data loc_ce312AA
+	#data loc_ce312AA
+	#data loc_ce31340
+	#data loc_ce313D0
+	#data loc_ce31446
 
-loc_ce34908_to_loc_ce31340:
-#data loc_ce31340
-
-loc_ce3490C_to_loc_ce313D0:
-#data loc_ce313D0
-
-loc_ce34910_to_loc_ce31446:
-#data loc_ce31446
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34914_to_loc_ce3147A:
-#data loc_ce3147A
+	#data loc_ce3147A
+	#data loc_ce314CC
 
-loc_ce34918_to_loc_ce314CC:
-#data loc_ce314CC
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce3491C_to_loc_ce3152E:
-#data loc_ce3152E
+	#data loc_ce3152E
+	#data loc_ce3154C
 
-loc_ce34920_to_loc_ce3154C:
-#data loc_ce3154C
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce34924_to_loc_ce315D6:
-#data loc_ce315D6
+	#data loc_ce315D6
+	#data loc_ce31578
 
-loc_ce34928_to_loc_ce31578:
-#data loc_ce31578
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_ce3492C_to_loc_ce315D6:
 #data loc_ce315D6
 

@@ -14634,61 +14634,35 @@ loc_8c14DAC0:
 #data 0x100F0E0D
 #data 0x00000008
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c14DACC:
-#data bank03.loc_8c03D9A0
-
-loc_8c14DAD0:
-#data bank03.loc_8c03DC58
-
-loc_8c14DAD4:
-#data bank03.loc_8c03DCA4
-
-loc_8c14DAD8:
-#data bank03.loc_8c03DCAA
-
-loc_8c14DADC:
-#data bank03.loc_8c03E532
+	#data bank03.loc_8c03D9A0
+	#data bank03.loc_8c03DC58
+	#data bank03.loc_8c03DCA4
+	#data bank03.loc_8c03DCAA
+	#data bank03.loc_8c03E532
 
 loc_8c14DAE0:
-#data bank03.loc_8c03DCBA
-
-loc_8c14DAE4:
-#data bank03.loc_8c03DE54
-
-loc_8c14DAE8:
-#data bank03.loc_8c03E13E
-
-loc_8c14DAEC:
-#data bank03.loc_8c03E142
+	#data bank03.loc_8c03DCBA
+	#data bank03.loc_8c03DE54
+	#data bank03.loc_8c03E13E
+	#data bank03.loc_8c03E142
 
 loc_8c14DAF0:
-#data bank03.loc_8c03E97C
-
-loc_8c14DAF4:
-#data bank03.loc_8c03EAE4
-
-loc_8c14DAF8:
-#data bank03.loc_8c03EBDA
-
-loc_8c14DAFC:
-#data bank03.loc_8c03EC72
-
-loc_8c14DB00:
-#data bank03.loc_8c03EDA8
-
-loc_8c14DB04:
-#data bank03.loc_8c03EDCC
+	#data bank03.loc_8c03E97C
+	#data bank03.loc_8c03EAE4
+	#data bank03.loc_8c03EBDA
+	#data bank03.loc_8c03EC72
+	#data bank03.loc_8c03EDA8
+	#data bank03.loc_8c03EDCC
 
 loc_8c14DB08:
-#data bank03.loc_8c03EE92
+	#data bank03.loc_8c03EE92
+	#data bank03.loc_8c03EFAC
+	#data bank03.loc_8c03F082
 
-loc_8c14DB0C:
-#data bank03.loc_8c03EFAC
 
-loc_8c14DB10:
-#data bank03.loc_8c03F082
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c14DB14:
 #data 0x0100000A
 #data 0x02010106
