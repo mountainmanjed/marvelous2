@@ -17801,11 +17801,15 @@ loc_8c0376e0:
 	mov.l r12,@-r15
 	mov r5,r12
 	mov.l r11,@-r15
-	mov 0x04,r11
+	mov 0x04,r11; number of menu Items
 	mov.l r10,@-r15
 	mov.l r8,@-r15
 	sts.l pr,@-r15
+
+;Set r10 to be jump to Text function
 	mov.l @(loc_8c0377f0,PC),r10 ;8c0377f0 ; 8c0395c6
+
+;Set the Text Pointers
 	mov.l @(loc_8c0377ec,PC),r13 ;8c0377ec ; 8c1366c4
 
 loc_8c0376f8:
@@ -17821,6 +17825,7 @@ loc_8c0376f8:
 	dt r11
 	bf.s loc_8c0376f8
 	add 0x08,r13
+
 	mov r12,r5
 	mov r12,r3
 	shll2 r5
@@ -18189,6 +18194,8 @@ loc_8c037938:
 	#data loc_8c0395ac
 
 ;==============================================
+;Button Config Exit Box Resize
+;==============================================
 loc_8c03793c:
 	mov.l @(loc_8c037b8c,PC),r4
 	mov 0x00,r5
@@ -18332,7 +18339,7 @@ loc_8c0379c8:
 	mov.l @r15+,r12
 
 ;==============================================
-;Button Config Cursor Box Render
+;Button Config Render
 ;==============================================
 loc_8c037a46:
 	mov.l r14,@-r15
@@ -18352,8 +18359,6 @@ loc_8c037a46:
 ;Pause Render
 	bsr loc_8c03718c
 	nop
-
-;Actual Code Start 8c037a64
 
 ;Check to Render
 	mov.l @(loc_8c037b94,PC),r3;0x8c212cb6 to r3
@@ -18468,6 +18473,13 @@ loc_8c037b1a:
 	mov.l @r15+,r14
 
 ;==============================================
+;Button Config Text Render
+;r3 0f06fe
+;r4 Temp Settings
+;r5 ID Start
+;r6 Number of items
+
+;==============================================
 loc_8c037b36:
 	mov.l r14,@-r15
 	mov.l r13,@-r15
@@ -18477,7 +18489,7 @@ loc_8c037b36:
 	add 0xFC,r15
 	mov r5,r14
 	shll2 r14
-	mov.l @(loc_8c037bac,PC),r3
+	mov.l @(loc_8c037bac,PC),r3;loc_8c136694
 	shll r14
 	mov.l @(loc_8c037bbc,PC),r11
 	mov r6,r12
@@ -18529,7 +18541,7 @@ loc_8c037b94:
 loc_8c037b98:
 	#data bank14.loc_8c14d310
 loc_8c037b9c:
-	#data 0xc0000000
+	#data -2.0
 loc_8c037ba0:
 	#data 17.0
 loc_8c037ba4:
@@ -18539,9 +18551,9 @@ loc_8c037ba8:
 loc_8c037bac:
 	#data bank13.loc_8c136694
 loc_8c037bb0:
-	#data 0xc0800000
+	#data -4.0
 loc_8c037bb4:
-	#data 0x41000000
+	#data 8.0
 loc_8c037bb8:
 	#data bank12.loc_8c127af0
 loc_8c037bbc:
@@ -18588,10 +18600,15 @@ loc_8c037bc0:
 	tst r2,r3
 	bt.s loc_8c037c38
 	add 0x08,r15
+
+;C&Z enabled Controlers
+;Normal Text except L&R Triggers
 	mov 0x0A,r5
 	mov 0x08,r6
 	bsr loc_8c037b36
 	mov r14,r4
+
+;C&Z Strings
 	mov 0x24,r5
 	mov 0x02,r6
 	bsr loc_8c037b36
@@ -18615,6 +18632,7 @@ loc_8c037c34:
 	#data 0x8c212be0
 
 ;----------------------------------------------
+;Normal Controllers
 loc_8c037c38:
 	mov 0x0A,r6
 	mov r6,r5
@@ -18999,6 +19017,8 @@ loc_8c037e66:
 	mov.l @r15+,r14
 
 ;==============================================
+;Pause Button Config Start
+;==============================================
 loc_8c037ed4:
 	mov.l @(loc_8c037f5c,PC),r2
 	mov.l r14,@-r15
@@ -19032,20 +19052,25 @@ loc_8c037f02:
 	mov.b r1,@(r0,r14)
 
 loc_8c037f0c:
-	mov.l @(loc_8c037f60,PC),r3
-	mov 0x22,r5
-	mov.l @(loc_8c037f64,PC),r2
-	mov 0x33,r6
+	mov.l @(loc_8c037f60,PC),r3;Button Config Title
+	mov 0x22,r5;Y pos
+	mov.l @(loc_8c037f64,PC),r2;Text Function
+	mov 0x33,r6 ;color
 	mov.l r3,@-r15
 	jsr @r2
 	mov 0x3C,r4
 	add 0x04,r15
-	mov.l @(loc_8c037f68,PC),r5
+
+;Player1
+	mov.l @(loc_8c037f68,PC),r5;0x8c212ee4
 	bsr loc_8c037bc0
 	mov r14,r4
-	mov.l @(loc_8c037f6c,PC),r5
+
+;Player2
+	mov.l @(loc_8c037f6c,PC),r5;0x8c212ef4
 	bsr loc_8c037bc0
 	mov r14,r4
+
 	mov.l @(loc_8c037f70,PC),r4
 	mov.w @r4,r3
 	tst r3,r3
@@ -21333,7 +21358,7 @@ loc_8c038e50:
 	tst 0x03,r0
 	bt loc_8c038e62
 	lds.l @r15+,pr
-	mov.l @(loc_8c038ebc,PC),r2 ;8c038ebc
+	mov.l @(loc_8c038ebc,PC),r2 ;Pause Render
 	mov r14,r4
 	mov.l @r15+,r13
 	jmp @r2; 8c037864;Render strings

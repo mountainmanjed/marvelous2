@@ -7050,7 +7050,7 @@ loc_8c1366c4:
 	#data 0x3c
 	#data 0x63
 	#data 0x32
-	#data loc_8c136818
+	#data PauseT_Toremo
 
 	#data 0x3c
 	#data 0x42
@@ -7276,7 +7276,7 @@ loc_8c136814:
 	#data 0x00
 	#align4
 
-loc_8c136818:
+PauseT_Toremo:
 	#data "TRAINING MENU"
 	#data 0x00
 	#align4
@@ -7284,6 +7284,7 @@ loc_8c136818:
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;Button Config Strings
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;8c136828
 X_Setting:
 	#data "X  <           >"
 	#data 0x00
