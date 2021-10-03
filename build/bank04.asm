@@ -3540,15 +3540,17 @@ loc_8c0419fc:
 	mov.l @r15+,r14
 
 ;==============================================
+;
+;==============================================
 loc_8c041a14:
 	mov.l r14,@-r15
 	mov 0x7F,r3
 	mov.l r13,@-r15
 	mov 0x54,r1
-	mov.l @(loc_8c041a84,PC),r14
+	mov.l @(loc_8c041a84,PC),r14;8c28c4a8
 	and r3,r5
 	sts.l pr,@-r15
-	mov.l @(loc_8c041a88,PC),r2
+	mov.l @(loc_8c041a88,PC),r2;l8c129128
 	add r14,r1
 	extu.b r5,r0
 	jsr @r2
@@ -3585,9 +3587,9 @@ loc_8c041a14:
 
 loc_8c041a66:
 	add 0x34,r6
-	mov.l @(loc_8c041a8c,PC),r3
+	mov.l @(loc_8c041a8c,PC),r3;8c1257e0
 	add r13,r6
-	mov.w @(loc_8c041a80,PC),r5
+	mov.w @(loc_8c041a80,PC),r5;10a0
 	fmov @r6,fr3
 	lds.l @r15+,pr
 	ftrc fr3,fpul
@@ -3603,6 +3605,7 @@ loc_8c041a7e:
 loc_8c041a80:
 	#data 0x10a0
 	#align4
+
 loc_8c041a84:
 	#data 0x8c28c4a8
 loc_8c041a88:
@@ -4110,6 +4113,8 @@ loc_8c041dda:
 	nop
 
 ;==============================================
+;Write ADX file ID to 8c14dc64
+;==============================================
 loc_8c041dde:
 	sts.l pr,@-r15
 	add 0xFC,r15
@@ -4125,7 +4130,7 @@ loc_8c041dde:
 	bt loc_8c041e10
 
 loc_8c041df6:
-	mov.l @(loc_8c041e34,PC),r3
+	mov.l @(loc_8c041e34,PC),r3;0x8c1f8ac4
 	mov.l @r3,r4
 	tst r4,r4
 	bt loc_8c041e04
@@ -4135,7 +4140,7 @@ loc_8c041df6:
 
 loc_8c041e04:
 	mov.b @r15,r3
-	mov.l @(loc_8c041e3c,PC),r0
+	mov.l @(loc_8c041e3c,PC),r0;loc_8c138bbc
 	shll2 r3
 	mov.l @(loc_8c041e40,PC),r2
 	mov.l @(r0,r3),r3
@@ -4227,22 +4232,25 @@ loc_8c041e8c:
 loc_8c041e9e:
 	add 0xBA,r5
 
-;Load A File
+;==============================================
+;Load an Adx file
+;@r13 has ID
+;==============================================
 loc_8c041ea0:
 	mov.l @r14,r3
 	tst r3,r3
 	bt loc_8c041ec0
-	mov.l @(loc_8c041f44,PC),r2
+	mov.l @(loc_8c041f44,PC),r2;0x8c26a963
 	mov 0x01,r3
 	mov.b r3,@r2
-	mov.l @(loc_8c041f48,PC),r3
+	mov.l @(loc_8c041f48,PC),r3;8c174d32
 	jsr @r3
 	mov.l @r14,r4
 	mov.l @r13,r5
-	mov.l @(loc_8c041f4c,PC),r0
+	mov.l @(loc_8c041f4c,PC),r0;Files
 	shll2 r5
-	mov.l @(loc_8c041f50,PC),r3
-	mov.l @(r0,r5),r5
+	mov.l @(loc_8c041f50,PC),r3;
+	mov.l @(r0,r5),r5;Set Pointer
 	jsr @r3
 	mov.l @r14,r4
 

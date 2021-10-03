@@ -8219,37 +8219,44 @@ loc_8c138bb9:
 	#data 0x3c 0x3d 0x3e
 ;	#data "<=>"
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;Music File IDs
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c138bbc:
-	#data 0x0000007c
-	#data 0x0000007d
-	#data 0x0000007e
-	#data 0x0000007f
-	#data 0x00000080
-	#data 0x00000081
-	#data 0x00000082
-	#data 0x00000083
-	#data 0x00000084
-	#data 0x0000007c
-	#data 0x0000007d
-	#data 0x00000087
-	#data 0x0000007f
-	#data 0x00000080
-	#data 0x00000081
-	#data 0x00000082
-	#data 0x00000083
-	#data 0x00000085
-	#data 0x00000086
-	#data 0x00000089
-	#data 0x0000008a
-	#data 0x00000088
-	#data 0x0000008b
-	#data 0x0000008c
-	#data 0x0000008d
-	#data 0x0000008e
-	#data 0x0000008f
-	#data 0x00000090
-	#data 0x00000091
-	#data 0x000002c6
+	#data 0x0000007c;Air_Ship			ADX_S000
+	#data 0x0000007d;Desert				ADX_S010
+	#data 0x0000007e;Factory			ADX_S020
+	#data 0x0000007f;Carnival			ADX_S030
+	#data 0x00000080;Swamp				ADX_S040
+	#data 0x00000081;Cave				ADX_S050
+	#data 0x00000082;Clock				ADX_S060
+	#data 0x00000083;River				ADX_S070
+	#data 0x00000084;Abyss 1			ADX_S080
+	#data 0x0000007c;another Ship		ADX_S000
+	#data 0x0000007d;another Desert		ADX_S010
+	#data 0x00000087;Training Stage		ADX_S0B0
+	#data 0x0000007f;another Carnival	ADX_S030
+	#data 0x00000080;another Swamp		ADX_S040
+	#data 0x00000081;another Cave		ADX_S050
+	#data 0x00000082;another Clock		ADX_S060
+	#data 0x00000083;another River		ADX_S070
+	#data 0x00000085;Abyss 2			ADX_S090
+	#data 0x00000086;Abyss 3			ADX_S0A0
+	#data 0x00000089;Opening			ADX_OPEN
+	#data 0x0000008a;Credits			ADX_STAF
+	#data 0x00000088;Capcom Logo		ADX_CAPL
+	#data 0x0000008b;Character Select	ADX_SELC
+	#data 0x0000008c;Continue			ADX_CONT
+	#data 0x0000008d;Challenger			ADX_HERE
+	#data 0x0000008e;Game Over			ADX_OVER
+	#data 0x0000008f;Ranking			ADX_RANK
+	#data 0x00000090;Win Screen			ADX_WINS
+	#data 0x00000091;Main Menu			ADX_MENU
+	#data 0x000002c6;Network Menu		ADX_NETW
+
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;not part of the music Ids
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#data 0x01010101
 	#data 0x01010101
 	#data 0x01010101

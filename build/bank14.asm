@@ -14087,8 +14087,8 @@ loc_8c14D310:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c14D350:
-	#data bank03.loc_8c037438;
-	#data bank03.loc_8c037594;
+	#data bank03.loc_8c037438;Regular Pause
+	#data bank03.loc_8c037594;Quit
 	#data bank03.loc_8c0376e0;Training Mode Pause
 
 loc_8c14D35C:

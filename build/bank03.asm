@@ -33389,15 +33389,15 @@ loc_8c03de8a:
 	mov.l @(loc_8c03df6c,PC),r3
 	jsr @r3
 	nop
-	mov.l @(loc_8c03df70,PC),r2
+	mov.l @(loc_8c03df70,PC),r2;loc_8c041a14
 	mov 0x01,r5
 	jsr @r2
 	mov 0x00,r4
-	mov.l @(loc_8c03df70,PC),r3
+	mov.l @(loc_8c03df70,PC),r3;loc_8c041a14
 	mov 0x01,r5
 	jsr @r3
 	mov r5,r4
-	mov.l @(loc_8c03df74,PC),r2
+	mov.l @(loc_8c03df74,PC),r2;loc_8c041e44 load ADX
 	jsr @r2
 	nop
 	mov.l @(loc_8c03df78,PC),r3
