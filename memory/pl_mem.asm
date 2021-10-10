@@ -16,12 +16,13 @@
 #symbol ptr_to_char_programming_E 0x0CE50000
 #symbol ptr_to_char_programming_F 0x0CE58000
 
-#symbol pl_A_datfile 0x0c420000
-#symbol pl_B_datfile 0x0c810000
-#symbol pl_C_datfile 0x0c570000
-#symbol pl_D_datfile 0x0c960000
-#symbol pl_E_datfile 0x0c6c0000
-#symbol pl_F_datfile 0x0cab0000
+#symbol pl_A_datfile 0x0c420000 ;P1 C1
+#symbol pl_C_datfile 0x0c570000 ;P1 C2
+#symbol pl_E_datfile 0x0c6c0000 ;P1 C3
+
+#symbol pl_B_datfile 0x0c810000 ;P2 C1
+#symbol pl_D_datfile 0x0c960000 ;P2 C2
+#symbol pl_F_datfile 0x0cab0000 ;P2 C3
 
 ;==============================================
 ;Player Memory Offsets
@@ -264,6 +265,8 @@
 #symbol is_cpu 0x0525					; byte
 
 #symbol pal_id 0x052d					; byte
+;#symbol Unknown_55C 0x55c
+
 
 ;==============================================
 ;Character IDs

@@ -4140,7 +4140,7 @@ loc_8c041df6:
 
 loc_8c041e04:
 	mov.b @r15,r3
-	mov.l @(loc_8c041e3c,PC),r0;loc_8c138bbc
+	mov.l @(loc_8c041e3c,PC),r0;MUSIC_ID_TBL
 	shll2 r3
 	mov.l @(loc_8c041e40,PC),r2
 	mov.l @(r0,r3),r3
@@ -4165,7 +4165,7 @@ loc_8c041e24:
 loc_8c041e28:
 	#data bank12.loc_8c125250
 loc_8c041e2c:
-	#data 0x0c420000
+	#data pl_mem.pl_A_datfile
 loc_8c041e30:
 	#data work.GameGlobalPointer
 loc_8c041e34:
@@ -4173,7 +4173,7 @@ loc_8c041e34:
 loc_8c041e38:
 	#data bank17.loc_8c174b52
 loc_8c041e3c:
-	#data bank13.loc_8c138bbc
+	#data bank13.MUSIC_ID_TBL
 loc_8c041e40:
 	#data bank14.loc_8c14dc64
 

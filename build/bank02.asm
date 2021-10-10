@@ -18662,6 +18662,7 @@ loc_8c027b60:
 	#data 0x8c1f978c
 
 ;==============================================
+;Opening Programming
 loc_8c027b64:
 	mov.l r14,@-r15
 	mov.l r13,@-r15
@@ -19030,11 +19031,11 @@ loc_8c027da2:
 	bsr loc_8c027910
 	nop
 	mov.w @(loc_8c027dda,PC),r5
-	mov.l @(loc_8c027de4,PC),r6
+	mov.l @(loc_8c027de4,PC),r6;0x0cc00000
 	bsr loc_8c0279e4
 	mov 0x00,r4
 	mov.w @(loc_8c027ddc,PC),r5
-	mov.l @(loc_8c027dfc,PC),r6
+	mov.l @(loc_8c027dfc,PC),r6;0x0ccb7000
 	bsr loc_8c0279e4
 	mov 0x00,r4
 	mov.w @(loc_8c027dde,PC),r5
@@ -19042,10 +19043,10 @@ loc_8c027da2:
 	bsr loc_8c0279e4
 	mov 0x00,r4
 	mov.w @(loc_8c027de0,PC),r5
-	mov.l @(loc_8c027e04,PC),r6
+	mov.l @(loc_8c027e04,PC),r6;0x0c520000
 	bsr loc_8c0279e4
 	mov 0x00,r4
-	mov.l @(loc_8c027e08,PC),r6
+	mov.l @(loc_8c027e08,PC),r6;0x0ccde000
 	bra loc_8c027e42
 	mov 0x7B,r5
 
@@ -19088,7 +19089,7 @@ loc_8c027df8:
 loc_8c027dfc:
 	#data 0x0ccb7000
 loc_8c027e00:
-	#data 0x0c420000
+	#data 0x0c420000;it's not a chardata
 loc_8c027e04:
 	#data 0x0c520000
 loc_8c027e08:
@@ -19238,12 +19239,12 @@ loc_8c027ee0:
 	mov.l @(loc_8c027f20,PC),r2
 	mov.w @(loc_8c027f08,PC),r0
 	mov.l @r2,r3
-	mov.l @(loc_8c027f34,PC),r1
+	mov.l @(loc_8c027f34,PC),r1;pldat?
 	mov.l @(r0,r3),r0
 	cmp/eq r1,r0
 	bf.s loc_8c027f38
 	mov r11,r13
-	mov.w @(loc_8c027f04,PC),r0
+	mov.w @(loc_8c027f04,PC),r0;55c
 	mov.b @(r0,r13),r0
 	extu.b r0,r0
 	shll2 r0
@@ -19287,7 +19288,7 @@ loc_8c027f2c:
 loc_8c027f30:
 	#data bank14.loc_8c1491c4
 loc_8c027f34:
-	#data 0x0c420000
+	#data pl_mem.pl_A_datfile
 
 ;----------------------------------------------
 loc_8c027f38:
@@ -19334,7 +19335,7 @@ loc_8c027f74:
 	mov.b r13,@r2
 	mov.w @(loc_8c028012,PC),r2
 	mov.l @r1,r3
-	mov.l @(loc_8c028024,PC),r0
+	mov.l @(loc_8c028024,PC),r0;pldat
 	add r3,r2
 	mov.l @r2,r3
 	cmp/eq r0,r3
@@ -19444,7 +19445,7 @@ loc_8c02801c:
 loc_8c028020:
 	#data work.GameGlobalPointer
 loc_8c028024:
-	#data 0x0c420000
+	#data pl_mem.pl_A_datfile
 
 ;----------------------------------------------
 loc_8c028028:
@@ -23953,7 +23954,7 @@ loc_8c029eb2:
 	mov.l r10,@-r15
 	mov.l r9,@-r15
 	mov.l r8,@-r15
-	mov.l @(loc_8c029fb0,PC),r3
+	mov.l @(loc_8c029fb0,PC),r3;pldat?
 	mov.l @(loc_8c029fa0,PC),r13
 	sts.l pr,@-r15
 	mov.l @(loc_8c029fb4,PC),r12
@@ -24098,7 +24099,7 @@ loc_8c029fa8:
 loc_8c029fac:
 	#data loc_8c027366
 loc_8c029fb0:
-	#data 0x0c420000
+	#data pl_mem.pl_A_datfile
 loc_8c029fb4:
 	#data bank12.loc_8c129728
 loc_8c029fb8:

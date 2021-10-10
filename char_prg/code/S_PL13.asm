@@ -10242,7 +10242,7 @@ Rby_Assists:
 	mov.b r0,@(0x07,r4)
 	mov.b r0,@(0x06,r4)
 	mov.w @(loc_ce3434C,pc),r0 ; r0 set to 0x4C9
-	mov.b @(r0,r4),r0 ; r0 ??? bc r4 is ???
+	mov.b @(r0,r4),r0
 	cmp/eq 0x00,r0
 	bt loc_ce342E8
 	cmp/eq 0x01,r0

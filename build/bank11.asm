@@ -12761,7 +12761,7 @@ loc_8C1157CC:
 loc_8C1157D0:
 	#data 0x8C28977c
 loc_8C1157D4:
-	#data bank16.loc_8c169EFc
+	#data bank16.VMU_GRAPHIC
 
 ;==============================================
 loc_8C1157D8:
@@ -13265,7 +13265,7 @@ loc_8C115B14:
 loc_8C115B18:
 	#data 0x8C2A3AE4
 loc_8C115B1C:
-	#data bank16.loc_8c169EFc
+	#data bank16.VMU_GRAPHIC
 loc_8C115B20:
 	#data 0x8C2A3CD4
 loc_8C115B24:
@@ -16746,7 +16746,7 @@ loc_8C11714E:
 
 loc_8C1171D8:
 	mov.l @(loc_8C117204,pc),r3 ; r3 set to 0x8C1154AC, r3 set to 0x8C1154Ac
-	mov.l @(loc_8C117220,pc),r4 ; r4 set to VMUGraphic, r4 set to VMUGraphic
+	mov.l @(loc_8C117220,pc),r4 ; r4 set to VMUGraphic
 	jsr @r3
 	nop
 	mov.l @(loc_8C117208,pc),r2 ; r2 set to 0x8C1154F2, r2 set to 0x8C1154F2
@@ -16770,7 +16770,7 @@ loc_8C1171F8:
 loc_8C1171FC:
 	#data 0x8C289750
 loc_8C117200:
-	#data bank16.loc_8c169FBc
+	#data bank16.VMU_ACCESS_G
 loc_8C117204:
 	#data loc_8c1154Ac
 loc_8C117208:
@@ -16786,7 +16786,7 @@ loc_8C117218:
 loc_8C11721C:
 	#data bank17.loc_8c1795D6
 loc_8C117220:
-	#data bank16.loc_8c169EFc
+	#data bank16.VMU_GRAPHIC
 
 ;==============================================
 loc_8C117224:
@@ -18219,7 +18219,7 @@ loc_8C117B6C:
 loc_8C117B70:
 	#data 0x8C2A3AE4
 loc_8C117B74:
-	#data bank16.loc_8c169FBc
+	#data bank16.VMU_ACCESS_G
 loc_8C117B78:
 	#data loc_8c1154Ac
 loc_8C117B7C:
@@ -18384,7 +18384,7 @@ loc_8C117C7C:
 loc_8C117C80:
 	#data loc_8c116304
 loc_8C117C84:
-	#data bank16.loc_8c169EFc
+	#data bank16.VMU_GRAPHIC
 loc_8C117C88:
 	#data loc_8c1154Ac
 loc_8C117C8C:
@@ -18704,7 +18704,7 @@ loc_8C117EA8:
 loc_8C117EAC:
 	#data 0x8C289750
 loc_8C117EB0:
-	#data bank16.loc_8c169FBc
+	#data bank16.VMU_ACCESS_G
 loc_8C117EB4:
 	#data loc_8c1154Ac
 loc_8C117EB8:
@@ -18716,7 +18716,7 @@ loc_8c117ec0:
 loc_8C117EC4:
 	#data bank17.loc_8c179980
 loc_8C117EC8:
-	#data bank16.loc_8c169EFc
+	#data bank16.VMU_GRAPHIC
 
 ;==============================================
 loc_8C117ECC:
@@ -18893,7 +18893,7 @@ loc_8c117ff0:
 loc_8c117ff4:
 	#data 0x8C289750
 loc_8C117FF8:
-	#data bank16.loc_8c169FBc
+	#data bank16.VMU_ACCESS_G
 loc_8C117FFC:
 	#data loc_8c1154Ac
 loc_8C118000:
@@ -19201,7 +19201,7 @@ loc_8C1181FC:
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#align4
 loc_8C118210:
-	#data bank16.loc_8c169EFc
+	#data bank16.VMU_GRAPHIC
 loc_8C118214:
 	#data loc_8c1154Ac
 loc_8C118218:
@@ -19219,7 +19219,7 @@ loc_8C11822C:
 loc_8C118230:
 	#data 0x8C289750
 loc_8C118234:
-	#data bank16.loc_8c169FBc
+	#data bank16.VMU_ACCESS_G
 loc_8C118238:
 	#data bank17.loc_8c179092
 loc_8C11823c:

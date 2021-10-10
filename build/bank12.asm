@@ -22130,8 +22130,9 @@ loc_8C129600:
 	mov r2,r3
 	add r0,r3
 
+;Used in reading Palette
 loc_8C129606:
-	mov.l @r2+,r0
+	mov.l @r2+,r0;
 	cmp/hs r2,r3
 	bf loc_8C12961a
 	mov.l r0,@r1

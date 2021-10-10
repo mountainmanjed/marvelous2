@@ -4624,7 +4624,7 @@ loc_8c031fa0:
 	add 0x04,r0
 	mov.l @(0x8,r13),r3
 	add r13,r3
-	mov.l r3,@(r0,r14)
+	mov.l r3,@(r0,r14);Write Dat Palette Pointer
 	add 0x14,r0
 	mov.l @(0xC,r13),r2
 	add r13,r2
@@ -4672,7 +4672,7 @@ loc_8c032028:
 	mov.w @(r0,r14),r5
 	mov.w @(loc_8c03210c,PC),r0 ;0x52d
 	mov.b @(r0,r14),r4
-	mov.w @(loc_8c03210e,PC),r0
+	mov.w @(loc_8c03210e,PC),r0;Read Palette PNT
 	shll2 r4
 	shll2 r4
 	mov.l @(r0,r14),r3
@@ -5204,7 +5204,7 @@ loc_8c032398:
 loc_8c03239c:
 	#data work.GameGlobalPointer
 loc_8c0323a0:
-	#data 0x0c420000
+	#data pl_mem.pl_A_datfile
 
 ;----------------------------------------------
 loc_8c0323a4:
@@ -5526,7 +5526,7 @@ loc_8c0325a4:
 loc_8c0325a8:
 	#data 0x0c810000
 loc_8c0325ac:
-	#data 0x0c420000
+	#data pl_mem.pl_A_datfile
 loc_8c0325b0:
 	#data bank02.loc_8c027366
 loc_8c0325b4:
@@ -5727,7 +5727,7 @@ loc_8c0326ec:
 	#data 0x0184
 	#align4
 loc_8c0326f0:
-	#data 0x0c420000
+	#data pl_mem.pl_A_datfile
 loc_8c0326f4:
 	#data 0x8c2895f0
 loc_8c0326f8:
@@ -6974,7 +6974,7 @@ loc_8c032f04:
 loc_8c032f08:
 	#data bank02.loc_8c027b64
 loc_8c032f0c:
-	#data 0x0c420000
+	#data pl_mem.pl_A_datfile
 loc_8c032f10:
 	#data 0x8c26a940
 loc_8c032f14:
@@ -11883,15 +11883,17 @@ loc_8c034fde:
 	nop
 
 ;==============================================
+;happens on hit
+;==============================================
 loc_8c035000:
 	mov 0x25,r0
 	mov.w @(loc_8c035072,PC),r7
 	mov.b @(r0,r4),r5
-	mov.w @(loc_8c035074,PC),r0
+	mov.w @(loc_8c035074,PC),r0;Palette Pointer offset
 	add r4,r7
 	extu.b r5,r5
 	mov.w @(loc_8c035076,PC),r6
-	mov.l @(r0,r4),r3
+	mov.l @(r0,r4),r3;load pal pointer
 	shll2 r5
 	mov.b @(0x1,r4),r0
 	shll2 r5
@@ -11918,7 +11920,7 @@ loc_8c035034:
 	bt loc_8c035114
 	mov 0x30,r0
 	mov.b @(r0,r4),r5
-	mov.w @(loc_8c035074,PC),r0
+	mov.w @(loc_8c035074,PC),r0;Palette Pointer offset
 	shll2 r5
 	mov.l @(r0,r4),r3
 	mov 0x25,r0
@@ -12119,7 +12121,7 @@ loc_8c035162:
 	mov 0x01,r12
 	mov.w @(r0,r13),r14
 	mov 0x08,r11
-	mov.w @(loc_8c035252,PC),r10
+	mov.w @(loc_8c035252,PC),r10;Extras Offset?
 	mov 0x00,r6
 	mov r14,r3
 	shll r14
@@ -12254,7 +12256,7 @@ loc_8c03524a:
 loc_8c035250:
 	#data 0x012e
 loc_8c035252:
-	#data 0x0300
+	#data 0x0300;Hurt Effect offset
 loc_8c035254:
 	#data 0x01a4
 loc_8c035256:
@@ -12325,13 +12327,13 @@ loc_8c0352ae:
 	extu.b r0,r0
 	cmp/eq 0x14,r0
 	bf loc_8c0352ea
-	mov.w @(loc_8c03537e,PC),r0
+	mov.w @(loc_8c03537e,PC),r0;HyperArmor Offset
 	mov.b @(r0,r13),r1
 	tst r1,r1
 	bt loc_8c0352ea
 	mov 0x30,r0
 	mov.b @(r0,r13),r7
-	mov.w @(loc_8c035380,PC),r0
+	mov.w @(loc_8c035380,PC),r0;Palete_pointer
 	mov r7,r6
 	shll2 r6
 	mov.l @(r0,r13),r3
@@ -12357,7 +12359,7 @@ loc_8c0352ea:
 	mov 0x30,r0
 	shll r5
 	mov.b @(r0,r13),r4
-	mov.w @(loc_8c035380,PC),r0
+	mov.w @(loc_8c035380,PC),r0;palette pointer
 	mov.l r4,@r15
 	mov.l @(0x1C,r9),r3
 	mov.l @r15,r7
@@ -24267,7 +24269,7 @@ loc_8c03a188:
 	#align4
 
 loc_8c03a18c:
-	#data 0x0c420000
+	#data pl_mem.pl_A_datfile
 loc_8c03a190:
 	#data 0x0c720000
 loc_8c03a194:
