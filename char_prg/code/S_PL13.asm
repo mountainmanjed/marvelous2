@@ -667,7 +667,7 @@ loc_ce303E2:
 	mov.l r14,@-r15
 	mov r4,r14
 	sts.l pr,@-r15
-	mov.l @(0xbc,pc),r5
+	mov.l @(loc_ce304A8_to_loc_ce343FC,pc),r5
 	mov.w @(0xa4,pc),r6
 	mov.l @(0xbc,pc),r3
 	jsr @r3
@@ -920,7 +920,7 @@ loc_ce30578:
 	mov.l r14,@-r15
 	mov r4,r14
 	sts.l pr,@-r15
-	mov.l @(0x4c,pc),r5
+	mov.l @(loc_ce305CC_to_loc_ce343FC,pc),r5
 	mov.w @(0x34,pc),r6
 	mov.l @(0x4c,pc),r3
 	jsr @r3
@@ -3985,15 +3985,17 @@ loc_ce318EE:
 	mov.b @(r0,r14),r2
 	cmp/pz r2
 	bt loc_ce319A8
+
 	mov.b @(0x06,r14),r0
 	mov 0x01,r7 ; r7 set to 0x01
 	mov.l @(loc_ce319C8_to_loc_8c03544C,pc),r3 ; r3 set to 0x8C03544C
 	mov 0x00,r5 ; r5 set to 0x00
-	add 0x01,r0 ; r0 set to 0x144
+	add 0x01,r0 ; add special move state
 	mov r7,r6 ; r6 set to 0x01
 	mov.b r0,@(0x06,r14)
 	jsr @r3
 	mov r14,r4
+
 	mov.l @(loc_ce319CC_to_loc_8c034E8C,pc),r2 ; r2 set to 0x8C034E8C
 	mov 0x15,r5 ; r5 set to 0x15
 	mov 0x03,r6 ; r6 set to 0x03
@@ -10373,36 +10375,43 @@ Air_HKChain:
 	#data 0xff 0xff 0xff 0xff
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;236+P
 loc_ce3439C:
 	#data 0x0003
 	#data 0x0000 0x0000 0x0000
 	#data 0x1000 0x1800 0x0800 0x0300
 
+;214+K
 loc_ce343AC:
 	#data 0x0003
 	#data 0x1000 0x0001 0x0000
 	#data 0x1000 0x1400 0x0400 0x0060
 
+;236+K
 loc_ce343BC:
 	#data 0x0003
 	#data 0x1000 0x0002 0x0000
 	#data 0x1000 0x1800 0x0800 0x0060
 
+;236+PP
 loc_ce343CC:
 	#data 0x0003
 	#data 0x8100 0x0003 0x0000
 	#data 0x1000 0x1800 0x0800 0x0300
 
+;214+KK
 loc_ce343DC:
 	#data 0x0003
 	#data 0x9100 0x0004 0x0000
 	#data 0x1000 0x1400 0x0400 0x0060
 
+;236+KK
 loc_ce343EC:
 	#data 0x0003
 	#data 0x9100 0x0005 0x0000
 	#data 0x1000 0x1800 0x0800 0x0060
 
+;HK LP 2 LK HP
 loc_ce343FC:
 	#data 0x0004
 	#data 0x1100 0x0009 0x0000

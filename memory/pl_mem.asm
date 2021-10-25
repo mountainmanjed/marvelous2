@@ -7,6 +7,27 @@
 #symbol player_start_charE 0x8c2699d0
 #symbol player_start_charF 0x8c269f74
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;Used to jump into character programming
+;Table
+;	0		4		8		c
+;	Unknown Unknown Normal1 Normal2 ; 00
+;	FwrdDsh BackDsh FgIntro Unknown ; 10
+;	SpecPRG Unknown Unknown Unknown ; 20
+;	Unknown DlyHypC Unknown Unknown ; 30
+;	TmHypMn TmHypAs Assists AlphCnt ; 40
+;	Unknown Unknown Unknown Unknown ; 50
+;	Unknown Unknown Unknown Unknown ; 60
+
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+#symbol SPL_A_Jump_TBL 0x8c289bd8
+#symbol SPL_B_Jump_TBL 0x8c289c58
+#symbol SPL_C_Jump_TBL 0x8c289cd8
+#symbol SPL_D_Jump_TBL 0x8c289d58
+#symbol SPL_E_Jump_TBL 0x8c289dd8
+#symbol SPL_F_Jump_TBL 0x8c289e58
+
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ; pointer to where character programming gets loaded
 ; see also loc_8c14E9F8 and loc_8c04f0ec
 #symbol ptr_to_char_programming_A 0x0CE30000
@@ -16,13 +37,20 @@
 #symbol ptr_to_char_programming_E 0x0CE50000
 #symbol ptr_to_char_programming_F 0x0CE58000
 
+
 #symbol pl_A_datfile 0x0c420000 ;P1 C1
+#symbol pl_A_FACfile 0x0c568000
 #symbol pl_C_datfile 0x0c570000 ;P1 C2
+#symbol pl_C_FACfile 0x0C6B8000
 #symbol pl_E_datfile 0x0c6c0000 ;P1 C3
+#symbol pl_E_FACfile 0x0c808000
 
 #symbol pl_B_datfile 0x0c810000 ;P2 C1
+#symbol pl_B_FACfile 0x0c958000
 #symbol pl_D_datfile 0x0c960000 ;P2 C2
+#symbol pl_D_FACfile 0x0caa8000
 #symbol pl_F_datfile 0x0cab0000 ;P2 C3
+#symbol pl_F_FACfile 0x0cbf8000
 
 ;==============================================
 ;Player Memory Offsets
@@ -48,6 +76,8 @@
 ; absolute to world/stage
 #symbol x_pos 0x34						; float
 #symbol y_pos 0x38						; float
+
+#symbol char_pal_effect 0x40			; word
 
 #symbol x_sprite_scale 0x50				; float
 #symbol y_sprite_scale 0x54				; float
@@ -236,7 +266,7 @@
 
 #symbol unk29e 0x029e
 #symbol snapout_disable_timer 0x02a0	; int16
-
+; 0x2a9 Ice Man Palette effect var
 ; 0x340 through 0x350 are inputs?
 
 ; compared using tst 0x0400 in omega red char programming,
@@ -260,7 +290,7 @@
 #symbol assist_type 0x04c9				; byte
 
 
-
+;Control_ID 0x524
 ; if != 0, controlled by cpu
 #symbol is_cpu 0x0525					; byte
 

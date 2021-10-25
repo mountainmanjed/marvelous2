@@ -12333,7 +12333,7 @@ loc_8c0352ae:
 	bt loc_8c0352ea
 	mov 0x30,r0
 	mov.b @(r0,r13),r7
-	mov.w @(loc_8c035380,PC),r0;Palete_pointer
+	mov.w @(loc_8c035380,PC),r0;Palette_pointer
 	mov r7,r6
 	shll2 r6
 	mov.l @(r0,r13),r3
@@ -12575,6 +12575,8 @@ loc_8c035442:
 	mov.l @r15+,r12
 
 ;==============================================
+;used for palette effects
+;==============================================
 loc_8c03544c:
 	mov.w @(loc_8c0354b4,PC),r0
 	extu.w r6,r6
@@ -12587,18 +12589,18 @@ loc_8c03544c:
 	mov.b @(r0,r4),r11
 	mov 0x10,r12
 	add r5,r3
-	mov.l @(loc_8c0354bc,PC),r5
+	mov.l @(loc_8c0354bc,PC),r5;0x8c2659dc
 	mov r3,r2
 	shll r3
 	add r2,r3
-	mov.w @(loc_8c0354b6,PC),r0
+	mov.w @(loc_8c0354b6,PC),r0;PalettePNT
 	shll2 r3
 	shll2 r3
-	mov.l @(r0,r4),r2
+	mov.l @(r0,r4),r2;Load Palette pointer
 	shll2 r11
 	shll2 r11
 	add r3,r5
-	mov.w @(loc_8c0354b8,PC),r3
+	mov.w @(loc_8c0354b8,PC),r3;300
 	shll2 r11
 	shll r11
 	add r3,r11
@@ -12642,7 +12644,7 @@ loc_8c0354b4:
 loc_8c0354b6:
 	#data 0x0164
 loc_8c0354b8:
-	#data 0x0300
+	#data 0x0300;Character Palette extra call offset
 	#align4
 loc_8c0354bc:
 	#data 0x8c2659dc
@@ -13033,14 +13035,14 @@ loc_8c0356ca:
 	mov.b r13,@(r0,r3)
 	mov 0x03,r3
 	mov.l r3,@r2
-	mov.l @(loc_8c035798,PC),r2 ;8c035798
-	mov.l @(loc_8c0357a4,PC),r0 ;8c0357a4
-	mov.l @(loc_8c035794,PC),r3 ;8c035794
+	mov.l @(loc_8c035798,PC),r2 ;8c26a960
+	mov.l @(loc_8c0357a4,PC),r0 ;Char_unlock
+	mov.l @(loc_8c035794,PC),r3 ;8c26a95d
 	mov.b r13,@r1
 	mov.b r13,@r3
 	mov.b r13,@r2
-	mov.l @(loc_8c0357a0,PC),r3 ;8c0357a0
-	mov.l @(loc_8c03579c,PC),r1 ;8c03579c
+	mov.l @(loc_8c0357a0,PC),r3 ;8c26a95f
+	mov.l @(loc_8c03579c,PC),r1 ;8c26a961
 	mov.b r13,@r1
 	mov.b r13,@r3
 	mov.l @r14,r2
@@ -13083,6 +13085,7 @@ loc_8c0356ca:
 loc_8c035758:
 	#data 0x0080
 	#align4
+
 loc_8c03575c:
 	#data loc_8c0331d0
 loc_8c035760:
@@ -26906,6 +26909,7 @@ loc_8c03b366:
 loc_8c03b368:
 	#data 0x0200
 	#align4
+
 loc_8c03b36c:
 	#data bank0f.loc_8c0f47a4
 loc_8c03b370:
@@ -27082,8 +27086,8 @@ loc_8c03b464:
 	nop
 
 loc_8c03b4aa:
-	mov.w @(loc_8c03b4c2,PC),r0
-	mov.w @(loc_8c03b4d0,PC),r2
+	mov.w @(loc_8c03b4c2,PC),r0;ControllerID
+	mov.w @(Button_Mask,PC),r2;Button Mask 0x3f0
 	mov.b @(r0,r14),r0
 	shll r0
 	mov.w @(r0,r11),r3
@@ -27091,8 +27095,9 @@ loc_8c03b4aa:
 	tst r2,r3
 	bt loc_8c03b592
 
+;Selected a Character?
 loc_8c03b4ba:
-	mov.w @(loc_8c03b4c2,PC),r0
+	mov.w @(loc_8c03b4c2,PC),r0;ControllerID
 	mov.b @(r0,r14),r4
 	bra loc_8c03b4f8
 	nop
@@ -27112,9 +27117,10 @@ loc_8c03b4cc:
 	#data 0x0800
 loc_8c03b4ce:
 	#data 0x052c
-loc_8c03b4d0:
-	#data 0x03f0
+Button_Mask:
+	#data 0x03f0 ;8c03b4d0
 	#align4
+
 loc_8c03b4d4:
 	#data bank04.loc_8c04257c
 loc_8c03b4d8:
@@ -27201,17 +27207,16 @@ loc_8c03b56c:
 	mov.l @r13,r4
 	jsr @r3
 	mov.b @(r0,r4),r4
-	mov.w @(loc_8c03b62c,PC),r0;0x524
+	mov.w @(loc_8c03b62c,PC),r0;0x524 controller id
 	mov.l @r13,r2
 	mov.w @(loc_8c03b632,PC),r1;0x52d
-	mov.l @(loc_8c03b658,PC),r3
+	mov.l @(loc_8c03b658,PC),r3;8c03cf6a
 	add r2,r1
 	mov.l r1,@-r15 ;stack pal_id address
-
-	mov.b @(r0,r14),r0
+	mov.b @(r0,r14),r0;Get Control ID
 	mov.l @r13,r5
 	shll r0
-	mov.w @(r0,r11),r6
+	mov.w @(r0,r11),r6;INPUT GRAB
 	jsr @r3; loc_8c03cf6a
 	mov r14,r4
 	mov.l @r15+,r3
@@ -31083,7 +31088,7 @@ loc_8c03cf58:
 	mov.l @r15+,r14
 
 ;==============================================
-;some where at a return r0 is going to pal_id
+;Palette ID setup and other stuff
 loc_8c03cf6a:
 	mov.l r14,@-r15
 	mov.l r13,@-r15
@@ -31094,11 +31099,12 @@ loc_8c03cf6a:
 	mov.l r8,@-r15
 	sts.l pr,@-r15
 	add 0xE0,r15
+
 	mov r5,r9
 	mov r4,r13
-	mov r6,r0
+	mov r6,r0;Input to r0
 	nop
-	mov.w r0,@(0x8,r15)
+	mov.w r0,@(0x8,r15);Save to 8 of the stack
 	mov 0x14,r0
 	mov.l @(loc_8c03d054,PC),r6
 	mov 0x01,r14
@@ -31296,7 +31302,6 @@ loc_8c03d0d0:
 	bra loc_8c03d17e
 	mov r11,r6
 
-;==============================================
 loc_8c03d0da:
 	mov.w @(loc_8c03d19e,PC),r0
 	exts.b r6,r10
@@ -31387,17 +31392,18 @@ loc_8c03d17e:
 	exts.b r6,r2
 	cmp/ge r7,r2
 	bf loc_8c03d0da
-	mov.l @(loc_8c03d1a8,PC),r7
+
+	mov.l @(loc_8c03d1a8,PC),r7;Palette Id Table
 	mov 0x06,r5
-	mov.l @(loc_8c03d1ac,PC),r6
+	mov.l @(loc_8c03d1ac,PC),r6;button check table
 	mov r11,r4
 	mov r11,r13
 
 loc_8c03d18e:
 	mov.w @r6,r3
-	mov.w @(0x8,r15),r0
-	cmp/eq r3,r0
-	bf loc_8c03d1b0
+	mov.w @(0x8,r15),r0; grab stored button
+	cmp/eq r3,r0;compare with 8c14da8c table
+	bf loc_8c03d1b0;set next compare
 	bra loc_8c03d1bc
 	mov.b @r7,r4
 
@@ -31409,6 +31415,7 @@ loc_8c03d19c:
 loc_8c03d19e:
 	#data 0x0524
 	#align4
+
 loc_8c03d1a0:
 	#data 0x8c28c47c
 loc_8c03d1a4:
@@ -31473,7 +31480,7 @@ loc_8c03d1f2:
 	mov r14,r4
 
 loc_8c03d202:
-	mov r4,r0
+	mov r4,r0;Pal id to r0
 	nop
 	add 0x20,r15
 	lds.l @r15+,pr
@@ -31761,6 +31768,7 @@ loc_8c03d3e8:
 loc_8c03d3ea:
 	#data 0x01d4
 	#align4
+
 loc_8c03d3ec:
 	#data work.GameGlobalPointer
 loc_8c03d3f0:
@@ -32356,7 +32364,7 @@ loc_8c03d7a8:
 	or r3,r0
 	cmp/eq 0x03,r0
 	bf loc_8c03d800
-	mov.l @(loc_8c03d888,PC),r3
+	mov.l @(loc_8c03d888,PC),r3f
 	jsr @r3
 	nop
 	mov.l @(loc_8c03d88c,PC),r2
