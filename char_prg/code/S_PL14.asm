@@ -5788,7 +5788,7 @@ loc_cE32518_to_loc_8c051648:
 
 ;==============================================
 loc_cE3251C:
-	mov.w @(0x10e,pc),r0
+	mov.w @(loc_ce3262e,pc),r0
 	mov.l r14,@-r15
 	mov r4,r14
 	sts.l pr,@-r15
@@ -5796,16 +5796,16 @@ loc_cE3251C:
 	extu.b r0,r0
 	cmp/eq 0x02,r0
 	bf loc_ce32546
-	mov.l @(0x10c,pc),r2
+	mov.l @(loc_ce3263c,pc),r2
 	jsr @r2
 	mov r14,r4
-	mov.w @(0xfa,pc),r0
+	mov.w @(loc_ce32630,pc),r0
 	fmov @(r0,r14), fr3
 	mov 0x38,r0
 	fmov @(r0,r14), fr2
 	fcmp/gt fr2, fr3
 	bf loc_ce32546
-	mov.w @(0xee,pc),r0
+	mov.w @(loc_ce32630,pc),r0
 	fmov @(r0,r14), fr3
 	mov 0x38,r0
 	fmov fr3,@(r0,r14)
@@ -5827,9 +5827,10 @@ loc_cE3255C:
 	mov.l r14,@-r15
 	mov r4,r14
 	sts.l pr,@-r15
-	mov.l @(0xe0,pc),r3
+	mov.l @(loc_ce32644,pc),r3
 	jsr @r3
 	mov 0x00,r5
+
 	mov.w @(0xc8,pc),r0
 	mov.b @(r0,r14),r0
 	extu.b r0,r0
@@ -7483,7 +7484,7 @@ loc_cE33026:
 	exts.b r0,r0
 	cmp/pz r0
 	bt loc_cE33048
-	mov.l @(loc_cE33078_to_loc_8c035162,pc),r3 ; r3 set to 0x8C035162
+	mov.l @(loc_cE33078,pc),r3 ; r3 set to 0x8C035162
 	mov 0x00,r5 ; r5 set to 0x00
 	jsr @r3
 	mov r14,r4
@@ -7525,7 +7526,7 @@ loc_cE33070_to_loc_8c0511B4:
 	#data loc_8c0511B4
 loc_cE33074_to_loc_8c02FEC4:
 	#data loc_8c02FEC4
-loc_cE33078_to_loc_8c035162:
+loc_cE33078:
 	#data loc_8c035162
 loc_cE3307C_to_loc_8c051648:
 	#data loc_8c051648
@@ -7961,7 +7962,7 @@ loc_cE33360:
 	sts.l pr,@-r15
 	mov.b r11,@(r0,r14)
 
-;doesn't need to change
+;Transform
 	mov.w @(loc_cE333A4,pc),r0 ; r0 set to 0x328
 	mov.l @(loc_cE333BC,pc),r12 ; r12 set to 0x8C03544C
 	mov.b r3,@(r0,r14)
@@ -8021,13 +8022,13 @@ loc_cE333CC_to_loc_8c26823C:
 
 ;==============================================
 loc_cE333D0:
-	mov.l @(0x15c,pc),r2
-	mov 0x08,r5
+	mov.l @(loc_cE33530,pc),r2
+	mov 0x08,r5;Transform
 	jsr @r2
 	mov r14,r4
 
 loc_cE333D8:
-	mov.l @(0x158,pc),r3
+	mov.l @(loc_CE33534_to_loc_8C034E8C,pc),r3
 	mov.l @r3,r0
 	mov.l @(0x1c,r0),r0
 	tst 0x07,r0
@@ -8082,7 +8083,10 @@ loc_cE333EE:
 	mov.w r0,@(0x8,r13)
 	jsr @r3
 	mov r14,r4
-	mov.l @(0xec,pc),r2
+
+;ce33442
+;Revert White Flash 
+	mov.l @(loc_CE33530,pc),r2
 	mov 0x00,r5
 	jsr @r2
 	mov r14,r4
@@ -8092,7 +8096,7 @@ loc_cE333EE:
 	mov 0x00,r5
 	mov 0x01,r7
 	extu.b r6,r6
-	add 0x06,r6; set 1
+	add 0x06,r6; Finished Transform
 	jsr @r12
 	mov r14,r4
 
@@ -8102,7 +8106,7 @@ loc_cE333EE:
 	jsr @r12
 	mov r14,r4
 
-	mov.l @(0xdc,pc),r3
+	mov.l @(loc_cE33544,pc),r3
 	mov 0x25,r5
 	jsr @r3
 	mov r14,r4
@@ -9293,8 +9297,9 @@ loc_cE33BCC:
 	bra loc_cE33C22
 	nop
 
+;Revert back to regular form palette code
 loc_cE33C1A:
-	mov.l @(loc_cE33CB8_to_loc_8c035162,pc),r2 ; r2 set to 0x8C035162
+	mov.l @(loc_cE33CB8,pc),r2 ; r2 set to 0x8C035162
 	mov 0x08,r5 ; r5 set to 0x08
 	jsr @r2
 	mov r14,r4
@@ -9327,7 +9332,7 @@ loc_cE33C22:
 	mov r14,r4
 	mov.w @(loc_cE33C8C,pc),r0 ; r0 set to 0x41C,r0 set to 0x41C
 	mov 0x00,r13 ; r13 set to 0x00,r13 set to 0x00
-	mov.l @(loc_cE33CB8_to_loc_8c035162,pc),r3 ; r3 set to 0x8C035162,r3 set to 0x8C035162
+	mov.l @(loc_cE33CB8,pc),r3 ; r3 set to 0x8C035162,r3 set to 0x8C035162
 	mov r13,r5 ; r5 set to 0x00,r5 set to 0x00
 	fmov.s @(r0,r14),fr3 ; r3 ??? bc r14 is ???,r3 ??? bc r14 is ???
 	mov 0x38,r0 ; r0 set to 0x38,r0 set to 0x38
@@ -9384,7 +9389,7 @@ loc_cE33CB0_to_loc_8c26823C:
 	#data loc_8c26823C
 loc_cE33cb4:
 	#data loc_8c03544c
-loc_cE33CB8_to_loc_8c035162:
+loc_cE33CB8:
 	#data loc_8c035162
 loc_cE33CBC:
 	#data 0x3F000000
@@ -11547,7 +11552,8 @@ loc_cE34B1C:
 	sts.l pr,@-r15
 	mov.b @(0x06,r14),r0
 	mov r13,r5 ; r5 set to 0x00
-	mov.l @(loc_cE34BBC_to_loc_8c035162,pc),r3 ; r3 set to 0x8C035162
+
+	mov.l @(loc_cE34BBC,pc),r3 ; r3 set to 0x8C035162
 	add 0x01,r0
 	mov.b r0,@(0x06,r14)
 	mov 0x5C,r0 ; r0 set to 0x5C
@@ -11566,6 +11572,7 @@ loc_cE34B1C:
 	fmov.s fr3,@(r0,r14)
 	jsr @r3
 	mov r14,r4
+
 	mov.l @(loc_cE34BC0_to_loc_8c05218A,pc),r2 ; r2 set to 0x8C05218A
 	jsr @r2
 	mov r14,r4
@@ -11626,7 +11633,7 @@ loc_cE34BB4_to_loc_8c04223A:
 	#data loc_8c04223A
 loc_cE34BB8_to_loc_cE3649C_to_loc_cE34B1C:
 	#data loc_cE3649C_to_loc_cE34B1C
-loc_cE34BBC_to_loc_8c035162:
+loc_cE34BBC:
 	#data loc_8c035162
 loc_cE34BC0_to_loc_8c05218A:
 	#data loc_8c05218A
@@ -14957,46 +14964,43 @@ loc_cE36180:
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;Chains
 loc_cE36188:
-#data 0x02000201
+	#data 0x01 0x02 0x00 0x02
 loc_cE3618C:
-#data 0x020102FF
+	#data 0xFF 0x02 0x01 0x02
 loc_cE36190:
-#data 0x02FFFFFF
-
+	#data 0xFF 0xFF 0xFF 0x02
 loc_cE36194:
-#data 0x02010201
+	#data 0x01 0x02 0x01 0x02
 loc_cE36198:
-#data 0x02FF02FF
+	#data 0xFF 0x02 0xFF 0x02
 loc_cE3619C:
-#data 0xFFFFFFFF
+	#data 0xFF 0xFF 0xFF 0xFF
 
 loc_cE361A0:
-#data 0x02000201
+	#data 0x01 0x02 0x00 0x02
 loc_cE361A4:
-#data 0x020102FF
+	#data 0xFF 0x02 0x01 0x02
 loc_cE361A8:
-#data 0x02FFFFFF
-
+	#data 0xFF 0xFF 0xFF 0x02
 loc_cE361AC:
-#data 0x02010201
+	#data 0x01 0x02 0x01 0x02
 loc_cE361B0:
-#data 0x02FF02FF
+	#data 0xFF 0x02 0xFF 0x02
 loc_cE361B4:
-#data 0xFFFFFFFF
+	#data 0xFF 0xFF 0xFF 0xFF
 
 loc_cE361B8:
-#data 0x02000201
+	#data 0x01 0x02 0x00 0x02
 loc_cE361BC:
-#data 0x020102FF
+	#data 0xFF 0x02 0x01 0x02
 loc_cE361C0:
-#data 0x02FFFFFF
-
+	#data 0xFF 0xFF 0xFF 0x02
 loc_cE361C4:
-#data 0x02010201
+	#data 0x01 0x02 0x01 0x02
 loc_cE361C8:
-#data 0x02FF02FF
+	#data 0xFF 0x02 0xFF 0x02
 loc_cE361CC:
-#data 0xFFFFFFFF
+	#data 0xFF 0xFF 0xFF 0xFF
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_cE361D0:
