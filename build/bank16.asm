@@ -9266,114 +9266,62 @@ loc_8c1657b4:
 #data 0x0000
 
 loc_8c1657c8:
-#data 0x00DE
-#data 0x0000
-#data 0x00DE
-#data 0x0000
-#data 0x00DE
-#data 0x0000
-#data 0x00DF
-#data 0x0000
-#data 0x00DF
-#data 0x0000
-#data 0x00DF
-#data 0x0000
-#data 0x00E0
-#data 0x0000
-#data 0x00E0
-#data 0x0000
-#data 0x00E1
-#data 0x0000
-#data 0x00E1
-#data 0x0000
-#data 0x00E2
-#data 0x0000
-#data 0x00E2
-#data 0x0000
-#data 0x00E3
-#data 0x0000
-#data 0x00E4
-#data 0x0000
-#data 0x00E5
-#data 0x0000
-#data 0x00E6
-#data 0x0000
-#data 0x00E7
-#data 0x0000
-#data 0x00E8
-#data 0x0000
-#data 0x00E9
-#data 0x0000
-#data 0x00EA
-#data 0x0000
-#data 0x00EB
-#data 0x0000
-#data 0x00EC
-#data 0x0000
+	#data 0x000000DE
+	#data 0x000000DE
+	#data 0x000000DE
+	#data 0x000000DF
+	#data 0x000000DF
+	#data 0x000000DF
+	#data 0x000000E0
+	#data 0x000000E0
+	#data 0x000000E1
+	#data 0x000000E1
+	#data 0x000000E2
+	#data 0x000000E2
+	#data 0x000000E3
+	#data 0x000000E4
+	#data 0x000000E5
+	#data 0x000000E6
+	#data 0x000000E7
+	#data 0x000000E8
+	#data 0x000000E9
+	#data 0x000000EA
+	#data 0x000000EB
+	#data 0x000000EC
 
 loc_8c165820:
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
 
 loc_8c165868:
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F80
-#data 0x0000
-#data 0x3F00
-#data 0x0000
-#data 0x3F00
-#data 0xCCCD
-#data 0x3E4C
-#data 0xCCCD
-#data 0x3E4C
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F800000
+	#data 0x3F000000
+	#data 0x3F000000
+	#data 0x3E4CCCCD
+	#data 0x3E4CCCCD
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c165898:
@@ -9486,72 +9434,53 @@ loc_8c16596c:
 	#data bank10.loc_8c107ecc
 loc_8c165970:
 	#data bank10.loc_8c107eda
+
+;=====================================
 loc_8c165974:
 	#data bank10.loc_8c108800
-loc_8c165978:
 	#data bank10.loc_8c108b30
-loc_8c16597c:
 	#data bank10.loc_8c108c1c
-loc_8c165980:
 	#data bank10.loc_8c108e1c
-loc_8c165984:
 	#data bank10.loc_8c109058
-loc_8c165988:
 	#data bank11.loc_8c114d24
-loc_8c16598c:
 	#data bank11.loc_8c114e90
+
+;===================================
 loc_8c165990:
 	#data bank10.loc_8c10923e
-loc_8c165994:
 	#data bank10.loc_8c1093fc
-loc_8c165998:
 	#data bank10.loc_8c1096f8
-loc_8c16599c:
 	#data bank10.loc_8c1099a4
-loc_8c1659a0:
 	#data bank10.loc_8c109ad2
-loc_8c1659a4:
 	#data bank10.loc_8c109b14
+
+;===================================
 loc_8c1659a8:
 	#data bank10.loc_8c10b0dc
-
-;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 	#data 0x00000000
 
-;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;===================================
 loc_8c1659b0:
 	#data bank10.loc_8c10bcfc
-loc_8c1659b4:
 	#data bank10.loc_8c10cc2a
-loc_8c1659b8:
 	#data bank10.loc_8c10d1b6
-loc_8c1659bc:
 	#data bank10.loc_8c10d792
-loc_8c1659c0:
 	#data bank10.loc_8c10e9bc
-loc_8c1659c4:
 	#data bank10.loc_8c10eaba
+
+;===================================
 loc_8c1659c8:
 	#data bank10.loc_8c10eadc
-loc_8c1659cc:
 	#data bank10.loc_8c10ee2a
-loc_8c1659d0:
 	#data bank10.loc_8c10ef68
-loc_8c1659d4:
 	#data bank10.loc_8c10f18c
-loc_8c1659d8:
 	#data bank10.loc_8c10f4ac
-loc_8c1659dc:
 	#data bank10.loc_8c10f504
-loc_8c1659e0:
 	#data bank10.loc_8c10fb24
-loc_8c1659e4:
 	#data bank10.loc_8c10fba0
+	#data 0x00000000
 
-;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-#data 0x00000000
-
-;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;===================================
 loc_8c1659ec:
 	#data bank10.loc_8c10fd58
 loc_8c1659f0:
@@ -9572,393 +9501,235 @@ loc_8c165a0c:
 	#data bank11.loc_8c1108f4
 loc_8c165a10:
 	#data bank11.loc_8c114f78
+
+;=====================================
 loc_8c165a14:
 	#data bank11.loc_8c110a54
-loc_8c165a18:
 	#data bank11.loc_8c110bec
+	#data 0x00000000
 
-;====================================
-#data 0x00000000
-
-;====================================
 loc_8c165a20:
 	#data bank11.loc_8c110e34
-loc_8c165a24:
 	#data bank11.loc_8c1110c6
-loc_8c165a28:
 	#data bank11.loc_8c1112ac
-loc_8c165a2c:
 	#data bank11.loc_8c1112c8
+	#data 0x00000000
 
-;====================================
-#data 0x00000000
-
-;====================================
 loc_8c165a34:
 	#data bank11.loc_8c11513c
-loc_8c165a38:
-	#data bank11.loc_8c111798
-loc_8c165a3c:
-	#data bank11.loc_8c1117f0
-loc_8c165a40:
-	#data bank11.loc_8c111a94
+
 
 ;====================================
-#data 0x00000000
+loc_8c165a38:
+	#data bank11.loc_8c111798
+	#data bank11.loc_8c1117f0
+	#data bank11.loc_8c111a94
+	#data 0x00000000
 
 ;====================================
 loc_8c165a48:
 	#data bank11.loc_8c112330
-loc_8c165a4c:
 	#data bank11.loc_8c115324
+
+;=====================================
 loc_8c165a50:
 	#data bank11.loc_8c1123a0
+	#data 0x00000000
 
-;====================================
-#data 0x00000000
-
-;====================================
 loc_8c165a58:
 	#data bank11.loc_8c112a90
-loc_8c165a5c:
 	#data bank11.loc_8c112bbc
+
+;=====================================
+;Abyss table
 loc_8c165a60:
 	#data bank11.loc_8c11420c
-loc_8c165a64:
 	#data bank11.loc_8c114230
-loc_8c165a68:
 	#data bank11.loc_8c114692
-loc_8c165a6c:
 	#data bank11.loc_8c114844
-loc_8c165a70:
 	#data bank11.loc_8c114918
-loc_8c165a74:
 	#data bank11.loc_8c114a5e
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c165a78:
-	#data loc_8c165974
-loc_8c165a7c:
-	#data loc_8c165990
-loc_8c165a80:
-	#data loc_8c1659a8
-loc_8c165a84:
-	#data loc_8c1659c8
-loc_8c165a88:
-	#data loc_8c1659f0
-loc_8c165a8c:
-	#data loc_8c165a14
-loc_8c165a90:
-	#data loc_8c165a38
-loc_8c165a94:
-	#data loc_8c165a50
-loc_8c165a98:
-	#data loc_8c165a60
-loc_8c165a9c:
-	#data loc_8c165974
-loc_8c165aa0:
-	#data loc_8c165990
-loc_8c165aa4:
-	#data loc_8c1659a8
-loc_8c165aa8:
-	#data loc_8c1659c8
-loc_8c165aac:
-	#data loc_8c1659f0
-loc_8c165ab0:
-	#data loc_8c165a14
-loc_8c165ab4:
-	#data loc_8c165a38
-loc_8c165ab8:
-	#data loc_8c165a50
+	#data loc_8c165974;Air Ship
+	#data loc_8c165990;Desert Evening
+	#data loc_8c1659a8;Ship Dock
+	#data loc_8c1659c8;Carnival
+	#data loc_8c1659f0;Swamp
+	#data loc_8c165a14;Blue Cave
+	#data loc_8c165a38;Clock
+	#data loc_8c165a50;Ice River
+	#data loc_8c165a60;Abyss
+	#data loc_8c165974;AirShip Night
+	#data loc_8c165990;Desert Day
+	#data loc_8c1659a8;Training
+	#data loc_8c1659c8;Alt Carnival
+	#data loc_8c1659f0;Pink Swamp
+	#data loc_8c165a14;Lava Cave
+	#data loc_8c165a38;Winter Clock
+	#data loc_8c165a50;River Raft
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c165abc:
-#data 0x0000
-#data 0x0000
-#data 0x0001
-#data 0x0000
-#data 0x0002
-#data 0x0000
-
-loc_8c165ac8:
-#data 0x0003
-#data 0x0000
-#data 0x0004
-#data 0x0000
-
-loc_8c165ad0:
-#data 0xFFFF
-#data 0xFFFF
+	#data 0x00000000
+	#data 0x00000001
+	#data 0x00000002
+	#data 0x00000003
+	#data 0x00000004
+	#data 0xFFFFFFFF
 
 loc_8c165ad4:
-#data 0x0000
-#data 0x0000
-#data 0x0001
-#data 0x0000
-#data 0x0002
-#data 0x0000
-#data 0x0003
-#data 0x0000
-#data 0x0004
-#data 0x0000
-#data 0x0005
-#data 0x0000
-#data 0xFFFF
-#data 0xFFFF
+	#data 0x00000000
+	#data 0x00000001
+	#data 0x00000002
+	#data 0x00000003
+	#data 0x00000004
+	#data 0x00000005
+	#data 0xFFFFFFFF
 
 loc_8c165af0:
-#data 0x0000
-#data 0x0000
-#data 0x0002
-#data 0x0000
-#data 0x0003
-#data 0x0000
-#data 0x0004
-#data 0x0000
-#data 0x0005
-#data 0x0000
-#data 0x0006
-#data 0x0000
-#data 0x0007
-#data 0x0000
-#data 0xFFFF
-#data 0xFFFF
+	#data 0x00000000
+	#data 0x00000002
+	#data 0x00000003
+	#data 0x00000004
+	#data 0x00000005
+	#data 0x00000006
+	#data 0x00000007
+	#data 0xFFFFFFFF
 
 loc_8c165b10:
-#data 0x0000
-#data 0x0000
-#data 0x0001
-#data 0x0000
-#data 0x0002
-#data 0x0000
-#data 0x0003
-#data 0x0000
-#data 0x0004
-#data 0x0000
-#data 0x0005
-#data 0x0000
-#data 0x0006
-#data 0x0000
-#data 0x0007
-#data 0x0000
-#data 0x0009
-#data 0x0000
-#data 0xFFFF
-#data 0xFFFF
+	#data 0x00000000
+	#data 0x00000001
+	#data 0x00000002
+	#data 0x00000003
+	#data 0x00000004
+	#data 0x00000005
+	#data 0x00000006
+	#data 0x00000007
+	#data 0x00000009
+	#data 0xFFFFFFFF
 
 loc_8c165b38:
-#data 0x0000
-#data 0x0000
-#data 0x0001
-#data 0x0000
-#data 0x0002
-#data 0x0000
-#data 0x0003
-#data 0x0000
-#data 0x0004
-#data 0x0000
-#data 0x0005
-#data 0x0000
-#data 0x0006
-#data 0x0000
-#data 0x0007
-#data 0x0000
-#data 0xFFFF
-#data 0xFFFF
+	#data 0x00000000
+	#data 0x00000001
+	#data 0x00000002
+	#data 0x00000003
+	#data 0x00000004
+	#data 0x00000005
+	#data 0x00000006
+	#data 0x00000007
+	#data 0xFFFFFFFF
 
 loc_8c165b5c:
-#data 0x0000
-#data 0x0000
-#data 0x0001
-#data 0x0000
-
-loc_8c165b64:
-#data 0x0001
-#data 0x0000
-#data 0x0001
-#data 0x0000
-#data 0x0003
-#data 0x0000
-#data 0x0004
-#data 0x0000
-#data 0x0005
-#data 0x0000
-#data 0x0006
-#data 0x0000
-#data 0xFFFF
-#data 0xFFFF
+	#data 0x00000000
+	#data 0x00000001
+	#data 0x00000001
+	#data 0x00000001
+	#data 0x00000003
+	#data 0x00000004
+	#data 0x00000005
+	#data 0x00000006
+	#data 0xFFFFFFFF
 
 loc_8c165b80:
-#data 0x0000
-#data 0x0000
-#data 0x0001
-#data 0x0000
-#data 0x0002
-#data 0x0000
-#data 0x0004
-#data 0x0000
-#data 0xFFFF
-#data 0xFFFF
+	#data 0x00000000
+	#data 0x00000001
+	#data 0x00000002
+	#data 0x00000004
+	#data 0xFFFFFFFF
 
 loc_8c165b94:
-#data 0x0000
-#data 0x0000
-#data 0x0002
-#data 0x0000
-#data 0xFFFF
-#data 0xFFFF
+	#data 0x00000000
+	#data 0x00000002
+	#data 0xFFFFFFFF
 
 loc_8c165ba0:
-#data 0x0000
-#data 0x0000
-#data 0x0001
-#data 0x0000
-#data 0x0002
-#data 0x0000
-#data 0x0003
-#data 0x0000
-#data 0x0004
-#data 0x0000
-#data 0x0005
-#data 0x0000
-#data 0xFFFF
-#data 0xFFFF
+	#data 0x00000000
+	#data 0x00000001
+	#data 0x00000002
+	#data 0x00000003
+	#data 0x00000004
+	#data 0x00000005
+	#data 0xFFFFFFFF
 
 loc_8c165bbc:
-#data 0x0001
-#data 0x0000
-#data 0x0004
-#data 0x0000
-#data 0x0005
-#data 0x0000
-#data 0x0006
-#data 0x0000
-#data 0xFFFF
-#data 0xFFFF
+	#data 0x00000001
+	#data 0x00000004
+	#data 0x00000005
+	#data 0x00000006
+	#data 0xFFFFFFFF
 
 loc_8c165bd0:
-#data 0x0000
-#data 0x0000
-#data 0x0001
-#data 0x0000
-#data 0x0002
-#data 0x0000
-#data 0x0003
-#data 0x0000
-#data 0x0004
-#data 0x0000
-#data 0x0005
-#data 0x0000
-#data 0xFFFF
-#data 0xFFFF
+	#data 0x00000000
+	#data 0x00000001
+	#data 0x00000002
+	#data 0x00000003
+	#data 0x00000004
+	#data 0x00000005
+	#data 0xFFFFFFFF
 
 loc_8c165bec:
-#data 0xFFFF
-#data 0xFFFF
+	#data 0xFFFFFFFF
 
 loc_8c165bf0:
-#data 0x0000
-#data 0x0000
-#data 0x0001
-#data 0x0000
-#data 0x0002
-#data 0x0000
-#data 0x0003
-#data 0x0000
-#data 0x0004
-#data 0x0000
-#data 0x0005
-#data 0x0000
-#data 0x0006
-#data 0x0000
-#data 0x0007
-#data 0x0000
-#data 0x0009
-#data 0x0000
-#data 0xFFFF
-#data 0xFFFF
+	#data 0x00000000
+	#data 0x00000001
+	#data 0x00000002
+	#data 0x00000003
+	#data 0x00000004
+	#data 0x00000005
+	#data 0x00000006
+	#data 0x00000007
+	#data 0x00000009
+	#data 0xFFFFFFFF
 
 loc_8c165c18:
-#data 0x0001
-#data 0x0000
-#data 0x0004
-#data 0x0000
-#data 0x0006
-#data 0x0000
-#data 0x0007
-#data 0x0000
-#data 0x0008
-#data 0x0000
-#data 0xFFFF
-#data 0xFFFF
+	#data 0x00000001
+	#data 0x00000004
+	#data 0x00000006
+	#data 0x00000007
+	#data 0x00000008
+	#data 0xFFFFFFFF
 
 loc_8c165c30:
-#data 0x0000
-#data 0x0000
-#data 0x0003
-#data 0x0000
-#data 0x0004
-#data 0x0000
-#data 0x0005
-#data 0x0000
-#data 0x0008
-#data 0x0000
-#data 0xFFFF
-#data 0xFFFF
+	#data 0x00000000
+	#data 0x00000003
+	#data 0x00000004
+	#data 0x00000005
+	#data 0x00000008
+	#data 0xFFFFFFFF
 
 loc_8c165c48:
-#data 0x0002
-#data 0x0000
-#data 0x0004
-#data 0x0000
-#data 0x0005
-#data 0x0000
-#data 0xFFFF
-#data 0xFFFF
+	#data 0x00000002
+	#data 0x00000004
+	#data 0x00000005
+	#data 0xFFFFFFFF
 
 loc_8c165c58:
-#data 0x0000
-#data 0x0000
-#data 0x0003
-#data 0x0000
-#data 0xFFFF
-#data 0xFFFF
+	#data 0x00000000
+	#data 0x00000003
+	#data 0xFFFFFFFF
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c165c64:
-	#data loc_8c165abc
-loc_8c165c68:
-	#data loc_8c165ad4
-loc_8c165c6c:
-	#data loc_8c165af0
-loc_8c165c70:
-	#data loc_8c165b10
-loc_8c165c74:
-	#data loc_8c165b38
-loc_8c165c78:
-	#data loc_8c165b5c
-loc_8c165c7c:
-	#data loc_8c165b80
-loc_8c165c80:
-	#data loc_8c165b94
-loc_8c165c84:
-	#data loc_8c165ba0
-loc_8c165c88:
-	#data loc_8c165bbc
-loc_8c165c8c:
-	#data loc_8c165bd0
-loc_8c165c90:
-	#data loc_8c165bec
-loc_8c165c94:
-	#data loc_8c165bf0
-loc_8c165c98:
-	#data loc_8c165c18
-loc_8c165c9c:
-	#data loc_8c165c30
-loc_8c165ca0:
-	#data loc_8c165c48
-loc_8c165ca4:
-	#data loc_8c165c58
+	#data loc_8c165abc;Air Ship
+	#data loc_8c165ad4;Desert
+	#data loc_8c165af0;Factory
+	#data loc_8c165b10;Carnival
+	#data loc_8c165b38;Swamp
+	#data loc_8c165b5c;Blue Cave
+	#data loc_8c165b80;Clock
+	#data loc_8c165b94;Ice River
+	#data loc_8c165ba0;Abyss
+	#data loc_8c165bbc;Alt AirShip
+	#data loc_8c165bd0;Alt Desert
+	#data loc_8c165bec;Training
+	#data loc_8c165bf0;Alt Carnival
+	#data loc_8c165c18;Pink Swamp
+	#data loc_8c165c30;Lava Cave
+	#data loc_8c165c48;Winter Clock
+	#data loc_8c165c58;River Raft
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c165ca8:

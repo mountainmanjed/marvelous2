@@ -8264,11 +8264,11 @@ loc_8c0337bc:
 loc_8c0337f8:
 	mov.l @(loc_8c0338cc,PC),r3
 	mov 0x00,r5
-	mov.w @(loc_8c03389e,PC),r6
+	mov.w @(loc_8c03389e,PC),r6;0x0c00
 	mov.l @(loc_8c0338c8,PC),r14
 	jsr @r3
 	mov r14,r4
-	mov.w @(loc_8c0338a0,PC),r6
+	mov.w @(loc_8c0338a0,PC),r6;0x0300
 	mov 0x20,r5
 	mov.l @(loc_8c0338d0,PC),r4
 
@@ -8288,18 +8288,18 @@ loc_8c03380a:
 	mov r5,r0
 	nop
 	mov.l @(loc_8c0338b4,PC),r3
-	mov.l @(loc_8c0338d4,PC),r2
+	mov.l @(loc_8c0338d4,PC),r2;loc_8c11b800
 	mov.w r0,@(0x2,r4)
 	mov.l r0,@(0x4,r4)
 	mov.l r0,@(0x8,r4)
 	mov.l r0,@(0xC,r4)
 	jsr @r2
 	mov.l @r3,r4
-	mov.l @(loc_8c0338d8,PC),r3
+	mov.l @(loc_8c0338d8,PC),r3;loc_8c1240a0
 	mov.l @(loc_8c0338d0,PC),r4
 	jsr @r3
 	mov r14,r5
-	mov.l @(loc_8c0338d4,PC),r2
+	mov.l @(loc_8c0338d4,PC),r2;loc_8c11b800
 	jsr @r2
 	mov 0x00,r4
 	lds.l @r15+,pr
@@ -8346,7 +8346,7 @@ loc_8c03387e:
 	mov.l @(loc_8c0338d4,PC),r3
 	jsr @r3
 	mov 0x0E,r4
-	mov.l @(loc_8c0338d8,PC),r2
+	mov.l @(loc_8c0338d8,PC),r2;loc_8c1240a0
 	mov.l @(loc_8c0338e8,PC),r4
 	mov.l @(loc_8c0338e4,PC),r5
 	jsr @r2
@@ -8372,6 +8372,7 @@ loc_8c0338a2:
 loc_8c0338a4:
 	#data 0x0400
 	#align4
+
 loc_8c0338a8:
 	#data 0x8c26a95f
 loc_8c0338ac:
@@ -11892,7 +11893,7 @@ loc_8c035000:
 	mov.w @(loc_8c035074,PC),r0;Palette Pointer offset
 	add r4,r7
 	extu.b r5,r5
-	mov.w @(loc_8c035076,PC),r6
+	mov.w @(loc_8c035076,PC),r6;Palette Offset
 	mov.l @(r0,r4),r3;load pal pointer
 	shll2 r5
 	mov.b @(0x1,r4),r0
@@ -11959,10 +11960,11 @@ loc_8c035072:
 loc_8c035074:
 	#data 0x0164
 loc_8c035076:
-	#data 0x0300
+	#data 0x0300;Palette Offset
 loc_8c035078:
 	#data 0x0202
 	#align4
+
 loc_8c03507c:
 	#data bank12.loc_8c1294c8
 
@@ -12098,14 +12100,15 @@ loc_8c035156:
 	rts
 	mov.l @r15+,r12
 
-;==============================================
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c03515c:
-	mov.b @(r0,r12),r0
+	#data 0x00cc
 loc_8c03515e:
-	mov.b r6,@(r0,r1)
+	#data 0x0164
 loc_8c035160:
-	stc sr,r2
+	#data 0x0202
 
+;==============================================
 loc_8c035162:
 	mov.l r14,@-r15
 	mov.l r13,@-r15
@@ -12121,7 +12124,7 @@ loc_8c035162:
 	mov 0x01,r12
 	mov.w @(r0,r13),r14
 	mov 0x08,r11
-	mov.w @(loc_8c035252,PC),r10;Extras Offset?
+	mov.w @(loc_8c035252,PC),r10;Palette Extras Offset
 	mov 0x00,r6
 	mov r14,r3
 	shll r14
@@ -12325,7 +12328,7 @@ loc_8c0352a2:
 loc_8c0352ae:
 	mov.b @(0x1,r13),r0
 	extu.b r0,r0
-	cmp/eq 0x14,r0
+	cmp/eq 0x14,r0;Son Son Check
 	bf loc_8c0352ea
 	mov.w @(loc_8c03537e,PC),r0;HyperArmor Offset
 	mov.b @(r0,r13),r1
@@ -12338,12 +12341,12 @@ loc_8c0352ae:
 	shll2 r6
 	mov.l @(r0,r13),r3
 	mov 0x25,r0
-	mov.b @(r0,r13),r2
+	mov.b @(r0,r13),r2;PalID
 	shll2 r6
 	shll2 r6
 	extu.b r2,r2
 	shll r6
-	add 0x0E,r2
+	add 0x0E,r2;0x18
 	shll2 r2
 	add r10,r6
 	shll2 r2
@@ -12600,7 +12603,7 @@ loc_8c03544c:
 	shll2 r11
 	shll2 r11
 	add r3,r5
-	mov.w @(loc_8c0354b8,PC),r3;300
+	mov.w @(loc_8c0354b8,PC),r3;Palette Offset
 	shll2 r11
 	shll r11
 	add r3,r11

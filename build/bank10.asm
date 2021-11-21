@@ -19901,14 +19901,14 @@ loc_8C1083D8:
 	mov 0x0C,r6
 	fmov fr15,@-r15
 	sts.l pr,@-r15
-	mov.l @(0x160,PC),r3
-	mov.l @(0x15C,PC),r4
+	mov.l @(loc_8C108544,PC),r3
+	mov.l @(loc_8C108540,PC),r4
 	jsr @r3
 	mov 0x00,r5
-	mov.l @(0x164,PC),r3
-	mov.l @(0x15C,PC),r2
+	mov.l @(loc_8C108550,PC),r3
+	mov.l @(loc_8C108548,PC),r2
 	fldi1 fr15
-	mov.l @(0x15C,PC),r14
+	mov.l @(loc_8C10854c,PC),r14
 	fmov fr15,@r2
 	mov.b @r3,r4
 	extu.b r4,r4
@@ -19928,10 +19928,10 @@ loc_8C108406:
 	add 0x0C,r4
 
 loc_8C10840A:
-	mov.l @(0x148,PC),r3
+	mov.l @(loc_8C108554,PC),r3
 	jsr @r3
 	nop
-	mov.l @(0x144,PC),r2
+	mov.l @(loc_8C108558,PC),r2
 	jsr @r2
 	fmov fr15,fr4
 	bsr loc_8c1086e2
@@ -19957,9 +19957,9 @@ loc_8C108430:
 	mov.l r11,@-r15
 	mov.l r10,@-r15
 	sts.l pr,@-r15
-	mov.l @(0x110,PC),r14
-	mov.l @(0x120,PC),r11
-	mov.l @(0x118,PC),r10
+	mov.l @(loc_8C108550,PC),r14
+	mov.l @(loc_8C108560,PC),r11
+	mov.l @(loc_8C10855c,PC),r10
 	bra loc_8c10845e
 	mov 0x00,r13
 
@@ -19991,7 +19991,7 @@ loc_8C10845E:
 	nop
 	cmp/eq 0xFF,r0
 	bf loc_8c108446
-	mov.l @(0xC8,PC),r2
+	mov.l @(loc_8C108540,PC),r2
 	mov.b @r2,r3
 	add 0x01,r3
 	mov.b r3,@r2
@@ -20005,10 +20005,10 @@ loc_8C10845E:
 
 ;==============================================
 loc_8C10848A:
-	mov.l @(0xC4,PC),r2
-	mov.l @(0xD4,PC),r1
+	mov.l @(loc_8C108550,PC),r2
+	mov.l @(loc_8C108564,PC),r1
 	mov.b @r2,r4
-	mov.l @(0xD4,PC),r5
+	mov.l @(loc_8C108568,PC),r5
 	extu.b r4,r4
 	mov r4,r3
 	shll r4
@@ -22020,6 +22020,7 @@ loc_8C1091BC:
 	#data 0x3951B717
 
 ;==============================================
+;Some Desert Stage Programming?
 loc_8C1091C0:
 	mov.l r14,@-r15
 	mov.l r13,@-r15
@@ -22034,7 +22035,7 @@ loc_8C1091C0:
 	cmp/eq 0x00,r0
 	bf loc_8c10922e
 	mov.w @(0x1C,r14),r0
-	mov.w @(0x94,PC),r3
+	mov.w @(loc_8c109272,PC),r3
 	add 0x01,r0
 	mov.w r0,@(0x1C,r14)
 	mov.w @(0x1C,r14),r0
@@ -22044,21 +22045,22 @@ loc_8C1091C0:
 	mov.w r0,@(0x1C,r14)
 
 loc_8C1091EA:
-	mov.l @(0x90,PC),r3
-	mov.w @(0x84,PC),r0
+	mov.l @(loc_8c10927c,PC),r3
+	mov.w @(loc_8c109274,PC),r0
 	mov.l @r3,r4
-	mov.l @(0x8C,PC),r1
+	mov.l @(loc_8C109280,PC),r1
 	mov.l @r4,r2
 	mov.l @(r0,r14),r5
 	jsr @r1
 	mov.l @(0x8,r2),r4
-	mov.l @(0x90,PC),r13
-	mova @(0x90,PC),r0
-	mov.l @(0x88,PC),r12
-	mov.l @(0x80,PC),r11
+	mov.l @(loc_8C10928C,PC),r13
+	mova @(loc_8C109290,PC),r0
+	mov.l @(loc_8C109288,PC),r12
+	mov.l @(loc_8C109284,PC),r11
 	bra loc_8c109226
 	fmov @r0,fr15
 
+;Desert Sky Movement
 loc_8C109206:
 	mov r15,r4
 	mov r15,r5
@@ -22074,7 +22076,7 @@ loc_8C109206:
 	float fpul,fr3
 	fmac fr0,fr3,fr2
 	fmov fr2,@r15
-	jsr @r11
+	jsr @r11;8c10081e6
 	add 0x04,r4
 
 loc_8C109226:
@@ -22096,7 +22098,7 @@ loc_8C10922E:
 ;==============================================
 loc_8C10923E:
 	sts.l pr,@-r15
-	mov.l @(0x50,PC),r3
+	mov.l @(loc_8C0E9294,PC),r3
 	mov 0x05,r5
 	mov 0x01,r6
 	jsr @r3
@@ -22104,17 +22106,17 @@ loc_8C10923E:
 	tst r0,r0
 	bt.s loc_8c10926c
 	mov r0,r4
-	mov.w @(0x22,PC),r0
+	mov.w @(loc_8c109276,PC),r0
 	mov 0x01,r3
-	mov.l @(0x24,PC),r1
-	mov.l @(0x40,PC),r2
+	mov.l @(loc_8C10972C,PC),r1
+	mov.l @(loc_8C109298,PC),r2
 	mov.b r3,@(r0,r4)
 	mov.l r2,@(0x10,r4)
 	mov.l @r1,r3
-	mov.w @(0x12,PC),r0
+	mov.w @(loc_8c109274,PC),r0
 	mov.l @r3,r2
 	mov.l @(0x4,r2),r3
-	mov.w @(0x10,PC),r2
+	mov.w @(loc_8c109278,PC),r2
 	mov.l r3,@(r0,r4)
 	add 0x48,r0
 	mov.l r2,@(r0,r4)

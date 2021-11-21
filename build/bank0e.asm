@@ -36206,6 +36206,8 @@ loc_8c0ef018:
 	#data16 {loc_8c0ef242-braf_8c0eeffe-4};0x0240
 
 ;================================================
+;Not used in training mode
+;================================================
 loc_8c0ef042:
 	mov.l @(loc_8c0ef17C,PC),r3;STG_ID
 	mov 0x00,r6

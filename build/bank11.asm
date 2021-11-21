@@ -8969,6 +8969,7 @@ loc_8C113ED0:
 	#data 0x8C26A904
 
 ;==============================================
+;Abyss Stage Code
 loc_8C113ED4:
 	mov.l r14,@-r15
 	mov.l r13,@-r15
@@ -9697,6 +9698,7 @@ loc_8C114370:
 	#data bank04.loc_8c046AE0
 
 ;==============================================
+;Abyss Stage Code
 loc_8C114374:
 	mov.l @(loc_8C11448C,pc),r1 ; r1 set to 0x8C26A8C8
 	mov 0x01,r3 ; r3 set to 0x01
@@ -9951,6 +9953,7 @@ loc_8C11451C:
 	#data bank04.loc_8c0450C0
 
 ;==============================================
+;Abyss Code 3
 loc_8C114520:
 	mov.l r14,@-r15
 	mov.l r13,@-r15
@@ -10250,6 +10253,7 @@ loc_8C11471C:
 	#data bank10.loc_8c108210
 
 ;==============================================
+;Abyss Stage Code 4
 loc_8C114720:
 	mov.l r14,@-r15
 	mov r4,r14
@@ -10479,6 +10483,7 @@ loc_8C1148A4:
 	bra loc_8C114914
 	nop
 
+;Abyss Stage Code 5
 loc_8C1148BA:
 	mov.l @(loc_8C114964,pc),r2 ; r2 set to 0x8C26A8C8
 	mov.l @r2,r3
@@ -10593,6 +10598,7 @@ loc_8C114974:
 	#data 0x8C26A904
 
 ;==============================================
+;Abyss Stage Code 6
 loc_8C114978:
 	mov.l @(0x108,PC),r1
 	mov 0x01,r3

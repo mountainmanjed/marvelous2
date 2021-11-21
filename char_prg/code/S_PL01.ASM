@@ -16339,66 +16339,63 @@ loc_CE36B88_to_loc_8C04223A:
 ;Data Start
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_CE36B8C:
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000001
-#data 0x00000001
-#data 0x00000001
-#data 0x00000001
-#data 0x00000002
-#data 0x00000002
-#data 0x00000002
-#data 0x00000002
-#data 0x00000002
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000001
+	#data 0x00000001
+	#data 0x00000001
+	#data 0x00000001
+	#data 0x00000002
+	#data 0x00000002
+	#data 0x00000002
+	#data 0x00000002
+	#data 0x00000002
 
-#align4
 loc_CE36BD0:
-#data 0x0000000E
-#data 0x00000011
-#data 0x00000014
-#data 0x00000017
-#data 0x0000001A
-#data 0x0000001D
+	#data 0x0000000E
+	#data 0x00000011
+	#data 0x00000014
+	#data 0x00000017
+	#data 0x0000001A
+	#data 0x0000001D
 
-#align4
 loc_CE36BE8:
-#data 0x00000020
-#data 0x00000023
-#data 0x00000026
-#data 0x00000029
-#data 0x0000002C
-#data 0x0000002F
+	#data 0x00000020
+	#data 0x00000023
+	#data 0x00000026
+	#data 0x00000029
+	#data 0x0000002C
+	#data 0x0000002F
 
-#align4
 loc_CE36C00:
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000000
-#data 0x00000001
-#data 0x00000001
-#data 0x00000001
-#data 0x00000001
-#data 0x00000001
-#data 0x00000002
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000000
+	#data 0x00000001
+	#data 0x00000001
+	#data 0x00000001
+	#data 0x00000001
+	#data 0x00000001
+	#data 0x00000002
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;Chain Data
 loc_CE36C44:
-	#data 0x02010201
+	#data 0x01 0x02 0x01 0x02
 loc_CE36C48:
 	#data 0xFFFFFFFF
 loc_CE36C4C:
@@ -16455,16 +16452,15 @@ loc_CE36CA6:
 	#data 0x0400 0x1400 0x1000 0x1800 0x0800 0x0060
 
 loc_CE36CBA:
-#data 0x0004
-#data 0x00059100
-#data 0x03000000
+	#data 0x0004
+	#data 0x00059100
+	#data 0x03000000
 
 loc_CE36CC4:
 	#data 0x0003
 	#data 0x1000 0x0006 0x0000
 	#data 0x0800 0x1000 0x1800 0x0060
 
-#align4
 loc_CE36CD4:
 #data 0x91000004
 #data 0x00000011
@@ -16476,24 +16472,22 @@ loc_CE36CDE:
 	#data 0x0400 0x1000 0x1400 0x0040
 
 loc_CE36CEE:
-#data 0x0003
-#data 0x00131000
-#data 0x10000000
-#data 0x08001800
-#data 0x0300
+	#data 0x0003
+	#data 0x1000 0x0013 0x0000
+	#data 0x1000 0x1800 0x0800 0x0300
 
 loc_CE36CFE:
-#data 0x0004
-#data 0x00149100
-#data 0x00600000
+	#data 0x0004
+	#data 0x00149100
+	#data 0x00600000
 
-#align4
 loc_CE36D08:
-#data 0x10000003
-#data 0x00000000
-#data 0x14001000
-#data 0x02000400
+	#data 0x10000003
+	#data 0x00000000
+	#data 0x14001000
+	#data 0x02000400
 
+	#align4
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;S_PL Jump Table
 loc_CE36D18_to_loc_CE30912:

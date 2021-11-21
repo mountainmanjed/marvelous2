@@ -45,3 +45,20 @@
 ;0x8c26a940
 ;0x8c26a944
 
+#symbol stg_AirS1 0x00 ; Air Ship
+#symbol stg_Dsrt1 0x01 ; Desert
+#symbol stg_Fctry 0x02 ; Factory
+#symbol stg_Carn1 0x03 ; Carnival
+#symbol stg_Swmp1 0x04 ; Swamp
+#symbol stg_Cave1 0x05 ; Blue Cave
+#symbol stg_Clck1 0x06 ; Clock
+#symbol stg_Raft1 0x07 ; Ice River
+#symbol stg_Abyss 0x08 ; Abyss
+#symbol stg_AirS2 0x09 ; Alt AirShip
+#symbol stg_Dsrt2 0x0A ; Alt Desert
+#symbol stg_Train 0x0B ; Training
+#symbol stg_Carn2 0x0C ; Alt Carnival
+#symbol stg_Swmp2 0x0D ; Pink Swamp
+#symbol stg_Cave2 0x0E ; Lava Cave 
+#symbol stg_Clck2 0x0F ; Winter Clock
+#symbol stg_Raft2 0x10 ; River Raft

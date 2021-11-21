@@ -13997,6 +13997,6 @@ loc_8C13F761:
 	#align16
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-;Leftover Naomi Game Settings Graphics
+;Only used in Sound test
 NaomiFont:
 	#import_raw_data "build/graphics/NaomiSettingsFont.bin"
