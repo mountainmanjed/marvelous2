@@ -234,7 +234,7 @@
 
 ; if 1, camera follows this character (used for fs dummy)
 ; opponent can leave edge of screen, and will be forced to fs-dash in
-#symbol flying_screen_camera_follows 0x0239	; byte
+#symbol flying_screen_camera_follows 0x0235	; byte
 
 #symbol air_hitstun_counter 0x0239		; byte
 
