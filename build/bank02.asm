@@ -37023,7 +37023,7 @@ loc_8c02f5aa:
 	fmov @(r0,r14),fr3
 	add 0x0C,r0
 	fmov fr3,@(r0,r14)
-	bsr loc_8c02fbec
+	bsr loc_8c02fbec;write true Cam Rotation
 	mov 0x00,r4
 	lds.l @r15+,pr
 	mov 0x00,r4
@@ -37968,6 +37968,8 @@ loc_8c02fbde:
 	rts
 	nop
 
+;==============================================
+;Cam Rotation Math
 loc_8c02fbec:
 	add 0xF4,r15
 	mov.l @(loc_8c02fc44,PC),r4

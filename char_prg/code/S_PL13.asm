@@ -32,12 +32,12 @@
 #symbol loc_8c0CE62C 0x8C0CE62C
 #symbol loc_8c0FDAB6 0x8C0FDAB6
 #symbol loc_8c046C8A 0x8C046C8A
-#symbol loc_8c035162 0x8C035162
+#symbol loc_8c035162 0x8C035162;pal func1
 #symbol loc_8c05218A 0x8C05218A
 #symbol loc_8c03319E 0x8C03319E
 #symbol loc_8c0514B8 0x8C0514B8
 #symbol loc_8c05115A 0x8C05115A
-#symbol loc_8c03544C 0x8C03544C
+#symbol loc_8c03544C 0x8C03544C;pal func2
 #symbol loc_8c053082 0x8C053082
 #symbol loc_8c07A428 0x8C07A428
 #symbol loc_8c26A5B8 0x8C26A5B8

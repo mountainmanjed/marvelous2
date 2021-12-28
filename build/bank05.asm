@@ -254,7 +254,7 @@ loc_8c050186:
 	mov 0x0C,r0
 	fmov @(r0,r5),fr4
 	mov 0x34,r0
-	fmov @(r0,r4),fr1
+	fmov @(r0,r4),fr1;34
 	fadd fr2,fr4
 	ftrc fr1,fpul
 	sts fpul,r3
@@ -262,7 +262,7 @@ loc_8c050186:
 	sts fpul,r2
 	cmp/ge r2,r3
 	bf loc_8c0501a8 ; return
-	fmov fr4,@(r0,r4)
+	fmov fr4,@(r0,r4);Right fr4 to char_x
 	mov 0x01,r3
 	mov.w @(loc_8c0501f4,PC),r0
 	mov.b r3,@(r0,r4)
@@ -328,10 +328,15 @@ loc_8c050200:
 	#data 0xc34db6db
 loc_8c050204:
 	#data 0x8c26a5b8
+
+;Character X Bound Left
 loc_8c050208:
 	#data 0xc38e8000
+
+;Character X Bound Right
 loc_8c05020c:
 	#data 0x438e8000
+
 loc_8c050210:
 	#data 0x8c26a518
 loc_8c050214:

@@ -2167,7 +2167,7 @@ loc_8C100EF6:
 	mov.w r0,@(0x1E,r14)
 	exts.w r0,r0
 	cmp/gt r2,r0
-	bf loc_8c100fec               ; loc_8c100fea+0x2
+	bf loc_8c100fec
 	lds.l @r15+,pr
 	mov.l @(0x50,PC),r1
 	mov r14,r4
@@ -4032,7 +4032,7 @@ loc_8C101C6C:
 	tst r2,r3
 	bf.s loc_8c101c9e
 	mov.l r3,@(0x8,r15)
-	bra loc_8c101de8              ; loc_8c101c6c+0x17c
+	bra loc_8c101de8
 	nop
 
 loc_8C101C9E:
@@ -4213,7 +4213,7 @@ loc_8C101D32:
 	cmp/ge r13,r9
 	mov.w @(0xB6,PC),r0
 	mov.l @(0x10,r15),r2
-	bf.s loc_8c101cee             ; loc_8c101c6c+0x82
+	bf.s loc_8c101cee
 	mov.l r2,@(r0,r14)
 	add 0x01,r8
 
@@ -4604,7 +4604,7 @@ loc_8c102046:
 	bf loc_8c10206c
 	add 0xFF,r6
 	cmp/eq r6,r14
-	bf loc_8c1020f2               ; loc_8c102046+0xac
+	bf loc_8c1020f2
 
 loc_8c10206c:
 	mov.w @(0xA2,PC),r3
@@ -4616,7 +4616,7 @@ loc_8c10206c:
 	jsr @r1
 	mov 0x00,r4
 	tst r0,r0
-	bt.s loc_8c1020f2             ; loc_8c102046+0xac
+	bt.s loc_8c1020f2
 	mov r0,r4
 	bra loc_8c102096
 	nop
@@ -4628,7 +4628,7 @@ loc_8c102086:
 	jsr @r1
 	mov 0x00,r4
 	tst r0,r0
-	bt.s loc_8c1020f2             ; loc_8c102046+0xac
+	bt.s loc_8c1020f2
 	mov r0,r4
 
 loc_8c102096:
@@ -4835,7 +4835,7 @@ loc_8C1021C2:
 	tst r0,r0
 	bf.s loc_8c102238
 	mov r0,r4
-	bra loc_8c102204              ; loc_8c1021c2+0x42
+	bra loc_8c102204
 	nop
 
 loc_8C1021F4:
@@ -16053,7 +16053,7 @@ loc_8C106B80:
 	tst r0,r0
 	bf.s loc_8c106ba0
 	mov r0,r14
-	bra loc_8c106d24              ; loc_8c106b80+0x1a4
+	bra loc_8c106d24
 	nop
 
 loc_8C106BA0:
@@ -16092,7 +16092,7 @@ loc_8C106BA0:
 	mov r0,r4
 	bf.s loc_8c106bea
 	add r14,r8
-	bra loc_8c106bf4              ; loc_8c106b80+0x74
+	bra loc_8c106bf4
 	and 0x01,r0
 
 loc_8C106BEA:
@@ -16181,7 +16181,7 @@ loc_8C106C44:
 	cmp/pz r0
 	bf.s loc_8c106c72
 	add r14,r1
-	bra loc_8c106c7c              ; loc_8c106b80+0xfc
+	bra loc_8c106c7c
 	and 0x01,r0
 
 loc_8C106C72:
@@ -16217,7 +16217,7 @@ loc_8C106C86:
 	mov r0,r4
 	bf.s loc_8c106caa
 	add r14,r1
-	bra loc_8c106cb4              ; loc_8c106b80+0x134
+	bra loc_8c106cb4
 	and 0x01,r0
 
 loc_8C106CAA:
@@ -16273,7 +16273,7 @@ loc_8C106CF6:
 	tst r4,r4
 	bt.s loc_8c106d02
 	mov 0x44,r0
-	bra loc_8c106d04              ; loc_8c106b80+0x184
+	bra loc_8c106d04
 	mov 0x00,r2
 
 
@@ -22098,7 +22098,7 @@ loc_8C10922E:
 ;==============================================
 loc_8C10923E:
 	sts.l pr,@-r15
-	mov.l @(loc_8C0E9294,PC),r3
+	mov.l @(loc_8C109294,PC),r3
 	mov 0x05,r5
 	mov 0x01,r6
 	jsr @r3
@@ -22108,7 +22108,7 @@ loc_8C10923E:
 	mov r0,r4
 	mov.w @(loc_8c109276,PC),r0
 	mov 0x01,r3
-	mov.l @(loc_8C10972C,PC),r1
+	mov.l @(loc_8C10927C,PC),r1
 	mov.l @(loc_8C109298,PC),r2
 	mov.b r3,@(r0,r4)
 	mov.l r2,@(0x10,r4)
@@ -22699,7 +22699,7 @@ loc_8C109662:
 	mova @(0xE4,PC),r0
 	fmov @r0,fr3
 	fcmp/gt fr3,fr4
-	bf loc_8c1096ce               ; loc_8c10961c+0xb2
+	bf loc_8c1096ce
 
 loc_8C10968A:
 	mova @(0xE0,PC),r0

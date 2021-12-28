@@ -1,18 +1,18 @@
 #symbol player_start 0x8c268340
 
-#symbol player_start_charA 0x8c268340
-#symbol player_start_charB 0x8c2688e4
-#symbol player_start_charC 0x8c268e88
-#symbol player_start_charD 0x8c26942c
-#symbol player_start_charE 0x8c2699d0
-#symbol player_start_charF 0x8c269f74
+#symbol player_start_charA 0x8c268340 ;p1
+#symbol player_start_charB 0x8c2688e4 ;p2
+#symbol player_start_charC 0x8c268e88 ;p1
+#symbol player_start_charD 0x8c26942c ;p2
+#symbol player_start_charE 0x8c2699d0 ;p1
+#symbol player_start_charF 0x8c269f74 ;p2
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;Used to jump into character programming
 ;Table
 ;	0		4		8		c
 ;	Unknown Unknown Normal1 Normal2 ; 00
-;	FwrdDsh BackDsh FgIntro Unknown ; 10
+;	FwrdDsh BackDsh FgIntro MtchWin ; 10
 ;	SpecPRG Unknown Unknown Unknown ; 20
 ;	Unknown DlyHypC Unknown Unknown ; 30
 ;	TmHypMn TmHypAs Assists AlphCnt ; 40
@@ -36,7 +36,6 @@
 #symbol ptr_to_char_programming_D 0x0CE48000
 #symbol ptr_to_char_programming_E 0x0CE50000
 #symbol ptr_to_char_programming_F 0x0CE58000
-
 
 #symbol pl_A_datfile 0x0c420000 ;P1 C1
 #symbol pl_A_FACfile 0x0c568000

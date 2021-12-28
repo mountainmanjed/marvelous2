@@ -6445,25 +6445,26 @@ loc_CE3299c:
 	#data loc_8C034E8C
 
 ;----------------------------------------------
+;----------------------------------------------
 loc_CE329A0:
 	mov 0x00,r3
 
 loc_CE329A2:
-	mov.w @(0x100,PC),r0
+	mov.w @(loc_ce32aa6,PC),r0
 	mov 0x06,r2
 	mov.b r3,@(r0,r14)
 	mov 0x12,r0
-	mov.l @(0x108,PC),r3
+	mov.l @(loc_ce32ab4,PC),r3
 	mov.b r2,@(r0,r13)
 	jsr @r3
 	mov r14,r4
 	exts.b r0,r0
 	cmp/pz r0
 	bt loc_ce32a06
-	mov.w @(0xEC,PC),r0
+	mov.w @(loc_ce32aa8,PC),r0
 	mov 0x00,r4
 	mov 0x0A,r3
-	mov.w @(0xE8,PC),r2
+	mov.w @(loc_ce32aaa,PC),r2
 	mov.b r4,@(r0,r14)
 	add 0x01,r0
 	mov.b r4,@(r0,r14)
@@ -6473,19 +6474,19 @@ loc_CE329A2:
 	mov 0x14,r0
 	mov.b r3,@(r0,r13)
 	mov 0x10,r3
-	mov.w @(0xD2,PC),r0
+	mov.w @(loc_ce32aa8,PC),r0
 	mov.b r2,@(r0,r14)
 	add 0x01,r0
 	mov.b r3,@(r0,r14)
 	mov 0x2C,r0
-	mov.l @(0xD8,PC),r3
+	mov.l @(loc_ce32ab8,PC),r3
 	mov.w r0,@(0x1C,r14)
 	jsr @r3
 	mov r14,r4
-	mova @(0xD4,PC),r0
-	mov.l @(0xDC,PC),r3
+	mova @(loc_ce32abc,PC),r0
+	mov.l @(loc_ce32ac4,PC),r3
 	fmov @r0,fr3
-	mova @(0xD4,PC),r0
+	mova @(loc_ce32ac0,PC),r0
 	mov r15,r5
 	mov 0x01,r6
 	fmov fr3,@r15
@@ -6494,7 +6495,7 @@ loc_CE329A2:
 	fmov fr3,@(r0,r15)
 	jsr @r3
 	mov r14,r4
-	mov.l @(0xC8,PC),r2
+	mov.l @(loc_ce32ac8,PC),r2
 	mov 0x16,r5
 	mov 0x1A,r6
 	jsr @r2
@@ -6509,41 +6510,43 @@ loc_CE32A06:
 
 ;==============================================
 loc_CE32A10:
-	mov.w @(0x92,PC),r0
+	mov.w @(loc_ce32aa6,PC),r0
 	mov 0x02,r5
 	mov.l r14,@-r15
 	mov r4,r14
 	mov 0x05,r3
-	mov.w @(0x8E,PC),r4
+	mov.w @(loc_ce32aac,PC),r4
 	sts.l pr,@-r15
 	mov.b r5,@(r0,r14)
 	add 0x07,r0
 	mov.b r5,@(r0,r14)
 	add r14,r4
-	mov.w @(0x84,PC),r0
+	mov.w @(loc_ce32aae,PC),r0
 	mov 0x06,r2
 	mov.b r3,@(r0,r14)
 	mov 0x12,r0
-	mov.l @(0x84,PC),r3
+	mov.l @(loc_ce32ab4,PC),r3
 	mov.b r2,@(r0,r4)
 	jsr @r3
 	mov r14,r4
-	mov.w @(0x76,PC),r0
+	mov.w @(loc_ce32ab0,PC),r0
 	mov.b @(r0,r14),r2
 	tst r2,r2
 	bt loc_ce32a5a
+
+
 	mov 0x25,r0
 	mov.b @(r0,r14),r6
 	mov 0x02,r5
-	mov.w @(0x6A,PC),r0
+	mov.w @(loc_ce32ab2,PC),r0
 	mov 0x01,r7
 	extu.b r6,r6
 	mov.b @(r0,r14),r3
 	shll2 r6
-	mov.l @(0x7C,PC),r0
+	mov.l @(loc_ce32acc,PC),r0;0xCE3524C
 	mov.l @(r0,r6),r6
 	add r3,r6
-	mov.l @(0x78,PC),r3
+	mov.l @(loc_ce32ad0,PC),r3;8c03544c
 	jsr @r3
 	mov r14,r4
 

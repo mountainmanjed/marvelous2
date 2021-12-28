@@ -6063,7 +6063,7 @@ loc_8C0A2888:
 	bf loc_8c0a28c2
 	mov 0x20,r0
 	mov 0x00,r2
-	bra loc_8c0a28ca ; loc_8c0a2888+0x42
+	bra loc_8c0a28ca
 	mov.b r2,@(r0,r4)
 
 loc_8C0A28C2:
@@ -8430,7 +8430,7 @@ loc_8C0A3898:
 	mov r13,r5
 	bsr loc_8c0a3d40
 	mov r14,r4
-	bra loc_8c0a394a ; loc_8c0a3946+0x4
+	bra loc_8c0a394a
 	nop
 
 loc_8C0A38A2:
@@ -8469,7 +8469,7 @@ loc_8C0A38D8:
 	mov r13,r5
 	bsr loc_8c0a3ab8
 	mov r14,r4
-	bra loc_8c0a394a ; loc_8c0a3946+0x4
+	bra loc_8c0a394a
 	nop
 
 loc_8C0A38E8:
@@ -8483,7 +8483,7 @@ loc_8C0A38E8:
 	mov r13,r5
 	jsr @r2
 	mov r14,r4
-	bra loc_8c0a394a ; loc_8c0a3946+0x4
+	bra loc_8c0a394a
 	nop
 
 loc_8C0A3900:
@@ -9057,7 +9057,7 @@ loc_8C0A3C3C:
 	cmp/pz r8
 	bf.s loc_8c0a3cde
 	add r14,r13
-	bra loc_8c0a3b7a ; loc_8c0a3ab8+0xc2
+	bra loc_8c0a3b7a
 	nop
 
 loc_8C0A3CDE:
@@ -11207,7 +11207,7 @@ loc_8C0A4AC6:
 	mov 0x02,r8
 	mov 0x30,r0
 	mov 0x01,r2
-	bra loc_8c0a4b18 ; loc_8c0a3d40+0xdd8
+	bra loc_8c0a4b18
 	mov.w r2,@(r0,r14)
 
 loc_8C0A4B14:
@@ -12636,7 +12636,7 @@ loc_8C0A547C:
 	mov.w @(0x4E,PC),r0
 	mov.w @(r0,r2),r3
 	tst r3,r3
-	bt loc_8c0a54da ; loc_8c0a5448+0x92
+	bt loc_8c0a54da
 	mov.w @(0x3A,PC),r0
 	mov r15,r1
 	mov.l @(0x4C,PC),r3
@@ -15853,7 +15853,7 @@ loc_8C0A6A20:
 	mov.w @(0x9E,PC),r0
 	mov.b @(r0,r14),r3
 	tst r3,r3
-	bf loc_8c0a6a70 ; loc_8c0a6a32+0x3e
+	bf loc_8c0a6a70
 	mov.l @(0xA0,PC),r0
 	mov.l @(0x9C,PC),r2
 	mov.b @r0,r1
@@ -24484,7 +24484,7 @@ loc_8C0AA3B0:
 	mov.b r0,@(0x5,r14)
 	lds.l @r15+,pr
 	mov.l @r15+,r13
-	bra loc_8c0aa774 ; loc_8c0aa750+0x24
+	bra loc_8c0aa774
 	mov.l @r15+,r14
 
 loc_8C0AA3F2:
@@ -24771,7 +24771,7 @@ loc_8C0AA598:
 	mov.b r0,@(0x5,r14)
 	lds.l @r15+,pr
 	mov.l @r15+,r13
-	bra loc_8c0aa774 ; loc_8c0aa750+0x24
+	bra loc_8c0aa774
 	mov.l @r15+,r14
 
 loc_8C0AA5D4:
@@ -26197,13 +26197,13 @@ loc_8C0AAF18:
 	mov r14,r4
 	exts.b r0,r0
 	cmp/pz r0
-	bt loc_8c0aaf98 ; loc_8c0aaf90+0x8
+	bt loc_8c0aaf98
 	mov.w @(0x1C,r14),r0
 	add 0xFF,r0
 	mov.w r0,@(0x1C,r14)
 	exts.w r0,r0
 	tst r0,r0
-	bf loc_8c0aaf98 ; loc_8c0aaf90+0x8
+	bf loc_8c0aaf98
 	mov.l @(0x44,PC),r2
 	jsr @r2
 	mov r14,r4
@@ -26216,7 +26216,7 @@ loc_8C0AAF18:
 	mov.b r2,@(r0,r3)
 	exts.b r2,r2
 	tst r2,r2
-	bf loc_8c0aaf98 ; loc_8c0aaf90+0x8
+	bf loc_8c0aaf98
 	mov.b @(0x4,r14),r0
 	add 0x01,r0
 	mov.b r0,@(0x4,r14)
@@ -26994,7 +26994,7 @@ loc_8C0AB45A:
 	mov.w @(0x54,PC),r0
 	mov.w @(r0,r5),r3
 	tst r3,r3
-	bf loc_8c0ab4a2 ; loc_8c0ab49c+0x6
+	bf loc_8c0ab4a2
 	mov 0x5C,r0
 	fmov @(r0,r4),fr3
 	fneg fr3

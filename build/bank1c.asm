@@ -9990,8 +9990,11 @@ loc_8c1c4308:
 loc_8c1c430c:
 	#data bank17.loc_8c1767BC
 
+;LBA?
 loc_8c1c4310:
-	#data 0x000000A6
+	#data 0x0000b06e ; GDI
+;	#data 0x000000A6 ; CDI
+
 loc_8c1c4314:
 	#data 0x00000001
 

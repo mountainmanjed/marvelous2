@@ -4134,7 +4134,7 @@ loc_8c041df6:
 	mov.l @r3,r4
 	tst r4,r4
 	bt loc_8c041e04
-	mov.l @(loc_8c041e38,PC),r1
+	mov.l @(loc_8c041e38,PC),r1;loc_8c174b52
 	jsr @r1
 	nop
 
@@ -5388,6 +5388,7 @@ loc_8c0425ae:
 loc_8c0425b0:
 	#data 0x00a8
 	#align4
+
 loc_8c0425b4:
 	#data bank13.loc_8c138bb9
 loc_8c0425b8:
@@ -11790,7 +11791,7 @@ loc_8c044f0c:
 
 ;==============================================
 loc_8c044f12:
-	mov.l @(loc_8c045008,PC),r2
+	mov.l @(loc_8c045008,PC),r2;0x8c287ae8
 	mov.w @r2,r3
 	cmp/pl r3
 	bt loc_8c044f1e

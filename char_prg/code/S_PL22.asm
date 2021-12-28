@@ -12504,57 +12504,16 @@ DAT_ce35128:
     #data 0xc0855555
 DAT_ce35130:
     #data 0x00030001
+
 PTR_ce35134:
-    #data LAB_ce3086a
-PTR_ce35138:
-    #data LAB_ce30730
-PTR_ce3513c:
-    #data LAB_ce30b58
-PTR_ce35140:
-    #data LAB_ce30b6c
-PTR_ce35144:
-    #data LAB_ce30db8
-PTR_ce35148:
-    #data LAB_ce30fdc
-PTR_ce3514c:
-    #data LAB_ce311ea
-PTR_ce35150:
-    #data LAB_ce3152a
-PTR_ce35154:
-    #data LAB_ce317ec
-PTR_ce35158:
-    #data LAB_ce346f8
-PTR_ce3515c:
-    #data LAB_ce34794
-PTR_ce35160:
-    #data LAB_ce34916
-PTR_ce35164:
-    #data LAB_ce34cf8
-PTR_ce35168:
-    #data LAB_ce30618
-PTR_ce3516c:
-    #data LAB_ce34590
-PTR_ce35170:
-    #data LAB_ce30c82
-PTR_ce35174:
-    #data LAB_ce34db4
-PTR_ce35178:
-    #data LAB_ce34dda
-PTR_ce3517c:
-    #data LAB_ce34e06
-PTR_ce35180:
-    #data LAB_ce34e68
-    #data 0x00000000
-    #data 0x00000000
-    #data 0x00000000
-    #data 0x00000000
-PTR_ce35194:
-    #data LAB_ce308b4
-PTR_ce35198:
-    #data LAB_ce34ea6
-PTR_ce3519c:
-    #data LAB_ce34f22
-    #data 0x00000000
+    #data LAB_ce3086a LAB_ce30730 LAB_ce30b58 LAB_ce30b6c
+    #data LAB_ce30db8 LAB_ce30fdc LAB_ce311ea LAB_ce3152a
+    #data LAB_ce317ec LAB_ce346f8 LAB_ce34794 LAB_ce34916
+    #data LAB_ce34cf8 LAB_ce30618 LAB_ce34590 LAB_ce30c82
+    #data LAB_ce34db4 LAB_ce34dda LAB_ce34e06 LAB_ce34e68
+    #data 0x00000000 0x00000000 0x00000000 0x00000000
+    #data LAB_ce308b4 LAB_ce34ea6 LAB_ce34f22 0x00000000
+
 PTR_ce351a4:
     #data LAB_ce30932
 PTR_ce351a8:

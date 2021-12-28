@@ -2224,7 +2224,7 @@ loc_8c030f7c:
 	mov.b @(r0,r3),r1
 	tst r1,r1
 	bf loc_8c030f9a
-	mov.l @(loc_8c03108c,PC),r4
+	mov.l @(loc_8c03108c,PC),r4;0x8c26a8e4
 	mov.l @(0x8,r4),r3
 	tst r3,r3
 	bf loc_8c030f9a
@@ -2240,7 +2240,7 @@ loc_8c030f9a:
 
 ;==============================================
 loc_8c030f9e:
-	mov.l @(loc_8c03108c,PC),r4
+	mov.l @(loc_8c03108c,PC),r4;0x8c26a8e4
 	mov 0x01,r3
 	mov 0x10,r2
 	mov.l r3,@(0x4,r4)
@@ -2257,7 +2257,7 @@ loc_8c030fae:
 	mov.b @(r0,r2),r3
 	tst r3,r3
 	bf loc_8c030fc8
-	mov.l @(loc_8c03108c,PC),r4
+	mov.l @(loc_8c03108c,PC),r4;0x8c26a8e4
 	mov 0x06,r3
 	mov 0x18,r2
 	mov.l r3,@(0x4,r4)
@@ -2281,7 +2281,7 @@ loc_8c030fcc:
 	nop
 
 loc_8c030fdc:
-	mov.l @(loc_8c03108c,PC),r4
+	mov.l @(loc_8c03108c,PC),r4;0x8c26a8e4
 	mov 0x00,r3
 	mov 0x78,r2
 	mov.l r3,@(0x4,r4)
@@ -2292,7 +2292,7 @@ loc_8c030fdc:
 
 ;==============================================
 loc_8c030fec:
-	mov.l @(loc_8c03108c,PC),r4
+	mov.l @(loc_8c03108c,PC),r4;0x8c26a8e4
 	mov 0x78,r3
 	mov 0x00,r5
 	mov.l r5,@(0x4,r4)
@@ -11984,7 +11984,7 @@ loc_8c035080:
 	shll2 r5
 	shll2 r5
 	extu.b r2,r2
-	add 0x14,r2
+	add 0x14,r2;28
 	shll r5
 	shll2 r2
 	add r6,r5
@@ -12579,6 +12579,9 @@ loc_8c035442:
 
 ;==============================================
 ;used for palette effects
+;r5 Palette Memory Line
+;r6 palette id
+;r7 size?
 ;==============================================
 loc_8c03544c:
 	mov.w @(loc_8c0354b4,PC),r0
@@ -32367,7 +32370,7 @@ loc_8c03d7a8:
 	or r3,r0
 	cmp/eq 0x03,r0
 	bf loc_8c03d800
-	mov.l @(loc_8c03d888,PC),r3f
+	mov.l @(loc_8c03d888,PC),r3
 	jsr @r3
 	nop
 	mov.l @(loc_8c03d88c,PC),r2
