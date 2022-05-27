@@ -13998,5 +13998,6 @@ loc_8C13F761:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;Only used in Sound test
+;8c13f780
 NaomiFont:
 	#import_raw_data "build/graphics/NaomiSettingsFont.bin"

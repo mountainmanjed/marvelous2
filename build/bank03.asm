@@ -1282,9 +1282,9 @@ loc_8c03093c:
 	mov.l r14,@-r15
 	sts.l pr,@-r15
 	add 0xF4,r15
-	mov.w @(loc_8c030aa4,PC),r0
+	mov.w @(loc_8c030aa4,PC),r0;12c
 	mov r4,r14
-	mov.b @(r0,r14),r3
+	mov.b @(r0,r14),r3;unk_012c
 	tst r3,r3
 	bf loc_8c030950
 	bra loc_8c030a9c
@@ -9265,8 +9265,10 @@ loc_8c033e90:
 	shll2 r0
 	mov.l @(r0,r4),r3
 	add r3,r4
+
+;reading sprite data
 	add 0x02,r4
-	mov.b @r4+,r3
+	mov.b @r4+,r3;read data
 	extu.b r3,r3
 	shll2 r3
 	shll r3
@@ -31262,7 +31264,7 @@ loc_8c03d060:
 	mov.l r2,@(0x10,r15)
 	extu.b r10,r3
 	add r3,r1
-	mov.w @(loc_8c03d19a,PC),r3
+	mov.w @(loc_8c03d19a,PC),r3;0x52c
 	mul.l r4,r1
 	sts macl,r1
 	add r5,r1
@@ -31270,17 +31272,22 @@ loc_8c03d060:
 	mov.l r1,@r15
 	mov.b @r3,r3
 	mov.b r3,@(r0,r2)
-	mov.l @(0x4,r15),r2
-	mov.l @(loc_8c03d1a4,PC),r3
+
+;8c03d098
+;checking other selected
+	mov.l @(0x4,r15),r2;
+	mov.l @(loc_8c03d1a4,PC),r3;0x8c28c482
 	mov.l @r15,r1
 	add r3,r2
-	mov.w @(loc_8c03d19c,PC),r3
+	mov.w @(loc_8c03d19c,PC),r3;pal_id ofset
 	mov.l @(0x10,r15),r0
-	add r1,r3
-	mov.b @r3,r1
+	add r1,r3;player_addr
+	mov.b @r3,r1;move pal_id to r1
 	mov.b r1,@(r0,r2)
-	mov.w @(loc_8c03d19a,PC),r0
+
+	mov.w @(loc_8c03d19a,PC),r0;52c
 	mov.l @r15,r2
+
 	mov.b @(r0,r2),r3
 	mov.b @(r0,r9),r2
 	cmp/eq r2,r3
@@ -31332,7 +31339,7 @@ loc_8c03d0da:
 	mov.w @(loc_8c03d19e,PC),r0
 	mov.b r3,@r2
 	mov.b @(r0,r13),r0
-	mov.l @(loc_8c03d1a4,PC),r2
+	mov.l @(loc_8c03d1a4,PC),r2;0x8c28c482
 	mov r0,r3
 	mov.b r0,@(0x4,r15)
 	shll r0
@@ -31399,6 +31406,7 @@ loc_8c03d17e:
 	cmp/ge r7,r2
 	bf loc_8c03d0da
 
+;palette expansion jump is here
 	mov.l @(loc_8c03d1a8,PC),r7;Palette Id Table
 	mov 0x06,r5
 	mov.l @(loc_8c03d1ac,PC),r6;button check table

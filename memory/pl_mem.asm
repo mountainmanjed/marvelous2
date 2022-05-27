@@ -293,8 +293,11 @@
 ; if != 0, controlled by cpu
 #symbol is_cpu 0x0525					; byte
 
+;#symbol unk_52c 0x052c
+
 #symbol pal_id 0x052d					; byte
-;#symbol Unknown_55C 0x55c
+
+;#symbol unk_55c 0x55c
 
 
 ;==============================================
