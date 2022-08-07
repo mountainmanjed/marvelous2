@@ -31201,9 +31201,9 @@ loc_8c03d01e:
 	mov.b r11,@(r0,r15)
 
 loc_8c03d022:
-	mov.w @(loc_8c03d040,PC),r0
+	mov.w @(loc_8c03d040,PC),r0;524
 	mov r11,r8
-	mov.l @(loc_8c03d05c,PC),r5
+	mov.l @(loc_8c03d05c,PC),r5;Player_Mem 0x8c268340
 	mov r11,r6
 	mov.b @(r0,r13),r0
 	mov.w @(loc_8c03d04c,PC),r4
@@ -31257,7 +31257,7 @@ loc_8c03d060:
 	bt loc_8c03d0ce
 	mov.l @(0x4,r15),r0
 	exts.b r6,r1
-	mov.l @(loc_8c03d1a0,PC),r3
+	mov.l @(loc_8c03d1a0,PC),r3;0x8c28c47c
 	shll r1
 	exts.b r6,r2
 	add r3,r0
@@ -31281,19 +31281,17 @@ loc_8c03d060:
 	add r3,r2
 	mov.w @(loc_8c03d19c,PC),r3;pal_id ofset
 	mov.l @(0x10,r15),r0
-	add r1,r3;player_addr
+	add r1,r3;player_addr?
 	mov.b @r3,r1;move pal_id to r1
 	mov.b r1,@(r0,r2)
-
 	mov.w @(loc_8c03d19a,PC),r0;52c
 	mov.l @r15,r2
-
 	mov.b @(r0,r2),r3
 	mov.b @(r0,r9),r2
 	cmp/eq r2,r3
 	bf loc_8c03d0ce
 	exts.b r6,r2
-	mov.w @(loc_8c03d19c,PC),r0
+	mov.w @(loc_8c03d19c,PC),r0;palid offset
 	extu.b r10,r3
 	shll r2
 	add r3,r2
@@ -31316,7 +31314,7 @@ loc_8c03d0d0:
 	mov r11,r6
 
 loc_8c03d0da:
-	mov.w @(loc_8c03d19e,PC),r0
+	mov.w @(loc_8c03d19e,PC),r0;524
 	exts.b r6,r10
 	exts.b r6,r2
 	mov.w @(loc_8c03d19a,PC),r1
@@ -31326,7 +31324,7 @@ loc_8c03d0da:
 	shll r0
 	mov.l r2,@r15
 	add r3,r0
-	mov.l @(loc_8c03d1a0,PC),r3
+	mov.l @(loc_8c03d1a0,PC),r3;0x8c28c47c
 	shll r10
 	add r0,r3
 	mov.b @(0x4,r15),r0
@@ -31336,7 +31334,7 @@ loc_8c03d0da:
 	sts macl,r0
 	add r5,r0
 	mov.b @(r0,r1),r3
-	mov.w @(loc_8c03d19e,PC),r0
+	mov.w @(loc_8c03d19e,PC),r0;524
 	mov.b r3,@r2
 	mov.b @(r0,r13),r0
 	mov.l @(loc_8c03d1a4,PC),r2;0x8c28c482
@@ -31349,13 +31347,14 @@ loc_8c03d0da:
 	mov.b @(0x4,r15),r0
 	add r3,r2
 	add r10,r0
-	mov.w @(loc_8c03d19c,PC),r3
+	mov.w @(loc_8c03d19c,PC),r3;52d
 	mul.l r4,r0
 	sts macl,r0
 	add r5,r0
 	mov.b @(r0,r3),r3
-	mov.w @(loc_8c03d19e,PC),r0
-	mov.b r3,@r2
+	mov.w @(loc_8c03d19e,PC),r0;524
+	mov.b r3,@r2;Write to Pal Check
+
 	mov.b @(r0,r13),r2
 	mov.b @(r0,r9),r3
 	add r10,r2
@@ -31372,7 +31371,7 @@ loc_8c03d0da:
 	extu.b r3,r3
 	tst r1,r3
 	bt loc_8c03d17c
-	mov.w @(loc_8c03d19e,PC),r0
+	mov.w @(loc_8c03d19e,PC),r0;524
 	mov r5,r2
 	mov.l r5,@r15
 	mov.b @(r0,r13),r3
@@ -31385,10 +31384,10 @@ loc_8c03d0da:
 	mov.b @(r0,r9),r3
 	cmp/eq r3,r1
 	bf loc_8c03d17c
-	mov.w @(loc_8c03d19e,PC),r0
+	mov.w @(loc_8c03d19e,PC),r0;524
 	mov.l @r15,r3
 	mov.b @(r0,r13),r2
-	mov.w @(loc_8c03d19c,PC),r0
+	mov.w @(loc_8c03d19c,PC),r0;52d
 	add r10,r2
 	mul.l r4,r2
 	sts macl,r2
