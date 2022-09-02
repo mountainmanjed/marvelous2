@@ -8021,7 +8021,7 @@ loc_8c138890:
 	#data 0x00;third character id
 	#data 0x00;first assist type
 	#data 0x01;second assist type
-	#data 0x02;third aaist type
+	#data 0x02;third assist type
 	#data 0x00
 	#data 0x0a;number of wins
 	#data 0x0a;time attack hours
