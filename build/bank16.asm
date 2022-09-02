@@ -2897,13 +2897,69 @@ loc_8c162ae4:
 	#data 0x41000000 0x42a50000 0x419f3333
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;Assist Recomendations
 loc_8c162b2c:
-	#data 0x02020101 0x00000000 0x02010202
-	#data 0x02000100 0x01000000 0x00020000
-	#data 0x00000000 0x01020202 0x02000201
-	#data 0x00010100 0x00000101 0x00000201
-	#data 0x01000200 0x00000000 0x00020201
-
+	#data 0x02 ;00 Ryu
+	#data 0x02 ;01 Zangief
+	#data 0x01 ;02 Guile
+	#data 0x01 ;03 Morrigan
+	#data 0x00 ;04 Anakaris
+	#data 0x00 ;05 Strider Hiryu
+	#data 0x00 ;06 Cyclops
+	#data 0x00 ;07 Wolverine
+	#data 0x02 ;08 Psylocke
+	#data 0x01 ;09 Iceman
+	#data 0x02 ;0a Rogue
+	#data 0x02 ;0b Captain America
+	#data 0x02 ;0c Spiderman
+	#data 0x00 ;0d Hulk
+	#data 0x01 ;0e Venom
+	#data 0x00 ;0f Dr.Doom
+	#data 0x01 ;10 Tron Bonne
+	#data 0x00 ;11 Jill
+	#data 0x00 ;12 Hayato
+	#data 0x00 ;13 Ruby Heart
+	#data 0x00 ;14 Sonson
+	#data 0x02 ;15 Amingo
+	#data 0x00 ;16 Marrow
+	#data 0x00 ;17 Cable
+	#data 0x00 ;18 Abyss 1
+	#data 0x00 ;19 Abyss 2
+	#data 0x00 ;1a Abyss 3
+	#data 0x00 ;1b Chun-li
+	#data 0x01 ;1c Megaman
+	#data 0x02 ;1d Roll
+	#data 0x02 ;1e Akuma
+	#data 0x02 ;1f BBHood
+	#data 0x02 ;20 Felica
+	#data 0x00 ;21 Charlie
+	#data 0x02 ;22 Sakura
+	#data 0x01 ;23 Dan
+	#data 0x00 ;24 Cammy
+	#data 0x01 ;25 Dhalsim
+	#data 0x01 ;26 Dict
+	#data 0x00 ;27 Ken
+	#data 0x00 ;28 Gambit
+	#data 0x00 ;29 Juggernaut
+	#data 0x01 ;2a Storm
+	#data 0x01 ;2b Sabretooth
+	#data 0x00 ;2c Magneto
+	#data 0x00 ;2d Shuma
+	#data 0x02 ;2e War Machine
+	#data 0x01 ;2f Silver Samurai
+	#data 0x01 ;30 Omega Red
+	#data 0x00 ;31 Spiral
+	#data 0x02 ;32 Colossus
+	#data 0x00 ;33 Ironman
+	#data 0x00 ;34 Sentinel
+	#data 0x00 ;35 Blackheart
+	#data 0x00 ;36 Thanos
+	#data 0x00 ;37 Jin
+	#data 0x00 ;38 Captain Commando
+	#data 0x02 ;39 BoneWolv
+	#data 0x02 ;3a Servbot
+	#data 0x01 ;3b probably to round it out
+ 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c162b68:
 	#data bank03.loc_8c03d46a
