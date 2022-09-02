@@ -2899,66 +2899,66 @@ loc_8c162ae4:
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;Assist Recomendations
 loc_8c162b2c:
-	#data 0x02 ;00 Ryu
-	#data 0x02 ;01 Zangief
-	#data 0x01 ;02 Guile
-	#data 0x01 ;03 Morrigan
+	#data 0x01 ;00 Ryu
+	#data 0x01 ;01 Zangief
+	#data 0x02 ;02 Guile
+	#data 0x02 ;03 Morrigan
 	#data 0x00 ;04 Anakaris
 	#data 0x00 ;05 Strider Hiryu
 	#data 0x00 ;06 Cyclops
 	#data 0x00 ;07 Wolverine
 	#data 0x02 ;08 Psylocke
-	#data 0x01 ;09 Iceman
-	#data 0x02 ;0a Rogue
+	#data 0x02 ;09 Iceman
+	#data 0x01 ;0a Rogue
 	#data 0x02 ;0b Captain America
-	#data 0x02 ;0c Spiderman
-	#data 0x00 ;0d Hulk
-	#data 0x01 ;0e Venom
-	#data 0x00 ;0f Dr.Doom
-	#data 0x01 ;10 Tron Bonne
+	#data 0x00 ;0c Spiderman
+	#data 0x01 ;0d Hulk
+	#data 0x00 ;0e Venom
+	#data 0x02 ;0f Dr.Doom
+	#data 0x00 ;10 Tron Bonne
 	#data 0x00 ;11 Jill
 	#data 0x00 ;12 Hayato
-	#data 0x00 ;13 Ruby Heart
+	#data 0x01 ;13 Ruby Heart
 	#data 0x00 ;14 Sonson
-	#data 0x02 ;15 Amingo
-	#data 0x00 ;16 Marrow
+	#data 0x00 ;15 Amingo
+	#data 0x02 ;16 Marrow
 	#data 0x00 ;17 Cable
 	#data 0x00 ;18 Abyss 1
 	#data 0x00 ;19 Abyss 2
 	#data 0x00 ;1a Abyss 3
 	#data 0x00 ;1b Chun-li
-	#data 0x01 ;1c Megaman
+	#data 0x02 ;1c Megaman
 	#data 0x02 ;1d Roll
 	#data 0x02 ;1e Akuma
-	#data 0x02 ;1f BBHood
-	#data 0x02 ;20 Felica
-	#data 0x00 ;21 Charlie
-	#data 0x02 ;22 Sakura
-	#data 0x01 ;23 Dan
+	#data 0x01 ;1f BBHood
+	#data 0x01 ;20 Felica
+	#data 0x02 ;21 Charlie
+	#data 0x00 ;22 Sakura
+	#data 0x02 ;23 Dan
 	#data 0x00 ;24 Cammy
 	#data 0x01 ;25 Dhalsim
 	#data 0x01 ;26 Dict
 	#data 0x00 ;27 Ken
-	#data 0x00 ;28 Gambit
-	#data 0x00 ;29 Juggernaut
-	#data 0x01 ;2a Storm
-	#data 0x01 ;2b Sabretooth
-	#data 0x00 ;2c Magneto
-	#data 0x00 ;2d Shuma
-	#data 0x02 ;2e War Machine
-	#data 0x01 ;2f Silver Samurai
-	#data 0x01 ;30 Omega Red
-	#data 0x00 ;31 Spiral
-	#data 0x02 ;32 Colossus
-	#data 0x00 ;33 Ironman
+	#data 0x01 ;28 Gambit
+	#data 0x01 ;29 Juggernaut
+	#data 0x00 ;2a Storm
+	#data 0x00 ;2b Sabretooth
+	#data 0x01 ;2c Magneto
+	#data 0x02 ;2d Shuma
+	#data 0x00 ;2e War Machine
+	#data 0x00 ;2f Silver Samurai
+	#data 0x00 ;30 Omega Red
+	#data 0x02 ;31 Spiral
+	#data 0x00 ;32 Colossus
+	#data 0x01 ;33 Ironman
 	#data 0x00 ;34 Sentinel
 	#data 0x00 ;35 Blackheart
 	#data 0x00 ;36 Thanos
 	#data 0x00 ;37 Jin
-	#data 0x00 ;38 Captain Commando
+	#data 0x01 ;38 Captain Commando
 	#data 0x02 ;39 BoneWolv
 	#data 0x02 ;3a Servbot
-	#data 0x01 ;3b probably to round it out
+	#data 0x00
  
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c162b68:
