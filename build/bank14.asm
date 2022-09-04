@@ -13692,13 +13692,21 @@ loc_8c14D998:
 #data 0x00000040
 
 #align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;Default selected charcters
 loc_8c14D99C:
-#data 0x00000013
-#data 0x00000014
-#data 0x00000015
-#data 0x00000017
-#data 0x00000016
-#data 0x00000006
+#data 0x000000
+#data 0x13;Player 1 default selected (Ruby)
+#data 0x000000
+#data 0x14;Player 1 second choice (Son-son)
+#data 0x000000
+#data 0x15;Player 1 third choice (Amingo)
+#data 0x000000
+#data 0x17;Player 2 default selected (Cable)
+#data 0x000000
+#data 0x16;Player 2 second choice (Marrow)
+#data 0x000000
+#data 0x06;Player 2 third choice (Cyclops)
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c14D9B4:
