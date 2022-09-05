@@ -8585,7 +8585,8 @@ loc_8c1760A8:
 loc_8c1760AC:
 	#data bank18.loc_8c1838C6
 loc_8c1760B0:
-	#data 0x00000096
+    ; #data 0x00000096 ; CDI Value
+	#data 0x0000B05E   ; GDI Value
 
 ;==============================================
 loc_8c1760B4:
@@ -9170,7 +9171,8 @@ loc_8c17646C:
 loc_8c17647A:
 	#data 0xFF0F
 loc_8c17647C:
-	#data 0x0096
+	; #data 0x0096 ; CDI Value
+	#data 0xB05E   ; GDI Value
 	#align4
 
 loc_8c176480:

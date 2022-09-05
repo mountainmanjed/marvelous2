@@ -20541,13 +20541,13 @@ loc_8c068952:
 loc_8c068954:
 	#data bank15.loc_8c152668
 loc_8c068958:
-	#data {bank15.loc_8c15266c+4}
+	#data {bank15.loc_8c152668 + 4}
 loc_8c06895c:
 	#data bank03.loc_8c034e8c
 loc_8c068960:
 	#data bank15.loc_8c1526a8
 loc_8c068964:
-	#data {bank15.loc_8c1526a8+4}
+	#data {bank15.loc_8c1526a8 + 4}
 loc_8c068968:
 	#data bank15.loc_8c1526e0
 loc_8c06896c:
