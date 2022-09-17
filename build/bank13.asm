@@ -6700,8 +6700,17 @@ loc_8c135cc0:
 
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+; Main font table
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c135d68:
-	#data 0x00000000 0x41800000 0x41800000 0x3f800000
+	#data 0x00		; Top left color from font color table @ 8c14CBF0
+	#data 0x00		; Top right color from font color table @ 8c14CBF0
+	#data 0x00		; Bottom left color from font color table @ 8c14CBF0
+	#data 0x00		; Bottom right color from font color table @ 8c14CBF0
+	#data 0x41800000	; Float font size
+	#data 0x41800000	; Float shift from top left corner of screen
+	#data 0x3f800000	; Float fade/double effect [unused]
+	
 	#data 0x01010101 0x41800000 0x41800000 0x3f800000
 	#data 0x02020202 0x41800000 0x41800000 0x3f800000
 	#data 0x03030303 0x41800000 0x41800000 0x3f800000
@@ -6772,10 +6781,12 @@ loc_8c1360f8:
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c136118:
-	#data 0x42ec0000 0x43500000 0x43500000
-	#data 0x43950000 0x42b40000 0x42c00000
-	#data 0x42f80000 0x43140000 0x431c0000
-	#data 0x43340000 0x433c0000 0x43540000
+	#data 0x42ec0000 0x43500000
+	#data 0x43500000 0x43950000
+	#data 0x42b40000 0x42c00000
+	#data 0x42f80000 0x43140000
+	#data 0x431c0000 0x43340000
+	#data 0x433c0000 0x43540000
 	#data 0x43640000 0x437c0000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
