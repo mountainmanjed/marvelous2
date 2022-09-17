@@ -1633,7 +1633,9 @@ loc_8c1617A0:
 ; Used to translate the DM01POL.BIN file which has portraits
 ; rotated for Naomi version and not Dreamcast
 loc_8c1617b8:
-	#data 0xc2600000 0x42500000 0x43370000	;00 Ryu
+	#data 0xc2600000 0x42500000		;00 Ryu
+loc_8c1617C0:
+	#data 0x43370000			;00 Ryu
 	#data 0xc2640000 0x41880000 0x433d0000	;01 Zangief
 	#data 0xc2500000 0x42a80000 0x432c0000	;02 Guile
 	#data 0xc2600000 0xc2500000 0x43370000	;03 Morrigan
