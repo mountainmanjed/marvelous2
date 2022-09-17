@@ -320,18 +320,27 @@ loc_8c16060C:
 ;			03 = Yellow
 ;			04 = Green
 ;
-;	#data 0xFF;	Font size
-;	#data 0x02;	Font size change???
-;	#data 0x11; 	Letter ???
-;			00-09 Numbers
-;			0a-23 Upper-case Letters
-;			24-29 [p, {space},t, s, !, ?, _]
-;			2a-2e [{heart}, {comma}, .]
-;			30 {Ok Graphic}
-;			31 {Ready Graphic}
+;	#data 0xFF;
+;	#data 0x02;	Font size
+;			00 Medium
+;			01 Large
+;			02 Small
+;			03 Narrow
+;			04 Short
+;			05 Giant
+;
+;	#data 0x11; 	Letter
+;			00-09 [0 - 9]
+;			0A-23 [A - Z]
+;			24-2C [p t s ' & _ ! ? ,]
+;			2D {Heart}
+;			2E .
+;			30 {Ready Graphic}
+;			31 {Fight Graphic}
 ;			32 {KO Graphic}
-;	#data 5,6,7 ??? ;0A D7 33
-;	#data 0x40;	Space
+;	#data 0x4033D70A
+;			Float shift before this character
+
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;000HIT
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
@@ -344,45 +353,25 @@ loc_8c160610:
 	#data 0x1D00FF04 0x401851EC
 	#data 0x0000FFFF 0x00000000
 
-#align4
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-; 00000000000  ??????
+; 00000000000 pts
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c160648:
-#data 0x00030002 0x3F800000
-#data 0x00000102 0x40600000
-#data 0x00000202 0x40600000
-#data 0x00000302 0x40600000
-#data 0x00000402 0x40600000
-#data 0x00000502 0x40600000
-#data 0x00000602 0x40600000
-#data 0x00000702 0x40600000
-#data 0x0000FF02 0x40600000
-#data 0x0000FF02 0x40600000
-#data 0x0000FF02 0x40600000
-
-;?????????
-;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-; OK Graphic
-;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-loc_8c1606a0
+	#data 0x00030002 0x3F800000
+	#data 0x00000102 0x40600000
+	#data 0x00000202 0x40600000
+	#data 0x00000302 0x40600000
+	#data 0x00000402 0x40600000
+	#data 0x00000502 0x40600000
+	#data 0x00000602 0x40600000
+	#data 0x00000702 0x40600000
+	#data 0x0000FF02 0x40600000
+	#data 0x0000FF02 0x40600000
+	#data 0x0000FF02 0x40600000
 	#data 0x2404FF03 0x40600000
-
-;?????????
-;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-; Ready Graphic
-;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-loc_8c1606a8:
 	#data 0x2500FF03 0x40100000
-
-;?????
-;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-; KO Graphic
-;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-loc_8c1606b0:
 	#data 0x2600FF03 0x40100000
-
-#data 0x0000FFFF 0x00000000
+	#data 0x0000FFFF 0x00000000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;FIRSTATTACK
@@ -596,7 +585,8 @@ loc_8c160a70:
 	#data loc_8c160a30
 	#data loc_8c1606c0
 
-;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+
+; Player 2 hud message x-shift in float
 loc_8c160AB0:
 	#data 0x42140000
 	#data 0x41C40000
@@ -798,9 +788,9 @@ loc_8c160D84:
 	#data 0x0000FF02 0x40600000
 	#data 0x0000FFFF 0x00000000
 
-; ????????????????????????????????
+
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-;BEST TIME   ???
+;BEST TIME   ` `
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c160DE4:
 #data 0x0B00FF03 0xC1C00000
