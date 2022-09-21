@@ -1,6 +1,11 @@
 #symbol GameGlobalPointer 0x8c26823c
 #symbol GameGlobalStart 0x8c268240 ;???
 
+#symbol global_state0 0x00
+#symbol global_state1 0x01
+#symbol global_state2 0x02
+#symbol global_state3 0x03
+
 ;8c2895F0 Battle State
 
 ;8c289620 - Frameskip Timer Value (Turbo 1 = 4, Turbo 2 = 2)(FreeSelectNormal = 6,FreeSelectTurbo = 4)

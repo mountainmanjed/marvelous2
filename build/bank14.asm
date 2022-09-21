@@ -13159,6 +13159,7 @@ loc_8c14D184:
 #data 0xFFFFFFFF
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;Global State 0 Jump Table
 loc_8c14D1A4:
 	#data bank03.loc_8c035A20
 	#data bank03.loc_8c035A68
@@ -13214,11 +13215,13 @@ loc_8c14D224:
 	#data bank03.loc_8c036338
 	#data bank03.loc_8c0364A4
 
+;Global State 1 jump table(could be more tables)
 loc_8c14D22C:
 	#data bank03.loc_8c03673E
 	#data bank03.loc_8c0368F4
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;global state 2 jump table
 loc_8c14D234:
 	#data bank03.loc_8c036994
 	#data bank03.loc_8c036B14
@@ -13703,6 +13706,7 @@ loc_8c14D99C:
 #data 0x00000006;Player 2 third choice (Cyclops)
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+;a global state 3 jump table
 loc_8c14D9B4:
 	#data bank03.loc_8c03A420
 	#data bank03.loc_8c03A78E
