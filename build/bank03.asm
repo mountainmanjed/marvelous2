@@ -6567,13 +6567,13 @@ loc_8c032c3c:
 
 ;----------------------------------------------
 loc_8c032c6e:
-	mov.l @(loc_8c032d78,PC),r0
+	mov.l @(loc_8c032d78,PC),r0;loc_8c14cf98
 	mov 0x00,r6
 	bra loc_8c032f2a
 	mov r12,r5
 
 loc_8c032c76:
-	mov.l @(loc_8c032d7c,PC),r5
+	mov.l @(loc_8c032d7c,PC),r5;0x0cda4000
 	bsr loc_8c0322d4
 	mov r10,r4
 	bra loc_8c032f46
@@ -17082,7 +17082,7 @@ loc_8c0371c8:
 	add 0x0B,r0
 	mov r14,r5
 	lds r0,fpul
-	mova @(loc_8c037374,PC),r0
+	mova @(loc_8c037374,PC),r0;0x41200000
 	fmov @r0,fr2
 	mov 0x10,r0
 	fmov @(r0,r12),fr1
@@ -17103,8 +17103,8 @@ loc_8c0371c8:
 	fadd fr1,fr3
 	fmov fr3,@r6
 	fmov fr3,@r14
-	fmov @(r0,r12),fr3
-	fmov @(r0,r13),fr2
+	fmov @(r0,r12),fr3;L Blue Box Write
+	fmov @(r0,r13),fr2;
 	fmac fr0,fr2,fr3
 	mova @(loc_8c037380,PC),r0 ; 0x43a20000 ; WhiteBoxR
 	fmov @r0,fr2

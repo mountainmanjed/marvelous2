@@ -27026,62 +27026,59 @@ loc_8c15FDA0:
 #data 0xFF000040
 #data 0xFF000080
 
-#align4
+;Venom
+;Model Viewer Stage Texture Table
 loc_8c15FDE0:
-#data 0x00000271
-#data 0x00000273
-#data 0x00000275
-#data 0x00000277
-#data 0x00000279
-#data 0x0000027B
-#data 0x0000027D
-#data 0x0000027F
-#data 0x00000281
-#data 0x00000283
-#data 0x00000285
-#data 0x00000287
-#data 0x00000289
-#data 0x0000028B
-#data 0x0000028D
-#data 0x0000028F
-#data 0x00000291
+	#data 0x00000271
+	#data 0x00000273
+	#data 0x00000275
+	#data 0x00000277
+	#data 0x00000279
+	#data 0x0000027B
+	#data 0x0000027D
+	#data 0x0000027F
+	#data 0x00000281
+	#data 0x00000283
+	#data 0x00000285
+	#data 0x00000287
+	#data 0x00000289
+	#data 0x0000028B
+	#data 0x0000028D
+	#data 0x0000028F
+	#data 0x00000291
 
-#align4
+;Model Viewer Table Stage Model Table
 loc_8c15FE24:
-#data 0x00000270
-#data 0x00000272
-#data 0x00000274
-#data 0x00000276
-#data 0x00000278
-#data 0x0000027A
-#data 0x0000027C
-#data 0x0000027E
-#data 0x00000280
-#data 0x00000282
-#data 0x00000284
-#data 0x00000286
-#data 0x00000288
-#data 0x0000028A
-#data 0x0000028C
-#data 0x0000028E
-#data 0x00000290
+	#data 0x00000270
+	#data 0x00000272
+	#data 0x00000274
+	#data 0x00000276
+	#data 0x00000278
+	#data 0x0000027A
+	#data 0x0000027C
+	#data 0x0000027E
+	#data 0x00000280
+	#data 0x00000282
+	#data 0x00000284
+	#data 0x00000286
+	#data 0x00000288
+	#data 0x0000028A
+	#data 0x0000028C
+	#data 0x0000028E
+	#data 0x00000290
+	#align4
 
-#align4
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c15FE68:
-#data bank0e.loc_8c0eF416
-
-loc_8c15FE6C:
-#data bank0e.loc_8c0eF498
-
-loc_8c15FE70:
-#data bank0e.loc_8c0eF620
+	#data bank0e.loc_8c0eF416
+	#data bank0e.loc_8c0eF498
+	#data bank0e.loc_8c0eF620
 
 loc_8c15FE74:
-#data bank0e.loc_8c0eF62E
+	#data bank0e.loc_8c0eF62E
+	#data bank0e.loc_8c0eF6F0
 
-loc_8c15FE78:
-#data bank0e.loc_8c0eF6F0
-
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c15FE7C:
 #data 0xC61C4000
 #data 0x00000000
