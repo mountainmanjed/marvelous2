@@ -6567,13 +6567,13 @@ loc_8c032c3c:
 
 ;----------------------------------------------
 loc_8c032c6e:
-	mov.l @(loc_8c032d78,PC),r0
+	mov.l @(loc_8c032d78,PC),r0;loc_8c14cf98
 	mov 0x00,r6
 	bra loc_8c032f2a
 	mov r12,r5
 
 loc_8c032c76:
-	mov.l @(loc_8c032d7c,PC),r5
+	mov.l @(loc_8c032d7c,PC),r5;0x0cda4000
 	bsr loc_8c0322d4
 	mov r10,r4
 	bra loc_8c032f46
@@ -13270,7 +13270,7 @@ loc_8c03580c:
 
 ;==============================================
 loc_8c03589a:
-	mov.l @(loc_8c0359f0,PC),r2
+	mov.l @(loc_8c0359f0,PC),r2;GameGlobalPointer
 	mov 0x1A,r0
 	sts.l pr,@-r15
 	mov.l @r2,r3
@@ -13281,7 +13281,7 @@ loc_8c03589a:
 	nop
 
 loc_8c0358ac:
-	mov.l @(loc_8c0359f0,PC),r1
+	mov.l @(loc_8c0359f0,PC),r1;GameGlobalPointer
 	mov 0x1A,r2
 	mov 0x00,r3
 	mov.l @r1,r0
@@ -13297,7 +13297,7 @@ loc_8c0358be:
 	mov.l r14,@-r15
 	sts.l pr,@-r15
 	mov.l @r2,r3
-	mov.l @(loc_8c0359f0,PC),r14
+	mov.l @(loc_8c0359f0,PC),r14;GameGlobalPointer
 	tst r3,r3
 	bf loc_8c0358f2
 	mov.l @(loc_8c0359fc,PC),r3
@@ -13306,8 +13306,10 @@ loc_8c0358be:
 	mov.l @(loc_8c035a00,PC),r2
 	jsr @r2
 	nop
+
+;global state 0 jump
 	mov.l @r14,r3
-	mov.l @(loc_8c035a04,PC),r0
+	mov.l @(loc_8c035a04,PC),r0;loc_8c14d1a4
 	mov.b @r3,r2
 	shll2 r2
 	mov.l @(r0,r2),r3
@@ -13348,7 +13350,7 @@ loc_8c035916:
 
 ;==============================================
 loc_8c03591e:
-	mov.l @(loc_8c0359f0,PC),r3
+	mov.l @(loc_8c0359f0,PC),r3;GameGlobalPointer
 	mov.l @r3,r4
 	mov.b @r4,r0
 	cmp/eq 0x02,r0
@@ -13369,7 +13371,7 @@ loc_8c035938:
 
 ;==============================================
 loc_8c03593e:
-	mov.l @(loc_8c0359f0,PC),r3
+	mov.l @(loc_8c0359f0,PC),r3;GameGlobalPointer
 	mov 0x2E,r1
 	mov.l @r3,r0
 	mov.b @(r0,r1),r0
@@ -13378,7 +13380,7 @@ loc_8c03593e:
 
 ;==============================================
 loc_8c03594a:
-	mov.l @(loc_8c0359f0,PC),r3
+	mov.l @(loc_8c0359f0,PC),r3;GameGlobalPointer
 	mov.l @r3,r4
 	mov.b @r4,r0
 	cmp/eq 0x02,r0
@@ -15716,9 +15718,10 @@ loc_8c0368b6:
 	mov.l @r15+,r14
 
 ;==============================================
+;Global State 2 Jumps
 loc_8c0368f4:
-	mov.l @(loc_8c036988,PC),r2
-	mov.l @(loc_8c03698c,PC),r1
+	mov.l @(loc_8c036988,PC),r2;GameGlobalPointer
+	mov.l @(loc_8c03698c,PC),r1;8c14d234
 	sts.l pr,@-r15
 	mov.l @r2,r3
 	mov.b @(0x2,r3),r0
@@ -17079,7 +17082,7 @@ loc_8c0371c8:
 	add 0x0B,r0
 	mov r14,r5
 	lds r0,fpul
-	mova @(loc_8c037374,PC),r0
+	mova @(loc_8c037374,PC),r0;0x41200000
 	fmov @r0,fr2
 	mov 0x10,r0
 	fmov @(r0,r12),fr1
@@ -17100,8 +17103,8 @@ loc_8c0371c8:
 	fadd fr1,fr3
 	fmov fr3,@r6
 	fmov fr3,@r14
-	fmov @(r0,r12),fr3
-	fmov @(r0,r13),fr2
+	fmov @(r0,r12),fr3;L Blue Box Write
+	fmov @(r0,r13),fr2;
 	fmac fr0,fr2,fr3
 	mova @(loc_8c037380,PC),r0 ; 0x43a20000 ; WhiteBoxR
 	fmov @r0,fr2
@@ -24350,9 +24353,10 @@ loc_8c03a1f0:
 	mov.w @(r0,r4),r0
 	mov.w r0,@(0x2,r5)
 
+;Global state 3 jump
 loc_8c03a20e:
-	mov.l @(loc_8c03a238,PC),r2
-	mov.l @(loc_8c03a240,PC),r1
+	mov.l @(loc_8c03a238,PC),r2;GameGlobalPointer
+	mov.l @(loc_8c03a240,PC),r1;loc_8c14d9b4
 	mov.l @r2,r3
 	mov.b @(0x3,r3),r0
 	shll2 r0

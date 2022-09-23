@@ -36206,12 +36206,12 @@ loc_8c0ef018:
 	#data16 {loc_8c0ef242-braf_8c0eeffe-4};0x0240
 
 ;================================================
-;Not used in training mode
+;Model Viewer Texture and Model loader
 ;================================================
 loc_8c0ef042:
 	mov.l @(loc_8c0ef17C,PC),r3;STG_ID
 	mov 0x00,r6
-	mov.l @(loc_8C0EF180,PC),r0
+	mov.l @(loc_8C0EF180,PC),r0;loc_8c15FE24
 	mov.b @r3,r4;Load Stage ID?
 	mov.l @(loc_8c0ef178,PC),r5
 	extu.b r4,r4
@@ -36220,7 +36220,7 @@ loc_8c0ef042:
 	mov.l @(r0,r4),r4
 	mov.l @(loc_8c0ef17C,PC),r3;STG_ID
 	mov r12,r5
-	mov.l @(loc_8C0EF184,PC),r0
+	mov.l @(loc_8C0EF184,PC),r0;loc_8c15FDE0
 	mov 0x00,r6
 	mov.b @r3,r4;Load Stage ID?
 	extu.b r4,r4
