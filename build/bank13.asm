@@ -6769,25 +6769,29 @@ loc_8c135d68:
 	#data 0x34343434 0x41800000 0x40800000 0x3f800000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+; Coloring of handicap blocks
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1360f8:
-	#data 0xffffffff
-	#data 0xffe8f906
-	#data 0xffecd629
-	#data 0xfff38b74
-	#data 0xfff84bb4
-	#data 0xfffb2cd3
-	#data 0xffffffff
+	#data 0xffffffff ; Masking of L block
+	#data 0xffe8f906 ; Color of first block
+	#data 0xffecd629 ; Color of second block
+	#data 0xfff38b74 ; Color of third block
+	#data 0xfff84bb4 ; Color of fouth block
+	#data 0xfffb2cd3 ; Color of fifthblock
+	#data 0xffffffff ; Masking of H block
 	#data 0xff777777
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+; Draw shadow textures under text
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c136118:
-	#data 0x42ec0000 0x43500000
-	#data 0x43500000 0x43950000
-	#data 0x42b40000 0x42c00000
-	#data 0x42f80000 0x43140000
-	#data 0x431c0000 0x43340000
-	#data 0x433c0000 0x43540000
-	#data 0x43640000 0x437c0000
+	#data 0x42ec0000 0x43500000 ; Define left side of textures
+	#data 0x43500000 0x43950000 ; Define right side of textures
+	#data 0x42b40000 0x42c00000 ; Texturew under Player 1/2
+	#data 0x42f80000 0x43140000 ; Texturew under wins
+	#data 0x431c0000 0x43340000 ; Texturew under losses
+	#data 0x433c0000 0x43540000 ; Textures under draws
+	#data 0x43640000 0x437c0000 ; Textures under Handicap
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;Unused and No Refrences THANKFULLY
