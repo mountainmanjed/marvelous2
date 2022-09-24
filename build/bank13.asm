@@ -6787,9 +6787,9 @@ loc_8c1360f8:
 loc_8c136118:
 	#data 0x42ec0000 0x43500000 ; Define left side of textures
 	#data 0x43500000 0x43950000 ; Define right side of textures
-	#data 0x42b40000 0x42c00000 ; Texturew under Player 1/2
-	#data 0x42f80000 0x43140000 ; Texturew under wins
-	#data 0x431c0000 0x43340000 ; Texturew under losses
+	#data 0x42b40000 0x42c00000 ; Textures under Player 1/2
+	#data 0x42f80000 0x43140000 ; Textures under wins
+	#data 0x431c0000 0x43340000 ; Textures under losses
 	#data 0x433c0000 0x43540000 ; Textures under draws
 	#data 0x43640000 0x437c0000 ; Textures under Handicap
 
