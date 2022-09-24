@@ -7995,8 +7995,8 @@ loc_8c13822c:
 	#data 0x05; Cave
 	#data 0x06; Clock Tower
 	#data 0x07; River
-	#data 0x0b; Abyss
-	#data 0x08; Training Room
+	#data 0x0b; Training Room
+	#data 0x08; Abyss
 	#data 0x09; Airship (Alt)
 	#data 0x0a; Desert (Alt)
 	#data 0x0c; Circus (Alt)
