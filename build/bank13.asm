@@ -6700,8 +6700,17 @@ loc_8c135cc0:
 
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+; Main font table
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c135d68:
-	#data 0x00000000 0x41800000 0x41800000 0x3f800000
+	#data 0x00		; Top left color from font color table @ 8c14CBF0
+	#data 0x00		; Top right color from font color table @ 8c14CBF0
+	#data 0x00		; Bottom left color from font color table @ 8c14CBF0
+	#data 0x00		; Bottom right color from font color table @ 8c14CBF0
+	#data 0x41800000	; Float font size
+	#data 0x41800000	; Float shift from top left corner of screen
+	#data 0x3f800000	; Float fade/double effect [unused]
+	
 	#data 0x01010101 0x41800000 0x41800000 0x3f800000
 	#data 0x02020202 0x41800000 0x41800000 0x3f800000
 	#data 0x03030303 0x41800000 0x41800000 0x3f800000
@@ -6760,23 +6769,29 @@ loc_8c135d68:
 	#data 0x34343434 0x41800000 0x40800000 0x3f800000
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+; Coloring of handicap blocks
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c1360f8:
-	#data 0xffffffff
-	#data 0xffe8f906
-	#data 0xffecd629
-	#data 0xfff38b74
-	#data 0xfff84bb4
-	#data 0xfffb2cd3
-	#data 0xffffffff
+	#data 0xffffffff ; Masking of L block
+	#data 0xffe8f906 ; Color of first block
+	#data 0xffecd629 ; Color of second block
+	#data 0xfff38b74 ; Color of third block
+	#data 0xfff84bb4 ; Color of fouth block
+	#data 0xfffb2cd3 ; Color of fifthblock
+	#data 0xffffffff ; Masking of H block
 	#data 0xff777777
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+; Draw shadow textures under text
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c136118:
-	#data 0x42ec0000 0x43500000 0x43500000
-	#data 0x43950000 0x42b40000 0x42c00000
-	#data 0x42f80000 0x43140000 0x431c0000
-	#data 0x43340000 0x433c0000 0x43540000
-	#data 0x43640000 0x437c0000
+	#data 0x42ec0000 0x43500000 ; Define left side of textures
+	#data 0x43500000 0x43950000 ; Define right side of textures
+	#data 0x42b40000 0x42c00000 ; Textures under Player 1/2
+	#data 0x42f80000 0x43140000 ; Textures under wins
+	#data 0x431c0000 0x43340000 ; Textures under losses
+	#data 0x433c0000 0x43540000 ; Textures under draws
+	#data 0x43640000 0x437c0000 ; Textures under Handicap
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 ;Unused and No Refrences THANKFULLY
@@ -7968,13 +7983,27 @@ loc_8c138223:
 	#data 0x01 0x00 0x00
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+; Stage select list
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c13822c:
-	#data 0x11 0x00 0x01
-	#data 0x02 0x03 0x04
-	#data 0x05 0x06 0x07
-	#data 0x0b 0x08 0x09
-	#data 0x0a 0x0c 0x0d
-	#data 0x0e 0x0f 0x10
+	#data 0x11; Random select
+	#data 0x00; Airship
+	#data 0x01; Desert
+	#data 0x02; Factory
+	#data 0x03; Circus
+	#data 0x04; Swamp
+	#data 0x05; Cave
+	#data 0x06; Clock Tower
+	#data 0x07; River
+	#data 0x0b; Training Room
+	#data 0x08; Abyss
+	#data 0x09; Airship (Alt)
+	#data 0x0a; Desert (Alt)
+	#data 0x0c; Circus (Alt)
+	#data 0x0d; Swamp (Alt)
+	#data 0x0e; Cave (Alt)
+	#data 0x0f; Clock Tower (Alt)
+	#data 0x10; River (Alt)
 
 loc_8c13823e:
 	#data 0x11 0x00 0x01
