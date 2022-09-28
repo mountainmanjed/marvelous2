@@ -8051,7 +8051,7 @@ loc_8c138890:
 	#data 0x00;first assist type
 	#data 0x01;second assist type
 	#data 0x02;third assist type
-	#data 0x00
+	#data 0x00;game completed flag
 	#data 0x0a;number of wins
 	#data 0x0a;time attack hours
 	#data 0x00;time attack mins
@@ -8064,6 +8064,7 @@ loc_8c138890:
 	#data 0x02;digits before above (dec)
 	#data 0x00;digits before above (dec)
 	#data 0x00;digits before above (dec)
+	#data 0x00
 
 	#data 0x02 0x16 0x14 0x02
 	#data 0x00 0x01 0x02 0x00
