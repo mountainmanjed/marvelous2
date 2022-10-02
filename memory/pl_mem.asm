@@ -297,8 +297,13 @@
 
 #symbol pal_id 0x052d					; byte
 
-;#symbol unk_55c 0x55c
+; Char A & B Only
+#symbol num_wins 0x540                  ; byte
+#symbol num_lose 0x541                  ; byte
+#symbol num_draw 0x542                  ; byte
+#symbol handicap_level 0x543            ; byte
 
+;#symbol unk_55c 0x55c
 
 ;==============================================
 ;Character IDs
