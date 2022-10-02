@@ -8005,13 +8005,29 @@ loc_8c13822c:
 	#data 0x0f; Clock Tower (Alt)
 	#data 0x10; River (Alt)
 
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+; No Abyss Stage select list
+; Used when player hasn't beaten game
+;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c13823e:
-	#data 0x11 0x00 0x01
-	#data 0x02 0x03 0x04
-	#data 0x05 0x06 0x07
-	#data 0x0b 0x09 0x0a
-	#data 0x0c 0x0d 0x0e
-	#data 0x0f 0x10 0x00
+	#data 0x11; Random select
+	#data 0x00; Airship
+	#data 0x01; Desert
+	#data 0x02; Factory
+	#data 0x03; Circus
+	#data 0x04; Swamp
+	#data 0x05; Cave
+	#data 0x06; Clock Tower
+	#data 0x07; River
+	#data 0x0b; Training Room
+	#data 0x09; Airship (Alt)
+	#data 0x0a; Desert (Alt)
+	#data 0x0c; Circus (Alt)
+	#data 0x0d; Swamp (Alt)
+	#data 0x0e; Cave (Alt)
+	#data 0x0f; Clock Tower (Alt)
+	#data 0x10; River (Alt)
+	#data 0x00
 
 ;VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 loc_8c138250:
